@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-22T23:50:15.199Z",
+  "scope": "Real local HTTP control -> owned Chromium -> official anonymous SDK verification -> real QR response -> local cancellation. No phone, SMS, account confirmation, credential values or QR data retained.",
+  "ui_status": 200,
+  "start_status": 200,
+  "qr_ready": true,
+  "qr_image_bytes": 29242,
+  "cancel_state": "signed_out",
+  "cookie_header_after_cancel_empty": true,
+  "browsers": [
+    {
+      "version": "Chrome/154.0.8037.57",
+      "exited": true
+    }
+  ],
+  "states": [
+    {
+      "state": "opening",
+      "authenticated": false
+    },
+    {
+      "state": "waiting_scan",
+      "authenticated": false
+    }
+  ]
+}

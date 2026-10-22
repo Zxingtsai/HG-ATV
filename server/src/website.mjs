@@ -171,9 +171,12 @@ export class WebsiteClient {
   #ttl;
   #cache = new Map();
   #pending = new Map();
+  #cookieProvider;
+  #cacheScope;
 
-  constructor({ fetchFn = globalThis.fetch, baseUrl = 'https://hongguoduanju.com', cacheTtlMs = 300000 } = {}) {
+  constructor({ fetchFn = globalThis.fetch, baseUrl = 'https://hongguoduanju.com', cacheTtlMs = 300000, cookieProvider = () => '', cacheScope = () => 0 } = {}) {
     this.#fetch = fetchFn;
+    this.#cookieProvider = cookieProvider; this.#cacheScope = cacheScope;
     try { this.#base = new URL(baseUrl); } catch { fail('INVALID_ARGUMENT'); }
     if (!['https:', 'http:'].includes(this.#base.protocol) || this.#base.username || this.#base.password ||
         !Number.isFinite(cacheTtlMs) || cacheTtlMs < 0 || typeof fetchFn !== 'function') fail('INVALID_ARGUMENT');
@@ -185,10 +188,12 @@ export class WebsiteClient {
     const timeout = AbortSignal.timeout(REQUEST_TIMEOUT_MS);
     const combined = signal ? AbortSignal.any([signal, timeout]) : timeout;
     try {
-      const response = await this.#fetch(new URL(path, this.#base), {
+      const target = new URL(path, this.#base);
+      const cookie = target.origin === 'https://hongguoduanju.com' ? this.#cookieProvider(target) : '';
+      const response = await this.#fetch(target, {
         method: body === undefined ? 'GET' : 'POST',
         headers: { 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36',
-          Referer: new URL('/', this.#base).href, ...(body === undefined ? {} : { 'Content-Type': 'application/json' }) },
+          Referer: new URL('/', this.#base).href, ...(cookie ? { Cookie: cookie } : {}), ...(body === undefined ? {} : { 'Content-Type': 'application/json' }) },
         ...(body === undefined ? {} : { body: JSON.stringify(body) }), signal: combined, redirect: 'error',
       });
       if (Number(response.headers.get('content-length')) > MAX_BYTES) {
@@ -222,26 +227,28 @@ export class WebsiteClient {
 
   async #metadata(path, convert, { signal } = {}) {
     cancelled(signal);
-    const cached = this.#cache.get(path);
+    const scope = this.#cacheScope(), cacheKey = `${scope}:${path}`;
+    const cached = this.#cache.get(cacheKey);
     if (cached?.expires > Date.now()) {
-      this.#cache.delete(path);
-      this.#cache.set(path, cached);
+      this.#cache.delete(cacheKey);
+      this.#cache.set(cacheKey, cached);
       return structuredClone(cached.value);
     }
-    this.#cache.delete(path);
-    let job = this.#pending.get(path);
+    this.#cache.delete(cacheKey);
+    let job = this.#pending.get(cacheKey);
     if (!job) {
       if (this.#pending.size >= MAX_CACHE_ITEMS) fail('SOURCE_UNAVAILABLE');
       job = { controller: new AbortController(), users: 0, done: false };
       job.promise = (async () => {
         const response = await this.#request(path, { signal: job.controller.signal });
+        if (scope !== this.#cacheScope()) fail('SOURCE_CANCELLED');
         if (response.status === 404) fail('SOURCE_NOT_FOUND');
         if (response.status !== 200) fail('SOURCE_UNAVAILABLE');
         const value = convert(routerData(response.text));
         // Only the public, normalized API fields reach this bounded cache.
         if (this.#ttl > 0) {
           for (const [key, entry] of this.#cache) if (entry.expires <= Date.now()) this.#cache.delete(key);
-          this.#cache.set(path, { value, expires: Date.now() + this.#ttl });
+          this.#cache.set(cacheKey, { value, expires: Date.now() + this.#ttl });
           while (this.#cache.size > MAX_CACHE_ITEMS) this.#cache.delete(this.#cache.keys().next().value);
         }
         return value;
@@ -250,9 +257,9 @@ export class WebsiteClient {
         fail();
       }).finally(() => {
         job.done = true;
-        if (this.#pending.get(path) === job) this.#pending.delete(path);
+        if (this.#pending.get(cacheKey) === job) this.#pending.delete(cacheKey);
       });
-      this.#pending.set(path, job);
+      this.#pending.set(cacheKey, job);
     }
     job.users++;
     let onAbort;
@@ -268,7 +275,7 @@ export class WebsiteClient {
     } finally {
       if (onAbort) signal.removeEventListener('abort', onAbort);
       if (--job.users === 0 && !job.done) {
-        if (this.#pending.get(path) === job) this.#pending.delete(path);
+        if (this.#pending.get(cacheKey) === job) this.#pending.delete(cacheKey);
         job.controller.abort();
       }
     }

@@ -12,7 +12,10 @@ import { MediaCache } from './media.mjs';
 import { PlaybackManager } from './playback.mjs';
 import { AppError, invalid, publicError } from './errors.mjs';
 import { chooseEncoder, benchmark, measuredProfile } from './encoding.mjs';
+import { AccountManager } from './account.mjs';
+import { createAccountRoutes } from './account-http.mjs';
 const NAME = '红果 TV 家庭服务';
+const VERSION = '0.1.1';
 function json(response, status, body) {
   response.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' });
   response.end(JSON.stringify(body));
@@ -43,20 +46,25 @@ async function sendFile(request, response, path) {
   const stream = createReadStream(path, range || {});
   stream.on('error', () => response.destroy()); response.on('close', () => stream.destroy()); stream.pipe(response);
 }
-export async function createService(config, { website = new WebsiteClient(), pairing, media, playback, initializeMedia = true } = {}) {
+export async function createService(config, { website, pairing, account, media, playback, initializeMedia = true } = {}) {
   pairing ||= await new Pairing(config.dataDir).init();
+  account ||= await new AccountManager(config.dataDir).init();
+  website ||= new WebsiteClient({ cookieProvider: url => account.cookieHeader(url), cacheScope: () => account.revision });
   media ||= new MediaCache(config, website);
   if (initializeMedia) await media.init();
   playback ||= await new PlaybackManager(config, website, media).init();
+  const accountRoutes = createAccountRoutes(account, json);
   const server = http.createServer(async (request, response) => {
     try {
       if (!['GET', 'HEAD', 'POST', 'DELETE'].includes(request.method)) throw new AppError('METHOD_NOT_ALLOWED', '请求方法不支持', 405);
       const url = new URL(request.url, 'http://localhost');
       const route = url.pathname, method = request.method;
-      if ((method === 'GET' || method === 'HEAD') && route === '/health') return json(response, 200, { name: NAME, version: '0.1.0', pairingRequired: true });
+      if (await accountRoutes(request, response, route, method)) return;
+      if ((method === 'GET' || method === 'HEAD') && route === '/health') return json(response, 200, { name: NAME, version: VERSION, pairingRequired: true });
       if (method === 'POST' && route === '/api/pair') { const value = await body(request); return json(response, 200, await pairing.pair(value.code, request.socket.remoteAddress, value.clientName)); }
       const owner = pairing.authenticate(request.headers.authorization);
       let match;
+      if (method === 'GET' && route === '/api/account') return json(response, 200, account.status());
       if (method === 'GET' && route === '/api/home') return json(response, 200, await website.getHome());
       if (method === 'GET' && route === '/api/ranks') return json(response, 200, await website.getRanks());
       if (method === 'GET' && route === '/api/server') return json(response, 200, { profile: config.profile, encoder: config.encoder, maxStreams: 1 });
@@ -82,7 +90,7 @@ export async function createService(config, { website = new WebsiteClient(), pai
   });
   server.requestTimeout = 45000; server.headersTimeout = 15000; server.maxHeadersCount = 40;
   let udp;
-  return { server, pairing, media, playback,
+  return { server, pairing, account, media, playback,
     async listen() {
       await new Promise((resolve, reject) => { server.once('error', reject); server.listen(config.port, config.bind, resolve); });
       udp = dgram.createSocket('udp4');
@@ -90,7 +98,7 @@ export async function createService(config, { website = new WebsiteClient(), pai
       udp.on('message', (message, remote) => { if (message.toString() === 'HONGGUO_TV_DISCOVER_V1') udp.send(JSON.stringify({ name: NAME, port: config.port }), remote.port, remote.address, () => {}); });
       udp.bind(8752, config.bind.includes(':') ? '0.0.0.0' : config.bind);
     },
-    async close() { try { udp?.close(); } catch {} const closed = new Promise(resolve => server.close(resolve)); server.closeAllConnections(); await playback.close(); await closed; }
+    async close() { try { udp?.close(); } catch {} const closed = new Promise(resolve => server.close(resolve)); server.closeAllConnections(); await account.close(); await playback.close(); await closed; }
   };
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -103,9 +111,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
       config.encoder = await chooseEncoder(config.ffmpeg, config.encoder);
       config.profile = await measuredProfile(config);
       const service = await createService(config); await service.listen();
-      console.log(`${NAME} 0.1.0 / ${config.profile} / ${config.encoder} / 最多一路播放`);
+      console.log(`${NAME} ${VERSION} / ${config.profile} / ${config.encoder} / 最多一路播放`);
       for (const net of Object.values(networkInterfaces()).flat()) if (net?.family === 'IPv4' && !net.internal) console.log(`电视连接地址：http://${net.address}:${config.port}`);
       console.log(`本次配对码：${service.pairing.code} （仅在可信家庭局域网内使用）`);
+      console.log(`服务端账号登录：http://127.0.0.1:${config.port}/account （在服务器本机打开）`);
       let stopping = false;
       const stop = async () => { if (stopping) return; stopping = true; const deadline = setTimeout(() => process.exit(1), 10000); deadline.unref(); await service.close(); clearTimeout(deadline); };
       process.on('SIGINT', stop); process.on('SIGTERM', stop);
