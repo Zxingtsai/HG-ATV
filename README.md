@@ -6,9 +6,9 @@
 
 **[v0.1.0 测试版下载](https://github.com/Zxingtsai/HG-ATV/releases/tag/v0.1.0)**
 
-- [Android TV APK](https://github.com/Zxingtsai/HG-ATV/releases/download/v0.1.0/hongguo-tv-0.1.0.apk)
-- [Windows 服务包](https://github.com/Zxingtsai/HG-ATV/releases/download/v0.1.0/hongguo-tv-windows-0.1.0.zip)
-- [文件 SHA-256](https://github.com/Zxingtsai/HG-ATV/releases/download/v0.1.0/SHA256SUMS.txt)
+- [Android TV APK](https://github.com/Zxingtsai/HG-ATV/raw/refs/tags/v0.1.0/releases/v0.1.0/hongguo-tv-0.1.0.apk)
+- [Windows 服务包](https://github.com/Zxingtsai/HG-ATV/raw/refs/tags/v0.1.0/releases/v0.1.0/hongguo-tv-windows-0.1.0.zip)
+- [文件 SHA-256](https://github.com/Zxingtsai/HG-ATV/raw/refs/tags/v0.1.0/releases/v0.1.0/SHA256SUMS.txt)
 
 Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次安装需要联网下载并校验 Node.js、FFmpeg 和官网播放器组件。将 APK 安装到电视，选择发现的服务器或输入其局域网地址，再填写服务器窗口显示的六位配对码。
 
