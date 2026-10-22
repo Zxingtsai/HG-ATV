@@ -34,6 +34,7 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 - [客户端构建与电视操作](client/README.md)
 - [验证记录](docs/VALIDATION.zh-CN.md) · [LAN API](docs/API.md)
 - [原 APK 的 REA 分析](research/ANALYSIS.zh-CN.md) · [完整播放协议验证](research/protocol-pass2/README.zh-CN.md)
+- [2024 旧版与当前官网版通信机制对照](research/version-compare/REPORT.zh-CN.md)：登录会话、收藏同步、播放模型及 RPC 参数；原生 App 协议接入仍待运行时验证。
 - [外部组件与许可](docs/DEPENDENCIES.md)
 
 服务端需要 Node.js 24 和 FFmpeg，无 npm 第三方运行依赖：
