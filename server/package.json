@@ -1,0 +1,9 @@
+{
+  "name": "hongguo-tv-lan-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": { "start": "node --use-env-proxy src/main.mjs", "test": "node --test tests/*.test.mjs" },
+  "license": "MIT"
+}

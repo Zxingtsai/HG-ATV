@@ -1,0 +1,174 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "sdk_dexdump": "/workspace/tools/android/build-tools/35.0.0/dexdump",
+  "members": {
+    "classes4.dex": {
+      "sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "bytes": 10050912
+    },
+    "classes3.dex": {
+      "sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "bytes": 10701380
+    },
+    "classes16.dex": {
+      "sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375",
+      "bytes": 9962648
+    },
+    "classes5.dex": {
+      "sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "bytes": 11773108
+    },
+    "classes7.dex": {
+      "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+      "bytes": 11728768
+    },
+    "classes9.dex": {
+      "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "bytes": 12260204
+    },
+    "classes15.dex": {
+      "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "bytes": 9799700
+    }
+  },
+  "class_outputs": [
+    {
+      "path": "a35-b1.dexdump.txt",
+      "class": "La35/b1;",
+      "dex_member": "classes4.dex",
+      "output_sha256": "2d19ed834677fab7f3f727d455fcf8294f85dd947d4de18be56cad66dc6633dc"
+    },
+    {
+      "path": "ap4-d.dexdump.txt",
+      "class": "Lap4/d;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "85073b9f6f418799a55f68ac698aba0a98eeae21f2dcfc8e36b34dc2103df526"
+    },
+    {
+      "path": "ax4-c2.dexdump.txt",
+      "class": "Lax4/c2;",
+      "dex_member": "classes4.dex",
+      "output_sha256": "5da10a7d470df0da043f51741e52fefcd20b50cea83cd95b562cd940dbf8735a"
+    },
+    {
+      "path": "com-dragon-read-component-biz-impl-bookmall-holder-video-VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1.dexdump.txt",
+      "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1;",
+      "dex_member": "classes16.dex",
+      "output_sha256": "b1d73a78d19c44620e43fafb1dda0b056a34ae1597f1f7c4edf394c1cd880969"
+    },
+    {
+      "path": "com-dragon-read-component-shortvideo-data-saas-video-SaasVideoData.dexdump.txt",
+      "class": "Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "e01a692d9a5b1d013bf0c9d683d6beec53bedb4e4e924f54630005660d5e20e2"
+    },
+    {
+      "path": "com-dragon-read-component-shortvideo-data-saas-video-s0.dexdump.txt",
+      "class": "Lcom/dragon/read/component/shortvideo/data/saas/video/s0;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "f1e42644aa4eff827e5d253bbbc9ecc55e3ff0cc5dfafcc4db532e8ed06fb55c"
+    },
+    {
+      "path": "com-dragon-read-component-shortvideo-impl-v2-data-b.dexdump.txt",
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+      "dex_member": "classes4.dex",
+      "output_sha256": "7b9a8e9c4ad09c0401eae3d5668831933f57964a199f3b75fb707eb7b43104d8"
+    },
+    {
+      "path": "com-dragon-read-component-shortvideo-saas-ShortSeriesImpl.dexdump.txt",
+      "class": "Lcom/dragon/read/component/shortvideo/saas/ShortSeriesImpl;",
+      "dex_member": "classes5.dex",
+      "output_sha256": "d5ab566edcc920c769fabfa8ceaf5e1ca575f38ff35d8ec98a0239a26dbd2b5f"
+    },
+    {
+      "path": "com-dragon-read-novelvideo-shortseries-ShortSeriesVideoModelCache$c.dexdump.txt",
+      "class": "Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;",
+      "dex_member": "classes7.dex",
+      "output_sha256": "7e8012a219b5e9980e87683a98b7983d10c1ee0ae4f67db05284c4c97c79b3f3"
+    },
+    {
+      "path": "com-dragon-read-rpc-model-VideoContentType.dexdump.txt",
+      "class": "Lcom/dragon/read/rpc/model/VideoContentType;",
+      "dex_member": "classes9.dex",
+      "output_sha256": "a9424290383e6bb6e6a4b8508386f68a2d9f2068b7b18cd462fc9e429bfcf237"
+    },
+    {
+      "path": "com-dragon-read-rpc-model-VideoPlatformType.dexdump.txt",
+      "class": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+      "dex_member": "classes9.dex",
+      "output_sha256": "93c8c42ac49b06d7488d64a23ab6e523ef29d9324cd05ec5351a5a43d5c151c7"
+    },
+    {
+      "path": "dt4-b.dexdump.txt",
+      "class": "Ldt4/b;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "d71dd89759c77b57a390cbe1e2759e4b94581345f2be9f90c8072648d3edfe8c"
+    },
+    {
+      "path": "l25-c.dexdump.txt",
+      "class": "Ll25/c;",
+      "dex_member": "classes4.dex",
+      "output_sha256": "33c5d30d795dbf011975f10be2c3e8695f14f5af27b93898fd0136f94b123d12"
+    },
+    {
+      "path": "pr4-f$a.dexdump.txt",
+      "class": "Lpr4/f$a;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "9f49c981c25bf6f61b4a4a271c2c3846dbb5e1da2df5c7945386572849358a58"
+    },
+    {
+      "path": "pr4-f.dexdump.txt",
+      "class": "Lpr4/f;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "7fffa3fad2c795821650cfc9c929368fc798cb0e9f5f3d1c8e9b6eeca7fa0919"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-SaaSVideoDetailData.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "1b1a3332e428c958f63dcc32c02a9739b11bbb94d8853921cb9e53bca5042a73"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-VideoContentType.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "aefa822c635a940cd7b935f8f66413c3cd71c356e9dccff556781140b92ef325"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-VideoDetailData.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "3f472eec3ef1f04e44b74be868bec9e4502444ac30919689f433f14af2808311"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-VideoDetailInfo.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "456cce619db8f3005745d894ac6ccb7042c9a79c8899bcc3538b9b2a0b33d82e"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-VideoPlatformType.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "0adb7303ac1639cf2a7013c45519a738937052b847b8107d651cf1135810dc0a"
+    },
+    {
+      "path": "seriessdk-com-dragon-read-saas-rpc-model-VideoSeriesIdType.dexdump.txt",
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;",
+      "dex_member": "classes15.dex",
+      "output_sha256": "7dd9c19b56aecfb8129609063201b2e01be77b4fa574538668924f62d16b2b12"
+    },
+    {
+      "path": "ss4-e.dexdump.txt",
+      "class": "Lss4/e;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "11c868d200470b9e81b0ca05ff2c542b293609cfbd187dc5776ddcaeb7f73497"
+    },
+    {
+      "path": "ss4-g.dexdump.txt",
+      "class": "Lss4/g;",
+      "dex_member": "classes3.dex",
+      "output_sha256": "87e71273811f3b3c2942737e27a0324edbfc02933e7e6af7b4d561f381d92b2b"
+    }
+  ]
+}

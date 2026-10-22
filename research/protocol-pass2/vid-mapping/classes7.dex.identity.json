@@ -1,0 +1,13 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes7.dex",
+  "dex_sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+  "dex_bytes": 11728768,
+  "requested_classes": [
+    "Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;"
+  ],
+  "class_outputs": {
+    "Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;": "com-dragon-read-novelvideo-shortseries-ShortSeriesVideoModelCache$c.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

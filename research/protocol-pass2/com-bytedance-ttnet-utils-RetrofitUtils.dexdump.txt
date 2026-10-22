@@ -1,0 +1,2788 @@
+  Class descriptor  : 'Lcom/bytedance/ttnet/utils/RetrofitUtils;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'sInterceptors'
+      type          : 'Ljava/util/concurrent/CopyOnWriteArrayList;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #1              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'sOKRetrofitCache'
+      type          : 'Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;'
+      access        : 0x000a (PRIVATE STATIC)
+    #2              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'sRetrofitCache'
+      type          : 'Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 35 16-bit code units
+52ac4c:                                        |[52ac4c] com.bytedance.ttnet.utils.RetrofitUtils.<clinit>:()V
+52ac5c: 1400 7aa0 0800                         |0000: const v0, #float 7.92252e-40 // #0008a07a
+52ac62: 7110 a516 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@16a5
+52ac68: 2200 9c37                              |0006: new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList; // type@379c
+52ac6c: 7010 a4c8 0000                         |0008: invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;.<init>:()V // method@c8a4
+52ac72: 6900 aa20                              |000b: sput-object v0, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52ac76: 6200 aa20                              |000d: sget-object v0, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52ac7a: 7110 421b 0000                         |000f: invoke-static {v0}, Lcom/bytedance/retrofit2/Retrofit;.setCommonInterceptor:(Ljava/util/concurrent/CopyOnWriteArrayList;)V // method@1b42
+52ac80: 2200 2308                              |0012: new-instance v0, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // type@0823
+52ac84: 1301 0a00                              |0014: const/16 v1, #int 10 // #a
+52ac88: 7020 6217 1000                         |0016: invoke-direct {v0, v1}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.<init>:(I)V // method@1762
+52ac8e: 6900 ac20                              |0019: sput-object v0, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ac
+52ac92: 2200 2308                              |001b: new-instance v0, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // type@0823
+52ac96: 7020 6217 1000                         |001d: invoke-direct {v0, v1}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.<init>:(I)V // method@1762
+52ac9c: 6900 ab20                              |0020: sput-object v0, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sOKRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ab
+52aca0: 0e00                                   |0022: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+      locals        :
+
+    #1              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+52aca4:                                        |[52aca4] com.bytedance.ttnet.utils.RetrofitUtils.<init>:()V
+52acb4: 7010 cfc5 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@c5cf
+52acba: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/bytedance/ttnet/utils/RetrofitUtils;
+
+    #2              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'addCacheValidationHeaders'
+      type          : '(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 36 16-bit code units
+52acbc:                                        |[52acbc] com.bytedance.ttnet.utils.RetrofitUtils.addCacheValidationHeaders:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+52accc: 3902 0300                              |0000: if-nez v2, 0003 // +0003
+52acd0: 0e00                                   |0002: return-void
+52acd2: 7110 6a16 0300                         |0003: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52acd8: 0a00                                   |0006: move-result v0
+52acda: 3900 0c00                              |0007: if-nez v0, 0013 // +000c
+52acde: 2200 7d0a                              |0009: new-instance v0, Lcom/bytedance/retrofit2/client/Header; // type@0a7d
+52ace2: 1a01 f018                              |000b: const-string v1, "If-None-Match" // string@18f0
+52ace6: 7030 521b 1003                         |000d: invoke-direct {v0, v1, v3}, Lcom/bytedance/retrofit2/client/Header;.<init>:(Ljava/lang/String;Ljava/lang/String;)V // method@1b52
+52acec: 7220 09c8 0200                         |0010: invoke-interface {v2, v0}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@c809
+52acf2: 7110 6a16 0400                         |0013: invoke-static {v4}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52acf8: 0a03                                   |0016: move-result v3
+52acfa: 3903 0c00                              |0017: if-nez v3, 0023 // +000c
+52acfe: 2203 7d0a                              |0019: new-instance v3, Lcom/bytedance/retrofit2/client/Header; // type@0a7d
+52ad02: 1a00 ef18                              |001b: const-string v0, "If-Modified-Since" // string@18ef
+52ad06: 7030 521b 0304                         |001d: invoke-direct {v3, v0, v4}, Lcom/bytedance/retrofit2/client/Header;.<init>:(Ljava/lang/String;Ljava/lang/String;)V // method@1b52
+52ad0c: 7220 09c8 3200                         |0020: invoke-interface {v2, v3}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@c809
+52ad12: 0e00                                   |0023: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50593792
+        0x0001 line=50593793
+        0x0002 line=50593794
+        0x0003 line=50593795
+        0x0004 line=50593796
+        0x0005 line=50593797
+        0x0006 line=50593798
+        0x0007 line=50593799
+        0x0008 line=50593800
+        0x0009 line=50593801
+        0x000a line=50593802
+        0x000b line=50593803
+        0x000c line=50593804
+        0x000d line=50593805
+        0x000e line=50593806
+        0x000f line=50593807
+        0x0010 line=50593808
+        0x0011 line=50593809
+        0x0012 line=50593810
+        0x0013 line=50593811
+        0x0014 line=50593812
+        0x0015 line=50593813
+        0x0016 line=50593814
+        0x0017 line=50593815
+        0x0018 line=50593816
+        0x0019 line=50593817
+        0x001a line=50593818
+        0x001b line=50593819
+        0x001c line=50593820
+        0x001d line=50593821
+        0x001e line=50593822
+        0x001f line=50593823
+        0x0020 line=50593824
+        0x0021 line=50593825
+        0x0022 line=50593826
+        0x0023 line=50593827
+      locals        :
+        0x0000 - 0x0024 reg=2 (null) Ljava/util/List;
+        0x0000 - 0x0024 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0024 reg=4 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'addInterceptor'
+      type          : '(Lcom/bytedance/retrofit2/intercept/Interceptor;)V'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 35 16-bit code units
+52ad14:                                        |[52ad14] com.bytedance.ttnet.utils.RetrofitUtils.addInterceptor:(Lcom/bytedance/retrofit2/intercept/Interceptor;)V
+52ad24: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52ad28: 1d00                                   |0002: monitor-enter v0
+52ad2a: 3902 0400                              |0003: if-nez v2, 0007 // +0004
+52ad2e: 1e00                                   |0005: monitor-exit v0
+52ad30: 0e00                                   |0006: return-void
+52ad32: 6201 aa20                              |0007: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52ad36: 6e20 aac8 2100                         |0009: invoke-virtual {v1, v2}, Ljava/util/concurrent/CopyOnWriteArrayList;.contains:(Ljava/lang/Object;)Z // method@c8aa
+52ad3c: 0a01                                   |000c: move-result v1
+52ad3e: 3901 0700                              |000d: if-nez v1, 0014 // +0007
+52ad42: 6201 aa20                              |000f: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52ad46: 6e20 a7c8 2100                         |0011: invoke-virtual {v1, v2}, Ljava/util/concurrent/CopyOnWriteArrayList;.add:(Ljava/lang/Object;)Z // method@c8a7
+52ad4c: 6201 ac20                              |0014: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ac
+52ad50: 7120 ea52 2100                         |0016: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/d;.e:(Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;Lcom/bytedance/retrofit2/intercept/Interceptor;)V // method@52ea
+52ad56: 6201 ab20                              |0019: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sOKRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ab
+52ad5a: 7120 ea52 2100                         |001b: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/d;.e:(Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;Lcom/bytedance/retrofit2/intercept/Interceptor;)V // method@52ea
+52ad60: 1e00                                   |001e: monitor-exit v0
+52ad62: 0e00                                   |001f: return-void
+52ad64: 0d02                                   |0020: move-exception v2
+52ad66: 1e00                                   |0021: monitor-exit v0
+52ad68: 2702                                   |0022: throw v2
+      catches       : 1
+        0x0007 - 0x001e
+          <any> -> 0x0020
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+      locals        :
+        0x0000 - 0x0023 reg=2 (null) Lcom/bytedance/retrofit2/intercept/Interceptor;
+
+    #4              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createOkRetrofit'
+      type          : '(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 6
+      ins           : 4
+      outs          : 5
+      insns size    : 17 16-bit code units
+52ad78:                                        |[52ad78] com.bytedance.ttnet.utils.RetrofitUtils.createOkRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit;
+52ad88: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52ad8c: 1d00                                   |0002: monitor-enter v0
+52ad8e: 2201 2816                              |0003: new-instance v1, Lcom/bytedance/ttnet/utils/RetrofitUtils$d; // type@1628
+52ad92: 7010 b652 0100                         |0005: invoke-direct {v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils$d;.<init>:()V // method@52b6
+52ad98: 7151 c052 3254                         |0008: invoke-static {v2, v3, v4, v5, v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit; // method@52c0
+52ad9e: 0c02                                   |000b: move-result-object v2
+52ada0: 1e00                                   |000c: monitor-exit v0
+52ada2: 1102                                   |000d: return-object v2
+52ada4: 0d02                                   |000e: move-exception v2
+52ada6: 1e00                                   |000f: monitor-exit v0
+52ada8: 2702                                   |0010: throw v2
+      catches       : 1
+        0x0003 - 0x000c
+          <any> -> 0x000e
+      positions     :
+        0x0000 line=67305472
+        0x0001 line=67305473
+        0x0002 line=67305474
+        0x0003 line=67305475
+        0x0004 line=67305476
+        0x0005 line=67305477
+        0x0006 line=67305478
+        0x0007 line=67305479
+        0x0008 line=67305480
+        0x0009 line=67305481
+        0x000a line=67305482
+        0x000b line=67305483
+        0x000c line=67305484
+        0x000d line=67305485
+        0x000e line=67305486
+        0x000f line=67305487
+        0x0010 line=67305488
+      locals        :
+        0x0000 - 0x0011 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0011 reg=3 (null) Ljava/util/List;
+        0x0000 - 0x0011 reg=4 (null) Lcom/bytedance/retrofit2/Converter$Factory;
+        0x0000 - 0x0011 reg=5 (null) Lcom/bytedance/retrofit2/CallAdapter$Factory;
+
+    #5              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createOkService'
+      type          : '(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 16 16-bit code units
+52adb8:                                        |[52adb8] com.bytedance.ttnet.utils.RetrofitUtils.createOkService:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+52adc8: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52adcc: 1d00                                   |0002: monitor-enter v0
+52adce: 7110 ce52 0100                         |0003: invoke-static {v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getOkRetrofit:(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit; // method@52ce
+52add4: 0c01                                   |0006: move-result-object v1
+52add6: 7120 c252 2100                         |0007: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createService:(Lcom/bytedance/retrofit2/Retrofit;Ljava/lang/Class;)Ljava/lang/Object; // method@52c2
+52addc: 0c01                                   |000a: move-result-object v1
+52adde: 1e00                                   |000b: monitor-exit v0
+52ade0: 1101                                   |000c: return-object v1
+52ade2: 0d01                                   |000d: move-exception v1
+52ade4: 1e00                                   |000e: monitor-exit v0
+52ade6: 2701                                   |000f: throw v1
+      catches       : 1
+        0x0003 - 0x000b
+          <any> -> 0x000d
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+        0x000b line=33685515
+        0x000c line=33685516
+        0x000d line=33685517
+        0x000e line=33685518
+        0x000f line=33685519
+      locals        :
+        0x0000 - 0x0010 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0010 reg=2 (null) Ljava/lang/Class;
+
+    #6              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createRetrofit'
+      type          : '(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 8
+      ins           : 5
+      outs          : 5
+      insns size    : 36 16-bit code units
+52adf4:                                        |[52adf4] com.bytedance.ttnet.utils.RetrofitUtils.createRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit;
+52ae04: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52ae08: 1d00                                   |0002: monitor-enter v0
+52ae0a: 1201                                   |0003: const/4 v1, #int 0 // #0
+52ae0c: 3805 0d00                              |0004: if-eqz v5, 0011 // +000d
+52ae10: 2202 6d37                              |0006: new-instance v2, Ljava/util/ArrayList; // type@376d
+52ae14: 7010 45c7 0200                         |0008: invoke-direct {v2}, Ljava/util/ArrayList;.<init>:()V // method@c745
+52ae1a: 6e20 49c7 5200                         |000b: invoke-virtual {v2, v5}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c749
+52ae20: 2804                                   |000e: goto 0012 // +0004
+52ae22: 0d03                                   |000f: move-exception v3
+52ae24: 2812                                   |0010: goto 0022 // +0012
+52ae26: 0712                                   |0011: move-object v2, v1
+52ae28: 3806 0a00                              |0012: if-eqz v6, 001c // +000a
+52ae2c: 2201 6d37                              |0014: new-instance v1, Ljava/util/ArrayList; // type@376d
+52ae30: 7010 45c7 0100                         |0016: invoke-direct {v1}, Ljava/util/ArrayList;.<init>:()V // method@c745
+52ae36: 6e20 49c7 6100                         |0019: invoke-virtual {v1, v6}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c749
+52ae3c: 7153 c152 2471                         |001c: invoke-static {v4, v2, v1, v7, v3}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createRetrofit:(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lcom/bytedance/retrofit2/client/Client$Provider;Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit; // method@52c1
+52ae42: 0c03                                   |001f: move-result-object v3
+52ae44: 1e00                                   |0020: monitor-exit v0
+52ae46: 1103                                   |0021: return-object v3
+52ae48: 1e00                                   |0022: monitor-exit v0
+52ae4a: 2703                                   |0023: throw v3
+      catches       : 1
+        0x0006 - 0x0020
+          <any> -> 0x000f
+      positions     :
+        0x0000 line=84148224
+        0x0001 line=84148225
+        0x0002 line=84148226
+        0x0003 line=84148227
+        0x0004 line=84148228
+        0x0005 line=84148229
+        0x0006 line=84148230
+        0x0007 line=84148231
+        0x0008 line=84148232
+        0x0009 line=84148233
+        0x000a line=84148234
+        0x000b line=84148235
+        0x000c line=84148236
+        0x000d line=84148237
+        0x000e line=84148238
+        0x000f line=84148239
+        0x0010 line=84148240
+        0x0011 line=84148241
+        0x0012 line=84148242
+        0x0013 line=84148243
+        0x0014 line=84148244
+        0x0015 line=84148245
+        0x0016 line=84148246
+        0x0017 line=84148247
+        0x0018 line=84148248
+        0x0019 line=84148249
+        0x001a line=84148250
+        0x001b line=84148251
+        0x001c line=84148252
+        0x001d line=84148253
+        0x001e line=84148254
+        0x001f line=84148255
+        0x0020 line=84148256
+        0x0021 line=84148257
+        0x0022 line=84148258
+        0x0023 line=84148259
+      locals        :
+        0x0000 - 0x0024 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0024 reg=4 (null) Ljava/util/List;
+        0x0000 - 0x0024 reg=5 (null) Lcom/bytedance/retrofit2/Converter$Factory;
+        0x0000 - 0x0024 reg=6 (null) Lcom/bytedance/retrofit2/CallAdapter$Factory;
+        0x0000 - 0x0024 reg=7 (null) Lcom/bytedance/retrofit2/client/Client$Provider;
+
+    #7              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createRetrofit'
+      type          : '(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lcom/bytedance/retrofit2/client/Client$Provider;Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 8
+      ins           : 5
+      outs          : 3
+      insns size    : 216 16-bit code units
+52ae58:                                        |[52ae58] com.bytedance.ttnet.utils.RetrofitUtils.createRetrofit:(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lcom/bytedance/retrofit2/client/Client$Provider;Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;
+52ae68: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52ae6c: 1d00                                   |0002: monitor-enter v0
+52ae6e: 3906 0700                              |0003: if-nez v6, 000a // +0007
+52ae72: 2206 2916                              |0005: new-instance v6, Lcom/bytedance/ttnet/utils/RetrofitUtils$e; // type@1629
+52ae76: 7010 b852 0600                         |0007: invoke-direct {v6}, Lcom/bytedance/ttnet/utils/RetrofitUtils$e;.<init>:()V // method@52b8
+52ae7c: 2201 730a                              |000a: new-instance v1, Lcom/bytedance/retrofit2/Retrofit$Builder; // type@0a73
+52ae80: 7010 381b 0100                         |000c: invoke-direct {v1}, Lcom/bytedance/retrofit2/Retrofit$Builder;.<init>:()V // method@1b38
+52ae86: 6e20 3f1b 7100                         |000f: invoke-virtual {v1, v7}, Lcom/bytedance/retrofit2/Retrofit$Builder;.setEndpoint:(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b3f
+52ae8c: 0c07                                   |0012: move-result-object v7
+52ae8e: 6e20 3d1b 6700                         |0013: invoke-virtual {v7, v6}, Lcom/bytedance/retrofit2/Retrofit$Builder;.client:(Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b3d
+52ae94: 0c06                                   |0016: move-result-object v6
+52ae96: 2207 1f08                              |0017: new-instance v7, Lcom/bytedance/frameworks/baselib/network/http/retrofit/SsHttpExecutor; // type@081f
+52ae9a: 7010 5d17 0700                         |0019: invoke-direct {v7}, Lcom/bytedance/frameworks/baselib/network/http/retrofit/SsHttpExecutor;.<init>:()V // method@175d
+52aea0: 6e20 3e1b 7600                         |001c: invoke-virtual {v6, v7}, Lcom/bytedance/retrofit2/Retrofit$Builder;.httpExecutor:(Ljava/util/concurrent/Executor;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b3e
+52aea6: 0c06                                   |001f: move-result-object v6
+52aea8: 3904 0700                              |0020: if-nez v4, 0027 // +0007
+52aeac: 2204 6d37                              |0022: new-instance v4, Ljava/util/ArrayList; // type@376d
+52aeb0: 7010 45c7 0400                         |0024: invoke-direct {v4}, Ljava/util/ArrayList;.<init>:()V // method@c745
+52aeb6: 7210 13c8 0400                         |0027: invoke-interface {v4}, Ljava/util/List;.isEmpty:()Z // method@c813
+52aebc: 0a07                                   |002a: move-result v7
+52aebe: 3807 0900                              |002b: if-eqz v7, 0034 // +0009
+52aec2: 7100 5e17 0000                         |002d: invoke-static {}, Lcom/bytedance/frameworks/baselib/network/http/retrofit/converter/gson/GsonConverterFactory;.create:()Lcom/bytedance/frameworks/baselib/network/http/retrofit/converter/gson/GsonConverterFactory; // method@175e
+52aec8: 0c07                                   |0030: move-result-object v7
+52aeca: 7220 09c8 7400                         |0031: invoke-interface {v4, v7}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@c809
+52aed0: 7210 14c8 0400                         |0034: invoke-interface {v4}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52aed6: 0c04                                   |0037: move-result-object v4
+52aed8: 7210 d7c7 0400                         |0038: invoke-interface {v4}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52aede: 0a07                                   |003b: move-result v7
+52aee0: 3807 0c00                              |003c: if-eqz v7, 0048 // +000c
+52aee4: 7210 d8c7 0400                         |003e: invoke-interface {v4}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52aeea: 0c07                                   |0041: move-result-object v7
+52aeec: 1f07 6f0a                              |0042: check-cast v7, Lcom/bytedance/retrofit2/Converter$Factory; // type@0a6f
+52aef0: 6e20 3a1b 7600                         |0044: invoke-virtual {v6, v7}, Lcom/bytedance/retrofit2/Retrofit$Builder;.addConverterFactory:(Lcom/bytedance/retrofit2/Converter$Factory;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b3a
+52aef6: 28f1                                   |0047: goto 0038 // -000f
+52aef8: 3805 1c00                              |0048: if-eqz v5, 0064 // +001c
+52aefc: 7210 13c8 0500                         |004a: invoke-interface {v5}, Ljava/util/List;.isEmpty:()Z // method@c813
+52af02: 0a04                                   |004d: move-result v4
+52af04: 3904 1600                              |004e: if-nez v4, 0064 // +0016
+52af08: 7210 14c8 0500                         |0050: invoke-interface {v5}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52af0e: 0c04                                   |0053: move-result-object v4
+52af10: 7210 d7c7 0400                         |0054: invoke-interface {v4}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52af16: 0a05                                   |0057: move-result v5
+52af18: 3805 0c00                              |0058: if-eqz v5, 0064 // +000c
+52af1c: 7210 d8c7 0400                         |005a: invoke-interface {v4}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52af22: 0c05                                   |005d: move-result-object v5
+52af24: 1f05 6c0a                              |005e: check-cast v5, Lcom/bytedance/retrofit2/CallAdapter$Factory; // type@0a6c
+52af28: 6e20 391b 5600                         |0060: invoke-virtual {v6, v5}, Lcom/bytedance/retrofit2/Retrofit$Builder;.addCallAdapterFactory:(Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b39
+52af2e: 28f1                                   |0063: goto 0054 // -000f
+52af30: 2204 7d37                              |0064: new-instance v4, Ljava/util/LinkedList; // type@377d
+52af34: 7010 f0c7 0400                         |0066: invoke-direct {v4}, Ljava/util/LinkedList;.<init>:()V // method@c7f0
+52af3a: 1205                                   |0069: const/4 v5, #int 0 // #0
+52af3c: 3803 2d00                              |006a: if-eqz v3, 0097 // +002d
+52af40: 7210 1cc8 0300                         |006c: invoke-interface {v3}, Ljava/util/List;.size:()I // method@c81c
+52af46: 0a07                                   |006f: move-result v7
+52af48: 3d07 2700                              |0070: if-lez v7, 0097 // +0027
+52af4c: 7210 14c8 0300                         |0072: invoke-interface {v3}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52af52: 0c03                                   |0075: move-result-object v3
+52af54: 1207                                   |0076: const/4 v7, #int 0 // #0
+52af56: 7210 d7c7 0300                         |0077: invoke-interface {v3}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52af5c: 0a01                                   |007a: move-result v1
+52af5e: 3801 1d00                              |007b: if-eqz v1, 0098 // +001d
+52af62: 7210 d8c7 0300                         |007d: invoke-interface {v3}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52af68: 0c01                                   |0080: move-result-object v1
+52af6a: 1f01 960a                              |0081: check-cast v1, Lcom/bytedance/retrofit2/intercept/Interceptor; // type@0a96
+52af6e: 2012 9748                              |0083: instance-of v2, v1, Lys1/a; // type@4897
+52af72: 3802 0900                              |0085: if-eqz v2, 008e // +0009
+52af76: 3907 f0ff                              |0087: if-nez v7, 0077 // -0010
+52af7a: 6e20 f3c7 1400                         |0089: invoke-virtual {v4, v1}, Ljava/util/LinkedList;.add:(Ljava/lang/Object;)Z // method@c7f3
+52af80: 1217                                   |008c: const/4 v7, #int 1 // #1
+52af82: 2806                                   |008d: goto 0093 // +0006
+52af84: 2012 0935                              |008e: instance-of v2, v1, Lhl0/b; // type@3509
+52af88: 3802 0300                              |0090: if-eqz v2, 0093 // +0003
+52af8c: 28e5                                   |0092: goto 0077 // -001b
+52af8e: 6e20 f3c7 1400                         |0093: invoke-virtual {v4, v1}, Ljava/util/LinkedList;.add:(Ljava/lang/Object;)Z // method@c7f3
+52af94: 28e1                                   |0096: goto 0077 // -001f
+52af96: 1207                                   |0097: const/4 v7, #int 0 // #0
+52af98: 3907 0a00                              |0098: if-nez v7, 00a2 // +000a
+52af9c: 2203 9748                              |009a: new-instance v3, Lys1/a; // type@4897
+52afa0: 7010 84fc 0300                         |009c: invoke-direct {v3}, Lys1/a;.<init>:()V // method@fc84
+52afa6: 6e30 f2c7 5403                         |009f: invoke-virtual {v4, v5, v3}, Ljava/util/LinkedList;.add:(ILjava/lang/Object;)V // method@c7f2
+52afac: 6203 aa20                              |00a2: sget-object v3, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52afb0: 3803 0f00                              |00a4: if-eqz v3, 00b3 // +000f
+52afb4: 6203 aa20                              |00a6: sget-object v3, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52afb8: 6e10 b0c8 0300                         |00a8: invoke-virtual {v3}, Ljava/util/concurrent/CopyOnWriteArrayList;.size:()I // method@c8b0
+52afbe: 0a03                                   |00ab: move-result v3
+52afc0: 3d03 0700                              |00ac: if-lez v3, 00b3 // +0007
+52afc4: 6203 aa20                              |00ae: sget-object v3, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52afc8: 6e20 f4c7 3400                         |00b0: invoke-virtual {v4, v3}, Ljava/util/LinkedList;.addAll:(Ljava/util/Collection;)Z // method@c7f4
+52afce: 2203 0935                              |00b3: new-instance v3, Lhl0/b; // type@3509
+52afd2: 7010 8fbf 0300                         |00b5: invoke-direct {v3}, Lhl0/b;.<init>:()V // method@bf8f
+52afd8: 6e20 f3c7 3400                         |00b8: invoke-virtual {v4, v3}, Ljava/util/LinkedList;.add:(Ljava/lang/Object;)Z // method@c7f3
+52afde: 7210 14c8 0400                         |00bb: invoke-interface {v4}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52afe4: 0c03                                   |00be: move-result-object v3
+52afe6: 7210 d7c7 0300                         |00bf: invoke-interface {v3}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52afec: 0a04                                   |00c2: move-result v4
+52afee: 3804 0c00                              |00c3: if-eqz v4, 00cf // +000c
+52aff2: 7210 d8c7 0300                         |00c5: invoke-interface {v3}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52aff8: 0c04                                   |00c8: move-result-object v4
+52affa: 1f04 960a                              |00c9: check-cast v4, Lcom/bytedance/retrofit2/intercept/Interceptor; // type@0a96
+52affe: 6e20 3b1b 4600                         |00cb: invoke-virtual {v6, v4}, Lcom/bytedance/retrofit2/Retrofit$Builder;.addInterceptor:(Lcom/bytedance/retrofit2/intercept/Interceptor;)Lcom/bytedance/retrofit2/Retrofit$Builder; // method@1b3b
+52b004: 28f1                                   |00ce: goto 00bf // -000f
+52b006: 6e10 3c1b 0600                         |00cf: invoke-virtual {v6}, Lcom/bytedance/retrofit2/Retrofit$Builder;.build:()Lcom/bytedance/retrofit2/Retrofit; // method@1b3c
+52b00c: 0c03                                   |00d2: move-result-object v3
+52b00e: 1e00                                   |00d3: monitor-exit v0
+52b010: 1103                                   |00d4: return-object v3
+52b012: 0d03                                   |00d5: move-exception v3
+52b014: 1e00                                   |00d6: monitor-exit v0
+52b016: 2703                                   |00d7: throw v3
+      catches       : 1
+        0x0005 - 0x00d3
+          <any> -> 0x00d5
+      positions     :
+        0x0000 line=84279296
+        0x0001 line=84279297
+        0x0002 line=84279298
+        0x0003 line=84279299
+        0x0004 line=84279300
+        0x0005 line=84279301
+        0x0006 line=84279302
+        0x0007 line=84279303
+        0x0008 line=84279304
+        0x0009 line=84279305
+        0x000a line=84279306
+        0x000b line=84279307
+        0x000c line=84279308
+        0x000d line=84279309
+        0x000e line=84279310
+        0x000f line=84279311
+        0x0010 line=84279312
+        0x0011 line=84279313
+        0x0012 line=84279314
+        0x0013 line=84279315
+        0x0014 line=84279316
+        0x0015 line=84279317
+        0x0016 line=84279318
+        0x0017 line=84279319
+        0x0018 line=84279320
+        0x0019 line=84279321
+        0x001a line=84279322
+        0x001b line=84279323
+        0x001c line=84279324
+        0x001d line=84279325
+        0x001e line=84279326
+        0x001f line=84279327
+        0x0020 line=84279328
+        0x0021 line=84279329
+        0x0022 line=84279330
+        0x0023 line=84279331
+        0x0024 line=84279332
+        0x0025 line=84279333
+        0x0026 line=84279334
+        0x0027 line=84279335
+        0x0028 line=84279336
+        0x0029 line=84279337
+        0x002a line=84279338
+        0x002b line=84279339
+        0x002c line=84279340
+        0x002d line=84279341
+        0x002e line=84279342
+        0x002f line=84279343
+        0x0030 line=84279344
+        0x0031 line=84279345
+        0x0032 line=84279346
+        0x0033 line=84279347
+        0x0034 line=84279348
+        0x0035 line=84279349
+        0x0036 line=84279350
+        0x0037 line=84279351
+        0x0038 line=84279352
+        0x0039 line=84279353
+        0x003a line=84279354
+        0x003b line=84279355
+        0x003c line=84279356
+        0x003d line=84279357
+        0x003e line=84279358
+        0x003f line=84279359
+        0x0040 line=84279360
+        0x0041 line=84279361
+        0x0042 line=84279362
+        0x0043 line=84279363
+        0x0044 line=84279364
+        0x0045 line=84279365
+        0x0046 line=84279366
+        0x0047 line=84279367
+        0x0048 line=84279368
+        0x0049 line=84279369
+        0x004a line=84279370
+        0x004b line=84279371
+        0x004c line=84279372
+        0x004d line=84279373
+        0x004e line=84279374
+        0x004f line=84279375
+        0x0050 line=84279376
+        0x0051 line=84279377
+        0x0052 line=84279378
+        0x0053 line=84279379
+        0x0054 line=84279380
+        0x0055 line=84279381
+        0x0056 line=84279382
+        0x0057 line=84279383
+        0x0058 line=84279384
+        0x0059 line=84279385
+        0x005a line=84279386
+        0x005b line=84279387
+        0x005c line=84279388
+        0x005d line=84279389
+        0x005e line=84279390
+        0x005f line=84279391
+        0x0060 line=84279392
+        0x0061 line=84279393
+        0x0062 line=84279394
+        0x0063 line=84279395
+        0x0064 line=84279396
+        0x0065 line=84279397
+        0x0066 line=84279398
+        0x0067 line=84279399
+        0x0068 line=84279400
+        0x0069 line=84279401
+        0x006a line=84279402
+        0x006b line=84279403
+        0x006c line=84279404
+        0x006d line=84279405
+        0x006e line=84279406
+        0x006f line=84279407
+        0x0070 line=84279408
+        0x0071 line=84279409
+        0x0072 line=84279410
+        0x0073 line=84279411
+        0x0074 line=84279412
+        0x0075 line=84279413
+        0x0076 line=84279414
+        0x0077 line=84279415
+        0x0078 line=84279416
+        0x0079 line=84279417
+        0x007a line=84279418
+        0x007b line=84279419
+        0x007c line=84279420
+        0x007d line=84279421
+        0x007e line=84279422
+        0x007f line=84279423
+        0x0080 line=84279424
+        0x0081 line=84279425
+        0x0082 line=84279426
+        0x0083 line=84279427
+        0x0084 line=84279428
+        0x0085 line=84279429
+        0x0086 line=84279430
+        0x0087 line=84279431
+        0x0088 line=84279432
+        0x0089 line=84279433
+        0x008a line=84279434
+        0x008b line=84279435
+        0x008c line=84279436
+        0x008d line=84279437
+        0x008e line=84279438
+        0x008f line=84279439
+        0x0090 line=84279440
+        0x0091 line=84279441
+        0x0092 line=84279442
+        0x0093 line=84279443
+        0x0094 line=84279444
+        0x0095 line=84279445
+        0x0096 line=84279446
+        0x0097 line=84279447
+        0x0098 line=84279448
+        0x0099 line=84279449
+        0x009a line=84279450
+        0x009b line=84279451
+        0x009c line=84279452
+        0x009d line=84279453
+        0x009e line=84279454
+        0x009f line=84279455
+        0x00a0 line=84279456
+        0x00a1 line=84279457
+        0x00a2 line=84279458
+        0x00a3 line=84279459
+        0x00a4 line=84279460
+        0x00a5 line=84279461
+        0x00a6 line=84279462
+        0x00a7 line=84279463
+        0x00a8 line=84279464
+        0x00a9 line=84279465
+        0x00aa line=84279466
+        0x00ab line=84279467
+        0x00ac line=84279468
+        0x00ad line=84279469
+        0x00ae line=84279470
+        0x00af line=84279471
+        0x00b0 line=84279472
+        0x00b1 line=84279473
+        0x00b2 line=84279474
+        0x00b3 line=84279475
+        0x00b4 line=84279476
+        0x00b5 line=84279477
+        0x00b6 line=84279478
+        0x00b7 line=84279479
+        0x00b8 line=84279480
+        0x00b9 line=84279481
+        0x00ba line=84279482
+        0x00bb line=84279483
+        0x00bc line=84279484
+        0x00bd line=84279485
+        0x00be line=84279486
+        0x00bf line=84279487
+        0x00c0 line=84279488
+        0x00c1 line=84279489
+        0x00c2 line=84279490
+        0x00c3 line=84279491
+        0x00c4 line=84279492
+        0x00c5 line=84279493
+        0x00c6 line=84279494
+        0x00c7 line=84279495
+        0x00c8 line=84279496
+        0x00c9 line=84279497
+        0x00ca line=84279498
+        0x00cb line=84279499
+        0x00cc line=84279500
+        0x00cd line=84279501
+        0x00ce line=84279502
+        0x00cf line=84279503
+        0x00d0 line=84279504
+        0x00d1 line=84279505
+        0x00d2 line=84279506
+        0x00d3 line=84279507
+        0x00d4 line=84279508
+        0x00d5 line=84279509
+        0x00d6 line=84279510
+        0x00d7 line=84279511
+      locals        :
+        0x0000 - 0x00d8 reg=3 (null) Ljava/util/List;
+        0x0000 - 0x00d8 reg=4 (null) Ljava/util/List;
+        0x0000 - 0x00d8 reg=5 (null) Ljava/util/List;
+        0x0000 - 0x00d8 reg=6 (null) Lcom/bytedance/retrofit2/client/Client$Provider;
+        0x0000 - 0x00d8 reg=7 (null) Ljava/lang/String;
+
+    #8              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createService'
+      type          : '(Lcom/bytedance/retrofit2/Retrofit;Ljava/lang/Class;)Ljava/lang/Object;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 17 16-bit code units
+52b024:                                        |[52b024] com.bytedance.ttnet.utils.RetrofitUtils.createService:(Lcom/bytedance/retrofit2/Retrofit;Ljava/lang/Class;)Ljava/lang/Object;
+52b034: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b038: 1d00                                   |0002: monitor-enter v0
+52b03a: 3801 0b00                              |0003: if-eqz v1, 000e // +000b
+52b03e: 6e20 401b 2100                         |0005: invoke-virtual {v1, v2}, Lcom/bytedance/retrofit2/Retrofit;.create:(Ljava/lang/Class;)Ljava/lang/Object; // method@1b40
+52b044: 0c01                                   |0008: move-result-object v1
+52b046: 1e00                                   |0009: monitor-exit v0
+52b048: 1101                                   |000a: return-object v1
+52b04a: 0d01                                   |000b: move-exception v1
+52b04c: 1e00                                   |000c: monitor-exit v0
+52b04e: 2701                                   |000d: throw v1
+52b050: 1e00                                   |000e: monitor-exit v0
+52b052: 1201                                   |000f: const/4 v1, #int 0 // #0
+52b054: 1101                                   |0010: return-object v1
+      catches       : 1
+        0x0005 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=33751040
+        0x0001 line=33751041
+        0x0002 line=33751042
+        0x0003 line=33751043
+        0x0004 line=33751044
+        0x0005 line=33751045
+        0x0006 line=33751046
+        0x0007 line=33751047
+        0x0008 line=33751048
+        0x0009 line=33751049
+        0x000a line=33751050
+        0x000b line=33751051
+        0x000c line=33751052
+        0x000d line=33751053
+        0x000e line=33751054
+        0x000f line=33751055
+        0x0010 line=33751056
+      locals        :
+        0x0000 - 0x0011 reg=1 (null) Lcom/bytedance/retrofit2/Retrofit;
+        0x0000 - 0x0011 reg=2 (null) Ljava/lang/Class;
+
+    #9              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createSsRetrofit'
+      type          : '(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 4
+      insns size    : 13 16-bit code units
+52b064:                                        |[52b064] com.bytedance.ttnet.utils.RetrofitUtils.createSsRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;)Lcom/bytedance/retrofit2/Retrofit;
+52b074: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b078: 1d00                                   |0002: monitor-enter v0
+52b07a: 1201                                   |0003: const/4 v1, #int 0 // #0
+52b07c: 7140 c452 3214                         |0004: invoke-static {v2, v3, v4, v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createSsRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit; // method@52c4
+52b082: 0c02                                   |0007: move-result-object v2
+52b084: 1e00                                   |0008: monitor-exit v0
+52b086: 1102                                   |0009: return-object v2
+52b088: 0d02                                   |000a: move-exception v2
+52b08a: 1e00                                   |000b: monitor-exit v0
+52b08c: 2702                                   |000c: throw v2
+      catches       : 1
+        0x0004 - 0x0008
+          <any> -> 0x000a
+      positions     :
+        0x0000 line=50462720
+        0x0001 line=50462721
+        0x0002 line=50462722
+        0x0003 line=50462723
+        0x0004 line=50462724
+        0x0005 line=50462725
+        0x0006 line=50462726
+        0x0007 line=50462727
+        0x0008 line=50462728
+        0x0009 line=50462729
+        0x000a line=50462730
+        0x000b line=50462731
+        0x000c line=50462732
+      locals        :
+        0x0000 - 0x000d reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x000d reg=3 (null) Ljava/util/List;
+        0x0000 - 0x000d reg=4 (null) Lcom/bytedance/retrofit2/Converter$Factory;
+
+    #10              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createSsRetrofit'
+      type          : '(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 6
+      ins           : 4
+      outs          : 5
+      insns size    : 17 16-bit code units
+52b09c:                                        |[52b09c] com.bytedance.ttnet.utils.RetrofitUtils.createSsRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit;
+52b0ac: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b0b0: 1d00                                   |0002: monitor-enter v0
+52b0b2: 2201 2616                              |0003: new-instance v1, Lcom/bytedance/ttnet/utils/RetrofitUtils$b; // type@1626
+52b0b6: 7010 b252 0100                         |0005: invoke-direct {v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils$b;.<init>:()V // method@52b2
+52b0bc: 7151 c052 3254                         |0008: invoke-static {v2, v3, v4, v5, v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit; // method@52c0
+52b0c2: 0c02                                   |000b: move-result-object v2
+52b0c4: 1e00                                   |000c: monitor-exit v0
+52b0c6: 1102                                   |000d: return-object v2
+52b0c8: 0d02                                   |000e: move-exception v2
+52b0ca: 1e00                                   |000f: monitor-exit v0
+52b0cc: 2702                                   |0010: throw v2
+      catches       : 1
+        0x0003 - 0x000c
+          <any> -> 0x000e
+      positions     :
+        0x0000 line=67305472
+        0x0001 line=67305473
+        0x0002 line=67305474
+        0x0003 line=67305475
+        0x0004 line=67305476
+        0x0005 line=67305477
+        0x0006 line=67305478
+        0x0007 line=67305479
+        0x0008 line=67305480
+        0x0009 line=67305481
+        0x000a line=67305482
+        0x000b line=67305483
+        0x000c line=67305484
+        0x000d line=67305485
+        0x000e line=67305486
+        0x000f line=67305487
+        0x0010 line=67305488
+      locals        :
+        0x0000 - 0x0011 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0011 reg=3 (null) Ljava/util/List;
+        0x0000 - 0x0011 reg=4 (null) Lcom/bytedance/retrofit2/Converter$Factory;
+        0x0000 - 0x0011 reg=5 (null) Lcom/bytedance/retrofit2/CallAdapter$Factory;
+
+    #11              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createSsService'
+      type          : '(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 16 16-bit code units
+52b0dc:                                        |[52b0dc] com.bytedance.ttnet.utils.RetrofitUtils.createSsService:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+52b0ec: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b0f0: 1d00                                   |0002: monitor-enter v0
+52b0f2: 7110 d052 0100                         |0003: invoke-static {v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getSsRetrofit:(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit; // method@52d0
+52b0f8: 0c01                                   |0006: move-result-object v1
+52b0fa: 7120 c252 2100                         |0007: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createService:(Lcom/bytedance/retrofit2/Retrofit;Ljava/lang/Class;)Ljava/lang/Object; // method@52c2
+52b100: 0c01                                   |000a: move-result-object v1
+52b102: 1e00                                   |000b: monitor-exit v0
+52b104: 1101                                   |000c: return-object v1
+52b106: 0d01                                   |000d: move-exception v1
+52b108: 1e00                                   |000e: monitor-exit v0
+52b10a: 2701                                   |000f: throw v1
+      catches       : 1
+        0x0003 - 0x000b
+          <any> -> 0x000d
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+        0x000b line=33685515
+        0x000c line=33685516
+        0x000d line=33685517
+        0x000e line=33685518
+        0x000f line=33685519
+      locals        :
+        0x0000 - 0x0010 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0010 reg=2 (null) Ljava/lang/Class;
+
+    #12              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'createTTNetRetrofit'
+      type          : '(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 6
+      ins           : 4
+      outs          : 5
+      insns size    : 17 16-bit code units
+52b118:                                        |[52b118] com.bytedance.ttnet.utils.RetrofitUtils.createTTNetRetrofit:(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/bytedance/retrofit2/Retrofit;
+52b128: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b12c: 1d00                                   |0002: monitor-enter v0
+52b12e: 2201 2716                              |0003: new-instance v1, Lcom/bytedance/ttnet/utils/RetrofitUtils$c; // type@1627
+52b132: 7010 b452 0100                         |0005: invoke-direct {v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils$c;.<init>:()V // method@52b4
+52b138: 7152 c152 4315                         |0008: invoke-static {v3, v4, v5, v1, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createRetrofit:(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lcom/bytedance/retrofit2/client/Client$Provider;Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit; // method@52c1
+52b13e: 0c02                                   |000b: move-result-object v2
+52b140: 1e00                                   |000c: monitor-exit v0
+52b142: 1102                                   |000d: return-object v2
+52b144: 0d02                                   |000e: move-exception v2
+52b146: 1e00                                   |000f: monitor-exit v0
+52b148: 2702                                   |0010: throw v2
+      catches       : 1
+        0x0003 - 0x000c
+          <any> -> 0x000e
+      positions     :
+        0x0000 line=67305472
+        0x0001 line=67305473
+        0x0002 line=67305474
+        0x0003 line=67305475
+        0x0004 line=67305476
+        0x0005 line=67305477
+        0x0006 line=67305478
+        0x0007 line=67305479
+        0x0008 line=67305480
+        0x0009 line=67305481
+        0x000a line=67305482
+        0x000b line=67305483
+        0x000c line=67305484
+        0x000d line=67305485
+        0x000e line=67305486
+        0x000f line=67305487
+        0x0010 line=67305488
+      locals        :
+        0x0000 - 0x0011 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0011 reg=3 (null) Ljava/util/List;
+        0x0000 - 0x0011 reg=4 (null) Ljava/util/List;
+        0x0000 - 0x0011 reg=5 (null) Ljava/util/List;
+
+    #13              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'downloadFile'
+      type          : '(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/IDownloadPublisher;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/TaskInfo;Ljava/util/List;[Ljava/lang/String;[I)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 36
+      ins           : 11
+      outs          : 11
+      insns size    : 427 16-bit code units
+52b158:                                        |[52b158] com.bytedance.ttnet.utils.RetrofitUtils.downloadFile:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/IDownloadPublisher;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/TaskInfo;Ljava/util/List;[Ljava/lang/String;[I)Z
+52b168: 0800 1a00                              |0000: move-object/from16 v0, v26
+52b16c: 0801 2200                              |0002: move-object/from16 v1, v34
+52b170: 0802 2300                              |0004: move-object/from16 v2, v35
+52b174: 1a03 069c                              |0006: const-string v3, "get url = " // string@9c06
+52b178: 7701 6a16 1a00                         |0008: invoke-static/range {v26}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b17e: 0a04                                   |000b: move-result v4
+52b180: 1205                                   |000c: const/4 v5, #int 0 // #0
+52b182: 3804 0300                              |000d: if-eqz v4, 0010 // +0003
+52b186: 0f05                                   |000f: return v5
+52b188: 220a 7b37                              |0010: new-instance v10, Ljava/util/LinkedHashMap; // type@377b
+52b18c: 7010 dac7 0a00                         |0012: invoke-direct {v10}, Ljava/util/LinkedHashMap;.<init>:()V // method@c7da
+52b192: 7120 7517 a000                         |0015: invoke-static {v0, v10}, Lcom/bytedance/frameworks/baselib/network/http/util/UrlUtils;.parseUrl:(Ljava/lang/String;Ljava/util/Map;)Landroid/util/Pair; // method@1775
+52b198: 0c04                                   |0018: move-result-object v4
+52b19a: 3904 0300                              |0019: if-nez v4, 001c // +0003
+52b19e: 0f05                                   |001b: return v5
+52b1a0: 5446 1102                              |001c: iget-object v6, v4, Landroid/util/Pair;.first:Ljava/lang/Object; // field@0211
+52b1a4: 1f06 1537                              |001e: check-cast v6, Ljava/lang/String; // type@3715
+52b1a8: 5444 1202                              |0020: iget-object v4, v4, Landroid/util/Pair;.second:Ljava/lang/Object; // field@0212
+52b1ac: 0749                                   |0022: move-object v9, v4
+52b1ae: 1f09 1537                              |0023: check-cast v9, Ljava/lang/String; // type@3715
+52b1b2: 1c04 c115                              |0025: const-class v4, Lcom/bytedance/ttnet/INetworkApi; // type@15c1
+52b1b6: 7120 c552 4600                         |0027: invoke-static {v6, v4}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createSsService:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object; // method@52c5
+52b1bc: 0c04                                   |002a: move-result-object v4
+52b1be: 0746                                   |002b: move-object v6, v4
+52b1c0: 1f06 c115                              |002c: check-cast v6, Lcom/bytedance/ttnet/INetworkApi; // type@15c1
+52b1c4: 2204 1016                              |002e: new-instance v4, Lcom/bytedance/ttnet/http/RequestContext; // type@1610
+52b1c8: 7010 3052 0400                         |0030: invoke-direct {v4}, Lcom/bytedance/ttnet/http/RequestContext;.<init>:()V // method@5230
+52b1ce: 3806 7701                              |0033: if-eqz v6, 01aa // +0177
+52b1d2: 1207                                   |0035: const/4 v7, #int 0 // #0
+52b1d4: 120d                                   |0036: const/4 v13, #int 0 // #0
+52b1d6: 0208 1900                              |0037: move/from16 v8, v25
+52b1da: 080b 2100                              |0039: move-object/from16 v11, v33
+52b1de: 074c                                   |003b: move-object v12, v4
+52b1e0: 7807 1650 0600                         |003c: invoke-interface/range {v6, v7, v8, v9, v10, v11, v12}, Lcom/bytedance/ttnet/INetworkApi;.downloadFile:(ZILjava/lang/String;Ljava/util/Map;Ljava/util/List;Ljava/lang/Object;)Lcom/bytedance/retrofit2/Call; // method@5016
+52b1e6: 0c06                                   |003f: move-result-object v6
+52b1e8: 3820 1600                              |0040: if-eqz v32, 0056 // +0016
+52b1ec: 7401 6c17 2000                         |0042: invoke-virtual/range {v32}, Lcom/bytedance/frameworks/baselib/network/http/util/TaskInfo;.isCanceled:()Z // method@176c
+52b1f2: 0a07                                   |0045: move-result v7
+52b1f4: 3807 1000                              |0046: if-eqz v7, 0056 // +0010
+52b1f8: 7110 5a17 0d00                         |0048: invoke-static {v13}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.safeClose:(Ljava/io/Closeable;)V // method@175a
+52b1fe: 3806 0a00                              |004b: if-eqz v6, 0055 // +000a
+52b202: 7210 301b 0600                         |004d: invoke-interface {v6}, Lcom/bytedance/retrofit2/Call;.cancel:()V // method@1b30
+52b208: 2805                                   |0050: goto 0055 // +0005
+52b20a: 0d00                                   |0051: move-exception v0
+52b20c: 6e10 7bc6 0000                         |0052: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b212: 0f05                                   |0055: return v5
+52b214: 7100 8e50 0000                         |0056: invoke-static {}, Lcom/bytedance/ttnet/TTNetInit;.getTTNetDepend:()Lcom/bytedance/ttnet/ITTNetDepend; // method@508e
+52b21a: 0c07                                   |0059: move-result-object v7
+52b21c: 7210 1f50 0700                         |005a: invoke-interface {v7}, Lcom/bytedance/ttnet/ITTNetDepend;.getContext:()Landroid/content/Context; // method@501f
+52b222: 0c07                                   |005d: move-result-object v7
+52b224: 7110 6816 0700                         |005e: invoke-static {v7}, Lcom/bytedance/common/utility/NetworkUtils;.isNetworkAvailable:(Landroid/content/Context;)Z // method@1668
+52b22a: 0a07                                   |0061: move-result v7
+52b22c: 3907 1000                              |0062: if-nez v7, 0072 // +0010
+52b230: 7110 5a17 0d00                         |0064: invoke-static {v13}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.safeClose:(Ljava/io/Closeable;)V // method@175a
+52b236: 3806 0a00                              |0067: if-eqz v6, 0071 // +000a
+52b23a: 7210 301b 0600                         |0069: invoke-interface {v6}, Lcom/bytedance/retrofit2/Call;.cancel:()V // method@1b30
+52b240: 2805                                   |006c: goto 0071 // +0005
+52b242: 0d00                                   |006d: move-exception v0
+52b244: 6e10 7bc6 0000                         |006e: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b24a: 0f05                                   |0071: return v5
+52b24c: 7100 df16 0000                         |0072: invoke-static {}, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;.createHttpRequestInfo:()Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo; // method@16df
+52b252: 0c07                                   |0075: move-result-object v7
+52b254: 7100 e616 0000                         |0076: invoke-static {}, Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;.getCdnConnectionQualitySamplerHook:()Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$f; // method@16e6
+52b25a: 0c08                                   |0079: move-result-object v8
+52b25c: 3808 1100                              |007a: if-eqz v8, 008b // +0011
+52b260: 7220 e316 0800                         |007c: invoke-interface {v8, v0}, Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$f;.cdnShouldSampling:(Ljava/lang/String;)Z // method@16e3
+52b266: 0a08                                   |007f: move-result v8
+52b268: 3808 0b00                              |0080: if-eqz v8, 008b // +000b
+52b26c: 6008 176e                              |0082: sget v8, Lrk0/a;.h:I // field@6e17
+52b270: 6208 166e                              |0084: sget-object v8, Lrk0/a$a;.a:Lrk0/a; // field@6e16
+52b274: 6e10 5fe5 0800                         |0086: invoke-virtual {v8}, Lrk0/b;.b:()V // method@e55f
+52b27a: 1218                                   |0089: const/4 v8, #int 1 // #1
+52b27c: 2802                                   |008a: goto 008c // +0002
+52b27e: 1208                                   |008b: const/4 v8, #int 0 // #0
+52b280: 7210 321b 0600                         |008c: invoke-interface {v6}, Lcom/bytedance/retrofit2/Call;.execute:()Lcom/bytedance/retrofit2/SsResponse; // method@1b32
+52b286: 0c09                                   |008f: move-result-object v9
+52b288: 3909 1700                              |0090: if-nez v9, 00a7 // +0017
+52b28c: 3808 0900                              |0092: if-eqz v8, 009b // +0009
+52b290: 6000 176e                              |0094: sget v0, Lrk0/a;.h:I // field@6e17
+52b294: 6200 166e                              |0096: sget-object v0, Lrk0/a$a;.a:Lrk0/a; // field@6e16
+52b298: 6e10 60e5 0000                         |0098: invoke-virtual {v0}, Lrk0/b;.c:()V // method@e560
+52b29e: 7110 5a17 0d00                         |009b: invoke-static {v13}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.safeClose:(Ljava/io/Closeable;)V // method@175a
+52b2a4: 7210 301b 0600                         |009e: invoke-interface {v6}, Lcom/bytedance/retrofit2/Call;.cancel:()V // method@1b30
+52b2aa: 2805                                   |00a1: goto 00a6 // +0005
+52b2ac: 0d00                                   |00a2: move-exception v0
+52b2ae: 6e10 7bc6 0000                         |00a3: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b2b4: 0f05                                   |00a6: return v5
+52b2b6: 6e10 4f1b 0900                         |00a7: invoke-virtual {v9}, Lcom/bytedance/retrofit2/SsResponse;.raw:()Lcom/bytedance/retrofit2/client/Response; // method@1b4f
+52b2bc: 0c0a                                   |00aa: move-result-object v10
+52b2be: 6e10 6d1b 0a00                         |00ab: invoke-virtual {v10}, Lcom/bytedance/retrofit2/client/Response;.getExtraInfo:()Ljava/lang/Object; // method@1b6d
+52b2c4: 0c0a                                   |00ae: move-result-object v10
+52b2c6: 20ab e907                              |00af: instance-of v11, v10, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo; // type@07e9
+52b2ca: 380b 0500                              |00b1: if-eqz v11, 00b6 // +0005
+52b2ce: 1f0a e907                              |00b3: check-cast v10, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo; // type@07e9
+52b2d2: 07a7                                   |00b5: move-object v7, v10
+52b2d4: 6e10 4a1b 0900                         |00b6: invoke-virtual {v9}, Lcom/bytedance/retrofit2/SsResponse;.body:()Ljava/lang/Object; // method@1b4a
+52b2da: 0c0a                                   |00b9: move-result-object v10
+52b2dc: 1f0a 9e0a                              |00ba: check-cast v10, Lcom/bytedance/retrofit2/mime/TypedInput; // type@0a9e
+52b2e0: 380a 0700                              |00bc: if-eqz v10, 00c3 // +0007
+52b2e4: 7210 7f1b 0a00                         |00be: invoke-interface {v10}, Lcom/bytedance/retrofit2/mime/TypedInput;.in:()Ljava/io/InputStream; // method@1b7f
+52b2ea: 0c0b                                   |00c1: move-result-object v11
+52b2ec: 2802                                   |00c2: goto 00c4 // +0002
+52b2ee: 07db                                   |00c3: move-object v11, v13
+52b2f0: 6e10 4d1b 0900                         |00c4: invoke-virtual {v9}, Lcom/bytedance/retrofit2/SsResponse;.headers:()Ljava/util/List; // method@1b4d
+52b2f6: 0c0c                                   |00c7: move-result-object v12
+52b2f8: 715d cf52 174c                         |00c8: invoke-static {v7, v1, v12, v4, v13}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getOutIp:(Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;[Ljava/lang/String;Ljava/util/List;Lcom/bytedance/ttnet/http/RequestContext;Ljava/lang/Exception;)V // method@52cf
+52b2fe: 6e10 4b1b 0900                         |00cb: invoke-virtual {v9}, Lcom/bytedance/retrofit2/SsResponse;.code:()I // method@1b4b
+52b304: 0a09                                   |00ce: move-result v9
+52b306: 130d c800                              |00cf: const/16 v13, #int 200 // #c8
+52b30a: 33d9 4c00                              |00d1: if-ne v9, v13, 011d // +004c
+52b30e: 380a 4a00                              |00d3: if-eqz v10, 011d // +004a
+52b312: 7210 801b 0a00                         |00d5: invoke-interface {v10}, Lcom/bytedance/retrofit2/mime/TypedInput;.length:()J // method@1b80
+52b318: 0b0d                                   |00d8: move-result-wide v13
+52b31a: 3802 1100                              |00d9: if-eqz v2, 00ea // +0011
+52b31e: 2123                                   |00db: array-length v3, v2
+52b320: 3d03 0e00                              |00dc: if-lez v3, 00ea // +000e
+52b324: 4b05 0205                              |00de: aput v5, v2, v5
+52b328: 170f ffff ff7f                         |00e0: const-wide/32 v15, #float nan // #7fffffff
+52b32e: 3103 0d0f                              |00e3: cmp-long v3, v13, v15
+52b332: 3c03 0500                              |00e5: if-gtz v3, 00ea // +0005
+52b336: 84d3                                   |00e7: long-to-int v3, v13
+52b338: 4b03 0205                              |00e8: aput v3, v2, v5
+52b33c: 7210 801b 0a00                         |00ea: invoke-interface {v10}, Lcom/bytedance/retrofit2/mime/TypedInput;.length:()J // method@1b80
+52b342: 0b0f                                   |00ed: move-result-wide v15
+52b344: 2202 2516                              |00ee: new-instance v2, Lcom/bytedance/ttnet/utils/RetrofitUtils$a; // type@1625
+52b348: 7030 af52 6200                         |00f0: invoke-direct {v2, v6, v0}, Lcom/bytedance/ttnet/utils/RetrofitUtils$a;.<init>:(Lcom/bytedance/retrofit2/Call;Ljava/lang/String;)V // method@52af
+52b34e: 07be                                   |00f3: move-object v14, v11
+52b350: 0811 0200                              |00f4: move-object/from16 v17, v2
+52b354: 0212 1900                              |00f6: move/from16 v18, v25
+52b358: 0813 1b00                              |00f8: move-object/from16 v19, v27
+52b35c: 0814 1c00                              |00fa: move-object/from16 v20, v28
+52b360: 0815 1d00                              |00fc: move-object/from16 v21, v29
+52b364: 0816 1e00                              |00fe: move-object/from16 v22, v30
+52b368: 0817 1f00                              |0100: move-object/from16 v23, v31
+52b36c: 0818 2000                              |0102: move-object/from16 v24, v32
+52b370: 770b 5b17 0e00                         |0104: invoke-static/range {v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.stream2File:(Ljava/io/InputStream;JLtk0/d;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/IDownloadPublisher;Ljava/lang/String;Lcom/bytedance/frameworks/baselib/network/http/util/TaskInfo;)Z // method@175b
+52b376: 0a01                                   |0107: move-result v1
+52b378: 3808 0900                              |0108: if-eqz v8, 0111 // +0009
+52b37c: 6000 176e                              |010a: sget v0, Lrk0/a;.h:I // field@6e17
+52b380: 6200 166e                              |010c: sget-object v0, Lrk0/a$a;.a:Lrk0/a; // field@6e16
+52b384: 6e10 60e5 0000                         |010e: invoke-virtual {v0}, Lrk0/b;.c:()V // method@e560
+52b38a: 7110 5a17 0b00                         |0111: invoke-static {v11}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.safeClose:(Ljava/io/Closeable;)V // method@175a
+52b390: 7210 301b 0600                         |0114: invoke-interface {v6}, Lcom/bytedance/retrofit2/Call;.cancel:()V // method@1b30
+52b396: 2805                                   |0117: goto 011c // +0005
+52b398: 0d00                                   |0118: move-exception v0
+52b39a: 6e10 7bc6 0000                         |0119: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b3a0: 0f01                                   |011c: return v1
+52b3a2: 33d9 0c00                              |011d: if-ne v9, v13, 0129 // +000c
+52b3a6: 390a 0a00                              |011f: if-nez v10, 0129 // +000a
+52b3aa: 2200 f736                              |0121: new-instance v0, Ljava/lang/IllegalArgumentException; // type@36f7
+52b3ae: 1a02 8217                              |0123: const-string v2, "HTTP TypedInput may not be null" // string@1782
+52b3b2: 7020 7fc5 2000                         |0125: invoke-direct {v0, v2}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@c57f
+52b3b8: 2700                                   |0128: throw v0
+52b3ba: 2202 0b08                              |0129: new-instance v2, Lcom/bytedance/frameworks/baselib/network/http/exception/HttpResponseException; // type@080b
+52b3be: 2205 1737                              |012b: new-instance v5, Ljava/lang/StringBuilder; // type@3717
+52b3c2: 7020 38c6 3500                         |012d: invoke-direct {v5, v3}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@c638
+52b3c8: 6e20 41c6 0500                         |0130: invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c641
+52b3ce: 1a00 0801                              |0133: const-string v0, " exception" // string@0108
+52b3d2: 6e20 41c6 0500                         |0135: invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c641
+52b3d8: 6e10 49c6 0500                         |0138: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c649
+52b3de: 0c00                                   |013b: move-result-object v0
+52b3e0: 7030 3917 9200                         |013c: invoke-direct {v2, v9, v0}, Lcom/bytedance/frameworks/baselib/network/http/exception/HttpResponseException;.<init>:(ILjava/lang/String;)V // method@1739
+52b3e6: 2702                                   |013f: throw v2
+52b3e8: 0d00                                   |0140: move-exception v0
+52b3ea: 07cd                                   |0141: move-object v13, v12
+52b3ec: 2805                                   |0142: goto 0147 // +0005
+52b3ee: 0d00                                   |0143: move-exception v0
+52b3f0: 2803                                   |0144: goto 0147 // +0003
+52b3f2: 0d00                                   |0145: move-exception v0
+52b3f4: 07db                                   |0146: move-object v11, v13
+52b3f6: 3907 1400                              |0147: if-nez v7, 015b // +0014
+52b3fa: 2062 710a                              |0149: instance-of v2, v6, Lcom/bytedance/retrofit2/IRequestInfo; // type@0a71
+52b3fe: 3802 1000                              |014b: if-eqz v2, 015b // +0010
+52b402: 0762                                   |014d: move-object v2, v6
+52b404: 1f02 710a                              |014e: check-cast v2, Lcom/bytedance/retrofit2/IRequestInfo; // type@0a71
+52b408: 7210 371b 0200                         |0150: invoke-interface {v2}, Lcom/bytedance/retrofit2/IRequestInfo;.getRequestInfo:()Ljava/lang/Object; // method@1b37
+52b40e: 0c02                                   |0153: move-result-object v2
+52b410: 2023 e907                              |0154: instance-of v3, v2, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo; // type@07e9
+52b414: 3803 0500                              |0156: if-eqz v3, 015b // +0005
+52b418: 0727                                   |0158: move-object v7, v2
+52b41a: 1f07 e907                              |0159: check-cast v7, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo; // type@07e9
+52b41e: 7150 cf52 174d                         |015b: invoke-static {v7, v1, v13, v4, v0}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getOutIp:(Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;[Ljava/lang/String;Ljava/util/List;Lcom/bytedance/ttnet/http/RequestContext;Ljava/lang/Exception;)V // method@52cf
+52b424: 3807 0f00                              |015e: if-eqz v7, 016d // +000f
+52b428: 5471 f107                              |0160: iget-object v1, v7, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;.extraInfo:Lorg/json/JSONObject; // field@07f1
+52b42c: 3801 0b00                              |0162: if-eqz v1, 016d // +000b
+52b430: 1a02 fa96                              |0164: const-string v2, "ex" // string@96fa
+52b434: 6e10 6ec5 0000                         |0166: invoke-virtual {v0}, Ljava/lang/Exception;.getMessage:()Ljava/lang/String; // method@c56e
+52b43a: 0c03                                   |0169: move-result-object v3
+52b43c: 6e30 56dc 2103                         |016a: invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@dc56
+52b442: 2700                                   |016d: throw v0
+52b444: 0d00                                   |016e: move-exception v0
+52b446: 076d                                   |016f: move-object v13, v6
+52b448: 0185                                   |0170: move v5, v8
+52b44a: 280a                                   |0171: goto 017b // +000a
+52b44c: 0d00                                   |0172: move-exception v0
+52b44e: 0185                                   |0173: move v5, v8
+52b450: 2802                                   |0174: goto 0176 // +0002
+52b452: 0d00                                   |0175: move-exception v0
+52b454: 07db                                   |0176: move-object v11, v13
+52b456: 076d                                   |0177: move-object v13, v6
+52b458: 2803                                   |0178: goto 017b // +0003
+52b45a: 0d00                                   |0179: move-exception v0
+52b45c: 07db                                   |017a: move-object v11, v13
+52b45e: 2001 f436                              |017b: instance-of v1, v0, Ljava/lang/Exception; // type@36f4
+52b462: 3801 0500                              |017d: if-eqz v1, 0182 // +0005
+52b466: 1f00 f436                              |017f: check-cast v0, Ljava/lang/Exception; // type@36f4
+52b46a: 280f                                   |0181: goto 0190 // +000f
+52b46c: 2201 f436                              |0182: new-instance v1, Ljava/lang/Exception; // type@36f4
+52b470: 6e10 78c6 0000                         |0184: invoke-virtual {v0}, Ljava/lang/Throwable;.getMessage:()Ljava/lang/String; // method@c678
+52b476: 0c02                                   |0187: move-result-object v2
+52b478: 6e10 76c6 0000                         |0188: invoke-virtual {v0}, Ljava/lang/Throwable;.getCause:()Ljava/lang/Throwable; // method@c676
+52b47e: 0c00                                   |018b: move-result-object v0
+52b480: 7030 6bc5 2100                         |018c: invoke-direct {v1, v2, v0}, Ljava/lang/Exception;.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V // method@c56b
+52b486: 0710                                   |018f: move-object v0, v1
+52b488: 2700                                   |0190: throw v0
+52b48a: 0d00                                   |0191: move-exception v0
+52b48c: 0701                                   |0192: move-object v1, v0
+52b48e: 3805 0900                              |0193: if-eqz v5, 019c // +0009
+52b492: 6000 176e                              |0195: sget v0, Lrk0/a;.h:I // field@6e17
+52b496: 6200 166e                              |0197: sget-object v0, Lrk0/a$a;.a:Lrk0/a; // field@6e16
+52b49a: 6e10 60e5 0000                         |0199: invoke-virtual {v0}, Lrk0/b;.c:()V // method@e560
+52b4a0: 7110 5a17 0b00                         |019c: invoke-static {v11}, Lcom/bytedance/frameworks/baselib/network/http/parser/StreamParser;.safeClose:(Ljava/io/Closeable;)V // method@175a
+52b4a6: 380d 0a00                              |019f: if-eqz v13, 01a9 // +000a
+52b4aa: 7210 301b 0d00                         |01a1: invoke-interface {v13}, Lcom/bytedance/retrofit2/Call;.cancel:()V // method@1b30
+52b4b0: 2805                                   |01a4: goto 01a9 // +0005
+52b4b2: 0d00                                   |01a5: move-exception v0
+52b4b4: 6e10 7bc6 0000                         |01a6: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b4ba: 2701                                   |01a9: throw v1
+52b4bc: 0f05                                   |01aa: return v5
+      catches       : 16
+        0x003c - 0x0040
+          <any> -> 0x0179
+        0x0042 - 0x0046
+          <any> -> 0x0175
+        0x0048 - 0x0050
+          <any> -> 0x0051
+        0x0056 - 0x0062
+          <any> -> 0x0175
+        0x0064 - 0x006c
+          <any> -> 0x006d
+        0x0072 - 0x0089
+          <any> -> 0x0175
+        0x008c - 0x0090
+          <any> -> 0x0172
+        0x009b - 0x00a1
+          <any> -> 0x00a2
+        0x00a7 - 0x00c2
+          Ljava/lang/Exception; -> 0x0145
+          <any> -> 0x0172
+        0x00c4 - 0x00c8
+          Ljava/lang/Exception; -> 0x0143
+          <any> -> 0x016e
+        0x00c8 - 0x0108
+          Ljava/lang/Exception; -> 0x0140
+          <any> -> 0x016e
+        0x0111 - 0x0117
+          <any> -> 0x0118
+        0x0121 - 0x0140
+          Ljava/lang/Exception; -> 0x0140
+          <any> -> 0x016e
+        0x0149 - 0x016e
+          <any> -> 0x016e
+        0x017b - 0x0191
+          <any> -> 0x0191
+        0x019c - 0x01a4
+          <any> -> 0x01a5
+      positions     :
+        0x0000 line=185008128
+        0x0001 line=185008129
+        0x0002 line=185008130
+        0x0003 line=185008131
+        0x0004 line=185008132
+        0x0005 line=185008133
+        0x0006 line=185008134
+        0x0007 line=185008135
+        0x0008 line=185008136
+        0x0009 line=185008137
+        0x000a line=185008138
+        0x000b line=185008139
+        0x000c line=185008140
+        0x000d line=185008141
+        0x000e line=185008142
+        0x000f line=185008143
+        0x0010 line=185008144
+        0x0011 line=185008145
+        0x0012 line=185008146
+        0x0013 line=185008147
+        0x0014 line=185008148
+        0x0015 line=185008149
+        0x0016 line=185008150
+        0x0017 line=185008151
+        0x0018 line=185008152
+        0x0019 line=185008153
+        0x001a line=185008154
+        0x001b line=185008155
+        0x001c line=185008156
+        0x001d line=185008157
+        0x001e line=185008158
+        0x001f line=185008159
+        0x0020 line=185008160
+        0x0021 line=185008161
+        0x0022 line=185008162
+        0x0023 line=185008163
+        0x0024 line=185008164
+        0x0025 line=185008165
+        0x0026 line=185008166
+        0x0027 line=185008167
+        0x0028 line=185008168
+        0x0029 line=185008169
+        0x002a line=185008170
+        0x002b line=185008171
+        0x002c line=185008172
+        0x002d line=185008173
+        0x002e line=185008174
+        0x002f line=185008175
+        0x0030 line=185008176
+        0x0031 line=185008177
+        0x0032 line=185008178
+        0x0033 line=185008179
+        0x0034 line=185008180
+        0x0035 line=185008181
+        0x0036 line=185008182
+        0x0037 line=185008183
+        0x0038 line=185008184
+        0x0039 line=185008185
+        0x003a line=185008186
+        0x003b line=185008187
+        0x003c line=185008188
+        0x003d line=185008189
+        0x003e line=185008190
+        0x003f line=185008191
+        0x0040 line=185008192
+        0x0041 line=185008193
+        0x0042 line=185008194
+        0x0043 line=185008195
+        0x0044 line=185008196
+        0x0045 line=185008197
+        0x0046 line=185008198
+        0x0047 line=185008199
+        0x0048 line=185008200
+        0x0049 line=185008201
+        0x004a line=185008202
+        0x004b line=185008203
+        0x004c line=185008204
+        0x004d line=185008205
+        0x004e line=185008206
+        0x004f line=185008207
+        0x0050 line=185008208
+        0x0051 line=185008209
+        0x0052 line=185008210
+        0x0053 line=185008211
+        0x0054 line=185008212
+        0x0055 line=185008213
+        0x0056 line=185008214
+        0x0057 line=185008215
+        0x0058 line=185008216
+        0x0059 line=185008217
+        0x005a line=185008218
+        0x005b line=185008219
+        0x005c line=185008220
+        0x005d line=185008221
+        0x005e line=185008222
+        0x005f line=185008223
+        0x0060 line=185008224
+        0x0061 line=185008225
+        0x0062 line=185008226
+        0x0063 line=185008227
+        0x0064 line=185008228
+        0x0065 line=185008229
+        0x0066 line=185008230
+        0x0067 line=185008231
+        0x0068 line=185008232
+        0x0069 line=185008233
+        0x006a line=185008234
+        0x006b line=185008235
+        0x006c line=185008236
+        0x006d line=185008237
+        0x006e line=185008238
+        0x006f line=185008239
+        0x0070 line=185008240
+        0x0071 line=185008241
+        0x0072 line=185008242
+        0x0073 line=185008243
+        0x0074 line=185008244
+        0x0075 line=185008245
+        0x0076 line=185008246
+        0x0077 line=185008247
+        0x0078 line=185008248
+        0x0079 line=185008249
+        0x007a line=185008250
+        0x007b line=185008251
+        0x007c line=185008252
+        0x007d line=185008253
+        0x007e line=185008254
+        0x007f line=185008255
+        0x0080 line=185008256
+        0x0081 line=185008257
+        0x0082 line=185008258
+        0x0083 line=185008259
+        0x0084 line=185008260
+        0x0085 line=185008261
+        0x0086 line=185008262
+        0x0087 line=185008263
+        0x0088 line=185008264
+        0x0089 line=185008265
+        0x008a line=185008266
+        0x008b line=185008267
+        0x008c line=185008268
+        0x008d line=185008269
+        0x008e line=185008270
+        0x008f line=185008271
+        0x0090 line=185008272
+        0x0091 line=185008273
+        0x0092 line=185008274
+        0x0093 line=185008275
+        0x0094 line=185008276
+        0x0095 line=185008277
+        0x0096 line=185008278
+        0x0097 line=185008279
+        0x0098 line=185008280
+        0x0099 line=185008281
+        0x009a line=185008282
+        0x009b line=185008283
+        0x009c line=185008284
+        0x009d line=185008285
+        0x009e line=185008286
+        0x009f line=185008287
+        0x00a0 line=185008288
+        0x00a1 line=185008289
+        0x00a2 line=185008290
+        0x00a3 line=185008291
+        0x00a4 line=185008292
+        0x00a5 line=185008293
+        0x00a6 line=185008294
+        0x00a7 line=185008295
+        0x00a8 line=185008296
+        0x00a9 line=185008297
+        0x00aa line=185008298
+        0x00ab line=185008299
+        0x00ac line=185008300
+        0x00ad line=185008301
+        0x00ae line=185008302
+        0x00af line=185008303
+        0x00b0 line=185008304
+        0x00b1 line=185008305
+        0x00b2 line=185008306
+        0x00b3 line=185008307
+        0x00b4 line=185008308
+        0x00b5 line=185008309
+        0x00b6 line=185008310
+        0x00b7 line=185008311
+        0x00b8 line=185008312
+        0x00b9 line=185008313
+        0x00ba line=185008314
+        0x00bb line=185008315
+        0x00bc line=185008316
+        0x00bd line=185008317
+        0x00be line=185008318
+        0x00bf line=185008319
+        0x00c0 line=185008320
+        0x00c1 line=185008321
+        0x00c2 line=185008322
+        0x00c3 line=185008323
+        0x00c4 line=185008324
+        0x00c5 line=185008325
+        0x00c6 line=185008326
+        0x00c7 line=185008327
+        0x00c8 line=185008328
+        0x00c9 line=185008329
+        0x00ca line=185008330
+        0x00cb line=185008331
+        0x00cc line=185008332
+        0x00cd line=185008333
+        0x00ce line=185008334
+        0x00cf line=185008335
+        0x00d0 line=185008336
+        0x00d1 line=185008337
+        0x00d2 line=185008338
+        0x00d3 line=185008339
+        0x00d4 line=185008340
+        0x00d5 line=185008341
+        0x00d6 line=185008342
+        0x00d7 line=185008343
+        0x00d8 line=185008344
+        0x00d9 line=185008345
+        0x00da line=185008346
+        0x00db line=185008347
+        0x00dc line=185008348
+        0x00dd line=185008349
+        0x00de line=185008350
+        0x00df line=185008351
+        0x00e0 line=185008352
+        0x00e1 line=185008353
+        0x00e2 line=185008354
+        0x00e3 line=185008355
+        0x00e4 line=185008356
+        0x00e5 line=185008357
+        0x00e6 line=185008358
+        0x00e7 line=185008359
+        0x00e8 line=185008360
+        0x00e9 line=185008361
+        0x00ea line=185008362
+        0x00eb line=185008363
+        0x00ec line=185008364
+        0x00ed line=185008365
+        0x00ee line=185008366
+        0x00ef line=185008367
+        0x00f0 line=185008368
+        0x00f1 line=185008369
+        0x00f2 line=185008370
+        0x00f3 line=185008371
+        0x00f4 line=185008372
+        0x00f5 line=185008373
+        0x00f6 line=185008374
+        0x00f7 line=185008375
+        0x00f8 line=185008376
+        0x00f9 line=185008377
+        0x00fa line=185008378
+        0x00fb line=185008379
+        0x00fc line=185008380
+        0x00fd line=185008381
+        0x00fe line=185008382
+        0x00ff line=185008383
+        0x0100 line=185008384
+        0x0101 line=185008385
+        0x0102 line=185008386
+        0x0103 line=185008387
+        0x0104 line=185008388
+        0x0105 line=185008389
+        0x0106 line=185008390
+        0x0107 line=185008391
+        0x0108 line=185008392
+        0x0109 line=185008393
+        0x010a line=185008394
+        0x010b line=185008395
+        0x010c line=185008396
+        0x010d line=185008397
+        0x010e line=185008398
+        0x010f line=185008399
+        0x0110 line=185008400
+        0x0111 line=185008401
+        0x0112 line=185008402
+        0x0113 line=185008403
+        0x0114 line=185008404
+        0x0115 line=185008405
+        0x0116 line=185008406
+        0x0117 line=185008407
+        0x0118 line=185008408
+        0x0119 line=185008409
+        0x011a line=185008410
+        0x011b line=185008411
+        0x011c line=185008412
+        0x011d line=185008413
+        0x011e line=185008414
+        0x011f line=185008415
+        0x0120 line=185008416
+        0x0121 line=185008417
+        0x0122 line=185008418
+        0x0123 line=185008419
+        0x0124 line=185008420
+        0x0125 line=185008421
+        0x0126 line=185008422
+        0x0127 line=185008423
+        0x0128 line=185008424
+        0x0129 line=185008425
+        0x012a line=185008426
+        0x012b line=185008427
+        0x012c line=185008428
+        0x012d line=185008429
+        0x012e line=185008430
+        0x012f line=185008431
+        0x0130 line=185008432
+        0x0131 line=185008433
+        0x0132 line=185008434
+        0x0133 line=185008435
+        0x0134 line=185008436
+        0x0135 line=185008437
+        0x0136 line=185008438
+        0x0137 line=185008439
+        0x0138 line=185008440
+        0x0139 line=185008441
+        0x013a line=185008442
+        0x013b line=185008443
+        0x013c line=185008444
+        0x013d line=185008445
+        0x013e line=185008446
+        0x013f line=185008447
+        0x0140 line=185008448
+        0x0141 line=185008449
+        0x0142 line=185008450
+        0x0143 line=185008451
+        0x0144 line=185008452
+        0x0145 line=185008453
+        0x0146 line=185008454
+        0x0147 line=185008455
+        0x0148 line=185008456
+        0x0149 line=185008457
+        0x014a line=185008458
+        0x014b line=185008459
+        0x014c line=185008460
+        0x014d line=185008461
+        0x014e line=185008462
+        0x014f line=185008463
+        0x0150 line=185008464
+        0x0151 line=185008465
+        0x0152 line=185008466
+        0x0153 line=185008467
+        0x0154 line=185008468
+        0x0155 line=185008469
+        0x0156 line=185008470
+        0x0157 line=185008471
+        0x0158 line=185008472
+        0x0159 line=185008473
+        0x015a line=185008474
+        0x015b line=185008475
+        0x015c line=185008476
+        0x015d line=185008477
+        0x015e line=185008478
+        0x015f line=185008479
+        0x0160 line=185008480
+        0x0161 line=185008481
+        0x0162 line=185008482
+        0x0163 line=185008483
+        0x0164 line=185008484
+        0x0165 line=185008485
+        0x0166 line=185008486
+        0x0167 line=185008487
+        0x0168 line=185008488
+        0x0169 line=185008489
+        0x016a line=185008490
+        0x016b line=185008491
+        0x016c line=185008492
+        0x016d line=185008493
+        0x016e line=185008494
+        0x016f line=185008495
+        0x0170 line=185008496
+        0x0171 line=185008497
+        0x0172 line=185008498
+        0x0173 line=185008499
+        0x0174 line=185008500
+        0x0175 line=185008501
+        0x0176 line=185008502
+        0x0177 line=185008503
+        0x0178 line=185008504
+        0x0179 line=185008505
+        0x017a line=185008506
+        0x017b line=185008507
+        0x017c line=185008508
+        0x017d line=185008509
+        0x017e line=185008510
+        0x017f line=185008511
+        0x0180 line=185008512
+        0x0181 line=185008513
+        0x0182 line=185008514
+        0x0183 line=185008515
+        0x0184 line=185008516
+        0x0185 line=185008517
+        0x0186 line=185008518
+        0x0187 line=185008519
+        0x0188 line=185008520
+        0x0189 line=185008521
+        0x018a line=185008522
+        0x018b line=185008523
+        0x018c line=185008524
+        0x018d line=185008525
+        0x018e line=185008526
+        0x018f line=185008527
+        0x0190 line=185008528
+        0x0191 line=185008529
+        0x0192 line=185008530
+        0x0193 line=185008531
+        0x0194 line=185008532
+        0x0195 line=185008533
+        0x0196 line=185008534
+        0x0197 line=185008535
+        0x0198 line=185008536
+        0x0199 line=185008537
+        0x019a line=185008538
+        0x019b line=185008539
+        0x019c line=185008540
+        0x019d line=185008541
+        0x019e line=185008542
+        0x019f line=185008543
+        0x01a0 line=185008544
+        0x01a1 line=185008545
+        0x01a2 line=185008546
+        0x01a3 line=185008547
+        0x01a4 line=185008548
+        0x01a5 line=185008549
+        0x01a6 line=185008550
+        0x01a7 line=185008551
+        0x01a8 line=185008552
+        0x01a9 line=185008553
+        0x01aa line=185008554
+      locals        :
+        0x0000 - 0x01ab reg=25 (null) I
+        0x0000 - 0x01ab reg=26 (null) Ljava/lang/String;
+        0x0000 - 0x01ab reg=27 (null) Ljava/lang/String;
+        0x0000 - 0x01ab reg=28 (null) Ljava/lang/String;
+        0x0000 - 0x01ab reg=29 (null) Ljava/lang/String;
+        0x0000 - 0x01ab reg=30 (null) Lcom/bytedance/frameworks/baselib/network/http/util/IDownloadPublisher;
+        0x0000 - 0x01ab reg=31 (null) Ljava/lang/String;
+        0x0000 - 0x01ab reg=32 (null) Lcom/bytedance/frameworks/baselib/network/http/util/TaskInfo;
+        0x0000 - 0x01ab reg=33 (null) Ljava/util/List;
+        0x0000 - 0x01ab reg=34 (null) [Ljava/lang/String;
+        0x0000 - 0x01ab reg=35 (null) [I
+
+    #14              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'extractMaxAge'
+      type          : '(Ljava/util/List;)J'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 40 16-bit code units
+52b574:                                        |[52b574] com.bytedance.ttnet.utils.RetrofitUtils.extractMaxAge:(Ljava/util/List;)J
+52b584: 1600 ffff                              |0000: const-wide/16 v0, #int -1 // #ffff
+52b588: 3903 0300                              |0002: if-nez v3, 0005 // +0003
+52b58c: 1000                                   |0004: return-wide v0
+52b58e: 1a02 7e13                              |0005: const-string v2, "Cache-Control" // string@137e
+52b592: 7120 ca52 2300                         |0007: invoke-static {v3, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getFirstHeader:(Ljava/util/List;Ljava/lang/String;)Lcom/bytedance/retrofit2/client/Header; // method@52ca
+52b598: 0c03                                   |000a: move-result-object v3
+52b59a: 3903 0300                              |000b: if-nez v3, 000e // +0003
+52b59e: 1000                                   |000d: return-wide v0
+52b5a0: 2202 1c08                              |000e: new-instance v2, Lcom/bytedance/frameworks/baselib/network/http/parser/CacheControlParser; // type@081c
+52b5a4: 6e10 541b 0300                         |0010: invoke-virtual {v3}, Lcom/bytedance/retrofit2/client/Header;.getValue:()Ljava/lang/String; // method@1b54
+52b5aa: 0c03                                   |0013: move-result-object v3
+52b5ac: 7020 5117 3200                         |0014: invoke-direct {v2, v3}, Lcom/bytedance/frameworks/baselib/network/http/parser/CacheControlParser;.<init>:(Ljava/lang/String;)V // method@1751
+52b5b2: 6203 1808                              |0017: sget-object v3, Lcom/bytedance/frameworks/baselib/network/http/parser/CacheControlParser$Directive;.MAXAGE:Lcom/bytedance/frameworks/baselib/network/http/parser/CacheControlParser$Directive; // field@0818
+52b5b6: 5422 1908                              |0019: iget-object v2, v2, Lcom/bytedance/frameworks/baselib/network/http/parser/CacheControlParser;.a:Ljava/util/HashMap; // field@0819
+52b5ba: 6e20 b6c7 3200                         |001b: invoke-virtual {v2, v3}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c7b6
+52b5c0: 0c03                                   |001e: move-result-object v3
+52b5c2: 1f03 1537                              |001f: check-cast v3, Ljava/lang/String; // type@3715
+52b5c6: 3803 0600                              |0021: if-eqz v3, 0027 // +0006
+52b5ca: 7110 9fc5 0300                         |0023: invoke-static {v3}, Ljava/lang/Long;.parseLong:(Ljava/lang/String;)J // method@c59f
+52b5d0: 0b00                                   |0026: move-result-wide v0
+52b5d2: 1000                                   |0027: return-wide v0
+      catches       : 1
+        0x000e - 0x0027
+          Ljava/lang/Exception; -> 0x0027
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+        0x0025 line=17039397
+        0x0026 line=17039398
+        0x0027 line=17039399
+      locals        :
+        0x0000 - 0x0028 reg=3 (null) Ljava/util/List;
+
+    #15              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getEtag'
+      type          : '(Ljava/util/List;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 17 16-bit code units
+52b5e4:                                        |[52b5e4] com.bytedance.ttnet.utils.RetrofitUtils.getEtag:(Ljava/util/List;)Ljava/lang/String;
+52b5f4: 1200                                   |0000: const/4 v0, #int 0 // #0
+52b5f6: 3902 0300                              |0001: if-nez v2, 0004 // +0003
+52b5fa: 1100                                   |0003: return-object v0
+52b5fc: 1a01 eb15                              |0004: const-string v1, "ETag" // string@15eb
+52b600: 7120 ca52 1200                         |0006: invoke-static {v2, v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getFirstHeader:(Ljava/util/List;Ljava/lang/String;)Lcom/bytedance/retrofit2/client/Header; // method@52ca
+52b606: 0c02                                   |0009: move-result-object v2
+52b608: 3802 0600                              |000a: if-eqz v2, 0010 // +0006
+52b60c: 6e10 541b 0200                         |000c: invoke-virtual {v2}, Lcom/bytedance/retrofit2/client/Header;.getValue:()Ljava/lang/String; // method@1b54
+52b612: 0c00                                   |000f: move-result-object v0
+52b614: 1100                                   |0010: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+      locals        :
+        0x0000 - 0x0011 reg=2 (null) Ljava/util/List;
+
+    #16              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getFirstHeader'
+      type          : '(Ljava/util/List;Ljava/lang/String;)Lcom/bytedance/retrofit2/client/Header;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 2
+      insns size    : 38 16-bit code units
+52b618:                                        |[52b618] com.bytedance.ttnet.utils.RetrofitUtils.getFirstHeader:(Ljava/util/List;Ljava/lang/String;)Lcom/bytedance/retrofit2/client/Header;
+52b628: 1200                                   |0000: const/4 v0, #int 0 // #0
+52b62a: 3803 2400                              |0001: if-eqz v3, 0025 // +0024
+52b62e: 7110 6a16 0400                         |0003: invoke-static {v4}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b634: 0a01                                   |0006: move-result v1
+52b636: 3801 0300                              |0007: if-eqz v1, 000a // +0003
+52b63a: 281c                                   |0009: goto 0025 // +001c
+52b63c: 7210 14c8 0300                         |000a: invoke-interface {v3}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52b642: 0c03                                   |000d: move-result-object v3
+52b644: 7210 d7c7 0300                         |000e: invoke-interface {v3}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52b64a: 0a01                                   |0011: move-result v1
+52b64c: 3801 1300                              |0012: if-eqz v1, 0025 // +0013
+52b650: 7210 d8c7 0300                         |0014: invoke-interface {v3}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52b656: 0c01                                   |0017: move-result-object v1
+52b658: 1f01 7d0a                              |0018: check-cast v1, Lcom/bytedance/retrofit2/client/Header; // type@0a7d
+52b65c: 6e10 531b 0100                         |001a: invoke-virtual {v1}, Lcom/bytedance/retrofit2/client/Header;.getName:()Ljava/lang/String; // method@1b53
+52b662: 0c02                                   |001d: move-result-object v2
+52b664: 6e20 06c6 2400                         |001e: invoke-virtual {v4, v2}, Ljava/lang/String;.equalsIgnoreCase:(Ljava/lang/String;)Z // method@c606
+52b66a: 0a02                                   |0021: move-result v2
+52b66c: 3802 ecff                              |0022: if-eqz v2, 000e // -0014
+52b670: 1101                                   |0024: return-object v1
+52b672: 1100                                   |0025: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=33816576
+        0x0001 line=33816577
+        0x0002 line=33816578
+        0x0003 line=33816579
+        0x0004 line=33816580
+        0x0005 line=33816581
+        0x0006 line=33816582
+        0x0007 line=33816583
+        0x0008 line=33816584
+        0x0009 line=33816585
+        0x000a line=33816586
+        0x000b line=33816587
+        0x000c line=33816588
+        0x000d line=33816589
+        0x000e line=33816590
+        0x000f line=33816591
+        0x0010 line=33816592
+        0x0011 line=33816593
+        0x0012 line=33816594
+        0x0013 line=33816595
+        0x0014 line=33816596
+        0x0015 line=33816597
+        0x0016 line=33816598
+        0x0017 line=33816599
+        0x0018 line=33816600
+        0x0019 line=33816601
+        0x001a line=33816602
+        0x001b line=33816603
+        0x001c line=33816604
+        0x001d line=33816605
+        0x001e line=33816606
+        0x001f line=33816607
+        0x0020 line=33816608
+        0x0021 line=33816609
+        0x0022 line=33816610
+        0x0023 line=33816611
+        0x0024 line=33816612
+        0x0025 line=33816613
+      locals        :
+        0x0000 - 0x0026 reg=3 (null) Ljava/util/List;
+        0x0000 - 0x0026 reg=4 (null) Ljava/lang/String;
+
+    #17              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getHeaderValueIgnoreCase'
+      type          : '(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 51 16-bit code units
+52b674:                                        |[52b674] com.bytedance.ttnet.utils.RetrofitUtils.getHeaderValueIgnoreCase:(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+52b684: 3802 3100                              |0000: if-eqz v2, 0031 // +0031
+52b688: 7210 13c8 0200                         |0002: invoke-interface {v2}, Ljava/util/List;.isEmpty:()Z // method@c813
+52b68e: 0a00                                   |0005: move-result v0
+52b690: 3900 2b00                              |0006: if-nez v0, 0031 // +002b
+52b694: 7110 5606 0300                         |0008: invoke-static {v3}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@0656
+52b69a: 0a00                                   |000b: move-result v0
+52b69c: 3800 0300                              |000c: if-eqz v0, 000f // +0003
+52b6a0: 2823                                   |000e: goto 0031 // +0023
+52b6a2: 7210 14c8 0200                         |000f: invoke-interface {v2}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52b6a8: 0c02                                   |0012: move-result-object v2
+52b6aa: 7210 d7c7 0200                         |0013: invoke-interface {v2}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52b6b0: 0a00                                   |0016: move-result v0
+52b6b2: 3800 1700                              |0017: if-eqz v0, 002e // +0017
+52b6b6: 7210 d8c7 0200                         |0019: invoke-interface {v2}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52b6bc: 0c00                                   |001c: move-result-object v0
+52b6be: 1f00 7d0a                              |001d: check-cast v0, Lcom/bytedance/retrofit2/client/Header; // type@0a7d
+52b6c2: 6e10 531b 0000                         |001f: invoke-virtual {v0}, Lcom/bytedance/retrofit2/client/Header;.getName:()Ljava/lang/String; // method@1b53
+52b6c8: 0c01                                   |0022: move-result-object v1
+52b6ca: 6e20 06c6 1300                         |0023: invoke-virtual {v3, v1}, Ljava/lang/String;.equalsIgnoreCase:(Ljava/lang/String;)Z // method@c606
+52b6d0: 0a01                                   |0026: move-result v1
+52b6d2: 3801 ecff                              |0027: if-eqz v1, 0013 // -0014
+52b6d6: 6e10 541b 0000                         |0029: invoke-virtual {v0}, Lcom/bytedance/retrofit2/client/Header;.getValue:()Ljava/lang/String; // method@1b54
+52b6dc: 0c02                                   |002c: move-result-object v2
+52b6de: 1102                                   |002d: return-object v2
+52b6e0: 1a02 0000                              |002e: const-string v2, "" // string@0000
+52b6e4: 1102                                   |0030: return-object v2
+52b6e6: 1202                                   |0031: const/4 v2, #int 0 // #0
+52b6e8: 1102                                   |0032: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=33816576
+        0x0001 line=33816577
+        0x0002 line=33816578
+        0x0003 line=33816579
+        0x0004 line=33816580
+        0x0005 line=33816581
+        0x0006 line=33816582
+        0x0007 line=33816583
+        0x0008 line=33816584
+        0x0009 line=33816585
+        0x000a line=33816586
+        0x000b line=33816587
+        0x000c line=33816588
+        0x000d line=33816589
+        0x000e line=33816590
+        0x000f line=33816591
+        0x0010 line=33816592
+        0x0011 line=33816593
+        0x0012 line=33816594
+        0x0013 line=33816595
+        0x0014 line=33816596
+        0x0015 line=33816597
+        0x0016 line=33816598
+        0x0017 line=33816599
+        0x0018 line=33816600
+        0x0019 line=33816601
+        0x001a line=33816602
+        0x001b line=33816603
+        0x001c line=33816604
+        0x001d line=33816605
+        0x001e line=33816606
+        0x001f line=33816607
+        0x0020 line=33816608
+        0x0021 line=33816609
+        0x0022 line=33816610
+        0x0023 line=33816611
+        0x0024 line=33816612
+        0x0025 line=33816613
+        0x0026 line=33816614
+        0x0027 line=33816615
+        0x0028 line=33816616
+        0x0029 line=33816617
+        0x002a line=33816618
+        0x002b line=33816619
+        0x002c line=33816620
+        0x002d line=33816621
+        0x002e line=33816622
+        0x002f line=33816623
+        0x0030 line=33816624
+        0x0031 line=33816625
+        0x0032 line=33816626
+      locals        :
+        0x0000 - 0x0033 reg=2 (null) Ljava/util/List;
+        0x0000 - 0x0033 reg=3 (null) Ljava/lang/String;
+
+    #18              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getHostAddress'
+      type          : '(Ljava/lang/Exception;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 33 16-bit code units
+52b6ec:                                        |[52b6ec] com.bytedance.ttnet.utils.RetrofitUtils.getHostAddress:(Ljava/lang/Exception;)Ljava/lang/String;
+52b6fc: 1a00 0000                              |0000: const-string v0, "" // string@0000
+52b700: 3903 0300                              |0002: if-nez v3, 0005 // +0003
+52b704: 1100                                   |0004: return-object v0
+52b706: 6e10 6ec5 0300                         |0005: invoke-virtual {v3}, Ljava/lang/Exception;.getMessage:()Ljava/lang/String; // method@c56e
+52b70c: 0c03                                   |0008: move-result-object v3
+52b70e: 1a01 6778                              |0009: const-string v1, "\\|" // string@7867
+52b712: 6e20 1ac6 1300                         |000b: invoke-virtual {v3, v1}, Ljava/lang/String;.split:(Ljava/lang/String;)[Ljava/lang/String; // method@c61a
+52b718: 0c03                                   |000e: move-result-object v3
+52b71a: 3803 1100                              |000f: if-eqz v3, 0020 // +0011
+52b71e: 2131                                   |0011: array-length v1, v3
+52b720: 1222                                   |0012: const/4 v2, #int 2 // #2
+52b722: 3421 0d00                              |0013: if-lt v1, v2, 0020 // +000d
+52b726: 7100 5b16 0000                         |0015: invoke-static {}, Lcom/bytedance/common/utility/Logger;.debug:()Z // method@165b
+52b72c: 1201                                   |0018: const/4 v1, #int 0 // #0
+52b72e: 4603 0301                              |0019: aget-object v3, v3, v1
+52b732: 1103                                   |001b: return-object v3
+52b734: 0d03                                   |001c: move-exception v3
+52b736: 6e10 7bc6 0300                         |001d: invoke-virtual {v3}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b73c: 1100                                   |0020: return-object v0
+      catches       : 1
+        0x0005 - 0x001b
+          <any> -> 0x001c
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+      locals        :
+        0x0000 - 0x0021 reg=3 (null) Ljava/lang/Exception;
+
+    #19              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getLastModified'
+      type          : '(Ljava/util/List;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 17 16-bit code units
+52b74c:                                        |[52b74c] com.bytedance.ttnet.utils.RetrofitUtils.getLastModified:(Ljava/util/List;)Ljava/lang/String;
+52b75c: 1200                                   |0000: const/4 v0, #int 0 // #0
+52b75e: 3902 0300                              |0001: if-nez v2, 0004 // +0003
+52b762: 1100                                   |0003: return-object v0
+52b764: 1a01 7c1f                              |0004: const-string v1, "Last-Modified" // string@1f7c
+52b768: 7120 ca52 1200                         |0006: invoke-static {v2, v1}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getFirstHeader:(Ljava/util/List;Ljava/lang/String;)Lcom/bytedance/retrofit2/client/Header; // method@52ca
+52b76e: 0c02                                   |0009: move-result-object v2
+52b770: 3802 0600                              |000a: if-eqz v2, 0010 // +0006
+52b774: 6e10 541b 0200                         |000c: invoke-virtual {v2}, Lcom/bytedance/retrofit2/client/Header;.getValue:()Ljava/lang/String; // method@1b54
+52b77a: 0c00                                   |000f: move-result-object v0
+52b77c: 1100                                   |0010: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+      locals        :
+        0x0000 - 0x0011 reg=2 (null) Ljava/util/List;
+
+    #20              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getOkRetrofit'
+      type          : '(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 4
+      insns size    : 38 16-bit code units
+52b780:                                        |[52b780] com.bytedance.ttnet.utils.RetrofitUtils.getOkRetrofit:(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;
+52b790: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b794: 1d00                                   |0002: monitor-enter v0
+52b796: 7110 6a16 0300                         |0003: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b79c: 0a01                                   |0006: move-result v1
+52b79e: 1202                                   |0007: const/4 v2, #int 0 // #0
+52b7a0: 3801 0400                              |0008: if-eqz v1, 000c // +0004
+52b7a4: 1e00                                   |000a: monitor-exit v0
+52b7a6: 1102                                   |000b: return-object v2
+52b7a8: 6201 ab20                              |000c: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sOKRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ab
+52b7ac: 6e20 6317 3100                         |000e: invoke-virtual {v1, v3}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@1763
+52b7b2: 0c01                                   |0011: move-result-object v1
+52b7b4: 1f01 740a                              |0012: check-cast v1, Lcom/bytedance/retrofit2/Retrofit; // type@0a74
+52b7b8: 3801 0400                              |0014: if-eqz v1, 0018 // +0004
+52b7bc: 1e00                                   |0016: monitor-exit v0
+52b7be: 1101                                   |0017: return-object v1
+52b7c0: 7140 be52 2322                         |0018: invoke-static {v3, v2, v2, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createOkRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit; // method@52be
+52b7c6: 0c01                                   |001b: move-result-object v1
+52b7c8: 6202 ab20                              |001c: sget-object v2, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sOKRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ab
+52b7cc: 6e30 6517 3201                         |001e: invoke-virtual {v2, v3, v1}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@1765
+52b7d2: 1e00                                   |0021: monitor-exit v0
+52b7d4: 1101                                   |0022: return-object v1
+52b7d6: 0d03                                   |0023: move-exception v3
+52b7d8: 1e00                                   |0024: monitor-exit v0
+52b7da: 2703                                   |0025: throw v3
+      catches       : 3
+        0x0003 - 0x0007
+          <any> -> 0x0023
+        0x000c - 0x0014
+          <any> -> 0x0023
+        0x0018 - 0x0021
+          <any> -> 0x0023
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+        0x0025 line=17039397
+      locals        :
+        0x0000 - 0x0026 reg=3 (null) Ljava/lang/String;
+
+    #21              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getOutIp'
+      type          : '(Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;[Ljava/lang/String;Ljava/util/List;Lcom/bytedance/ttnet/http/RequestContext;Ljava/lang/Exception;)V'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 9
+      ins           : 5
+      outs          : 2
+      insns size    : 94 16-bit code units
+52b7f8:                                        |[52b7f8] com.bytedance.ttnet.utils.RetrofitUtils.getOutIp:(Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;[Ljava/lang/String;Ljava/util/List;Lcom/bytedance/ttnet/http/RequestContext;Ljava/lang/Exception;)V
+52b808: 1200                                   |0000: const/4 v0, #int 0 // #0
+52b80a: 3806 2a00                              |0001: if-eqz v6, 002b // +002a
+52b80e: 7210 1cc8 0600                         |0003: invoke-interface {v6}, Ljava/util/List;.size:()I // method@c81c
+52b814: 0a01                                   |0006: move-result v1
+52b816: 3d01 2400                              |0007: if-lez v1, 002b // +0024
+52b81a: 7210 14c8 0600                         |0009: invoke-interface {v6}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c814
+52b820: 0c06                                   |000c: move-result-object v6
+52b822: 7210 d7c7 0600                         |000d: invoke-interface {v6}, Ljava/util/Iterator;.hasNext:()Z // method@c7d7
+52b828: 0a01                                   |0010: move-result v1
+52b82a: 3801 1a00                              |0011: if-eqz v1, 002b // +001a
+52b82e: 7210 d8c7 0600                         |0013: invoke-interface {v6}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c7d8
+52b834: 0c01                                   |0016: move-result-object v1
+52b836: 1f01 7d0a                              |0017: check-cast v1, Lcom/bytedance/retrofit2/client/Header; // type@0a7d
+52b83a: 1b02 7de9 0000                         |0019: const-string/jumbo v2, "x-net-info.remoteaddr" // string@0000e97d
+52b840: 6e10 531b 0100                         |001c: invoke-virtual {v1}, Lcom/bytedance/retrofit2/client/Header;.getName:()Ljava/lang/String; // method@1b53
+52b846: 0c03                                   |001f: move-result-object v3
+52b848: 6e20 06c6 3200                         |0020: invoke-virtual {v2, v3}, Ljava/lang/String;.equalsIgnoreCase:(Ljava/lang/String;)Z // method@c606
+52b84e: 0a02                                   |0023: move-result v2
+52b850: 3802 e9ff                              |0024: if-eqz v2, 000d // -0017
+52b854: 6e10 541b 0100                         |0026: invoke-virtual {v1}, Lcom/bytedance/retrofit2/client/Header;.getValue:()Ljava/lang/String; // method@1b54
+52b85a: 0c00                                   |0029: move-result-object v0
+52b85c: 28e3                                   |002a: goto 000d // -001d
+52b85e: 7110 6a16 0000                         |002b: invoke-static {v0}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b864: 0a06                                   |002e: move-result v6
+52b866: 3806 0600                              |002f: if-eqz v6, 0035 // +0006
+52b86a: 3807 0400                              |0031: if-eqz v7, 0035 // +0004
+52b86e: 5470 f907                              |0033: iget-object v0, v7, Lcom/bytedance/frameworks/baselib/network/http/BaseRequestContext;.remoteIp:Ljava/lang/String; // field@07f9
+52b872: 7110 6a16 0000                         |0035: invoke-static {v0}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b878: 0a06                                   |0038: move-result v6
+52b87a: 3806 0600                              |0039: if-eqz v6, 003f // +0006
+52b87e: 7110 cc52 0800                         |003b: invoke-static {v8}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.getHostAddress:(Ljava/lang/Exception;)Ljava/lang/String; // method@52cc
+52b884: 0c00                                   |003e: move-result-object v0
+52b886: 7110 6a16 0000                         |003f: invoke-static {v0}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b88c: 0a06                                   |0042: move-result v6
+52b88e: 3806 0300                              |0043: if-eqz v6, 0046 // +0003
+52b892: 0e00                                   |0045: return-void
+52b894: 3805 0800                              |0046: if-eqz v5, 004e // +0008
+52b898: 2156                                   |0048: array-length v6, v5
+52b89a: 3d06 0500                              |0049: if-lez v6, 004e // +0005
+52b89e: 1206                                   |004b: const/4 v6, #int 0 // #0
+52b8a0: 4d00 0506                              |004c: aput-object v0, v5, v6
+52b8a4: 3804 0f00                              |004e: if-eqz v4, 005d // +000f
+52b8a8: 5b40 f207                              |0050: iput-object v0, v4, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;.remoteIp:Ljava/lang/String; // field@07f2
+52b8ac: 5444 f307                              |0052: iget-object v4, v4, Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;.reqContext:Lcom/bytedance/frameworks/baselib/network/http/BaseRequestContext; // field@07f3
+52b8b0: 3804 0900                              |0054: if-eqz v4, 005d // +0009
+52b8b4: 5b40 f907                              |0056: iput-object v0, v4, Lcom/bytedance/frameworks/baselib/network/http/BaseRequestContext;.remoteIp:Ljava/lang/String; // field@07f9
+52b8b8: 2805                                   |0058: goto 005d // +0005
+52b8ba: 0d04                                   |0059: move-exception v4
+52b8bc: 6e10 7bc6 0400                         |005a: invoke-virtual {v4}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b8c2: 0e00                                   |005d: return-void
+      catches       : 1
+        0x0003 - 0x0058
+          <any> -> 0x0059
+      positions     :
+        0x0000 line=84213760
+        0x0001 line=84213761
+        0x0002 line=84213762
+        0x0003 line=84213763
+        0x0004 line=84213764
+        0x0005 line=84213765
+        0x0006 line=84213766
+        0x0007 line=84213767
+        0x0008 line=84213768
+        0x0009 line=84213769
+        0x000a line=84213770
+        0x000b line=84213771
+        0x000c line=84213772
+        0x000d line=84213773
+        0x000e line=84213774
+        0x000f line=84213775
+        0x0010 line=84213776
+        0x0011 line=84213777
+        0x0012 line=84213778
+        0x0013 line=84213779
+        0x0014 line=84213780
+        0x0015 line=84213781
+        0x0016 line=84213782
+        0x0017 line=84213783
+        0x0018 line=84213784
+        0x0019 line=84213785
+        0x001a line=84213786
+        0x001b line=84213787
+        0x001c line=84213788
+        0x001d line=84213789
+        0x001e line=84213790
+        0x001f line=84213791
+        0x0020 line=84213792
+        0x0021 line=84213793
+        0x0022 line=84213794
+        0x0023 line=84213795
+        0x0024 line=84213796
+        0x0025 line=84213797
+        0x0026 line=84213798
+        0x0027 line=84213799
+        0x0028 line=84213800
+        0x0029 line=84213801
+        0x002a line=84213802
+        0x002b line=84213803
+        0x002c line=84213804
+        0x002d line=84213805
+        0x002e line=84213806
+        0x002f line=84213807
+        0x0030 line=84213808
+        0x0031 line=84213809
+        0x0032 line=84213810
+        0x0033 line=84213811
+        0x0034 line=84213812
+        0x0035 line=84213813
+        0x0036 line=84213814
+        0x0037 line=84213815
+        0x0038 line=84213816
+        0x0039 line=84213817
+        0x003a line=84213818
+        0x003b line=84213819
+        0x003c line=84213820
+        0x003d line=84213821
+        0x003e line=84213822
+        0x003f line=84213823
+        0x0040 line=84213824
+        0x0041 line=84213825
+        0x0042 line=84213826
+        0x0043 line=84213827
+        0x0044 line=84213828
+        0x0045 line=84213829
+        0x0046 line=84213830
+        0x0047 line=84213831
+        0x0048 line=84213832
+        0x0049 line=84213833
+        0x004a line=84213834
+        0x004b line=84213835
+        0x004c line=84213836
+        0x004d line=84213837
+        0x004e line=84213838
+        0x004f line=84213839
+        0x0050 line=84213840
+        0x0051 line=84213841
+        0x0052 line=84213842
+        0x0053 line=84213843
+        0x0054 line=84213844
+        0x0055 line=84213845
+        0x0056 line=84213846
+        0x0057 line=84213847
+        0x0058 line=84213848
+        0x0059 line=84213849
+        0x005a line=84213850
+        0x005b line=84213851
+        0x005c line=84213852
+        0x005d line=84213853
+      locals        :
+        0x0000 - 0x005e reg=4 (null) Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;
+        0x0000 - 0x005e reg=5 (null) [Ljava/lang/String;
+        0x0000 - 0x005e reg=6 (null) Ljava/util/List;
+        0x0000 - 0x005e reg=7 (null) Lcom/bytedance/ttnet/http/RequestContext;
+        0x0000 - 0x005e reg=8 (null) Ljava/lang/Exception;
+
+    #22              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'getSsRetrofit'
+      type          : '(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 4
+      insns size    : 38 16-bit code units
+52b8d0:                                        |[52b8d0] com.bytedance.ttnet.utils.RetrofitUtils.getSsRetrofit:(Ljava/lang/String;)Lcom/bytedance/retrofit2/Retrofit;
+52b8e0: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b8e4: 1d00                                   |0002: monitor-enter v0
+52b8e6: 7110 6a16 0300                         |0003: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@166a
+52b8ec: 0a01                                   |0006: move-result v1
+52b8ee: 1202                                   |0007: const/4 v2, #int 0 // #0
+52b8f0: 3801 0400                              |0008: if-eqz v1, 000c // +0004
+52b8f4: 1e00                                   |000a: monitor-exit v0
+52b8f6: 1102                                   |000b: return-object v2
+52b8f8: 6201 ac20                              |000c: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ac
+52b8fc: 6e20 6317 3100                         |000e: invoke-virtual {v1, v3}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@1763
+52b902: 0c01                                   |0011: move-result-object v1
+52b904: 1f01 740a                              |0012: check-cast v1, Lcom/bytedance/retrofit2/Retrofit; // type@0a74
+52b908: 3801 0400                              |0014: if-eqz v1, 0018 // +0004
+52b90c: 1e00                                   |0016: monitor-exit v0
+52b90e: 1101                                   |0017: return-object v1
+52b910: 7140 c452 2322                         |0018: invoke-static {v3, v2, v2, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createSsRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;)Lcom/bytedance/retrofit2/Retrofit; // method@52c4
+52b916: 0c01                                   |001b: move-result-object v1
+52b918: 6202 ac20                              |001c: sget-object v2, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ac
+52b91c: 6e30 6517 3201                         |001e: invoke-virtual {v2, v3, v1}, Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@1765
+52b922: 1e00                                   |0021: monitor-exit v0
+52b924: 1101                                   |0022: return-object v1
+52b926: 0d03                                   |0023: move-exception v3
+52b928: 1e00                                   |0024: monitor-exit v0
+52b92a: 2703                                   |0025: throw v3
+      catches       : 3
+        0x0003 - 0x0007
+          <any> -> 0x0023
+        0x000c - 0x0014
+          <any> -> 0x0023
+        0x0018 - 0x0021
+          <any> -> 0x0023
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+        0x0025 line=17039397
+      locals        :
+        0x0000 - 0x0026 reg=3 (null) Ljava/lang/String;
+
+    #23              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'parseContentType'
+      type          : '(Ljava/lang/String;)Landroid/util/Pair;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 32 16-bit code units
+52b948:                                        |[52b948] com.bytedance.ttnet.utils.RetrofitUtils.parseContentType:(Ljava/lang/String;)Landroid/util/Pair;
+52b958: 1200                                   |0000: const/4 v0, #int 0 // #0
+52b95a: 3902 0300                              |0001: if-nez v2, 0004 // +0003
+52b95e: 1100                                   |0003: return-object v0
+52b960: 2201 1d08                              |0004: new-instance v1, Lcom/bytedance/frameworks/baselib/network/http/parser/MimeType; // type@081d
+52b964: 7020 5217 2100                         |0006: invoke-direct {v1, v2}, Lcom/bytedance/frameworks/baselib/network/http/parser/MimeType;.<init>:(Ljava/lang/String;)V // method@1752
+52b96a: 6e10 5317 0100                         |0009: invoke-virtual {v1}, Lcom/bytedance/frameworks/baselib/network/http/parser/MimeType;.a:()Ljava/lang/String; // method@1753
+52b970: 0c02                                   |000c: move-result-object v2
+52b972: 6e10 5417 0100                         |000d: invoke-virtual {v1}, Lcom/bytedance/frameworks/baselib/network/http/parser/MimeType;.b:()Ljava/lang/String; // method@1754
+52b978: 0c00                                   |0010: move-result-object v0
+52b97a: 2809                                   |0011: goto 001a // +0009
+52b97c: 0d01                                   |0012: move-exception v1
+52b97e: 2804                                   |0013: goto 0017 // +0004
+52b980: 0d02                                   |0014: move-exception v2
+52b982: 0721                                   |0015: move-object v1, v2
+52b984: 0702                                   |0016: move-object v2, v0
+52b986: 6e10 7bc6 0100                         |0017: invoke-virtual {v1}, Ljava/lang/Throwable;.printStackTrace:()V // method@c67b
+52b98c: 2201 d101                              |001a: new-instance v1, Landroid/util/Pair; // type@01d1
+52b990: 7030 7206 2100                         |001c: invoke-direct {v1, v2, v0}, Landroid/util/Pair;.<init>:(Ljava/lang/Object;Ljava/lang/Object;)V // method@0672
+52b996: 1101                                   |001f: return-object v1
+      catches       : 2
+        0x0004 - 0x000d
+          <any> -> 0x0014
+        0x000d - 0x0011
+          <any> -> 0x0012
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+        0x0014 line=16973844
+        0x0015 line=16973845
+        0x0016 line=16973846
+        0x0017 line=16973847
+        0x0018 line=16973848
+        0x0019 line=16973849
+        0x001a line=16973850
+        0x001b line=16973851
+        0x001c line=16973852
+        0x001d line=16973853
+        0x001e line=16973854
+        0x001f line=16973855
+      locals        :
+        0x0000 - 0x0020 reg=2 (null) Ljava/lang/String;
+
+    #24              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'removeInterceptor'
+      type          : '(Lcom/bytedance/retrofit2/intercept/Interceptor;)V'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 37 16-bit code units
+52b9b0:                                        |[52b9b0] com.bytedance.ttnet.utils.RetrofitUtils.removeInterceptor:(Lcom/bytedance/retrofit2/intercept/Interceptor;)V
+52b9c0: 1c00 2a16                              |0000: const-class v0, Lcom/bytedance/ttnet/utils/RetrofitUtils; // type@162a
+52b9c4: 1d00                                   |0002: monitor-enter v0
+52b9c6: 3902 0400                              |0003: if-nez v2, 0007 // +0004
+52b9ca: 1e00                                   |0005: monitor-exit v0
+52b9cc: 0e00                                   |0006: return-void
+52b9ce: 6201 aa20                              |0007: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52b9d2: 6e20 aac8 2100                         |0009: invoke-virtual {v1, v2}, Ljava/util/concurrent/CopyOnWriteArrayList;.contains:(Ljava/lang/Object;)Z // method@c8aa
+52b9d8: 0a01                                   |000c: move-result v1
+52b9da: 3901 0400                              |000d: if-nez v1, 0011 // +0004
+52b9de: 1e00                                   |000f: monitor-exit v0
+52b9e0: 0e00                                   |0010: return-void
+52b9e2: 6201 aa20                              |0011: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sInterceptors:Ljava/util/concurrent/CopyOnWriteArrayList; // field@20aa
+52b9e6: 6e20 afc8 2100                         |0013: invoke-virtual {v1, v2}, Ljava/util/concurrent/CopyOnWriteArrayList;.remove:(Ljava/lang/Object;)Z // method@c8af
+52b9ec: 6201 ac20                              |0016: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ac
+52b9f0: 7120 eb52 2100                         |0018: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/d;.f:(Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;Lcom/bytedance/retrofit2/intercept/Interceptor;)V // method@52eb
+52b9f6: 6201 ab20                              |001b: sget-object v1, Lcom/bytedance/ttnet/utils/RetrofitUtils;.sOKRetrofitCache:Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache; // field@20ab
+52b9fa: 7120 eb52 2100                         |001d: invoke-static {v1, v2}, Lcom/bytedance/ttnet/utils/d;.f:(Lcom/bytedance/frameworks/baselib/network/http/util/LRUCache;Lcom/bytedance/retrofit2/intercept/Interceptor;)V // method@52eb
+52ba00: 1e00                                   |0020: monitor-exit v0
+52ba02: 0e00                                   |0021: return-void
+52ba04: 0d02                                   |0022: move-exception v2
+52ba06: 1e00                                   |0023: monitor-exit v0
+52ba08: 2702                                   |0024: throw v2
+      catches       : 2
+        0x0007 - 0x000d
+          <any> -> 0x0022
+        0x0011 - 0x0020
+          <any> -> 0x0022
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+      locals        :
+        0x0000 - 0x0025 reg=2 (null) Lcom/bytedance/retrofit2/intercept/Interceptor;
+
+    #25              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'setTimeout'
+      type          : '(Ljava/net/URLConnection;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 11 16-bit code units
+52ba20:                                        |[52ba20] com.bytedance.ttnet.utils.RetrofitUtils.setTimeout:(Ljava/net/URLConnection;)V
+52ba30: 3801 0a00                              |0000: if-eqz v1, 000a // +000a
+52ba34: 1300 983a                              |0002: const/16 v0, #int 15000 // #3a98
+52ba38: 6e20 ebc6 0100                         |0004: invoke-virtual {v1, v0}, Ljava/net/URLConnection;.setConnectTimeout:(I)V // method@c6eb
+52ba3e: 6e20 ecc6 0100                         |0007: invoke-virtual {v1, v0}, Ljava/net/URLConnection;.setReadTimeout:(I)V // method@c6ec
+52ba44: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+      locals        :
+        0x0000 - 0x000b reg=1 (null) Ljava/net/URLConnection;
+
+    #26              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils;)
+      name          : 'tryCompressData'
+      type          : '([BLcom/bytedance/ttnet/utils/RetrofitUtils$CompressType;)Landroid/util/Pair;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 2
+      outs          : 4
+      insns size    : 98 16-bit code units
+52ba48:                                        |[52ba48] com.bytedance.ttnet.utils.RetrofitUtils.tryCompressData:([BLcom/bytedance/ttnet/utils/RetrofitUtils$CompressType;)Landroid/util/Pair;
+52ba58: 1200                                   |0000: const/4 v0, #int 0 // #0
+52ba5a: 3905 0300                              |0001: if-nez v5, 0004 // +0003
+52ba5e: 1100                                   |0003: return-object v0
+52ba60: 2151                                   |0004: array-length v1, v5
+52ba62: 6202 a520                              |0005: sget-object v2, Lcom/bytedance/ttnet/utils/RetrofitUtils$CompressType;.GZIP:Lcom/bytedance/ttnet/utils/RetrofitUtils$CompressType; // field@20a5
+52ba66: 1303 8000                              |0007: const/16 v3, #int 128 // #80
+52ba6a: 1304 0020                              |0009: const/16 v4, #int 8192 // #2000
+52ba6e: 3362 1f00                              |000b: if-ne v2, v6, 002a // +001f
+52ba72: 3731 1d00                              |000d: if-le v1, v3, 002a // +001d
+52ba76: 2206 c436                              |000f: new-instance v6, Ljava/io/ByteArrayOutputStream; // type@36c4
+52ba7a: 7020 92c4 4600                         |0011: invoke-direct {v6, v4}, Ljava/io/ByteArrayOutputStream;.<init>:(I)V // method@c492
+52ba80: 2201 cb37                              |0014: new-instance v1, Ljava/util/zip/GZIPOutputStream; // type@37cb
+52ba84: 7020 41c9 6100                         |0016: invoke-direct {v1, v6}, Ljava/util/zip/GZIPOutputStream;.<init>:(Ljava/io/OutputStream;)V // method@c941
+52ba8a: 6e20 43c9 5100                         |0019: invoke-virtual {v1, v5}, Ljava/util/zip/GZIPOutputStream;.write:([B)V // method@c943
+52ba90: 6e10 42c9 0100                         |001c: invoke-virtual {v1}, Ljava/util/zip/GZIPOutputStream;.close:()V // method@c942
+52ba96: 6e10 96c4 0600                         |001f: invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;.toByteArray:()[B // method@c496
+52ba9c: 0c00                                   |0022: move-result-object v0
+52ba9e: 1a05 03a9                              |0023: const-string v5, "gzip" // string@a903
+52baa2: 2837                                   |0025: goto 005c // +0037
+52baa4: 6e10 42c9 0100                         |0026: invoke-virtual {v1}, Ljava/util/zip/GZIPOutputStream;.close:()V // method@c942
+52baaa: 1100                                   |0029: return-object v0
+52baac: 6202 a420                              |002a: sget-object v2, Lcom/bytedance/ttnet/utils/RetrofitUtils$CompressType;.DEFLATER:Lcom/bytedance/ttnet/utils/RetrofitUtils$CompressType; // field@20a4
+52bab0: 3362 2f00                              |002c: if-ne v2, v6, 005b // +002f
+52bab4: 3731 2d00                              |002e: if-le v1, v3, 005b // +002d
+52bab8: 2206 c436                              |0030: new-instance v6, Ljava/io/ByteArrayOutputStream; // type@36c4
+52babc: 7020 92c4 4600                         |0032: invoke-direct {v6, v4}, Ljava/io/ByteArrayOutputStream;.<init>:(I)V // method@c492
+52bac2: 2200 c937                              |0035: new-instance v0, Ljava/util/zip/Deflater; // type@37c9
+52bac6: 7010 38c9 0000                         |0037: invoke-direct {v0}, Ljava/util/zip/Deflater;.<init>:()V // method@c938
+52bacc: 6e20 3dc9 5000                         |003a: invoke-virtual {v0, v5}, Ljava/util/zip/Deflater;.setInput:([B)V // method@c93d
+52bad2: 6e10 3bc9 0000                         |003d: invoke-virtual {v0}, Ljava/util/zip/Deflater;.finish:()V // method@c93b
+52bad8: 2345 ab49                              |0040: new-array v5, v4, [B // type@49ab
+52badc: 6e10 3cc9 0000                         |0042: invoke-virtual {v0}, Ljava/util/zip/Deflater;.finished:()Z // method@c93c
+52bae2: 0a01                                   |0045: move-result v1
+52bae4: 3901 0b00                              |0046: if-nez v1, 0051 // +000b
+52bae8: 6e20 39c9 5000                         |0048: invoke-virtual {v0, v5}, Ljava/util/zip/Deflater;.deflate:([B)I // method@c939
+52baee: 0a01                                   |004b: move-result v1
+52baf0: 1202                                   |004c: const/4 v2, #int 0 // #0
+52baf2: 6e40 99c4 5612                         |004d: invoke-virtual {v6, v5, v2, v1}, Ljava/io/ByteArrayOutputStream;.write:([BII)V // method@c499
+52baf8: 28f2                                   |0050: goto 0042 // -000e
+52bafa: 6e10 3ac9 0000                         |0051: invoke-virtual {v0}, Ljava/util/zip/Deflater;.end:()V // method@c93a
+52bb00: 6e10 96c4 0600                         |0054: invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;.toByteArray:()[B // method@c496
+52bb06: 0c00                                   |0057: move-result-object v0
+52bb08: 1a05 4a8f                              |0058: const-string v5, "deflate" // string@8f4a
+52bb0c: 2802                                   |005a: goto 005c // +0002
+52bb0e: 0705                                   |005b: move-object v5, v0
+52bb10: 2206 d101                              |005c: new-instance v6, Landroid/util/Pair; // type@01d1
+52bb14: 7030 7206 0605                         |005e: invoke-direct {v6, v0, v5}, Landroid/util/Pair;.<init>:(Ljava/lang/Object;Ljava/lang/Object;)V // method@0672
+52bb1a: 1106                                   |0061: return-object v6
+      catches       : 1
+        0x0019 - 0x001c
+          <any> -> 0x0026
+      positions     :
+        0x0000 line=33882112
+        0x0001 line=33882113
+        0x0002 line=33882114
+        0x0003 line=33882115
+        0x0004 line=33882116
+        0x0005 line=33882117
+        0x0006 line=33882118
+        0x0007 line=33882119
+        0x0008 line=33882120
+        0x0009 line=33882121
+        0x000a line=33882122
+        0x000b line=33882123
+        0x000c line=33882124
+        0x000d line=33882125
+        0x000e line=33882126
+        0x000f line=33882127
+        0x0010 line=33882128
+        0x0011 line=33882129
+        0x0012 line=33882130
+        0x0013 line=33882131
+        0x0014 line=33882132
+        0x0015 line=33882133
+        0x0016 line=33882134
+        0x0017 line=33882135
+        0x0018 line=33882136
+        0x0019 line=33882137
+        0x001a line=33882138
+        0x001b line=33882139
+        0x001c line=33882140
+        0x001d line=33882141
+        0x001e line=33882142
+        0x001f line=33882143
+        0x0020 line=33882144
+        0x0021 line=33882145
+        0x0022 line=33882146
+        0x0023 line=33882147
+        0x0024 line=33882148
+        0x0025 line=33882149
+        0x0026 line=33882150
+        0x0027 line=33882151
+        0x0028 line=33882152
+        0x0029 line=33882153
+        0x002a line=33882154
+        0x002b line=33882155
+        0x002c line=33882156
+        0x002d line=33882157
+        0x002e line=33882158
+        0x002f line=33882159
+        0x0030 line=33882160
+        0x0031 line=33882161
+        0x0032 line=33882162
+        0x0033 line=33882163
+        0x0034 line=33882164
+        0x0035 line=33882165
+        0x0036 line=33882166
+        0x0037 line=33882167
+        0x0038 line=33882168
+        0x0039 line=33882169
+        0x003a line=33882170
+        0x003b line=33882171
+        0x003c line=33882172
+        0x003d line=33882173
+        0x003e line=33882174
+        0x003f line=33882175
+        0x0040 line=33882176
+        0x0041 line=33882177
+        0x0042 line=33882178
+        0x0043 line=33882179
+        0x0044 line=33882180
+        0x0045 line=33882181
+        0x0046 line=33882182
+        0x0047 line=33882183
+        0x0048 line=33882184
+        0x0049 line=33882185
+        0x004a line=33882186
+        0x004b line=33882187
+        0x004c line=33882188
+        0x004d line=33882189
+        0x004e line=33882190
+        0x004f line=33882191
+        0x0050 line=33882192
+        0x0051 line=33882193
+        0x0052 line=33882194
+        0x0053 line=33882195
+        0x0054 line=33882196
+        0x0055 line=33882197
+        0x0056 line=33882198
+        0x0057 line=33882199
+        0x0058 line=33882200
+        0x0059 line=33882201
+        0x005a line=33882202
+        0x005b line=33882203
+        0x005c line=33882204
+        0x005d line=33882205
+        0x005e line=33882206
+        0x005f line=33882207
+        0x0060 line=33882208
+        0x0061 line=33882209
+      locals        :
+        0x0000 - 0x0062 reg=5 (null) [B
+        0x0000 - 0x0062 reg=6 (null) Lcom/bytedance/ttnet/utils/RetrofitUtils$CompressType;
+
+  Virtual methods   -
+  source_file_idx   : 27999 (SourceFile)
+

@@ -1,0 +1,31 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "limitations": "Original DEX ZIP members extracted unchanged for offline disassembly; not a client or complete program analysis.",
+  "members": [
+    {
+      "member": "classes2.dex",
+      "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3",
+      "bytes": 9706244
+    },
+    {
+      "member": "classes6.dex",
+      "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508",
+      "bytes": 13244968
+    },
+    {
+      "member": "classes7.dex",
+      "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+      "bytes": 11728768
+    },
+    {
+      "member": "classes8.dex",
+      "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf",
+      "bytes": 9516116
+    },
+    {
+      "member": "classes9.dex",
+      "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "bytes": 12260204
+    }
+  ]
+}

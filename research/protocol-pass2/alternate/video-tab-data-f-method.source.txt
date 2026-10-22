@@ -1,0 +1,153 @@
+        public static VideoData f(com.dragon.read.rpc.model.VideoData videoData) {
+            ApiBookInfo apiBookInfo;
+            if (videoData == null) {
+                return null;
+            }
+            VideoData videoData2 = new VideoData();
+            videoData2.vid = videoData.vid;
+            videoData2.cover = videoData.cover;
+            String str = videoData.colorDominate;
+            videoData2.coverDominate = str;
+            videoData2.duration = videoData.duration;
+            videoData2.title = videoData.title;
+            videoData2.subTitle = videoData.subTitle;
+            videoData2.videoDesc = videoData.videoDesc;
+            videoData2.materialId = videoData.materialId;
+            videoData2.seriesId = videoData.seriesId;
+            videoData2.countOfLikes = videoData.diggedCount;
+            videoData2.commentCount = videoData.commentCount;
+            videoData2.userLike = videoData.userDigg;
+            videoData2.isEpisodes = videoData.episode;
+            videoData2.isVertical = videoData.vertical;
+            videoData2.isTop = videoData.top;
+            videoData2.autoPlay = videoData.autoPlay;
+            videoData2.isFollowed = videoData.followed;
+            videoData2.isSubscribed = videoData.onlineSubscribed;
+            videoData2.contentType = videoData.contentType;
+            videoData2.recommendInfo = videoData.recommendInfo;
+            videoData2.recommendReasonList = videoData.recommendReasonList;
+            videoData2.showPlayCount = videoData.showPlayCnt;
+            videoData2.playCount = videoData.playCnt;
+            videoData2.playCountDesc = videoData.playCntDesc;
+            videoData2.bookExist = videoData.bookExist;
+            videoData2.recommendGroupId = videoData.recommendGroupId;
+            videoData2.embeddingClusterId = videoData.clusterId;
+            videoData2.showScore = videoData.showScore;
+            videoData2.score = videoData.score;
+            videoData2.showRecommendText = videoData.showRecText;
+            videoData2.showSubTitle = videoData.showSubTile;
+            videoData2.recommendText = videoData.recText;
+            videoData2.episodesCount = videoData.episodeCnt;
+            videoData2.showContentTag = videoData.showContentTag;
+            videoData2.showEpisodeCount = videoData.showEpisodeCnt;
+            videoData2.heatScore = videoData.rankScore;
+            videoData2.timeYear = videoData.time;
+            videoData2.location = videoData.location;
+            videoData2.language = videoData.language;
+            String str2 = videoData.videoTag;
+            if (str2 != null) {
+                videoData2.videoTag = str2;
+            }
+            videoData2.videoPlatform = videoData.videoPlatform;
+            videoData2.authorNickName = videoData.authorNickname;
+            videoData2.categoryList = videoData.categoryList;
+            videoData2.videoModel = videoData.videoModel;
+            videoData2.colorDominate = str;
+            videoData2.bgColorHex = videoData.videoBgColorHex;
+            videoData2.aliasName = videoData.aliasName;
+            videoData2.rawAliasName = videoData.rawAlias;
+            videoData2.subscribeItem = videoData.subscribeItem;
+            videoData2.forceVid = videoData.forceVid;
+            videoData2.updateTag = videoData.updateTag;
+            videoData2.cardTips = videoData.cardTips;
+            videoData2.videoHighlight = videoData.highlight;
+            videoData2.createTime = Long.valueOf(NumberUtils.parse(videoData.createTime, 0L));
+            videoData2.horizontalCover = videoData.horizCover;
+            videoData2.secondaryInfoList = videoData.secondaryInfoList;
+            videoData2.subTitleList = videoData.subTitleList;
+            videoData2.recommendTagInfoList = videoData.recommendTagInfo;
+            videoData2.payInfo = videoData.payInfo;
+            videoData2.isRelatedMaterialId = !TextUtils.isEmpty(videoData.relatedMaterialId);
+            videoData2.relatedMaterialId = videoData.relatedMaterialId;
+            videoData2.isTrailer = Boolean.valueOf(videoData.isPreviewMaterial);
+            videoData2.isAiSeries = Boolean.TRUE.equals(Boolean.valueOf(videoData.isAiSeries));
+            videoData2.tagInfo = videoData.tagInfo;
+            List<VideoTagInfo> arrayList = videoData.coverTagInfoList;
+            if (arrayList == null) {
+                arrayList = new ArrayList<>();
+            }
+            videoData2.coverTagInfoList = arrayList;
+            videoData2.recText = videoData.recText;
+            videoData2.recTags = videoData.recTags;
+            videoData2.showPlayIcon = videoData.showPlayIcon;
+            RecTypeStyle recTypeStyle = videoData.recTextIconType;
+            if (recTypeStyle != null) {
+                videoData2.recTextIconType = recTypeStyle.getValue();
+            }
+            videoData2.titleTagInfo = videoData.titleTagInfo;
+            videoData2.buriedParams = videoData.buriedParams;
+            videoData2.recTextItem = videoData.recTextItem;
+            videoData2.isPrivate = videoData.isPrivate;
+            videoData2.albumDetailInfo = videoData.albumInfo;
+            videoData2.albumShowStyle = videoData.albumShowStyle;
+            BookData bookData = new BookData();
+            ApiBookInfo apiBookInfo2 = videoData.bookData;
+            if (apiBookInfo2 != null) {
+                bookData.bookId = apiBookInfo2.bookId;
+                bookData.bookName = apiBookInfo2.bookName;
+            }
+            videoData2.relativeBookData = bookData;
+            List list = (List) JSONUtils.fromJson(videoData.categorySchema, new com.dragon.read.pages.bookmall.model.a().getType());
+            videoData2.categorySchemaList.clear();
+            if (!ListUtils.isEmpty(list)) {
+                videoData2.categorySchemaList.addAll(list);
+            }
+            videoData2.playCoverInfo = videoData.playCoverInfoList;
+            videoData2.url = videoData.url;
+            videoData2.dynamicCover = videoData.dynamicCover;
+            videoData2.seriesCoverInfo = videoData.seriesCoverInfo;
+            videoData2.clipVideoHighlights = videoData.clipVideoHighlightList;
+            videoData2.rankChangeData = videoData.rankChangeData;
+            VideoDetailModel videoDetailModel = new VideoDetailModel();
+            videoDetailModel.b(videoData.videoDetail);
+            videoDetailModel.c(videoData.videoDetail);
+            videoDetailModel.a(videoData);
+            videoData2.videoDetailModel = videoDetailModel;
+            videoDetailModel.recTagList = videoData.recTags;
+            videoDetailModel.recommendReasonList = videoData.recommendReasonList;
+            if (videoData.relatedBookEntryInInteractiveArea != null) {
+                VideoRelateBookInfo videoRelateBookInfo = new VideoRelateBookInfo();
+                videoRelateBookInfo.bookInfo = videoData.bookData;
+                videoRelateBookInfo.relatedBookEntryInInteractiveArea = videoData.relatedBookEntryInInteractiveArea;
+                if (!ListUtils.isEmpty(videoData2.videoDetailModel.getEpisodesList())) {
+                    for (int i = 0; i < videoData2.videoDetailModel.getEpisodesList().size(); i++) {
+                        ((com.dragon.read.video.VideoData) videoData2.videoDetailModel.getEpisodesList().get(i)).getExtraData().put("videoRelateBookInfo", videoRelateBookInfo);
+                    }
+                }
+                if (videoData2.videoDetailModel.getVideoData() != null) {
+                    videoData2.videoDetailModel.getVideoData().getExtraData().put("videoRelateBookInfo", videoRelateBookInfo);
+                }
+            }
+            VideoDetailModel videoDetailModel2 = videoData2.videoDetailModel;
+            if (videoDetailModel2 != null && (apiBookInfo = videoData.bookData) != null && videoData2.contentType == VideoContentType.Video1ColPushBookVideo) {
+                videoDetailModel2.setEpisodesTitle(apiBookInfo.bookName);
+                videoData2.videoDetailModel.setSecondaryInfoList(videoData.bookData.secondaryInfoList);
+                String str3 = videoData.bookData.bookAbstractV2;
+                if (str3 != null) {
+                    videoData2.videoDetailModel.setSeriesIntro(str3.trim());
+                }
+                if (videoData2.videoDetailModel.getVideoData() != null) {
+                    videoData2.videoDetailModel.getVideoData().getExtraData().put("videoBookData", videoData.bookData);
+                }
+            }
+            videoData2.hotCommentList = videoData.hotComments;
+            videoData2.videoWidth = videoData.videoWidth;
+            videoData2.videoHeight = videoData.videoHeight;
+            if (!TextUtils.isEmpty(videoData.videoCategoryType)) {
+                videoData2.extraMap.put("video_category_type", videoData.videoCategoryType);
+            }
+            videoData2.videoCategoryType = videoData.videoCategoryType;
+            videoData2.showDiggedCount = videoData.showDiggedCount;
+            videoData2.hideDiggedIcon = videoData.hideDiggedIcon;
+            return videoData2;
+        }

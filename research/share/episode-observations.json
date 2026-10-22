@@ -1,0 +1,74 @@
+[
+  {
+    "requested_episode": 1,
+    "requested_vid": "7693807842205125657",
+    "used_chapter_id": "7693807842205125657",
+    "chapter_order": 1,
+    "title": "夜晚的答案",
+    "serial_count": 31,
+    "base_resp": {
+      "StatusMessage": "",
+      "StatusCode": 0
+    },
+    "landingFirstChapterEnabled": true,
+    "media_query": {
+      "mime_type": [
+        "video_mp4"
+      ],
+      "end": [
+        "30"
+      ],
+      "start": [
+        "0"
+      ]
+    }
+  },
+  {
+    "requested_episode": 16,
+    "requested_vid": "7693807829781580825",
+    "used_chapter_id": "7693807842205125657",
+    "chapter_order": 1,
+    "title": "夜晚的答案",
+    "serial_count": 31,
+    "base_resp": {
+      "StatusMessage": "",
+      "StatusCode": 0
+    },
+    "landingFirstChapterEnabled": true,
+    "media_query": {
+      "mime_type": [
+        "video_mp4"
+      ],
+      "end": [
+        "30"
+      ],
+      "start": [
+        "0"
+      ]
+    }
+  },
+  {
+    "requested_episode": 31,
+    "requested_vid": "7693807856054717465",
+    "used_chapter_id": "7693807842205125657",
+    "chapter_order": 1,
+    "title": "夜晚的答案",
+    "serial_count": 31,
+    "base_resp": {
+      "StatusMessage": "",
+      "StatusCode": 0
+    },
+    "landingFirstChapterEnabled": true,
+    "media_query": {
+      "mime_type": [
+        "video_mp4"
+      ],
+      "end": [
+        "30"
+      ],
+      "start": [
+        "0"
+      ]
+    }
+  }
+]

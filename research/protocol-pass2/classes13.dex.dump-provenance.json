@@ -1,0 +1,13 @@
+{
+  "dex_member": "classes13.dex",
+  "sha256": "9001f996b9c57e308471ba4b4eab9b66308c9202234c8ddd81da2d758227d50d",
+  "targets": [
+    "Lcom/ss/android/common/applog/NetUtil;",
+    "Lcom/ss/android/deviceregister/DeviceRegisterManager;"
+  ],
+  "found": [
+    "Lcom/ss/android/common/applog/NetUtil;",
+    "Lcom/ss/android/deviceregister/DeviceRegisterManager;"
+  ],
+  "text_decode_errors": "replace; source bytes unchanged"
+}

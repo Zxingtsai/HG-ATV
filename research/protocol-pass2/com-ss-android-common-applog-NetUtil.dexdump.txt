@@ -1,0 +1,3049 @@
+  Class descriptor  : 'Lcom/ss/android/common/applog/NetUtil;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'sAppContext'
+      type          : 'Lcom/ss/android/common/AppContext;'
+      access        : 0x000a (PRIVATE STATIC)
+    #1              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'sCustomParam'
+      type          : 'Ljava/util/concurrent/ConcurrentHashMap;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+    #2              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'sL0OnlyParams'
+      type          : 'Ljava/util/concurrent/ConcurrentHashMap;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 21 16-bit code units
+5959f0:                                        |[5959f0] com.ss.android.common.applog.NetUtil.<clinit>:()V
+595a00: 1400 848f 0a00                         |0000: const v0, #float 9.69839e-40 // #000a8f84
+595a06: 7110 9f10 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@109f
+595a0c: 2200 6a2a                              |0006: new-instance v0, Ljava/util/concurrent/ConcurrentHashMap; // type@2a6a
+595a10: 7010 4ded 0000                         |0008: invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;.<init>:()V // method@ed4d
+595a16: 6900 723a                              |000b: sput-object v0, Lcom/ss/android/common/applog/NetUtil;.sCustomParam:Ljava/util/concurrent/ConcurrentHashMap; // field@3a72
+595a1a: 2200 6a2a                              |000d: new-instance v0, Ljava/util/concurrent/ConcurrentHashMap; // type@2a6a
+595a1e: 7010 4ded 0000                         |000f: invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;.<init>:()V // method@ed4d
+595a24: 6900 733a                              |0012: sput-object v0, Lcom/ss/android/common/applog/NetUtil;.sL0OnlyParams:Ljava/util/concurrent/ConcurrentHashMap; // field@3a73
+595a28: 0e00                                   |0014: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+        0x0013 line=196627
+        0x0014 line=196628
+      locals        :
+
+    #1              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+595a2c:                                        |[595a2c] com.ss.android.common.applog.NetUtil.<init>:()V
+595a3c: 7010 87ea 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@ea87
+595a42: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/ss/android/common/applog/NetUtil;
+
+    #2              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'activePutCommonParams'
+      type          : '(Ljava/lang/StringBuilder;Ljava/util/Map;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 8
+      ins           : 2
+      outs          : 3
+      insns size    : 90 16-bit code units
+595a44:                                        |[595a44] com.ss.android.common.applog.NetUtil.activePutCommonParams:(Ljava/lang/StringBuilder;Ljava/util/Map;)V
+595a54: 6e10 09eb 0600                         |0000: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@eb09
+595a5a: 0c00                                   |0003: move-result-object v0
+595a5c: 7110 6504 0000                         |0004: invoke-static {v0}, Landroid/net/Uri;.parse:(Ljava/lang/String;)Landroid/net/Uri; // method@0465
+595a62: 0c00                                   |0007: move-result-object v0
+595a64: 6e10 6004 0000                         |0008: invoke-virtual {v0}, Landroid/net/Uri;.getQueryParameterNames:()Ljava/util/Set; // method@0460
+595a6a: 0c01                                   |000b: move-result-object v1
+595a6c: 6e10 4f04 0000                         |000c: invoke-virtual {v0}, Landroid/net/Uri;.buildUpon:()Landroid/net/Uri$Builder; // method@044f
+595a72: 0c00                                   |000f: move-result-object v0
+595a74: 7210 f2ec 0700                         |0010: invoke-interface {v7}, Ljava/util/Map;.entrySet:()Ljava/util/Set; // method@ecf2
+595a7a: 0c07                                   |0013: move-result-object v7
+595a7c: 7210 1aed 0700                         |0014: invoke-interface {v7}, Ljava/util/Set;.iterator:()Ljava/util/Iterator; // method@ed1a
+595a82: 0c07                                   |0017: move-result-object v7
+595a84: 7210 9fec 0700                         |0018: invoke-interface {v7}, Ljava/util/Iterator;.hasNext:()Z // method@ec9f
+595a8a: 0a02                                   |001b: move-result v2
+595a8c: 3802 2a00                              |001c: if-eqz v2, 0046 // +002a
+595a90: 7210 a0ec 0700                         |001e: invoke-interface {v7}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@eca0
+595a96: 0c02                                   |0021: move-result-object v2
+595a98: 1f02 502a                              |0022: check-cast v2, Ljava/util/Map$Entry; // type@2a50
+595a9c: 7210 edec 0200                         |0024: invoke-interface {v2}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@eced
+595aa2: 0c03                                   |0027: move-result-object v3
+595aa4: 1f03 d629                              |0028: check-cast v3, Ljava/lang/String; // type@29d6
+595aa8: 7210 eeec 0200                         |002a: invoke-interface {v2}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@ecee
+595aae: 0c04                                   |002d: move-result-object v4
+595ab0: 1f04 d629                              |002e: check-cast v4, Ljava/lang/String; // type@29d6
+595ab4: 7220 17ed 3100                         |0030: invoke-interface {v1, v3}, Ljava/util/Set;.contains:(Ljava/lang/Object;)Z // method@ed17
+595aba: 0a05                                   |0033: move-result v5
+595abc: 3905 e4ff                              |0034: if-nez v5, 0018 // -001c
+595ac0: 7110 f305 0400                         |0036: invoke-static {v4}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+595ac6: 0a04                                   |0039: move-result v4
+595ac8: 3904 deff                              |003a: if-nez v4, 0018 // -0022
+595acc: 7210 eeec 0200                         |003c: invoke-interface {v2}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@ecee
+595ad2: 0c02                                   |003f: move-result-object v2
+595ad4: 1f02 d629                              |0040: check-cast v2, Ljava/lang/String; // type@29d6
+595ad8: 6e30 4704 3002                         |0042: invoke-virtual {v0, v3, v2}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0447
+595ade: 28d3                                   |0045: goto 0018 // -002d
+595ae0: 1207                                   |0046: const/4 v7, #int 0 // #0
+595ae2: 6e10 05eb 0600                         |0047: invoke-virtual {v6}, Ljava/lang/StringBuilder;.length:()I // method@eb05
+595ae8: 0a01                                   |004a: move-result v1
+595aea: 6e30 00eb 7601                         |004b: invoke-virtual {v6, v7, v1}, Ljava/lang/StringBuilder;.delete:(II)Ljava/lang/StringBuilder; // method@eb00
+595af0: 6e10 4904 0000                         |004e: invoke-virtual {v0}, Landroid/net/Uri$Builder;.build:()Landroid/net/Uri; // method@0449
+595af6: 0c07                                   |0051: move-result-object v7
+595af8: 6e10 6604 0700                         |0052: invoke-virtual {v7}, Landroid/net/Uri;.toString:()Ljava/lang/String; // method@0466
+595afe: 0c07                                   |0055: move-result-object v7
+595b00: 6e20 fbea 7600                         |0056: invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@eafb
+595b06: 0e00                                   |0059: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33882112
+        0x0001 line=33882113
+        0x0002 line=33882114
+        0x0003 line=33882115
+        0x0004 line=33882116
+        0x0005 line=33882117
+        0x0006 line=33882118
+        0x0007 line=33882119
+        0x0008 line=33882120
+        0x0009 line=33882121
+        0x000a line=33882122
+        0x000b line=33882123
+        0x000c line=33882124
+        0x000d line=33882125
+        0x000e line=33882126
+        0x000f line=33882127
+        0x0010 line=33882128
+        0x0011 line=33882129
+        0x0012 line=33882130
+        0x0013 line=33882131
+        0x0014 line=33882132
+        0x0015 line=33882133
+        0x0016 line=33882134
+        0x0017 line=33882135
+        0x0018 line=33882136
+        0x0019 line=33882137
+        0x001a line=33882138
+        0x001b line=33882139
+        0x001c line=33882140
+        0x001d line=33882141
+        0x001e line=33882142
+        0x001f line=33882143
+        0x0020 line=33882144
+        0x0021 line=33882145
+        0x0022 line=33882146
+        0x0023 line=33882147
+        0x0024 line=33882148
+        0x0025 line=33882149
+        0x0026 line=33882150
+        0x0027 line=33882151
+        0x0028 line=33882152
+        0x0029 line=33882153
+        0x002a line=33882154
+        0x002b line=33882155
+        0x002c line=33882156
+        0x002d line=33882157
+        0x002e line=33882158
+        0x002f line=33882159
+        0x0030 line=33882160
+        0x0031 line=33882161
+        0x0032 line=33882162
+        0x0033 line=33882163
+        0x0034 line=33882164
+        0x0035 line=33882165
+        0x0036 line=33882166
+        0x0037 line=33882167
+        0x0038 line=33882168
+        0x0039 line=33882169
+        0x003a line=33882170
+        0x003b line=33882171
+        0x003c line=33882172
+        0x003d line=33882173
+        0x003e line=33882174
+        0x003f line=33882175
+        0x0040 line=33882176
+        0x0041 line=33882177
+        0x0042 line=33882178
+        0x0043 line=33882179
+        0x0044 line=33882180
+        0x0045 line=33882181
+        0x0046 line=33882182
+        0x0047 line=33882183
+        0x0048 line=33882184
+        0x0049 line=33882185
+        0x004a line=33882186
+        0x004b line=33882187
+        0x004c line=33882188
+        0x004d line=33882189
+        0x004e line=33882190
+        0x004f line=33882191
+        0x0050 line=33882192
+        0x0051 line=33882193
+        0x0052 line=33882194
+        0x0053 line=33882195
+        0x0054 line=33882196
+        0x0055 line=33882197
+        0x0056 line=33882198
+        0x0057 line=33882199
+        0x0058 line=33882200
+        0x0059 line=33882201
+      locals        :
+        0x0000 - 0x005a reg=6 (null) Ljava/lang/StringBuilder;
+        0x0000 - 0x005a reg=7 (null) Ljava/util/Map;
+
+    #3              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'addCommonParams'
+      type          : '(Ljava/lang/String;Z)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 7 16-bit code units
+595b08:                                        |[595b08] com.ss.android.common.applog.NetUtil.addCommonParams:(Ljava/lang/String;Z)Ljava/lang/String;
+595b18: 6200 2103                              |0000: sget-object v0, Lcom/bytedance/bdinstall/Level;.L0:Lcom/bytedance/bdinstall/Level; // field@0321
+595b1c: 7130 408c 2100                         |0002: invoke-static {v1, v2, v0}, Lcom/ss/android/common/applog/NetUtil;.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String; // method@8c40
+595b22: 0c01                                   |0005: move-result-object v1
+595b24: 1101                                   |0006: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+        0x0006 line=33619974
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0007 reg=2 (null) Z
+
+    #4              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'addCommonParamsWithLevel'
+      type          : '(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 24 16-bit code units
+595b28:                                        |[595b28] com.ss.android.common.applog.NetUtil.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String;
+595b38: 6200 713a                              |0000: sget-object v0, Lcom/ss/android/common/applog/NetUtil;.sAppContext:Lcom/ss/android/common/AppContext; // field@3a71
+595b3c: 7110 8110 0200                         |0002: invoke-static {v2}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595b42: 0a01                                   |0005: move-result v1
+595b44: 3901 1100                              |0006: if-nez v1, 0017 // +0011
+595b48: 3900 0300                              |0008: if-nez v0, 000b // +0003
+595b4c: 280d                                   |000a: goto 0017 // +000d
+595b4e: 2200 d829                              |000b: new-instance v0, Ljava/lang/StringBuilder; // type@29d8
+595b52: 7020 f3ea 2000                         |000d: invoke-direct {v0, v2}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@eaf3
+595b58: 7130 448c 3004                         |0010: invoke-static {v0, v3, v4}, Lcom/ss/android/common/applog/NetUtil;.appendCommonParamsWithLevel:(Ljava/lang/StringBuilder;ZLcom/bytedance/bdinstall/Level;)V // method@8c44
+595b5e: 6e10 09eb 0000                         |0013: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@eb09
+595b64: 0c02                                   |0016: move-result-object v2
+595b66: 1102                                   |0017: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=50528256
+        0x0001 line=50528257
+        0x0002 line=50528258
+        0x0003 line=50528259
+        0x0004 line=50528260
+        0x0005 line=50528261
+        0x0006 line=50528262
+        0x0007 line=50528263
+        0x0008 line=50528264
+        0x0009 line=50528265
+        0x000a line=50528266
+        0x000b line=50528267
+        0x000c line=50528268
+        0x000d line=50528269
+        0x000e line=50528270
+        0x000f line=50528271
+        0x0010 line=50528272
+        0x0011 line=50528273
+        0x0012 line=50528274
+        0x0013 line=50528275
+        0x0014 line=50528276
+        0x0015 line=50528277
+        0x0016 line=50528278
+        0x0017 line=50528279
+      locals        :
+        0x0000 - 0x0018 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0018 reg=3 (null) Z
+        0x0000 - 0x0018 reg=4 (null) Lcom/bytedance/bdinstall/Level;
+
+    #5              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'addCustomParams'
+      type          : '(Ljava/lang/String;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 6 16-bit code units
+595b68:                                        |[595b68] com.ss.android.common.applog.NetUtil.addCustomParams:(Ljava/lang/String;Ljava/lang/String;)V
+595b78: 6200 2203                              |0000: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@0322
+595b7c: 7130 428c 2100                         |0002: invoke-static {v1, v2, v0}, Lcom/ss/android/common/applog/NetUtil;.addCustomParamsWithLevel:(Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/bdinstall/Level;)V // method@8c42
+595b82: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0006 reg=2 (null) Ljava/lang/String;
+
+    #6              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'addCustomParamsWithLevel'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/bdinstall/Level;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 3
+      outs          : 3
+      insns size    : 82 16-bit code units
+595b84:                                        |[595b84] com.ss.android.common.applog.NetUtil.addCustomParamsWithLevel:(Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/bdinstall/Level;)V
+595b94: 3905 0300                              |0000: if-nez v5, 0003 // +0003
+595b98: 0e00                                   |0002: return-void
+595b9a: 7110 8110 0300                         |0003: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595ba0: 0a00                                   |0006: move-result v0
+595ba2: 3900 4a00                              |0007: if-nez v0, 0051 // +004a
+595ba6: 7110 8110 0400                         |0009: invoke-static {v4}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595bac: 0a00                                   |000c: move-result v0
+595bae: 3800 0300                              |000d: if-eqz v0, 0010 // +0003
+595bb2: 2842                                   |000f: goto 0051 // +0042
+595bb4: 6200 703a                              |0010: sget-object v0, Lcom/ss/android/common/applog/NetUtil$c;.a:[I // field@3a70
+595bb8: 6e10 0fea 0500                         |0012: invoke-virtual {v5}, Ljava/lang/Enum;.ordinal:()I // method@ea0f
+595bbe: 0a01                                   |0015: move-result v1
+595bc0: 4400 0001                              |0016: aget v0, v0, v1
+595bc4: 1221                                   |0018: const/4 v1, #int 2 // #2
+595bc6: 1212                                   |0019: const/4 v2, #int 1 // #1
+595bc8: 3220 0b00                              |001a: if-eq v0, v2, 0025 // +000b
+595bcc: 3210 0300                              |001c: if-eq v0, v1, 001f // +0003
+595bd0: 280c                                   |001e: goto 002a // +000c
+595bd2: 6200 723a                              |001f: sget-object v0, Lcom/ss/android/common/applog/NetUtil;.sCustomParam:Ljava/util/concurrent/ConcurrentHashMap; // field@3a72
+595bd6: 6e30 58ed 3004                         |0021: invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/ConcurrentHashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ed58
+595bdc: 2806                                   |0024: goto 002a // +0006
+595bde: 6200 733a                              |0025: sget-object v0, Lcom/ss/android/common/applog/NetUtil;.sL0OnlyParams:Ljava/util/concurrent/ConcurrentHashMap; // field@3a73
+595be2: 6e30 58ed 3004                         |0027: invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/ConcurrentHashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ed58
+595be8: 6200 393b                              |002a: sget-object v0, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+595bec: 7110 8110 0300                         |002c: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595bf2: 0a00                                   |002f: move-result v0
+595bf4: 3900 2100                              |0030: if-nez v0, 0051 // +0021
+595bf8: 7110 8110 0400                         |0032: invoke-static {v4}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595bfe: 0a00                                   |0035: move-result v0
+595c00: 3800 0300                              |0036: if-eqz v0, 0039 // +0003
+595c04: 2819                                   |0038: goto 0051 // +0019
+595c06: 6200 383b                              |0039: sget-object v0, Lcom/ss/android/common/applog/x$a;.a:[I // field@3b38
+595c0a: 6e10 0fea 0500                         |003b: invoke-virtual {v5}, Ljava/lang/Enum;.ordinal:()I // method@ea0f
+595c10: 0a05                                   |003e: move-result v5
+595c12: 4405 0005                              |003f: aget v5, v0, v5
+595c16: 3225 0b00                              |0041: if-eq v5, v2, 004c // +000b
+595c1a: 3215 0300                              |0043: if-eq v5, v1, 0046 // +0003
+595c1e: 280c                                   |0045: goto 0051 // +000c
+595c20: 6205 423b                              |0046: sget-object v5, Lcom/ss/android/common/applog/x;.j:Ljava/util/concurrent/ConcurrentHashMap; // field@3b42
+595c24: 6e30 58ed 3504                         |0048: invoke-virtual {v5, v3, v4}, Ljava/util/concurrent/ConcurrentHashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ed58
+595c2a: 2806                                   |004b: goto 0051 // +0006
+595c2c: 6205 433b                              |004c: sget-object v5, Lcom/ss/android/common/applog/x;.k:Ljava/util/concurrent/ConcurrentHashMap; // field@3b43
+595c30: 6e30 58ed 3504                         |004e: invoke-virtual {v5, v3, v4}, Ljava/util/concurrent/ConcurrentHashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ed58
+595c36: 0e00                                   |0051: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50659328
+        0x0001 line=50659329
+        0x0002 line=50659330
+        0x0003 line=50659331
+        0x0004 line=50659332
+        0x0005 line=50659333
+        0x0006 line=50659334
+        0x0007 line=50659335
+        0x0008 line=50659336
+        0x0009 line=50659337
+        0x000a line=50659338
+        0x000b line=50659339
+        0x000c line=50659340
+        0x000d line=50659341
+        0x000e line=50659342
+        0x000f line=50659343
+        0x0010 line=50659344
+        0x0011 line=50659345
+        0x0012 line=50659346
+        0x0013 line=50659347
+        0x0014 line=50659348
+        0x0015 line=50659349
+        0x0016 line=50659350
+        0x0017 line=50659351
+        0x0018 line=50659352
+        0x0019 line=50659353
+        0x001a line=50659354
+        0x001b line=50659355
+        0x001c line=50659356
+        0x001d line=50659357
+        0x001e line=50659358
+        0x001f line=50659359
+        0x0020 line=50659360
+        0x0021 line=50659361
+        0x0022 line=50659362
+        0x0023 line=50659363
+        0x0024 line=50659364
+        0x0025 line=50659365
+        0x0026 line=50659366
+        0x0027 line=50659367
+        0x0028 line=50659368
+        0x0029 line=50659369
+        0x002a line=50659370
+        0x002b line=50659371
+        0x002c line=50659372
+        0x002d line=50659373
+        0x002e line=50659374
+        0x002f line=50659375
+        0x0030 line=50659376
+        0x0031 line=50659377
+        0x0032 line=50659378
+        0x0033 line=50659379
+        0x0034 line=50659380
+        0x0035 line=50659381
+        0x0036 line=50659382
+        0x0037 line=50659383
+        0x0038 line=50659384
+        0x0039 line=50659385
+        0x003a line=50659386
+        0x003b line=50659387
+        0x003c line=50659388
+        0x003d line=50659389
+        0x003e line=50659390
+        0x003f line=50659391
+        0x0040 line=50659392
+        0x0041 line=50659393
+        0x0042 line=50659394
+        0x0043 line=50659395
+        0x0044 line=50659396
+        0x0045 line=50659397
+        0x0046 line=50659398
+        0x0047 line=50659399
+        0x0048 line=50659400
+        0x0049 line=50659401
+        0x004a line=50659402
+        0x004b line=50659403
+        0x004c line=50659404
+        0x004d line=50659405
+        0x004e line=50659406
+        0x004f line=50659407
+        0x0050 line=50659408
+        0x0051 line=50659409
+      locals        :
+        0x0000 - 0x0052 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0052 reg=4 (null) Ljava/lang/String;
+        0x0000 - 0x0052 reg=5 (null) Lcom/bytedance/bdinstall/Level;
+
+    #7              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'appendCommonParams'
+      type          : '(Ljava/lang/StringBuilder;Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 6 16-bit code units
+595c38:                                        |[595c38] com.ss.android.common.applog.NetUtil.appendCommonParams:(Ljava/lang/StringBuilder;Z)V
+595c48: 6200 2103                              |0000: sget-object v0, Lcom/bytedance/bdinstall/Level;.L0:Lcom/bytedance/bdinstall/Level; // field@0321
+595c4c: 7130 448c 2100                         |0002: invoke-static {v1, v2, v0}, Lcom/ss/android/common/applog/NetUtil;.appendCommonParamsWithLevel:(Ljava/lang/StringBuilder;ZLcom/bytedance/bdinstall/Level;)V // method@8c44
+595c52: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/StringBuilder;
+        0x0000 - 0x0006 reg=2 (null) Z
+
+    #8              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'appendCommonParamsWithLevel'
+      type          : '(Ljava/lang/StringBuilder;ZLcom/bytedance/bdinstall/Level;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 8
+      ins           : 3
+      outs          : 3
+      insns size    : 112 16-bit code units
+595c54:                                        |[595c54] com.ss.android.common.applog.NetUtil.appendCommonParamsWithLevel:(Ljava/lang/StringBuilder;ZLcom/bytedance/bdinstall/Level;)V
+595c64: 6200 713a                              |0000: sget-object v0, Lcom/ss/android/common/applog/NetUtil;.sAppContext:Lcom/ss/android/common/AppContext; // field@3a71
+595c68: 3800 6d00                              |0002: if-eqz v0, 006f // +006d
+595c6c: 3905 0300                              |0004: if-nez v5, 0007 // +0003
+595c70: 2869                                   |0006: goto 006f // +0069
+595c72: 6e10 09eb 0500                         |0007: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@eb09
+595c78: 0c00                                   |000a: move-result-object v0
+595c7a: 7110 f305 0000                         |000b: invoke-static {v0}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+595c80: 0a01                                   |000e: move-result v1
+595c82: 3801 0300                              |000f: if-eqz v1, 0012 // +0003
+595c86: 0e00                                   |0011: return-void
+595c88: 7110 6504 0000                         |0012: invoke-static {v0}, Landroid/net/Uri;.parse:(Ljava/lang/String;)Landroid/net/Uri; // method@0465
+595c8e: 0c00                                   |0015: move-result-object v0
+595c90: 6e10 6004 0000                         |0016: invoke-virtual {v0}, Landroid/net/Uri;.getQueryParameterNames:()Ljava/util/Set; // method@0460
+595c96: 0c01                                   |0019: move-result-object v1
+595c98: 6e10 4f04 0000                         |001a: invoke-virtual {v0}, Landroid/net/Uri;.buildUpon:()Landroid/net/Uri$Builder; // method@044f
+595c9e: 0c00                                   |001d: move-result-object v0
+595ca0: 2202 4a2a                              |001e: new-instance v2, Ljava/util/LinkedHashMap; // type@2a4a
+595ca4: 7010 a2ec 0200                         |0020: invoke-direct {v2}, Ljava/util/LinkedHashMap;.<init>:()V // method@eca2
+595caa: 7130 4a8c 6207                         |0023: invoke-static {v2, v6, v7}, Lcom/ss/android/common/applog/NetUtil;.putCommonParamsWithLevel:(Ljava/util/Map;ZLcom/bytedance/bdinstall/Level;)V // method@8c4a
+595cb0: 6e10 a9ec 0200                         |0026: invoke-virtual {v2}, Ljava/util/LinkedHashMap;.entrySet:()Ljava/util/Set; // method@eca9
+595cb6: 0c06                                   |0029: move-result-object v6
+595cb8: 7210 1aed 0600                         |002a: invoke-interface {v6}, Ljava/util/Set;.iterator:()Ljava/util/Iterator; // method@ed1a
+595cbe: 0c06                                   |002d: move-result-object v6
+595cc0: 7210 9fec 0600                         |002e: invoke-interface {v6}, Ljava/util/Iterator;.hasNext:()Z // method@ec9f
+595cc6: 0a07                                   |0031: move-result v7
+595cc8: 3807 2a00                              |0032: if-eqz v7, 005c // +002a
+595ccc: 7210 a0ec 0600                         |0034: invoke-interface {v6}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@eca0
+595cd2: 0c07                                   |0037: move-result-object v7
+595cd4: 1f07 502a                              |0038: check-cast v7, Ljava/util/Map$Entry; // type@2a50
+595cd8: 7210 edec 0700                         |003a: invoke-interface {v7}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@eced
+595cde: 0c02                                   |003d: move-result-object v2
+595ce0: 1f02 d629                              |003e: check-cast v2, Ljava/lang/String; // type@29d6
+595ce4: 7210 eeec 0700                         |0040: invoke-interface {v7}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@ecee
+595cea: 0c03                                   |0043: move-result-object v3
+595cec: 1f03 d629                              |0044: check-cast v3, Ljava/lang/String; // type@29d6
+595cf0: 7220 17ed 2100                         |0046: invoke-interface {v1, v2}, Ljava/util/Set;.contains:(Ljava/lang/Object;)Z // method@ed17
+595cf6: 0a04                                   |0049: move-result v4
+595cf8: 3904 e4ff                              |004a: if-nez v4, 002e // -001c
+595cfc: 7110 f305 0300                         |004c: invoke-static {v3}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+595d02: 0a03                                   |004f: move-result v3
+595d04: 3903 deff                              |0050: if-nez v3, 002e // -0022
+595d08: 7210 eeec 0700                         |0052: invoke-interface {v7}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@ecee
+595d0e: 0c07                                   |0055: move-result-object v7
+595d10: 1f07 d629                              |0056: check-cast v7, Ljava/lang/String; // type@29d6
+595d14: 6e30 4704 2007                         |0058: invoke-virtual {v0, v2, v7}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0447
+595d1a: 28d3                                   |005b: goto 002e // -002d
+595d1c: 1206                                   |005c: const/4 v6, #int 0 // #0
+595d1e: 6e10 05eb 0500                         |005d: invoke-virtual {v5}, Ljava/lang/StringBuilder;.length:()I // method@eb05
+595d24: 0a07                                   |0060: move-result v7
+595d26: 6e30 00eb 6507                         |0061: invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;.delete:(II)Ljava/lang/StringBuilder; // method@eb00
+595d2c: 6e10 4904 0000                         |0064: invoke-virtual {v0}, Landroid/net/Uri$Builder;.build:()Landroid/net/Uri; // method@0449
+595d32: 0c06                                   |0067: move-result-object v6
+595d34: 6e10 6604 0600                         |0068: invoke-virtual {v6}, Landroid/net/Uri;.toString:()Ljava/lang/String; // method@0466
+595d3a: 0c06                                   |006b: move-result-object v6
+595d3c: 6e20 fbea 6500                         |006c: invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@eafb
+595d42: 0e00                                   |006f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50659328
+        0x0001 line=50659329
+        0x0002 line=50659330
+        0x0003 line=50659331
+        0x0004 line=50659332
+        0x0005 line=50659333
+        0x0006 line=50659334
+        0x0007 line=50659335
+        0x0008 line=50659336
+        0x0009 line=50659337
+        0x000a line=50659338
+        0x000b line=50659339
+        0x000c line=50659340
+        0x000d line=50659341
+        0x000e line=50659342
+        0x000f line=50659343
+        0x0010 line=50659344
+        0x0011 line=50659345
+        0x0012 line=50659346
+        0x0013 line=50659347
+        0x0014 line=50659348
+        0x0015 line=50659349
+        0x0016 line=50659350
+        0x0017 line=50659351
+        0x0018 line=50659352
+        0x0019 line=50659353
+        0x001a line=50659354
+        0x001b line=50659355
+        0x001c line=50659356
+        0x001d line=50659357
+        0x001e line=50659358
+        0x001f line=50659359
+        0x0020 line=50659360
+        0x0021 line=50659361
+        0x0022 line=50659362
+        0x0023 line=50659363
+        0x0024 line=50659364
+        0x0025 line=50659365
+        0x0026 line=50659366
+        0x0027 line=50659367
+        0x0028 line=50659368
+        0x0029 line=50659369
+        0x002a line=50659370
+        0x002b line=50659371
+        0x002c line=50659372
+        0x002d line=50659373
+        0x002e line=50659374
+        0x002f line=50659375
+        0x0030 line=50659376
+        0x0031 line=50659377
+        0x0032 line=50659378
+        0x0033 line=50659379
+        0x0034 line=50659380
+        0x0035 line=50659381
+        0x0036 line=50659382
+        0x0037 line=50659383
+        0x0038 line=50659384
+        0x0039 line=50659385
+        0x003a line=50659386
+        0x003b line=50659387
+        0x003c line=50659388
+        0x003d line=50659389
+        0x003e line=50659390
+        0x003f line=50659391
+        0x0040 line=50659392
+        0x0041 line=50659393
+        0x0042 line=50659394
+        0x0043 line=50659395
+        0x0044 line=50659396
+        0x0045 line=50659397
+        0x0046 line=50659398
+        0x0047 line=50659399
+        0x0048 line=50659400
+        0x0049 line=50659401
+        0x004a line=50659402
+        0x004b line=50659403
+        0x004c line=50659404
+        0x004d line=50659405
+        0x004e line=50659406
+        0x004f line=50659407
+        0x0050 line=50659408
+        0x0051 line=50659409
+        0x0052 line=50659410
+        0x0053 line=50659411
+        0x0054 line=50659412
+        0x0055 line=50659413
+        0x0056 line=50659414
+        0x0057 line=50659415
+        0x0058 line=50659416
+        0x0059 line=50659417
+        0x005a line=50659418
+        0x005b line=50659419
+        0x005c line=50659420
+        0x005d line=50659421
+        0x005e line=50659422
+        0x005f line=50659423
+        0x0060 line=50659424
+        0x0061 line=50659425
+        0x0062 line=50659426
+        0x0063 line=50659427
+        0x0064 line=50659428
+        0x0065 line=50659429
+        0x0066 line=50659430
+        0x0067 line=50659431
+        0x0068 line=50659432
+        0x0069 line=50659433
+        0x006a line=50659434
+        0x006b line=50659435
+        0x006c line=50659436
+        0x006d line=50659437
+        0x006e line=50659438
+        0x006f line=50659439
+      locals        :
+        0x0000 - 0x0070 reg=5 (null) Ljava/lang/StringBuilder;
+        0x0000 - 0x0070 reg=6 (null) Z
+        0x0000 - 0x0070 reg=7 (null) Lcom/bytedance/bdinstall/Level;
+
+    #9              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'checkHttpRequestException'
+      type          : '(Ljava/lang/Throwable;[Ljava/lang/String;)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+595d44:                                        |[595d44] com.ss.android.common.applog.NetUtil.checkHttpRequestException:(Ljava/lang/Throwable;[Ljava/lang/String;)I
+595d54: 1210                                   |0000: const/4 v0, #int 1 // #1
+595d56: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #10              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'doPost'
+      type          : '(Ljava/lang/String;[BZLjava/lang/String;ZLjava/util/Map;ZZ)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 10
+      ins           : 8
+      outs          : 5
+      insns size    : 92 16-bit code units
+595d58:                                        |[595d58] com.ss.android.common.applog.NetUtil.doPost:(Ljava/lang/String;[BZLjava/lang/String;ZLjava/util/Map;ZZ)Ljava/lang/String;
+595d68: 2200 452a                              |0000: new-instance v0, Ljava/util/HashMap; // type@2a45
+595d6c: 7010 7eec 0000                         |0002: invoke-direct {v0}, Ljava/util/HashMap;.<init>:()V // method@ec7e
+595d72: 3804 1a00                              |0005: if-eqz v4, 001f // +001a
+595d76: 7110 6f10 0300                         |0007: invoke-static {v3}, Lcom/bytedance/common/utility/NetworkClient;.compressWithgzip:([B)[B // method@106f
+595d7c: 0c03                                   |000a: move-result-object v3
+595d7e: 1a04 b10e                              |000b: const-string v4, "Content-Encoding" // string@0eb1
+595d82: 1a01 6993                              |000d: const-string v1, "gzip" // string@9369
+595d86: 6e30 88ec 4001                         |000f: invoke-virtual {v0, v4, v1}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+595d8c: 280d                                   |0012: goto 001f // +000d
+595d8e: 0d02                                   |0013: move-exception v2
+595d90: 2203 0c04                              |0014: new-instance v3, Lcom/bytedance/common/utility/CommonHttpException; // type@040c
+595d94: 1204                                   |0016: const/4 v4, #int 0 // #0
+595d96: 6e10 18ea 0200                         |0017: invoke-virtual {v2}, Ljava/lang/Exception;.getMessage:()Ljava/lang/String; // method@ea18
+595d9c: 0c02                                   |001a: move-result-object v2
+595d9e: 7030 6910 4302                         |001b: invoke-direct {v3, v4, v2}, Lcom/bytedance/common/utility/CommonHttpException;.<init>:(ILjava/lang/String;)V // method@1069
+595da4: 2703                                   |001e: throw v3
+595da6: 7110 8110 0500                         |001f: invoke-static {v5}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595dac: 0a04                                   |0022: move-result v4
+595dae: 3904 0700                              |0023: if-nez v4, 002a // +0007
+595db2: 1a04 b40e                              |0025: const-string v4, "Content-Type" // string@0eb4
+595db6: 6e30 88ec 4005                         |0027: invoke-virtual {v0, v4, v5}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+595dbc: 3807 0500                              |002a: if-eqz v7, 002f // +0005
+595dc0: 6e20 89ec 7000                         |002c: invoke-virtual {v0, v7}, Ljava/util/HashMap;.putAll:(Ljava/util/Map;)V // method@ec89
+595dc6: 3909 1d00                              |002f: if-nez v9, 004c // +001d
+595dca: 7100 62d7 0000                         |0031: invoke-static {}, Lcom/ss/android/ugc/quota/BDNetworkTagManager;.getInstance:()Lcom/ss/android/ugc/quota/BDNetworkTagManager; // method@d762
+595dd0: 0c04                                   |0034: move-result-object v4
+595dd2: 2205 0c19                              |0035: new-instance v5, Lcom/ss/android/common/applog/NetUtil$a; // type@190c
+595dd6: 7020 378c 8500                         |0037: invoke-direct {v5, v8}, Lcom/ss/android/common/applog/NetUtil$a;.<init>:(Z)V // method@8c37
+595ddc: 6e20 61d7 5400                         |003a: invoke-virtual {v4, v5}, Lcom/ss/android/ugc/quota/BDNetworkTagManager;.buildBDNetworkTag:(Lcom/ss/android/ugc/quota/IBDNetworkTagContextProvider;)Landroid/util/Pair; // method@d761
+595de2: 0c04                                   |003d: move-result-object v4
+595de4: 3804 0e00                              |003e: if-eqz v4, 004c // +000e
+595de8: 5445 0201                              |0040: iget-object v5, v4, Landroid/util/Pair;.first:Ljava/lang/Object; // field@0102
+595dec: 5444 0301                              |0042: iget-object v4, v4, Landroid/util/Pair;.second:Ljava/lang/Object; // field@0103
+595df0: 6e30 88ec 5004                         |0044: invoke-virtual {v0, v5, v4}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+595df6: 2805                                   |0047: goto 004c // +0005
+595df8: 0d04                                   |0048: move-exception v4
+595dfa: 6e10 33eb 0400                         |0049: invoke-virtual {v4}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+595e00: 2204 1004                              |004c: new-instance v4, Lcom/bytedance/common/utility/NetworkClient$ReqContext; // type@0410
+595e04: 7010 6e10 0400                         |004e: invoke-direct {v4}, Lcom/bytedance/common/utility/NetworkClient$ReqContext;.<init>:()V // method@106e
+595e0a: 5c46 2d03                              |0051: iput-boolean v6, v4, Lcom/bytedance/common/utility/NetworkClient$ReqContext;.addCommonParams:Z // field@032d
+595e0e: 7100 7110 0000                         |0053: invoke-static {}, Lcom/bytedance/common/utility/NetworkClient;.getDefault:()Lcom/bytedance/common/utility/NetworkClient; // method@1071
+595e14: 0c05                                   |0056: move-result-object v5
+595e16: 6e54 7310 2503                         |0057: invoke-virtual {v5, v2, v3, v0, v4}, Lcom/bytedance/common/utility/NetworkClient;.post:(Ljava/lang/String;[BLjava/util/Map;Lcom/bytedance/common/utility/NetworkClient$ReqContext;)Ljava/lang/String; // method@1073
+595e1c: 0c02                                   |005a: move-result-object v2
+595e1e: 1102                                   |005b: return-object v2
+      catches       : 2
+        0x0007 - 0x0012
+          Ljava/lang/Exception; -> 0x0013
+        0x0031 - 0x0047
+          <any> -> 0x0048
+      positions     :
+        0x0000 line=134545408
+        0x0001 line=134545409
+        0x0002 line=134545410
+        0x0003 line=134545411
+        0x0004 line=134545412
+        0x0005 line=134545413
+        0x0006 line=134545414
+        0x0007 line=134545415
+        0x0008 line=134545416
+        0x0009 line=134545417
+        0x000a line=134545418
+        0x000b line=134545419
+        0x000c line=134545420
+        0x000d line=134545421
+        0x000e line=134545422
+        0x000f line=134545423
+        0x0010 line=134545424
+        0x0011 line=134545425
+        0x0012 line=134545426
+        0x0013 line=134545427
+        0x0014 line=134545428
+        0x0015 line=134545429
+        0x0016 line=134545430
+        0x0017 line=134545431
+        0x0018 line=134545432
+        0x0019 line=134545433
+        0x001a line=134545434
+        0x001b line=134545435
+        0x001c line=134545436
+        0x001d line=134545437
+        0x001e line=134545438
+        0x001f line=134545439
+        0x0020 line=134545440
+        0x0021 line=134545441
+        0x0022 line=134545442
+        0x0023 line=134545443
+        0x0024 line=134545444
+        0x0025 line=134545445
+        0x0026 line=134545446
+        0x0027 line=134545447
+        0x0028 line=134545448
+        0x0029 line=134545449
+        0x002a line=134545450
+        0x002b line=134545451
+        0x002c line=134545452
+        0x002d line=134545453
+        0x002e line=134545454
+        0x002f line=134545455
+        0x0030 line=134545456
+        0x0031 line=134545457
+        0x0032 line=134545458
+        0x0033 line=134545459
+        0x0034 line=134545460
+        0x0035 line=134545461
+        0x0036 line=134545462
+        0x0037 line=134545463
+        0x0038 line=134545464
+        0x0039 line=134545465
+        0x003a line=134545466
+        0x003b line=134545467
+        0x003c line=134545468
+        0x003d line=134545469
+        0x003e line=134545470
+        0x003f line=134545471
+        0x0040 line=134545472
+        0x0041 line=134545473
+        0x0042 line=134545474
+        0x0043 line=134545475
+        0x0044 line=134545476
+        0x0045 line=134545477
+        0x0046 line=134545478
+        0x0047 line=134545479
+        0x0048 line=134545480
+        0x0049 line=134545481
+        0x004a line=134545482
+        0x004b line=134545483
+        0x004c line=134545484
+        0x004d line=134545485
+        0x004e line=134545486
+        0x004f line=134545487
+        0x0050 line=134545488
+        0x0051 line=134545489
+        0x0052 line=134545490
+        0x0053 line=134545491
+        0x0054 line=134545492
+        0x0055 line=134545493
+        0x0056 line=134545494
+        0x0057 line=134545495
+        0x0058 line=134545496
+        0x0059 line=134545497
+        0x005a line=134545498
+        0x005b line=134545499
+      locals        :
+        0x0000 - 0x005c reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x005c reg=3 (null) [B
+        0x0000 - 0x005c reg=4 (null) Z
+        0x0000 - 0x005c reg=5 (null) Ljava/lang/String;
+        0x0000 - 0x005c reg=6 (null) Z
+        0x0000 - 0x005c reg=7 (null) Ljava/util/Map;
+        0x0000 - 0x005c reg=8 (null) Z
+        0x0000 - 0x005c reg=9 (null) Z
+
+    #11              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'getAliyunUuid'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 4 16-bit code units
+595e38:                                        |[595e38] com.ss.android.common.applog.NetUtil.getAliyunUuid:()Ljava/lang/String;
+595e48: 6200 393b                              |0000: sget-object v0, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+595e4c: 1200                                   |0002: const/4 v0, #int 0 // #0
+595e4e: 1100                                   |0003: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+
+    #12              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'isBadId'
+      type          : '(Ljava/lang/String;)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 2
+      insns size    : 48 16-bit code units
+595e50:                                        |[595e50] com.ss.android.common.applog.NetUtil.isBadId:(Ljava/lang/String;)Z
+595e60: 7110 8110 0500                         |0000: invoke-static {v5}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595e66: 0a00                                   |0003: move-result v0
+595e68: 1211                                   |0004: const/4 v1, #int 1 // #1
+595e6a: 3800 0300                              |0005: if-eqz v0, 0008 // +0003
+595e6e: 0f01                                   |0007: return v1
+595e70: 1a00 c3e2                              |0008: const-string v0, "unknown" // string@e2c3
+595e74: 6e20 c1ea 0500                         |000a: invoke-virtual {v5, v0}, Ljava/lang/String;.equalsIgnoreCase:(Ljava/lang/String;)Z // method@eac1
+595e7a: 0a00                                   |000d: move-result v0
+595e7c: 3800 0300                              |000e: if-eqz v0, 0011 // +0003
+595e80: 0f01                                   |0010: return v1
+595e82: 1a00 064d                              |0011: const-string v0, "None" // string@4d06
+595e86: 6e20 c1ea 0500                         |0013: invoke-virtual {v5, v0}, Ljava/lang/String;.equalsIgnoreCase:(Ljava/lang/String;)Z // method@eac1
+595e8c: 0a00                                   |0016: move-result v0
+595e8e: 3800 0300                              |0017: if-eqz v0, 001a // +0003
+595e92: 0f01                                   |0019: return v1
+595e94: 1200                                   |001a: const/4 v0, #int 0 // #0
+595e96: 1202                                   |001b: const/4 v2, #int 0 // #0
+595e98: 6e10 d0ea 0500                         |001c: invoke-virtual {v5}, Ljava/lang/String;.length:()I // method@ead0
+595e9e: 0a03                                   |001f: move-result v3
+595ea0: 3532 0f00                              |0020: if-ge v2, v3, 002f // +000f
+595ea4: 6e20 b9ea 2500                         |0022: invoke-virtual {v5, v2}, Ljava/lang/String;.charAt:(I)C // method@eab9
+595eaa: 0a03                                   |0025: move-result v3
+595eac: 1304 3000                              |0026: const/16 v4, #int 48 // #30
+595eb0: 3243 0400                              |0028: if-eq v3, v4, 002c // +0004
+595eb4: 1201                                   |002a: const/4 v1, #int 0 // #0
+595eb6: 2804                                   |002b: goto 002f // +0004
+595eb8: d802 0201                              |002c: add-int/lit8 v2, v2, #int 1 // #01
+595ebc: 28ee                                   |002e: goto 001c // -0012
+595ebe: 0f01                                   |002f: return v1
+      catches       : (none)
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+        0x0025 line=17039397
+        0x0026 line=17039398
+        0x0027 line=17039399
+        0x0028 line=17039400
+        0x0029 line=17039401
+        0x002a line=17039402
+        0x002b line=17039403
+        0x002c line=17039404
+        0x002d line=17039405
+        0x002e line=17039406
+        0x002f line=17039407
+      locals        :
+        0x0000 - 0x0030 reg=5 (null) Ljava/lang/String;
+
+    #13              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'putCommonParams'
+      type          : '(Ljava/util/Map;Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 6 16-bit code units
+595ec0:                                        |[595ec0] com.ss.android.common.applog.NetUtil.putCommonParams:(Ljava/util/Map;Z)V
+595ed0: 6200 2103                              |0000: sget-object v0, Lcom/bytedance/bdinstall/Level;.L0:Lcom/bytedance/bdinstall/Level; // field@0321
+595ed4: 7130 4a8c 2100                         |0002: invoke-static {v1, v2, v0}, Lcom/ss/android/common/applog/NetUtil;.putCommonParamsWithLevel:(Ljava/util/Map;ZLcom/bytedance/bdinstall/Level;)V // method@8c4a
+595eda: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=1 (null) Ljava/util/Map;
+        0x0000 - 0x0006 reg=2 (null) Z
+
+    #14              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'putCommonParamsWithLevel'
+      type          : '(Ljava/util/Map;ZLcom/bytedance/bdinstall/Level;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 14
+      ins           : 3
+      outs          : 5
+      insns size    : 758 16-bit code units
+595edc:                                        |[595edc] com.ss.android.common.applog.NetUtil.putCommonParamsWithLevel:(Ljava/util/Map;ZLcom/bytedance/bdinstall/Level;)V
+595eec: 6200 713a                              |0000: sget-object v0, Lcom/ss/android/common/applog/NetUtil;.sAppContext:Lcom/ss/android/common/AppContext; // field@3a71
+595ef0: 3900 0300                              |0002: if-nez v0, 0005 // +0003
+595ef4: 0e00                                   |0004: return-void
+595ef6: 7210 908a 0000                         |0005: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getContext:()Landroid/content/Context; // method@8a90
+595efc: 0c00                                   |0008: move-result-object v0
+595efe: 7100 018f 0000                         |0009: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSwitchToBdtracker:()Z // method@8f01
+595f04: 0a01                                   |000c: move-result v1
+595f06: 3801 1100                              |000d: if-eqz v1, 001e // +0011
+595f0a: 6201 2403                              |000f: sget-object v1, Lcom/bytedance/bdinstall/i;.b:Lcom/bytedance/bdinstall/k; // field@0324
+595f0e: 6e10 5b10 0100                         |0011: invoke-virtual {v1}, Lcom/bytedance/bdinstall/k;.d:()Z // method@105b
+595f14: 0a02                                   |0014: move-result v2
+595f16: 3802 e002                              |0015: if-eqz v2, 02f5 // +02e0
+595f1a: 5411 2703                              |0017: iget-object v1, v1, Lcom/bytedance/bdinstall/k;.i:Lcom/bytedance/bdinstall/f; // field@0327
+595f1e: 6e5d 5910 01bc                         |0019: invoke-virtual {v1, v0, v12, v11, v13}, Lcom/bytedance/bdinstall/f;.b:(Landroid/content/Context;ZLjava/util/Map;Lcom/bytedance/bdinstall/Level;)V // method@1059
+595f24: 2900 d902                              |001c: goto/16 02f5 // +02d9
+595f28: 6200 3c3b                              |001e: sget-object v0, Lcom/ss/android/common/applog/x;.d:Lcom/ss/android/common/AppContext; // field@3b3c
+595f2c: 380b d502                              |0020: if-eqz v11, 02f5 // +02d5
+595f30: 3800 d302                              |0022: if-eqz v0, 02f5 // +02d3
+595f34: 390d 0400                              |0024: if-nez v13, 0028 // +0004
+595f38: 2900 cf02                              |0026: goto/16 02f5 // +02cf
+595f3c: 2201 452a                              |0028: new-instance v1, Ljava/util/HashMap; // type@2a45
+595f40: 7010 7eec 0100                         |002a: invoke-direct {v1}, Ljava/util/HashMap;.<init>:()V // method@ec7e
+595f46: 7210 908a 0000                         |002d: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getContext:()Landroid/content/Context; // method@8a90
+595f4c: 0c02                                   |0030: move-result-object v2
+595f4e: 7110 288e 0200                         |0031: invoke-static {v2}, Lcom/ss/android/common/util/ToolUtils;.isMessageProcess:(Landroid/content/Context;)Z // method@8e28
+595f54: 0a02                                   |0034: move-result v2
+595f56: 3802 0600                              |0035: if-eqz v2, 003b // +0006
+595f5a: 7100 6d10 0000                         |0037: invoke-static {}, Lcom/bytedance/common/utility/Logger;.debug:()Z // method@106d
+595f60: 2808                                   |003a: goto 0042 // +0008
+595f62: 7110 ff8e 0100                         |003b: invoke-static {v1}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSSIDs:(Ljava/util/Map;)V // method@8eff
+595f68: 2804                                   |003e: goto 0042 // +0004
+595f6a: 7110 ff8e 0100                         |003f: invoke-static {v1}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSSIDs:(Ljava/util/Map;)V // method@8eff
+595f70: 1a02 6aa0                              |0042: const-string v2, "klink_egdi" // string@a06a
+595f74: 6e20 85ec 2100                         |0044: invoke-virtual {v1, v2}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ec85
+595f7a: 0c03                                   |0047: move-result-object v3
+595f7c: 1f03 d629                              |0048: check-cast v3, Ljava/lang/String; // type@29d6
+595f80: 7110 8110 0300                         |004a: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595f86: 0a04                                   |004d: move-result v4
+595f88: 3904 0500                              |004e: if-nez v4, 0053 // +0005
+595f8c: 7230 f7ec 2b03                         |0050: invoke-interface {v11, v2, v3}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+595f92: 1a02 2399                              |0053: const-string v2, "install_id" // string@9923
+595f96: 6e20 85ec 2100                         |0055: invoke-virtual {v1, v2}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ec85
+595f9c: 0c02                                   |0058: move-result-object v2
+595f9e: 1f02 d629                              |0059: check-cast v2, Ljava/lang/String; // type@29d6
+595fa2: 7110 8110 0200                         |005b: invoke-static {v2}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595fa8: 0a03                                   |005e: move-result v3
+595faa: 3903 0700                              |005f: if-nez v3, 0066 // +0007
+595fae: 1a03 e696                              |0061: const-string v3, "iid" // string@96e6
+595fb2: 7230 f7ec 3b02                         |0063: invoke-interface {v11, v3, v2}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+595fb8: 1a02 1674                              |0066: const-string v2, "device_id" // string@7416
+595fbc: 6e20 85ec 2100                         |0068: invoke-virtual {v1, v2}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ec85
+595fc2: 0c03                                   |006b: move-result-object v3
+595fc4: 1f03 d629                              |006c: check-cast v3, Ljava/lang/String; // type@29d6
+595fc8: 7110 8110 0300                         |006e: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595fce: 0a04                                   |0071: move-result v4
+595fd0: 3904 0500                              |0072: if-nez v4, 0077 // +0005
+595fd4: 7230 f7ec 2b03                         |0074: invoke-interface {v11, v2, v3}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+595fda: 7210 908a 0000                         |0077: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getContext:()Landroid/content/Context; // method@8a90
+595fe0: 0c02                                   |007a: move-result-object v2
+595fe2: 3802 1100                              |007b: if-eqz v2, 008c // +0011
+595fe6: 7110 7810 0200                         |007d: invoke-static {v2}, Lcom/bytedance/common/utility/NetworkUtils;.getNetworkAccessType:(Landroid/content/Context;)Ljava/lang/String; // method@1078
+595fec: 0c03                                   |0080: move-result-object v3
+595fee: 7110 8110 0300                         |0081: invoke-static {v3}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+595ff4: 0a04                                   |0084: move-result v4
+595ff6: 3904 0700                              |0085: if-nez v4, 008c // +0007
+595ffa: 1a04 275e                              |0087: const-string v4, "ac" // string@5e27
+595ffe: 7230 f7ec 4b03                         |0089: invoke-interface {v11, v4, v3}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596004: 6203 7061                              |008c: sget-object v3, Li48/a;.a:Li48/a$a; // field@6170
+596008: 6003 bf5e                              |008e: sget v3, Lf48/i;.a:I // field@5ebf
+59600c: 1213                                   |0090: const/4 v3, #int 1 // #1
+59600e: 1204                                   |0091: const/4 v4, #int 0 // #0
+596010: 3902 0400                              |0092: if-nez v2, 0096 // +0004
+596014: 1205                                   |0094: const/4 v5, #int 0 // #0
+596016: 2813                                   |0095: goto 00a8 // +0013
+596018: 6205 7061                              |0096: sget-object v5, Li48/a;.a:Li48/a$a; // field@6170
+59601c: 2336 a732                              |0098: new-array v6, v3, [Ljava/lang/Object; // type@32a7
+596020: 4d02 0604                              |009a: aput-object v2, v6, v4
+596024: 6e20 6bf3 6500                         |009c: invoke-virtual {v5, v6}, Ln48/e;.b:([Ljava/lang/Object;)Ljava/lang/Object; // method@f36b
+59602a: 0c05                                   |009f: move-result-object v5
+59602c: 1f05 7d00                              |00a0: check-cast v5, Landroid/content/SharedPreferences; // type@007d
+596030: 1a06 c05d                              |00a2: const-string v6, "_install_started_v2" // string@5dc0
+596034: 7230 2e02 6504                         |00a4: invoke-interface {v5, v6, v4}, Landroid/content/SharedPreferences;.getBoolean:(Ljava/lang/String;Z)Z // method@022e
+59603a: 0a05                                   |00a7: move-result v5
+59603c: 7210 968a 0000                         |00a8: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getTweakedChannel:()Ljava/lang/String; // method@8a96
+596042: 0c06                                   |00ab: move-result-object v6
+596044: 3806 0700                              |00ac: if-eqz v6, 00b3 // +0007
+596048: 1a07 8b69                              |00ae: const-string v7, "channel" // string@698b
+59604c: 7230 f7ec 7b06                         |00b0: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596052: 7210 8d8a 0000                         |00b3: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAid:()I // method@8a8d
+596058: 0a06                                   |00b6: move-result v6
+59605a: 7110 e4ea 0600                         |00b7: invoke-static {v6}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+596060: 0c06                                   |00ba: move-result-object v6
+596062: 1a07 7660                              |00bb: const-string v7, "aid" // string@6076
+596066: 7230 f7ec 7b06                         |00bd: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59606c: 7210 8e8a 0000                         |00c0: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAppName:()Ljava/lang/String; // method@8a8e
+596072: 0c06                                   |00c3: move-result-object v6
+596074: 3806 0700                              |00c4: if-eqz v6, 00cb // +0007
+596078: 1a07 7462                              |00c6: const-string v7, "app_name" // string@6274
+59607c: 7230 f7ec 7b06                         |00c8: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596082: 7210 998a 0000                         |00cb: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getVersionCode:()I // method@8a99
+596088: 0a06                                   |00ce: move-result v6
+59608a: 7110 e4ea 0600                         |00cf: invoke-static {v6}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+596090: 0c06                                   |00d2: move-result-object v6
+596092: 1a07 a9e6                              |00d3: const-string v7, "version_code" // string@e6a9
+596096: 7230 f7ec 7b06                         |00d5: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59609c: 1a06 abe6                              |00d8: const-string v6, "version_name" // string@e6ab
+5960a0: 7210 988a 0000                         |00da: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getVersion:()Ljava/lang/String; // method@8a98
+5960a6: 0c07                                   |00dd: move-result-object v7
+5960a8: 7230 f7ec 6b07                         |00de: invoke-interface {v11, v6, v7}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5960ae: 1a06 2074                              |00e1: const-string v6, "device_platform" // string@7420
+5960b2: 1a07 eb60                              |00e3: const-string v7, "android" // string@60eb
+5960b6: 7230 f7ec 6b07                         |00e5: invoke-interface {v11, v6, v7}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5960bc: 6206 3d65                              |00e8: sget-object v6, Ln48/d;.b:Ln48/d$a; // field@653d
+5960c0: 2348 a732                              |00ea: new-array v8, v4, [Ljava/lang/Object; // type@32a7
+5960c4: 6e20 6bf3 8600                         |00ec: invoke-virtual {v6, v8}, Ln48/e;.b:([Ljava/lang/Object;)Ljava/lang/Object; // method@f36b
+5960ca: 0c08                                   |00ef: move-result-object v8
+5960cc: 1f08 a529                              |00f0: check-cast v8, Ljava/lang/Boolean; // type@29a5
+5960d0: 6e10 c6e9 0800                         |00f2: invoke-virtual {v8}, Ljava/lang/Boolean;.booleanValue:()Z // method@e9c6
+5960d6: 0a08                                   |00f5: move-result v8
+5960d8: 3808 0400                              |00f6: if-eqz v8, 00fa // +0004
+5960dc: 1a07 8194                              |00f8: const-string v7, "harmony" // string@9481
+5960e0: 1a08 71bc                              |00fa: const-string v8, "os" // string@bc71
+5960e4: 7230 f7ec 8b07                         |00fc: invoke-interface {v11, v8, v7}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5960ea: 2347 a732                              |00ff: new-array v7, v4, [Ljava/lang/Object; // type@32a7
+5960ee: 6e20 6bf3 7600                         |0101: invoke-virtual {v6, v7}, Ln48/e;.b:([Ljava/lang/Object;)Ljava/lang/Object; // method@f36b
+5960f4: 0c06                                   |0104: move-result-object v6
+5960f6: 1f06 a529                              |0105: check-cast v6, Ljava/lang/Boolean; // type@29a5
+5960fa: 6e10 c6e9 0600                         |0107: invoke-virtual {v6}, Ljava/lang/Boolean;.booleanValue:()Z // method@e9c6
+596100: 0a06                                   |010a: move-result v6
+596102: 3806 1600                              |010b: if-eqz v6, 0121 // +0016
+596106: 1a06 c9dd                              |010d: const-string v6, "sub_os_api" // string@ddc9
+59610a: 1a07 a396                              |010f: const-string v7, "hw_sc.build.os.apiversion" // string@96a3
+59610e: 7110 68fb 0700                         |0111: invoke-static {v7}, Lu80/v;.a:(Ljava/lang/String;)Ljava/lang/Object; // method@fb68
+596114: 0c07                                   |0114: move-result-object v7
+596116: 7110 e6ea 0700                         |0115: invoke-static {v7}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@eae6
+59611c: 0c07                                   |0118: move-result-object v7
+59611e: 7230 f7ec 6b07                         |0119: invoke-interface {v11, v6, v7}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596124: 2805                                   |011c: goto 0121 // +0005
+596126: 0d06                                   |011d: move-exception v6
+596128: 6e10 33eb 0600                         |011e: invoke-virtual {v6}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+59612e: 7210 8c8a 0000                         |0121: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAbVersion:()Ljava/lang/String; // method@8a8c
+596134: 0c06                                   |0124: move-result-object v6
+596136: 7110 8110 0600                         |0125: invoke-static {v6}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+59613c: 0a07                                   |0128: move-result v7
+59613e: 3907 0700                              |0129: if-nez v7, 0130 // +0007
+596142: 1a07 145e                              |012b: const-string v7, "ab_version" // string@5e14
+596146: 7230 f7ec 7b06                         |012d: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59614c: 7210 888a 0000                         |0130: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAbClient:()Ljava/lang/String; // method@8a88
+596152: 0c06                                   |0133: move-result-object v6
+596154: 7110 8110 0600                         |0134: invoke-static {v6}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+59615a: 0a07                                   |0137: move-result v7
+59615c: 3907 0700                              |0138: if-nez v7, 013f // +0007
+596160: 1a07 105e                              |013a: const-string v7, "ab_client" // string@5e10
+596164: 7230 f7ec 7b06                         |013c: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59616a: 7210 8b8a 0000                         |013f: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAbGroup:()Ljava/lang/String; // method@8a8b
+596170: 0c06                                   |0142: move-result-object v6
+596172: 7110 8110 0600                         |0143: invoke-static {v6}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+596178: 0a07                                   |0146: move-result v7
+59617a: 3907 0700                              |0147: if-nez v7, 014e // +0007
+59617e: 1a07 125e                              |0149: const-string v7, "ab_group" // string@5e12
+596182: 7230 f7ec 7b06                         |014b: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596188: 7210 898a 0000                         |014e: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAbFeature:()Ljava/lang/String; // method@8a89
+59618e: 0c06                                   |0151: move-result-object v6
+596190: 7110 8110 0600                         |0152: invoke-static {v6}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+596196: 0a07                                   |0155: move-result v7
+596198: 3907 0700                              |0156: if-nez v7, 015d // +0007
+59619c: 1a07 115e                              |0158: const-string v7, "ab_feature" // string@5e11
+5961a0: 7230 f7ec 7b06                         |015a: invoke-interface {v11, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5961a6: 7210 8a8a 0000                         |015d: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAbFlag:()J // method@8a8a
+5961ac: 0b06                                   |0160: move-result-wide v6
+5961ae: 1608 0000                              |0161: const-wide/16 v8, #int 0 // #0
+5961b2: 310a 0608                              |0163: cmp-long v10, v6, v8
+5961b6: 3d0a 0b00                              |0165: if-lez v10, 0170 // +000b
+5961ba: 1a08 175e                              |0167: const-string v8, "abflag" // string@5e17
+5961be: 7120 e5ea 7600                         |0169: invoke-static {v6, v7}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@eae5
+5961c4: 0c06                                   |016c: move-result-object v6
+5961c6: 7230 f7ec 8b06                         |016d: invoke-interface {v11, v8, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5961cc: 380c 0900                              |0170: if-eqz v12, 0179 // +0009
+5961d0: 1a0c 4bdc                              |0172: const-string v12, "ssmix" // string@dc4b
+5961d4: 1a06 ef5d                              |0174: const-string v6, "a" // string@5def
+5961d8: 7230 f7ec cb06                         |0176: invoke-interface {v11, v12, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5961de: 1a0c 2774                              |0179: const-string v12, "device_type" // string@7427
+5961e2: 6206 e300                              |017b: sget-object v6, Landroid/os/Build;.MODEL:Ljava/lang/String; // field@00e3
+5961e6: 7230 f7ec cb06                         |017d: invoke-interface {v11, v12, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5961ec: 1a0c 1574                              |0180: const-string v12, "device_brand" // string@7415
+5961f0: 6206 dc00                              |0182: sget-object v6, Landroid/os/Build;.BRAND:Ljava/lang/String; // field@00dc
+5961f4: 7230 f7ec cb06                         |0184: invoke-interface {v11, v12, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5961fa: 7100 ebec 0000                         |0187: invoke-static {}, Ljava/util/Locale;.getDefault:()Ljava/util/Locale; // method@eceb
+596200: 0c0c                                   |018a: move-result-object v12
+596202: 6e10 ecec 0c00                         |018b: invoke-virtual {v12}, Ljava/util/Locale;.getLanguage:()Ljava/lang/String; // method@ecec
+596208: 0c0c                                   |018e: move-result-object v12
+59620a: 1a06 30a1                              |018f: const-string v6, "language" // string@a130
+59620e: 7230 f7ec 6b0c                         |0191: invoke-interface {v11, v6, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596214: 600c da00                              |0194: sget v12, Landroid/os/Build$VERSION;.SDK_INT:I // field@00da
+596218: 7110 e4ea 0c00                         |0196: invoke-static {v12}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+59621e: 0c0c                                   |0199: move-result-object v12
+596220: 1a06 75bc                              |019a: const-string v6, "os_api" // string@bc75
+596224: 7230 f7ec 6b0c                         |019c: invoke-interface {v11, v6, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59622a: 620c d800                              |019f: sget-object v12, Landroid/os/Build$VERSION;.RELEASE:Ljava/lang/String; // field@00d8
+59622e: 380c 0e00                              |01a1: if-eqz v12, 01af // +000e
+596232: 6e10 d0ea 0c00                         |01a3: invoke-virtual {v12}, Ljava/lang/String;.length:()I // method@ead0
+596238: 0a06                                   |01a6: move-result v6
+59623a: 1307 0a00                              |01a7: const/16 v7, #int 10 // #a
+59623e: 3776 0600                              |01a9: if-le v6, v7, 01af // +0006
+596242: 6e30 daea 4c07                         |01ab: invoke-virtual {v12, v4, v7}, Ljava/lang/String;.substring:(II)Ljava/lang/String; // method@eada
+596248: 0c0c                                   |01ae: move-result-object v12
+59624a: 1a06 77bc                              |01af: const-string v6, "os_version" // string@bc77
+59624e: 7230 f7ec 6b0c                         |01b1: invoke-interface {v11, v6, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596254: 2802                                   |01b4: goto 01b6 // +0002
+596256: 0000                                   |01b5: nop // spacer
+596258: 620c 2103                              |01b6: sget-object v12, Lcom/bytedance/bdinstall/Level;.L0:Lcom/bytedance/bdinstall/Level; // field@0321
+59625c: 33cd 1900                              |01b8: if-ne v13, v12, 01d1 // +0019
+596260: 7100 078f 0000                         |01ba: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isChildMode:()Z // method@8f07
+596266: 0a06                                   |01bd: move-result v6
+596268: 3906 1300                              |01be: if-nez v6, 01d1 // +0013
+59626c: 1a06 efbb                              |01c0: const-string v6, "openudid" // string@bbef
+596270: 6e20 85ec 6100                         |01c2: invoke-virtual {v1, v6}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ec85
+596276: 0c01                                   |01c5: move-result-object v1
+596278: 1f01 d629                              |01c6: check-cast v1, Ljava/lang/String; // type@29d6
+59627c: 7110 8110 0100                         |01c8: invoke-static {v1}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+596282: 0a07                                   |01cb: move-result v7
+596284: 3907 0500                              |01cc: if-nez v7, 01d1 // +0005
+596288: 7230 f7ec 6b01                         |01ce: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59628e: 7210 948a 0000                         |01d1: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getManifestVersionCode:()I // method@8a94
+596294: 0a01                                   |01d4: move-result v1
+596296: 7110 e4ea 0100                         |01d5: invoke-static {v1}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+59629c: 0c01                                   |01d8: move-result-object v1
+59629e: 1a06 f5b0                              |01d9: const-string v6, "manifest_version_code" // string@b0f5
+5962a2: 7230 f7ec 6b01                         |01db: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5962a8: 7210 908a 0000                         |01de: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getContext:()Landroid/content/Context; // method@8a90
+5962ae: 0c01                                   |01e1: move-result-object v1
+5962b0: 7110 8610 0100                         |01e2: invoke-static {v1}, Lcom/bytedance/common/utility/UIUtils;.getScreenResolution:(Landroid/content/Context;)Ljava/lang/String; // method@1086
+5962b6: 0c01                                   |01e5: move-result-object v1
+5962b8: 7110 8110 0100                         |01e6: invoke-static {v1}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+5962be: 0a06                                   |01e9: move-result v6
+5962c0: 3906 0700                              |01ea: if-nez v6, 01f1 // +0007
+5962c4: 1a06 fec5                              |01ec: const-string v6, "resolution" // string@c5fe
+5962c8: 7230 f7ec 6b01                         |01ee: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5962ce: 7210 908a 0000                         |01f1: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getContext:()Landroid/content/Context; // method@8a90
+5962d4: 0c01                                   |01f4: move-result-object v1
+5962d6: 7110 8410 0100                         |01f5: invoke-static {v1}, Lcom/bytedance/common/utility/UIUtils;.getDpi:(Landroid/content/Context;)I // method@1084
+5962dc: 0a01                                   |01f8: move-result v1
+5962de: 3d01 0b00                              |01f9: if-lez v1, 0204 // +000b
+5962e2: 1a06 a476                              |01fb: const-string v6, "dpi" // string@76a4
+5962e6: 7110 e4ea 0100                         |01fd: invoke-static {v1}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+5962ec: 0c01                                   |0200: move-result-object v1
+5962ee: 7230 f7ec 6b01                         |0201: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5962f4: 7210 978a 0000                         |0204: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getUpdateVersionCode:()I // method@8a97
+5962fa: 0a01                                   |0207: move-result v1
+5962fc: 7110 e4ea 0100                         |0208: invoke-static {v1}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@eae4
+596302: 0c01                                   |020b: move-result-object v1
+596304: 1a06 2de4                              |020c: const-string v6, "update_version_code" // string@e42d
+596308: 7230 f7ec 6b01                         |020e: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59630e: 7100 0ceb 0000                         |0211: invoke-static {}, Ljava/lang/System;.currentTimeMillis:()J // method@eb0c
+596314: 0b06                                   |0214: move-result-wide v6
+596316: 7120 e5ea 7600                         |0215: invoke-static {v6, v7}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@eae5
+59631c: 0c01                                   |0218: move-result-object v1
+59631e: 1a06 cd5d                              |0219: const-string v6, "_rticket" // string@5dcd
+596322: 7230 f7ec 6b01                         |021b: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+596328: 6201 423b                              |021e: sget-object v1, Lcom/ss/android/common/applog/x;.j:Ljava/util/concurrent/ConcurrentHashMap; // field@3b42
+59632c: 7120 718d b100                         |0220: invoke-static {v1, v11}, Lcom/ss/android/common/applog/x;.c:(Ljava/util/Map;Ljava/util/Map;)V // method@8d71
+596332: 33cd 0700                              |0223: if-ne v13, v12, 022a // +0007
+596336: 620c 433b                              |0225: sget-object v12, Lcom/ss/android/common/applog/x;.k:Ljava/util/concurrent/ConcurrentHashMap; // field@3b43
+59633a: 7120 718d bc00                         |0227: invoke-static {v12, v11}, Lcom/ss/android/common/applog/x;.c:(Ljava/util/Map;Ljava/util/Map;)V // method@8d71
+596340: 620c 443b                              |022a: sget-object v12, Lcom/ss/android/common/applog/x;.l:Lcom/ss/android/common/applog/NetUtil$IExtraParams; // field@3b44
+596344: 380c 4e00                              |022c: if-eqz v12, 027a // +004e
+596348: 620c 443b                              |022e: sget-object v12, Lcom/ss/android/common/applog/x;.l:Lcom/ss/android/common/applog/NetUtil$IExtraParams; // field@3b44
+59634c: 7220 368c dc00                         |0230: invoke-interface {v12, v13}, Lcom/ss/android/common/applog/NetUtil$IExtraParams;.getExtrparams:(Lcom/bytedance/bdinstall/Level;)Ljava/util/HashMap; // method@8c36
+596352: 0c0c                                   |0233: move-result-object v12
+596354: 380c 4600                              |0234: if-eqz v12, 027a // +0046
+596358: 6e10 86ec 0c00                         |0236: invoke-virtual {v12}, Ljava/util/HashMap;.isEmpty:()Z // method@ec86
+59635e: 0a01                                   |0239: move-result v1
+596360: 3901 4000                              |023a: if-nez v1, 027a // +0040
+596364: 6e10 84ec 0c00                         |023c: invoke-virtual {v12}, Ljava/util/HashMap;.entrySet:()Ljava/util/Set; // method@ec84
+59636a: 0c0c                                   |023f: move-result-object v12
+59636c: 7210 1aed 0c00                         |0240: invoke-interface {v12}, Ljava/util/Set;.iterator:()Ljava/util/Iterator; // method@ed1a
+596372: 0c0c                                   |0243: move-result-object v12
+596374: 7210 9fec 0c00                         |0244: invoke-interface {v12}, Ljava/util/Iterator;.hasNext:()Z // method@ec9f
+59637a: 0a01                                   |0247: move-result v1
+59637c: 3801 3200                              |0248: if-eqz v1, 027a // +0032
+596380: 7210 a0ec 0c00                         |024a: invoke-interface {v12}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@eca0
+596386: 0c01                                   |024d: move-result-object v1
+596388: 1f01 502a                              |024e: check-cast v1, Ljava/util/Map$Entry; // type@2a50
+59638c: 3901 0300                              |0250: if-nez v1, 0253 // +0003
+596390: 28f2                                   |0252: goto 0244 // -000e
+596392: 7210 edec 0100                         |0253: invoke-interface {v1}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@eced
+596398: 0c06                                   |0256: move-result-object v6
+59639a: 1f06 d629                              |0257: check-cast v6, Ljava/lang/String; // type@29d6
+59639e: 7210 eeec 0100                         |0259: invoke-interface {v1}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@ecee
+5963a4: 0c01                                   |025c: move-result-object v1
+5963a6: 1f01 d629                              |025d: check-cast v1, Ljava/lang/String; // type@29d6
+5963aa: 7110 8110 0600                         |025f: invoke-static {v6}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+5963b0: 0a07                                   |0262: move-result v7
+5963b2: 3907 e1ff                              |0263: if-nez v7, 0244 // -001f
+5963b6: 7110 8110 0100                         |0265: invoke-static {v1}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+5963bc: 0a07                                   |0268: move-result v7
+5963be: 3907 dbff                              |0269: if-nez v7, 0244 // -0025
+5963c2: 7220 f1ec 6b00                         |026b: invoke-interface {v11, v6}, Ljava/util/Map;.containsKey:(Ljava/lang/Object;)Z // method@ecf1
+5963c8: 0a07                                   |026e: move-result v7
+5963ca: 3807 0300                              |026f: if-eqz v7, 0272 // +0003
+5963ce: 28d3                                   |0271: goto 0244 // -002d
+5963d0: 7230 f7ec 6b01                         |0272: invoke-interface {v11, v6, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5963d6: 28cf                                   |0275: goto 0244 // -0031
+5963d8: 0d0c                                   |0276: move-exception v12
+5963da: 6e10 33eb 0c00                         |0277: invoke-virtual {v12}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+5963e0: 7110 53f3 0200                         |027a: invoke-static {v2}, Ln48/a;.a:(Landroid/content/Context;)Ljava/lang/String; // method@f353
+5963e6: 0c0c                                   |027d: move-result-object v12
+5963e8: 7110 8110 0c00                         |027e: invoke-static {v12}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+5963ee: 0a01                                   |0281: move-result v1
+5963f0: 3901 0700                              |0282: if-nez v1, 0289 // +0007
+5963f4: 1a01 5669                              |0284: const-string v1, "cdid" // string@6956
+5963f8: 7230 f7ec 1b0c                         |0286: invoke-interface {v11, v1, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5963fe: 620c 2103                              |0289: sget-object v12, Lcom/bytedance/bdinstall/Level;.L0:Lcom/bytedance/bdinstall/Level; // field@0321
+596402: 33cd 5b00                              |028b: if-ne v13, v12, 02e6 // +005b
+596406: 600c 755f                              |028d: sget v12, Lg48/f;.a:I // field@5f75
+59640a: 3905 2c00                              |028f: if-nez v5, 02bb // +002c
+59640e: 7100 e78e 0000                         |0291: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getAdIdConfig:()Lcom/ss/android/deviceregister/c; // method@8ee7
+596414: 0c0c                                   |0294: move-result-object v12
+596416: 1f0c 8419                              |0295: check-cast v12, Lcom/ss/android/deviceregister/c$a; // type@1984
+59641a: 54cc cf3b                              |0297: iget-object v12, v12, Lcom/ss/android/deviceregister/c$a;.a:Lj80/a; // field@3bcf
+59641e: 6e10 8bea 0c00                         |0299: invoke-virtual {v12}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+596424: 620c 8069                              |029c: sget-object v12, Lu80/q;.a:Ljava/lang/CharSequence; // field@6980
+596428: 620c dc00                              |029e: sget-object v12, Landroid/os/Build;.BRAND:Ljava/lang/String; // field@00dc
+59642c: 390c 0300                              |02a0: if-nez v12, 02a3 // +0003
+596430: 280d                                   |02a2: goto 02af // +000d
+596432: 620d e362                              |02a3: sget-object v13, Ljava/util/Locale;.ENGLISH:Ljava/util/Locale; // field@62e3
+596436: 6e20 ddea dc00                         |02a5: invoke-virtual {v12, v13}, Ljava/lang/String;.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String; // method@eadd
+59643c: 0c0c                                   |02a8: move-result-object v12
+59643e: 1a0d 9eb2                              |02a9: const-string v13, "meizu" // string@b29e
+596442: 6e20 bdea dc00                         |02ab: invoke-virtual {v12, v13}, Ljava/lang/String;.contains:(Ljava/lang/CharSequence;)Z // method@eabd
+596448: 0a04                                   |02ae: move-result v4
+59644a: df0c 0401                              |02af: xor-int/lit8 v12, v4, #int 1 // #01
+59644e: 380c 3500                              |02b1: if-eqz v12, 02e6 // +0035
+596452: 7110 02e5 0200                         |02b3: invoke-static {v2}, Lg48/u;.e:(Landroid/content/Context;)Lg48/u; // method@e502
+596458: 0c0c                                   |02b6: move-result-object v12
+59645a: 6e10 01e5 0c00                         |02b7: invoke-virtual {v12}, Lg48/u;.d:()V // method@e501
+596460: 282c                                   |02ba: goto 02e6 // +002c
+596462: 7100 118f 0000                         |02bb: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isTouristMode:()Z // method@8f11
+596468: 0a0c                                   |02be: move-result v12
+59646a: 390c 1100                              |02bf: if-nez v12, 02d0 // +0011
+59646e: 7210 918a 0000                         |02c1: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getDeviceId:()Ljava/lang/String; // method@8a91
+596474: 0c0c                                   |02c4: move-result-object v12
+596476: 7110 488c 0c00                         |02c5: invoke-static {v12}, Lcom/ss/android/common/applog/NetUtil;.isBadId:(Ljava/lang/String;)Z // method@8c48
+59647c: 0a0d                                   |02c8: move-result v13
+59647e: 390d 0700                              |02c9: if-nez v13, 02d0 // +0007
+596482: 1a0d cce4                              |02cb: const-string v13, "uuid" // string@e4cc
+596486: 7230 f7ec db0c                         |02cd: invoke-interface {v11, v13, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+59648c: 3805 1600                              |02d0: if-eqz v5, 02e6 // +0016
+596490: 7110 508f 0200                         |02d2: invoke-static {v2}, Lcom/ss/android/deviceregister/base/Oaid;.instance:(Landroid/content/Context;)Lcom/ss/android/deviceregister/base/Oaid; // method@8f50
+596496: 0c0c                                   |02d5: move-result-object v12
+596498: 7110 b9e4 0c00                         |02d6: invoke-static {v12}, Lg48/f;.c:(Lcom/ss/android/deviceregister/base/Oaid;)Ljava/lang/String; // method@e4b9
+59649e: 0c0c                                   |02d9: move-result-object v12
+5964a0: 380c 0c00                              |02da: if-eqz v12, 02e6 // +000c
+5964a4: 1a0d 7fb7                              |02dc: const-string v13, "oaid" // string@b77f
+5964a8: 7230 f7ec db0c                         |02de: invoke-interface {v11, v13, v12}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5964ae: 2805                                   |02e1: goto 02e6 // +0005
+5964b0: 0d0c                                   |02e2: move-exception v12
+5964b2: 6e10 33eb 0c00                         |02e3: invoke-virtual {v12}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+5964b8: 7110 0f8f 0200                         |02e6: invoke-static {v2}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isNewUserMode:(Landroid/content/Context;)Z // method@8f0f
+5964be: 0a0c                                   |02e9: move-result v12
+5964c0: 380c 0b00                              |02ea: if-eqz v12, 02f5 // +000b
+5964c4: 7110 48f2 0200                         |02ec: invoke-static {v2}, Lm48/c;.a:(Landroid/content/Context;)Lm48/c; // method@f248
+5964ca: 0c0c                                   |02ef: move-result-object v12
+5964cc: 54cc b164                              |02f0: iget-object v12, v12, Lm48/c;.a:Lm48/b; // field@64b1
+5964d0: 7220 43f2 bc00                         |02f2: invoke-interface {v12, v11}, Lm48/b;.d:(Ljava/util/Map;)V // method@f243
+5964d6: 0e00                                   |02f5: return-void
+      catches       : 5
+        0x002d - 0x003e
+          Ljava/lang/Exception; -> 0x003f
+        0x00ff - 0x011c
+          <any> -> 0x011d
+        0x019f - 0x01b4
+          Ljava/lang/Exception; -> 0x01b5
+        0x022a - 0x0275
+          <any> -> 0x0276
+        0x02d2 - 0x02e1
+          <any> -> 0x02e2
+      positions     :
+        0x0000 line=50855936
+        0x0001 line=50855937
+        0x0002 line=50855938
+        0x0003 line=50855939
+        0x0004 line=50855940
+        0x0005 line=50855941
+        0x0006 line=50855942
+        0x0007 line=50855943
+        0x0008 line=50855944
+        0x0009 line=50855945
+        0x000a line=50855946
+        0x000b line=50855947
+        0x000c line=50855948
+        0x000d line=50855949
+        0x000e line=50855950
+        0x000f line=50855951
+        0x0010 line=50855952
+        0x0011 line=50855953
+        0x0012 line=50855954
+        0x0013 line=50855955
+        0x0014 line=50855956
+        0x0015 line=50855957
+        0x0016 line=50855958
+        0x0017 line=50855959
+        0x0018 line=50855960
+        0x0019 line=50855961
+        0x001a line=50855962
+        0x001b line=50855963
+        0x001c line=50855964
+        0x001d line=50855965
+        0x001e line=50855966
+        0x001f line=50855967
+        0x0020 line=50855968
+        0x0021 line=50855969
+        0x0022 line=50855970
+        0x0023 line=50855971
+        0x0024 line=50855972
+        0x0025 line=50855973
+        0x0026 line=50855974
+        0x0027 line=50855975
+        0x0028 line=50855976
+        0x0029 line=50855977
+        0x002a line=50855978
+        0x002b line=50855979
+        0x002c line=50855980
+        0x002d line=50855981
+        0x002e line=50855982
+        0x002f line=50855983
+        0x0030 line=50855984
+        0x0031 line=50855985
+        0x0032 line=50855986
+        0x0033 line=50855987
+        0x0034 line=50855988
+        0x0035 line=50855989
+        0x0036 line=50855990
+        0x0037 line=50855991
+        0x0038 line=50855992
+        0x0039 line=50855993
+        0x003a line=50855994
+        0x003b line=50855995
+        0x003c line=50855996
+        0x003d line=50855997
+        0x003e line=50855998
+        0x003f line=50855999
+        0x0040 line=50856000
+        0x0041 line=50856001
+        0x0042 line=50856002
+        0x0043 line=50856003
+        0x0044 line=50856004
+        0x0045 line=50856005
+        0x0046 line=50856006
+        0x0047 line=50856007
+        0x0048 line=50856008
+        0x0049 line=50856009
+        0x004a line=50856010
+        0x004b line=50856011
+        0x004c line=50856012
+        0x004d line=50856013
+        0x004e line=50856014
+        0x004f line=50856015
+        0x0050 line=50856016
+        0x0051 line=50856017
+        0x0052 line=50856018
+        0x0053 line=50856019
+        0x0054 line=50856020
+        0x0055 line=50856021
+        0x0056 line=50856022
+        0x0057 line=50856023
+        0x0058 line=50856024
+        0x0059 line=50856025
+        0x005a line=50856026
+        0x005b line=50856027
+        0x005c line=50856028
+        0x005d line=50856029
+        0x005e line=50856030
+        0x005f line=50856031
+        0x0060 line=50856032
+        0x0061 line=50856033
+        0x0062 line=50856034
+        0x0063 line=50856035
+        0x0064 line=50856036
+        0x0065 line=50856037
+        0x0066 line=50856038
+        0x0067 line=50856039
+        0x0068 line=50856040
+        0x0069 line=50856041
+        0x006a line=50856042
+        0x006b line=50856043
+        0x006c line=50856044
+        0x006d line=50856045
+        0x006e line=50856046
+        0x006f line=50856047
+        0x0070 line=50856048
+        0x0071 line=50856049
+        0x0072 line=50856050
+        0x0073 line=50856051
+        0x0074 line=50856052
+        0x0075 line=50856053
+        0x0076 line=50856054
+        0x0077 line=50856055
+        0x0078 line=50856056
+        0x0079 line=50856057
+        0x007a line=50856058
+        0x007b line=50856059
+        0x007c line=50856060
+        0x007d line=50856061
+        0x007e line=50856062
+        0x007f line=50856063
+        0x0080 line=50856064
+        0x0081 line=50856065
+        0x0082 line=50856066
+        0x0083 line=50856067
+        0x0084 line=50856068
+        0x0085 line=50856069
+        0x0086 line=50856070
+        0x0087 line=50856071
+        0x0088 line=50856072
+        0x0089 line=50856073
+        0x008a line=50856074
+        0x008b line=50856075
+        0x008c line=50856076
+        0x008d line=50856077
+        0x008e line=50856078
+        0x008f line=50856079
+        0x0090 line=50856080
+        0x0091 line=50856081
+        0x0092 line=50856082
+        0x0093 line=50856083
+        0x0094 line=50856084
+        0x0095 line=50856085
+        0x0096 line=50856086
+        0x0097 line=50856087
+        0x0098 line=50856088
+        0x0099 line=50856089
+        0x009a line=50856090
+        0x009b line=50856091
+        0x009c line=50856092
+        0x009d line=50856093
+        0x009e line=50856094
+        0x009f line=50856095
+        0x00a0 line=50856096
+        0x00a1 line=50856097
+        0x00a2 line=50856098
+        0x00a3 line=50856099
+        0x00a4 line=50856100
+        0x00a5 line=50856101
+        0x00a6 line=50856102
+        0x00a7 line=50856103
+        0x00a8 line=50856104
+        0x00a9 line=50856105
+        0x00aa line=50856106
+        0x00ab line=50856107
+        0x00ac line=50856108
+        0x00ad line=50856109
+        0x00ae line=50856110
+        0x00af line=50856111
+        0x00b0 line=50856112
+        0x00b1 line=50856113
+        0x00b2 line=50856114
+        0x00b3 line=50856115
+        0x00b4 line=50856116
+        0x00b5 line=50856117
+        0x00b6 line=50856118
+        0x00b7 line=50856119
+        0x00b8 line=50856120
+        0x00b9 line=50856121
+        0x00ba line=50856122
+        0x00bb line=50856123
+        0x00bc line=50856124
+        0x00bd line=50856125
+        0x00be line=50856126
+        0x00bf line=50856127
+        0x00c0 line=50856128
+        0x00c1 line=50856129
+        0x00c2 line=50856130
+        0x00c3 line=50856131
+        0x00c4 line=50856132
+        0x00c5 line=50856133
+        0x00c6 line=50856134
+        0x00c7 line=50856135
+        0x00c8 line=50856136
+        0x00c9 line=50856137
+        0x00ca line=50856138
+        0x00cb line=50856139
+        0x00cc line=50856140
+        0x00cd line=50856141
+        0x00ce line=50856142
+        0x00cf line=50856143
+        0x00d0 line=50856144
+        0x00d1 line=50856145
+        0x00d2 line=50856146
+        0x00d3 line=50856147
+        0x00d4 line=50856148
+        0x00d5 line=50856149
+        0x00d6 line=50856150
+        0x00d7 line=50856151
+        0x00d8 line=50856152
+        0x00d9 line=50856153
+        0x00da line=50856154
+        0x00db line=50856155
+        0x00dc line=50856156
+        0x00dd line=50856157
+        0x00de line=50856158
+        0x00df line=50856159
+        0x00e0 line=50856160
+        0x00e1 line=50856161
+        0x00e2 line=50856162
+        0x00e3 line=50856163
+        0x00e4 line=50856164
+        0x00e5 line=50856165
+        0x00e6 line=50856166
+        0x00e7 line=50856167
+        0x00e8 line=50856168
+        0x00e9 line=50856169
+        0x00ea line=50856170
+        0x00eb line=50856171
+        0x00ec line=50856172
+        0x00ed line=50856173
+        0x00ee line=50856174
+        0x00ef line=50856175
+        0x00f0 line=50856176
+        0x00f1 line=50856177
+        0x00f2 line=50856178
+        0x00f3 line=50856179
+        0x00f4 line=50856180
+        0x00f5 line=50856181
+        0x00f6 line=50856182
+        0x00f7 line=50856183
+        0x00f8 line=50856184
+        0x00f9 line=50856185
+        0x00fa line=50856186
+        0x00fb line=50856187
+        0x00fc line=50856188
+        0x00fd line=50856189
+        0x00fe line=50856190
+        0x00ff line=50856191
+        0x0100 line=50856192
+        0x0101 line=50856193
+        0x0102 line=50856194
+        0x0103 line=50856195
+        0x0104 line=50856196
+        0x0105 line=50856197
+        0x0106 line=50856198
+        0x0107 line=50856199
+        0x0108 line=50856200
+        0x0109 line=50856201
+        0x010a line=50856202
+        0x010b line=50856203
+        0x010c line=50856204
+        0x010d line=50856205
+        0x010e line=50856206
+        0x010f line=50856207
+        0x0110 line=50856208
+        0x0111 line=50856209
+        0x0112 line=50856210
+        0x0113 line=50856211
+        0x0114 line=50856212
+        0x0115 line=50856213
+        0x0116 line=50856214
+        0x0117 line=50856215
+        0x0118 line=50856216
+        0x0119 line=50856217
+        0x011a line=50856218
+        0x011b line=50856219
+        0x011c line=50856220
+        0x011d line=50856221
+        0x011e line=50856222
+        0x011f line=50856223
+        0x0120 line=50856224
+        0x0121 line=50856225
+        0x0122 line=50856226
+        0x0123 line=50856227
+        0x0124 line=50856228
+        0x0125 line=50856229
+        0x0126 line=50856230
+        0x0127 line=50856231
+        0x0128 line=50856232
+        0x0129 line=50856233
+        0x012a line=50856234
+        0x012b line=50856235
+        0x012c line=50856236
+        0x012d line=50856237
+        0x012e line=50856238
+        0x012f line=50856239
+        0x0130 line=50856240
+        0x0131 line=50856241
+        0x0132 line=50856242
+        0x0133 line=50856243
+        0x0134 line=50856244
+        0x0135 line=50856245
+        0x0136 line=50856246
+        0x0137 line=50856247
+        0x0138 line=50856248
+        0x0139 line=50856249
+        0x013a line=50856250
+        0x013b line=50856251
+        0x013c line=50856252
+        0x013d line=50856253
+        0x013e line=50856254
+        0x013f line=50856255
+        0x0140 line=50856256
+        0x0141 line=50856257
+        0x0142 line=50856258
+        0x0143 line=50856259
+        0x0144 line=50856260
+        0x0145 line=50856261
+        0x0146 line=50856262
+        0x0147 line=50856263
+        0x0148 line=50856264
+        0x0149 line=50856265
+        0x014a line=50856266
+        0x014b line=50856267
+        0x014c line=50856268
+        0x014d line=50856269
+        0x014e line=50856270
+        0x014f line=50856271
+        0x0150 line=50856272
+        0x0151 line=50856273
+        0x0152 line=50856274
+        0x0153 line=50856275
+        0x0154 line=50856276
+        0x0155 line=50856277
+        0x0156 line=50856278
+        0x0157 line=50856279
+        0x0158 line=50856280
+        0x0159 line=50856281
+        0x015a line=50856282
+        0x015b line=50856283
+        0x015c line=50856284
+        0x015d line=50856285
+        0x015e line=50856286
+        0x015f line=50856287
+        0x0160 line=50856288
+        0x0161 line=50856289
+        0x0162 line=50856290
+        0x0163 line=50856291
+        0x0164 line=50856292
+        0x0165 line=50856293
+        0x0166 line=50856294
+        0x0167 line=50856295
+        0x0168 line=50856296
+        0x0169 line=50856297
+        0x016a line=50856298
+        0x016b line=50856299
+        0x016c line=50856300
+        0x016d line=50856301
+        0x016e line=50856302
+        0x016f line=50856303
+        0x0170 line=50856304
+        0x0171 line=50856305
+        0x0172 line=50856306
+        0x0173 line=50856307
+        0x0174 line=50856308
+        0x0175 line=50856309
+        0x0176 line=50856310
+        0x0177 line=50856311
+        0x0178 line=50856312
+        0x0179 line=50856313
+        0x017a line=50856314
+        0x017b line=50856315
+        0x017c line=50856316
+        0x017d line=50856317
+        0x017e line=50856318
+        0x017f line=50856319
+        0x0180 line=50856320
+        0x0181 line=50856321
+        0x0182 line=50856322
+        0x0183 line=50856323
+        0x0184 line=50856324
+        0x0185 line=50856325
+        0x0186 line=50856326
+        0x0187 line=50856327
+        0x0188 line=50856328
+        0x0189 line=50856329
+        0x018a line=50856330
+        0x018b line=50856331
+        0x018c line=50856332
+        0x018d line=50856333
+        0x018e line=50856334
+        0x018f line=50856335
+        0x0190 line=50856336
+        0x0191 line=50856337
+        0x0192 line=50856338
+        0x0193 line=50856339
+        0x0194 line=50856340
+        0x0195 line=50856341
+        0x0196 line=50856342
+        0x0197 line=50856343
+        0x0198 line=50856344
+        0x0199 line=50856345
+        0x019a line=50856346
+        0x019b line=50856347
+        0x019c line=50856348
+        0x019d line=50856349
+        0x019e line=50856350
+        0x019f line=50856351
+        0x01a0 line=50856352
+        0x01a1 line=50856353
+        0x01a2 line=50856354
+        0x01a3 line=50856355
+        0x01a4 line=50856356
+        0x01a5 line=50856357
+        0x01a6 line=50856358
+        0x01a7 line=50856359
+        0x01a8 line=50856360
+        0x01a9 line=50856361
+        0x01aa line=50856362
+        0x01ab line=50856363
+        0x01ac line=50856364
+        0x01ad line=50856365
+        0x01ae line=50856366
+        0x01af line=50856367
+        0x01b0 line=50856368
+        0x01b1 line=50856369
+        0x01b2 line=50856370
+        0x01b3 line=50856371
+        0x01b4 line=50856372
+        0x01b5 line=50856373
+        0x01b6 line=50856374
+        0x01b7 line=50856375
+        0x01b8 line=50856376
+        0x01b9 line=50856377
+        0x01ba line=50856378
+        0x01bb line=50856379
+        0x01bc line=50856380
+        0x01bd line=50856381
+        0x01be line=50856382
+        0x01bf line=50856383
+        0x01c0 line=50856384
+        0x01c1 line=50856385
+        0x01c2 line=50856386
+        0x01c3 line=50856387
+        0x01c4 line=50856388
+        0x01c5 line=50856389
+        0x01c6 line=50856390
+        0x01c7 line=50856391
+        0x01c8 line=50856392
+        0x01c9 line=50856393
+        0x01ca line=50856394
+        0x01cb line=50856395
+        0x01cc line=50856396
+        0x01cd line=50856397
+        0x01ce line=50856398
+        0x01cf line=50856399
+        0x01d0 line=50856400
+        0x01d1 line=50856401
+        0x01d2 line=50856402
+        0x01d3 line=50856403
+        0x01d4 line=50856404
+        0x01d5 line=50856405
+        0x01d6 line=50856406
+        0x01d7 line=50856407
+        0x01d8 line=50856408
+        0x01d9 line=50856409
+        0x01da line=50856410
+        0x01db line=50856411
+        0x01dc line=50856412
+        0x01dd line=50856413
+        0x01de line=50856414
+        0x01df line=50856415
+        0x01e0 line=50856416
+        0x01e1 line=50856417
+        0x01e2 line=50856418
+        0x01e3 line=50856419
+        0x01e4 line=50856420
+        0x01e5 line=50856421
+        0x01e6 line=50856422
+        0x01e7 line=50856423
+        0x01e8 line=50856424
+        0x01e9 line=50856425
+        0x01ea line=50856426
+        0x01eb line=50856427
+        0x01ec line=50856428
+        0x01ed line=50856429
+        0x01ee line=50856430
+        0x01ef line=50856431
+        0x01f0 line=50856432
+        0x01f1 line=50856433
+        0x01f2 line=50856434
+        0x01f3 line=50856435
+        0x01f4 line=50856436
+        0x01f5 line=50856437
+        0x01f6 line=50856438
+        0x01f7 line=50856439
+        0x01f8 line=50856440
+        0x01f9 line=50856441
+        0x01fa line=50856442
+        0x01fb line=50856443
+        0x01fc line=50856444
+        0x01fd line=50856445
+        0x01fe line=50856446
+        0x01ff line=50856447
+        0x0200 line=50856448
+        0x0201 line=50856449
+        0x0202 line=50856450
+        0x0203 line=50856451
+        0x0204 line=50856452
+        0x0205 line=50856453
+        0x0206 line=50856454
+        0x0207 line=50856455
+        0x0208 line=50856456
+        0x0209 line=50856457
+        0x020a line=50856458
+        0x020b line=50856459
+        0x020c line=50856460
+        0x020d line=50856461
+        0x020e line=50856462
+        0x020f line=50856463
+        0x0210 line=50856464
+        0x0211 line=50856465
+        0x0212 line=50856466
+        0x0213 line=50856467
+        0x0214 line=50856468
+        0x0215 line=50856469
+        0x0216 line=50856470
+        0x0217 line=50856471
+        0x0218 line=50856472
+        0x0219 line=50856473
+        0x021a line=50856474
+        0x021b line=50856475
+        0x021c line=50856476
+        0x021d line=50856477
+        0x021e line=50856478
+        0x021f line=50856479
+        0x0220 line=50856480
+        0x0221 line=50856481
+        0x0222 line=50856482
+        0x0223 line=50856483
+        0x0224 line=50856484
+        0x0225 line=50856485
+        0x0226 line=50856486
+        0x0227 line=50856487
+        0x0228 line=50856488
+        0x0229 line=50856489
+        0x022a line=50856490
+        0x022b line=50856491
+        0x022c line=50856492
+        0x022d line=50856493
+        0x022e line=50856494
+        0x022f line=50856495
+        0x0230 line=50856496
+        0x0231 line=50856497
+        0x0232 line=50856498
+        0x0233 line=50856499
+        0x0234 line=50856500
+        0x0235 line=50856501
+        0x0236 line=50856502
+        0x0237 line=50856503
+        0x0238 line=50856504
+        0x0239 line=50856505
+        0x023a line=50856506
+        0x023b line=50856507
+        0x023c line=50856508
+        0x023d line=50856509
+        0x023e line=50856510
+        0x023f line=50856511
+        0x0240 line=50856512
+        0x0241 line=50856513
+        0x0242 line=50856514
+        0x0243 line=50856515
+        0x0244 line=50856516
+        0x0245 line=50856517
+        0x0246 line=50856518
+        0x0247 line=50856519
+        0x0248 line=50856520
+        0x0249 line=50856521
+        0x024a line=50856522
+        0x024b line=50856523
+        0x024c line=50856524
+        0x024d line=50856525
+        0x024e line=50856526
+        0x024f line=50856527
+        0x0250 line=50856528
+        0x0251 line=50856529
+        0x0252 line=50856530
+        0x0253 line=50856531
+        0x0254 line=50856532
+        0x0255 line=50856533
+        0x0256 line=50856534
+        0x0257 line=50856535
+        0x0258 line=50856536
+        0x0259 line=50856537
+        0x025a line=50856538
+        0x025b line=50856539
+        0x025c line=50856540
+        0x025d line=50856541
+        0x025e line=50856542
+        0x025f line=50856543
+        0x0260 line=50856544
+        0x0261 line=50856545
+        0x0262 line=50856546
+        0x0263 line=50856547
+        0x0264 line=50856548
+        0x0265 line=50856549
+        0x0266 line=50856550
+        0x0267 line=50856551
+        0x0268 line=50856552
+        0x0269 line=50856553
+        0x026a line=50856554
+        0x026b line=50856555
+        0x026c line=50856556
+        0x026d line=50856557
+        0x026e line=50856558
+        0x026f line=50856559
+        0x0270 line=50856560
+        0x0271 line=50856561
+        0x0272 line=50856562
+        0x0273 line=50856563
+        0x0274 line=50856564
+        0x0275 line=50856565
+        0x0276 line=50856566
+        0x0277 line=50856567
+        0x0278 line=50856568
+        0x0279 line=50856569
+        0x027a line=50856570
+        0x027b line=50856571
+        0x027c line=50856572
+        0x027d line=50856573
+        0x027e line=50856574
+        0x027f line=50856575
+        0x0280 line=50856576
+        0x0281 line=50856577
+        0x0282 line=50856578
+        0x0283 line=50856579
+        0x0284 line=50856580
+        0x0285 line=50856581
+        0x0286 line=50856582
+        0x0287 line=50856583
+        0x0288 line=50856584
+        0x0289 line=50856585
+        0x028a line=50856586
+        0x028b line=50856587
+        0x028c line=50856588
+        0x028d line=50856589
+        0x028e line=50856590
+        0x028f line=50856591
+        0x0290 line=50856592
+        0x0291 line=50856593
+        0x0292 line=50856594
+        0x0293 line=50856595
+        0x0294 line=50856596
+        0x0295 line=50856597
+        0x0296 line=50856598
+        0x0297 line=50856599
+        0x0298 line=50856600
+        0x0299 line=50856601
+        0x029a line=50856602
+        0x029b line=50856603
+        0x029c line=50856604
+        0x029d line=50856605
+        0x029e line=50856606
+        0x029f line=50856607
+        0x02a0 line=50856608
+        0x02a1 line=50856609
+        0x02a2 line=50856610
+        0x02a3 line=50856611
+        0x02a4 line=50856612
+        0x02a5 line=50856613
+        0x02a6 line=50856614
+        0x02a7 line=50856615
+        0x02a8 line=50856616
+        0x02a9 line=50856617
+        0x02aa line=50856618
+        0x02ab line=50856619
+        0x02ac line=50856620
+        0x02ad line=50856621
+        0x02ae line=50856622
+        0x02af line=50856623
+        0x02b0 line=50856624
+        0x02b1 line=50856625
+        0x02b2 line=50856626
+        0x02b3 line=50856627
+        0x02b4 line=50856628
+        0x02b5 line=50856629
+        0x02b6 line=50856630
+        0x02b7 line=50856631
+        0x02b8 line=50856632
+        0x02b9 line=50856633
+        0x02ba line=50856634
+        0x02bb line=50856635
+        0x02bc line=50856636
+        0x02bd line=50856637
+        0x02be line=50856638
+        0x02bf line=50856639
+        0x02c0 line=50856640
+        0x02c1 line=50856641
+        0x02c2 line=50856642
+        0x02c3 line=50856643
+        0x02c4 line=50856644
+        0x02c5 line=50856645
+        0x02c6 line=50856646
+        0x02c7 line=50856647
+        0x02c8 line=50856648
+        0x02c9 line=50856649
+        0x02ca line=50856650
+        0x02cb line=50856651
+        0x02cc line=50856652
+        0x02cd line=50856653
+        0x02ce line=50856654
+        0x02cf line=50856655
+        0x02d0 line=50856656
+        0x02d1 line=50856657
+        0x02d2 line=50856658
+        0x02d3 line=50856659
+        0x02d4 line=50856660
+        0x02d5 line=50856661
+        0x02d6 line=50856662
+        0x02d7 line=50856663
+        0x02d8 line=50856664
+        0x02d9 line=50856665
+        0x02da line=50856666
+        0x02db line=50856667
+        0x02dc line=50856668
+        0x02dd line=50856669
+        0x02de line=50856670
+        0x02df line=50856671
+        0x02e0 line=50856672
+        0x02e1 line=50856673
+        0x02e2 line=50856674
+        0x02e3 line=50856675
+        0x02e4 line=50856676
+        0x02e5 line=50856677
+        0x02e6 line=50856678
+        0x02e7 line=50856679
+        0x02e8 line=50856680
+        0x02e9 line=50856681
+        0x02ea line=50856682
+        0x02eb line=50856683
+        0x02ec line=50856684
+        0x02ed line=50856685
+        0x02ee line=50856686
+        0x02ef line=50856687
+        0x02f0 line=50856688
+        0x02f1 line=50856689
+        0x02f2 line=50856690
+        0x02f3 line=50856691
+        0x02f4 line=50856692
+        0x02f5 line=50856693
+      locals        :
+        0x0000 - 0x02f6 reg=11 (null) Ljava/util/Map;
+        0x0000 - 0x02f6 reg=12 (null) Z
+        0x0000 - 0x02f6 reg=13 (null) Lcom/bytedance/bdinstall/Level;
+
+    #15              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'sendEncryptLog'
+      type          : '(Lf60/k;Ljava/lang/String;[BLandroid/content/Context;Z[Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ZZ)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 13
+      ins           : 10
+      outs          : 5
+      insns size    : 415 16-bit code units
+596514:                                        |[596514] com.ss.android.common.applog.NetUtil.sendEncryptLog:(Lf60/k;Ljava/lang/String;[BLandroid/content/Context;Z[Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ZZ)Ljava/lang/String;
+596524: 620a 393b                              |0000: sget-object v10, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+596528: 7110 8110 0400                         |0002: invoke-static {v4}, Lcom/bytedance/common/utility/StringUtils;.isEmpty:(Ljava/lang/String;)Z // method@1081
+59652e: 0a0a                                   |0005: move-result v10
+596530: 1200                                   |0006: const/4 v0, #int 0 // #0
+596532: 380a 0400                              |0007: if-eqz v10, 000b // +0004
+596536: 2900 9501                              |0009: goto/16 019e // +0195
+59653a: 3805 8f01                              |000b: if-eqz v5, 019a // +018f
+59653e: 215a                                   |000d: array-length v10, v5
+596540: 3c0a 0400                              |000e: if-gtz v10, 0012 // +0004
+596544: 2900 8a01                              |0010: goto/16 019a // +018a
+596548: 220a 452a                              |0012: new-instance v10, Ljava/util/HashMap; // type@2a45
+59654c: 7010 7eec 0a00                         |0014: invoke-direct {v10}, Ljava/util/HashMap;.<init>:()V // method@ec7e
+596552: 1a01 e0a2                              |0017: const-string v1, "log-encode-type" // string@a2e0
+596556: 1a02 6993                              |0019: const-string v2, "gzip" // string@9369
+59655a: 6e30 88ec 1a02                         |001b: invoke-virtual {v10, v1, v2}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+596560: 1a01 0f09                              |001e: const-string v1, "/service/2/app_log/" // string@090f
+596564: 6e20 bdea 1400                         |0020: invoke-virtual {v4, v1}, Ljava/lang/String;.contains:(Ljava/lang/CharSequence;)Z // method@eabd
+59656a: 0a01                                   |0023: move-result v1
+59656c: 3801 5700                              |0024: if-eqz v1, 007b // +0057
+596570: 3803 2900                              |0026: if-eqz v3, 004f // +0029
+596574: 1f03 9d2c                              |0028: check-cast v3, Ln70/e; // type@2c9d
+596578: 6e20 8cf3 5300                         |002a: invoke-virtual {v3, v5}, Ln70/e;.a:([B)Lf60/f; // method@f38c
+59657e: 0c03                                   |002d: move-result-object v3
+596580: 5431 c95e                              |002e: iget-object v1, v3, Lf60/f;.a:[B // field@5ec9
+596584: 3901 0800                              |0030: if-nez v1, 0038 // +0008
+596588: 6203 2003                              |0032: sget-object v3, Lcom/bytedance/applog/monitor/MonitorState;.monitor_default:Lcom/bytedance/applog/monitor/MonitorState; // field@0320
+59658c: 6003 b23a                              |0034: sget v3, Lcom/ss/android/common/applog/a;.a:I // field@3ab2
+596590: 2900 6801                              |0036: goto/16 019e // +0168
+596594: 5435 ca5e                              |0038: iget-object v5, v3, Lf60/f;.c:Ljava/util/Map; // field@5eca
+596598: 3805 0f00                              |003a: if-eqz v5, 0049 // +000f
+59659c: 1f05 452a                              |003c: check-cast v5, Ljava/util/HashMap; // type@2a45
+5965a0: 6e10 86ec 0500                         |003e: invoke-virtual {v5}, Ljava/util/HashMap;.isEmpty:()Z // method@ec86
+5965a6: 0a05                                   |0041: move-result v5
+5965a8: 3905 0700                              |0042: if-nez v5, 0049 // +0007
+5965ac: 5433 ca5e                              |0044: iget-object v3, v3, Lf60/f;.c:Ljava/util/Map; // field@5eca
+5965b0: 6e20 89ec 3a00                         |0046: invoke-virtual {v10, v3}, Ljava/util/HashMap;.putAll:(Ljava/util/Map;)V // method@ec89
+5965b6: 0715                                   |0049: move-object v5, v1
+5965b8: 2805                                   |004a: goto 004f // +0005
+5965ba: 0000                                   |004b: nop // spacer
+5965bc: 2833                                   |004c: goto 007f // +0033
+5965be: 0000                                   |004d: nop // spacer
+5965c0: 282b                                   |004e: goto 0079 // +002b
+5965c2: 3806 1d00                              |004f: if-eqz v6, 006c // +001d
+5965c6: 7110 6f8d 0600                         |0051: invoke-static {v6}, Lcom/ss/android/common/applog/x;.a:(Landroid/content/Context;)V // method@8d6f
+5965cc: 6003 3f3b                              |0054: sget v3, Lcom/ss/android/common/applog/x;.g:I // field@3b3f
+5965d0: 1231                                   |0056: const/4 v1, #int 3 // #3
+5965d2: 3513 1300                              |0057: if-ge v3, v1, 006a // +0013
+5965d6: 2153                                   |0059: array-length v3, v5
+5965d8: 6001 fa66                              |005a: sget v1, Lql0/a;.a:I // field@66fa
+5965dc: 7120 d010 3500                         |005c: invoke-static {v5, v3}, Lcom/bytedance/frameworks/encryptor/EncryptorUtil;.a:([BI)[B // method@10d0
+5965e2: 0c05                                   |005f: move-result-object v5
+5965e4: 7110 748d 0600                         |0060: invoke-static {v6}, Lcom/ss/android/common/applog/x;.f:(Landroid/content/Context;)V // method@8d74
+5965ea: 3905 1600                              |0063: if-nez v5, 0079 // +0016
+5965ee: 6203 2003                              |0065: sget-object v3, Lcom/bytedance/applog/monitor/MonitorState;.monitor_default:Lcom/bytedance/applog/monitor/MonitorState; // field@0320
+5965f2: 6003 b23a                              |0067: sget v3, Lcom/ss/android/common/applog/a;.a:I // field@3ab2
+5965f6: 2810                                   |0069: goto 0079 // +0010
+5965f8: 0701                                   |006a: move-object v1, v0
+5965fa: 2814                                   |006b: goto 007f // +0014
+5965fc: 2153                                   |006c: array-length v3, v5
+5965fe: 6006 fa66                              |006d: sget v6, Lql0/a;.a:I // field@66fa
+596602: 7120 d010 3500                         |006f: invoke-static {v5, v3}, Lcom/bytedance/frameworks/encryptor/EncryptorUtil;.a:([BI)[B // method@10d0
+596608: 0c05                                   |0072: move-result-object v5
+59660a: 3905 0600                              |0073: if-nez v5, 0079 // +0006
+59660e: 6203 2003                              |0075: sget-object v3, Lcom/bytedance/applog/monitor/MonitorState;.monitor_default:Lcom/bytedance/applog/monitor/MonitorState; // field@0320
+596612: 6003 b23a                              |0077: sget v3, Lcom/ss/android/common/applog/a;.a:I // field@3ab2
+596616: 0751                                   |0079: move-object v1, v5
+596618: 2805                                   |007a: goto 007f // +0005
+59661a: 7120 708d 5600                         |007b: invoke-static {v6, v5}, Lcom/ss/android/common/applog/x;.b:(Landroid/content/Context;[B)[B // method@8d70
+596620: 0c01                                   |007e: move-result-object v1
+596622: 3801 1301                              |007f: if-eqz v1, 0192 // +0113
+596626: 2203 d829                              |0081: new-instance v3, Ljava/lang/StringBuilder; // type@29d8
+59662a: 1a03 ce03                              |0083: const-string v3, "&tt_data=a" // string@03ce
+59662e: 6e20 bcea 3400                         |0085: invoke-virtual {v4, v3}, Ljava/lang/String;.concat:(Ljava/lang/String;)Ljava/lang/String; // method@eabc
+596634: 0c03                                   |0088: move-result-object v3
+596636: 3807 1300                              |0089: if-eqz v7, 009c // +0013
+59663a: 2204 d829                              |008b: new-instance v4, Ljava/lang/StringBuilder; // type@29d8
+59663e: 7010 f1ea 0400                         |008d: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@eaf1
+596644: 6e20 fbea 3400                         |0090: invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@eafb
+59664a: 1a03 b503                              |0093: const-string v3, "&config_retry=b" // string@03b5
+59664e: 6e20 fbea 3400                         |0095: invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@eafb
+596654: 6e10 09eb 0400                         |0098: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@eb09
+59665a: 0c03                                   |009b: move-result-object v3
+59665c: 1a04 b40e                              |009c: const-string v4, "Content-Type" // string@0eb4
+596660: 1a05 d362                              |009e: const-string v5, "application/octet-stream;tt-data=a" // string@62d3
+596664: 6e30 88ec 4a05                         |00a0: invoke-virtual {v10, v4, v5}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+59666a: 3809 0500                              |00a3: if-eqz v9, 00a8 // +0005
+59666e: 6e20 89ec 9a00                         |00a5: invoke-virtual {v10, v9}, Ljava/util/HashMap;.putAll:(Ljava/util/Map;)V // method@ec89
+596674: 390c 1d00                              |00a8: if-nez v12, 00c5 // +001d
+596678: 7100 62d7 0000                         |00aa: invoke-static {}, Lcom/ss/android/ugc/quota/BDNetworkTagManager;.getInstance:()Lcom/ss/android/ugc/quota/BDNetworkTagManager; // method@d762
+59667e: 0c04                                   |00ad: move-result-object v4
+596680: 2205 4319                              |00ae: new-instance v5, Lcom/ss/android/common/applog/w; // type@1943
+596684: 7020 6a8d b500                         |00b0: invoke-direct {v5, v11}, Lcom/ss/android/common/applog/w;.<init>:(Z)V // method@8d6a
+59668a: 6e20 61d7 5400                         |00b3: invoke-virtual {v4, v5}, Lcom/ss/android/ugc/quota/BDNetworkTagManager;.buildBDNetworkTag:(Lcom/ss/android/ugc/quota/IBDNetworkTagContextProvider;)Landroid/util/Pair; // method@d761
+596690: 0c04                                   |00b6: move-result-object v4
+596692: 3804 0e00                              |00b7: if-eqz v4, 00c5 // +000e
+596696: 5445 0201                              |00b9: iget-object v5, v4, Landroid/util/Pair;.first:Ljava/lang/Object; // field@0102
+59669a: 5444 0301                              |00bb: iget-object v4, v4, Landroid/util/Pair;.second:Ljava/lang/Object; // field@0103
+59669e: 6e30 88ec 5a04                         |00bd: invoke-virtual {v10, v5, v4}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+5966a4: 2805                                   |00c0: goto 00c5 // +0005
+5966a6: 0d04                                   |00c1: move-exception v4
+5966a8: 6e10 33eb 0400                         |00c2: invoke-virtual {v4}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+5966ae: 7110 73ef 0800                         |00c5: invoke-static {v8}, Lk48/d;.e:([Ljava/lang/String;)Z // method@ef73
+5966b4: 0a04                                   |00c8: move-result v4
+5966b6: 3804 c000                              |00c9: if-eqz v4, 0189 // +00c0
+5966ba: 7100 7110 0000                         |00cb: invoke-static {}, Lcom/bytedance/common/utility/NetworkClient;.getDefault:()Lcom/bytedance/common/utility/NetworkClient; // method@1071
+5966c0: 0c04                                   |00ce: move-result-object v4
+5966c2: 6e50 7410 34a1                         |00cf: invoke-virtual {v4, v3, v1, v10, v0}, Lcom/bytedance/common/utility/NetworkClient;.postDataStream:(Ljava/lang/String;[BLjava/util/Map;Lcom/bytedance/common/utility/NetworkClient$ReqContext;)[B // method@1074
+5966c8: 0c03                                   |00d2: move-result-object v3
+5966ca: 3803 ae00                              |00d3: if-eqz v3, 0181 // +00ae
+5966ce: 1204                                   |00d5: const/4 v4, #int 0 // #0
+5966d0: 4605 0804                              |00d6: aget-object v5, v8, v4
+5966d4: 1216                                   |00d8: const/4 v6, #int 1 // #1
+5966d6: 4606 0806                              |00d9: aget-object v6, v8, v6
+5966da: 1a07 700a                              |00db: const-string v7, "AES/CBC/PKCS7PADDING" // string@0a70
+5966de: 7110 2dee 0700                         |00dd: invoke-static {v7}, Ljavax/crypto/Cipher;.getInstance:(Ljava/lang/String;)Ljavax/crypto/Cipher; // method@ee2d
+5966e4: 0c07                                   |00e0: move-result-object v7
+5966e6: 2208 a72a                              |00e1: new-instance v8, Ljavax/crypto/spec/SecretKeySpec; // type@2aa7
+5966ea: 6e10 d0ea 0500                         |00e3: invoke-virtual {v5}, Ljava/lang/String;.length:()I // method@ead0
+5966f0: 0a09                                   |00e6: move-result v9
+5966f2: 239a 4231                              |00e7: new-array v10, v9, [B // type@3142
+5966f6: 120b                                   |00e9: const/4 v11, #int 0 // #0
+5966f8: 359b 0c00                              |00ea: if-ge v11, v9, 00f6 // +000c
+5966fc: 6e20 b9ea b500                         |00ec: invoke-virtual {v5, v11}, Ljava/lang/String;.charAt:(I)C // method@eab9
+596702: 0a0c                                   |00ef: move-result v12
+596704: 8dcc                                   |00f0: int-to-byte v12, v12
+596706: 4f0c 0a0b                              |00f1: aput-byte v12, v10, v11
+59670a: d80b 0b01                              |00f3: add-int/lit8 v11, v11, #int 1 // #01
+59670e: 28f5                                   |00f5: goto 00ea // -000b
+596710: 1a05 6f0a                              |00f6: const-string v5, "AES" // string@0a6f
+596714: 7030 3bee a805                         |00f8: invoke-direct {v8, v10, v5}, Ljavax/crypto/spec/SecretKeySpec;.<init>:([BLjava/lang/String;)V // method@ee3b
+59671a: 2205 a62a                              |00fb: new-instance v5, Ljavax/crypto/spec/IvParameterSpec; // type@2aa6
+59671e: 6e10 d0ea 0600                         |00fd: invoke-virtual {v6}, Ljava/lang/String;.length:()I // method@ead0
+596724: 0a09                                   |0100: move-result v9
+596726: 239a 4231                              |0101: new-array v10, v9, [B // type@3142
+59672a: 120b                                   |0103: const/4 v11, #int 0 // #0
+59672c: 359b 0c00                              |0104: if-ge v11, v9, 0110 // +000c
+596730: 6e20 b9ea b600                         |0106: invoke-virtual {v6, v11}, Ljava/lang/String;.charAt:(I)C // method@eab9
+596736: 0a0c                                   |0109: move-result v12
+596738: 8dcc                                   |010a: int-to-byte v12, v12
+59673a: 4f0c 0a0b                              |010b: aput-byte v12, v10, v11
+59673e: d80b 0b01                              |010d: add-int/lit8 v11, v11, #int 1 // #01
+596742: 28f5                                   |010f: goto 0104 // -000b
+596744: 7020 3aee a500                         |0110: invoke-direct {v5, v10}, Ljavax/crypto/spec/IvParameterSpec;.<init>:([B)V // method@ee3a
+59674a: 1226                                   |0113: const/4 v6, #int 2 // #2
+59674c: 6e40 2fee 6758                         |0114: invoke-virtual {v7, v6, v8, v5}, Ljavax/crypto/Cipher;.init:(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V // method@ee2f
+596752: 6e20 2cee 3700                         |0117: invoke-virtual {v7, v3}, Ljavax/crypto/Cipher;.doFinal:([B)[B // method@ee2c
+596758: 0c05                                   |011a: move-result-object v5
+59675a: 2806                                   |011b: goto 0121 // +0006
+59675c: 0d05                                   |011c: move-exception v5
+59675e: 6e10 33eb 0500                         |011d: invoke-virtual {v5}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+596764: 0705                                   |0120: move-object v5, v0
+596766: 3905 0900                              |0121: if-nez v5, 012a // +0009
+59676a: 2200 d629                              |0123: new-instance v0, Ljava/lang/String; // type@29d6
+59676e: 7020 b1ea 3000                         |0125: invoke-direct {v0, v3}, Ljava/lang/String;.<init>:([B)V // method@eab1
+596774: 2900 7600                              |0128: goto/16 019e // +0076
+596778: 2203 d629                              |012a: new-instance v3, Ljava/lang/String; // type@29d6
+59677c: 2156                                   |012c: array-length v6, v5
+59677e: 3c06 0300                              |012d: if-gtz v6, 0130 // +0003
+596782: 284d                                   |012f: goto 017c // +004d
+596784: 2206 8029                              |0130: new-instance v6, Ljava/io/ByteArrayOutputStream; // type@2980
+596788: 7010 35e9 0600                         |0132: invoke-direct {v6}, Ljava/io/ByteArrayOutputStream;.<init>:()V // method@e935
+59678e: 2207 7f29                              |0135: new-instance v7, Ljava/io/ByteArrayInputStream; // type@297f
+596792: 7020 32e9 5700                         |0137: invoke-direct {v7, v5}, Ljava/io/ByteArrayInputStream;.<init>:([B)V // method@e932
+596798: 2205 972a                              |013a: new-instance v5, Ljava/util/zip/GZIPInputStream; // type@2a97
+59679c: 7020 01ee 7500                         |013c: invoke-direct {v5, v7}, Ljava/util/zip/GZIPInputStream;.<init>:(Ljava/io/InputStream;)V // method@ee01
+5967a2: 1308 0004                              |013f: const/16 v8, #int 1024 // #400
+5967a6: 2388 4231                              |0141: new-array v8, v8, [B // type@3142
+5967aa: 6e20 03ee 8500                         |0143: invoke-virtual {v5, v8}, Ljava/util/zip/GZIPInputStream;.read:([B)I // method@ee03
+5967b0: 0a09                                   |0146: move-result v9
+5967b2: 3a09 0600                              |0147: if-ltz v9, 014d // +0006
+5967b6: 6e40 3fe9 8694                         |0149: invoke-virtual {v6, v8, v4, v9}, Ljava/io/ByteArrayOutputStream;.write:([BII)V // method@e93f
+5967bc: 28f7                                   |014c: goto 0143 // -0009
+5967be: 6e10 02ee 0500                         |014d: invoke-virtual {v5}, Ljava/util/zip/GZIPInputStream;.close:()V // method@ee02
+5967c4: 2825                                   |0150: goto 0175 // +0025
+5967c6: 0d03                                   |0151: move-exception v3
+5967c8: 0750                                   |0152: move-object v0, v5
+5967ca: 280a                                   |0153: goto 015d // +000a
+5967cc: 0000                                   |0154: nop // spacer
+5967ce: 0750                                   |0155: move-object v0, v5
+5967d0: 2816                                   |0156: goto 016c // +0016
+5967d2: 0d03                                   |0157: move-exception v3
+5967d4: 2805                                   |0158: goto 015d // +0005
+5967d6: 0000                                   |0159: nop // spacer
+5967d8: 2812                                   |015a: goto 016c // +0012
+5967da: 0d03                                   |015b: move-exception v3
+5967dc: 0707                                   |015c: move-object v7, v0
+5967de: 3800 0700                              |015d: if-eqz v0, 0164 // +0007
+5967e2: 6e10 02ee 0000                         |015f: invoke-virtual {v0}, Ljava/util/zip/GZIPInputStream;.close:()V // method@ee02
+5967e8: 2802                                   |0162: goto 0164 // +0002
+5967ea: 0000                                   |0163: nop // spacer
+5967ec: 3807 0500                              |0164: if-eqz v7, 0169 // +0005
+5967f0: 6e10 33e9 0700                         |0166: invoke-virtual {v7}, Ljava/io/ByteArrayInputStream;.close:()V // method@e933
+5967f6: 2703                                   |0169: throw v3
+5967f8: 0000                                   |016a: nop // spacer
+5967fa: 0707                                   |016b: move-object v7, v0
+5967fc: 3800 0700                              |016c: if-eqz v0, 0173 // +0007
+596800: 6e10 02ee 0000                         |016e: invoke-virtual {v0}, Ljava/util/zip/GZIPInputStream;.close:()V // method@ee02
+596806: 2802                                   |0171: goto 0173 // +0002
+596808: 0000                                   |0172: nop // spacer
+59680a: 3807 0500                              |0173: if-eqz v7, 0178 // +0005
+59680e: 6e10 33e9 0700                         |0175: invoke-virtual {v7}, Ljava/io/ByteArrayInputStream;.close:()V // method@e933
+596814: 6e10 3be9 0600                         |0178: invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;.toByteArray:()[B // method@e93b
+59681a: 0c00                                   |017b: move-result-object v0
+59681c: 7020 b1ea 0300                         |017c: invoke-direct {v3, v0}, Ljava/lang/String;.<init>:([B)V // method@eab1
+596822: 0730                                   |017f: move-object v0, v3
+596824: 281e                                   |0180: goto 019e // +001e
+596826: 2203 d129                              |0181: new-instance v3, Ljava/lang/RuntimeException; // type@29d1
+59682a: 1a04 697f                              |0183: const-string v4, "get encrypted resp failed" // string@7f69
+59682e: 7020 a1ea 4300                         |0185: invoke-direct {v3, v4}, Ljava/lang/RuntimeException;.<init>:(Ljava/lang/String;)V // method@eaa1
+596834: 2703                                   |0188: throw v3
+596836: 7100 7110 0000                         |0189: invoke-static {}, Lcom/bytedance/common/utility/NetworkClient;.getDefault:()Lcom/bytedance/common/utility/NetworkClient; // method@1071
+59683c: 0c04                                   |018c: move-result-object v4
+59683e: 6e50 7310 34a1                         |018d: invoke-virtual {v4, v3, v1, v10, v0}, Lcom/bytedance/common/utility/NetworkClient;.post:(Ljava/lang/String;[BLjava/util/Map;Lcom/bytedance/common/utility/NetworkClient$ReqContext;)Ljava/lang/String; // method@1073
+596844: 0c00                                   |0190: move-result-object v0
+596846: 280d                                   |0191: goto 019e // +000d
+596848: 2203 d129                              |0192: new-instance v3, Ljava/lang/RuntimeException; // type@29d1
+59684c: 1a04 d479                              |0194: const-string v4, "encrypt failed" // string@79d4
+596850: 7020 a1ea 4300                         |0196: invoke-direct {v3, v4}, Ljava/lang/RuntimeException;.<init>:(Ljava/lang/String;)V // method@eaa1
+596856: 2703                                   |0199: throw v3
+596858: 6203 2003                              |019a: sget-object v3, Lcom/bytedance/applog/monitor/MonitorState;.monitor_default:Lcom/bytedance/applog/monitor/MonitorState; // field@0320
+59685c: 6003 b23a                              |019c: sget v3, Lcom/ss/android/common/applog/a;.a:I // field@3ab2
+596860: 1100                                   |019e: return-object v0
+      catches       : 13
+        0x0028 - 0x0036
+          <any> -> 0x004d
+        0x0038 - 0x0049
+          <any> -> 0x004b
+        0x0051 - 0x0079
+          <any> -> 0x004d
+        0x00aa - 0x00c0
+          <any> -> 0x00c1
+        0x00db - 0x011b
+          <any> -> 0x011c
+        0x0135 - 0x013a
+          Ljava/io/IOException; -> 0x016a
+          <any> -> 0x015b
+        0x013a - 0x013f
+          Ljava/io/IOException; -> 0x0159
+          <any> -> 0x0157
+        0x0141 - 0x014c
+          Ljava/io/IOException; -> 0x0154
+          <any> -> 0x0151
+        0x014d - 0x0150
+          Ljava/io/IOException; -> 0x0175
+        0x015f - 0x0162
+          Ljava/io/IOException; -> 0x0163
+        0x0166 - 0x0169
+          Ljava/io/IOException; -> 0x0169
+        0x016e - 0x0171
+          Ljava/io/IOException; -> 0x0172
+        0x0175 - 0x0178
+          Ljava/io/IOException; -> 0x0178
+      positions     :
+        0x0000 line=168230912
+        0x0001 line=168230913
+        0x0002 line=168230914
+        0x0003 line=168230915
+        0x0004 line=168230916
+        0x0005 line=168230917
+        0x0006 line=168230918
+        0x0007 line=168230919
+        0x0008 line=168230920
+        0x0009 line=168230921
+        0x000a line=168230922
+        0x000b line=168230923
+        0x000c line=168230924
+        0x000d line=168230925
+        0x000e line=168230926
+        0x000f line=168230927
+        0x0010 line=168230928
+        0x0011 line=168230929
+        0x0012 line=168230930
+        0x0013 line=168230931
+        0x0014 line=168230932
+        0x0015 line=168230933
+        0x0016 line=168230934
+        0x0017 line=168230935
+        0x0018 line=168230936
+        0x0019 line=168230937
+        0x001a line=168230938
+        0x001b line=168230939
+        0x001c line=168230940
+        0x001d line=168230941
+        0x001e line=168230942
+        0x001f line=168230943
+        0x0020 line=168230944
+        0x0021 line=168230945
+        0x0022 line=168230946
+        0x0023 line=168230947
+        0x0024 line=168230948
+        0x0025 line=168230949
+        0x0026 line=168230950
+        0x0027 line=168230951
+        0x0028 line=168230952
+        0x0029 line=168230953
+        0x002a line=168230954
+        0x002b line=168230955
+        0x002c line=168230956
+        0x002d line=168230957
+        0x002e line=168230958
+        0x002f line=168230959
+        0x0030 line=168230960
+        0x0031 line=168230961
+        0x0032 line=168230962
+        0x0033 line=168230963
+        0x0034 line=168230964
+        0x0035 line=168230965
+        0x0036 line=168230966
+        0x0037 line=168230967
+        0x0038 line=168230968
+        0x0039 line=168230969
+        0x003a line=168230970
+        0x003b line=168230971
+        0x003c line=168230972
+        0x003d line=168230973
+        0x003e line=168230974
+        0x003f line=168230975
+        0x0040 line=168230976
+        0x0041 line=168230977
+        0x0042 line=168230978
+        0x0043 line=168230979
+        0x0044 line=168230980
+        0x0045 line=168230981
+        0x0046 line=168230982
+        0x0047 line=168230983
+        0x0048 line=168230984
+        0x0049 line=168230985
+        0x004a line=168230986
+        0x004b line=168230987
+        0x004c line=168230988
+        0x004d line=168230989
+        0x004e line=168230990
+        0x004f line=168230991
+        0x0050 line=168230992
+        0x0051 line=168230993
+        0x0052 line=168230994
+        0x0053 line=168230995
+        0x0054 line=168230996
+        0x0055 line=168230997
+        0x0056 line=168230998
+        0x0057 line=168230999
+        0x0058 line=168231000
+        0x0059 line=168231001
+        0x005a line=168231002
+        0x005b line=168231003
+        0x005c line=168231004
+        0x005d line=168231005
+        0x005e line=168231006
+        0x005f line=168231007
+        0x0060 line=168231008
+        0x0061 line=168231009
+        0x0062 line=168231010
+        0x0063 line=168231011
+        0x0064 line=168231012
+        0x0065 line=168231013
+        0x0066 line=168231014
+        0x0067 line=168231015
+        0x0068 line=168231016
+        0x0069 line=168231017
+        0x006a line=168231018
+        0x006b line=168231019
+        0x006c line=168231020
+        0x006d line=168231021
+        0x006e line=168231022
+        0x006f line=168231023
+        0x0070 line=168231024
+        0x0071 line=168231025
+        0x0072 line=168231026
+        0x0073 line=168231027
+        0x0074 line=168231028
+        0x0075 line=168231029
+        0x0076 line=168231030
+        0x0077 line=168231031
+        0x0078 line=168231032
+        0x0079 line=168231033
+        0x007a line=168231034
+        0x007b line=168231035
+        0x007c line=168231036
+        0x007d line=168231037
+        0x007e line=168231038
+        0x007f line=168231039
+        0x0080 line=168231040
+        0x0081 line=168231041
+        0x0082 line=168231042
+        0x0083 line=168231043
+        0x0084 line=168231044
+        0x0085 line=168231045
+        0x0086 line=168231046
+        0x0087 line=168231047
+        0x0088 line=168231048
+        0x0089 line=168231049
+        0x008a line=168231050
+        0x008b line=168231051
+        0x008c line=168231052
+        0x008d line=168231053
+        0x008e line=168231054
+        0x008f line=168231055
+        0x0090 line=168231056
+        0x0091 line=168231057
+        0x0092 line=168231058
+        0x0093 line=168231059
+        0x0094 line=168231060
+        0x0095 line=168231061
+        0x0096 line=168231062
+        0x0097 line=168231063
+        0x0098 line=168231064
+        0x0099 line=168231065
+        0x009a line=168231066
+        0x009b line=168231067
+        0x009c line=168231068
+        0x009d line=168231069
+        0x009e line=168231070
+        0x009f line=168231071
+        0x00a0 line=168231072
+        0x00a1 line=168231073
+        0x00a2 line=168231074
+        0x00a3 line=168231075
+        0x00a4 line=168231076
+        0x00a5 line=168231077
+        0x00a6 line=168231078
+        0x00a7 line=168231079
+        0x00a8 line=168231080
+        0x00a9 line=168231081
+        0x00aa line=168231082
+        0x00ab line=168231083
+        0x00ac line=168231084
+        0x00ad line=168231085
+        0x00ae line=168231086
+        0x00af line=168231087
+        0x00b0 line=168231088
+        0x00b1 line=168231089
+        0x00b2 line=168231090
+        0x00b3 line=168231091
+        0x00b4 line=168231092
+        0x00b5 line=168231093
+        0x00b6 line=168231094
+        0x00b7 line=168231095
+        0x00b8 line=168231096
+        0x00b9 line=168231097
+        0x00ba line=168231098
+        0x00bb line=168231099
+        0x00bc line=168231100
+        0x00bd line=168231101
+        0x00be line=168231102
+        0x00bf line=168231103
+        0x00c0 line=168231104
+        0x00c1 line=168231105
+        0x00c2 line=168231106
+        0x00c3 line=168231107
+        0x00c4 line=168231108
+        0x00c5 line=168231109
+        0x00c6 line=168231110
+        0x00c7 line=168231111
+        0x00c8 line=168231112
+        0x00c9 line=168231113
+        0x00ca line=168231114
+        0x00cb line=168231115
+        0x00cc line=168231116
+        0x00cd line=168231117
+        0x00ce line=168231118
+        0x00cf line=168231119
+        0x00d0 line=168231120
+        0x00d1 line=168231121
+        0x00d2 line=168231122
+        0x00d3 line=168231123
+        0x00d4 line=168231124
+        0x00d5 line=168231125
+        0x00d6 line=168231126
+        0x00d7 line=168231127
+        0x00d8 line=168231128
+        0x00d9 line=168231129
+        0x00da line=168231130
+        0x00db line=168231131
+        0x00dc line=168231132
+        0x00dd line=168231133
+        0x00de line=168231134
+        0x00df line=168231135
+        0x00e0 line=168231136
+        0x00e1 line=168231137
+        0x00e2 line=168231138
+        0x00e3 line=168231139
+        0x00e4 line=168231140
+        0x00e5 line=168231141
+        0x00e6 line=168231142
+        0x00e7 line=168231143
+        0x00e8 line=168231144
+        0x00e9 line=168231145
+        0x00ea line=168231146
+        0x00eb line=168231147
+        0x00ec line=168231148
+        0x00ed line=168231149
+        0x00ee line=168231150
+        0x00ef line=168231151
+        0x00f0 line=168231152
+        0x00f1 line=168231153
+        0x00f2 line=168231154
+        0x00f3 line=168231155
+        0x00f4 line=168231156
+        0x00f5 line=168231157
+        0x00f6 line=168231158
+        0x00f7 line=168231159
+        0x00f8 line=168231160
+        0x00f9 line=168231161
+        0x00fa line=168231162
+        0x00fb line=168231163
+        0x00fc line=168231164
+        0x00fd line=168231165
+        0x00fe line=168231166
+        0x00ff line=168231167
+        0x0100 line=168231168
+        0x0101 line=168231169
+        0x0102 line=168231170
+        0x0103 line=168231171
+        0x0104 line=168231172
+        0x0105 line=168231173
+        0x0106 line=168231174
+        0x0107 line=168231175
+        0x0108 line=168231176
+        0x0109 line=168231177
+        0x010a line=168231178
+        0x010b line=168231179
+        0x010c line=168231180
+        0x010d line=168231181
+        0x010e line=168231182
+        0x010f line=168231183
+        0x0110 line=168231184
+        0x0111 line=168231185
+        0x0112 line=168231186
+        0x0113 line=168231187
+        0x0114 line=168231188
+        0x0115 line=168231189
+        0x0116 line=168231190
+        0x0117 line=168231191
+        0x0118 line=168231192
+        0x0119 line=168231193
+        0x011a line=168231194
+        0x011b line=168231195
+        0x011c line=168231196
+        0x011d line=168231197
+        0x011e line=168231198
+        0x011f line=168231199
+        0x0120 line=168231200
+        0x0121 line=168231201
+        0x0122 line=168231202
+        0x0123 line=168231203
+        0x0124 line=168231204
+        0x0125 line=168231205
+        0x0126 line=168231206
+        0x0127 line=168231207
+        0x0128 line=168231208
+        0x0129 line=168231209
+        0x012a line=168231210
+        0x012b line=168231211
+        0x012c line=168231212
+        0x012d line=168231213
+        0x012e line=168231214
+        0x012f line=168231215
+        0x0130 line=168231216
+        0x0131 line=168231217
+        0x0132 line=168231218
+        0x0133 line=168231219
+        0x0134 line=168231220
+        0x0135 line=168231221
+        0x0136 line=168231222
+        0x0137 line=168231223
+        0x0138 line=168231224
+        0x0139 line=168231225
+        0x013a line=168231226
+        0x013b line=168231227
+        0x013c line=168231228
+        0x013d line=168231229
+        0x013e line=168231230
+        0x013f line=168231231
+        0x0140 line=168231232
+        0x0141 line=168231233
+        0x0142 line=168231234
+        0x0143 line=168231235
+        0x0144 line=168231236
+        0x0145 line=168231237
+        0x0146 line=168231238
+        0x0147 line=168231239
+        0x0148 line=168231240
+        0x0149 line=168231241
+        0x014a line=168231242
+        0x014b line=168231243
+        0x014c line=168231244
+        0x014d line=168231245
+        0x014e line=168231246
+        0x014f line=168231247
+        0x0150 line=168231248
+        0x0151 line=168231249
+        0x0152 line=168231250
+        0x0153 line=168231251
+        0x0154 line=168231252
+        0x0155 line=168231253
+        0x0156 line=168231254
+        0x0157 line=168231255
+        0x0158 line=168231256
+        0x0159 line=168231257
+        0x015a line=168231258
+        0x015b line=168231259
+        0x015c line=168231260
+        0x015d line=168231261
+        0x015e line=168231262
+        0x015f line=168231263
+        0x0160 line=168231264
+        0x0161 line=168231265
+        0x0162 line=168231266
+        0x0163 line=168231267
+        0x0164 line=168231268
+        0x0165 line=168231269
+        0x0166 line=168231270
+        0x0167 line=168231271
+        0x0168 line=168231272
+        0x0169 line=168231273
+        0x016a line=168231274
+        0x016b line=168231275
+        0x016c line=168231276
+        0x016d line=168231277
+        0x016e line=168231278
+        0x016f line=168231279
+        0x0170 line=168231280
+        0x0171 line=168231281
+        0x0172 line=168231282
+        0x0173 line=168231283
+        0x0174 line=168231284
+        0x0175 line=168231285
+        0x0176 line=168231286
+        0x0177 line=168231287
+        0x0178 line=168231288
+        0x0179 line=168231289
+        0x017a line=168231290
+        0x017b line=168231291
+        0x017c line=168231292
+        0x017d line=168231293
+        0x017e line=168231294
+        0x017f line=168231295
+        0x0180 line=168231296
+        0x0181 line=168231297
+        0x0182 line=168231298
+        0x0183 line=168231299
+        0x0184 line=168231300
+        0x0185 line=168231301
+        0x0186 line=168231302
+        0x0187 line=168231303
+        0x0188 line=168231304
+        0x0189 line=168231305
+        0x018a line=168231306
+        0x018b line=168231307
+        0x018c line=168231308
+        0x018d line=168231309
+        0x018e line=168231310
+        0x018f line=168231311
+        0x0190 line=168231312
+        0x0191 line=168231313
+        0x0192 line=168231314
+        0x0193 line=168231315
+        0x0194 line=168231316
+        0x0195 line=168231317
+        0x0196 line=168231318
+        0x0197 line=168231319
+        0x0198 line=168231320
+        0x0199 line=168231321
+        0x019a line=168231322
+        0x019b line=168231323
+        0x019c line=168231324
+        0x019d line=168231325
+        0x019e line=168231326
+      locals        :
+        0x0000 - 0x019f reg=3 (null) Lf60/k;
+        0x0000 - 0x019f reg=4 (null) Ljava/lang/String;
+        0x0000 - 0x019f reg=5 (null) [B
+        0x0000 - 0x019f reg=6 (null) Landroid/content/Context;
+        0x0000 - 0x019f reg=7 (null) Z
+        0x0000 - 0x019f reg=8 (null) [Ljava/lang/String;
+        0x0000 - 0x019f reg=9 (null) Ljava/util/Map;
+        0x0000 - 0x019f reg=10 (null) Ljava/lang/String;
+        0x0000 - 0x019f reg=11 (null) Z
+        0x0000 - 0x019f reg=12 (null) Z
+
+    #16              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'setAliYunHanlder'
+      type          : '(Lcom/ss/android/common/applog/i;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+596908:                                        |[596908] com.ss.android.common.applog.NetUtil.setAliYunHanlder:(Lcom/ss/android/common/applog/i;)V
+596918: 6200 393b                              |0000: sget-object v0, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+59691c: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/ss/android/common/applog/i;
+
+    #17              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'setAppContext'
+      type          : '(Lcom/ss/android/common/AppContext;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 20 16-bit code units
+596920:                                        |[596920] com.ss.android.common.applog.NetUtil.setAppContext:(Lcom/ss/android/common/AppContext;)V
+596930: 6901 713a                              |0000: sput-object v1, Lcom/ss/android/common/applog/NetUtil;.sAppContext:Lcom/ss/android/common/AppContext; // field@3a71
+596934: 7100 018f 0000                         |0002: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSwitchToBdtracker:()Z // method@8f01
+59693a: 0a00                                   |0005: move-result v0
+59693c: 3800 0b00                              |0006: if-eqz v0, 0011 // +000b
+596940: 7100 eb8e 0000                         |0008: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getBdtrackerImpl:()Lcom/ss/android/deviceregister/d; // method@8eeb
+596946: 0c00                                   |000b: move-result-object v0
+596948: 1f00 8219                              |000c: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+59694c: 5b01 c03b                              |000e: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+596950: 2803                                   |0010: goto 0013 // +0003
+596952: 6901 3c3b                              |0011: sput-object v1, Lcom/ss/android/common/applog/x;.d:Lcom/ss/android/common/AppContext; // field@3b3c
+596956: 0e00                                   |0013: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+      locals        :
+        0x0000 - 0x0014 reg=1 (null) Lcom/ss/android/common/AppContext;
+
+    #18              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'setAppParam'
+      type          : '(Lcom/ss/android/common/applog/NetUtil$d;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+596958:                                        |[596958] com.ss.android.common.applog.NetUtil.setAppParam:(Lcom/ss/android/common/applog/NetUtil$d;)V
+596968: 6200 393b                              |0000: sget-object v0, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+59696c: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/ss/android/common/applog/NetUtil$d;
+
+    #19              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'setExtraparams'
+      type          : '(Lcom/ss/android/common/applog/NetUtil$IExtraParams;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 37 16-bit code units
+596970:                                        |[596970] com.ss.android.common.applog.NetUtil.setExtraparams:(Lcom/ss/android/common/applog/NetUtil$IExtraParams;)V
+596980: 7100 018f 0000                         |0000: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSwitchToBdtracker:()Z // method@8f01
+596986: 0a00                                   |0003: move-result v0
+596988: 3800 1800                              |0004: if-eqz v0, 001c // +0018
+59698c: 2200 0d19                              |0006: new-instance v0, Lcom/ss/android/common/applog/NetUtil$b; // type@190d
+596990: 7020 3a8c 2000                         |0008: invoke-direct {v0, v2}, Lcom/ss/android/common/applog/NetUtil$b;.<init>:(Lcom/ss/android/common/applog/NetUtil$IExtraParams;)V // method@8c3a
+596996: 6202 2403                              |000b: sget-object v2, Lcom/bytedance/bdinstall/i;.b:Lcom/bytedance/bdinstall/k; // field@0324
+59699a: 6e10 5b10 0200                         |000d: invoke-virtual {v2}, Lcom/bytedance/bdinstall/k;.d:()Z // method@105b
+5969a0: 0a01                                   |0010: move-result v1
+5969a2: 3801 1300                              |0011: if-eqz v1, 0024 // +0013
+5969a6: 5422 2703                              |0013: iget-object v2, v2, Lcom/bytedance/bdinstall/k;.i:Lcom/bytedance/bdinstall/f; // field@0327
+5969aa: 5421 2303                              |0015: iget-object v1, v2, Lcom/bytedance/bdinstall/f;.a:Lcom/bytedance/bdinstall/f0; // field@0323
+5969ae: 3901 0d00                              |0017: if-nez v1, 0024 // +000d
+5969b2: 5b20 2303                              |0019: iput-object v0, v2, Lcom/bytedance/bdinstall/f;.a:Lcom/bytedance/bdinstall/f0; // field@0323
+5969b6: 2809                                   |001b: goto 0024 // +0009
+5969b8: 6200 443b                              |001c: sget-object v0, Lcom/ss/android/common/applog/x;.l:Lcom/ss/android/common/applog/NetUtil$IExtraParams; // field@3b44
+5969bc: 3900 0600                              |001e: if-nez v0, 0024 // +0006
+5969c0: 3802 0400                              |0020: if-eqz v2, 0024 // +0004
+5969c4: 6902 443b                              |0022: sput-object v2, Lcom/ss/android/common/applog/x;.l:Lcom/ss/android/common/applog/NetUtil$IExtraParams; // field@3b44
+5969c8: 0e00                                   |0024: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=17039360
+        0x0001 line=17039361
+        0x0002 line=17039362
+        0x0003 line=17039363
+        0x0004 line=17039364
+        0x0005 line=17039365
+        0x0006 line=17039366
+        0x0007 line=17039367
+        0x0008 line=17039368
+        0x0009 line=17039369
+        0x000a line=17039370
+        0x000b line=17039371
+        0x000c line=17039372
+        0x000d line=17039373
+        0x000e line=17039374
+        0x000f line=17039375
+        0x0010 line=17039376
+        0x0011 line=17039377
+        0x0012 line=17039378
+        0x0013 line=17039379
+        0x0014 line=17039380
+        0x0015 line=17039381
+        0x0016 line=17039382
+        0x0017 line=17039383
+        0x0018 line=17039384
+        0x0019 line=17039385
+        0x001a line=17039386
+        0x001b line=17039387
+        0x001c line=17039388
+        0x001d line=17039389
+        0x001e line=17039390
+        0x001f line=17039391
+        0x0020 line=17039392
+        0x0021 line=17039393
+        0x0022 line=17039394
+        0x0023 line=17039395
+        0x0024 line=17039396
+      locals        :
+        0x0000 - 0x0025 reg=2 (null) Lcom/ss/android/common/applog/NetUtil$IExtraParams;
+
+    #20              : (in Lcom/ss/android/common/applog/NetUtil;)
+      name          : 'setParamsFilter'
+      type          : '(Lj80/c;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 15 16-bit code units
+5969cc:                                        |[5969cc] com.ss.android.common.applog.NetUtil.setParamsFilter:(Lj80/c;)V
+5969dc: 7100 018f 0000                         |0000: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getSwitchToBdtracker:()Z // method@8f01
+5969e2: 0a00                                   |0003: move-result v0
+5969e4: 3800 0800                              |0004: if-eqz v0, 000c // +0008
+5969e8: 6200 2403                              |0006: sget-object v0, Lcom/bytedance/bdinstall/i;.b:Lcom/bytedance/bdinstall/k; // field@0324
+5969ec: 6e10 8bea 0000                         |0008: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5969f2: 2803                                   |000b: goto 000e // +0003
+5969f4: 6200 393b                              |000c: sget-object v0, Lcom/ss/android/common/applog/x;.a:[Ljava/lang/String; // field@3b39
+5969f8: 0e00                                   |000e: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+        0x000b line=16908299
+        0x000c line=16908300
+        0x000d line=16908301
+        0x000e line=16908302
+      locals        :
+        0x0000 - 0x000f reg=0 (null) Lj80/c;
+
+  Virtual methods   -
+  source_file_idx   : 21190 (SourceFile)
+

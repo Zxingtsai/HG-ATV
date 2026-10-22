@@ -1,0 +1,86 @@
+  Class descriptor  : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/io/Serializable;'
+  Static fields     -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'fieldTypeClassRef'
+      type          : 'Ljava/lang/Class;'
+      access        : 0x000a (PRIVATE STATIC)
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'serialVersionUID'
+      type          : 'J'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'lockData'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData;'
+      access        : 0x0001 (PUBLIC)
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'previewMaterialList'
+      type          : 'Ljava/util/List;'
+      access        : 0x0001 (PUBLIC)
+    #2              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'style'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailStyle;'
+      access        : 0x0001 (PUBLIC)
+    #3              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : 'videoData'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 11 16-bit code units
+85c670:                                        |[85c670] seriessdk.com.dragon.read.saas.rpc.model.VideoDetailData.<clinit>:()V
+85c680: 1400 9ce2 0a00                         |0000: const v0, #float 9.99647e-40 // #000ae29c
+85c686: 7110 900a 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@0a90
+85c68c: 1c00 9505                              |0006: const-class v0, Lcom/bytedance/rpc/serialize/FieldType; // type@0595
+85c690: 6900 8ea7                              |0008: sput-object v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;.fieldTypeClassRef:Ljava/lang/Class; // field@a78e
+85c694: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+      locals        :
+
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+85c698:                                        |[85c698] seriessdk.com.dragon.read.saas.rpc.model.VideoDetailData.<init>:()V
+85c6a8: 7010 b673 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@73b6
+85c6ae: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;
+
+  Virtual methods   -
+  source_file_idx   : 32745 (SourceFile)
+

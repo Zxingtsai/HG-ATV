@@ -1,0 +1,15 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes9.dex",
+  "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+  "dex_bytes": 12260204,
+  "requested_classes": [
+    "Lcom/dragon/read/rpc/model/VideoContentType;",
+    "Lcom/dragon/read/rpc/model/VideoPlatformType;"
+  ],
+  "class_outputs": {
+    "Lcom/dragon/read/rpc/model/VideoContentType;": "com-dragon-read-rpc-model-VideoContentType.dexdump.txt",
+    "Lcom/dragon/read/rpc/model/VideoPlatformType;": "com-dragon-read-rpc-model-VideoPlatformType.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

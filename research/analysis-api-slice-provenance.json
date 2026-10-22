@@ -1,0 +1,27 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "derived_apk_sha256": "057acc45b858b0ef91201b38ec1f4e6a3e0e14d3cc01046909e0b295884affa7",
+  "limitations": "Unsigned analysis carrier containing only original classes3.dex and classes15.dex, manifest, resource table. Not installable and not complete analysis.",
+  "members": [
+    {
+      "member": "AndroidManifest.xml",
+      "sha256": "f9f43da3d8d110694f1be9c37afa39356655e5f1476cc077da3bb5ddfef94209",
+      "bytes": 424412
+    },
+    {
+      "member": "resources.arsc",
+      "sha256": "debaa17d7720ffee09c632d81b809e79a86635e46a8e4eb9777baff92661875f",
+      "bytes": 4591580
+    },
+    {
+      "member": "classes3.dex",
+      "sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "bytes": 10701380
+    },
+    {
+      "member": "classes15.dex",
+      "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "bytes": 9799700
+    }
+  ]
+}

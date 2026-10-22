@@ -1,0 +1,92 @@
+[
+  {
+    "dex": "classes2.dex",
+    "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3",
+    "references": [
+      {
+        "method_index": 41298,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "a"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508",
+    "references": [
+      {
+        "method_index": 42887,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "a"
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+    "references": [
+      {
+        "method_index": 47063,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "a"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf",
+    "references": [
+      {
+        "method_index": 28831,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "a"
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+    "references": [
+      {
+        "method_index": 17926,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+        "method": "<clinit>"
+      },
+      {
+        "method_index": 17927,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+        "method": "<init>"
+      },
+      {
+        "method_index": 17928,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+        "method": "<init>"
+      },
+      {
+        "method_index": 17929,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+        "method": "<init>"
+      },
+      {
+        "method_index": 17930,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+        "method": "<init>"
+      },
+      {
+        "method_index": 22965,
+        "class": "Lcom/dragon/read/rpc/rpc/q7$a;",
+        "method": "videoInfoRxJava"
+      },
+      {
+        "method_index": 22966,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "<clinit>"
+      },
+      {
+        "method_index": 22967,
+        "class": "Lcom/dragon/read/rpc/rpc/q7;",
+        "method": "a"
+      }
+    ]
+  }
+]

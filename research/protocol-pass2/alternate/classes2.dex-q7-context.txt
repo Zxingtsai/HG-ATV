@@ -1,0 +1,78 @@
+    #0              : (in Lcom/dragon/read/component/audio/impl/ui/audio/core/repo/i;)
+      name          : 'invoke'
+      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 20 16-bit code units
+4fd76c:                                        |[4fd76c] com.dragon.read.component.audio.impl.ui.audio.core.repo.i.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+4fd77c: 1f03 0a32                              |0000: check-cast v3, Lcom/dragon/read/rpc/model/StreamTtsItemRequest; // type@320a
+4fd780: 1200                                   |0002: const/4 v0, #int 0 // #0
+4fd782: 7120 deae 0300                         |0003: invoke-static {v3, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@aede
+4fd788: 6001 6b63                              |0006: sget v1, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@636b
+4fd78c: 7120 deae 0300                         |0008: invoke-static {v3, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@aede
+4fd792: 7100 52a1 0000                         |000b: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a152
+4fd798: 0c00                                   |000e: move-result-object v0
+4fd79a: 7220 50a1 3000                         |000f: invoke-interface {v0, v3}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsItemRxJava:(Lcom/dragon/read/rpc/model/StreamTtsItemRequest;)Lio/reactivex/Observable; // method@a150
+4fd7a0: 0c03                                   |0012: move-result-object v3
+4fd7a2: 1103                                   |0013: return-object v3
+      catches       : (none)
+
+  source_file_idx   : 29831 (SourceFile)
+
+
+    #0              : (in Lcp3/q0;)
+      name          : 'call'
+      type          : '()Lio/reactivex/ObservableSource;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 86 16-bit code units
+769634:                                        |[769634] cp3.q0.call:()Lio/reactivex/ObservableSource;
+769644: 2200 0d32                              |0000: new-instance v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest; // type@320d
+769648: 7010 0aa1 0000                         |0002: invoke-direct {v0}, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.<init>:()V // method@a10a
+76964e: 6201 7042                              |0005: sget-object v1, Lcom/dragon/read/component/audio/impl/ui/tone/m0;.a:Lcom/dragon/read/component/audio/impl/ui/tone/m0; // field@4270
+769652: 6e10 bbcb 0100                         |0007: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@cbbb
+769658: 6201 7242                              |000a: sget-object v1, Lcom/dragon/read/component/audio/impl/ui/tone/m0;.c:Lcom/dragon/read/component/audio/impl/ui/tone/b; // field@4272
+76965c: 5442 6d67                              |000c: iget-object v2, v4, Lcp3/q0;.a:Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo; // field@676d
+769660: 5422 6c3f                              |000e: iget-object v2, v2, Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo;.c:Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a; // field@3f6c
+769664: 5322 813f                              |0010: iget-wide v2, v2, Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a;.b:J // field@3f81
+769668: 6e30 4565 2103                         |0012: invoke-virtual {v1, v2, v3}, Lcom/dragon/read/component/audio/impl/ui/tone/b;.b:(J)J // method@6545
+76966e: 0b01                                   |0015: move-result-wide v1
+769670: 5a01 7962                              |0016: iput-wide v1, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.toneId:J // field@6279
+769674: 5441 6d67                              |0018: iget-object v1, v4, Lcp3/q0;.a:Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo; // field@676d
+769678: 5411 6c3f                              |001a: iget-object v1, v1, Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo;.c:Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a; // field@3f6c
+76967c: 5411 803f                              |001c: iget-object v1, v1, Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a;.a:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@3f80
+769680: 5b01 7862                              |001e: iput-object v1, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.sentenceTemplate:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@6278
+769684: 6202 4a62                              |0020: sget-object v2, Lcom/dragon/read/rpc/model/SentenceTemplate;.PlayOverLatest_Novel_Recommend_Dynamic:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@624a
+769688: 3321 1400                              |0022: if-ne v1, v2, 0036 // +0014
+76968c: 2201 ba41                              |0024: new-instance v1, Ljava/util/HashMap; // type@41ba
+769690: 7010 adcc 0100                         |0026: invoke-direct {v1}, Ljava/util/HashMap;.<init>:()V // method@ccad
+769696: 5442 6d67                              |0029: iget-object v2, v4, Lcp3/q0;.a:Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo; // field@676d
+76969a: 5422 6c3f                              |002b: iget-object v2, v2, Lcom/dragon/read/component/audio/impl/ui/repo/datasource/TipAudioUrlRepo;.c:Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a; // field@3f6c
+76969e: 5422 823f                              |002d: iget-object v2, v2, Lcom/dragon/read/component/audio/impl/ui/repo/model/TipAudioUrlInfo$a;.c:Ljava/lang/String; // field@3f82
+7696a2: 1a03 8687                              |002f: const-string v3, "book_name" // string@8786
+7696a6: 6e30 b6cc 3102                         |0031: invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ccb6
+7696ac: 5b01 7762                              |0034: iput-object v1, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.params:Ljava/util/Map; // field@6277
+7696b0: 6001 6b63                              |0036: sget v1, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@636b
+7696b4: 1201                                   |0038: const/4 v1, #int 0 // #0
+7696b6: 7120 deae 1000                         |0039: invoke-static {v0, v1}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@aede
+7696bc: 7100 52a1 0000                         |003c: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a152
+7696c2: 0c01                                   |003f: move-result-object v1
+7696c4: 7220 51a1 0100                         |0040: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@a151
+7696ca: 0c00                                   |0043: move-result-object v0
+7696cc: 7100 f2c8 0000                         |0044: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@c8f2
+7696d2: 0c01                                   |0047: move-result-object v1
+7696d4: 6e20 bbc8 1000                         |0048: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@c8bb
+7696da: 0c00                                   |004b: move-result-object v0
+7696dc: 2201 c736                              |004c: new-instance v1, Lcp3/q0$a; // type@36c7
+7696e0: 7020 f8af 4100                         |004e: invoke-direct {v1, v4}, Lcp3/q0$a;.<init>:(Lcp3/q0;)V // method@aff8
+7696e6: 6e20 aec8 1000                         |0051: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@c8ae
+7696ec: 0c00                                   |0054: move-result-object v0
+7696ee: 1100                                   |0055: return-object v0
+      catches       : (none)
+

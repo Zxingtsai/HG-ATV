@@ -1,0 +1,219 @@
+    #4              : (in Lcom/dragon/read/polaris/audio/q;)
+      name          : 'e'
+      type          : '(JJLjava/lang/String;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 15
+      ins           : 6
+      outs          : 8
+      insns size    : 186 16-bit code units
+43ed2c:                                        |[43ed2c] com.dragon.read.polaris.audio.q.e:(JJLjava/lang/String;)V
+43ed3c: 6200 2f10                              |0000: sget-object v0, Lcom/dragon/read/component/audio/api/NsAudioModuleApi;.IMPL:Lcom/dragon/read/component/audio/api/NsAudioModuleApi; // field@102f
+43ed40: 7210 6a20 0000                         |0002: invoke-interface {v0}, Lcom/dragon/read/component/audio/api/NsAudioModuleApi;.toneSelectController:()Lnj3/r; // method@206a
+43ed46: 0c00                                   |0005: move-result-object v0
+43ed48: 7230 63c7 c00d                         |0006: invoke-interface {v0, v12, v13}, Lnj3/r;.b:(J)J // method@c763
+43ed4e: 0b06                                   |0009: move-result-wide v6
+43ed50: 2200 ad37                              |000a: new-instance v0, Ljava/lang/StringBuilder; // type@37ad
+43ed54: 1a01 91ad                              |000c: const-string v1, "key_take_cash_" // string@ad91
+43ed58: 7020 b0b6 1000                         |000e: invoke-direct {v0, v1}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@b6b0
+43ed5e: 6e30 b6b6 c00d                         |0011: invoke-virtual {v0, v12, v13}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@b6b6
+43ed64: 6e10 c3b6 0000                         |0014: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@b6c3
+43ed6a: 0c08                                   |0017: move-result-object v8
+43ed6c: 549c 4b18                              |0018: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.i:Ljava/util/HashMap; // field@184b
+43ed70: 6e20 12b8 8c00                         |001a: invoke-virtual {v12, v8}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@b812
+43ed76: 0c0c                                   |001d: move-result-object v12
+43ed78: 1f0c 7e37                              |001e: check-cast v12, Ljava/lang/CharSequence; // type@377e
+43ed7c: 7110 fb07 0c00                         |0020: invoke-static {v12}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@07fb
+43ed82: 0a0c                                   |0023: move-result v12
+43ed84: 122d                                   |0024: const/4 v13, #int 2 // #2
+43ed86: 1200                                   |0025: const/4 v0, #int 0 // #0
+43ed88: 390c 1c00                              |0026: if-nez v12, 0042 // +001c
+43ed8c: 549c 4318                              |0028: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.a:Lcom/dragon/read/base/util/LogHelper; // field@1843
+43ed90: 1231                                   |002a: const/4 v1, #int 3 // #3
+43ed92: 2311 0a53                              |002b: new-array v1, v1, [Ljava/lang/Object; // type@530a
+43ed96: 7120 2db6 ba00                         |002d: invoke-static {v10, v11}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@b62d
+43ed9c: 0c0a                                   |0030: move-result-object v10
+43ed9e: 4d0a 0100                              |0031: aput-object v10, v1, v0
+43eda2: 121a                                   |0033: const/4 v10, #int 1 // #1
+43eda4: 4d0e 010a                              |0034: aput-object v14, v1, v10
+43eda8: 7120 2db6 7600                         |0036: invoke-static {v6, v7}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@b62d
+43edae: 0c0a                                   |0039: move-result-object v10
+43edb0: 4d0a 010d                              |003a: aput-object v10, v1, v13
+43edb4: 1a0a 3ee9                              |003c: const-string v10, "已有提现提示音url，忽略本次请求: taskTime = %d, rmbAmount = %d, toneId = %d." // string@e93e
+43edb8: 6e30 0920 ac01                         |003e: invoke-virtual {v12, v10, v1}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@2009
+43edbe: 0e00                                   |0041: return-void
+43edc0: 549c 4818                              |0042: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.f:Lio/reactivex/disposables/Disposable; // field@1848
+43edc4: 380c 1600                              |0044: if-eqz v12, 005a // +0016
+43edc8: 7210 98b4 0c00                         |0046: invoke-interface {v12}, Lio/reactivex/disposables/Disposable;.isDisposed:()Z // method@b498
+43edce: 0a0c                                   |0049: move-result v12
+43edd0: 390c 1000                              |004a: if-nez v12, 005a // +0010
+43edd4: 549c 4318                              |004c: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.a:Lcom/dragon/read/base/util/LogHelper; // field@1843
+43edd8: 1a01 3fe5                              |004e: const-string v1, "上一个取提现提示音的任务还在进行中，取消掉" // string@e53f
+43eddc: 2302 0a53                              |0050: new-array v2, v0, [Ljava/lang/Object; // type@530a
+43ede0: 6e30 0920 1c02                         |0052: invoke-virtual {v12, v1, v2}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@2009
+43ede6: 549c 4818                              |0055: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.f:Lio/reactivex/disposables/Disposable; // field@1848
+43edea: 7210 97b4 0c00                         |0057: invoke-interface {v12}, Lio/reactivex/disposables/Disposable;.dispose:()V // method@b497
+43edf0: 549c 4c18                              |005a: iget-object v12, v9, Lcom/dragon/read/polaris/audio/q;.j:Lcom/ss/android/ugc/bytex/taskmonitor/proxy/HandlerDelegate; // field@184c
+43edf4: 6e20 7a07 dc00                         |005c: invoke-virtual {v12, v13}, Landroid/os/Handler;.removeMessages:(I)V // method@077a
+43edfa: 220c 0824                              |005f: new-instance v12, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest; // type@2408
+43edfe: 7010 5570 0c00                         |0061: invoke-direct {v12}, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.<init>:()V // method@7055
+43ee04: 620d 1547                              |0064: sget-object v13, Lcom/dragon/read/rpc/model/SentenceTemplate;.Novel_UseAPPAndWithdraw:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@4715
+43ee08: 5bcd 2c47                              |0066: iput-object v13, v12, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.sentenceTemplate:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@472c
+43ee0c: 220d 0d38                              |0068: new-instance v13, Ljava/util/HashMap; // type@380d
+43ee10: 7010 0cb8 0d00                         |006a: invoke-direct {v13}, Ljava/util/HashMap;.<init>:()V // method@b80c
+43ee16: 1a01 12b6                              |006d: const-string v1, "minute" // string@b612
+43ee1a: 7120 a2b6 ba00                         |006f: invoke-static {v10, v11}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@b6a2
+43ee20: 0c02                                   |0072: move-result-object v2
+43ee22: 6e30 15b8 1d02                         |0073: invoke-virtual {v13, v1, v2}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@b815
+43ee28: 1a01 6485                              |0076: const-string v1, "cash" // string@8564
+43ee2c: 6e30 15b8 1d0e                         |0078: invoke-virtual {v13, v1, v14}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@b815
+43ee32: 5bcd 2b47                              |007b: iput-object v13, v12, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.params:Ljava/util/Map; // field@472b
+43ee36: 5ac6 2d47                              |007d: iput-wide v6, v12, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.toneId:J // field@472d
+43ee3a: 600d f047                              |007f: sget v13, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@47f0
+43ee3e: 7120 1395 0c00                         |0081: invoke-static {v12, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@9513
+43ee44: 7100 9f70 0000                         |0084: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@709f
+43ee4a: 0c0d                                   |0087: move-result-object v13
+43ee4c: 7220 9e70 cd00                         |0088: invoke-interface {v13, v12}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@709e
+43ee52: 0c0c                                   |008b: move-result-object v12
+43ee54: 7100 9cb4 0000                         |008c: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@b49c
+43ee5a: 0c0d                                   |008f: move-result-object v13
+43ee5c: 6e20 65b4 dc00                         |0090: invoke-virtual {v12, v13}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@b465
+43ee62: 0c0c                                   |0093: move-result-object v12
+43ee64: 7100 93b4 0000                         |0094: invoke-static {}, Lio/reactivex/android/schedulers/AndroidSchedulers;.mainThread:()Lio/reactivex/Scheduler; // method@b493
+43ee6a: 0c0d                                   |0097: move-result-object v13
+43ee6c: 6e20 5bb4 dc00                         |0098: invoke-virtual {v12, v13}, Lio/reactivex/Observable;.observeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@b45b
+43ee72: 0c0c                                   |009b: move-result-object v12
+43ee74: 220d 4212                              |009c: new-instance v13, Lcom/dragon/read/polaris/audio/f0; // type@1242
+43ee78: 7010 db2c 0d00                         |009e: invoke-direct {v13}, Lcom/dragon/read/polaris/audio/f0;.<init>:()V // method@2cdb
+43ee7e: 6e20 58b4 dc00                         |00a1: invoke-virtual {v12, v13}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@b458
+43ee84: 0c0c                                   |00a4: move-result-object v12
+43ee86: 220d 3e12                              |00a5: new-instance v13, Lcom/dragon/read/polaris/audio/d0; // type@123e
+43ee8a: 07d1                                   |00a7: move-object v1, v13
+43ee8c: 0792                                   |00a8: move-object v2, v9
+43ee8e: 07e3                                   |00a9: move-object v3, v14
+43ee90: 04a4                                   |00aa: move-wide v4, v10
+43ee92: 7608 d32c 0100                         |00ab: invoke-direct/range {v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/dragon/read/polaris/audio/d0;.<init>:(Lcom/dragon/read/polaris/audio/q;Ljava/lang/String;JJLjava/lang/String;)V // method@2cd3
+43ee98: 220a 4012                              |00ae: new-instance v10, Lcom/dragon/read/polaris/audio/e0; // type@1240
+43ee9c: 7020 d72c 9a00                         |00b0: invoke-direct {v10, v9}, Lcom/dragon/read/polaris/audio/e0;.<init>:(Lcom/dragon/read/polaris/audio/q;)V // method@2cd7
+43eea2: 6e30 63b4 dc0a                         |00b3: invoke-virtual {v12, v13, v10}, Lio/reactivex/Observable;.subscribe:(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable; // method@b463
+43eea8: 0c0a                                   |00b6: move-result-object v10
+43eeaa: 5b9a 4818                              |00b7: iput-object v10, v9, Lcom/dragon/read/polaris/audio/q;.f:Lio/reactivex/disposables/Disposable; // field@1848
+43eeae: 0e00                                   |00b9: return-void
+      catches       : (none)
+
+
+    #5              : (in Lcom/dragon/read/polaris/audio/q;)
+      name          : 'f'
+      type          : '(JJJ)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 20
+      ins           : 7
+      outs          : 9
+      insns size    : 213 16-bit code units
+43eeb0:                                        |[43eeb0] com.dragon.read.polaris.audio.q.f:(JJJ)V
+43eec0: 07d9                                   |0000: move-object v9, v13
+43eec2: 6200 2f10                              |0001: sget-object v0, Lcom/dragon/read/component/audio/api/NsAudioModuleApi;.IMPL:Lcom/dragon/read/component/audio/api/NsAudioModuleApi; // field@102f
+43eec6: 7210 6a20 0000                         |0003: invoke-interface {v0}, Lcom/dragon/read/component/audio/api/NsAudioModuleApi;.toneSelectController:()Lnj3/r; // method@206a
+43eecc: 0c00                                   |0006: move-result-object v0
+43eece: 0501 1200                              |0007: move-wide/from16 v1, v18
+43eed2: 7230 63c7 1002                         |0009: invoke-interface {v0, v1, v2}, Lnj3/r;.b:(J)J // method@c763
+43eed8: 0b06                                   |000c: move-result-wide v6
+43eeda: 2200 ad37                              |000d: new-instance v0, Ljava/lang/StringBuilder; // type@37ad
+43eede: 7010 adb6 0000                         |000f: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@b6ad
+43eee4: 04e2                                   |0012: move-wide v2, v14
+43eee6: 6e30 b6b6 e00f                         |0013: invoke-virtual {v0, v14, v15}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@b6b6
+43eeec: 1a01 c97c                              |0016: const-string v1, "_" // string@7cc9
+43eef0: 6e20 b9b6 1000                         |0018: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@b6b9
+43eef6: 0504 1000                              |001b: move-wide/from16 v4, v16
+43eefa: 6e30 b6b6 4005                         |001d: invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@b6b6
+43ef00: 6e20 b9b6 1000                         |0020: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@b6b9
+43ef06: 6e30 b6b6 6007                         |0023: invoke-virtual {v0, v6, v7}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@b6b6
+43ef0c: 6e10 c3b6 0000                         |0026: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@b6c3
+43ef12: 0c08                                   |0029: move-result-object v8
+43ef14: 5490 4b18                              |002a: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.i:Ljava/util/HashMap; // field@184b
+43ef18: 6e20 12b8 8000                         |002c: invoke-virtual {v0, v8}, Ljava/util/HashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@b812
+43ef1e: 0c00                                   |002f: move-result-object v0
+43ef20: 1f00 7e37                              |0030: check-cast v0, Ljava/lang/CharSequence; // type@377e
+43ef24: 7110 fb07 0000                         |0032: invoke-static {v0}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@07fb
+43ef2a: 0a00                                   |0035: move-result v0
+43ef2c: 1211                                   |0036: const/4 v1, #int 1 // #1
+43ef2e: 120a                                   |0037: const/4 v10, #int 0 // #0
+43ef30: 3900 2000                              |0038: if-nez v0, 0058 // +0020
+43ef34: 5490 4318                              |003a: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.a:Lcom/dragon/read/base/util/LogHelper; // field@1843
+43ef38: 1238                                   |003c: const/4 v8, #int 3 // #3
+43ef3a: 2388 0a53                              |003d: new-array v8, v8, [Ljava/lang/Object; // type@530a
+43ef3e: 7120 2db6 fe00                         |003f: invoke-static {v14, v15}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@b62d
+43ef44: 0c02                                   |0042: move-result-object v2
+43ef46: 4d02 080a                              |0043: aput-object v2, v8, v10
+43ef4a: 7702 2db6 1000                         |0045: invoke-static/range {v16, v17}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@b62d
+43ef50: 0c02                                   |0048: move-result-object v2
+43ef52: 4d02 0801                              |0049: aput-object v2, v8, v1
+43ef56: 1221                                   |004b: const/4 v1, #int 2 // #2
+43ef58: 7120 2db6 7600                         |004c: invoke-static {v6, v7}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@b62d
+43ef5e: 0c02                                   |004f: move-result-object v2
+43ef60: 4d02 0801                              |0050: aput-object v2, v8, v1
+43ef64: 1a01 41e9                              |0052: const-string v1, "已有金币提示音url，忽略本次请求: taskTime = %d, coinCount = %d, toneId = %d." // string@e941
+43ef68: 6e30 0920 1008                         |0054: invoke-virtual {v0, v1, v8}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@2009
+43ef6e: 0e00                                   |0057: return-void
+43ef70: 5490 4718                              |0058: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.e:Lio/reactivex/disposables/Disposable; // field@1847
+43ef74: 3800 1600                              |005a: if-eqz v0, 0070 // +0016
+43ef78: 7210 98b4 0000                         |005c: invoke-interface {v0}, Lio/reactivex/disposables/Disposable;.isDisposed:()Z // method@b498
+43ef7e: 0a00                                   |005f: move-result v0
+43ef80: 3900 1000                              |0060: if-nez v0, 0070 // +0010
+43ef84: 5490 4318                              |0062: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.a:Lcom/dragon/read/base/util/LogHelper; // field@1843
+43ef88: 1a0b 40e5                              |0064: const-string v11, "上一个取提示音的任务还在进行中，取消掉" // string@e540
+43ef8c: 23ac 0a53                              |0066: new-array v12, v10, [Ljava/lang/Object; // type@530a
+43ef90: 6e30 0920 b00c                         |0068: invoke-virtual {v0, v11, v12}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@2009
+43ef96: 5490 4718                              |006b: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.e:Lio/reactivex/disposables/Disposable; // field@1847
+43ef9a: 7210 97b4 0000                         |006d: invoke-interface {v0}, Lio/reactivex/disposables/Disposable;.dispose:()V // method@b497
+43efa0: 5490 4c18                              |0070: iget-object v0, v9, Lcom/dragon/read/polaris/audio/q;.j:Lcom/ss/android/ugc/bytex/taskmonitor/proxy/HandlerDelegate; // field@184c
+43efa4: 6e20 7a07 1000                         |0072: invoke-virtual {v0, v1}, Landroid/os/Handler;.removeMessages:(I)V // method@077a
+43efaa: 2200 0824                              |0075: new-instance v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest; // type@2408
+43efae: 7010 5570 0000                         |0077: invoke-direct {v0}, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.<init>:()V // method@7055
+43efb4: 6201 1447                              |007a: sget-object v1, Lcom/dragon/read/rpc/model/SentenceTemplate;.GoldCoinPrompt:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@4714
+43efb8: 5b01 2c47                              |007c: iput-object v1, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.sentenceTemplate:Lcom/dragon/read/rpc/model/SentenceTemplate; // field@472c
+43efbc: 2201 0d38                              |007e: new-instance v1, Ljava/util/HashMap; // type@380d
+43efc0: 7010 0cb8 0100                         |0080: invoke-direct {v1}, Ljava/util/HashMap;.<init>:()V // method@b80c
+43efc6: 1a0b 12b6                              |0083: const-string v11, "minute" // string@b612
+43efca: 7120 a2b6 fe00                         |0085: invoke-static {v14, v15}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@b6a2
+43efd0: 0c0c                                   |0088: move-result-object v12
+43efd2: 6e30 15b8 b10c                         |0089: invoke-virtual {v1, v11, v12}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@b815
+43efd8: 1a0b e0a1                              |008c: const-string v11, "goldcoin" // string@a1e0
+43efdc: 7702 a2b6 1000                         |008e: invoke-static/range {v16, v17}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@b6a2
+43efe2: 0c0c                                   |0091: move-result-object v12
+43efe4: 6e30 15b8 b10c                         |0092: invoke-virtual {v1, v11, v12}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@b815
+43efea: 5b01 2b47                              |0095: iput-object v1, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.params:Ljava/util/Map; // field@472b
+43efee: 5a06 2d47                              |0097: iput-wide v6, v0, Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;.toneId:J // field@472d
+43eff2: 6001 f047                              |0099: sget v1, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@47f0
+43eff6: 7120 1395 a000                         |009b: invoke-static {v0, v10}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@9513
+43effc: 7100 9f70 0000                         |009e: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@709f
+43f002: 0c01                                   |00a1: move-result-object v1
+43f004: 7220 9e70 0100                         |00a2: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@709e
+43f00a: 0c00                                   |00a5: move-result-object v0
+43f00c: 7100 9cb4 0000                         |00a6: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@b49c
+43f012: 0c01                                   |00a9: move-result-object v1
+43f014: 6e20 65b4 1000                         |00aa: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@b465
+43f01a: 0c00                                   |00ad: move-result-object v0
+43f01c: 7100 93b4 0000                         |00ae: invoke-static {}, Lio/reactivex/android/schedulers/AndroidSchedulers;.mainThread:()Lio/reactivex/Scheduler; // method@b493
+43f022: 0c01                                   |00b1: move-result-object v1
+43f024: 6e20 5bb4 1000                         |00b2: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.observeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@b45b
+43f02a: 0c00                                   |00b5: move-result-object v0
+43f02c: 2201 5812                              |00b6: new-instance v1, Lcom/dragon/read/polaris/audio/q$a; // type@1258
+43f030: 7010 2e2d 0100                         |00b8: invoke-direct {v1}, Lcom/dragon/read/polaris/audio/q$a;.<init>:()V // method@2d2e
+43f036: 6e20 58b4 1000                         |00bb: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@b458
+43f03c: 0c0a                                   |00be: move-result-object v10
+43f03e: 220b 5b12                              |00bf: new-instance v11, Lcom/dragon/read/polaris/audio/q$d; // type@125b
+43f042: 07b0                                   |00c1: move-object v0, v11
+43f044: 07d1                                   |00c2: move-object v1, v13
+43f046: 04e2                                   |00c3: move-wide v2, v14
+43f048: 0504 1000                              |00c4: move-wide/from16 v4, v16
+43f04c: 7609 342d 0000                         |00c6: invoke-direct/range {v0, v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/dragon/read/polaris/audio/q$d;.<init>:(Lcom/dragon/read/polaris/audio/q;JJJLjava/lang/String;)V // method@2d34
+43f052: 2200 5c12                              |00c9: new-instance v0, Lcom/dragon/read/polaris/audio/q$e; // type@125c
+43f056: 7020 362d d000                         |00cb: invoke-direct {v0, v13}, Lcom/dragon/read/polaris/audio/q$e;.<init>:(Lcom/dragon/read/polaris/audio/q;)V // method@2d36
+43f05c: 6e30 63b4 ba00                         |00ce: invoke-virtual {v10, v11, v0}, Lio/reactivex/Observable;.subscribe:(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable; // method@b463
+43f062: 0c00                                   |00d1: move-result-object v0
+43f064: 5b90 4718                              |00d2: iput-object v0, v9, Lcom/dragon/read/polaris/audio/q;.e:Lio/reactivex/disposables/Disposable; // field@1847
+43f068: 0e00                                   |00d4: return-void
+      catches       : (none)
+

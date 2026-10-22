@@ -1,0 +1,220 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_bbfcb0b55c0438d8d5983e11326ca906db4f9d5ff7d19c51fa8bed369954d12a\",\"subject\":{\"name\":\"network-slice.apk\",\"digest\":{\"sha256\":\"7110e88c0f82cc3e95ba9cedeaf901fa10a289c70c7a1b1e8df0f67e6f60930a\"},\"local_path\":\"/workspace/hongguo-tv/research/protocol-pass2/network-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/network-slice.apk\",\"class_name\":\"td3.a\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-cE8wOc/target.apk\",\"class_count\":31491,\"resource_count\":6,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"max_heap_bytes\\\":4294967296,\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"available_processors\\\":2,\\\"java_version\\\":\\\"21.0.12.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"td3.a\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"method_count\\\":13,\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"a(): java.lang.String\\\",\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"a\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"addCommonParams(java.lang.String, boolean): java.lang.String\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Z)Ljava/lang/String;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"addCommonParams\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"addCommonParamsByLevel(java.lang.String, boolean, int): java.util.Map\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;ZI)Ljava/util/Map;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"addCommonParamsByLevel\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"addRequestVertifyParams(java.lang.String, boolean, java.lang.Object[]): java.lang.String\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"addRequestVertifyParams\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"b(): td3.a\\\",\\\"dex_descriptor\\\":\\\"()Ltd3/a;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"b\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"c(java.lang.String): java.lang.String\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)Ljava/lang/String;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"c\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"getCommonParamsByLevel(int): java.util.Map\\\\u003cjava.lang.String, java.lang.String\\\\u003e\\\",\\\"dex_descriptor\\\":\\\"(I)Ljava/util/Map;\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"getCommonParamsByLevel\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"handleApiError(java.lang.String, java.lang.Throwable, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"handleApiError\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"handleApiOk(java.lang.String, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\\\",\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"handleApiOk\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"onTryInit(): void\\\",\\\"dex_descriptor\\\":\\\"()V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onTryInit\\\",\\\"def_pos\\\":0},{\\\"signature\\\":\\\"putCommonParams(java.util.Map\\\\u003cjava.lang.String, java.lang.String\\\\u003e, boolean): void\\\",\\\"dex_descriptor\\\":\\\"(Ljava/util/Map;Z)V\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"putCommonParams\\\",\\\"def_pos\\\":0}],\\\"fields\\\":[{\\\"name\\\":\\\"a\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"boolean\\\"},{\\\"name\\\":\\\"b\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"td3.a\\\"},{\\\"name\\\":\\\"c\\\",\\\"def_pos\\\":0,\\\"type\\\":\\\"boolean\\\"}],\\\"field_count\\\":3,\\\"full_name\\\":\\\"td3.a\\\",\\\"name\\\":\\\"a\\\",\\\"inner_classes\\\":[],\\\"inner_class_count\\\":0}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":4096},\"class_name\":\"td3.a\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"name\":\"a\",\"reported_signature\":\"a(): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"name\":\"addCommonParams\",\"reported_signature\":\"addCommonParams(java.lang.String, boolean): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Z)Ljava/lang/String;\"},{\"name\":\"addCommonParamsByLevel\",\"reported_signature\":\"addCommonParamsByLevel(java.lang.String, boolean, int): java.util.Map\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;ZI)Ljava/util/Map;\"},{\"name\":\"addRequestVertifyParams\",\"reported_signature\":\"addRequestVertifyParams(java.lang.String, boolean, java.lang.Object[]): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;\"},{\"name\":\"b\",\"reported_signature\":\"b(): td3.a\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Ltd3/a;\"},{\"name\":\"c\",\"reported_signature\":\"c(java.lang.String): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"name\":\"getCommonParamsByLevel\",\"reported_signature\":\"getCommonParamsByLevel(int): java.util.Map<java.lang.String, java.lang.String>\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(I)Ljava/util/Map;\"},{\"name\":\"handleApiError\",\"reported_signature\":\"handleApiError(java.lang.String, java.lang.Throwable, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\"},{\"name\":\"handleApiOk\",\"reported_signature\":\"handleApiOk(java.lang.String, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\"},{\"name\":\"onTryInit\",\"reported_signature\":\"onTryInit(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"putCommonParams\",\"reported_signature\":\"putCommonParams(java.util.Map<java.lang.String, java.lang.String>, boolean): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;Z)V\"}],\"fields\":[{\"name\":\"a\",\"reported_type\":\"boolean\"},{\"name\":\"b\",\"reported_type\":\"td3.a\"},{\"name\":\"c\",\"reported_type\":\"boolean\"}],\"inner_classes\":[]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_bbfcb0b55c0438d8d5983e11326ca906db4f9d5ff7d19c51fa8bed369954d12a",
+      "subject": {
+        "name": "network-slice.apk",
+        "digest": {
+          "sha256": "7110e88c0f82cc3e95ba9cedeaf901fa10a289c70c7a1b1e8df0f67e6f60930a"
+        },
+        "local_path": "/workspace/hongguo-tv/research/protocol-pass2/network-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/protocol-pass2/network-slice.apk",
+        "class_name": "td3.a"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-cE8wOc/target.apk",
+          "class_count": 31491,
+          "resource_count": 6,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"max_heap_bytes\":4294967296,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"21.0.12.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "td3.a"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"method_count\":13,\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"addCommonParams(java.lang.String, boolean): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;Z)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"addCommonParams\",\"def_pos\":0},{\"signature\":\"addCommonParamsByLevel(java.lang.String, boolean, int): java.util.Map\",\"dex_descriptor\":\"(Ljava/lang/String;ZI)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"addCommonParamsByLevel\",\"def_pos\":0},{\"signature\":\"addRequestVertifyParams(java.lang.String, boolean, java.lang.Object[]): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"addRequestVertifyParams\",\"def_pos\":0},{\"signature\":\"b(): td3.a\",\"dex_descriptor\":\"()Ltd3/a;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"getCommonParamsByLevel(int): java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\",\"dex_descriptor\":\"(I)Ljava/util/Map;\",\"is_constructor\":false,\"name\":\"getCommonParamsByLevel\",\"def_pos\":0},{\"signature\":\"handleApiError(java.lang.String, java.lang.Throwable, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\",\"is_constructor\":false,\"name\":\"handleApiError\",\"def_pos\":0},{\"signature\":\"handleApiOk(java.lang.String, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void\",\"dex_descriptor\":\"(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V\",\"is_constructor\":false,\"name\":\"handleApiOk\",\"def_pos\":0},{\"signature\":\"onTryInit(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"onTryInit\",\"def_pos\":0},{\"signature\":\"putCommonParams(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, boolean): void\",\"dex_descriptor\":\"(Ljava/util/Map;Z)V\",\"is_constructor\":false,\"name\":\"putCommonParams\",\"def_pos\":0}],\"fields\":[{\"name\":\"a\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"b\",\"def_pos\":0,\"type\":\"td3.a\"},{\"name\":\"c\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":3,\"full_name\":\"td3.a\",\"name\":\"a\",\"inner_classes\":[],\"inner_class_count\":0}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 4096
+        },
+        "class_name": "td3.a",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "a",
+            "reported_signature": "a(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "addCommonParams",
+            "reported_signature": "addCommonParams(java.lang.String, boolean): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Z)Ljava/lang/String;"
+          },
+          {
+            "name": "addCommonParamsByLevel",
+            "reported_signature": "addCommonParamsByLevel(java.lang.String, boolean, int): java.util.Map",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;ZI)Ljava/util/Map;"
+          },
+          {
+            "name": "addRequestVertifyParams",
+            "reported_signature": "addRequestVertifyParams(java.lang.String, boolean, java.lang.Object[]): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;"
+          },
+          {
+            "name": "b",
+            "reported_signature": "b(): td3.a",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ltd3/a;"
+          },
+          {
+            "name": "c",
+            "reported_signature": "c(java.lang.String): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "name": "getCommonParamsByLevel",
+            "reported_signature": "getCommonParamsByLevel(int): java.util.Map<java.lang.String, java.lang.String>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)Ljava/util/Map;"
+          },
+          {
+            "name": "handleApiError",
+            "reported_signature": "handleApiError(java.lang.String, java.lang.Throwable, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V"
+          },
+          {
+            "name": "handleApiOk",
+            "reported_signature": "handleApiOk(java.lang.String, long, com.bytedance.frameworks.baselib.network.http.BaseHttpRequestInfo): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V"
+          },
+          {
+            "name": "onTryInit",
+            "reported_signature": "onTryInit(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "putCommonParams",
+            "reported_signature": "putCommonParams(java.util.Map<java.lang.String, java.lang.String>, boolean): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Map;Z)V"
+          }
+        ],
+        "fields": [
+          {
+            "name": "a",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "b",
+            "reported_type": "td3.a"
+          },
+          {
+            "name": "c",
+            "reported_type": "boolean"
+          }
+        ],
+        "inner_classes": []
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 4
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "dex": "classes5.dex",
+    "class": "Lcom/dragon/read/kmp/community/ideapost/l2;",
+    "method": "f",
+    "descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "method_index": 37808,
+    "code_offset": 9298992,
+    "hits": [
+      {
+        "code_unit_offset": 263,
+        "opcode": "0x54",
+        "field_index": 37936,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "class": "Lcom/dragon/read/kmp/search/category/viewmodel/CategoryResultViewModelKMP$requestData$2$1;",
+    "method": "invokeSuspend",
+    "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "method_index": 36129,
+    "code_offset": 9902152,
+    "hits": [
+      {
+        "code_unit_offset": 1077,
+        "opcode": "0x54",
+        "field_index": 41585,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "class": "Lov5/s;",
+    "method": "M",
+    "descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;",
+    "method_index": 56749,
+    "code_offset": 11655180,
+    "hits": [
+      {
+        "code_unit_offset": 1762,
+        "opcode": "0x54",
+        "field_index": 41595,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 1810,
+        "opcode": "0x54",
+        "field_index": 41595,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 1836,
+        "opcode": "0x54",
+        "field_index": 41595,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 2379,
+        "opcode": "0x54",
+        "field_index": 41595,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 2439,
+        "opcode": "0x54",
+        "field_index": 41595,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "class": "Lvz5/b0;",
+    "method": "F0",
+    "descriptor": "(Lwz5/d;)Z",
+    "method_index": 60759,
+    "code_offset": 12069088,
+    "hits": [
+      {
+        "code_unit_offset": 17,
+        "opcode": "0x54",
+        "field_index": 41585,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "class": "Lvz5/b0;",
+    "method": "y0",
+    "descriptor": "(ILwz5/d;Landroid/content/Context;)V",
+    "method_index": 60772,
+    "code_offset": 12074524,
+    "hits": [
+      {
+        "code_unit_offset": 36,
+        "opcode": "0x54",
+        "field_index": 41585,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+    "method": "f",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+    "method_index": 28507,
+    "code_offset": 7365380,
+    "hits": [
+      {
+        "code_unit_offset": 183,
+        "opcode": "0x54",
+        "field_index": 46926,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 409,
+        "opcode": "0x54",
+        "field_index": 46916,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/TTSHighlightVideoCardLayout;",
+    "method": "j",
+    "descriptor": "(Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/n;)V",
+    "method_index": 10257,
+    "code_offset": 4811624,
+    "hits": [
+      {
+        "code_unit_offset": 17,
+        "opcode": "0x54",
+        "field_index": 27942,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/help/o0;",
+    "method": "H",
+    "descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;IILcom/dragon/read/rpc/model/CellViewData;)Lcom/dragon/read/component/biz/impl/repo/model/PersonalizedCardModel$RelateContentItem;",
+    "method_index": 21446,
+    "code_offset": 6012120,
+    "hits": [
+      {
+        "code_unit_offset": 197,
+        "opcode": "0x54",
+        "field_index": 27934,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Ly74/l0;",
+    "method": "onBind",
+    "descriptor": "(Ljava/lang/Object;I)V",
+    "method_index": 63091,
+    "code_offset": 9252312,
+    "hits": [
+      {
+        "code_unit_offset": 53,
+        "opcode": "0x54",
+        "field_index": 27934,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  }
+]

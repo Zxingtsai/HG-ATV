@@ -1,0 +1,565 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_df27c821ec1b80e55ed6ec3df7a2a6bae8ae9c47499fd90b3f31bbfce6c77908\",\"subject\":{\"name\":\"analysis-feed-slice.apk\",\"digest\":{\"sha256\":\"7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d\"},\"local_path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"class_count\":13023,\"resource_count\":4,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":2147483648,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"b(): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"c(): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"c\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\"},{\\\"signature\\\":\\\"d(): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Z\\\"},{\\\"signature\\\":\\\"f(com.dragon.read.rpc.model.VideoData): com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;\\\"},{\\\"signature\\\":\\\"g(java.util.List\\\\u003ccom.dragon.read.rpc.model.VideoData\\\\u003e): java.util.List\\\\u003ccom.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"g\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/List;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"toString(): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"toString\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\"}],\\\"method_count\\\":8,\\\"inner_class_count\\\":0,\\\"inner_classes\\\":[],\\\"name\\\":\\\"VideoData\\\",\\\"full_name\\\":\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\\\",\\\"field_count\\\":98,\\\"fields\\\":[{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoAlbumDetailInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"albumDetailInfo\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.AlbumShowStyle\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"albumShowStyle\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"aliasName\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"authorNickName\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"autoPlay\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"bgColorHex\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"bookExist\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.BuriedParams\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"buriedParams\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"cardTips\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"categoryList\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.CategorySchema\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"categorySchemaList\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"chapterIndex\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.ClipVideoHighlight\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"clipVideoHighlights\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"colorDominate\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"commentCount\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoContentType\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"contentType\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"countOfLikes\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"cover\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"coverDominate\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.VideoTagInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"coverTagInfoList\\\"},{\\\"type\\\":\\\"java.lang.Long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"createTime\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"currentEpisodeIndex\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"currentPlayPosition\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"duration\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"dynamicCover\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"embeddingClusterId\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"episodesCount\\\"},{\\\"type\\\":\\\"java.util.HashMap\\\\u003cjava.lang.String, java.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"extraMap\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"forceVid\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"heatScore\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"hideDiggedIcon\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"horizontalCover\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.NovelComment\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"hotCommentList\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"hotScore\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isAiSeries\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isEpisodes\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isFollowed\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isPrivate\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isRelatedMaterialId\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isSubscribed\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isTop\\\"},{\\\"type\\\":\\\"java.lang.Boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isTrailer\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isUgcVideo\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isVertical\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"language\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"location\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"materialId\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoPayInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"payInfo\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"playCount\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"playCountDesc\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.PlayCoverInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"playCoverInfo\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.RankChangeData\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"rankChangeData\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"rawAliasName\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recTags\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recText\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recTextIconType\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.RecommendTagInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recTextItem\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendGroupId\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendInfo\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendReasonList\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.RecommendTagInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendTagInfoList\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendText\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"relatedMaterialId\\\"},{\\\"type\\\":\\\"com.dragon.read.pages.bookmall.model.VideoTabModel$BookData\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"relativeBookData\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"score\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"secondaryInfoList\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"serialVersionUID\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoImageData\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"seriesCoverInfo\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"seriesId\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"shouldShowTag\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showContentTag\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showDiggedCount\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showEpisodeCount\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showPlayCount\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showPlayIcon\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showRecommendText\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showScore\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showSubTitle\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"subTitle\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"subTitleList\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.SubscribeItem\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"subscribeItem\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoTagInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"tagInfo\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"timeYear\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"title\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoTagInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"titleTagInfo\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"updateTag\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"url\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"userLike\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"vid\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoCategoryType\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoDesc\\\"},{\\\"type\\\":\\\"com.dragon.read.video.VideoDetailModel\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoDetailModel\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoHeight\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoHighlight\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoHighlight\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoModel\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.VideoPlatformType\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoPlatform\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoTag\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoWidth\\\"}]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":2048},\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"name\":\"b\",\"reported_signature\":\"b(): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"name\":\"c\",\"reported_signature\":\"c(): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"name\":\"d\",\"reported_signature\":\"d(): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"name\":\"f\",\"reported_signature\":\"f(com.dragon.read.rpc.model.VideoData): com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;\"},{\"name\":\"g\",\"reported_signature\":\"g(java.util.List<com.dragon.read.rpc.model.VideoData>): java.util.List<com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData>\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\"},{\"name\":\"toString\",\"reported_signature\":\"toString(): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"fields\":[{\"name\":\"albumDetailInfo\",\"reported_type\":\"com.dragon.read.rpc.model.VideoAlbumDetailInfo\"},{\"name\":\"albumShowStyle\",\"reported_type\":\"com.dragon.read.rpc.model.AlbumShowStyle\"},{\"name\":\"aliasName\",\"reported_type\":\"java.lang.String\"},{\"name\":\"authorNickName\",\"reported_type\":\"java.lang.String\"},{\"name\":\"autoPlay\",\"reported_type\":\"boolean\"},{\"name\":\"bgColorHex\",\"reported_type\":\"java.lang.String\"},{\"name\":\"bookExist\",\"reported_type\":\"boolean\"},{\"name\":\"buriedParams\",\"reported_type\":\"com.dragon.read.rpc.model.BuriedParams\"},{\"name\":\"cardTips\",\"reported_type\":\"java.lang.String\"},{\"name\":\"categoryList\",\"reported_type\":\"java.util.List<java.lang.String>\"},{\"name\":\"categorySchemaList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.CategorySchema>\"},{\"name\":\"chapterIndex\",\"reported_type\":\"int\"},{\"name\":\"clipVideoHighlights\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.ClipVideoHighlight>\"},{\"name\":\"colorDominate\",\"reported_type\":\"java.lang.String\"},{\"name\":\"commentCount\",\"reported_type\":\"long\"},{\"name\":\"contentType\",\"reported_type\":\"com.dragon.read.rpc.model.VideoContentType\"},{\"name\":\"countOfLikes\",\"reported_type\":\"long\"},{\"name\":\"cover\",\"reported_type\":\"java.lang.String\"},{\"name\":\"coverDominate\",\"reported_type\":\"java.lang.String\"},{\"name\":\"coverTagInfoList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.VideoTagInfo>\"},{\"name\":\"createTime\",\"reported_type\":\"java.lang.Long\"},{\"name\":\"currentEpisodeIndex\",\"reported_type\":\"int\"},{\"name\":\"currentPlayPosition\",\"reported_type\":\"long\"},{\"name\":\"duration\",\"reported_type\":\"long\"},{\"name\":\"dynamicCover\",\"reported_type\":\"java.lang.String\"},{\"name\":\"embeddingClusterId\",\"reported_type\":\"int\"},{\"name\":\"episodesCount\",\"reported_type\":\"long\"},{\"name\":\"extraMap\",\"reported_type\":\"java.util.HashMap<java.lang.String, java.lang.String>\"},{\"name\":\"forceVid\",\"reported_type\":\"java.lang.String\"},{\"name\":\"heatScore\",\"reported_type\":\"java.lang.String\"},{\"name\":\"hideDiggedIcon\",\"reported_type\":\"boolean\"},{\"name\":\"horizontalCover\",\"reported_type\":\"java.lang.String\"},{\"name\":\"hotCommentList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.NovelComment>\"},{\"name\":\"hotScore\",\"reported_type\":\"int\"},{\"name\":\"isAiSeries\",\"reported_type\":\"boolean\"},{\"name\":\"isEpisodes\",\"reported_type\":\"boolean\"},{\"name\":\"isFollowed\",\"reported_type\":\"boolean\"},{\"name\":\"isPrivate\",\"reported_type\":\"boolean\"},{\"name\":\"isRelatedMaterialId\",\"reported_type\":\"boolean\"},{\"name\":\"isSubscribed\",\"reported_type\":\"boolean\"},{\"name\":\"isTop\",\"reported_type\":\"boolean\"},{\"name\":\"isTrailer\",\"reported_type\":\"java.lang.Boolean\"},{\"name\":\"isUgcVideo\",\"reported_type\":\"boolean\"},{\"name\":\"isVertical\",\"reported_type\":\"boolean\"},{\"name\":\"language\",\"reported_type\":\"java.lang.String\"},{\"name\":\"location\",\"reported_type\":\"java.lang.String\"},{\"name\":\"materialId\",\"reported_type\":\"java.lang.String\"},{\"name\":\"payInfo\",\"reported_type\":\"com.dragon.read.rpc.model.VideoPayInfo\"},{\"name\":\"playCount\",\"reported_type\":\"long\"},{\"name\":\"playCountDesc\",\"reported_type\":\"java.lang.String\"},{\"name\":\"playCoverInfo\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.PlayCoverInfo>\"},{\"name\":\"rankChangeData\",\"reported_type\":\"com.dragon.read.rpc.model.RankChangeData\"},{\"name\":\"rawAliasName\",\"reported_type\":\"java.lang.String\"},{\"name\":\"recTags\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.SecondaryInfo>\"},{\"name\":\"recText\",\"reported_type\":\"java.lang.String\"},{\"name\":\"recTextIconType\",\"reported_type\":\"int\"},{\"name\":\"recTextItem\",\"reported_type\":\"com.dragon.read.rpc.model.RecommendTagInfo\"},{\"name\":\"recommendGroupId\",\"reported_type\":\"java.lang.String\"},{\"name\":\"recommendInfo\",\"reported_type\":\"java.lang.String\"},{\"name\":\"recommendReasonList\",\"reported_type\":\"java.lang.String\"},{\"name\":\"recommendTagInfoList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.RecommendTagInfo>\"},{\"name\":\"recommendText\",\"reported_type\":\"java.lang.String\"},{\"name\":\"relatedMaterialId\",\"reported_type\":\"java.lang.String\"},{\"name\":\"relativeBookData\",\"reported_type\":\"com.dragon.read.pages.bookmall.model.VideoTabModel$BookData\"},{\"name\":\"score\",\"reported_type\":\"java.lang.String\"},{\"name\":\"secondaryInfoList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.SecondaryInfo>\"},{\"name\":\"serialVersionUID\",\"reported_type\":\"long\"},{\"name\":\"seriesCoverInfo\",\"reported_type\":\"com.dragon.read.rpc.model.VideoImageData\"},{\"name\":\"seriesId\",\"reported_type\":\"java.lang.String\"},{\"name\":\"shouldShowTag\",\"reported_type\":\"boolean\"},{\"name\":\"showContentTag\",\"reported_type\":\"boolean\"},{\"name\":\"showDiggedCount\",\"reported_type\":\"boolean\"},{\"name\":\"showEpisodeCount\",\"reported_type\":\"boolean\"},{\"name\":\"showPlayCount\",\"reported_type\":\"boolean\"},{\"name\":\"showPlayIcon\",\"reported_type\":\"boolean\"},{\"name\":\"showRecommendText\",\"reported_type\":\"boolean\"},{\"name\":\"showScore\",\"reported_type\":\"boolean\"},{\"name\":\"showSubTitle\",\"reported_type\":\"boolean\"},{\"name\":\"subTitle\",\"reported_type\":\"java.lang.String\"},{\"name\":\"subTitleList\",\"reported_type\":\"java.util.List<com.dragon.read.rpc.model.SecondaryInfo>\"},{\"name\":\"subscribeItem\",\"reported_type\":\"com.dragon.read.rpc.model.SubscribeItem\"},{\"name\":\"tagInfo\",\"reported_type\":\"com.dragon.read.rpc.model.VideoTagInfo\"},{\"name\":\"timeYear\",\"reported_type\":\"int\"},{\"name\":\"title\",\"reported_type\":\"java.lang.String\"},{\"name\":\"titleTagInfo\",\"reported_type\":\"com.dragon.read.rpc.model.VideoTagInfo\"},{\"name\":\"updateTag\",\"reported_type\":\"java.lang.String\"},{\"name\":\"url\",\"reported_type\":\"java.lang.String\"},{\"name\":\"userLike\",\"reported_type\":\"boolean\"},{\"name\":\"vid\",\"reported_type\":\"java.lang.String\"},{\"name\":\"videoCategoryType\",\"reported_type\":\"java.lang.String\"},{\"name\":\"videoDesc\",\"reported_type\":\"java.lang.String\"},{\"name\":\"videoDetailModel\",\"reported_type\":\"com.dragon.read.video.VideoDetailModel\"},{\"name\":\"videoHeight\",\"reported_type\":\"int\"},{\"name\":\"videoHighlight\",\"reported_type\":\"com.dragon.read.rpc.model.VideoHighlight\"},{\"name\":\"videoModel\",\"reported_type\":\"java.lang.String\"},{\"name\":\"videoPlatform\",\"reported_type\":\"com.dragon.read.rpc.model.VideoPlatformType\"},{\"name\":\"videoTag\",\"reported_type\":\"java.lang.String\"},{\"name\":\"videoWidth\",\"reported_type\":\"int\"}],\"inner_classes\":[]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_df27c821ec1b80e55ed6ec3df7a2a6bae8ae9c47499fd90b3f31bbfce6c77908",
+      "subject": {
+        "name": "analysis-feed-slice.apk",
+        "digest": {
+          "sha256": "7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d"
+        },
+        "local_path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-e8g3B0/target.apk",
+          "class_count": 13023,
+          "resource_count": 4,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.12.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"b(): java.lang.String\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"signature\":\"c(): boolean\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"d(): boolean\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"()Z\"},{\"signature\":\"f(com.dragon.read.rpc.model.VideoData): com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;\"},{\"signature\":\"g(java.util.List\\u003ccom.dragon.read.rpc.model.VideoData\\u003e): java.util.List\\u003ccom.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\\u003e\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\"},{\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"method_count\":8,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"VideoData\",\"full_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\",\"field_count\":98,\"fields\":[{\"type\":\"com.dragon.read.rpc.model.VideoAlbumDetailInfo\",\"def_pos\":0,\"name\":\"albumDetailInfo\"},{\"type\":\"com.dragon.read.rpc.model.AlbumShowStyle\",\"def_pos\":0,\"name\":\"albumShowStyle\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"aliasName\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"authorNickName\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"autoPlay\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"bgColorHex\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"bookExist\"},{\"type\":\"com.dragon.read.rpc.model.BuriedParams\",\"def_pos\":0,\"name\":\"buriedParams\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"cardTips\"},{\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"categoryList\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.CategorySchema\\u003e\",\"def_pos\":0,\"name\":\"categorySchemaList\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"chapterIndex\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.ClipVideoHighlight\\u003e\",\"def_pos\":0,\"name\":\"clipVideoHighlights\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"colorDominate\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"commentCount\"},{\"type\":\"com.dragon.read.rpc.model.VideoContentType\",\"def_pos\":0,\"name\":\"contentType\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"countOfLikes\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"cover\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"coverDominate\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.VideoTagInfo\\u003e\",\"def_pos\":0,\"name\":\"coverTagInfoList\"},{\"type\":\"java.lang.Long\",\"def_pos\":0,\"name\":\"createTime\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"currentEpisodeIndex\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"currentPlayPosition\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"duration\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"dynamicCover\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"embeddingClusterId\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"episodesCount\"},{\"type\":\"java.util.HashMap\\u003cjava.lang.String, java.lang.String\\u003e\",\"def_pos\":0,\"name\":\"extraMap\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"forceVid\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"heatScore\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"hideDiggedIcon\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"horizontalCover\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.NovelComment\\u003e\",\"def_pos\":0,\"name\":\"hotCommentList\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"hotScore\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isAiSeries\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isEpisodes\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isFollowed\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isPrivate\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isRelatedMaterialId\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isSubscribed\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isTop\"},{\"type\":\"java.lang.Boolean\",\"def_pos\":0,\"name\":\"isTrailer\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isUgcVideo\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isVertical\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"language\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"location\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"materialId\"},{\"type\":\"com.dragon.read.rpc.model.VideoPayInfo\",\"def_pos\":0,\"name\":\"payInfo\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"playCount\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"playCountDesc\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.PlayCoverInfo\\u003e\",\"def_pos\":0,\"name\":\"playCoverInfo\"},{\"type\":\"com.dragon.read.rpc.model.RankChangeData\",\"def_pos\":0,\"name\":\"rankChangeData\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"rawAliasName\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\u003e\",\"def_pos\":0,\"name\":\"recTags\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"recText\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"recTextIconType\"},{\"type\":\"com.dragon.read.rpc.model.RecommendTagInfo\",\"def_pos\":0,\"name\":\"recTextItem\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"recommendGroupId\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"recommendInfo\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"recommendReasonList\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.RecommendTagInfo\\u003e\",\"def_pos\":0,\"name\":\"recommendTagInfoList\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"recommendText\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"relatedMaterialId\"},{\"type\":\"com.dragon.read.pages.bookmall.model.VideoTabModel$BookData\",\"def_pos\":0,\"name\":\"relativeBookData\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"score\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\u003e\",\"def_pos\":0,\"name\":\"secondaryInfoList\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"serialVersionUID\"},{\"type\":\"com.dragon.read.rpc.model.VideoImageData\",\"def_pos\":0,\"name\":\"seriesCoverInfo\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"seriesId\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"shouldShowTag\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showContentTag\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showDiggedCount\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showEpisodeCount\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showPlayCount\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showPlayIcon\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showRecommendText\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showScore\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"showSubTitle\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"subTitle\"},{\"type\":\"java.util.List\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\u003e\",\"def_pos\":0,\"name\":\"subTitleList\"},{\"type\":\"com.dragon.read.rpc.model.SubscribeItem\",\"def_pos\":0,\"name\":\"subscribeItem\"},{\"type\":\"com.dragon.read.rpc.model.VideoTagInfo\",\"def_pos\":0,\"name\":\"tagInfo\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"timeYear\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"title\"},{\"type\":\"com.dragon.read.rpc.model.VideoTagInfo\",\"def_pos\":0,\"name\":\"titleTagInfo\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"updateTag\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"url\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"userLike\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"vid\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"videoCategoryType\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"videoDesc\"},{\"type\":\"com.dragon.read.video.VideoDetailModel\",\"def_pos\":0,\"name\":\"videoDetailModel\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"videoHeight\"},{\"type\":\"com.dragon.read.rpc.model.VideoHighlight\",\"def_pos\":0,\"name\":\"videoHighlight\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"videoModel\"},{\"type\":\"com.dragon.read.rpc.model.VideoPlatformType\",\"def_pos\":0,\"name\":\"videoPlatform\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"videoTag\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"videoWidth\"}]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 2048
+        },
+        "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "b",
+            "reported_signature": "b(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "c",
+            "reported_signature": "c(): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Z"
+          },
+          {
+            "name": "d",
+            "reported_signature": "d(): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Z"
+          },
+          {
+            "name": "f",
+            "reported_signature": "f(com.dragon.read.rpc.model.VideoData): com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;"
+          },
+          {
+            "name": "g",
+            "reported_signature": "g(java.util.List<com.dragon.read.rpc.model.VideoData>): java.util.List<com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/List;)Ljava/util/List;"
+          },
+          {
+            "name": "toString",
+            "reported_signature": "toString(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          }
+        ],
+        "fields": [
+          {
+            "name": "albumDetailInfo",
+            "reported_type": "com.dragon.read.rpc.model.VideoAlbumDetailInfo"
+          },
+          {
+            "name": "albumShowStyle",
+            "reported_type": "com.dragon.read.rpc.model.AlbumShowStyle"
+          },
+          {
+            "name": "aliasName",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "authorNickName",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "autoPlay",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "bgColorHex",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "bookExist",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "buriedParams",
+            "reported_type": "com.dragon.read.rpc.model.BuriedParams"
+          },
+          {
+            "name": "cardTips",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "categoryList",
+            "reported_type": "java.util.List<java.lang.String>"
+          },
+          {
+            "name": "categorySchemaList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.CategorySchema>"
+          },
+          {
+            "name": "chapterIndex",
+            "reported_type": "int"
+          },
+          {
+            "name": "clipVideoHighlights",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.ClipVideoHighlight>"
+          },
+          {
+            "name": "colorDominate",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "commentCount",
+            "reported_type": "long"
+          },
+          {
+            "name": "contentType",
+            "reported_type": "com.dragon.read.rpc.model.VideoContentType"
+          },
+          {
+            "name": "countOfLikes",
+            "reported_type": "long"
+          },
+          {
+            "name": "cover",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "coverDominate",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "coverTagInfoList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.VideoTagInfo>"
+          },
+          {
+            "name": "createTime",
+            "reported_type": "java.lang.Long"
+          },
+          {
+            "name": "currentEpisodeIndex",
+            "reported_type": "int"
+          },
+          {
+            "name": "currentPlayPosition",
+            "reported_type": "long"
+          },
+          {
+            "name": "duration",
+            "reported_type": "long"
+          },
+          {
+            "name": "dynamicCover",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "embeddingClusterId",
+            "reported_type": "int"
+          },
+          {
+            "name": "episodesCount",
+            "reported_type": "long"
+          },
+          {
+            "name": "extraMap",
+            "reported_type": "java.util.HashMap<java.lang.String, java.lang.String>"
+          },
+          {
+            "name": "forceVid",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "heatScore",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "hideDiggedIcon",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "horizontalCover",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "hotCommentList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.NovelComment>"
+          },
+          {
+            "name": "hotScore",
+            "reported_type": "int"
+          },
+          {
+            "name": "isAiSeries",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isEpisodes",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isFollowed",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isPrivate",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isRelatedMaterialId",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isSubscribed",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isTop",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isTrailer",
+            "reported_type": "java.lang.Boolean"
+          },
+          {
+            "name": "isUgcVideo",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "isVertical",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "language",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "location",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "materialId",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "payInfo",
+            "reported_type": "com.dragon.read.rpc.model.VideoPayInfo"
+          },
+          {
+            "name": "playCount",
+            "reported_type": "long"
+          },
+          {
+            "name": "playCountDesc",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "playCoverInfo",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.PlayCoverInfo>"
+          },
+          {
+            "name": "rankChangeData",
+            "reported_type": "com.dragon.read.rpc.model.RankChangeData"
+          },
+          {
+            "name": "rawAliasName",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "recTags",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.SecondaryInfo>"
+          },
+          {
+            "name": "recText",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "recTextIconType",
+            "reported_type": "int"
+          },
+          {
+            "name": "recTextItem",
+            "reported_type": "com.dragon.read.rpc.model.RecommendTagInfo"
+          },
+          {
+            "name": "recommendGroupId",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "recommendInfo",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "recommendReasonList",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "recommendTagInfoList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.RecommendTagInfo>"
+          },
+          {
+            "name": "recommendText",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "relatedMaterialId",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "relativeBookData",
+            "reported_type": "com.dragon.read.pages.bookmall.model.VideoTabModel$BookData"
+          },
+          {
+            "name": "score",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "secondaryInfoList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.SecondaryInfo>"
+          },
+          {
+            "name": "serialVersionUID",
+            "reported_type": "long"
+          },
+          {
+            "name": "seriesCoverInfo",
+            "reported_type": "com.dragon.read.rpc.model.VideoImageData"
+          },
+          {
+            "name": "seriesId",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "shouldShowTag",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showContentTag",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showDiggedCount",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showEpisodeCount",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showPlayCount",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showPlayIcon",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showRecommendText",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showScore",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "showSubTitle",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "subTitle",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "subTitleList",
+            "reported_type": "java.util.List<com.dragon.read.rpc.model.SecondaryInfo>"
+          },
+          {
+            "name": "subscribeItem",
+            "reported_type": "com.dragon.read.rpc.model.SubscribeItem"
+          },
+          {
+            "name": "tagInfo",
+            "reported_type": "com.dragon.read.rpc.model.VideoTagInfo"
+          },
+          {
+            "name": "timeYear",
+            "reported_type": "int"
+          },
+          {
+            "name": "title",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "titleTagInfo",
+            "reported_type": "com.dragon.read.rpc.model.VideoTagInfo"
+          },
+          {
+            "name": "updateTag",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "url",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "userLike",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "vid",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "videoCategoryType",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "videoDesc",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "videoDetailModel",
+            "reported_type": "com.dragon.read.video.VideoDetailModel"
+          },
+          {
+            "name": "videoHeight",
+            "reported_type": "int"
+          },
+          {
+            "name": "videoHighlight",
+            "reported_type": "com.dragon.read.rpc.model.VideoHighlight"
+          },
+          {
+            "name": "videoModel",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "videoPlatform",
+            "reported_type": "com.dragon.read.rpc.model.VideoPlatformType"
+          },
+          {
+            "name": "videoTag",
+            "reported_type": "java.lang.String"
+          },
+          {
+            "name": "videoWidth",
+            "reported_type": "int"
+          }
+        ],
+        "inner_classes": []
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 4
+}

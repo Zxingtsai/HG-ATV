@@ -1,0 +1,29 @@
+[
+  {
+    "variant": "returned",
+    "media_host": "v3-share.qznovel.com",
+    "modified_parameter_names": [],
+    "observed_at": "2026-10-21T00:42:58.261184+00:00",
+    "status": 206,
+    "type": "video/mp4",
+    "range": "bytes 0-2047/2715891",
+    "length": "2048",
+    "prefix_sha256": "276ce8d30f3833e304eabdac6caad6563e6881522e1c38afb50ef149a6c862a0",
+    "has_ftyp": true
+  },
+  {
+    "variant": "omit_clip_end",
+    "media_host": "v3-share.qznovel.com",
+    "modified_parameter_names": [
+      "end"
+    ],
+    "observed_at": "2026-10-21T00:42:58.262897+00:00",
+    "status": 403,
+    "type": "video/mp4",
+    "range": null,
+    "length": "238",
+    "prefix_sha256": "6e1c38d044037281bc69275855c2951880dcf534f456035d0276a244a4a8c81f",
+    "has_ftyp": false,
+    "error_prefix": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r\n<html>\r\n<head><title>403 Forbidden</title></head"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "class": "Lcom/dragon/read/component/audio/impl/ui/audio/core/repo/i;",
+    "matches": [
+      "4fd792: 7100 52a1 0000                         |000b: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a152",
+      "4fd79a: 7220 50a1 3000                         |000f: invoke-interface {v0, v3}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsItemRxJava:(Lcom/dragon/read/rpc/model/StreamTtsItemRequest;)Lio/reactivex/Observable; // method@a150"
+    ],
+    "dex": "classes2.dex"
+  },
+  {
+    "class": "Lcp3/q0;",
+    "matches": [
+      "7696bc: 7100 52a1 0000                         |003c: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a152",
+      "7696c4: 7220 51a1 0100                         |0040: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@a151"
+    ],
+    "dex": "classes2.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/kmp/im/bridge/impl/k6;",
+    "matches": [
+      "6a5192: 7100 87a7 0000                         |000b: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a787",
+      "6a519a: 7220 86a7 3000                         |000f: invoke-interface {v0, v3}, Lcom/dragon/read/rpc/rpc/q7$a;.transeferImageRxJava:(Lcom/dragon/read/rpc/model/TranseferImageRequest;)Lio/reactivex/Observable; // method@a786"
+    ],
+    "dex": "classes6.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController;",
+    "matches": [
+      "5f17fe: 7100 d7b7 0000                         |0033: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@b7d7",
+      "5f1806: 7220 d6b7 0100                         |0037: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.playStrategyRxJava:(Lcom/dragon/read/rpc/model/PlayStrategyRequest;)Lio/reactivex/Observable; // method@b7d6"
+    ],
+    "dex": "classes7.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/polaris/audio/q;",
+    "matches": [
+      "43ee44: 7100 9f70 0000                         |0084: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@709f",
+      "43ee4c: 7220 9e70 cd00                         |0088: invoke-interface {v13, v12}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@709e"
+    ],
+    "dex": "classes8.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/polaris/audio/q;",
+    "matches": [
+      "43effc: 7100 9f70 0000                         |009e: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@709f",
+      "43f004: 7220 9e70 0100                         |00a2: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.streamTtsTemplateRxJava:(Lcom/dragon/read/rpc/model/StreamTtsTemplateRequest;)Lio/reactivex/Observable; // method@709e"
+    ],
+    "dex": "classes8.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest$a;",
+    "matches": [
+      "655682: 7055 0846 3c20                         |0059: invoke-direct {v12, v3, v0, v2, v5}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(ILjava/util/List;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V // method@4608"
+    ],
+    "dex": "classes9.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+    "matches": [
+      "6557ee: 7052 0a46 2310                         |0003: invoke-direct {v3, v2, v0, v1, v2}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(Ljava/util/List;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@460a"
+    ],
+    "dex": "classes9.dex"
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+    "matches": [
+      "655890: 7030 0946 1002                         |000a: invoke-direct {v0, v1, v2}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(Ljava/util/List;Z)V // method@4609"
+    ],
+    "dex": "classes9.dex"
+  }
+]

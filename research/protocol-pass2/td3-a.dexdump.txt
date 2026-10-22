@@ -1,0 +1,2151 @@
+  Class descriptor  : 'Ltd3/a;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;'
+  Static fields     -
+    #0              : (in Ltd3/a;)
+      name          : 'b'
+      type          : 'Ltd3/a;'
+      access        : 0x0049 (PUBLIC STATIC VOLATILE)
+    #1              : (in Ltd3/a;)
+      name          : 'c'
+      type          : 'Z'
+      access        : 0x0049 (PUBLIC STATIC VOLATILE)
+  Instance fields   -
+    #0              : (in Ltd3/a;)
+      name          : 'a'
+      type          : 'Z'
+      access        : 0x0041 (PUBLIC VOLATILE)
+  Direct methods    -
+    #0              : (in Ltd3/a;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+9f42f4:                                        |[9f42f4] td3.a.<clinit>:()V
+9f4304: 1400 89e6 0800                         |0000: const v0, #float 8.17384e-40 // #0008e689
+9f430a: 7110 0813 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1308
+9f4310: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Ltd3/a;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+9f4314:                                        |[9f4314] td3.a.<init>:()V
+9f4324: 7010 bccc 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@ccbc
+9f432a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Ltd3/a;
+
+    #2              : (in Ltd3/a;)
+      name          : 'a'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 9 16-bit code units
+9f432c:                                        |[9f432c] td3.a.a:()Ljava/lang/String;
+9f433c: 7100 11b3 0000                         |0000: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.getDeviceId:()Ljava/lang/String; // method@b311
+9f4342: 0c00                                   |0003: move-result-object v0
+9f4344: 3900 0400                              |0004: if-nez v0, 0008 // +0004
+9f4348: 1a00 0000                              |0006: const-string v0, "" // string@0000
+9f434c: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+      locals        :
+
+    #3              : (in Ltd3/a;)
+      name          : 'b'
+      type          : '()Ltd3/a;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 1
+      insns size    : 22 16-bit code units
+9f4350:                                        |[9f4350] td3.a.b:()Ltd3/a;
+9f4360: 6200 708f                              |0000: sget-object v0, Ltd3/a;.b:Ltd3/a; // field@8f70
+9f4364: 3900 1100                              |0002: if-nez v0, 0013 // +0011
+9f4368: 1c00 265d                              |0004: const-class v0, Ltd3/a; // type@5d26
+9f436c: 1d00                                   |0006: monitor-enter v0
+9f436e: 2201 265d                              |0007: new-instance v1, Ltd3/a; // type@5d26
+9f4372: 7010 31f0 0100                         |0009: invoke-direct {v1}, Ltd3/a;.<init>:()V // method@f031
+9f4378: 6901 708f                              |000c: sput-object v1, Ltd3/a;.b:Ltd3/a; // field@8f70
+9f437c: 1e00                                   |000e: monitor-exit v0
+9f437e: 2804                                   |000f: goto 0013 // +0004
+9f4380: 0d01                                   |0010: move-exception v1
+9f4382: 1e00                                   |0011: monitor-exit v0
+9f4384: 2701                                   |0012: throw v1
+9f4386: 6200 708f                              |0013: sget-object v0, Ltd3/a;.b:Ltd3/a; // field@8f70
+9f438a: 1100                                   |0015: return-object v0
+      catches       : 1
+        0x0007 - 0x0012
+          <any> -> 0x0010
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+        0x0013 line=196627
+        0x0014 line=196628
+        0x0015 line=196629
+      locals        :
+
+    #4              : (in Ltd3/a;)
+      name          : 'c'
+      type          : '(Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 9
+      ins           : 1
+      outs          : 4
+      insns size    : 327 16-bit code units
+9f4398:                                        |[9f4398] td3.a.c:(Ljava/lang/String;)Ljava/lang/String;
+9f43a8: 1210                                   |0000: const/4 v0, #int 1 // #1
+9f43aa: 2301 fe63                              |0001: new-array v1, v0, [Ljava/lang/Object; // type@63fe
+9f43ae: 1202                                   |0003: const/4 v2, #int 0 // #0
+9f43b0: 4d08 0102                              |0004: aput-object v8, v1, v2
+9f43b4: 1a03 860b                              |0006: const-string v3, "ApiProcessHook, [postProcessUrl] enable new user request bookmall without did, url = %s" // string@0b86
+9f43b8: 7120 98a1 1300                         |0008: invoke-static {v3, v1}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f43be: 7100 192a 0000                         |000b: invoke-static {}, Lcom/dragon/read/app/App;.context:()Landroid/app/Application; // method@2a19
+9f43c4: 0c01                                   |000e: move-result-object v1
+9f43c6: 7110 d42a 0100                         |000f: invoke-static {v1}, Lcom/dragon/read/app/SingleAppContext;.inst:(Landroid/content/Context;)Lcom/dragon/read/app/SingleAppContext; // method@2ad4
+9f43cc: 0c01                                   |0012: move-result-object v1
+9f43ce: 7110 ad04 0800                         |0013: invoke-static {v8}, Landroid/net/Uri;.parse:(Ljava/lang/String;)Landroid/net/Uri; // method@04ad
+9f43d4: 0c03                                   |0016: move-result-object v3
+9f43d6: 6e10 9b04 0300                         |0017: invoke-virtual {v3}, Landroid/net/Uri;.buildUpon:()Landroid/net/Uri$Builder; // method@049b
+9f43dc: 0c04                                   |001a: move-result-object v4
+9f43de: 1a05 2f89                              |001b: const-string v5, "aid" // string@892f
+9f43e2: 6e20 a704 5300                         |001d: invoke-virtual {v3, v5}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f43e8: 0c06                                   |0020: move-result-object v6
+9f43ea: 3906 1800                              |0021: if-nez v6, 0039 // +0018
+9f43ee: 1a06 7c0b                              |0023: const-string v6, "ApiProcessHook, [postProcessUrl] append appId to bookmall/tab" // string@0b7c
+9f43f2: 2327 fe63                              |0025: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f43f6: 7120 98a1 7600                         |0027: invoke-static {v6, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f43fc: 6206 b36a                              |002a: sget-object v6, Lcom/dragon/read/component/biz/impl/brickservice/BookMallBsConfigService;.IMPL:Lcom/dragon/read/component/biz/impl/brickservice/BookMallBsConfigService; // field@6ab3
+9f4400: 7210 c4a6 0600                         |002c: invoke-interface {v6}, Lcom/dragon/read/component/biz/impl/brickservice/BookMallBsConfigService;.defaultAppIdForFirstStartPrivacyDialogDelayOpt:()I // method@a6c4
+9f4406: 0a06                                   |002f: move-result v6
+9f4408: 7110 06cd 0600                         |0030: invoke-static {v6}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@cd06
+9f440e: 0c06                                   |0033: move-result-object v6
+9f4410: 6e30 9404 5406                         |0034: invoke-virtual {v4, v5, v6}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f4416: 1215                                   |0037: const/4 v5, #int 1 // #1
+9f4418: 2802                                   |0038: goto 003a // +0002
+9f441a: 1205                                   |0039: const/4 v5, #int 0 // #0
+9f441c: 1a06 73a6                              |003a: const-string v6, "device_platform" // string@a673
+9f4420: 6e20 a704 6300                         |003c: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f4426: 0c07                                   |003f: move-result-object v7
+9f4428: 3907 0f00                              |0040: if-nez v7, 004f // +000f
+9f442c: 1a05 800b                              |0042: const-string v5, "ApiProcessHook, [postProcessUrl] append device_platform to bookmall/tab" // string@0b80
+9f4430: 2327 fe63                              |0044: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f4434: 7120 98a1 7500                         |0046: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f443a: 1a05 bd89                              |0049: const-string v5, "android" // string@89bd
+9f443e: 6e30 9404 6405                         |004b: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f4444: 1215                                   |004e: const/4 v5, #int 1 // #1
+9f4446: 1b06 2a09 0100                         |004f: const-string/jumbo v6, "update_version_code" // string@0001092a
+9f444c: 6e20 a704 6300                         |0052: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f4452: 0c07                                   |0055: move-result-object v7
+9f4454: 3907 1500                              |0056: if-nez v7, 006b // +0015
+9f4458: 1a05 820b                              |0058: const-string v5, "ApiProcessHook, [postProcessUrl] append update_version_code to bookmall/tab" // string@0b82
+9f445c: 2327 fe63                              |005a: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f4460: 7120 98a1 7500                         |005c: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4466: 6e10 cd2a 0100                         |005f: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getUpdateVersionCode:()I // method@2acd
+9f446c: 0a05                                   |0062: move-result v5
+9f446e: 7110 06cd 0500                         |0063: invoke-static {v5}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@cd06
+9f4474: 0c05                                   |0066: move-result-object v5
+9f4476: 6e30 9404 6405                         |0067: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f447c: 1215                                   |006a: const/4 v5, #int 1 // #1
+9f447e: 1a06 a2d9                              |006b: const-string v6, "manifest_version_code" // string@d9a2
+9f4482: 6e20 a704 6300                         |006d: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f4488: 0c07                                   |0070: move-result-object v7
+9f448a: 3907 1500                              |0071: if-nez v7, 0086 // +0015
+9f448e: 1a05 810b                              |0073: const-string v5, "ApiProcessHook, [postProcessUrl] append manifest_version_code to bookmall/tab" // string@0b81
+9f4492: 2327 fe63                              |0075: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f4496: 7120 98a1 7500                         |0077: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f449c: 6e10 c42a 0100                         |007a: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getManifestVersion:()Ljava/lang/String; // method@2ac4
+9f44a2: 0c05                                   |007d: move-result-object v5
+9f44a4: 7110 08cd 0500                         |007e: invoke-static {v5}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@cd08
+9f44aa: 0c05                                   |0081: move-result-object v5
+9f44ac: 6e30 9404 6405                         |0082: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f44b2: 1215                                   |0085: const/4 v5, #int 1 // #1
+9f44b4: 1b06 1a0b 0100                         |0086: const-string/jumbo v6, "version_name" // string@00010b1a
+9f44ba: 6e20 a704 6300                         |0089: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f44c0: 0c07                                   |008c: move-result-object v7
+9f44c2: 3907 1500                              |008d: if-nez v7, 00a2 // +0015
+9f44c6: 1a05 840b                              |008f: const-string v5, "ApiProcessHook, [postProcessUrl] append version_name to bookmall/tab" // string@0b84
+9f44ca: 2327 fe63                              |0091: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f44ce: 7120 98a1 7500                         |0093: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f44d4: 6e10 d22a 0100                         |0096: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getVersionName:()Ljava/lang/String; // method@2ad2
+9f44da: 0c05                                   |0099: move-result-object v5
+9f44dc: 7110 08cd 0500                         |009a: invoke-static {v5}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@cd08
+9f44e2: 0c05                                   |009d: move-result-object v5
+9f44e4: 6e30 9404 6405                         |009e: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f44ea: 1215                                   |00a1: const/4 v5, #int 1 // #1
+9f44ec: 1b06 190b 0100                         |00a2: const-string/jumbo v6, "version_code" // string@00010b19
+9f44f2: 6e20 a704 6300                         |00a5: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f44f8: 0c07                                   |00a8: move-result-object v7
+9f44fa: 3907 1500                              |00a9: if-nez v7, 00be // +0015
+9f44fe: 1a05 830b                              |00ab: const-string v5, "ApiProcessHook, [postProcessUrl] append version_code to bookmall/tab" // string@0b83
+9f4502: 2327 fe63                              |00ad: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f4506: 7120 98a1 7500                         |00af: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f450c: 6e10 d02a 0100                         |00b2: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getVersionCode:()I // method@2ad0
+9f4512: 0a05                                   |00b5: move-result v5
+9f4514: 7110 06cd 0500                         |00b6: invoke-static {v5}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@cd06
+9f451a: 0c05                                   |00b9: move-result-object v5
+9f451c: 6e30 9404 6405                         |00ba: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f4522: 1215                                   |00bd: const/4 v5, #int 1 // #1
+9f4524: 1a06 f88a                              |00be: const-string v6, "app_name" // string@8af8
+9f4528: 6e20 a704 6300                         |00c0: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f452e: 0c07                                   |00c3: move-result-object v7
+9f4530: 3907 1500                              |00c4: if-nez v7, 00d9 // +0015
+9f4534: 1a05 7d0b                              |00c6: const-string v5, "ApiProcessHook, [postProcessUrl] append app_name to bookmall/tab" // string@0b7d
+9f4538: 2327 fe63                              |00c8: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f453c: 7120 98a1 7500                         |00ca: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4542: 6e10 bd2a 0100                         |00cd: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getAppName:()Ljava/lang/String; // method@2abd
+9f4548: 0c05                                   |00d0: move-result-object v5
+9f454a: 7110 08cd 0500                         |00d1: invoke-static {v5}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@cd08
+9f4550: 0c05                                   |00d4: move-result-object v5
+9f4552: 6e30 9404 6405                         |00d5: invoke-virtual {v4, v6, v5}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f4558: 1215                                   |00d8: const/4 v5, #int 1 // #1
+9f455a: 1a06 d292                              |00d9: const-string v6, "channel" // string@92d2
+9f455e: 6e20 a704 6300                         |00db: invoke-virtual {v3, v6}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f4564: 0c07                                   |00de: move-result-object v7
+9f4566: 3907 1500                              |00df: if-nez v7, 00f4 // +0015
+9f456a: 1a05 7f0b                              |00e1: const-string v5, "ApiProcessHook, [postProcessUrl] append channel to bookmall/tab" // string@0b7f
+9f456e: 2327 fe63                              |00e3: new-array v7, v2, [Ljava/lang/Object; // type@63fe
+9f4572: 7120 98a1 7500                         |00e5: invoke-static {v5, v7}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4578: 6e10 be2a 0100                         |00e8: invoke-virtual {v1}, Lcom/dragon/read/app/SingleAppContext;.getChannel:()Ljava/lang/String; // method@2abe
+9f457e: 0c01                                   |00eb: move-result-object v1
+9f4580: 7110 08cd 0100                         |00ec: invoke-static {v1}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@cd08
+9f4586: 0c01                                   |00ef: move-result-object v1
+9f4588: 6e30 9404 6401                         |00f0: invoke-virtual {v4, v6, v1}, Landroid/net/Uri$Builder;.appendQueryParameter:(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder; // method@0494
+9f458e: 1215                                   |00f3: const/4 v5, #int 1 // #1
+9f4590: 6e10 a404 0300                         |00f4: invoke-virtual {v3}, Landroid/net/Uri;.getPath:()Ljava/lang/String; // method@04a4
+9f4596: 0c01                                   |00f7: move-result-object v1
+9f4598: 6206 3469                              |00f8: sget-object v6, Lcom/dragon/read/component/biz/api/NsBookmallApi;.IMPL:Lcom/dragon/read/component/biz/api/NsBookmallApi; // field@6934
+9f459c: 7210 47a3 0600                         |00fa: invoke-interface {v6}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.getFirstStartLandingSeriesFeedService:()Lfr3/b; // method@a347
+9f45a2: 0c06                                   |00fd: move-result-object v6
+9f45a4: 7220 43bf 1600                         |00fe: invoke-interface {v6, v1}, Lfr3/b;.D:(Ljava/lang/String;)Z // method@bf43
+9f45aa: 0a01                                   |0101: move-result v1
+9f45ac: 3801 3900                              |0102: if-eqz v1, 013b // +0039
+9f45b0: 1a01 8492                              |0104: const-string v1, "cdid" // string@9284
+9f45b4: 6e20 a704 1300                         |0106: invoke-virtual {v3, v1}, Landroid/net/Uri;.getQueryParameter:(Ljava/lang/String;)Ljava/lang/String; // method@04a7
+9f45ba: 0c03                                   |0109: move-result-object v3
+9f45bc: 7110 8d05 0300                         |010a: invoke-static {v3}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f45c2: 0a03                                   |010d: move-result v3
+9f45c4: 3803 2d00                              |010e: if-eqz v3, 013b // +002d
+9f45c8: 7100 192a 0000                         |0110: invoke-static {}, Lcom/dragon/read/app/App;.context:()Landroid/app/Application; // method@2a19
+9f45ce: 0c03                                   |0113: move-result-object v3
+9f45d0: 7110 76dc 0300                         |0114: invoke-static {v3}, Ln48/a;.a:(Landroid/content/Context;)Ljava/lang/String; // method@dc76
+9f45d6: 0c03                                   |0117: move-result-object v3
+9f45d8: 7110 8d05 0300                         |0118: invoke-static {v3}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f45de: 0a06                                   |011b: move-result v6
+9f45e0: 3906 1600                              |011c: if-nez v6, 0132 // +0016
+9f45e4: 1a05 7e0b                              |011e: const-string v5, "ApiProcessHook, [postProcessUrl] append cdid to bookmall request" // string@0b7e
+9f45e8: 2322 fe63                              |0120: new-array v2, v2, [Ljava/lang/Object; // type@63fe
+9f45ec: 7120 98a1 2500                         |0122: invoke-static {v5, v2}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f45f2: 6e10 9604 0400                         |0125: invoke-virtual {v4}, Landroid/net/Uri$Builder;.build:()Landroid/net/Uri; // method@0496
+9f45f8: 0c02                                   |0128: move-result-object v2
+9f45fa: 7140 25fb 1203                         |0129: invoke-static {v2, v1, v3, v0}, Lxh5/h;.b:(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Z)Landroid/net/Uri; // method@fb25
+9f4600: 0c01                                   |012c: move-result-object v1
+9f4602: 6e10 9b04 0100                         |012d: invoke-virtual {v1}, Landroid/net/Uri;.buildUpon:()Landroid/net/Uri$Builder; // method@049b
+9f4608: 0c04                                   |0130: move-result-object v4
+9f460a: 280b                                   |0131: goto 013c // +000b
+9f460c: 2300 fe63                              |0132: new-array v0, v0, [Ljava/lang/Object; // type@63fe
+9f4610: 4d08 0002                              |0134: aput-object v8, v0, v2
+9f4614: 1a01 850b                              |0136: const-string v1, "ApiProcessHook, [postProcessUrl] cdid is empty, url = %s" // string@0b85
+9f4618: 7120 a6a1 0100                         |0138: invoke-static {v1, v0}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f461e: 0150                                   |013b: move v0, v5
+9f4620: 3800 0a00                              |013c: if-eqz v0, 0146 // +000a
+9f4624: 6e10 9604 0400                         |013e: invoke-virtual {v4}, Landroid/net/Uri$Builder;.build:()Landroid/net/Uri; // method@0496
+9f462a: 0c08                                   |0141: move-result-object v8
+9f462c: 6e10 ae04 0800                         |0142: invoke-virtual {v8}, Landroid/net/Uri;.toString:()Ljava/lang/String; // method@04ae
+9f4632: 0c08                                   |0145: move-result-object v8
+9f4634: 1108                                   |0146: return-object v8
+      catches       : (none)
+      positions     :
+        0x0000 line=17235968
+        0x0001 line=17235969
+        0x0002 line=17235970
+        0x0003 line=17235971
+        0x0004 line=17235972
+        0x0005 line=17235973
+        0x0006 line=17235974
+        0x0007 line=17235975
+        0x0008 line=17235976
+        0x0009 line=17235977
+        0x000a line=17235978
+        0x000b line=17235979
+        0x000c line=17235980
+        0x000d line=17235981
+        0x000e line=17235982
+        0x000f line=17235983
+        0x0010 line=17235984
+        0x0011 line=17235985
+        0x0012 line=17235986
+        0x0013 line=17235987
+        0x0014 line=17235988
+        0x0015 line=17235989
+        0x0016 line=17235990
+        0x0017 line=17235991
+        0x0018 line=17235992
+        0x0019 line=17235993
+        0x001a line=17235994
+        0x001b line=17235995
+        0x001c line=17235996
+        0x001d line=17235997
+        0x001e line=17235998
+        0x001f line=17235999
+        0x0020 line=17236000
+        0x0021 line=17236001
+        0x0022 line=17236002
+        0x0023 line=17236003
+        0x0024 line=17236004
+        0x0025 line=17236005
+        0x0026 line=17236006
+        0x0027 line=17236007
+        0x0028 line=17236008
+        0x0029 line=17236009
+        0x002a line=17236010
+        0x002b line=17236011
+        0x002c line=17236012
+        0x002d line=17236013
+        0x002e line=17236014
+        0x002f line=17236015
+        0x0030 line=17236016
+        0x0031 line=17236017
+        0x0032 line=17236018
+        0x0033 line=17236019
+        0x0034 line=17236020
+        0x0035 line=17236021
+        0x0036 line=17236022
+        0x0037 line=17236023
+        0x0038 line=17236024
+        0x0039 line=17236025
+        0x003a line=17236026
+        0x003b line=17236027
+        0x003c line=17236028
+        0x003d line=17236029
+        0x003e line=17236030
+        0x003f line=17236031
+        0x0040 line=17236032
+        0x0041 line=17236033
+        0x0042 line=17236034
+        0x0043 line=17236035
+        0x0044 line=17236036
+        0x0045 line=17236037
+        0x0046 line=17236038
+        0x0047 line=17236039
+        0x0048 line=17236040
+        0x0049 line=17236041
+        0x004a line=17236042
+        0x004b line=17236043
+        0x004c line=17236044
+        0x004d line=17236045
+        0x004e line=17236046
+        0x004f line=17236047
+        0x0050 line=17236048
+        0x0051 line=17236049
+        0x0052 line=17236050
+        0x0053 line=17236051
+        0x0054 line=17236052
+        0x0055 line=17236053
+        0x0056 line=17236054
+        0x0057 line=17236055
+        0x0058 line=17236056
+        0x0059 line=17236057
+        0x005a line=17236058
+        0x005b line=17236059
+        0x005c line=17236060
+        0x005d line=17236061
+        0x005e line=17236062
+        0x005f line=17236063
+        0x0060 line=17236064
+        0x0061 line=17236065
+        0x0062 line=17236066
+        0x0063 line=17236067
+        0x0064 line=17236068
+        0x0065 line=17236069
+        0x0066 line=17236070
+        0x0067 line=17236071
+        0x0068 line=17236072
+        0x0069 line=17236073
+        0x006a line=17236074
+        0x006b line=17236075
+        0x006c line=17236076
+        0x006d line=17236077
+        0x006e line=17236078
+        0x006f line=17236079
+        0x0070 line=17236080
+        0x0071 line=17236081
+        0x0072 line=17236082
+        0x0073 line=17236083
+        0x0074 line=17236084
+        0x0075 line=17236085
+        0x0076 line=17236086
+        0x0077 line=17236087
+        0x0078 line=17236088
+        0x0079 line=17236089
+        0x007a line=17236090
+        0x007b line=17236091
+        0x007c line=17236092
+        0x007d line=17236093
+        0x007e line=17236094
+        0x007f line=17236095
+        0x0080 line=17236096
+        0x0081 line=17236097
+        0x0082 line=17236098
+        0x0083 line=17236099
+        0x0084 line=17236100
+        0x0085 line=17236101
+        0x0086 line=17236102
+        0x0087 line=17236103
+        0x0088 line=17236104
+        0x0089 line=17236105
+        0x008a line=17236106
+        0x008b line=17236107
+        0x008c line=17236108
+        0x008d line=17236109
+        0x008e line=17236110
+        0x008f line=17236111
+        0x0090 line=17236112
+        0x0091 line=17236113
+        0x0092 line=17236114
+        0x0093 line=17236115
+        0x0094 line=17236116
+        0x0095 line=17236117
+        0x0096 line=17236118
+        0x0097 line=17236119
+        0x0098 line=17236120
+        0x0099 line=17236121
+        0x009a line=17236122
+        0x009b line=17236123
+        0x009c line=17236124
+        0x009d line=17236125
+        0x009e line=17236126
+        0x009f line=17236127
+        0x00a0 line=17236128
+        0x00a1 line=17236129
+        0x00a2 line=17236130
+        0x00a3 line=17236131
+        0x00a4 line=17236132
+        0x00a5 line=17236133
+        0x00a6 line=17236134
+        0x00a7 line=17236135
+        0x00a8 line=17236136
+        0x00a9 line=17236137
+        0x00aa line=17236138
+        0x00ab line=17236139
+        0x00ac line=17236140
+        0x00ad line=17236141
+        0x00ae line=17236142
+        0x00af line=17236143
+        0x00b0 line=17236144
+        0x00b1 line=17236145
+        0x00b2 line=17236146
+        0x00b3 line=17236147
+        0x00b4 line=17236148
+        0x00b5 line=17236149
+        0x00b6 line=17236150
+        0x00b7 line=17236151
+        0x00b8 line=17236152
+        0x00b9 line=17236153
+        0x00ba line=17236154
+        0x00bb line=17236155
+        0x00bc line=17236156
+        0x00bd line=17236157
+        0x00be line=17236158
+        0x00bf line=17236159
+        0x00c0 line=17236160
+        0x00c1 line=17236161
+        0x00c2 line=17236162
+        0x00c3 line=17236163
+        0x00c4 line=17236164
+        0x00c5 line=17236165
+        0x00c6 line=17236166
+        0x00c7 line=17236167
+        0x00c8 line=17236168
+        0x00c9 line=17236169
+        0x00ca line=17236170
+        0x00cb line=17236171
+        0x00cc line=17236172
+        0x00cd line=17236173
+        0x00ce line=17236174
+        0x00cf line=17236175
+        0x00d0 line=17236176
+        0x00d1 line=17236177
+        0x00d2 line=17236178
+        0x00d3 line=17236179
+        0x00d4 line=17236180
+        0x00d5 line=17236181
+        0x00d6 line=17236182
+        0x00d7 line=17236183
+        0x00d8 line=17236184
+        0x00d9 line=17236185
+        0x00da line=17236186
+        0x00db line=17236187
+        0x00dc line=17236188
+        0x00dd line=17236189
+        0x00de line=17236190
+        0x00df line=17236191
+        0x00e0 line=17236192
+        0x00e1 line=17236193
+        0x00e2 line=17236194
+        0x00e3 line=17236195
+        0x00e4 line=17236196
+        0x00e5 line=17236197
+        0x00e6 line=17236198
+        0x00e7 line=17236199
+        0x00e8 line=17236200
+        0x00e9 line=17236201
+        0x00ea line=17236202
+        0x00eb line=17236203
+        0x00ec line=17236204
+        0x00ed line=17236205
+        0x00ee line=17236206
+        0x00ef line=17236207
+        0x00f0 line=17236208
+        0x00f1 line=17236209
+        0x00f2 line=17236210
+        0x00f3 line=17236211
+        0x00f4 line=17236212
+        0x00f5 line=17236213
+        0x00f6 line=17236214
+        0x00f7 line=17236215
+        0x00f8 line=17236216
+        0x00f9 line=17236217
+        0x00fa line=17236218
+        0x00fb line=17236219
+        0x00fc line=17236220
+        0x00fd line=17236221
+        0x00fe line=17236222
+        0x00ff line=17236223
+        0x0100 line=17236224
+        0x0101 line=17236225
+        0x0102 line=17236226
+        0x0103 line=17236227
+        0x0104 line=17236228
+        0x0105 line=17236229
+        0x0106 line=17236230
+        0x0107 line=17236231
+        0x0108 line=17236232
+        0x0109 line=17236233
+        0x010a line=17236234
+        0x010b line=17236235
+        0x010c line=17236236
+        0x010d line=17236237
+        0x010e line=17236238
+        0x010f line=17236239
+        0x0110 line=17236240
+        0x0111 line=17236241
+        0x0112 line=17236242
+        0x0113 line=17236243
+        0x0114 line=17236244
+        0x0115 line=17236245
+        0x0116 line=17236246
+        0x0117 line=17236247
+        0x0118 line=17236248
+        0x0119 line=17236249
+        0x011a line=17236250
+        0x011b line=17236251
+        0x011c line=17236252
+        0x011d line=17236253
+        0x011e line=17236254
+        0x011f line=17236255
+        0x0120 line=17236256
+        0x0121 line=17236257
+        0x0122 line=17236258
+        0x0123 line=17236259
+        0x0124 line=17236260
+        0x0125 line=17236261
+        0x0126 line=17236262
+        0x0127 line=17236263
+        0x0128 line=17236264
+        0x0129 line=17236265
+        0x012a line=17236266
+        0x012b line=17236267
+        0x012c line=17236268
+        0x012d line=17236269
+        0x012e line=17236270
+        0x012f line=17236271
+        0x0130 line=17236272
+        0x0131 line=17236273
+        0x0132 line=17236274
+        0x0133 line=17236275
+        0x0134 line=17236276
+        0x0135 line=17236277
+        0x0136 line=17236278
+        0x0137 line=17236279
+        0x0138 line=17236280
+        0x0139 line=17236281
+        0x013a line=17236282
+        0x013b line=17236283
+        0x013c line=17236284
+        0x013d line=17236285
+        0x013e line=17236286
+        0x013f line=17236287
+        0x0140 line=17236288
+        0x0141 line=17236289
+        0x0142 line=17236290
+        0x0143 line=17236291
+        0x0144 line=17236292
+        0x0145 line=17236293
+        0x0146 line=17236294
+      locals        :
+        0x0000 - 0x0147 reg=8 (null) Ljava/lang/String;
+
+  Virtual methods   -
+    #0              : (in Ltd3/a;)
+      name          : 'addCommonParams'
+      type          : '(Ljava/lang/String;Z)Ljava/lang/String;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 15
+      ins           : 3
+      outs          : 6
+      insns size    : 793 16-bit code units
+9f4638:                                        |[9f4638] td3.a.addCommonParams:(Ljava/lang/String;Z)Ljava/lang/String;
+9f4648: 6200 5016                              |0000: sget-object v0, Lcom/dragon/read/app/launch/task/j0;.a:Lcom/dragon/read/app/launch/task/j0; // field@1650
+9f464c: 6e10 bfcc 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ccbf
+9f4652: 6300 5116                              |0005: sget-boolean v0, Lcom/dragon/read/app/launch/task/j0;.b:Z // field@1651
+9f4656: 1211                                   |0007: const/4 v1, #int 1 // #1
+9f4658: 1202                                   |0008: const/4 v2, #int 0 // #0
+9f465a: 3800 1000                              |0009: if-eqz v0, 0019 // +0010
+9f465e: 6200 3469                              |000b: sget-object v0, Lcom/dragon/read/component/biz/api/NsBookmallApi;.IMPL:Lcom/dragon/read/component/biz/api/NsBookmallApi; // field@6934
+9f4662: 7210 45a3 0000                         |000d: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.dataService:()Lzq3/e; // method@a345
+9f4668: 0c00                                   |0010: move-result-object v0
+9f466a: 7210 bbff 0000                         |0011: invoke-interface {v0}, Lzq3/e;.S:()Z // method@ffbb
+9f4670: 0a00                                   |0014: move-result v0
+9f4672: 3800 0400                              |0015: if-eqz v0, 0019 // +0004
+9f4676: 1210                                   |0017: const/4 v0, #int 1 // #1
+9f4678: 2802                                   |0018: goto 001a // +0002
+9f467a: 1200                                   |0019: const/4 v0, #int 0 // #0
+9f467c: 3800 1200                              |001a: if-eqz v0, 002c // +0012
+9f4680: 7110 9ecb 0d00                         |001c: invoke-static {v13}, Lja3/e;.b:(Ljava/lang/String;)Z // method@cb9e
+9f4686: 0a00                                   |001f: move-result v0
+9f4688: 3800 0c00                              |0020: if-eqz v0, 002c // +000c
+9f468c: 1a0e 8c0b                              |0022: const-string v14, "ApiProcessHook,addCommonParams ignore because is feed preload task ,url = %s" // string@0b8c
+9f4690: 2310 fe63                              |0024: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f4694: 4d0d 0002                              |0026: aput-object v13, v0, v2
+9f4698: 7120 a6a1 0e00                         |0028: invoke-static {v14, v0}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f469e: 110d                                   |002b: return-object v13
+9f46a0: 6200 3469                              |002c: sget-object v0, Lcom/dragon/read/component/biz/api/NsBookmallApi;.IMPL:Lcom/dragon/read/component/biz/api/NsBookmallApi; // field@6934
+9f46a4: 7210 47a3 0000                         |002e: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.getFirstStartLandingSeriesFeedService:()Lfr3/b; // method@a347
+9f46aa: 0c03                                   |0031: move-result-object v3
+9f46ac: 7220 48bf d300                         |0032: invoke-interface {v3, v13}, Lfr3/b;.v:(Ljava/lang/String;)Z // method@bf48
+9f46b2: 0a03                                   |0035: move-result v3
+9f46b4: 3803 1600                              |0036: if-eqz v3, 004c // +0016
+9f46b8: 1a00 7a0b                              |0038: const-string v0, "ApiProcessHook, [addCommonParams] enable new user request bookmall without did, url = %s" // string@0b7a
+9f46bc: 2311 fe63                              |003a: new-array v1, v1, [Ljava/lang/Object; // type@63fe
+9f46c0: 4d0d 0102                              |003c: aput-object v13, v1, v2
+9f46c4: 7120 98a1 1000                         |003e: invoke-static {v0, v1}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f46ca: 6200 7c06                              |0041: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@067c
+9f46ce: 7130 f1b2 ed00                         |0043: invoke-static {v13, v14, v0}, Lcom/ss/android/common/applog/NetUtil;.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String; // method@b2f1
+9f46d4: 0c0d                                   |0046: move-result-object v13
+9f46d6: 7110 37f0 0d00                         |0047: invoke-static {v13}, Ltd3/a;.c:(Ljava/lang/String;)Ljava/lang/String; // method@f037
+9f46dc: 0c0d                                   |004a: move-result-object v13
+9f46de: 110d                                   |004b: return-object v13
+9f46e0: 7210 47a3 0000                         |004c: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.getFirstStartLandingSeriesFeedService:()Lfr3/b; // method@a347
+9f46e6: 0c03                                   |004f: move-result-object v3
+9f46e8: 7220 49bf d300                         |0050: invoke-interface {v3, v13}, Lfr3/b;.y:(Ljava/lang/String;)Z // method@bf49
+9f46ee: 0a03                                   |0053: move-result v3
+9f46f0: 3803 1600                              |0054: if-eqz v3, 006a // +0016
+9f46f4: 1a00 7a0b                              |0056: const-string v0, "ApiProcessHook, [addCommonParams] enable new user request bookmall without did, url = %s" // string@0b7a
+9f46f8: 2311 fe63                              |0058: new-array v1, v1, [Ljava/lang/Object; // type@63fe
+9f46fc: 4d0d 0102                              |005a: aput-object v13, v1, v2
+9f4700: 7120 98a1 1000                         |005c: invoke-static {v0, v1}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4706: 6200 7c06                              |005f: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@067c
+9f470a: 7130 f1b2 ed00                         |0061: invoke-static {v13, v14, v0}, Lcom/ss/android/common/applog/NetUtil;.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String; // method@b2f1
+9f4710: 0c0d                                   |0064: move-result-object v13
+9f4712: 7110 37f0 0d00                         |0065: invoke-static {v13}, Ltd3/a;.c:(Ljava/lang/String;)Ljava/lang/String; // method@f037
+9f4718: 0c0d                                   |0068: move-result-object v13
+9f471a: 110d                                   |0069: return-object v13
+9f471c: 7210 47a3 0000                         |006a: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.getFirstStartLandingSeriesFeedService:()Lfr3/b; // method@a347
+9f4722: 0c00                                   |006d: move-result-object v0
+9f4724: 7220 44bf d000                         |006e: invoke-interface {v0, v13}, Lfr3/b;.c:(Ljava/lang/String;)Z // method@bf44
+9f472a: 0a00                                   |0071: move-result v0
+9f472c: 1233                                   |0072: const/4 v3, #int 3 // #3
+9f472e: 1224                                   |0073: const/4 v4, #int 2 // #2
+9f4730: 3800 af00                              |0074: if-eqz v0, 0123 // +00af
+9f4734: 1a00 7b0b                              |0076: const-string v0, "ApiProcessHook, [addCommonParams] enable wait did until ready for common ab result, url = %s" // string@0b7b
+9f4738: 2315 fe63                              |0078: new-array v5, v1, [Ljava/lang/Object; // type@63fe
+9f473c: 4d0d 0502                              |007a: aput-object v13, v5, v2
+9f4740: 7120 98a1 5000                         |007c: invoke-static {v0, v5}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4746: 55c0 6f8f                              |007f: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f474a: 3800 0900                              |0081: if-eqz v0, 008a // +0009
+9f474e: 6200 5269                              |0083: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4752: 7210 fba3 0000                         |0085: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f4758: 2900 9400                              |0088: goto/16 011c // +0094
+9f475c: 7100 32f0 0000                         |008a: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4762: 0c00                                   |008d: move-result-object v0
+9f4764: 7110 8d05 0000                         |008e: invoke-static {v0}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f476a: 0a00                                   |0091: move-result v0
+9f476c: b710                                   |0092: xor-int/2addr v0, v1
+9f476e: 5cc0 6f8f                              |0093: iput-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4772: 55c0 6f8f                              |0095: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4776: 3800 1200                              |0097: if-eqz v0, 00a9 // +0012
+9f477a: 2310 fe63                              |0099: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f477e: 4d0d 0002                              |009b: aput-object v13, v0, v2
+9f4782: 1a01 880b                              |009d: const-string v1, "ApiProcessHook, common_ab_result device_id is ready ,url = %s" // string@0b88
+9f4786: 7120 98a1 0100                         |009f: invoke-static {v1, v0}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f478c: 6200 5269                              |00a2: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4790: 7210 fba3 0000                         |00a4: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f4796: 2900 7500                              |00a7: goto/16 011c // +0075
+9f479a: 7100 0005 0000                         |00a9: invoke-static {}, Landroid/os/Looper;.getMainLooper:()Landroid/os/Looper; // method@0500
+9f47a0: 0c00                                   |00ac: move-result-object v0
+9f47a2: 7100 0205 0000                         |00ad: invoke-static {}, Landroid/os/Looper;.myLooper:()Landroid/os/Looper; // method@0502
+9f47a8: 0c05                                   |00b0: move-result-object v5
+9f47aa: 3250 6b00                              |00b1: if-eq v0, v5, 011c // +006b
+9f47ae: 2310 fe63                              |00b3: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f47b2: 4d0d 0002                              |00b5: aput-object v13, v0, v2
+9f47b6: 1a05 890b                              |00b7: const-string v5, "ApiProcessHook, common_ab_result 必须携带deviceId，后台线程最多等待120s获取DeviceId,url = %s" // string@0b89
+9f47ba: 7120 90a1 0500                         |00b9: invoke-static {v5, v0}, Lcom/dragon/read/base/util/LogWrapper;.e:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a190
+9f47c0: 1200                                   |00bc: const/4 v0, #int 0 // #0
+9f47c2: 7100 32f0 0000                         |00bd: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f47c8: 0c05                                   |00c0: move-result-object v5
+9f47ca: 7110 8d05 0500                         |00c1: invoke-static {v5}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f47d0: 0a06                                   |00c4: move-result v6
+9f47d2: 3806 1300                              |00c5: if-eqz v6, 00d8 // +0013
+9f47d6: 6306 718f                              |00c7: sget-boolean v6, Ltd3/a;.c:Z // field@8f71
+9f47da: 3906 0f00                              |00c9: if-nez v6, 00d8 // +000f
+9f47de: 1406 c0d4 0100                         |00cb: const v6, #float 1.68156e-40 // #0001d4c0
+9f47e4: 3560 0a00                              |00ce: if-ge v0, v6, 00d8 // +000a
+9f47e8: d000 c800                              |00d0: add-int/lit16 v0, v0, #int 200 // #00c8
+9f47ec: 1605 c800                              |00d2: const-wide/16 v5, #int 200 // #c8
+9f47f0: 7120 1612 6500                         |00d4: invoke-static {v5, v6}, Lcom/bytedance/apm/agent/instrumentation/ThreadMonitor;.sleepMonitor:(J)V // method@1216
+9f47f6: 28e6                                   |00d7: goto 00bd // -001a
+9f47f8: 7110 8d05 0500                         |00d8: invoke-static {v5}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f47fe: 0a06                                   |00db: move-result v6
+9f4800: 3906 0400                              |00dc: if-nez v6, 00e0 // +0004
+9f4804: 1216                                   |00de: const/4 v6, #int 1 // #1
+9f4806: 2802                                   |00df: goto 00e1 // +0002
+9f4808: 1206                                   |00e0: const/4 v6, #int 0 // #0
+9f480a: 5cc6 6f8f                              |00e1: iput-boolean v6, v12, Ltd3/a;.a:Z // field@8f6f
+9f480e: 55c6 6f8f                              |00e3: iget-boolean v6, v12, Ltd3/a;.a:Z // field@8f6f
+9f4812: 3806 1400                              |00e5: if-eqz v6, 00f9 // +0014
+9f4816: 1a06 60cc                              |00e7: const-string v6, "in ApiProcessHook common_ab_result 经过 %s 毫秒后，获得了deviceId = %s,url = %s" // string@cc60
+9f481a: 2333 fe63                              |00e9: new-array v3, v3, [Ljava/lang/Object; // type@63fe
+9f481e: 7110 95cc 0000                         |00eb: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4824: 0c00                                   |00ee: move-result-object v0
+9f4826: 4d00 0302                              |00ef: aput-object v0, v3, v2
+9f482a: 4d05 0301                              |00f1: aput-object v5, v3, v1
+9f482e: 4d0d 0304                              |00f3: aput-object v13, v3, v4
+9f4832: 7120 98a1 3600                         |00f5: invoke-static {v6, v3}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4838: 2824                                   |00f8: goto 011c // +0024
+9f483a: 6303 718f                              |00f9: sget-boolean v3, Ltd3/a;.c:Z // field@8f71
+9f483e: 3803 1200                              |00fb: if-eqz v3, 010d // +0012
+9f4842: 1a03 5fcc                              |00fd: const-string v3, "in ApiProcessHook common_ab_result 等待 %s 毫秒后因app exit 提前结束,url = %s" // string@cc5f
+9f4846: 2344 fe63                              |00ff: new-array v4, v4, [Ljava/lang/Object; // type@63fe
+9f484a: 7110 95cc 0000                         |0101: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4850: 0c00                                   |0104: move-result-object v0
+9f4852: 4d00 0402                              |0105: aput-object v0, v4, v2
+9f4856: 4d0d 0401                              |0107: aput-object v13, v4, v1
+9f485a: 7120 a6a1 4300                         |0109: invoke-static {v3, v4}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f4860: 2810                                   |010c: goto 011c // +0010
+9f4862: 1a03 5ecc                              |010d: const-string v3, "in ApiProcessHook common_ab_result 等待 %s 毫秒后仍未获得deviceId,url = %s" // string@cc5e
+9f4866: 2344 fe63                              |010f: new-array v4, v4, [Ljava/lang/Object; // type@63fe
+9f486a: 7110 95cc 0000                         |0111: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4870: 0c00                                   |0114: move-result-object v0
+9f4872: 4d00 0402                              |0115: aput-object v0, v4, v2
+9f4876: 4d0d 0401                              |0117: aput-object v13, v4, v1
+9f487a: 7120 a6a1 4300                         |0119: invoke-static {v3, v4}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f4880: 6200 7c06                              |011c: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@067c
+9f4884: 7130 f1b2 ed00                         |011e: invoke-static {v13, v14, v0}, Lcom/ss/android/common/applog/NetUtil;.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String; // method@b2f1
+9f488a: 0c0d                                   |0121: move-result-object v13
+9f488c: 110d                                   |0122: return-object v13
+9f488e: 6200 f76b                              |0123: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.a:Lcom/dragon/read/pages/shopmal/SplashAttrTrace; // field@6bf7
+9f4892: 6e10 bfcc 0000                         |0125: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ccbf
+9f4898: 380d 0d00                              |0128: if-eqz v13, 0135 // +000d
+9f489c: 6200 fb6b                              |012a: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.e:Ljava/lang/String; // field@6bfb
+9f48a0: 1205                                   |012c: const/4 v5, #int 0 // #0
+9f48a2: 7155 e5d3 0d42                         |012d: invoke-static {v13, v0, v2, v4, v5}, Lkotlin/text/StringsKt;.contains$default:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z // method@d3e5
+9f48a8: 0a00                                   |0130: move-result v0
+9f48aa: 3310 0400                              |0131: if-ne v0, v1, 0135 // +0004
+9f48ae: 1210                                   |0133: const/4 v0, #int 1 // #1
+9f48b0: 2802                                   |0134: goto 0136 // +0002
+9f48b2: 1200                                   |0135: const/4 v0, #int 0 // #0
+9f48b4: 1605 3200                              |0136: const-wide/16 v5, #int 50 // #32
+9f48b8: 1307 8813                              |0138: const/16 v7, #int 5000 // #1388
+9f48bc: 3800 2801                              |013a: if-eqz v0, 0262 // +0128
+9f48c0: 6200 fa6b                              |013c: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.d:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bfa
+9f48c4: 6208 f46b                              |013e: sget-object v8, Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State;.Start:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bf4
+9f48c8: 3280 0300                              |0140: if-eq v0, v8, 0143 // +0003
+9f48cc: 2814                                   |0142: goto 0156 // +0014
+9f48ce: 6200 f56b                              |0143: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State;.WaitDid:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bf5
+9f48d2: 6900 fa6b                              |0145: sput-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.d:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bfa
+9f48d6: 6200 f86b                              |0147: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.b:Lcom/dragon/read/apm/newquality/trace/TraceContext; // field@6bf8
+9f48da: 3800 0d00                              |0149: if-eqz v0, 0156 // +000d
+9f48de: 1a08 66cd                              |014b: const-string v8, "init_dur" // string@cd66
+9f48e2: 6e20 9e29 8000                         |014d: invoke-virtual {v0, v8}, Lcom/dragon/read/apm/newquality/trace/TraceContext;.endSpan:(Ljava/lang/String;)V // method@299e
+9f48e8: 1b08 ea0d 0100                         |0150: const-string/jumbo v8, "wait_did_dur" // string@00010dea
+9f48ee: 6e20 a729 8000                         |0153: invoke-virtual {v0, v8}, Lcom/dragon/read/apm/newquality/trace/TraceContext;.startSpan:(Ljava/lang/String;)Lcom/dragon/read/apm/newquality/trace/model/BaseSpan; // method@29a7
+9f48f4: 55c0 6f8f                              |0156: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f48f8: 3800 0900                              |0158: if-eqz v0, 0161 // +0009
+9f48fc: 6200 5269                              |015a: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4900: 7210 fba3 0000                         |015c: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f4906: 2900 d300                              |015f: goto/16 0232 // +00d3
+9f490a: 7100 32f0 0000                         |0161: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4910: 0c00                                   |0164: move-result-object v0
+9f4912: 7110 8d05 0000                         |0165: invoke-static {v0}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4918: 0a00                                   |0168: move-result v0
+9f491a: b710                                   |0169: xor-int/2addr v0, v1
+9f491c: 5cc0 6f8f                              |016a: iput-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4920: 55c0 6f8f                              |016c: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4924: 1a08 8f0b                              |016e: const-string v8, "ApiProcessHook_surl" // string@0b8f
+9f4928: 3800 1300                              |0170: if-eqz v0, 0183 // +0013
+9f492c: 2310 fe63                              |0172: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f4930: 4d0d 0002                              |0174: aput-object v13, v0, v2
+9f4934: 1b01 5003 0100                         |0176: const-string/jumbo v1, "surl, device_id is ready ,url = %s" // string@00010350
+9f493a: 7130 9aa1 1800                         |0179: invoke-static {v8, v1, v0}, Lcom/dragon/read/base/util/LogWrapper;.info:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a19a
+9f4940: 6200 5269                              |017c: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4944: 7210 fba3 0000                         |017e: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f494a: 2900 b100                              |0181: goto/16 0232 // +00b1
+9f494e: 7100 d0b2 0000                         |0183: invoke-static {}, Lcom/ss/android/common/applog/AppLog;.getAppId:()I // method@b2d0
+9f4954: 0a00                                   |0186: move-result v0
+9f4956: 3c00 0d00                              |0187: if-gtz v0, 0194 // +000d
+9f495a: 2310 fe63                              |0189: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f495e: 4d0d 0002                              |018b: aput-object v13, v0, v2
+9f4962: 1a01 8d0b                              |018d: const-string v1, "ApiProcessHook,ignore because appLog is not init ,url = %s" // string@0b8d
+9f4966: 7130 a8a1 1800                         |018f: invoke-static {v8, v1, v0}, Lcom/dragon/read/base/util/LogWrapper;.warn:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a8
+9f496c: 2900 a000                              |0192: goto/16 0232 // +00a0
+9f4970: 7100 0005 0000                         |0194: invoke-static {}, Landroid/os/Looper;.getMainLooper:()Landroid/os/Looper; // method@0500
+9f4976: 0c00                                   |0197: move-result-object v0
+9f4978: 7100 0205 0000                         |0198: invoke-static {}, Landroid/os/Looper;.myLooper:()Landroid/os/Looper; // method@0502
+9f497e: 0c09                                   |019b: move-result-object v9
+9f4980: 3290 9600                              |019c: if-eq v0, v9, 0232 // +0096
+9f4984: 2310 fe63                              |019e: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f4988: 4d0d 0002                              |01a0: aput-object v13, v0, v2
+9f498c: 1a09 900b                              |01a2: const-string v9, "ApiProcessHook_surl, 由于没有deviceId，会引起后续所有请求不正常，所以在后台等待DeviceId获取成功为止,url = %s" // string@0b90
+9f4990: 7130 93a1 9800                         |01a4: invoke-static {v8, v9, v0}, Lcom/dragon/read/base/util/LogWrapper;.error:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a193
+9f4996: 6300 fc6b                              |01a7: sget-boolean v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.f:Z // field@6bfc
+9f499a: 3800 3300                              |01a9: if-eqz v0, 01dc // +0033
+9f499e: 6200 5169                              |01ab: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgApi;.IMPL:Lcom/dragon/read/component/biz/api/NsUgApi; // field@6951
+9f49a2: 7210 eba3 0000                         |01ad: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgApi;.getUtilsService:()Lcom/dragon/read/component/biz/service/IUtilsService; // method@a3eb
+9f49a8: 0c00                                   |01b0: move-result-object v0
+9f49aa: 7210 50a7 0000                         |01b1: invoke-interface {v0}, Lcom/dragon/read/component/biz/service/IUtilsService;.surlRequestOptTimeOut:()I // method@a750
+9f49b0: 0a00                                   |01b4: move-result v0
+9f49b2: 3d00 0300                              |01b5: if-lez v0, 01b8 // +0003
+9f49b6: 0107                                   |01b7: move v7, v0
+9f49b8: 3b00 0400                              |01b8: if-gez v0, 01bc // +0004
+9f49bc: 1219                                   |01ba: const/4 v9, #int 1 // #1
+9f49be: 2802                                   |01bb: goto 01bd // +0002
+9f49c0: 1209                                   |01bc: const/4 v9, #int 0 // #0
+9f49c2: 124a                                   |01bd: const/4 v10, #int 4 // #4
+9f49c4: 23aa fe63                              |01be: new-array v10, v10, [Ljava/lang/Object; // type@63fe
+9f49c8: 7110 95cc 0000                         |01c0: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f49ce: 0c00                                   |01c3: move-result-object v0
+9f49d0: 4d00 0a02                              |01c4: aput-object v0, v10, v2
+9f49d4: 7110 95cc 0700                         |01c6: invoke-static {v7}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f49da: 0c00                                   |01c9: move-result-object v0
+9f49dc: 4d00 0a01                              |01ca: aput-object v0, v10, v1
+9f49e0: 7110 3fcc 0900                         |01cc: invoke-static {v9}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@cc3f
+9f49e6: 0c00                                   |01cf: move-result-object v0
+9f49e8: 4d00 0a04                              |01d0: aput-object v0, v10, v4
+9f49ec: 4d0d 0a03                              |01d2: aput-object v13, v10, v3
+9f49f0: 1b00 4d03 0100                         |01d4: const-string/jumbo v0, "surl configTimeoutTime = %s, timeoutTime = %s, infiniteWait = %s, url = %s" // string@0001034d
+9f49f6: 7130 9aa1 080a                         |01d7: invoke-static {v8, v0, v10}, Lcom/dragon/read/base/util/LogWrapper;.info:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a19a
+9f49fc: 1200                                   |01da: const/4 v0, #int 0 // #0
+9f49fe: 2803                                   |01db: goto 01de // +0003
+9f4a00: 1200                                   |01dc: const/4 v0, #int 0 // #0
+9f4a02: 1209                                   |01dd: const/4 v9, #int 0 // #0
+9f4a04: 7100 32f0 0000                         |01de: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4a0a: 0c0a                                   |01e1: move-result-object v10
+9f4a0c: 7110 8d05 0a00                         |01e2: invoke-static {v10}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4a12: 0a0b                                   |01e5: move-result v11
+9f4a14: 380b 1000                              |01e6: if-eqz v11, 01f6 // +0010
+9f4a18: 630b 718f                              |01e8: sget-boolean v11, Ltd3/a;.c:Z // field@8f71
+9f4a1c: 390b 0c00                              |01ea: if-nez v11, 01f6 // +000c
+9f4a20: 3470 0400                              |01ec: if-lt v0, v7, 01f0 // +0004
+9f4a24: 3809 0800                              |01ee: if-eqz v9, 01f6 // +0008
+9f4a28: d800 0032                              |01f0: add-int/lit8 v0, v0, #int 50 // #32
+9f4a2c: 7120 1612 6500                         |01f2: invoke-static {v5, v6}, Lcom/bytedance/apm/agent/instrumentation/ThreadMonitor;.sleepMonitor:(J)V // method@1216
+9f4a32: 28e9                                   |01f5: goto 01de // -0017
+9f4a34: 7100 32f0 0000                         |01f6: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4a3a: 0c05                                   |01f9: move-result-object v5
+9f4a3c: 7110 8d05 0500                         |01fa: invoke-static {v5}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4a42: 0a05                                   |01fd: move-result v5
+9f4a44: 3905 0400                              |01fe: if-nez v5, 0202 // +0004
+9f4a48: 1215                                   |0200: const/4 v5, #int 1 // #1
+9f4a4a: 2802                                   |0201: goto 0203 // +0002
+9f4a4c: 1205                                   |0202: const/4 v5, #int 0 // #0
+9f4a4e: 5cc5 6f8f                              |0203: iput-boolean v5, v12, Ltd3/a;.a:Z // field@8f6f
+9f4a52: 6305 718f                              |0205: sget-boolean v5, Ltd3/a;.c:Z // field@8f71
+9f4a56: 3805 1700                              |0207: if-eqz v5, 021e // +0017
+9f4a5a: 55c5 6f8f                              |0209: iget-boolean v5, v12, Ltd3/a;.a:Z // field@8f6f
+9f4a5e: 3905 1300                              |020b: if-nez v5, 021e // +0013
+9f4a62: 1b03 4e03 0100                         |020d: const-string/jumbo v3, "surl in ApiProcessHook 等待 %s 毫秒后因app exit 提前结束,url = %s" // string@0001034e
+9f4a68: 2344 fe63                              |0210: new-array v4, v4, [Ljava/lang/Object; // type@63fe
+9f4a6c: 7110 95cc 0000                         |0212: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4a72: 0c00                                   |0215: move-result-object v0
+9f4a74: 4d00 0402                              |0216: aput-object v0, v4, v2
+9f4a78: 4d0d 0401                              |0218: aput-object v13, v4, v1
+9f4a7c: 7130 a8a1 3804                         |021a: invoke-static {v8, v3, v4}, Lcom/dragon/read/base/util/LogWrapper;.warn:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a8
+9f4a82: 2815                                   |021d: goto 0232 // +0015
+9f4a84: 1b05 4f03 0100                         |021e: const-string/jumbo v5, "surl in ApiProcessHook 经过 %s 毫秒后，获得了deviceId = %s,url = %s" // string@0001034f
+9f4a8a: 2333 fe63                              |0221: new-array v3, v3, [Ljava/lang/Object; // type@63fe
+9f4a8e: 7110 95cc 0000                         |0223: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4a94: 0c00                                   |0226: move-result-object v0
+9f4a96: 4d00 0302                              |0227: aput-object v0, v3, v2
+9f4a9a: 4d0a 0301                              |0229: aput-object v10, v3, v1
+9f4a9e: 4d0d 0304                              |022b: aput-object v13, v3, v4
+9f4aa2: 7130 9aa1 5803                         |022d: invoke-static {v8, v5, v3}, Lcom/dragon/read/base/util/LogWrapper;.info:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V // method@a19a
+9f4aa8: 2802                                   |0230: goto 0232 // +0002
+9f4aaa: 0000                                   |0231: nop // spacer
+9f4aac: 6200 f76b                              |0232: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.a:Lcom/dragon/read/pages/shopmal/SplashAttrTrace; // field@6bf7
+9f4ab0: 6e10 bfcc 0000                         |0234: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ccbf
+9f4ab6: 6200 fa6b                              |0237: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.d:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bfa
+9f4aba: 6201 f56b                              |0239: sget-object v1, Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State;.WaitDid:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bf5
+9f4abe: 3210 0300                              |023b: if-eq v0, v1, 023e // +0003
+9f4ac2: 281e                                   |023d: goto 025b // +001e
+9f4ac4: 6200 f66b                              |023e: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State;.WaitServer:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bf6
+9f4ac8: 6900 fa6b                              |0240: sput-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.d:Lcom/dragon/read/pages/shopmal/SplashAttrTrace$State; // field@6bfa
+9f4acc: 6200 f86b                              |0242: sget-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.b:Lcom/dragon/read/apm/newquality/trace/TraceContext; // field@6bf8
+9f4ad0: 3800 1700                              |0244: if-eqz v0, 025b // +0017
+9f4ad4: 1b01 ea0d 0100                         |0246: const-string/jumbo v1, "wait_did_dur" // string@00010dea
+9f4ada: 6e20 9e29 1000                         |0249: invoke-virtual {v0, v1}, Lcom/dragon/read/apm/newquality/trace/TraceContext;.endSpan:(Ljava/lang/String;)V // method@299e
+9f4ae0: 6202 f86b                              |024c: sget-object v2, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.b:Lcom/dragon/read/apm/newquality/trace/TraceContext; // field@6bf8
+9f4ae4: 6203 fb6b                              |024e: sget-object v3, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.e:Ljava/lang/String; // field@6bfb
+9f4ae8: 1204                                   |0250: const/4 v4, #int 0 // #0
+9f4aea: 1205                                   |0251: const/4 v5, #int 0 // #0
+9f4aec: 1306 0800                              |0252: const/16 v6, #int 8 // #8
+9f4af0: 1207                                   |0254: const/4 v7, #int 0 // #0
+9f4af2: 7706 8f29 0200                         |0255: invoke-static/range {v2, v3, v4, v5, v6, v7}, Lcom/dragon/read/apm/newquality/trace/QualityTracer;.startNetSpan$default:(Lcom/dragon/read/apm/newquality/trace/TraceContext;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lcom/dragon/read/apm/newquality/trace/model/BaseSpan; // method@298f
+9f4af8: 0c00                                   |0258: move-result-object v0
+9f4afa: 6900 f96b                              |0259: sput-object v0, Lcom/dragon/read/pages/shopmal/SplashAttrTrace;.c:Lcom/dragon/read/apm/newquality/trace/model/BaseSpan; // field@6bf9
+9f4afe: 6200 5269                              |025b: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4b02: 7210 fca3 0000                         |025d: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordSurlRequest:()V // method@a3fc
+9f4b08: 2900 af00                              |0260: goto/16 030f // +00af
+9f4b0c: 1d0c                                   |0262: monitor-enter v12
+9f4b0e: 55c0 6f8f                              |0263: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4b12: 3800 0a00                              |0265: if-eqz v0, 026f // +000a
+9f4b16: 6200 5269                              |0267: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4b1a: 7210 fba3 0000                         |0269: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f4b20: 1e0c                                   |026c: monitor-exit v12
+9f4b22: 2900 a200                              |026d: goto/16 030f // +00a2
+9f4b26: 7100 32f0 0000                         |026f: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4b2c: 0c00                                   |0272: move-result-object v0
+9f4b2e: 7110 8d05 0000                         |0273: invoke-static {v0}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4b34: 0a00                                   |0276: move-result v0
+9f4b36: 3900 0400                              |0277: if-nez v0, 027b // +0004
+9f4b3a: 1210                                   |0279: const/4 v0, #int 1 // #1
+9f4b3c: 2802                                   |027a: goto 027c // +0002
+9f4b3e: 1200                                   |027b: const/4 v0, #int 0 // #0
+9f4b40: 5cc0 6f8f                              |027c: iput-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4b44: 55c0 6f8f                              |027e: iget-boolean v0, v12, Ltd3/a;.a:Z // field@8f6f
+9f4b48: 3800 1300                              |0280: if-eqz v0, 0293 // +0013
+9f4b4c: 1a00 8a0b                              |0282: const-string v0, "ApiProcessHook, device_id is ready ,url = %s" // string@0b8a
+9f4b50: 2311 fe63                              |0284: new-array v1, v1, [Ljava/lang/Object; // type@63fe
+9f4b54: 4d0d 0102                              |0286: aput-object v13, v1, v2
+9f4b58: 7120 98a1 1000                         |0288: invoke-static {v0, v1}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4b5e: 6200 5269                              |028b: sget-object v0, Lcom/dragon/read/component/biz/api/NsUgDepend;.IMPL:Lcom/dragon/read/component/biz/api/NsUgDepend; // field@6952
+9f4b62: 7210 fba3 0000                         |028d: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsUgDepend;.recordDeviceIdFetch:()V // method@a3fb
+9f4b68: 1e0c                                   |0290: monitor-exit v12
+9f4b6a: 2900 7e00                              |0291: goto/16 030f // +007e
+9f4b6e: 7100 d0b2 0000                         |0293: invoke-static {}, Lcom/ss/android/common/applog/AppLog;.getAppId:()I // method@b2d0
+9f4b74: 0a00                                   |0296: move-result v0
+9f4b76: 3c00 0d00                              |0297: if-gtz v0, 02a4 // +000d
+9f4b7a: 1a00 8d0b                              |0299: const-string v0, "ApiProcessHook,ignore because appLog is not init ,url = %s" // string@0b8d
+9f4b7e: 2311 fe63                              |029b: new-array v1, v1, [Ljava/lang/Object; // type@63fe
+9f4b82: 4d0d 0102                              |029d: aput-object v13, v1, v2
+9f4b86: 7120 a6a1 1000                         |029f: invoke-static {v0, v1}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f4b8c: 1e0c                                   |02a2: monitor-exit v12
+9f4b8e: 286c                                   |02a3: goto 030f // +006c
+9f4b90: 7100 0005 0000                         |02a4: invoke-static {}, Landroid/os/Looper;.getMainLooper:()Landroid/os/Looper; // method@0500
+9f4b96: 0c00                                   |02a7: move-result-object v0
+9f4b98: 7100 0205 0000                         |02a8: invoke-static {}, Landroid/os/Looper;.myLooper:()Landroid/os/Looper; // method@0502
+9f4b9e: 0c08                                   |02ab: move-result-object v8
+9f4ba0: 3280 6200                              |02ac: if-eq v0, v8, 030e // +0062
+9f4ba4: 1c00 265d                              |02ae: const-class v0, Ltd3/a; // type@5d26
+9f4ba8: 1d00                                   |02b0: monitor-enter v0
+9f4baa: 1a08 8b0b                              |02b1: const-string v8, "ApiProcessHook, 由于没有deviceId，会引起后续所有请求不正常，所以在后台等待DeviceId获取成功为止,url = %s" // string@0b8b
+9f4bae: 2319 fe63                              |02b3: new-array v9, v1, [Ljava/lang/Object; // type@63fe
+9f4bb2: 4d0d 0902                              |02b5: aput-object v13, v9, v2
+9f4bb6: 7120 90a1 9800                         |02b7: invoke-static {v8, v9}, Lcom/dragon/read/base/util/LogWrapper;.e:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a190
+9f4bbc: 1208                                   |02ba: const/4 v8, #int 0 // #0
+9f4bbe: 7100 32f0 0000                         |02bb: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4bc4: 0c09                                   |02be: move-result-object v9
+9f4bc6: 7110 8d05 0900                         |02bf: invoke-static {v9}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4bcc: 0a0a                                   |02c2: move-result v10
+9f4bce: 380a 0e00                              |02c3: if-eqz v10, 02d1 // +000e
+9f4bd2: 630a 718f                              |02c5: sget-boolean v10, Ltd3/a;.c:Z // field@8f71
+9f4bd6: 390a 0a00                              |02c7: if-nez v10, 02d1 // +000a
+9f4bda: 3578 0800                              |02c9: if-ge v8, v7, 02d1 // +0008
+9f4bde: d808 0832                              |02cb: add-int/lit8 v8, v8, #int 50 // #32
+9f4be2: 7120 1612 6500                         |02cd: invoke-static {v5, v6}, Lcom/bytedance/apm/agent/instrumentation/ThreadMonitor;.sleepMonitor:(J)V // method@1216
+9f4be8: 28eb                                   |02d0: goto 02bb // -0015
+9f4bea: 7100 32f0 0000                         |02d1: invoke-static {}, Ltd3/a;.a:()Ljava/lang/String; // method@f032
+9f4bf0: 0c05                                   |02d4: move-result-object v5
+9f4bf2: 7110 8d05 0500                         |02d5: invoke-static {v5}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@058d
+9f4bf8: 0a05                                   |02d8: move-result v5
+9f4bfa: 3905 0400                              |02d9: if-nez v5, 02dd // +0004
+9f4bfe: 1215                                   |02db: const/4 v5, #int 1 // #1
+9f4c00: 2802                                   |02dc: goto 02de // +0002
+9f4c02: 1205                                   |02dd: const/4 v5, #int 0 // #0
+9f4c04: 5cc5 6f8f                              |02de: iput-boolean v5, v12, Ltd3/a;.a:Z // field@8f6f
+9f4c08: 6305 718f                              |02e0: sget-boolean v5, Ltd3/a;.c:Z // field@8f71
+9f4c0c: 3805 1600                              |02e2: if-eqz v5, 02f8 // +0016
+9f4c10: 55c5 6f8f                              |02e4: iget-boolean v5, v12, Ltd3/a;.a:Z // field@8f6f
+9f4c14: 3905 1200                              |02e6: if-nez v5, 02f8 // +0012
+9f4c18: 1a03 61cc                              |02e8: const-string v3, "in ApiProcessHook 等待 %s 毫秒后因app exit 提前结束,url = %s" // string@cc61
+9f4c1c: 2344 fe63                              |02ea: new-array v4, v4, [Ljava/lang/Object; // type@63fe
+9f4c20: 7110 95cc 0800                         |02ec: invoke-static {v8}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4c26: 0c05                                   |02ef: move-result-object v5
+9f4c28: 4d05 0402                              |02f0: aput-object v5, v4, v2
+9f4c2c: 4d0d 0401                              |02f2: aput-object v13, v4, v1
+9f4c30: 7120 a6a1 4300                         |02f4: invoke-static {v3, v4}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f4c36: 2812                                   |02f7: goto 0309 // +0012
+9f4c38: 1a05 62cc                              |02f8: const-string v5, "in ApiProcessHook 经过 %s 毫秒后，获得了deviceId = %s,url = %s" // string@cc62
+9f4c3c: 2333 fe63                              |02fa: new-array v3, v3, [Ljava/lang/Object; // type@63fe
+9f4c40: 7110 95cc 0800                         |02fc: invoke-static {v8}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cc95
+9f4c46: 0c06                                   |02ff: move-result-object v6
+9f4c48: 4d06 0302                              |0300: aput-object v6, v3, v2
+9f4c4c: 4d09 0301                              |0302: aput-object v9, v3, v1
+9f4c50: 4d0d 0304                              |0304: aput-object v13, v3, v4
+9f4c54: 7120 98a1 3500                         |0306: invoke-static {v5, v3}, Lcom/dragon/read/base/util/LogWrapper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a198
+9f4c5a: 1e00                                   |0309: monitor-exit v0
+9f4c5c: 2804                                   |030a: goto 030e // +0004
+9f4c5e: 0d0d                                   |030b: move-exception v13
+9f4c60: 1e00                                   |030c: monitor-exit v0
+9f4c62: 270d                                   |030d: throw v13
+9f4c64: 1e0c                                   |030e: monitor-exit v12
+9f4c66: 6200 7c06                              |030f: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@067c
+9f4c6a: 7130 f1b2 ed00                         |0311: invoke-static {v13, v14, v0}, Lcom/ss/android/common/applog/NetUtil;.addCommonParamsWithLevel:(Ljava/lang/String;ZLcom/bytedance/bdinstall/Level;)Ljava/lang/String; // method@b2f1
+9f4c70: 0c0d                                   |0314: move-result-object v13
+9f4c72: 110d                                   |0315: return-object v13
+9f4c74: 0d0d                                   |0316: move-exception v13
+9f4c76: 1e0c                                   |0317: monitor-exit v12
+9f4c78: 270d                                   |0318: throw v13
+      catches       : 10
+        0x00bd - 0x011c
+          Ljava/lang/Exception; -> 0x011c
+        0x01de - 0x0230
+          Ljava/lang/Exception; -> 0x0231
+        0x0263 - 0x026c
+          <any> -> 0x0316
+        0x026f - 0x0290
+          <any> -> 0x0316
+        0x0293 - 0x02a2
+          <any> -> 0x0316
+        0x02a4 - 0x02b1
+          <any> -> 0x0316
+        0x02b1 - 0x02ba
+          <any> -> 0x030b
+        0x02bb - 0x0309
+          Ljava/lang/Exception; -> 0x0309
+          <any> -> 0x030b
+        0x0309 - 0x030d
+          <any> -> 0x030b
+        0x030d - 0x030e
+          <any> -> 0x0316
+      positions     :
+        0x0000 line=34078720
+        0x0001 line=34078721
+        0x0002 line=34078722
+        0x0003 line=34078723
+        0x0004 line=34078724
+        0x0005 line=34078725
+        0x0006 line=34078726
+        0x0007 line=34078727
+        0x0008 line=34078728
+        0x0009 line=34078729
+        0x000a line=34078730
+        0x000b line=34078731
+        0x000c line=34078732
+        0x000d line=34078733
+        0x000e line=34078734
+        0x000f line=34078735
+        0x0010 line=34078736
+        0x0011 line=34078737
+        0x0012 line=34078738
+        0x0013 line=34078739
+        0x0014 line=34078740
+        0x0015 line=34078741
+        0x0016 line=34078742
+        0x0017 line=34078743
+        0x0018 line=34078744
+        0x0019 line=34078745
+        0x001a line=34078746
+        0x001b line=34078747
+        0x001c line=34078748
+        0x001d line=34078749
+        0x001e line=34078750
+        0x001f line=34078751
+        0x0020 line=34078752
+        0x0021 line=34078753
+        0x0022 line=34078754
+        0x0023 line=34078755
+        0x0024 line=34078756
+        0x0025 line=34078757
+        0x0026 line=34078758
+        0x0027 line=34078759
+        0x0028 line=34078760
+        0x0029 line=34078761
+        0x002a line=34078762
+        0x002b line=34078763
+        0x002c line=34078764
+        0x002d line=34078765
+        0x002e line=34078766
+        0x002f line=34078767
+        0x0030 line=34078768
+        0x0031 line=34078769
+        0x0032 line=34078770
+        0x0033 line=34078771
+        0x0034 line=34078772
+        0x0035 line=34078773
+        0x0036 line=34078774
+        0x0037 line=34078775
+        0x0038 line=34078776
+        0x0039 line=34078777
+        0x003a line=34078778
+        0x003b line=34078779
+        0x003c line=34078780
+        0x003d line=34078781
+        0x003e line=34078782
+        0x003f line=34078783
+        0x0040 line=34078784
+        0x0041 line=34078785
+        0x0042 line=34078786
+        0x0043 line=34078787
+        0x0044 line=34078788
+        0x0045 line=34078789
+        0x0046 line=34078790
+        0x0047 line=34078791
+        0x0048 line=34078792
+        0x0049 line=34078793
+        0x004a line=34078794
+        0x004b line=34078795
+        0x004c line=34078796
+        0x004d line=34078797
+        0x004e line=34078798
+        0x004f line=34078799
+        0x0050 line=34078800
+        0x0051 line=34078801
+        0x0052 line=34078802
+        0x0053 line=34078803
+        0x0054 line=34078804
+        0x0055 line=34078805
+        0x0056 line=34078806
+        0x0057 line=34078807
+        0x0058 line=34078808
+        0x0059 line=34078809
+        0x005a line=34078810
+        0x005b line=34078811
+        0x005c line=34078812
+        0x005d line=34078813
+        0x005e line=34078814
+        0x005f line=34078815
+        0x0060 line=34078816
+        0x0061 line=34078817
+        0x0062 line=34078818
+        0x0063 line=34078819
+        0x0064 line=34078820
+        0x0065 line=34078821
+        0x0066 line=34078822
+        0x0067 line=34078823
+        0x0068 line=34078824
+        0x0069 line=34078825
+        0x006a line=34078826
+        0x006b line=34078827
+        0x006c line=34078828
+        0x006d line=34078829
+        0x006e line=34078830
+        0x006f line=34078831
+        0x0070 line=34078832
+        0x0071 line=34078833
+        0x0072 line=34078834
+        0x0073 line=34078835
+        0x0074 line=34078836
+        0x0075 line=34078837
+        0x0076 line=34078838
+        0x0077 line=34078839
+        0x0078 line=34078840
+        0x0079 line=34078841
+        0x007a line=34078842
+        0x007b line=34078843
+        0x007c line=34078844
+        0x007d line=34078845
+        0x007e line=34078846
+        0x007f line=34078847
+        0x0080 line=34078848
+        0x0081 line=34078849
+        0x0082 line=34078850
+        0x0083 line=34078851
+        0x0084 line=34078852
+        0x0085 line=34078853
+        0x0086 line=34078854
+        0x0087 line=34078855
+        0x0088 line=34078856
+        0x0089 line=34078857
+        0x008a line=34078858
+        0x008b line=34078859
+        0x008c line=34078860
+        0x008d line=34078861
+        0x008e line=34078862
+        0x008f line=34078863
+        0x0090 line=34078864
+        0x0091 line=34078865
+        0x0092 line=34078866
+        0x0093 line=34078867
+        0x0094 line=34078868
+        0x0095 line=34078869
+        0x0096 line=34078870
+        0x0097 line=34078871
+        0x0098 line=34078872
+        0x0099 line=34078873
+        0x009a line=34078874
+        0x009b line=34078875
+        0x009c line=34078876
+        0x009d line=34078877
+        0x009e line=34078878
+        0x009f line=34078879
+        0x00a0 line=34078880
+        0x00a1 line=34078881
+        0x00a2 line=34078882
+        0x00a3 line=34078883
+        0x00a4 line=34078884
+        0x00a5 line=34078885
+        0x00a6 line=34078886
+        0x00a7 line=34078887
+        0x00a8 line=34078888
+        0x00a9 line=34078889
+        0x00aa line=34078890
+        0x00ab line=34078891
+        0x00ac line=34078892
+        0x00ad line=34078893
+        0x00ae line=34078894
+        0x00af line=34078895
+        0x00b0 line=34078896
+        0x00b1 line=34078897
+        0x00b2 line=34078898
+        0x00b3 line=34078899
+        0x00b4 line=34078900
+        0x00b5 line=34078901
+        0x00b6 line=34078902
+        0x00b7 line=34078903
+        0x00b8 line=34078904
+        0x00b9 line=34078905
+        0x00ba line=34078906
+        0x00bb line=34078907
+        0x00bc line=34078908
+        0x00bd line=34078909
+        0x00be line=34078910
+        0x00bf line=34078911
+        0x00c0 line=34078912
+        0x00c1 line=34078913
+        0x00c2 line=34078914
+        0x00c3 line=34078915
+        0x00c4 line=34078916
+        0x00c5 line=34078917
+        0x00c6 line=34078918
+        0x00c7 line=34078919
+        0x00c8 line=34078920
+        0x00c9 line=34078921
+        0x00ca line=34078922
+        0x00cb line=34078923
+        0x00cc line=34078924
+        0x00cd line=34078925
+        0x00ce line=34078926
+        0x00cf line=34078927
+        0x00d0 line=34078928
+        0x00d1 line=34078929
+        0x00d2 line=34078930
+        0x00d3 line=34078931
+        0x00d4 line=34078932
+        0x00d5 line=34078933
+        0x00d6 line=34078934
+        0x00d7 line=34078935
+        0x00d8 line=34078936
+        0x00d9 line=34078937
+        0x00da line=34078938
+        0x00db line=34078939
+        0x00dc line=34078940
+        0x00dd line=34078941
+        0x00de line=34078942
+        0x00df line=34078943
+        0x00e0 line=34078944
+        0x00e1 line=34078945
+        0x00e2 line=34078946
+        0x00e3 line=34078947
+        0x00e4 line=34078948
+        0x00e5 line=34078949
+        0x00e6 line=34078950
+        0x00e7 line=34078951
+        0x00e8 line=34078952
+        0x00e9 line=34078953
+        0x00ea line=34078954
+        0x00eb line=34078955
+        0x00ec line=34078956
+        0x00ed line=34078957
+        0x00ee line=34078958
+        0x00ef line=34078959
+        0x00f0 line=34078960
+        0x00f1 line=34078961
+        0x00f2 line=34078962
+        0x00f3 line=34078963
+        0x00f4 line=34078964
+        0x00f5 line=34078965
+        0x00f6 line=34078966
+        0x00f7 line=34078967
+        0x00f8 line=34078968
+        0x00f9 line=34078969
+        0x00fa line=34078970
+        0x00fb line=34078971
+        0x00fc line=34078972
+        0x00fd line=34078973
+        0x00fe line=34078974
+        0x00ff line=34078975
+        0x0100 line=34078976
+        0x0101 line=34078977
+        0x0102 line=34078978
+        0x0103 line=34078979
+        0x0104 line=34078980
+        0x0105 line=34078981
+        0x0106 line=34078982
+        0x0107 line=34078983
+        0x0108 line=34078984
+        0x0109 line=34078985
+        0x010a line=34078986
+        0x010b line=34078987
+        0x010c line=34078988
+        0x010d line=34078989
+        0x010e line=34078990
+        0x010f line=34078991
+        0x0110 line=34078992
+        0x0111 line=34078993
+        0x0112 line=34078994
+        0x0113 line=34078995
+        0x0114 line=34078996
+        0x0115 line=34078997
+        0x0116 line=34078998
+        0x0117 line=34078999
+        0x0118 line=34079000
+        0x0119 line=34079001
+        0x011a line=34079002
+        0x011b line=34079003
+        0x011c line=34079004
+        0x011d line=34079005
+        0x011e line=34079006
+        0x011f line=34079007
+        0x0120 line=34079008
+        0x0121 line=34079009
+        0x0122 line=34079010
+        0x0123 line=34079011
+        0x0124 line=34079012
+        0x0125 line=34079013
+        0x0126 line=34079014
+        0x0127 line=34079015
+        0x0128 line=34079016
+        0x0129 line=34079017
+        0x012a line=34079018
+        0x012b line=34079019
+        0x012c line=34079020
+        0x012d line=34079021
+        0x012e line=34079022
+        0x012f line=34079023
+        0x0130 line=34079024
+        0x0131 line=34079025
+        0x0132 line=34079026
+        0x0133 line=34079027
+        0x0134 line=34079028
+        0x0135 line=34079029
+        0x0136 line=34079030
+        0x0137 line=34079031
+        0x0138 line=34079032
+        0x0139 line=34079033
+        0x013a line=34079034
+        0x013b line=34079035
+        0x013c line=34079036
+        0x013d line=34079037
+        0x013e line=34079038
+        0x013f line=34079039
+        0x0140 line=34079040
+        0x0141 line=34079041
+        0x0142 line=34079042
+        0x0143 line=34079043
+        0x0144 line=34079044
+        0x0145 line=34079045
+        0x0146 line=34079046
+        0x0147 line=34079047
+        0x0148 line=34079048
+        0x0149 line=34079049
+        0x014a line=34079050
+        0x014b line=34079051
+        0x014c line=34079052
+        0x014d line=34079053
+        0x014e line=34079054
+        0x014f line=34079055
+        0x0150 line=34079056
+        0x0151 line=34079057
+        0x0152 line=34079058
+        0x0153 line=34079059
+        0x0154 line=34079060
+        0x0155 line=34079061
+        0x0156 line=34079062
+        0x0157 line=34079063
+        0x0158 line=34079064
+        0x0159 line=34079065
+        0x015a line=34079066
+        0x015b line=34079067
+        0x015c line=34079068
+        0x015d line=34079069
+        0x015e line=34079070
+        0x015f line=34079071
+        0x0160 line=34079072
+        0x0161 line=34079073
+        0x0162 line=34079074
+        0x0163 line=34079075
+        0x0164 line=34079076
+        0x0165 line=34079077
+        0x0166 line=34079078
+        0x0167 line=34079079
+        0x0168 line=34079080
+        0x0169 line=34079081
+        0x016a line=34079082
+        0x016b line=34079083
+        0x016c line=34079084
+        0x016d line=34079085
+        0x016e line=34079086
+        0x016f line=34079087
+        0x0170 line=34079088
+        0x0171 line=34079089
+        0x0172 line=34079090
+        0x0173 line=34079091
+        0x0174 line=34079092
+        0x0175 line=34079093
+        0x0176 line=34079094
+        0x0177 line=34079095
+        0x0178 line=34079096
+        0x0179 line=34079097
+        0x017a line=34079098
+        0x017b line=34079099
+        0x017c line=34079100
+        0x017d line=34079101
+        0x017e line=34079102
+        0x017f line=34079103
+        0x0180 line=34079104
+        0x0181 line=34079105
+        0x0182 line=34079106
+        0x0183 line=34079107
+        0x0184 line=34079108
+        0x0185 line=34079109
+        0x0186 line=34079110
+        0x0187 line=34079111
+        0x0188 line=34079112
+        0x0189 line=34079113
+        0x018a line=34079114
+        0x018b line=34079115
+        0x018c line=34079116
+        0x018d line=34079117
+        0x018e line=34079118
+        0x018f line=34079119
+        0x0190 line=34079120
+        0x0191 line=34079121
+        0x0192 line=34079122
+        0x0193 line=34079123
+        0x0194 line=34079124
+        0x0195 line=34079125
+        0x0196 line=34079126
+        0x0197 line=34079127
+        0x0198 line=34079128
+        0x0199 line=34079129
+        0x019a line=34079130
+        0x019b line=34079131
+        0x019c line=34079132
+        0x019d line=34079133
+        0x019e line=34079134
+        0x019f line=34079135
+        0x01a0 line=34079136
+        0x01a1 line=34079137
+        0x01a2 line=34079138
+        0x01a3 line=34079139
+        0x01a4 line=34079140
+        0x01a5 line=34079141
+        0x01a6 line=34079142
+        0x01a7 line=34079143
+        0x01a8 line=34079144
+        0x01a9 line=34079145
+        0x01aa line=34079146
+        0x01ab line=34079147
+        0x01ac line=34079148
+        0x01ad line=34079149
+        0x01ae line=34079150
+        0x01af line=34079151
+        0x01b0 line=34079152
+        0x01b1 line=34079153
+        0x01b2 line=34079154
+        0x01b3 line=34079155
+        0x01b4 line=34079156
+        0x01b5 line=34079157
+        0x01b6 line=34079158
+        0x01b7 line=34079159
+        0x01b8 line=34079160
+        0x01b9 line=34079161
+        0x01ba line=34079162
+        0x01bb line=34079163
+        0x01bc line=34079164
+        0x01bd line=34079165
+        0x01be line=34079166
+        0x01bf line=34079167
+        0x01c0 line=34079168
+        0x01c1 line=34079169
+        0x01c2 line=34079170
+        0x01c3 line=34079171
+        0x01c4 line=34079172
+        0x01c5 line=34079173
+        0x01c6 line=34079174
+        0x01c7 line=34079175
+        0x01c8 line=34079176
+        0x01c9 line=34079177
+        0x01ca line=34079178
+        0x01cb line=34079179
+        0x01cc line=34079180
+        0x01cd line=34079181
+        0x01ce line=34079182
+        0x01cf line=34079183
+        0x01d0 line=34079184
+        0x01d1 line=34079185
+        0x01d2 line=34079186
+        0x01d3 line=34079187
+        0x01d4 line=34079188
+        0x01d5 line=34079189
+        0x01d6 line=34079190
+        0x01d7 line=34079191
+        0x01d8 line=34079192
+        0x01d9 line=34079193
+        0x01da line=34079194
+        0x01db line=34079195
+        0x01dc line=34079196
+        0x01dd line=34079197
+        0x01de line=34079198
+        0x01df line=34079199
+        0x01e0 line=34079200
+        0x01e1 line=34079201
+        0x01e2 line=34079202
+        0x01e3 line=34079203
+        0x01e4 line=34079204
+        0x01e5 line=34079205
+        0x01e6 line=34079206
+        0x01e7 line=34079207
+        0x01e8 line=34079208
+        0x01e9 line=34079209
+        0x01ea line=34079210
+        0x01eb line=34079211
+        0x01ec line=34079212
+        0x01ed line=34079213
+        0x01ee line=34079214
+        0x01ef line=34079215
+        0x01f0 line=34079216
+        0x01f1 line=34079217
+        0x01f2 line=34079218
+        0x01f3 line=34079219
+        0x01f4 line=34079220
+        0x01f5 line=34079221
+        0x01f6 line=34079222
+        0x01f7 line=34079223
+        0x01f8 line=34079224
+        0x01f9 line=34079225
+        0x01fa line=34079226
+        0x01fb line=34079227
+        0x01fc line=34079228
+        0x01fd line=34079229
+        0x01fe line=34079230
+        0x01ff line=34079231
+        0x0200 line=34079232
+        0x0201 line=34079233
+        0x0202 line=34079234
+        0x0203 line=34079235
+        0x0204 line=34079236
+        0x0205 line=34079237
+        0x0206 line=34079238
+        0x0207 line=34079239
+        0x0208 line=34079240
+        0x0209 line=34079241
+        0x020a line=34079242
+        0x020b line=34079243
+        0x020c line=34079244
+        0x020d line=34079245
+        0x020e line=34079246
+        0x020f line=34079247
+        0x0210 line=34079248
+        0x0211 line=34079249
+        0x0212 line=34079250
+        0x0213 line=34079251
+        0x0214 line=34079252
+        0x0215 line=34079253
+        0x0216 line=34079254
+        0x0217 line=34079255
+        0x0218 line=34079256
+        0x0219 line=34079257
+        0x021a line=34079258
+        0x021b line=34079259
+        0x021c line=34079260
+        0x021d line=34079261
+        0x021e line=34079262
+        0x021f line=34079263
+        0x0220 line=34079264
+        0x0221 line=34079265
+        0x0222 line=34079266
+        0x0223 line=34079267
+        0x0224 line=34079268
+        0x0225 line=34079269
+        0x0226 line=34079270
+        0x0227 line=34079271
+        0x0228 line=34079272
+        0x0229 line=34079273
+        0x022a line=34079274
+        0x022b line=34079275
+        0x022c line=34079276
+        0x022d line=34079277
+        0x022e line=34079278
+        0x022f line=34079279
+        0x0230 line=34079280
+        0x0231 line=34079281
+        0x0232 line=34079282
+        0x0233 line=34079283
+        0x0234 line=34079284
+        0x0235 line=34079285
+        0x0236 line=34079286
+        0x0237 line=34079287
+        0x0238 line=34079288
+        0x0239 line=34079289
+        0x023a line=34079290
+        0x023b line=34079291
+        0x023c line=34079292
+        0x023d line=34079293
+        0x023e line=34079294
+        0x023f line=34079295
+        0x0240 line=34079296
+        0x0241 line=34079297
+        0x0242 line=34079298
+        0x0243 line=34079299
+        0x0244 line=34079300
+        0x0245 line=34079301
+        0x0246 line=34079302
+        0x0247 line=34079303
+        0x0248 line=34079304
+        0x0249 line=34079305
+        0x024a line=34079306
+        0x024b line=34079307
+        0x024c line=34079308
+        0x024d line=34079309
+        0x024e line=34079310
+        0x024f line=34079311
+        0x0250 line=34079312
+        0x0251 line=34079313
+        0x0252 line=34079314
+        0x0253 line=34079315
+        0x0254 line=34079316
+        0x0255 line=34079317
+        0x0256 line=34079318
+        0x0257 line=34079319
+        0x0258 line=34079320
+        0x0259 line=34079321
+        0x025a line=34079322
+        0x025b line=34079323
+        0x025c line=34079324
+        0x025d line=34079325
+        0x025e line=34079326
+        0x025f line=34079327
+        0x0260 line=34079328
+        0x0261 line=34079329
+        0x0262 line=34079330
+        0x0263 line=34079331
+        0x0264 line=34079332
+        0x0265 line=34079333
+        0x0266 line=34079334
+        0x0267 line=34079335
+        0x0268 line=34079336
+        0x0269 line=34079337
+        0x026a line=34079338
+        0x026b line=34079339
+        0x026c line=34079340
+        0x026d line=34079341
+        0x026e line=34079342
+        0x026f line=34079343
+        0x0270 line=34079344
+        0x0271 line=34079345
+        0x0272 line=34079346
+        0x0273 line=34079347
+        0x0274 line=34079348
+        0x0275 line=34079349
+        0x0276 line=34079350
+        0x0277 line=34079351
+        0x0278 line=34079352
+        0x0279 line=34079353
+        0x027a line=34079354
+        0x027b line=34079355
+        0x027c line=34079356
+        0x027d line=34079357
+        0x027e line=34079358
+        0x027f line=34079359
+        0x0280 line=34079360
+        0x0281 line=34079361
+        0x0282 line=34079362
+        0x0283 line=34079363
+        0x0284 line=34079364
+        0x0285 line=34079365
+        0x0286 line=34079366
+        0x0287 line=34079367
+        0x0288 line=34079368
+        0x0289 line=34079369
+        0x028a line=34079370
+        0x028b line=34079371
+        0x028c line=34079372
+        0x028d line=34079373
+        0x028e line=34079374
+        0x028f line=34079375
+        0x0290 line=34079376
+        0x0291 line=34079377
+        0x0292 line=34079378
+        0x0293 line=34079379
+        0x0294 line=34079380
+        0x0295 line=34079381
+        0x0296 line=34079382
+        0x0297 line=34079383
+        0x0298 line=34079384
+        0x0299 line=34079385
+        0x029a line=34079386
+        0x029b line=34079387
+        0x029c line=34079388
+        0x029d line=34079389
+        0x029e line=34079390
+        0x029f line=34079391
+        0x02a0 line=34079392
+        0x02a1 line=34079393
+        0x02a2 line=34079394
+        0x02a3 line=34079395
+        0x02a4 line=34079396
+        0x02a5 line=34079397
+        0x02a6 line=34079398
+        0x02a7 line=34079399
+        0x02a8 line=34079400
+        0x02a9 line=34079401
+        0x02aa line=34079402
+        0x02ab line=34079403
+        0x02ac line=34079404
+        0x02ad line=34079405
+        0x02ae line=34079406
+        0x02af line=34079407
+        0x02b0 line=34079408
+        0x02b1 line=34079409
+        0x02b2 line=34079410
+        0x02b3 line=34079411
+        0x02b4 line=34079412
+        0x02b5 line=34079413
+        0x02b6 line=34079414
+        0x02b7 line=34079415
+        0x02b8 line=34079416
+        0x02b9 line=34079417
+        0x02ba line=34079418
+        0x02bb line=34079419
+        0x02bc line=34079420
+        0x02bd line=34079421
+        0x02be line=34079422
+        0x02bf line=34079423
+        0x02c0 line=34079424
+        0x02c1 line=34079425
+        0x02c2 line=34079426
+        0x02c3 line=34079427
+        0x02c4 line=34079428
+        0x02c5 line=34079429
+        0x02c6 line=34079430
+        0x02c7 line=34079431
+        0x02c8 line=34079432
+        0x02c9 line=34079433
+        0x02ca line=34079434
+        0x02cb line=34079435
+        0x02cc line=34079436
+        0x02cd line=34079437
+        0x02ce line=34079438
+        0x02cf line=34079439
+        0x02d0 line=34079440
+        0x02d1 line=34079441
+        0x02d2 line=34079442
+        0x02d3 line=34079443
+        0x02d4 line=34079444
+        0x02d5 line=34079445
+        0x02d6 line=34079446
+        0x02d7 line=34079447
+        0x02d8 line=34079448
+        0x02d9 line=34079449
+        0x02da line=34079450
+        0x02db line=34079451
+        0x02dc line=34079452
+        0x02dd line=34079453
+        0x02de line=34079454
+        0x02df line=34079455
+        0x02e0 line=34079456
+        0x02e1 line=34079457
+        0x02e2 line=34079458
+        0x02e3 line=34079459
+        0x02e4 line=34079460
+        0x02e5 line=34079461
+        0x02e6 line=34079462
+        0x02e7 line=34079463
+        0x02e8 line=34079464
+        0x02e9 line=34079465
+        0x02ea line=34079466
+        0x02eb line=34079467
+        0x02ec line=34079468
+        0x02ed line=34079469
+        0x02ee line=34079470
+        0x02ef line=34079471
+        0x02f0 line=34079472
+        0x02f1 line=34079473
+        0x02f2 line=34079474
+        0x02f3 line=34079475
+        0x02f4 line=34079476
+        0x02f5 line=34079477
+        0x02f6 line=34079478
+        0x02f7 line=34079479
+        0x02f8 line=34079480
+        0x02f9 line=34079481
+        0x02fa line=34079482
+        0x02fb line=34079483
+        0x02fc line=34079484
+        0x02fd line=34079485
+        0x02fe line=34079486
+        0x02ff line=34079487
+        0x0300 line=34079488
+        0x0301 line=34079489
+        0x0302 line=34079490
+        0x0303 line=34079491
+        0x0304 line=34079492
+        0x0305 line=34079493
+        0x0306 line=34079494
+        0x0307 line=34079495
+        0x0308 line=34079496
+        0x0309 line=34079497
+        0x030a line=34079498
+        0x030b line=34079499
+        0x030c line=34079500
+        0x030d line=34079501
+        0x030e line=34079502
+        0x030f line=34079503
+        0x0310 line=34079504
+        0x0311 line=34079505
+        0x0312 line=34079506
+        0x0313 line=34079507
+        0x0314 line=34079508
+        0x0315 line=34079509
+        0x0316 line=34079510
+        0x0317 line=34079511
+        0x0318 line=34079512
+      locals        :
+        0x0000 - 0x0319 reg=12 this Ltd3/a;
+        0x0000 - 0x0319 reg=13 (null) Ljava/lang/String;
+        0x0000 - 0x0319 reg=14 (null) Z
+
+    #1              : (in Ltd3/a;)
+      name          : 'addCommonParamsByLevel'
+      type          : '(Ljava/lang/String;ZI)Ljava/util/Map;'
+      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 4
+      insns size    : 5 16-bit code units
+9f4ce8:                                        |[9f4ce8] td3.a.addCommonParamsByLevel:(Ljava/lang/String;ZI)Ljava/util/Map;
+9f4cf8: 7140 2d13 1032                         |0000: invoke-static {v0, v1, v2, v3}, Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook$-CC;.$default$addCommonParamsByLevel:(Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;Ljava/lang/String;ZI)Ljava/util/Map; // method@132d
+9f4cfe: 0c01                                   |0003: move-result-object v1
+9f4d00: 1101                                   |0004: return-object v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #2              : (in Ltd3/a;)
+      name          : 'addRequestVertifyParams'
+      type          : '(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;'
+      access        : 0x0091 (PUBLIC FINAL VARARGS)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 0
+      insns size    : 1 16-bit code units
+9f4d04:                                        |[9f4d04] td3.a.addRequestVertifyParams:(Ljava/lang/String;Z[Ljava/lang/Object;)Ljava/lang/String;
+9f4d14: 1101                                   |0000: return-object v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #3              : (in Ltd3/a;)
+      name          : 'getCommonParamsByLevel'
+      type          : '(I)Ljava/util/Map;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+9f4d18:                                        |[9f4d18] td3.a.getCommonParamsByLevel:(I)Ljava/util/Map;
+9f4d28: 1201                                   |0000: const/4 v1, #int 0 // #0
+9f4d2a: 1101                                   |0001: return-object v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #4              : (in Ltd3/a;)
+      name          : 'handleApiError'
+      type          : '(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 8
+      ins           : 6
+      outs          : 2
+      insns size    : 27 16-bit code units
+9f4d2c:                                        |[9f4d2c] td3.a.handleApiError:(Ljava/lang/String;Ljava/lang/Throwable;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V
+9f4d3c: 1f07 8d08                              |0000: check-cast v7, Lcom/bytedance/ttnet/http/HttpRequestInfo; // type@088d
+9f4d40: 1240                                   |0002: const/4 v0, #int 4 // #4
+9f4d42: 2300 fe63                              |0003: new-array v0, v0, [Ljava/lang/Object; // type@63fe
+9f4d46: 1201                                   |0005: const/4 v1, #int 0 // #0
+9f4d48: 4d03 0001                              |0006: aput-object v3, v0, v1
+9f4d4c: 1213                                   |0008: const/4 v3, #int 1 // #1
+9f4d4e: 4d04 0003                              |0009: aput-object v4, v0, v3
+9f4d52: 1223                                   |000b: const/4 v3, #int 2 // #2
+9f4d54: 7120 a1cc 6500                         |000c: invoke-static {v5, v6}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@cca1
+9f4d5a: 0c04                                   |000f: move-result-object v4
+9f4d5c: 4d04 0003                              |0010: aput-object v4, v0, v3
+9f4d60: 1233                                   |0012: const/4 v3, #int 3 // #3
+9f4d62: 4d07 0003                              |0013: aput-object v7, v0, v3
+9f4d66: 1a03 0cc7                              |0015: const-string v3, "handleApiError -> url=%s, error=%s, time=%s,info=%s" // string@c70c
+9f4d6a: 7120 90a1 0300                         |0017: invoke-static {v3, v0}, Lcom/dragon/read/base/util/LogWrapper;.e:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a190
+9f4d70: 0e00                                   |001a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=67305472
+        0x0001 line=67305473
+        0x0002 line=67305474
+        0x0003 line=67305475
+        0x0004 line=67305476
+        0x0005 line=67305477
+        0x0006 line=67305478
+        0x0007 line=67305479
+        0x0008 line=67305480
+        0x0009 line=67305481
+        0x000a line=67305482
+        0x000b line=67305483
+        0x000c line=67305484
+        0x000d line=67305485
+        0x000e line=67305486
+        0x000f line=67305487
+        0x0010 line=67305488
+        0x0011 line=67305489
+        0x0012 line=67305490
+        0x0013 line=67305491
+        0x0014 line=67305492
+        0x0015 line=67305493
+        0x0016 line=67305494
+        0x0017 line=67305495
+        0x0018 line=67305496
+        0x0019 line=67305497
+        0x001a line=67305498
+      locals        :
+        0x0000 - 0x001b reg=2 this Ltd3/a;
+        0x0000 - 0x001b reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x001b reg=4 (null) Ljava/lang/Throwable;
+        0x0000 - 0x001b reg=5 (null) J
+        0x0000 - 0x001b reg=7 (null) Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;
+
+    #5              : (in Ltd3/a;)
+      name          : 'handleApiOk'
+      type          : '(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 7
+      ins           : 5
+      outs          : 2
+      insns size    : 24 16-bit code units
+9f4d74:                                        |[9f4d74] td3.a.handleApiOk:(Ljava/lang/String;JLcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;)V
+9f4d84: 1f06 8d08                              |0000: check-cast v6, Lcom/bytedance/ttnet/http/HttpRequestInfo; // type@088d
+9f4d88: 1230                                   |0002: const/4 v0, #int 3 // #3
+9f4d8a: 2300 fe63                              |0003: new-array v0, v0, [Ljava/lang/Object; // type@63fe
+9f4d8e: 1201                                   |0005: const/4 v1, #int 0 // #0
+9f4d90: 4d03 0001                              |0006: aput-object v3, v0, v1
+9f4d94: 1213                                   |0008: const/4 v3, #int 1 // #1
+9f4d96: 7120 a1cc 5400                         |0009: invoke-static {v4, v5}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@cca1
+9f4d9c: 0c04                                   |000c: move-result-object v4
+9f4d9e: 4d04 0003                              |000d: aput-object v4, v0, v3
+9f4da2: 1223                                   |000f: const/4 v3, #int 2 // #2
+9f4da4: 4d06 0003                              |0010: aput-object v6, v0, v3
+9f4da8: 1a03 0ec7                              |0012: const-string v3, "handleApiOk -> url=%s, time=%s,info=%s" // string@c70e
+9f4dac: 7120 8ca1 0300                         |0014: invoke-static {v3, v0}, Lcom/dragon/read/base/util/LogWrapper;.d:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a18c
+9f4db2: 0e00                                   |0017: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50528256
+        0x0001 line=50528257
+        0x0002 line=50528258
+        0x0003 line=50528259
+        0x0004 line=50528260
+        0x0005 line=50528261
+        0x0006 line=50528262
+        0x0007 line=50528263
+        0x0008 line=50528264
+        0x0009 line=50528265
+        0x000a line=50528266
+        0x000b line=50528267
+        0x000c line=50528268
+        0x000d line=50528269
+        0x000e line=50528270
+        0x000f line=50528271
+        0x0010 line=50528272
+        0x0011 line=50528273
+        0x0012 line=50528274
+        0x0013 line=50528275
+        0x0014 line=50528276
+        0x0015 line=50528277
+        0x0016 line=50528278
+        0x0017 line=50528279
+      locals        :
+        0x0000 - 0x0018 reg=2 this Ltd3/a;
+        0x0000 - 0x0018 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0018 reg=4 (null) J
+        0x0000 - 0x0018 reg=6 (null) Lcom/bytedance/frameworks/baselib/network/http/BaseHttpRequestInfo;
+
+    #6              : (in Ltd3/a;)
+      name          : 'onTryInit'
+      type          : '()V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 39 16-bit code units
+9f4db4:                                        |[9f4db4] td3.a.onTryInit:()V
+9f4dc4: 6200 5016                              |0000: sget-object v0, Lcom/dragon/read/app/launch/task/j0;.a:Lcom/dragon/read/app/launch/task/j0; // field@1650
+9f4dc8: 6e10 bfcc 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ccbf
+9f4dce: 6300 5116                              |0005: sget-boolean v0, Lcom/dragon/read/app/launch/task/j0;.b:Z // field@1651
+9f4dd2: 1201                                   |0007: const/4 v1, #int 0 // #0
+9f4dd4: 3800 1000                              |0008: if-eqz v0, 0018 // +0010
+9f4dd8: 6200 3469                              |000a: sget-object v0, Lcom/dragon/read/component/biz/api/NsBookmallApi;.IMPL:Lcom/dragon/read/component/biz/api/NsBookmallApi; // field@6934
+9f4ddc: 7210 45a3 0000                         |000c: invoke-interface {v0}, Lcom/dragon/read/component/biz/api/NsBookmallApi;.dataService:()Lzq3/e; // method@a345
+9f4de2: 0c00                                   |000f: move-result-object v0
+9f4de4: 7210 bbff 0000                         |0010: invoke-interface {v0}, Lzq3/e;.S:()Z // method@ffbb
+9f4dea: 0a00                                   |0013: move-result v0
+9f4dec: 3800 0400                              |0014: if-eqz v0, 0018 // +0004
+9f4df0: 1210                                   |0016: const/4 v0, #int 1 // #1
+9f4df2: 2802                                   |0017: goto 0019 // +0002
+9f4df4: 1200                                   |0018: const/4 v0, #int 0 // #0
+9f4df6: 3800 0a00                              |0019: if-eqz v0, 0023 // +000a
+9f4dfa: 2310 fe63                              |001b: new-array v0, v1, [Ljava/lang/Object; // type@63fe
+9f4dfe: 1a01 8e0b                              |001d: const-string v1, "ApiProcessHook,ignore because is feed preload task" // string@0b8e
+9f4e02: 7120 a6a1 0100                         |001f: invoke-static {v1, v0}, Lcom/dragon/read/base/util/LogWrapper;.w:(Ljava/lang/String;[Ljava/lang/Object;)V // method@a1a6
+9f4e08: 0e00                                   |0022: return-void
+9f4e0a: 7100 f0b2 0000                         |0023: invoke-static {}, Lcom/ss/android/common/applog/AppLog;.tryWaitDeviceInit:()V // method@b2f0
+9f4e10: 0e00                                   |0026: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+      locals        :
+        0x0000 - 0x0027 reg=2 this Ltd3/a;
+
+    #7              : (in Ltd3/a;)
+      name          : 'putCommonParams'
+      type          : '(Ljava/util/Map;Z)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 6 16-bit code units
+9f4e14:                                        |[9f4e14] td3.a.putCommonParams:(Ljava/util/Map;Z)V
+9f4e24: 6200 7c06                              |0000: sget-object v0, Lcom/bytedance/bdinstall/Level;.L1:Lcom/bytedance/bdinstall/Level; // field@067c
+9f4e28: 7130 f5b2 3200                         |0002: invoke-static {v2, v3, v0}, Lcom/ss/android/common/applog/NetUtil;.putCommonParamsWithLevel:(Ljava/util/Map;ZLcom/bytedance/bdinstall/Level;)V // method@b2f5
+9f4e2e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=1 this Ltd3/a;
+        0x0000 - 0x0006 reg=2 (null) Ljava/util/Map;
+        0x0000 - 0x0006 reg=3 (null) Z
+
+  source_file_idx   : 31809 (SourceFile)
+

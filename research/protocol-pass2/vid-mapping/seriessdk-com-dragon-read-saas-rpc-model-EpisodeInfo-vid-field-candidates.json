@@ -1,0 +1,117 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "target": "Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.vid",
+  "limitations": "Raw code-unit pattern scan; candidates only until SDK dexdump confirms instruction boundaries.",
+  "candidates": [
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lcom/dragon/read/component/shortvideo/data/saas/video/s0;",
+      "caller_method": "invoke",
+      "caller_method_id": 24026,
+      "code_unit_candidate": 45,
+      "target_field_id": 41573,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lss4/e;",
+      "caller_method": "a",
+      "caller_method_id": 60403,
+      "code_unit_candidate": 54,
+      "target_field_id": 41573,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lss4/e;",
+      "caller_method": "a",
+      "caller_method_id": 60403,
+      "code_unit_candidate": 182,
+      "target_field_id": 41573,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lss4/g;",
+      "caller_method": "e",
+      "caller_method_id": 60416,
+      "code_unit_candidate": 292,
+      "target_field_id": 41573,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "La35/b1;",
+      "caller_method": "j",
+      "caller_method_id": 306,
+      "code_unit_candidate": 28,
+      "target_field_id": 35851,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "La35/b1;",
+      "caller_method": "k",
+      "caller_method_id": 307,
+      "code_unit_candidate": 28,
+      "target_field_id": 35851,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "Ll25/c;",
+      "caller_method": "c",
+      "caller_method_id": 47235,
+      "code_unit_candidate": 20,
+      "target_field_id": 35851,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "Ll25/h;",
+      "caller_method": "c",
+      "caller_method_id": 47264,
+      "code_unit_candidate": 20,
+      "target_field_id": 35851,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "Ll25/k;",
+      "caller_method": "c",
+      "caller_method_id": 47287,
+      "code_unit_candidate": 20,
+      "target_field_id": 35851,
+      "opcode": "0x54"
+    },
+    {
+      "dex": "classes5.dex",
+      "dex_sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "caller_class": "Lab5/a;",
+      "caller_method": "r",
+      "caller_method_id": 77,
+      "code_unit_candidate": 11,
+      "target_field_id": 48319,
+      "opcode": "0x5b"
+    },
+    {
+      "dex": "classes5.dex",
+      "dex_sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "caller_class": "Lab5/a;",
+      "caller_method": "s",
+      "caller_method_id": 78,
+      "code_unit_candidate": 493,
+      "target_field_id": 48319,
+      "opcode": "0x54"
+    }
+  ]
+}

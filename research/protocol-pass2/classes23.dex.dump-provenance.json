@@ -1,0 +1,15 @@
+{
+  "dex_member": "classes23.dex",
+  "sha256": "4c6c48296a3260d64e8a8c9353bc6719f2fa879b75cdafc6b156a08d719d595e",
+  "targets": [
+    "Lcom/bytedance/ttnet/utils/RetrofitUtils$b;",
+    "Lcom/bytedance/ttnet/utils/RetrofitUtils$e;",
+    "Lys1/a;"
+  ],
+  "found": [
+    "Lcom/bytedance/ttnet/utils/RetrofitUtils$b;",
+    "Lcom/bytedance/ttnet/utils/RetrofitUtils$e;",
+    "Lys1/a;"
+  ],
+  "text_decode_errors": "replace; source bytes unchanged"
+}

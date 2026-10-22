@@ -1,0 +1,2383 @@
+  Class descriptor  : 'Lcom/dragon/read/component/shortvideo/impl/v2/data/b;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'd'
+      type          : 'Lcom/dragon/read/component/shortvideo/impl/v2/data/b$a;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+    #1              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'e'
+      type          : 'Lcom/dragon/read/base/util/LogHelper;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'a'
+      type          : 'Lc25/p;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #1              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'b'
+      type          : 'Z'
+      access        : 0x0041 (PUBLIC VOLATILE)
+    #2              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'c'
+      type          : 'Ljava/util/List;'
+      access        : 0x0011 (PUBLIC FINAL)
+  Direct methods    -
+    #0              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 23 16-bit code units
+689b24:                                        |[689b24] com.dragon.read.component.shortvideo.impl.v2.data.b.<clinit>:()V
+689b34: 1400 3f71 0900                         |0000: const v0, #float 8.67145e-40 // #0009713f
+689b3a: 7110 9815 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1598
+689b40: 2200 9723                              |0006: new-instance v0, Lcom/dragon/read/component/shortvideo/impl/v2/data/b$a; // type@2397
+689b44: 7010 9876 0000                         |0008: invoke-direct {v0}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b$a;.<init>:()V // method@7698
+689b4a: 6900 9049                              |000b: sput-object v0, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.d:Lcom/dragon/read/component/shortvideo/impl/v2/data/b$a; // field@4990
+689b4e: 2200 380a                              |000d: new-instance v0, Lcom/dragon/read/base/util/LogHelper; // type@0a38
+689b52: 1a01 8972                              |000f: const-string v1, "SeriesVideoModelRepo" // string@7289
+689b56: 7020 8419 1000                         |0011: invoke-direct {v0, v1}, Lcom/dragon/read/base/util/LogHelper;.<init>:(Ljava/lang/String;)V // method@1984
+689b5c: 6900 9149                              |0014: sput-object v0, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+689b60: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+        0x0013 line=196627
+        0x0014 line=196628
+        0x0015 line=196629
+        0x0016 line=196630
+      locals        :
+
+    #1              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 12
+      ins           : 1
+      outs          : 8
+      insns size    : 62 16-bit code units
+689b64:                                        |[689b64] com.dragon.read.component.shortvideo.impl.v2.data.b.<init>:()V
+689b74: 7010 f3ac 0b00                         |0000: invoke-direct {v11}, Ljava/lang/Object;.<init>:()V // method@acf3
+689b7a: 2200 5c06                              |0003: new-instance v0, Lc25/p; // type@065c
+689b7e: 6201 1212                              |0005: sget-object v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711$a; // field@1212
+689b82: 6e10 f6ac 0100                         |0007: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689b88: 7100 0620 0000                         |000a: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711; // method@2006
+689b8e: 0c01                                   |000d: move-result-object v1
+689b90: 5511 1312                              |000e: iget-boolean v1, v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711;.enableNewCache:Z // field@1213
+689b94: 7100 0620 0000                         |0010: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711; // method@2006
+689b9a: 0c02                                   |0013: move-result-object v2
+689b9c: 5422 1512                              |0014: iget-object v2, v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711;.videoModelConfig:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig; // field@1215
+689ba0: 5522 b511                              |0016: iget-boolean v2, v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig;.unlimited:Z // field@11b5
+689ba4: 3802 1100                              |0018: if-eqz v2, 0029 // +0011
+689ba8: 2202 ee0c                              |001a: new-instance v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig; // type@0cee
+689bac: 1204                                   |001c: const/4 v4, #int 0 // #0
+689bae: 1205                                   |001d: const/4 v5, #int 0 // #0
+689bb0: 1206                                   |001e: const/4 v6, #int 0 // #0
+689bb2: 1207                                   |001f: const/4 v7, #int 0 // #0
+689bb4: 1208                                   |0020: const/4 v8, #int 0 // #0
+689bb6: 1309 1f00                              |0021: const/16 v9, #int 31 // #1f
+689bba: 120a                                   |0023: const/4 v10, #int 0 // #0
+689bbc: 0723                                   |0024: move-object v3, v2
+689bbe: 7608 f51f 0300                         |0025: invoke-direct/range {v3, v4, v5, v6, v7, v8, v9, v10}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig;.<init>:(ZLcom/dragon/read/component/shortvideo/api/config/ssconfig/ScopeCacheConfig;Lcom/dragon/read/component/shortvideo/api/config/ssconfig/ScopeCacheConfig;Lcom/dragon/read/component/shortvideo/api/config/ssconfig/ScopeCacheConfig;Lcom/dragon/read/component/shortvideo/api/config/ssconfig/ScopeCacheConfig;ILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@1ff5
+689bc4: 2807                                   |0028: goto 002f // +0007
+689bc6: 7100 0620 0000                         |0029: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711; // method@2006
+689bcc: 0c02                                   |002c: move-result-object v2
+689bce: 5422 1512                              |002d: iget-object v2, v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SeriesRamOptV711;.videoModelConfig:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig; // field@1215
+689bd2: 1a03 d8cd                              |002f: const-string v3, "video_model" // string@cdd8
+689bd6: 7040 6a14 3021                         |0031: invoke-direct {v0, v3, v1, v2}, Lc25/p;.<init>:(Ljava/lang/String;ZLcom/dragon/read/component/shortvideo/api/config/ssconfig/PrefetchCacheConfig;)V // method@146a
+689bdc: 5bb0 8d49                              |0034: iput-object v0, v11, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689be0: 2200 e439                              |0036: new-instance v0, Ljava/util/ArrayList; // type@39e4
+689be4: 7010 5ead 0000                         |0038: invoke-direct {v0}, Ljava/util/ArrayList;.<init>:()V // method@ad5e
+689bea: 5bb0 8f49                              |003b: iput-object v0, v11, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.c:Ljava/util/List; // field@498f
+689bee: 0e00                                   |003d: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+        0x0029 line=262185
+        0x002a line=262186
+        0x002b line=262187
+        0x002c line=262188
+        0x002d line=262189
+        0x002e line=262190
+        0x002f line=262191
+        0x0030 line=262192
+        0x0031 line=262193
+        0x0032 line=262194
+        0x0033 line=262195
+        0x0034 line=262196
+        0x0035 line=262197
+        0x0036 line=262198
+        0x0037 line=262199
+        0x0038 line=262200
+        0x0039 line=262201
+        0x003a line=262202
+        0x003b line=262203
+        0x003c line=262204
+        0x003d line=262205
+      locals        :
+        0x0000 - 0x003e reg=11 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+
+    #2              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'c'
+      type          : '(J)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 11
+      ins           : 2
+      outs          : 3
+      insns size    : 74 16-bit code units
+689bf0:                                        |[689bf0] com.dragon.read.component.shortvideo.impl.v2.data.b.c:(J)Z
+689c00: 6200 1f08                              |0000: sget-object v0, Lc95/w0;.a:Lc95/w0; // field@081f
+689c04: 6e10 f6ac 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689c0a: 6200 3c6a                              |0005: sget-object v0, Lg95/p;.b:Lg95/p; // field@6a3c
+689c0e: 6e10 479e 0000                         |0007: invoke-virtual {v0}, Lg95/p;.M1:()J // method@9e47
+689c14: 0b00                                   |000a: move-result-wide v0
+689c16: 7100 28ad 0000                         |000b: invoke-static {}, Ljava/lang/System;.currentTimeMillis:()J // method@ad28
+689c1c: 0b02                                   |000e: move-result-wide v2
+689c1e: 1304 e803                              |000f: const/16 v4, #int 1000 // #3e8
+689c22: 8144                                   |0011: int-to-long v4, v4
+689c24: 9d04 0409                              |0012: mul-long v4, v4, v9
+689c28: 1206                                   |0014: const/4 v6, #int 0 // #0
+689c2a: 3107 0004                              |0015: cmp-long v7, v0, v4
+689c2e: 3a07 0400                              |0017: if-ltz v7, 001b // +0004
+689c32: 1214                                   |0019: const/4 v4, #int 1 // #1
+689c34: 2802                                   |001a: goto 001c // +0002
+689c36: 1204                                   |001b: const/4 v4, #int 0 // #0
+689c38: 6205 9149                              |001c: sget-object v5, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+689c3c: 2207 c939                              |001e: new-instance v7, Ljava/lang/StringBuilder; // type@39c9
+689c40: 1a08 45a3                              |0020: const-string v8, "isVideoModelExpire isExpire:" // string@a345
+689c44: 7020 19ad 8700                         |0022: invoke-direct {v7, v8}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+689c4a: 6e20 23ad 4700                         |0025: invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@ad23
+689c50: 1a08 5601                              |0028: const-string v8, " expireTime:" // string@0156
+689c54: 6e20 22ad 8700                         |002a: invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+689c5a: 6e30 1fad 970a                         |002d: invoke-virtual {v7, v9, v10}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+689c60: 1a09 d202                              |0030: const-string v9, " remoteTimeMillis:" // string@02d2
+689c64: 6e20 22ad 9700                         |0032: invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+689c6a: 6e30 1fad 0701                         |0035: invoke-virtual {v7, v0, v1}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+689c70: 1a09 2402                              |0038: const-string v9, " localTimeMillis:" // string@0224
+689c74: 6e20 22ad 9700                         |003a: invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+689c7a: 6e30 1fad 2703                         |003d: invoke-virtual {v7, v2, v3}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+689c80: 6e10 27ad 0700                         |0040: invoke-virtual {v7}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+689c86: 0c09                                   |0043: move-result-object v9
+689c88: 236a 3157                              |0044: new-array v10, v6, [Ljava/lang/Object; // type@5731
+689c8c: 6e30 8919 950a                         |0046: invoke-virtual {v5, v9, v10}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+689c92: 0f04                                   |0049: return v4
+      catches       : (none)
+      positions     :
+        0x0000 line=17104896
+        0x0001 line=17104897
+        0x0002 line=17104898
+        0x0003 line=17104899
+        0x0004 line=17104900
+        0x0005 line=17104901
+        0x0006 line=17104902
+        0x0007 line=17104903
+        0x0008 line=17104904
+        0x0009 line=17104905
+        0x000a line=17104906
+        0x000b line=17104907
+        0x000c line=17104908
+        0x000d line=17104909
+        0x000e line=17104910
+        0x000f line=17104911
+        0x0010 line=17104912
+        0x0011 line=17104913
+        0x0012 line=17104914
+        0x0013 line=17104915
+        0x0014 line=17104916
+        0x0015 line=17104917
+        0x0016 line=17104918
+        0x0017 line=17104919
+        0x0018 line=17104920
+        0x0019 line=17104921
+        0x001a line=17104922
+        0x001b line=17104923
+        0x001c line=17104924
+        0x001d line=17104925
+        0x001e line=17104926
+        0x001f line=17104927
+        0x0020 line=17104928
+        0x0021 line=17104929
+        0x0022 line=17104930
+        0x0023 line=17104931
+        0x0024 line=17104932
+        0x0025 line=17104933
+        0x0026 line=17104934
+        0x0027 line=17104935
+        0x0028 line=17104936
+        0x0029 line=17104937
+        0x002a line=17104938
+        0x002b line=17104939
+        0x002c line=17104940
+        0x002d line=17104941
+        0x002e line=17104942
+        0x002f line=17104943
+        0x0030 line=17104944
+        0x0031 line=17104945
+        0x0032 line=17104946
+        0x0033 line=17104947
+        0x0034 line=17104948
+        0x0035 line=17104949
+        0x0036 line=17104950
+        0x0037 line=17104951
+        0x0038 line=17104952
+        0x0039 line=17104953
+        0x003a line=17104954
+        0x003b line=17104955
+        0x003c line=17104956
+        0x003d line=17104957
+        0x003e line=17104958
+        0x003f line=17104959
+        0x0040 line=17104960
+        0x0041 line=17104961
+        0x0042 line=17104962
+        0x0043 line=17104963
+        0x0044 line=17104964
+        0x0045 line=17104965
+        0x0046 line=17104966
+        0x0047 line=17104967
+        0x0048 line=17104968
+        0x0049 line=17104969
+      locals        :
+        0x0000 - 0x004a reg=9 (null) J
+
+    #3              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'g'
+      type          : '(Lpr4/t;Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 4
+      insns size    : 52 16-bit code units
+689c94:                                        |[689c94] com.dragon.read.component.shortvideo.impl.v2.data.b.g:(Lpr4/t;Z)V
+689ca4: 2200 eb39                              |0000: new-instance v0, Ljava/util/HashMap; // type@39eb
+689ca8: 1221                                   |0002: const/4 v1, #int 2 // #2
+689caa: 7020 91ad 1000                         |0003: invoke-direct {v0, v1}, Ljava/util/HashMap;.<init>:(I)V // method@ad91
+689cb0: 3805 2a00                              |0006: if-eqz v5, 0030 // +002a
+689cb4: 6205 5d96                              |0008: sget-object v5, Lw05/o;.m:Lw05/o$a; // field@965d
+689cb8: 6e10 f6ac 0500                         |000a: invoke-virtual {v5}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689cbe: 7100 4ced 0000                         |000d: invoke-static {}, Lw05/o$a;.a:()Lw05/o; // method@ed4c
+689cc4: 0c05                                   |0010: move-result-object v5
+689cc6: 1201                                   |0011: const/4 v1, #int 0 // #0
+689cc8: 1262                                   |0012: const/4 v2, #int 6 // #6
+689cca: 1a03 e4cd                              |0013: const-string v3, "video_model_request_end" // string@cde4
+689cce: 7140 56ed 3521                         |0015: invoke-static {v5, v3, v1, v2}, Lw05/o;.f:(Lw05/o;Ljava/lang/String;Ljava/util/Map;I)V // method@ed56
+689cd4: 6205 c672                              |0018: sget-object v5, Ljava/lang/Boolean;.TRUE:Ljava/lang/Boolean; // field@72c6
+689cd8: 1a01 1c9f                              |001a: const-string v1, "hit_video_model_cache" // string@9f1c
+689cdc: 6e30 9aad 1005                         |001c: invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ad9a
+689ce2: 5542 db84                              |001f: iget-boolean v2, v4, Lpr4/t;.k:Z // field@84db
+689ce6: 3802 0700                              |0021: if-eqz v2, 0028 // +0007
+689cea: 1a02 1d9f                              |0023: const-string v2, "hit_video_model_disk" // string@9f1d
+689cee: 6e30 9aad 2005                         |0025: invoke-virtual {v0, v2, v5}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ad9a
+689cf4: 7100 4ced 0000                         |0028: invoke-static {}, Lw05/o$a;.a:()Lw05/o; // method@ed4c
+689cfa: 0c05                                   |002b: move-result-object v5
+689cfc: 1242                                   |002c: const/4 v2, #int 4 // #4
+689cfe: 7140 56ed 1520                         |002d: invoke-static {v5, v1, v0, v2}, Lw05/o;.f:(Lw05/o;Ljava/lang/String;Ljava/util/Map;I)V // method@ed56
+689d04: 1215                                   |0030: const/4 v5, #int 1 // #1
+689d06: 5c45 de84                              |0031: iput-boolean v5, v4, Lpr4/t;.n:Z // field@84de
+689d0a: 0e00                                   |0033: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33816576
+        0x0001 line=33816577
+        0x0002 line=33816578
+        0x0003 line=33816579
+        0x0004 line=33816580
+        0x0005 line=33816581
+        0x0006 line=33816582
+        0x0007 line=33816583
+        0x0008 line=33816584
+        0x0009 line=33816585
+        0x000a line=33816586
+        0x000b line=33816587
+        0x000c line=33816588
+        0x000d line=33816589
+        0x000e line=33816590
+        0x000f line=33816591
+        0x0010 line=33816592
+        0x0011 line=33816593
+        0x0012 line=33816594
+        0x0013 line=33816595
+        0x0014 line=33816596
+        0x0015 line=33816597
+        0x0016 line=33816598
+        0x0017 line=33816599
+        0x0018 line=33816600
+        0x0019 line=33816601
+        0x001a line=33816602
+        0x001b line=33816603
+        0x001c line=33816604
+        0x001d line=33816605
+        0x001e line=33816606
+        0x001f line=33816607
+        0x0020 line=33816608
+        0x0021 line=33816609
+        0x0022 line=33816610
+        0x0023 line=33816611
+        0x0024 line=33816612
+        0x0025 line=33816613
+        0x0026 line=33816614
+        0x0027 line=33816615
+        0x0028 line=33816616
+        0x0029 line=33816617
+        0x002a line=33816618
+        0x002b line=33816619
+        0x002c line=33816620
+        0x002d line=33816621
+        0x002e line=33816622
+        0x002f line=33816623
+        0x0030 line=33816624
+        0x0031 line=33816625
+        0x0032 line=33816626
+        0x0033 line=33816627
+      locals        :
+        0x0000 - 0x0034 reg=4 (null) Lpr4/t;
+        0x0000 - 0x0034 reg=5 (null) Z
+
+  Virtual methods   -
+    #0              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'a'
+      type          : '(Ljava/util/Map;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 9
+      ins           : 2
+      outs          : 4
+      insns size    : 167 16-bit code units
+689d0c:                                        |[689d0c] com.dragon.read.component.shortvideo.impl.v2.data.b.a:(Ljava/util/Map;)V
+689d1c: 1200                                   |0000: const/4 v0, #int 0 // #0
+689d1e: 7120 618b 0800                         |0001: invoke-static {v8, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+689d24: 0781                                   |0004: move-object v1, v8
+689d26: 1f01 ef39                              |0005: check-cast v1, Ljava/util/LinkedHashMap; // type@39ef
+689d2a: 6e10 b9ad 0100                         |0007: invoke-virtual {v1}, Ljava/util/LinkedHashMap;.entrySet:()Ljava/util/Set; // method@adb9
+689d30: 0c01                                   |000a: move-result-object v1
+689d32: 7210 15ae 0100                         |000b: invoke-interface {v1}, Ljava/util/Set;.iterator:()Ljava/util/Iterator; // method@ae15
+689d38: 0c01                                   |000e: move-result-object v1
+689d3a: 7210 afad 0100                         |000f: invoke-interface {v1}, Ljava/util/Iterator;.hasNext:()Z // method@adaf
+689d40: 0a02                                   |0012: move-result v2
+689d42: 1213                                   |0013: const/4 v3, #int 1 // #1
+689d44: 3802 6900                              |0014: if-eqz v2, 007d // +0069
+689d48: 7210 b0ad 0100                         |0016: invoke-interface {v1}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@adb0
+689d4e: 0c02                                   |0019: move-result-object v2
+689d50: 1f02 f539                              |001a: check-cast v2, Ljava/util/Map$Entry; // type@39f5
+689d54: 5474 8d49                              |001c: iget-object v4, v7, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689d58: 7210 fead 0200                         |001e: invoke-interface {v2}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@adfe
+689d5e: 0c05                                   |0021: move-result-object v5
+689d60: 1f05 c839                              |0022: check-cast v5, Ljava/lang/String; // type@39c8
+689d64: 6e10 f6ac 0400                         |0024: invoke-virtual {v4}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689d6a: 7120 618b 0500                         |0027: invoke-static {v5, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+689d70: 6e10 09ad 0500                         |002a: invoke-virtual {v5}, Ljava/lang/String;.length:()I // method@ad09
+689d76: 0a06                                   |002d: move-result v6
+689d78: 3906 0300                              |002e: if-nez v6, 0031 // +0003
+689d7c: 2802                                   |0030: goto 0032 // +0002
+689d7e: 1203                                   |0031: const/4 v3, #int 0 // #0
+689d80: 3803 0300                              |0032: if-eqz v3, 0035 // +0003
+689d84: 281a                                   |0034: goto 004e // +001a
+689d86: 5543 9407                              |0035: iget-boolean v3, v4, Lc25/p;.b:Z // field@0794
+689d8a: 3803 2c00                              |0037: if-eqz v3, 0063 // +002c
+689d8e: 5443 9707                              |0039: iget-object v3, v4, Lc25/p;.e:Ljava/util/concurrent/ConcurrentHashMap; // field@0797
+689d92: 6e20 26ae 5300                         |003b: invoke-virtual {v3, v5}, Ljava/util/concurrent/ConcurrentHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ae26
+689d98: 0c03                                   |003e: move-result-object v3
+689d9a: 1f03 b10d                              |003f: check-cast v3, Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope; // type@0db1
+689d9e: 3903 0300                              |0041: if-nez v3, 0044 // +0003
+689da2: 280b                                   |0043: goto 004e // +000b
+689da4: 5444 9807                              |0044: iget-object v4, v4, Lc25/p;.f:Ljava/util/concurrent/ConcurrentHashMap; // field@0798
+689da8: 6e20 26ae 3400                         |0046: invoke-virtual {v4, v3}, Ljava/util/concurrent/ConcurrentHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ae26
+689dae: 0c03                                   |0049: move-result-object v3
+689db0: 1f03 5006                              |004a: check-cast v3, Lc25/k; // type@0650
+689db4: 3903 0400                              |004c: if-nez v3, 0050 // +0004
+689db8: 1203                                   |004e: const/4 v3, #int 0 // #0
+689dba: 281a                                   |004f: goto 0069 // +001a
+689dbc: 7120 618b 0500                         |0050: invoke-static {v5, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+689dc2: 2204 4606                              |0053: new-instance v4, Lc25/f; // type@0646
+689dc6: 7030 3814 3405                         |0055: invoke-direct {v4, v3, v5}, Lc25/f;.<init>:(Lc25/k;Ljava/lang/Object;)V // method@1438
+689dcc: 6e20 5314 4300                         |0058: invoke-virtual {v3, v4}, Lc25/k;.e:(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object; // method@1453
+689dd2: 0c03                                   |005b: move-result-object v3
+689dd4: 1f03 ab39                              |005c: check-cast v3, Ljava/lang/Boolean; // type@39ab
+689dd8: 6e10 91ac 0300                         |005e: invoke-virtual {v3}, Ljava/lang/Boolean;.booleanValue:()Z // method@ac91
+689dde: 0a03                                   |0061: move-result v3
+689de0: 2807                                   |0062: goto 0069 // +0007
+689de2: 5443 9607                              |0063: iget-object v3, v4, Lc25/p;.d:Ljava/util/concurrent/ConcurrentHashMap; // field@0796
+689de6: 6e20 23ae 5300                         |0065: invoke-virtual {v3, v5}, Ljava/util/concurrent/ConcurrentHashMap;.containsKey:(Ljava/lang/Object;)Z // method@ae23
+689dec: 0a03                                   |0068: move-result v3
+689dee: 3903 a6ff                              |0069: if-nez v3, 000f // -005a
+689df2: 5473 8d49                              |006b: iget-object v3, v7, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689df6: 7210 fead 0200                         |006d: invoke-interface {v2}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@adfe
+689dfc: 0c04                                   |0070: move-result-object v4
+689dfe: 1f04 c839                              |0071: check-cast v4, Ljava/lang/String; // type@39c8
+689e02: 7210 ffad 0200                         |0073: invoke-interface {v2}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@adff
+689e08: 0c02                                   |0076: move-result-object v2
+689e0a: 6205 a213                              |0077: sget-object v5, Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;.OTHER:Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope; // field@13a2
+689e0e: 6e40 7114 4352                         |0079: invoke-virtual {v3, v4, v2, v5}, Lc25/p;.g:(Ljava/lang/String;Ljava/lang/Object;Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;)V // method@1471
+689e14: 2893                                   |007c: goto 000f // -006d
+689e16: 5c73 8e49                              |007d: iput-boolean v3, v7, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.b:Z // field@498e
+689e1a: 6201 9149                              |007f: sget-object v1, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+689e1e: 2202 c939                              |0081: new-instance v2, Ljava/lang/StringBuilder; // type@39c9
+689e22: 1a03 9483                              |0083: const-string v3, "batchUpdateWithoutOverwrite addSize:" // string@8394
+689e26: 7020 19ad 3200                         |0085: invoke-direct {v2, v3}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+689e2c: 7210 0aae 0800                         |0088: invoke-interface {v8}, Ljava/util/Map;.size:()I // method@ae0a
+689e32: 0a08                                   |008b: move-result v8
+689e34: 6e20 1ead 8200                         |008c: invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@ad1e
+689e3a: 1a08 7d03                              |008f: const-string v8, " totalSize:" // string@037d
+689e3e: 6e20 22ad 8200                         |0091: invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+689e44: 5478 8d49                              |0094: iget-object v8, v7, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689e48: 6e10 6e14 0800                         |0096: invoke-virtual {v8}, Lc25/p;.d:()I // method@146e
+689e4e: 0a08                                   |0099: move-result v8
+689e50: 6e20 1ead 8200                         |009a: invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@ad1e
+689e56: 6e10 27ad 0200                         |009d: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+689e5c: 0c08                                   |00a0: move-result-object v8
+689e5e: 2300 3157                              |00a1: new-array v0, v0, [Ljava/lang/Object; // type@5731
+689e62: 6e30 8919 8100                         |00a3: invoke-virtual {v1, v8, v0}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+689e68: 0e00                                   |00a6: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=17170432
+        0x0001 line=17170433
+        0x0002 line=17170434
+        0x0003 line=17170435
+        0x0004 line=17170436
+        0x0005 line=17170437
+        0x0006 line=17170438
+        0x0007 line=17170439
+        0x0008 line=17170440
+        0x0009 line=17170441
+        0x000a line=17170442
+        0x000b line=17170443
+        0x000c line=17170444
+        0x000d line=17170445
+        0x000e line=17170446
+        0x000f line=17170447
+        0x0010 line=17170448
+        0x0011 line=17170449
+        0x0012 line=17170450
+        0x0013 line=17170451
+        0x0014 line=17170452
+        0x0015 line=17170453
+        0x0016 line=17170454
+        0x0017 line=17170455
+        0x0018 line=17170456
+        0x0019 line=17170457
+        0x001a line=17170458
+        0x001b line=17170459
+        0x001c line=17170460
+        0x001d line=17170461
+        0x001e line=17170462
+        0x001f line=17170463
+        0x0020 line=17170464
+        0x0021 line=17170465
+        0x0022 line=17170466
+        0x0023 line=17170467
+        0x0024 line=17170468
+        0x0025 line=17170469
+        0x0026 line=17170470
+        0x0027 line=17170471
+        0x0028 line=17170472
+        0x0029 line=17170473
+        0x002a line=17170474
+        0x002b line=17170475
+        0x002c line=17170476
+        0x002d line=17170477
+        0x002e line=17170478
+        0x002f line=17170479
+        0x0030 line=17170480
+        0x0031 line=17170481
+        0x0032 line=17170482
+        0x0033 line=17170483
+        0x0034 line=17170484
+        0x0035 line=17170485
+        0x0036 line=17170486
+        0x0037 line=17170487
+        0x0038 line=17170488
+        0x0039 line=17170489
+        0x003a line=17170490
+        0x003b line=17170491
+        0x003c line=17170492
+        0x003d line=17170493
+        0x003e line=17170494
+        0x003f line=17170495
+        0x0040 line=17170496
+        0x0041 line=17170497
+        0x0042 line=17170498
+        0x0043 line=17170499
+        0x0044 line=17170500
+        0x0045 line=17170501
+        0x0046 line=17170502
+        0x0047 line=17170503
+        0x0048 line=17170504
+        0x0049 line=17170505
+        0x004a line=17170506
+        0x004b line=17170507
+        0x004c line=17170508
+        0x004d line=17170509
+        0x004e line=17170510
+        0x004f line=17170511
+        0x0050 line=17170512
+        0x0051 line=17170513
+        0x0052 line=17170514
+        0x0053 line=17170515
+        0x0054 line=17170516
+        0x0055 line=17170517
+        0x0056 line=17170518
+        0x0057 line=17170519
+        0x0058 line=17170520
+        0x0059 line=17170521
+        0x005a line=17170522
+        0x005b line=17170523
+        0x005c line=17170524
+        0x005d line=17170525
+        0x005e line=17170526
+        0x005f line=17170527
+        0x0060 line=17170528
+        0x0061 line=17170529
+        0x0062 line=17170530
+        0x0063 line=17170531
+        0x0064 line=17170532
+        0x0065 line=17170533
+        0x0066 line=17170534
+        0x0067 line=17170535
+        0x0068 line=17170536
+        0x0069 line=17170537
+        0x006a line=17170538
+        0x006b line=17170539
+        0x006c line=17170540
+        0x006d line=17170541
+        0x006e line=17170542
+        0x006f line=17170543
+        0x0070 line=17170544
+        0x0071 line=17170545
+        0x0072 line=17170546
+        0x0073 line=17170547
+        0x0074 line=17170548
+        0x0075 line=17170549
+        0x0076 line=17170550
+        0x0077 line=17170551
+        0x0078 line=17170552
+        0x0079 line=17170553
+        0x007a line=17170554
+        0x007b line=17170555
+        0x007c line=17170556
+        0x007d line=17170557
+        0x007e line=17170558
+        0x007f line=17170559
+        0x0080 line=17170560
+        0x0081 line=17170561
+        0x0082 line=17170562
+        0x0083 line=17170563
+        0x0084 line=17170564
+        0x0085 line=17170565
+        0x0086 line=17170566
+        0x0087 line=17170567
+        0x0088 line=17170568
+        0x0089 line=17170569
+        0x008a line=17170570
+        0x008b line=17170571
+        0x008c line=17170572
+        0x008d line=17170573
+        0x008e line=17170574
+        0x008f line=17170575
+        0x0090 line=17170576
+        0x0091 line=17170577
+        0x0092 line=17170578
+        0x0093 line=17170579
+        0x0094 line=17170580
+        0x0095 line=17170581
+        0x0096 line=17170582
+        0x0097 line=17170583
+        0x0098 line=17170584
+        0x0099 line=17170585
+        0x009a line=17170586
+        0x009b line=17170587
+        0x009c line=17170588
+        0x009d line=17170589
+        0x009e line=17170590
+        0x009f line=17170591
+        0x00a0 line=17170592
+        0x00a1 line=17170593
+        0x00a2 line=17170594
+        0x00a3 line=17170595
+        0x00a4 line=17170596
+        0x00a5 line=17170597
+        0x00a6 line=17170598
+      locals        :
+        0x0000 - 0x00a7 reg=7 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x00a7 reg=8 (null) Ljava/util/Map;
+
+    #1              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'b'
+      type          : '(Ljava/lang/String;Z)Lpr4/t;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 4
+      insns size    : 142 16-bit code units
+689e6c:                                        |[689e6c] com.dragon.read.component.shortvideo.impl.v2.data.b.b:(Ljava/lang/String;Z)Lpr4/t;
+689e7c: 1210                                   |0000: const/4 v0, #int 1 // #1
+689e7e: 1201                                   |0001: const/4 v1, #int 0 // #0
+689e80: 3807 0b00                              |0002: if-eqz v7, 000d // +000b
+689e84: 6e10 09ad 0700                         |0004: invoke-virtual {v7}, Ljava/lang/String;.length:()I // method@ad09
+689e8a: 0a02                                   |0007: move-result v2
+689e8c: 3902 0300                              |0008: if-nez v2, 000b // +0003
+689e90: 2803                                   |000a: goto 000d // +0003
+689e92: 1202                                   |000b: const/4 v2, #int 0 // #0
+689e94: 2802                                   |000c: goto 000e // +0002
+689e96: 1212                                   |000d: const/4 v2, #int 1 // #1
+689e98: 1203                                   |000e: const/4 v3, #int 0 // #0
+689e9a: 3802 0300                              |000f: if-eqz v2, 0012 // +0003
+689e9e: 1103                                   |0011: return-object v3
+689ea0: 3808 1100                              |0012: if-eqz v8, 0023 // +0011
+689ea4: 6202 5d96                              |0014: sget-object v2, Lw05/o;.m:Lw05/o$a; // field@965d
+689ea8: 6e10 f6ac 0200                         |0016: invoke-virtual {v2}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689eae: 7100 4ced 0000                         |0019: invoke-static {}, Lw05/o$a;.a:()Lw05/o; // method@ed4c
+689eb4: 0c02                                   |001c: move-result-object v2
+689eb6: 1a04 e6cd                              |001d: const-string v4, "video_model_request_start" // string@cde6
+689eba: 1265                                   |001f: const/4 v5, #int 6 // #6
+689ebc: 7140 56ed 4253                         |0020: invoke-static {v2, v4, v3, v5}, Lw05/o;.f:(Lw05/o;Ljava/lang/String;Ljava/util/Map;I)V // method@ed56
+689ec2: 6202 4d11                              |0023: sget-object v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue$a; // field@114d
+689ec6: 6e10 f6ac 0200                         |0025: invoke-virtual {v2}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689ecc: 7100 e31f 0000                         |0028: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue; // method@1fe3
+689ed2: 0c02                                   |002b: move-result-object v2
+689ed4: 5522 4e11                              |002c: iget-boolean v2, v2, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue;.enable:Z // field@114e
+689ed8: 3802 3a00                              |002e: if-eqz v2, 0068 // +003a
+689edc: 6202 1810                              |0030: sget-object v2, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.Companion:Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService$a; // field@1018
+689ee0: 6e10 f6ac 0200                         |0032: invoke-virtual {v2}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689ee6: 7100 df1e 0000                         |0035: invoke-static {}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService$a;.a:()Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService; // method@1edf
+689eec: 0c02                                   |0038: move-result-object v2
+689eee: 3802 0900                              |0039: if-eqz v2, 0042 // +0009
+689ef2: 7210 e41e 0200                         |003b: invoke-interface {v2}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.isMetadataLazyLoadEnabled:()Z // method@1ee4
+689ef8: 0a04                                   |003e: move-result v4
+689efa: 3304 0300                              |003f: if-ne v4, v0, 0042 // +0003
+689efe: 2802                                   |0041: goto 0043 // +0002
+689f00: 1200                                   |0042: const/4 v0, #int 0 // #0
+689f02: 3900 2500                              |0043: if-nez v0, 0068 // +0025
+689f06: 3802 0700                              |0045: if-eqz v2, 004c // +0007
+689f0a: 7220 e21e 7200                         |0047: invoke-interface {v2, v7}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.getOfflineVideoModelInfo:(Ljava/lang/String;)Lpr4/t; // method@1ee2
+689f10: 0c00                                   |004a: move-result-object v0
+689f12: 2802                                   |004b: goto 004d // +0002
+689f14: 0730                                   |004c: move-object v0, v3
+689f16: 3800 1b00                              |004d: if-eqz v0, 0068 // +001b
+689f1a: 6202 9149                              |004f: sget-object v2, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+689f1e: 2203 c939                              |0051: new-instance v3, Ljava/lang/StringBuilder; // type@39c9
+689f22: 1a04 887d                              |0053: const-string v4, "[getVideoModelInfo] from offline " // string@7d88
+689f26: 7020 19ad 4300                         |0055: invoke-direct {v3, v4}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+689f2c: 6e20 22ad 7300                         |0058: invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+689f32: 6e10 27ad 0300                         |005b: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+689f38: 0c07                                   |005e: move-result-object v7
+689f3a: 2311 3157                              |005f: new-array v1, v1, [Ljava/lang/Object; // type@5731
+689f3e: 6e30 8919 7201                         |0061: invoke-virtual {v2, v7, v1}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+689f44: 7120 a576 8000                         |0064: invoke-static {v0, v8}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.g:(Lpr4/t;Z)V // method@76a5
+689f4a: 1100                                   |0067: return-object v0
+689f4c: 5460 8d49                              |0068: iget-object v0, v6, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689f50: 6e20 6d14 7000                         |006a: invoke-virtual {v0, v7}, Lc25/p;.c:(Ljava/lang/String;)Ljava/lang/Object; // method@146d
+689f56: 0c00                                   |006d: move-result-object v0
+689f58: 1f00 9a45                              |006e: check-cast v0, Lpr4/t; // type@459a
+689f5c: 3800 1d00                              |0070: if-eqz v0, 008d // +001d
+689f60: 5304 d484                              |0072: iget-wide v4, v0, Lpr4/t;.d:J // field@84d4
+689f64: 7120 a176 5400                         |0074: invoke-static {v4, v5}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.c:(J)Z // method@76a1
+689f6a: 0a02                                   |0077: move-result v2
+689f6c: 3902 1500                              |0078: if-nez v2, 008d // +0015
+689f70: 6202 9149                              |007a: sget-object v2, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+689f74: 2203 c939                              |007c: new-instance v3, Ljava/lang/StringBuilder; // type@39c9
+689f78: 1a03 877d                              |007e: const-string v3, "[getVideoModelInfo] from cache " // string@7d87
+689f7c: 6e20 03ad 7300                         |0080: invoke-virtual {v3, v7}, Ljava/lang/String;.concat:(Ljava/lang/String;)Ljava/lang/String; // method@ad03
+689f82: 0c07                                   |0083: move-result-object v7
+689f84: 2311 3157                              |0084: new-array v1, v1, [Ljava/lang/Object; // type@5731
+689f88: 6e30 8919 7201                         |0086: invoke-virtual {v2, v7, v1}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+689f8e: 7120 a576 8000                         |0089: invoke-static {v0, v8}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.g:(Lpr4/t;Z)V // method@76a5
+689f94: 1100                                   |008c: return-object v0
+689f96: 1103                                   |008d: return-object v3
+      catches       : (none)
+      positions     :
+        0x0000 line=33947648
+        0x0001 line=33947649
+        0x0002 line=33947650
+        0x0003 line=33947651
+        0x0004 line=33947652
+        0x0005 line=33947653
+        0x0006 line=33947654
+        0x0007 line=33947655
+        0x0008 line=33947656
+        0x0009 line=33947657
+        0x000a line=33947658
+        0x000b line=33947659
+        0x000c line=33947660
+        0x000d line=33947661
+        0x000e line=33947662
+        0x000f line=33947663
+        0x0010 line=33947664
+        0x0011 line=33947665
+        0x0012 line=33947666
+        0x0013 line=33947667
+        0x0014 line=33947668
+        0x0015 line=33947669
+        0x0016 line=33947670
+        0x0017 line=33947671
+        0x0018 line=33947672
+        0x0019 line=33947673
+        0x001a line=33947674
+        0x001b line=33947675
+        0x001c line=33947676
+        0x001d line=33947677
+        0x001e line=33947678
+        0x001f line=33947679
+        0x0020 line=33947680
+        0x0021 line=33947681
+        0x0022 line=33947682
+        0x0023 line=33947683
+        0x0024 line=33947684
+        0x0025 line=33947685
+        0x0026 line=33947686
+        0x0027 line=33947687
+        0x0028 line=33947688
+        0x0029 line=33947689
+        0x002a line=33947690
+        0x002b line=33947691
+        0x002c line=33947692
+        0x002d line=33947693
+        0x002e line=33947694
+        0x002f line=33947695
+        0x0030 line=33947696
+        0x0031 line=33947697
+        0x0032 line=33947698
+        0x0033 line=33947699
+        0x0034 line=33947700
+        0x0035 line=33947701
+        0x0036 line=33947702
+        0x0037 line=33947703
+        0x0038 line=33947704
+        0x0039 line=33947705
+        0x003a line=33947706
+        0x003b line=33947707
+        0x003c line=33947708
+        0x003d line=33947709
+        0x003e line=33947710
+        0x003f line=33947711
+        0x0040 line=33947712
+        0x0041 line=33947713
+        0x0042 line=33947714
+        0x0043 line=33947715
+        0x0044 line=33947716
+        0x0045 line=33947717
+        0x0046 line=33947718
+        0x0047 line=33947719
+        0x0048 line=33947720
+        0x0049 line=33947721
+        0x004a line=33947722
+        0x004b line=33947723
+        0x004c line=33947724
+        0x004d line=33947725
+        0x004e line=33947726
+        0x004f line=33947727
+        0x0050 line=33947728
+        0x0051 line=33947729
+        0x0052 line=33947730
+        0x0053 line=33947731
+        0x0054 line=33947732
+        0x0055 line=33947733
+        0x0056 line=33947734
+        0x0057 line=33947735
+        0x0058 line=33947736
+        0x0059 line=33947737
+        0x005a line=33947738
+        0x005b line=33947739
+        0x005c line=33947740
+        0x005d line=33947741
+        0x005e line=33947742
+        0x005f line=33947743
+        0x0060 line=33947744
+        0x0061 line=33947745
+        0x0062 line=33947746
+        0x0063 line=33947747
+        0x0064 line=33947748
+        0x0065 line=33947749
+        0x0066 line=33947750
+        0x0067 line=33947751
+        0x0068 line=33947752
+        0x0069 line=33947753
+        0x006a line=33947754
+        0x006b line=33947755
+        0x006c line=33947756
+        0x006d line=33947757
+        0x006e line=33947758
+        0x006f line=33947759
+        0x0070 line=33947760
+        0x0071 line=33947761
+        0x0072 line=33947762
+        0x0073 line=33947763
+        0x0074 line=33947764
+        0x0075 line=33947765
+        0x0076 line=33947766
+        0x0077 line=33947767
+        0x0078 line=33947768
+        0x0079 line=33947769
+        0x007a line=33947770
+        0x007b line=33947771
+        0x007c line=33947772
+        0x007d line=33947773
+        0x007e line=33947774
+        0x007f line=33947775
+        0x0080 line=33947776
+        0x0081 line=33947777
+        0x0082 line=33947778
+        0x0083 line=33947779
+        0x0084 line=33947780
+        0x0085 line=33947781
+        0x0086 line=33947782
+        0x0087 line=33947783
+        0x0088 line=33947784
+        0x0089 line=33947785
+        0x008a line=33947786
+        0x008b line=33947787
+        0x008c line=33947788
+        0x008d line=33947789
+      locals        :
+        0x0000 - 0x008e reg=6 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x008e reg=7 (null) Ljava/lang/String;
+        0x0000 - 0x008e reg=8 (null) Z
+
+    #2              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'd'
+      type          : '(Lpr4/f;ZZ)Lio/reactivex/Observable;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 20
+      ins           : 4
+      outs          : 6
+      insns size    : 415 16-bit code units
+689f98:                                        |[689f98] com.dragon.read.component.shortvideo.impl.v2.data.b.d:(Lpr4/f;ZZ)Lio/reactivex/Observable;
+689fa8: 0806 1000                              |0000: move-object/from16 v6, v16
+689fac: 0801 1100                              |0002: move-object/from16 v1, v17
+689fb0: 0207 1300                              |0004: move/from16 v7, v19
+689fb4: 1200                                   |0006: const/4 v0, #int 0 // #0
+689fb6: 7120 618b 0100                         |0007: invoke-static {v1, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+689fbc: 5412 9184                              |000a: iget-object v2, v1, Lpr4/f;.b:Ljava/lang/String; // field@8491
+689fc0: 5413 9084                              |000c: iget-object v3, v1, Lpr4/f;.a:Ljava/lang/String; // field@8490
+689fc4: 7120 9bb3 3200                         |000e: invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@b39b
+689fca: 0a03                                   |0011: move-result v3
+689fcc: 1214                                   |0012: const/4 v4, #int 1 // #1
+689fce: b743                                   |0013: xor-int/2addr v3, v4
+689fd0: 3803 3e00                              |0014: if-eqz v3, 0052 // +003e
+689fd4: 1203                                   |0016: const/4 v3, #int 0 // #0
+689fd6: 3807 1100                              |0017: if-eqz v7, 0028 // +0011
+689fda: 6205 5d96                              |0019: sget-object v5, Lw05/o;.m:Lw05/o$a; // field@965d
+689fde: 6e10 f6ac 0500                         |001b: invoke-virtual {v5}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+689fe4: 7100 4ced 0000                         |001e: invoke-static {}, Lw05/o$a;.a:()Lw05/o; // method@ed4c
+689fea: 0c05                                   |0021: move-result-object v5
+689fec: 1a08 e6cd                              |0022: const-string v8, "video_model_request_start" // string@cde6
+689ff0: 1269                                   |0024: const/4 v9, #int 6 // #6
+689ff2: 7140 56ed 8593                         |0025: invoke-static {v5, v8, v3, v9}, Lw05/o;.f:(Lw05/o;Ljava/lang/String;Ljava/util/Map;I)V // method@ed56
+689ff8: 5465 8d49                              |0028: iget-object v5, v6, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+689ffc: 6e20 6d14 2500                         |002a: invoke-virtual {v5, v2}, Lc25/p;.c:(Ljava/lang/String;)Ljava/lang/Object; // method@146d
+68a002: 0c05                                   |002d: move-result-object v5
+68a004: 1f05 9a45                              |002e: check-cast v5, Lpr4/t; // type@459a
+68a008: 3805 2600                              |0030: if-eqz v5, 0056 // +0026
+68a00c: 5358 d484                              |0032: iget-wide v8, v5, Lpr4/t;.d:J // field@84d4
+68a010: 7120 a176 9800                         |0034: invoke-static {v8, v9}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.c:(J)Z // method@76a1
+68a016: 0a08                                   |0037: move-result v8
+68a018: 3908 0300                              |0038: if-nez v8, 003b // +0003
+68a01c: 2802                                   |003a: goto 003c // +0002
+68a01e: 0735                                   |003b: move-object v5, v3
+68a020: 3805 1a00                              |003c: if-eqz v5, 0056 // +001a
+68a024: 6203 9149                              |003e: sget-object v3, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a028: 2208 c939                              |0040: new-instance v8, Ljava/lang/StringBuilder; // type@39c9
+68a02c: 1a08 787d                              |0042: const-string v8, "[getRedirectVideoModelInfo] from memory cache " // string@7d78
+68a030: 6e20 03ad 2800                         |0044: invoke-virtual {v8, v2}, Ljava/lang/String;.concat:(Ljava/lang/String;)Ljava/lang/String; // method@ad03
+68a036: 0c08                                   |0047: move-result-object v8
+68a038: 2309 3157                              |0048: new-array v9, v0, [Ljava/lang/Object; // type@5731
+68a03c: 6e30 8919 8309                         |004a: invoke-virtual {v3, v8, v9}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a042: 7120 a576 7500                         |004d: invoke-static {v5, v7}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.g:(Lpr4/t;Z)V // method@76a5
+68a048: 0753                                   |0050: move-object v3, v5
+68a04a: 2805                                   |0051: goto 0056 // +0005
+68a04c: 6e30 a076 2607                         |0052: invoke-virtual {v6, v2, v7}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.b:(Ljava/lang/String;Z)Lpr4/t; // method@76a0
+68a052: 0c03                                   |0055: move-result-object v3
+68a054: 3803 9300                              |0056: if-eqz v3, 00e9 // +0093
+68a058: 5415 9a84                              |0058: iget-object v5, v1, Lpr4/f;.k:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@849a
+68a05c: 6208 f413                              |005a: sget-object v8, Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy;.COLD_START:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@13f4
+68a060: 3285 0d00                              |005c: if-eq v5, v8, 0069 // +000d
+68a064: 6205 9149                              |005e: sget-object v5, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a068: 1a08 c686                              |0060: const-string v8, "cjx: 不属于冷启动策略，不需要强制刷新" // string@86c6
+68a06c: 2309 3157                              |0062: new-array v9, v0, [Ljava/lang/Object; // type@5731
+68a070: 6e30 8919 8509                         |0064: invoke-virtual {v5, v8, v9}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a076: 2900 8200                              |0067: goto/16 00e9 // +0082
+68a07a: 6205 ce12                              |0069: sget-object v5, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/VideoFeedVideoModelExpireStrategyV699;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/VideoFeedVideoModelExpireStrategyV699$a; // field@12ce
+68a07e: 6e10 f6ac 0500                         |006b: invoke-virtual {v5}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a084: 6205 d012                              |006e: sget-object v5, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/VideoFeedVideoModelExpireStrategyV699;.b:Lkotlin/Lazy; // field@12d0
+68a088: 7210 e4b2 0500                         |0070: invoke-interface {v5}, Lkotlin/Lazy;.getValue:()Ljava/lang/Object; // method@b2e4
+68a08e: 0c05                                   |0073: move-result-object v5
+68a090: 1f05 620d                              |0074: check-cast v5, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/VideoFeedVideoModelExpireStrategyV699; // type@0d62
+68a094: 5358 cf12                              |0076: iget-wide v8, v5, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/VideoFeedVideoModelExpireStrategyV699;.advanceRequestTime:J // field@12cf
+68a098: 5535 dd84                              |0078: iget-boolean v5, v3, Lpr4/t;.m:Z // field@84dd
+68a09c: 3805 0c00                              |007a: if-eqz v5, 0086 // +000c
+68a0a0: 6205 9149                              |007c: sget-object v5, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a0a4: 1a08 c386                              |007e: const-string v8, "cjx, 读取video model 的来源是 已下载列表, 不需要强制刷新" // string@86c3
+68a0a8: 2309 3157                              |0080: new-array v9, v0, [Ljava/lang/Object; // type@5731
+68a0ac: 6e30 8919 8509                         |0082: invoke-virtual {v5, v8, v9}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a0b2: 2864                                   |0085: goto 00e9 // +0064
+68a0b4: 160a 0000                              |0086: const-wide/16 v10, #int 0 // #0
+68a0b8: 3105 080a                              |0088: cmp-long v5, v8, v10
+68a0bc: 3c05 0c00                              |008a: if-gtz v5, 0096 // +000c
+68a0c0: 6205 9149                              |008c: sget-object v5, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a0c4: 1a08 c486                              |008e: const-string v8, "cjx: refresh time 小于0, 没有命中强制刷新的逻辑" // string@86c4
+68a0c8: 2309 3157                              |0090: new-array v9, v0, [Ljava/lang/Object; // type@5731
+68a0cc: 6e30 8919 8509                         |0092: invoke-virtual {v5, v8, v9}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a0d2: 2854                                   |0095: goto 00e9 // +0054
+68a0d4: 6205 1f08                              |0096: sget-object v5, Lc95/w0;.a:Lc95/w0; // field@081f
+68a0d8: 6e10 f6ac 0500                         |0098: invoke-virtual {v5}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a0de: 6205 3c6a                              |009b: sget-object v5, Lg95/p;.b:Lg95/p; // field@6a3c
+68a0e2: 6e10 479e 0500                         |009d: invoke-virtual {v5}, Lg95/p;.M1:()J // method@9e47
+68a0e8: 0b0a                                   |00a0: move-result-wide v10
+68a0ea: 533c d484                              |00a1: iget-wide v12, v3, Lpr4/t;.d:J // field@84d4
+68a0ee: 1305 e803                              |00a3: const/16 v5, #int 1000 // #3e8
+68a0f2: 815e                                   |00a5: int-to-long v14, v5
+68a0f4: beea                                   |00a6: div-long/2addr v10, v14
+68a0f6: bcac                                   |00a7: sub-long/2addr v12, v10
+68a0f8: 3105 0c08                              |00a8: cmp-long v5, v12, v8
+68a0fc: 3b05 0400                              |00aa: if-gez v5, 00ae // +0004
+68a100: 1215                                   |00ac: const/4 v5, #int 1 // #1
+68a102: 2802                                   |00ad: goto 00af // +0002
+68a104: 1205                                   |00ae: const/4 v5, #int 0 // #0
+68a106: 620c 9149                              |00af: sget-object v12, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a10a: 220d c939                              |00b1: new-instance v13, Ljava/lang/StringBuilder; // type@39c9
+68a10e: 1a0e c586                              |00b3: const-string v14, "cjx: video model expire time: " // string@86c5
+68a112: 7020 19ad ed00                         |00b5: invoke-direct {v13, v14}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a118: 533e d484                              |00b8: iget-wide v14, v3, Lpr4/t;.d:J // field@84d4
+68a11c: 6e30 1fad ed0f                         |00ba: invoke-virtual {v13, v14, v15}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+68a122: 1a0e b207                              |00bd: const-string v14, ", expire strategy is " // string@07b2
+68a126: 6e20 22ad ed00                         |00bf: invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a12c: 541e 9a84                              |00c2: iget-object v14, v1, Lpr4/f;.k:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@849a
+68a130: 6e20 21ad ed00                         |00c4: invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ad21
+68a136: 1a0e 7c0b                              |00c7: const-string v14, ", refresh time is " // string@0b7c
+68a13a: 6e20 22ad ed00                         |00c9: invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a140: 6e30 1fad 8d09                         |00cc: invoke-virtual {v13, v8, v9}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+68a146: 1a08 3b09                              |00cf: const-string v8, ", isLimit is " // string@093b
+68a14a: 6e20 22ad 8d00                         |00d1: invoke-virtual {v13, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a150: 6e20 23ad 5d00                         |00d4: invoke-virtual {v13, v5}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@ad23
+68a156: 1a08 970b                              |00d7: const-string v8, ", remote time is " // string@0b97
+68a15a: 6e20 22ad 8d00                         |00d9: invoke-virtual {v13, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a160: 6e30 1fad ad0b                         |00dc: invoke-virtual {v13, v10, v11}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@ad1f
+68a166: 6e10 27ad 0d00                         |00df: invoke-virtual {v13}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a16c: 0c08                                   |00e2: move-result-object v8
+68a16e: 2309 3157                              |00e3: new-array v9, v0, [Ljava/lang/Object; // type@5731
+68a172: 6e30 8919 8c09                         |00e5: invoke-virtual {v12, v8, v9}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a178: 2802                                   |00e8: goto 00ea // +0002
+68a17a: 1205                                   |00e9: const/4 v5, #int 0 // #0
+68a17c: 6208 9149                              |00ea: sget-object v8, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a180: 2209 c939                              |00ec: new-instance v9, Ljava/lang/StringBuilder; // type@39c9
+68a184: 1a0a fea6                              |00ee: const-string v10, "loadVideoModel businessVid:" // string@a6fe
+68a188: 7020 19ad a900                         |00f0: invoke-direct {v9, v10}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a18e: 541a 9084                              |00f3: iget-object v10, v1, Lpr4/f;.a:Ljava/lang/String; // field@8490
+68a192: 6e20 22ad a900                         |00f5: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a198: 1a0a e102                              |00f8: const-string v10, " requestVid:" // string@02e1
+68a19c: 6e20 22ad a900                         |00fa: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a1a2: 6e20 22ad 2900                         |00fd: invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a1a8: 1a02 b503                              |0100: const-string v2, " videoModelInfo:" // string@03b5
+68a1ac: 6e20 22ad 2900                         |0102: invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a1b2: 6e20 21ad 3900                         |0105: invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ad21
+68a1b8: 1a02 fa01                              |0108: const-string v2, " isTrace:" // string@01fa
+68a1bc: 6e20 22ad 2900                         |010a: invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a1c2: 6e20 23ad 7900                         |010d: invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@ad23
+68a1c8: 6e10 27ad 0900                         |0110: invoke-virtual {v9}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a1ce: 0c02                                   |0113: move-result-object v2
+68a1d0: 2300 3157                              |0114: new-array v0, v0, [Ljava/lang/Object; // type@5731
+68a1d4: 6e30 8919 2800                         |0116: invoke-virtual {v8, v2, v0}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a1da: 1a08 0000                              |0119: const-string v8, "" // string@0000
+68a1de: 3803 1100                              |011b: if-eqz v3, 012c // +0011
+68a1e2: 3905 0f00                              |011d: if-nez v5, 012c // +000f
+68a1e6: 2200 e744                              |011f: new-instance v0, Lp65/o2; // type@44e7
+68a1ea: 7020 fdcf 3000                         |0121: invoke-direct {v0, v3}, Lp65/o2;.<init>:(Lpr4/t;)V // method@cffd
+68a1f0: 7110 698b 0000                         |0124: invoke-static {v0}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.create:(Lio/reactivex/ObservableOnSubscribe;)Lio/reactivex/Observable; // method@8b69
+68a1f6: 0c00                                   |0127: move-result-object v0
+68a1f8: 7120 9fb3 8000                         |0128: invoke-static {v0, v8}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a1fe: 1100                                   |012b: return-object v0
+68a200: 6200 1810                              |012c: sget-object v0, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.Companion:Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService$a; // field@1018
+68a204: 6e10 f6ac 0000                         |012e: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a20a: 7100 df1e 0000                         |0131: invoke-static {}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService$a;.a:()Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService; // method@1edf
+68a210: 0c09                                   |0134: move-result-object v9
+68a212: 5410 9184                              |0135: iget-object v0, v1, Lpr4/f;.b:Ljava/lang/String; // field@8491
+68a216: 5412 9084                              |0137: iget-object v2, v1, Lpr4/f;.a:Ljava/lang/String; // field@8490
+68a21a: 7120 9bb3 2000                         |0139: invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@b39b
+68a220: 0a00                                   |013c: move-result v0
+68a222: b740                                   |013d: xor-int/2addr v0, v4
+68a224: 3900 5a00                              |013e: if-nez v0, 0198 // +005a
+68a228: 6200 4d11                              |0140: sget-object v0, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue$a; // field@114d
+68a22c: 6e10 f6ac 0000                         |0142: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a232: 7100 e31f 0000                         |0145: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue; // method@1fe3
+68a238: 0c00                                   |0148: move-result-object v0
+68a23a: 5500 4e11                              |0149: iget-boolean v0, v0, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/OfflinePlayABValue;.enable:Z // field@114e
+68a23e: 3800 4d00                              |014b: if-eqz v0, 0198 // +004d
+68a242: 3809 4b00                              |014d: if-eqz v9, 0198 // +004b
+68a246: 7210 e41e 0900                         |014f: invoke-interface {v9}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.isMetadataLazyLoadEnabled:()Z // method@1ee4
+68a24c: 0a00                                   |0152: move-result v0
+68a24e: 3800 4500                              |0153: if-eqz v0, 0198 // +0045
+68a252: 541a 9084                              |0155: iget-object v10, v1, Lpr4/f;.a:Ljava/lang/String; // field@8490
+68a256: 220b c744                              |0157: new-instance v11, Lp65/k3; // type@44c7
+68a25a: 07b0                                   |0159: move-object v0, v11
+68a25c: 0801 1100                              |015a: move-object/from16 v1, v17
+68a260: 0802 1000                              |015c: move-object/from16 v2, v16
+68a264: 0203 1200                              |015e: move/from16 v3, v18
+68a268: 0204 1300                              |0160: move/from16 v4, v19
+68a26c: 7606 bccf 0000                         |0162: invoke-direct/range {v0, v1, v2, v3, v4, v5}, Lp65/k3;.<init>:(Lpr4/f;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;ZZZ)V // method@cfbc
+68a272: 7110 6a8b 0b00                         |0165: invoke-static {v11}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.defer:(Ljava/util/concurrent/Callable;)Lio/reactivex/Observable; // method@8b6a
+68a278: 0c00                                   |0168: move-result-object v0
+68a27a: 7120 9fb3 8000                         |0169: invoke-static {v0, v8}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a280: 7220 e71e a900                         |016c: invoke-interface {v9, v10}, Lcom/dragon/read/component/seriessdk/download/api/ISeriesOfflinePlayService;.loadOfflineVideoModelInfo:(Ljava/lang/String;)Lio/reactivex/Maybe; // method@1ee7
+68a286: 0c01                                   |016f: move-result-object v1
+68a288: 2202 e044                              |0170: new-instance v2, Lp65/n3; // type@44e0
+68a28c: 7040 efcf 627a                         |0172: invoke-direct {v2, v6, v10, v7}, Lp65/n3;.<init>:(Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Ljava/lang/String;Z)V // method@cfef
+68a292: 2203 e844                              |0175: new-instance v3, Lp65/o3; // type@44e8
+68a296: 7020 ffcf 2300                         |0177: invoke-direct {v3, v2}, Lp65/o3;.<init>:(Lp65/n3;)V // method@cfff
+68a29c: 6e20 4da7 3100                         |017a: invoke-virtual {v1, v3}, Lio/reactivex/Maybe;.doOnSuccess:(Lio/reactivex/functions/Consumer;)Lio/reactivex/Maybe; // method@a74d
+68a2a2: 0c01                                   |017d: move-result-object v1
+68a2a4: 6e10 53a7 0100                         |017e: invoke-virtual {v1}, Lio/reactivex/Maybe;.toObservable:()Lio/reactivex/Observable; // method@a753
+68a2aa: 0c01                                   |0181: move-result-object v1
+68a2ac: 2202 f044                              |0182: new-instance v2, Lp65/p3; // type@44f0
+68a2b0: 7030 0fd0 a200                         |0184: invoke-direct {v2, v10, v0}, Lp65/p3;.<init>:(Ljava/lang/String;Lio/reactivex/Observable;)V // method@d00f
+68a2b6: 2203 f844                              |0187: new-instance v3, Lp65/q3; // type@44f8
+68a2ba: 7020 1fd0 2300                         |0189: invoke-direct {v3, v2}, Lp65/q3;.<init>:(Lp65/p3;)V // method@d01f
+68a2c0: 6e20 77a7 3100                         |018c: invoke-virtual {v1, v3}, Lio/reactivex/Observable;.onErrorResumeNext:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@a777
+68a2c6: 0c01                                   |018f: move-result-object v1
+68a2c8: 6e20 85a7 0100                         |0190: invoke-virtual {v1, v0}, Lio/reactivex/Observable;.switchIfEmpty:(Lio/reactivex/ObservableSource;)Lio/reactivex/Observable; // method@a785
+68a2ce: 0c00                                   |0193: move-result-object v0
+68a2d0: 7120 9fb3 8000                         |0194: invoke-static {v0, v8}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a2d6: 2807                                   |0197: goto 019e // +0007
+68a2d8: 0200 1200                              |0198: move/from16 v0, v18
+68a2dc: 6e55 a376 0671                         |019a: invoke-virtual {v6, v0, v1, v7, v5}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:(ZLpr4/f;ZZ)Lio/reactivex/Observable; // method@76a3
+68a2e2: 0c00                                   |019d: move-result-object v0
+68a2e4: 1100                                   |019e: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=50790400
+        0x0001 line=50790401
+        0x0002 line=50790402
+        0x0003 line=50790403
+        0x0004 line=50790404
+        0x0005 line=50790405
+        0x0006 line=50790406
+        0x0007 line=50790407
+        0x0008 line=50790408
+        0x0009 line=50790409
+        0x000a line=50790410
+        0x000b line=50790411
+        0x000c line=50790412
+        0x000d line=50790413
+        0x000e line=50790414
+        0x000f line=50790415
+        0x0010 line=50790416
+        0x0011 line=50790417
+        0x0012 line=50790418
+        0x0013 line=50790419
+        0x0014 line=50790420
+        0x0015 line=50790421
+        0x0016 line=50790422
+        0x0017 line=50790423
+        0x0018 line=50790424
+        0x0019 line=50790425
+        0x001a line=50790426
+        0x001b line=50790427
+        0x001c line=50790428
+        0x001d line=50790429
+        0x001e line=50790430
+        0x001f line=50790431
+        0x0020 line=50790432
+        0x0021 line=50790433
+        0x0022 line=50790434
+        0x0023 line=50790435
+        0x0024 line=50790436
+        0x0025 line=50790437
+        0x0026 line=50790438
+        0x0027 line=50790439
+        0x0028 line=50790440
+        0x0029 line=50790441
+        0x002a line=50790442
+        0x002b line=50790443
+        0x002c line=50790444
+        0x002d line=50790445
+        0x002e line=50790446
+        0x002f line=50790447
+        0x0030 line=50790448
+        0x0031 line=50790449
+        0x0032 line=50790450
+        0x0033 line=50790451
+        0x0034 line=50790452
+        0x0035 line=50790453
+        0x0036 line=50790454
+        0x0037 line=50790455
+        0x0038 line=50790456
+        0x0039 line=50790457
+        0x003a line=50790458
+        0x003b line=50790459
+        0x003c line=50790460
+        0x003d line=50790461
+        0x003e line=50790462
+        0x003f line=50790463
+        0x0040 line=50790464
+        0x0041 line=50790465
+        0x0042 line=50790466
+        0x0043 line=50790467
+        0x0044 line=50790468
+        0x0045 line=50790469
+        0x0046 line=50790470
+        0x0047 line=50790471
+        0x0048 line=50790472
+        0x0049 line=50790473
+        0x004a line=50790474
+        0x004b line=50790475
+        0x004c line=50790476
+        0x004d line=50790477
+        0x004e line=50790478
+        0x004f line=50790479
+        0x0050 line=50790480
+        0x0051 line=50790481
+        0x0052 line=50790482
+        0x0053 line=50790483
+        0x0054 line=50790484
+        0x0055 line=50790485
+        0x0056 line=50790486
+        0x0057 line=50790487
+        0x0058 line=50790488
+        0x0059 line=50790489
+        0x005a line=50790490
+        0x005b line=50790491
+        0x005c line=50790492
+        0x005d line=50790493
+        0x005e line=50790494
+        0x005f line=50790495
+        0x0060 line=50790496
+        0x0061 line=50790497
+        0x0062 line=50790498
+        0x0063 line=50790499
+        0x0064 line=50790500
+        0x0065 line=50790501
+        0x0066 line=50790502
+        0x0067 line=50790503
+        0x0068 line=50790504
+        0x0069 line=50790505
+        0x006a line=50790506
+        0x006b line=50790507
+        0x006c line=50790508
+        0x006d line=50790509
+        0x006e line=50790510
+        0x006f line=50790511
+        0x0070 line=50790512
+        0x0071 line=50790513
+        0x0072 line=50790514
+        0x0073 line=50790515
+        0x0074 line=50790516
+        0x0075 line=50790517
+        0x0076 line=50790518
+        0x0077 line=50790519
+        0x0078 line=50790520
+        0x0079 line=50790521
+        0x007a line=50790522
+        0x007b line=50790523
+        0x007c line=50790524
+        0x007d line=50790525
+        0x007e line=50790526
+        0x007f line=50790527
+        0x0080 line=50790528
+        0x0081 line=50790529
+        0x0082 line=50790530
+        0x0083 line=50790531
+        0x0084 line=50790532
+        0x0085 line=50790533
+        0x0086 line=50790534
+        0x0087 line=50790535
+        0x0088 line=50790536
+        0x0089 line=50790537
+        0x008a line=50790538
+        0x008b line=50790539
+        0x008c line=50790540
+        0x008d line=50790541
+        0x008e line=50790542
+        0x008f line=50790543
+        0x0090 line=50790544
+        0x0091 line=50790545
+        0x0092 line=50790546
+        0x0093 line=50790547
+        0x0094 line=50790548
+        0x0095 line=50790549
+        0x0096 line=50790550
+        0x0097 line=50790551
+        0x0098 line=50790552
+        0x0099 line=50790553
+        0x009a line=50790554
+        0x009b line=50790555
+        0x009c line=50790556
+        0x009d line=50790557
+        0x009e line=50790558
+        0x009f line=50790559
+        0x00a0 line=50790560
+        0x00a1 line=50790561
+        0x00a2 line=50790562
+        0x00a3 line=50790563
+        0x00a4 line=50790564
+        0x00a5 line=50790565
+        0x00a6 line=50790566
+        0x00a7 line=50790567
+        0x00a8 line=50790568
+        0x00a9 line=50790569
+        0x00aa line=50790570
+        0x00ab line=50790571
+        0x00ac line=50790572
+        0x00ad line=50790573
+        0x00ae line=50790574
+        0x00af line=50790575
+        0x00b0 line=50790576
+        0x00b1 line=50790577
+        0x00b2 line=50790578
+        0x00b3 line=50790579
+        0x00b4 line=50790580
+        0x00b5 line=50790581
+        0x00b6 line=50790582
+        0x00b7 line=50790583
+        0x00b8 line=50790584
+        0x00b9 line=50790585
+        0x00ba line=50790586
+        0x00bb line=50790587
+        0x00bc line=50790588
+        0x00bd line=50790589
+        0x00be line=50790590
+        0x00bf line=50790591
+        0x00c0 line=50790592
+        0x00c1 line=50790593
+        0x00c2 line=50790594
+        0x00c3 line=50790595
+        0x00c4 line=50790596
+        0x00c5 line=50790597
+        0x00c6 line=50790598
+        0x00c7 line=50790599
+        0x00c8 line=50790600
+        0x00c9 line=50790601
+        0x00ca line=50790602
+        0x00cb line=50790603
+        0x00cc line=50790604
+        0x00cd line=50790605
+        0x00ce line=50790606
+        0x00cf line=50790607
+        0x00d0 line=50790608
+        0x00d1 line=50790609
+        0x00d2 line=50790610
+        0x00d3 line=50790611
+        0x00d4 line=50790612
+        0x00d5 line=50790613
+        0x00d6 line=50790614
+        0x00d7 line=50790615
+        0x00d8 line=50790616
+        0x00d9 line=50790617
+        0x00da line=50790618
+        0x00db line=50790619
+        0x00dc line=50790620
+        0x00dd line=50790621
+        0x00de line=50790622
+        0x00df line=50790623
+        0x00e0 line=50790624
+        0x00e1 line=50790625
+        0x00e2 line=50790626
+        0x00e3 line=50790627
+        0x00e4 line=50790628
+        0x00e5 line=50790629
+        0x00e6 line=50790630
+        0x00e7 line=50790631
+        0x00e8 line=50790632
+        0x00e9 line=50790633
+        0x00ea line=50790634
+        0x00eb line=50790635
+        0x00ec line=50790636
+        0x00ed line=50790637
+        0x00ee line=50790638
+        0x00ef line=50790639
+        0x00f0 line=50790640
+        0x00f1 line=50790641
+        0x00f2 line=50790642
+        0x00f3 line=50790643
+        0x00f4 line=50790644
+        0x00f5 line=50790645
+        0x00f6 line=50790646
+        0x00f7 line=50790647
+        0x00f8 line=50790648
+        0x00f9 line=50790649
+        0x00fa line=50790650
+        0x00fb line=50790651
+        0x00fc line=50790652
+        0x00fd line=50790653
+        0x00fe line=50790654
+        0x00ff line=50790655
+        0x0100 line=50790656
+        0x0101 line=50790657
+        0x0102 line=50790658
+        0x0103 line=50790659
+        0x0104 line=50790660
+        0x0105 line=50790661
+        0x0106 line=50790662
+        0x0107 line=50790663
+        0x0108 line=50790664
+        0x0109 line=50790665
+        0x010a line=50790666
+        0x010b line=50790667
+        0x010c line=50790668
+        0x010d line=50790669
+        0x010e line=50790670
+        0x010f line=50790671
+        0x0110 line=50790672
+        0x0111 line=50790673
+        0x0112 line=50790674
+        0x0113 line=50790675
+        0x0114 line=50790676
+        0x0115 line=50790677
+        0x0116 line=50790678
+        0x0117 line=50790679
+        0x0118 line=50790680
+        0x0119 line=50790681
+        0x011a line=50790682
+        0x011b line=50790683
+        0x011c line=50790684
+        0x011d line=50790685
+        0x011e line=50790686
+        0x011f line=50790687
+        0x0120 line=50790688
+        0x0121 line=50790689
+        0x0122 line=50790690
+        0x0123 line=50790691
+        0x0124 line=50790692
+        0x0125 line=50790693
+        0x0126 line=50790694
+        0x0127 line=50790695
+        0x0128 line=50790696
+        0x0129 line=50790697
+        0x012a line=50790698
+        0x012b line=50790699
+        0x012c line=50790700
+        0x012d line=50790701
+        0x012e line=50790702
+        0x012f line=50790703
+        0x0130 line=50790704
+        0x0131 line=50790705
+        0x0132 line=50790706
+        0x0133 line=50790707
+        0x0134 line=50790708
+        0x0135 line=50790709
+        0x0136 line=50790710
+        0x0137 line=50790711
+        0x0138 line=50790712
+        0x0139 line=50790713
+        0x013a line=50790714
+        0x013b line=50790715
+        0x013c line=50790716
+        0x013d line=50790717
+        0x013e line=50790718
+        0x013f line=50790719
+        0x0140 line=50790720
+        0x0141 line=50790721
+        0x0142 line=50790722
+        0x0143 line=50790723
+        0x0144 line=50790724
+        0x0145 line=50790725
+        0x0146 line=50790726
+        0x0147 line=50790727
+        0x0148 line=50790728
+        0x0149 line=50790729
+        0x014a line=50790730
+        0x014b line=50790731
+        0x014c line=50790732
+        0x014d line=50790733
+        0x014e line=50790734
+        0x014f line=50790735
+        0x0150 line=50790736
+        0x0151 line=50790737
+        0x0152 line=50790738
+        0x0153 line=50790739
+        0x0154 line=50790740
+        0x0155 line=50790741
+        0x0156 line=50790742
+        0x0157 line=50790743
+        0x0158 line=50790744
+        0x0159 line=50790745
+        0x015a line=50790746
+        0x015b line=50790747
+        0x015c line=50790748
+        0x015d line=50790749
+        0x015e line=50790750
+        0x015f line=50790751
+        0x0160 line=50790752
+        0x0161 line=50790753
+        0x0162 line=50790754
+        0x0163 line=50790755
+        0x0164 line=50790756
+        0x0165 line=50790757
+        0x0166 line=50790758
+        0x0167 line=50790759
+        0x0168 line=50790760
+        0x0169 line=50790761
+        0x016a line=50790762
+        0x016b line=50790763
+        0x016c line=50790764
+        0x016d line=50790765
+        0x016e line=50790766
+        0x016f line=50790767
+        0x0170 line=50790768
+        0x0171 line=50790769
+        0x0172 line=50790770
+        0x0173 line=50790771
+        0x0174 line=50790772
+        0x0175 line=50790773
+        0x0176 line=50790774
+        0x0177 line=50790775
+        0x0178 line=50790776
+        0x0179 line=50790777
+        0x017a line=50790778
+        0x017b line=50790779
+        0x017c line=50790780
+        0x017d line=50790781
+        0x017e line=50790782
+        0x017f line=50790783
+        0x0180 line=50790784
+        0x0181 line=50790785
+        0x0182 line=50790786
+        0x0183 line=50790787
+        0x0184 line=50790788
+        0x0185 line=50790789
+        0x0186 line=50790790
+        0x0187 line=50790791
+        0x0188 line=50790792
+        0x0189 line=50790793
+        0x018a line=50790794
+        0x018b line=50790795
+        0x018c line=50790796
+        0x018d line=50790797
+        0x018e line=50790798
+        0x018f line=50790799
+        0x0190 line=50790800
+        0x0191 line=50790801
+        0x0192 line=50790802
+        0x0193 line=50790803
+        0x0194 line=50790804
+        0x0195 line=50790805
+        0x0196 line=50790806
+        0x0197 line=50790807
+        0x0198 line=50790808
+        0x0199 line=50790809
+        0x019a line=50790810
+        0x019b line=50790811
+        0x019c line=50790812
+        0x019d line=50790813
+        0x019e line=50790814
+      locals        :
+        0x0000 - 0x019f reg=16 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x019f reg=17 (null) Lpr4/f;
+        0x0000 - 0x019f reg=18 (null) Z
+        0x0000 - 0x019f reg=19 (null) Z
+
+    #3              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'e'
+      type          : '(ZLpr4/f;ZZ)Lio/reactivex/Observable;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 12
+      ins           : 5
+      outs          : 6
+      insns size    : 154 16-bit code units
+68a2e8:                                        |[68a2e8] com.dragon.read.component.shortvideo.impl.v2.data.b.e:(ZLpr4/f;ZZ)Lio/reactivex/Observable;
+68a2f8: 5490 9184                              |0000: iget-object v0, v9, Lpr4/f;.b:Ljava/lang/String; // field@8491
+68a2fc: 5491 9084                              |0002: iget-object v1, v9, Lpr4/f;.a:Ljava/lang/String; // field@8490
+68a300: 7120 9bb3 1000                         |0004: invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@b39b
+68a306: 0a00                                   |0007: move-result v0
+68a308: 1211                                   |0008: const/4 v1, #int 1 // #1
+68a30a: b710                                   |0009: xor-int/2addr v0, v1
+68a30c: 3900 7b00                              |000a: if-nez v0, 0085 // +007b
+68a310: 5570 8e49                              |000c: iget-boolean v0, v7, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.b:Z // field@498e
+68a314: 3900 7700                              |000e: if-nez v0, 0085 // +0077
+68a318: 6200 b310                              |0010: sget-object v0, Lcom/dragon/read/component/shortvideo/api/config/VideoModelReadOptV711;.a:Lcom/dragon/read/component/shortvideo/api/config/VideoModelReadOptV711$a; // field@10b3
+68a31c: 6e10 f6ac 0000                         |0012: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a322: 6200 b410                              |0015: sget-object v0, Lcom/dragon/read/component/shortvideo/api/config/VideoModelReadOptV711;.b:Lkotlin/Lazy; // field@10b4
+68a326: 7210 e4b2 0000                         |0017: invoke-interface {v0}, Lkotlin/Lazy;.getValue:()Ljava/lang/Object; // method@b2e4
+68a32c: 0c00                                   |001a: move-result-object v0
+68a32e: 1f00 710c                              |001b: check-cast v0, Lcom/dragon/read/component/shortvideo/api/config/VideoModelReadOptV711; // type@0c71
+68a332: 5500 b510                              |001d: iget-boolean v0, v0, Lcom/dragon/read/component/shortvideo/api/config/VideoModelReadOptV711;.enable:Z // field@10b5
+68a336: 3800 6600                              |001f: if-eqz v0, 0085 // +0066
+68a33a: 390b 6400                              |0021: if-nez v11, 0085 // +0064
+68a33e: 620b 9149                              |0023: sget-object v11, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a342: 1200                                   |0025: const/4 v0, #int 0 // #0
+68a344: 2302 3157                              |0026: new-array v2, v0, [Ljava/lang/Object; // type@5731
+68a348: 1a03 f8d2                              |0028: const-string v3, "磁盘数据没有初始化完成，同时发起磁盘和网络请求，谁快用谁的" // string@d2f8
+68a34c: 6e30 8819 3b02                         |002a: invoke-virtual {v11, v3, v2}, Lcom/dragon/read/base/util/LogHelper;.e:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1988
+68a352: 549b 9084                              |002d: iget-object v11, v9, Lpr4/f;.a:Ljava/lang/String; // field@8490
+68a356: 2202 0845                              |002f: new-instance v2, Lp65/s3; // type@4508
+68a35a: 7058 3fd0 a297                         |0031: invoke-direct {v2, v10, v7, v9, v8}, Lp65/s3;.<init>:(ZLcom/dragon/read/component/shortvideo/impl/v2/data/b;Lpr4/f;Z)V // method@d03f
+68a360: 7110 698b 0200                         |0034: invoke-static {v2}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.create:(Lio/reactivex/ObservableOnSubscribe;)Lio/reactivex/Observable; // method@8b69
+68a366: 0c08                                   |0037: move-result-object v8
+68a368: 7100 68a7 0000                         |0038: invoke-static {}, Lio/reactivex/Observable;.empty:()Lio/reactivex/Observable; // method@a768
+68a36e: 0c09                                   |003b: move-result-object v9
+68a370: 6e20 76a7 9800                         |003c: invoke-virtual {v8, v9}, Lio/reactivex/Observable;.onErrorResumeNext:(Lio/reactivex/ObservableSource;)Lio/reactivex/Observable; // method@a776
+68a376: 0c08                                   |003f: move-result-object v8
+68a378: 2209 1045                              |0040: new-instance v9, Lp65/t3; // type@4510
+68a37c: 7030 4ed0 790b                         |0042: invoke-direct {v9, v7, v11}, Lp65/t3;.<init>:(Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Ljava/lang/String;)V // method@d04e
+68a382: 7110 698b 0900                         |0045: invoke-static {v9}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.create:(Lio/reactivex/ObservableOnSubscribe;)Lio/reactivex/Observable; // method@8b69
+68a388: 0c09                                   |0048: move-result-object v9
+68a38a: 7100 c1a7 0000                         |0049: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@a7c1
+68a390: 0c02                                   |004c: move-result-object v2
+68a392: 6e20 84a7 2900                         |004d: invoke-virtual {v9, v2}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@a784
+68a398: 0c09                                   |0050: move-result-object v9
+68a39a: 7100 68a7 0000                         |0051: invoke-static {}, Lio/reactivex/Observable;.empty:()Lio/reactivex/Observable; // method@a768
+68a3a0: 0c02                                   |0054: move-result-object v2
+68a3a2: 6e20 76a7 2900                         |0055: invoke-virtual {v9, v2}, Lio/reactivex/Observable;.onErrorResumeNext:(Lio/reactivex/ObservableSource;)Lio/reactivex/Observable; // method@a776
+68a3a8: 0c09                                   |0058: move-result-object v9
+68a3aa: 1222                                   |0059: const/4 v2, #int 2 // #2
+68a3ac: 2322 2757                              |005a: new-array v2, v2, [Lio/reactivex/ObservableSource; // type@5727
+68a3b0: 4d09 0200                              |005c: aput-object v9, v2, v0
+68a3b4: 4d08 0201                              |005e: aput-object v8, v2, v1
+68a3b8: 7110 54a7 0200                         |0060: invoke-static {v2}, Lio/reactivex/Observable;.ambArray:([Lio/reactivex/ObservableSource;)Lio/reactivex/Observable; // method@a754
+68a3be: 0c08                                   |0063: move-result-object v8
+68a3c0: 2209 ef44                              |0064: new-instance v9, Lp65/p2; // type@44ef
+68a3c4: 7040 0dd0 79ab                         |0066: invoke-direct {v9, v7, v11, v10}, Lp65/p2;.<init>:(Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Ljava/lang/String;Z)V // method@d00d
+68a3ca: 220a f744                              |0069: new-instance v10, Lp65/q2; // type@44f7
+68a3ce: 7020 1dd0 9a00                         |006b: invoke-direct {v10, v9}, Lp65/q2;.<init>:(Lp65/p2;)V // method@d01d
+68a3d4: 6e20 73a7 a800                         |006e: invoke-virtual {v8, v10}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@a773
+68a3da: 0c08                                   |0071: move-result-object v8
+68a3dc: 2209 cc39                              |0072: new-instance v9, Ljava/lang/Throwable; // type@39cc
+68a3e0: 1a0a 52d3                              |0074: const-string v10, "获取video model失败，所有数据源均为空" // string@d352
+68a3e4: 7020 32ad a900                         |0076: invoke-direct {v9, v10}, Ljava/lang/Throwable;.<init>:(Ljava/lang/String;)V // method@ad32
+68a3ea: 7110 69a7 0900                         |0079: invoke-static {v9}, Lio/reactivex/Observable;.error:(Ljava/lang/Throwable;)Lio/reactivex/Observable; // method@a769
+68a3f0: 0c09                                   |007c: move-result-object v9
+68a3f2: 6e20 85a7 9800                         |007d: invoke-virtual {v8, v9}, Lio/reactivex/Observable;.switchIfEmpty:(Lio/reactivex/ObservableSource;)Lio/reactivex/Observable; // method@a785
+68a3f8: 0c08                                   |0080: move-result-object v8
+68a3fa: 7120 618b 0800                         |0081: invoke-static {v8, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+68a400: 1108                                   |0084: return-object v8
+68a402: 2200 0045                              |0085: new-instance v0, Lp65/r3; // type@4500
+68a406: 0701                                   |0087: move-object v1, v0
+68a408: 0792                                   |0088: move-object v2, v9
+68a40a: 0773                                   |0089: move-object v3, v7
+68a40c: 01a4                                   |008a: move v4, v10
+68a40e: 0185                                   |008b: move v5, v8
+68a410: 01b6                                   |008c: move v6, v11
+68a412: 7606 2fd0 0100                         |008d: invoke-direct/range {v1, v2, v3, v4, v5, v6}, Lp65/r3;.<init>:(Lpr4/f;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;ZZZ)V // method@d02f
+68a418: 7110 698b 0000                         |0090: invoke-static {v0}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.create:(Lio/reactivex/ObservableOnSubscribe;)Lio/reactivex/Observable; // method@8b69
+68a41e: 0c08                                   |0093: move-result-object v8
+68a420: 1a09 0000                              |0094: const-string v9, "" // string@0000
+68a424: 7120 9fb3 9800                         |0096: invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a42a: 1108                                   |0099: return-object v8
+      catches       : (none)
+      positions     :
+        0x0000 line=67502080
+        0x0001 line=67502081
+        0x0002 line=67502082
+        0x0003 line=67502083
+        0x0004 line=67502084
+        0x0005 line=67502085
+        0x0006 line=67502086
+        0x0007 line=67502087
+        0x0008 line=67502088
+        0x0009 line=67502089
+        0x000a line=67502090
+        0x000b line=67502091
+        0x000c line=67502092
+        0x000d line=67502093
+        0x000e line=67502094
+        0x000f line=67502095
+        0x0010 line=67502096
+        0x0011 line=67502097
+        0x0012 line=67502098
+        0x0013 line=67502099
+        0x0014 line=67502100
+        0x0015 line=67502101
+        0x0016 line=67502102
+        0x0017 line=67502103
+        0x0018 line=67502104
+        0x0019 line=67502105
+        0x001a line=67502106
+        0x001b line=67502107
+        0x001c line=67502108
+        0x001d line=67502109
+        0x001e line=67502110
+        0x001f line=67502111
+        0x0020 line=67502112
+        0x0021 line=67502113
+        0x0022 line=67502114
+        0x0023 line=67502115
+        0x0024 line=67502116
+        0x0025 line=67502117
+        0x0026 line=67502118
+        0x0027 line=67502119
+        0x0028 line=67502120
+        0x0029 line=67502121
+        0x002a line=67502122
+        0x002b line=67502123
+        0x002c line=67502124
+        0x002d line=67502125
+        0x002e line=67502126
+        0x002f line=67502127
+        0x0030 line=67502128
+        0x0031 line=67502129
+        0x0032 line=67502130
+        0x0033 line=67502131
+        0x0034 line=67502132
+        0x0035 line=67502133
+        0x0036 line=67502134
+        0x0037 line=67502135
+        0x0038 line=67502136
+        0x0039 line=67502137
+        0x003a line=67502138
+        0x003b line=67502139
+        0x003c line=67502140
+        0x003d line=67502141
+        0x003e line=67502142
+        0x003f line=67502143
+        0x0040 line=67502144
+        0x0041 line=67502145
+        0x0042 line=67502146
+        0x0043 line=67502147
+        0x0044 line=67502148
+        0x0045 line=67502149
+        0x0046 line=67502150
+        0x0047 line=67502151
+        0x0048 line=67502152
+        0x0049 line=67502153
+        0x004a line=67502154
+        0x004b line=67502155
+        0x004c line=67502156
+        0x004d line=67502157
+        0x004e line=67502158
+        0x004f line=67502159
+        0x0050 line=67502160
+        0x0051 line=67502161
+        0x0052 line=67502162
+        0x0053 line=67502163
+        0x0054 line=67502164
+        0x0055 line=67502165
+        0x0056 line=67502166
+        0x0057 line=67502167
+        0x0058 line=67502168
+        0x0059 line=67502169
+        0x005a line=67502170
+        0x005b line=67502171
+        0x005c line=67502172
+        0x005d line=67502173
+        0x005e line=67502174
+        0x005f line=67502175
+        0x0060 line=67502176
+        0x0061 line=67502177
+        0x0062 line=67502178
+        0x0063 line=67502179
+        0x0064 line=67502180
+        0x0065 line=67502181
+        0x0066 line=67502182
+        0x0067 line=67502183
+        0x0068 line=67502184
+        0x0069 line=67502185
+        0x006a line=67502186
+        0x006b line=67502187
+        0x006c line=67502188
+        0x006d line=67502189
+        0x006e line=67502190
+        0x006f line=67502191
+        0x0070 line=67502192
+        0x0071 line=67502193
+        0x0072 line=67502194
+        0x0073 line=67502195
+        0x0074 line=67502196
+        0x0075 line=67502197
+        0x0076 line=67502198
+        0x0077 line=67502199
+        0x0078 line=67502200
+        0x0079 line=67502201
+        0x007a line=67502202
+        0x007b line=67502203
+        0x007c line=67502204
+        0x007d line=67502205
+        0x007e line=67502206
+        0x007f line=67502207
+        0x0080 line=67502208
+        0x0081 line=67502209
+        0x0082 line=67502210
+        0x0083 line=67502211
+        0x0084 line=67502212
+        0x0085 line=67502213
+        0x0086 line=67502214
+        0x0087 line=67502215
+        0x0088 line=67502216
+        0x0089 line=67502217
+        0x008a line=67502218
+        0x008b line=67502219
+        0x008c line=67502220
+        0x008d line=67502221
+        0x008e line=67502222
+        0x008f line=67502223
+        0x0090 line=67502224
+        0x0091 line=67502225
+        0x0092 line=67502226
+        0x0093 line=67502227
+        0x0094 line=67502228
+        0x0095 line=67502229
+        0x0096 line=67502230
+        0x0097 line=67502231
+        0x0098 line=67502232
+        0x0099 line=67502233
+      locals        :
+        0x0000 - 0x009a reg=7 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x009a reg=8 (null) Z
+        0x0000 - 0x009a reg=9 (null) Lpr4/f;
+        0x0000 - 0x009a reg=10 (null) Z
+        0x0000 - 0x009a reg=11 (null) Z
+
+    #4              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'f'
+      type          : '(Ljava/lang/String;Z)Lpr4/t;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 8
+      ins           : 3
+      outs          : 3
+      insns size    : 108 16-bit code units
+68a42c:                                        |[68a42c] com.dragon.read.component.shortvideo.impl.v2.data.b.f:(Ljava/lang/String;Z)Lpr4/t;
+68a43c: 1200                                   |0000: const/4 v0, #int 0 // #0
+68a43e: 3806 0b00                              |0001: if-eqz v6, 000c // +000b
+68a442: 6e10 09ad 0600                         |0003: invoke-virtual {v6}, Ljava/lang/String;.length:()I // method@ad09
+68a448: 0a01                                   |0006: move-result v1
+68a44a: 3901 0300                              |0007: if-nez v1, 000a // +0003
+68a44e: 2803                                   |0009: goto 000c // +0003
+68a450: 1201                                   |000a: const/4 v1, #int 0 // #0
+68a452: 2802                                   |000b: goto 000d // +0002
+68a454: 1211                                   |000c: const/4 v1, #int 1 // #1
+68a456: 1202                                   |000d: const/4 v2, #int 0 // #0
+68a458: 3801 0300                              |000e: if-eqz v1, 0011 // +0003
+68a45c: 1102                                   |0010: return-object v2
+68a45e: 6201 9149                              |0011: sget-object v1, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a462: 2203 c939                              |0013: new-instance v3, Ljava/lang/StringBuilder; // type@39c9
+68a466: 1a04 33ab                              |0015: const-string v4, "obtainVideoModelFromCache vid:" // string@ab33
+68a46a: 7020 19ad 4300                         |0017: invoke-direct {v3, v4}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a470: 6e20 22ad 6300                         |001a: invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a476: 6e10 27ad 0300                         |001d: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a47c: 0c03                                   |0020: move-result-object v3
+68a47e: 2304 3157                              |0021: new-array v4, v0, [Ljava/lang/Object; // type@5731
+68a482: 6e30 8919 3104                         |0023: invoke-virtual {v1, v3, v4}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a488: 5453 8d49                              |0026: iget-object v3, v5, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+68a48c: 6e20 6d14 6300                         |0028: invoke-virtual {v3, v6}, Lc25/p;.c:(Ljava/lang/String;)Ljava/lang/Object; // method@146d
+68a492: 0c06                                   |002b: move-result-object v6
+68a494: 1f06 9a45                              |002c: check-cast v6, Lpr4/t; // type@459a
+68a498: 3806 3d00                              |002e: if-eqz v6, 006b // +003d
+68a49c: 2203 c939                              |0030: new-instance v3, Ljava/lang/StringBuilder; // type@39c9
+68a4a0: 1a04 31ab                              |0032: const-string v4, "obtainVideoModelFromCache has:" // string@ab31
+68a4a4: 7020 19ad 4300                         |0034: invoke-direct {v3, v4}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a4aa: 6e20 21ad 6300                         |0037: invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@ad21
+68a4b0: 1a04 b301                              |003a: const-string v4, " ignoreExpire:" // string@01b3
+68a4b4: 6e20 22ad 4300                         |003c: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a4ba: 6e20 23ad 7300                         |003f: invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@ad23
+68a4c0: 6e10 27ad 0300                         |0042: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a4c6: 0c03                                   |0045: move-result-object v3
+68a4c8: 2304 3157                              |0046: new-array v4, v0, [Ljava/lang/Object; // type@5731
+68a4cc: 6e30 8919 3104                         |0048: invoke-virtual {v1, v3, v4}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a4d2: 3807 0300                              |004b: if-eqz v7, 004e // +0003
+68a4d6: 1106                                   |004d: return-object v6
+68a4d8: 5363 d484                              |004e: iget-wide v3, v6, Lpr4/t;.d:J // field@84d4
+68a4dc: 7120 a176 4300                         |0050: invoke-static {v3, v4}, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.c:(J)Z // method@76a1
+68a4e2: 0a07                                   |0053: move-result v7
+68a4e4: 2203 c939                              |0054: new-instance v3, Ljava/lang/StringBuilder; // type@39c9
+68a4e8: 1a04 32ab                              |0056: const-string v4, "obtainVideoModelFromCache isExpire:" // string@ab32
+68a4ec: 7020 19ad 4300                         |0058: invoke-direct {v3, v4}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a4f2: 6e20 23ad 7300                         |005b: invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@ad23
+68a4f8: 6e10 27ad 0300                         |005e: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a4fe: 0c03                                   |0061: move-result-object v3
+68a500: 2300 3157                              |0062: new-array v0, v0, [Ljava/lang/Object; // type@5731
+68a504: 6e30 8919 3100                         |0064: invoke-virtual {v1, v3, v0}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a50a: 3807 0300                              |0067: if-eqz v7, 006a // +0003
+68a50e: 2802                                   |0069: goto 006b // +0002
+68a510: 0762                                   |006a: move-object v2, v6
+68a512: 1102                                   |006b: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=33882112
+        0x0001 line=33882113
+        0x0002 line=33882114
+        0x0003 line=33882115
+        0x0004 line=33882116
+        0x0005 line=33882117
+        0x0006 line=33882118
+        0x0007 line=33882119
+        0x0008 line=33882120
+        0x0009 line=33882121
+        0x000a line=33882122
+        0x000b line=33882123
+        0x000c line=33882124
+        0x000d line=33882125
+        0x000e line=33882126
+        0x000f line=33882127
+        0x0010 line=33882128
+        0x0011 line=33882129
+        0x0012 line=33882130
+        0x0013 line=33882131
+        0x0014 line=33882132
+        0x0015 line=33882133
+        0x0016 line=33882134
+        0x0017 line=33882135
+        0x0018 line=33882136
+        0x0019 line=33882137
+        0x001a line=33882138
+        0x001b line=33882139
+        0x001c line=33882140
+        0x001d line=33882141
+        0x001e line=33882142
+        0x001f line=33882143
+        0x0020 line=33882144
+        0x0021 line=33882145
+        0x0022 line=33882146
+        0x0023 line=33882147
+        0x0024 line=33882148
+        0x0025 line=33882149
+        0x0026 line=33882150
+        0x0027 line=33882151
+        0x0028 line=33882152
+        0x0029 line=33882153
+        0x002a line=33882154
+        0x002b line=33882155
+        0x002c line=33882156
+        0x002d line=33882157
+        0x002e line=33882158
+        0x002f line=33882159
+        0x0030 line=33882160
+        0x0031 line=33882161
+        0x0032 line=33882162
+        0x0033 line=33882163
+        0x0034 line=33882164
+        0x0035 line=33882165
+        0x0036 line=33882166
+        0x0037 line=33882167
+        0x0038 line=33882168
+        0x0039 line=33882169
+        0x003a line=33882170
+        0x003b line=33882171
+        0x003c line=33882172
+        0x003d line=33882173
+        0x003e line=33882174
+        0x003f line=33882175
+        0x0040 line=33882176
+        0x0041 line=33882177
+        0x0042 line=33882178
+        0x0043 line=33882179
+        0x0044 line=33882180
+        0x0045 line=33882181
+        0x0046 line=33882182
+        0x0047 line=33882183
+        0x0048 line=33882184
+        0x0049 line=33882185
+        0x004a line=33882186
+        0x004b line=33882187
+        0x004c line=33882188
+        0x004d line=33882189
+        0x004e line=33882190
+        0x004f line=33882191
+        0x0050 line=33882192
+        0x0051 line=33882193
+        0x0052 line=33882194
+        0x0053 line=33882195
+        0x0054 line=33882196
+        0x0055 line=33882197
+        0x0056 line=33882198
+        0x0057 line=33882199
+        0x0058 line=33882200
+        0x0059 line=33882201
+        0x005a line=33882202
+        0x005b line=33882203
+        0x005c line=33882204
+        0x005d line=33882205
+        0x005e line=33882206
+        0x005f line=33882207
+        0x0060 line=33882208
+        0x0061 line=33882209
+        0x0062 line=33882210
+        0x0063 line=33882211
+        0x0064 line=33882212
+        0x0065 line=33882213
+        0x0066 line=33882214
+        0x0067 line=33882215
+        0x0068 line=33882216
+        0x0069 line=33882217
+        0x006a line=33882218
+        0x006b line=33882219
+      locals        :
+        0x0000 - 0x006c reg=5 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x006c reg=6 (null) Ljava/lang/String;
+        0x0000 - 0x006c reg=7 (null) Z
+
+    #5              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'h'
+      type          : '(Ljava/util/Map;Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 7
+      ins           : 3
+      outs          : 4
+      insns size    : 102 16-bit code units
+68a514:                                        |[68a514] com.dragon.read.component.shortvideo.impl.v2.data.b.h:(Ljava/util/Map;Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;)V
+68a524: 7120 5b8b 6500                         |0000: invoke-static {v5, v6}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.n:(Ljava/lang/Object;Ljava/lang/Object;)V // method@8b5b
+68a52a: 5440 8d49                              |0003: iget-object v0, v4, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+68a52e: 6e10 f6ac 0000                         |0005: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a534: 7120 5b8b 6500                         |0008: invoke-static {v5, v6}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.n:(Ljava/lang/Object;Ljava/lang/Object;)V // method@8b5b
+68a53a: 7210 04ae 0500                         |000b: invoke-interface {v5}, Ljava/util/Map;.isEmpty:()Z // method@ae04
+68a540: 0a01                                   |000e: move-result v1
+68a542: 3801 0300                              |000f: if-eqz v1, 0012 // +0003
+68a546: 282c                                   |0011: goto 003d // +002c
+68a548: 5501 9407                              |0012: iget-boolean v1, v0, Lc25/p;.b:Z // field@0794
+68a54c: 3801 2400                              |0014: if-eqz v1, 0038 // +0024
+68a550: 7210 02ae 0500                         |0016: invoke-interface {v5}, Ljava/util/Map;.entrySet:()Ljava/util/Set; // method@ae02
+68a556: 0c01                                   |0019: move-result-object v1
+68a558: 7210 15ae 0100                         |001a: invoke-interface {v1}, Ljava/util/Set;.iterator:()Ljava/util/Iterator; // method@ae15
+68a55e: 0c01                                   |001d: move-result-object v1
+68a560: 7210 afad 0100                         |001e: invoke-interface {v1}, Ljava/util/Iterator;.hasNext:()Z // method@adaf
+68a566: 0a02                                   |0021: move-result v2
+68a568: 3802 1b00                              |0022: if-eqz v2, 003d // +001b
+68a56c: 7210 b0ad 0100                         |0024: invoke-interface {v1}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@adb0
+68a572: 0c02                                   |0027: move-result-object v2
+68a574: 1f02 f539                              |0028: check-cast v2, Ljava/util/Map$Entry; // type@39f5
+68a578: 7210 fead 0200                         |002a: invoke-interface {v2}, Ljava/util/Map$Entry;.getKey:()Ljava/lang/Object; // method@adfe
+68a57e: 0c03                                   |002d: move-result-object v3
+68a580: 1f03 c839                              |002e: check-cast v3, Ljava/lang/String; // type@39c8
+68a584: 7210 ffad 0200                         |0030: invoke-interface {v2}, Ljava/util/Map$Entry;.getValue:()Ljava/lang/Object; // method@adff
+68a58a: 0c02                                   |0033: move-result-object v2
+68a58c: 6e40 7114 3062                         |0034: invoke-virtual {v0, v3, v2, v6}, Lc25/p;.g:(Ljava/lang/String;Ljava/lang/Object;Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;)V // method@1471
+68a592: 28e7                                   |0037: goto 001e // -0019
+68a594: 5406 9607                              |0038: iget-object v6, v0, Lc25/p;.d:Ljava/util/concurrent/ConcurrentHashMap; // field@0796
+68a598: 6e20 2aae 5600                         |003a: invoke-virtual {v6, v5}, Ljava/util/concurrent/ConcurrentHashMap;.putAll:(Ljava/util/Map;)V // method@ae2a
+68a59e: 6206 9149                              |003d: sget-object v6, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a5a2: 2200 c939                              |003f: new-instance v0, Ljava/lang/StringBuilder; // type@39c9
+68a5a6: 1a01 62b4                              |0041: const-string v1, "prefetchBatchUpdate addSize:" // string@b462
+68a5aa: 7020 19ad 1000                         |0043: invoke-direct {v0, v1}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a5b0: 7210 0aae 0500                         |0046: invoke-interface {v5}, Ljava/util/Map;.size:()I // method@ae0a
+68a5b6: 0a05                                   |0049: move-result v5
+68a5b8: 6e20 1ead 5000                         |004a: invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@ad1e
+68a5be: 1a05 7d03                              |004d: const-string v5, " totalSize:" // string@037d
+68a5c2: 6e20 22ad 5000                         |004f: invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a5c8: 5445 8d49                              |0052: iget-object v5, v4, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.a:Lc25/p; // field@498d
+68a5cc: 6e10 6e14 0500                         |0054: invoke-virtual {v5}, Lc25/p;.d:()I // method@146e
+68a5d2: 0a05                                   |0057: move-result v5
+68a5d4: 6e20 1ead 5000                         |0058: invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@ad1e
+68a5da: 6e10 27ad 0000                         |005b: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a5e0: 0c05                                   |005e: move-result-object v5
+68a5e2: 1200                                   |005f: const/4 v0, #int 0 // #0
+68a5e4: 2300 3157                              |0060: new-array v0, v0, [Ljava/lang/Object; // type@5731
+68a5e8: 6e30 8919 5600                         |0062: invoke-virtual {v6, v5, v0}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a5ee: 0e00                                   |0065: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33882112
+        0x0001 line=33882113
+        0x0002 line=33882114
+        0x0003 line=33882115
+        0x0004 line=33882116
+        0x0005 line=33882117
+        0x0006 line=33882118
+        0x0007 line=33882119
+        0x0008 line=33882120
+        0x0009 line=33882121
+        0x000a line=33882122
+        0x000b line=33882123
+        0x000c line=33882124
+        0x000d line=33882125
+        0x000e line=33882126
+        0x000f line=33882127
+        0x0010 line=33882128
+        0x0011 line=33882129
+        0x0012 line=33882130
+        0x0013 line=33882131
+        0x0014 line=33882132
+        0x0015 line=33882133
+        0x0016 line=33882134
+        0x0017 line=33882135
+        0x0018 line=33882136
+        0x0019 line=33882137
+        0x001a line=33882138
+        0x001b line=33882139
+        0x001c line=33882140
+        0x001d line=33882141
+        0x001e line=33882142
+        0x001f line=33882143
+        0x0020 line=33882144
+        0x0021 line=33882145
+        0x0022 line=33882146
+        0x0023 line=33882147
+        0x0024 line=33882148
+        0x0025 line=33882149
+        0x0026 line=33882150
+        0x0027 line=33882151
+        0x0028 line=33882152
+        0x0029 line=33882153
+        0x002a line=33882154
+        0x002b line=33882155
+        0x002c line=33882156
+        0x002d line=33882157
+        0x002e line=33882158
+        0x002f line=33882159
+        0x0030 line=33882160
+        0x0031 line=33882161
+        0x0032 line=33882162
+        0x0033 line=33882163
+        0x0034 line=33882164
+        0x0035 line=33882165
+        0x0036 line=33882166
+        0x0037 line=33882167
+        0x0038 line=33882168
+        0x0039 line=33882169
+        0x003a line=33882170
+        0x003b line=33882171
+        0x003c line=33882172
+        0x003d line=33882173
+        0x003e line=33882174
+        0x003f line=33882175
+        0x0040 line=33882176
+        0x0041 line=33882177
+        0x0042 line=33882178
+        0x0043 line=33882179
+        0x0044 line=33882180
+        0x0045 line=33882181
+        0x0046 line=33882182
+        0x0047 line=33882183
+        0x0048 line=33882184
+        0x0049 line=33882185
+        0x004a line=33882186
+        0x004b line=33882187
+        0x004c line=33882188
+        0x004d line=33882189
+        0x004e line=33882190
+        0x004f line=33882191
+        0x0050 line=33882192
+        0x0051 line=33882193
+        0x0052 line=33882194
+        0x0053 line=33882195
+        0x0054 line=33882196
+        0x0055 line=33882197
+        0x0056 line=33882198
+        0x0057 line=33882199
+        0x0058 line=33882200
+        0x0059 line=33882201
+        0x005a line=33882202
+        0x005b line=33882203
+        0x005c line=33882204
+        0x005d line=33882205
+        0x005e line=33882206
+        0x005f line=33882207
+        0x0060 line=33882208
+        0x0061 line=33882209
+        0x0062 line=33882210
+        0x0063 line=33882211
+        0x0064 line=33882212
+        0x0065 line=33882213
+      locals        :
+        0x0000 - 0x0066 reg=4 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x0066 reg=5 (null) Ljava/util/Map;
+        0x0000 - 0x0066 reg=6 (null) Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;
+
+    #6              : (in Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)
+      name          : 'i'
+      type          : '(Lpr4/f;ZZ)Lio/reactivex/Observable;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 15
+      ins           : 4
+      outs          : 9
+      insns size    : 155 16-bit code units
+68a5f0:                                        |[68a5f0] com.dragon.read.component.shortvideo.impl.v2.data.b.i:(Lpr4/f;ZZ)Lio/reactivex/Observable;
+68a600: 6200 d811                              |0000: sget-object v0, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/RecentVideoOptABValue;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/RecentVideoOptABValue$a; // field@11d8
+68a604: 6e10 f6ac 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a60a: 7100 fc1f 0000                         |0005: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/RecentVideoOptABValue$a;.a:()Lcom/dragon/read/component/shortvideo/api/config/ssconfig/RecentVideoOptABValue; // method@1ffc
+68a610: 0c00                                   |0008: move-result-object v0
+68a612: 5500 e011                              |0009: iget-boolean v0, v0, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/RecentVideoOptABValue;.waitVideoModel:Z // field@11e0
+68a616: 1a01 0000                              |000b: const-string v1, "" // string@0000
+68a61a: 3800 5800                              |000d: if-eqz v0, 0065 // +0058
+68a61e: 380e 5600                              |000f: if-eqz v14, 0065 // +0056
+68a622: 7100 28ad 0000                         |0011: invoke-static {}, Ljava/lang/System;.currentTimeMillis:()J // method@ad28
+68a628: 0b04                                   |0014: move-result-wide v4
+68a62a: 620e b907                              |0015: sget-object v14, Lc25/x0;.a:Lc25/x0; // field@07b9
+68a62e: 54c0 9184                              |0017: iget-object v0, v12, Lpr4/f;.b:Ljava/lang/String; // field@8491
+68a632: 6e10 f6ac 0e00                         |0019: invoke-virtual {v14}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a638: 120e                                   |001c: const/4 v14, #int 0 // #0
+68a63a: 7120 618b e000                         |001d: invoke-static {v0, v14}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+68a640: 6202 be07                              |0020: sget-object v2, Lc25/x0;.f:Ljava/util/concurrent/ConcurrentHashMap; // field@07be
+68a644: 6e20 26ae 0200                         |0022: invoke-virtual {v2, v0}, Ljava/util/concurrent/ConcurrentHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ae26
+68a64a: 0c02                                   |0025: move-result-object v2
+68a64c: 1f02 4838                              |0026: check-cast v2, Lio/reactivex/Observable; // type@3848
+68a650: 3802 1100                              |0028: if-eqz v2, 0039 // +0011
+68a654: 2203 5306                              |002a: new-instance v3, Lc25/m0; // type@0653
+68a658: 7020 5814 0300                         |002c: invoke-direct {v3, v0}, Lc25/m0;.<init>:(Ljava/lang/String;)V // method@1458
+68a65e: 2200 5506                              |002f: new-instance v0, Lc25/n0; // type@0655
+68a662: 7020 5c14 3000                         |0031: invoke-direct {v0, v3}, Lc25/n0;.<init>:(Lc25/m0;)V // method@145c
+68a668: 6e20 73a7 0200                         |0034: invoke-virtual {v2, v0}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@a773
+68a66e: 0c00                                   |0037: move-result-object v0
+68a670: 2802                                   |0038: goto 003a // +0002
+68a672: 1200                                   |0039: const/4 v0, #int 0 // #0
+68a674: 0703                                   |003a: move-object v3, v0
+68a676: 3803 2a00                              |003b: if-eqz v3, 0065 // +002a
+68a67a: 6200 9149                              |003d: sget-object v0, Lcom/dragon/read/component/shortvideo/impl/v2/data/b;.e:Lcom/dragon/read/base/util/LogHelper; // field@4991
+68a67e: 2202 c939                              |003f: new-instance v2, Ljava/lang/StringBuilder; // type@39c9
+68a682: 1a06 517f                              |0041: const-string v6, "[requestVideoModelInfo] success getRunningPrefetchVideoModelTask, requestVid:" // string@7f51
+68a686: 7020 19ad 6200                         |0043: invoke-direct {v2, v6}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@ad19
+68a68c: 54c6 9184                              |0046: iget-object v6, v12, Lpr4/f;.b:Ljava/lang/String; // field@8491
+68a690: 6e20 22ad 6200                         |0048: invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@ad22
+68a696: 6e10 27ad 0200                         |004b: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@ad27
+68a69c: 0c02                                   |004e: move-result-object v2
+68a69e: 23ee 3157                              |004f: new-array v14, v14, [Ljava/lang/Object; // type@5731
+68a6a2: 6e30 8919 200e                         |0051: invoke-virtual {v0, v2, v14}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@1989
+68a6a8: 220e 7a44                              |0054: new-instance v14, Lp65/b3; // type@447a
+68a6ac: 07e2                                   |0056: move-object v2, v14
+68a6ae: 07c6                                   |0057: move-object v6, v12
+68a6b0: 07b7                                   |0058: move-object v7, v11
+68a6b2: 01d8                                   |0059: move v8, v13
+68a6b4: 7607 1acf 0200                         |005a: invoke-direct/range {v2, v3, v4, v5, v6, v7, v8}, Lp65/b3;.<init>:(Lio/reactivex/Observable;JLpr4/f;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Z)V // method@cf1a
+68a6ba: 7110 698b 0e00                         |005d: invoke-static {v14}, Lcom/ss/android/ugc/bytex/taskmonitor/proxy/ObservableDelegate;.create:(Lio/reactivex/ObservableOnSubscribe;)Lio/reactivex/Observable; // method@8b69
+68a6c0: 0c0c                                   |0060: move-result-object v12
+68a6c2: 7120 9fb3 1c00                         |0061: invoke-static {v12, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a6c8: 110c                                   |0064: return-object v12
+68a6ca: 620e 9263                              |0065: sget-object v14, Ldt4/b;.a:Ldt4/b; // field@6392
+68a6ce: 54c2 9184                              |0067: iget-object v2, v12, Lpr4/f;.b:Ljava/lang/String; // field@8491
+68a6d2: 54c3 9284                              |0069: iget-object v3, v12, Lpr4/f;.c:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@8492
+68a6d6: 54c5 9384                              |006b: iget-object v5, v12, Lpr4/f;.d:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@8493
+68a6da: 52c6 9484                              |006d: iget v6, v12, Lpr4/f;.e:I // field@8494
+68a6de: 52c7 9684                              |006f: iget v7, v12, Lpr4/f;.g:I // field@8496
+68a6e2: 54c8 9784                              |0071: iget-object v8, v12, Lpr4/f;.h:Ljava/lang/String; // field@8497
+68a6e6: 54c9 9984                              |0073: iget-object v9, v12, Lpr4/f;.j:Lpr4/p; // field@8499
+68a6ea: 54c0 9a84                              |0075: iget-object v0, v12, Lpr4/f;.k:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@849a
+68a6ee: 540a f613                              |0077: iget-object v10, v0, Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy;.strategy:Ljava/lang/String; // field@13f6
+68a6f2: 6e10 f6ac 0e00                         |0079: invoke-virtual {v14}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@acf6
+68a6f8: 01d4                                   |007c: move v4, v13
+68a6fa: 7709 e493 0200                         |007d: invoke-static/range {v2, v3, v4, v5, v6, v7, v8, v9, v10}, Ldt4/b;.a:(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;ZLseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;IILjava/lang/String;Lpr4/p;Ljava/lang/String;)Lio/reactivex/Observable; // method@93e4
+68a700: 0c0d                                   |0080: move-result-object v13
+68a702: 7100 c1a7 0000                         |0081: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@a7c1
+68a708: 0c0e                                   |0084: move-result-object v14
+68a70a: 6e20 84a7 ed00                         |0085: invoke-virtual {v13, v14}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@a784
+68a710: 0c0d                                   |0088: move-result-object v13
+68a712: 220e 8344                              |0089: new-instance v14, Lp65/c3; // type@4483
+68a716: 7030 2ecf ce0b                         |008b: invoke-direct {v14, v12, v11}, Lp65/c3;.<init>:(Lpr4/f;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;)V // method@cf2e
+68a71c: 220c 8c44                              |008e: new-instance v12, Lp65/d3; // type@448c
+68a720: 7020 40cf ec00                         |0090: invoke-direct {v12, v14}, Lp65/d3;.<init>:(Lp65/c3;)V // method@cf40
+68a726: 6e20 73a7 cd00                         |0093: invoke-virtual {v13, v12}, Lio/reactivex/Observable;.map:(Lio/reactivex/functions/Function;)Lio/reactivex/Observable; // method@a773
+68a72c: 0c0c                                   |0096: move-result-object v12
+68a72e: 7120 9fb3 1c00                         |0097: invoke-static {v12, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+68a734: 110c                                   |009a: return-object v12
+      catches       : (none)
+      positions     :
+        0x0000 line=50724864
+        0x0001 line=50724865
+        0x0002 line=50724866
+        0x0003 line=50724867
+        0x0004 line=50724868
+        0x0005 line=50724869
+        0x0006 line=50724870
+        0x0007 line=50724871
+        0x0008 line=50724872
+        0x0009 line=50724873
+        0x000a line=50724874
+        0x000b line=50724875
+        0x000c line=50724876
+        0x000d line=50724877
+        0x000e line=50724878
+        0x000f line=50724879
+        0x0010 line=50724880
+        0x0011 line=50724881
+        0x0012 line=50724882
+        0x0013 line=50724883
+        0x0014 line=50724884
+        0x0015 line=50724885
+        0x0016 line=50724886
+        0x0017 line=50724887
+        0x0018 line=50724888
+        0x0019 line=50724889
+        0x001a line=50724890
+        0x001b line=50724891
+        0x001c line=50724892
+        0x001d line=50724893
+        0x001e line=50724894
+        0x001f line=50724895
+        0x0020 line=50724896
+        0x0021 line=50724897
+        0x0022 line=50724898
+        0x0023 line=50724899
+        0x0024 line=50724900
+        0x0025 line=50724901
+        0x0026 line=50724902
+        0x0027 line=50724903
+        0x0028 line=50724904
+        0x0029 line=50724905
+        0x002a line=50724906
+        0x002b line=50724907
+        0x002c line=50724908
+        0x002d line=50724909
+        0x002e line=50724910
+        0x002f line=50724911
+        0x0030 line=50724912
+        0x0031 line=50724913
+        0x0032 line=50724914
+        0x0033 line=50724915
+        0x0034 line=50724916
+        0x0035 line=50724917
+        0x0036 line=50724918
+        0x0037 line=50724919
+        0x0038 line=50724920
+        0x0039 line=50724921
+        0x003a line=50724922
+        0x003b line=50724923
+        0x003c line=50724924
+        0x003d line=50724925
+        0x003e line=50724926
+        0x003f line=50724927
+        0x0040 line=50724928
+        0x0041 line=50724929
+        0x0042 line=50724930
+        0x0043 line=50724931
+        0x0044 line=50724932
+        0x0045 line=50724933
+        0x0046 line=50724934
+        0x0047 line=50724935
+        0x0048 line=50724936
+        0x0049 line=50724937
+        0x004a line=50724938
+        0x004b line=50724939
+        0x004c line=50724940
+        0x004d line=50724941
+        0x004e line=50724942
+        0x004f line=50724943
+        0x0050 line=50724944
+        0x0051 line=50724945
+        0x0052 line=50724946
+        0x0053 line=50724947
+        0x0054 line=50724948
+        0x0055 line=50724949
+        0x0056 line=50724950
+        0x0057 line=50724951
+        0x0058 line=50724952
+        0x0059 line=50724953
+        0x005a line=50724954
+        0x005b line=50724955
+        0x005c line=50724956
+        0x005d line=50724957
+        0x005e line=50724958
+        0x005f line=50724959
+        0x0060 line=50724960
+        0x0061 line=50724961
+        0x0062 line=50724962
+        0x0063 line=50724963
+        0x0064 line=50724964
+        0x0065 line=50724965
+        0x0066 line=50724966
+        0x0067 line=50724967
+        0x0068 line=50724968
+        0x0069 line=50724969
+        0x006a line=50724970
+        0x006b line=50724971
+        0x006c line=50724972
+        0x006d line=50724973
+        0x006e line=50724974
+        0x006f line=50724975
+        0x0070 line=50724976
+        0x0071 line=50724977
+        0x0072 line=50724978
+        0x0073 line=50724979
+        0x0074 line=50724980
+        0x0075 line=50724981
+        0x0076 line=50724982
+        0x0077 line=50724983
+        0x0078 line=50724984
+        0x0079 line=50724985
+        0x007a line=50724986
+        0x007b line=50724987
+        0x007c line=50724988
+        0x007d line=50724989
+        0x007e line=50724990
+        0x007f line=50724991
+        0x0080 line=50724992
+        0x0081 line=50724993
+        0x0082 line=50724994
+        0x0083 line=50724995
+        0x0084 line=50724996
+        0x0085 line=50724997
+        0x0086 line=50724998
+        0x0087 line=50724999
+        0x0088 line=50725000
+        0x0089 line=50725001
+        0x008a line=50725002
+        0x008b line=50725003
+        0x008c line=50725004
+        0x008d line=50725005
+        0x008e line=50725006
+        0x008f line=50725007
+        0x0090 line=50725008
+        0x0091 line=50725009
+        0x0092 line=50725010
+        0x0093 line=50725011
+        0x0094 line=50725012
+        0x0095 line=50725013
+        0x0096 line=50725014
+        0x0097 line=50725015
+        0x0098 line=50725016
+        0x0099 line=50725017
+        0x009a line=50725018
+      locals        :
+        0x0000 - 0x009b reg=11 this Lcom/dragon/read/component/shortvideo/impl/v2/data/b;
+        0x0000 - 0x009b reg=12 (null) Lpr4/f;
+        0x0000 - 0x009b reg=13 (null) Z
+        0x0000 - 0x009b reg=14 (null) Z
+
+  source_file_idx   : 29508 (SourceFile)
+

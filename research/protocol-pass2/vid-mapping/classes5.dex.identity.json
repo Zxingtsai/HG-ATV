@@ -1,0 +1,13 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes5.dex",
+  "dex_sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+  "dex_bytes": 11773108,
+  "requested_classes": [
+    "Lcom/dragon/read/component/shortvideo/saas/ShortSeriesImpl;"
+  ],
+  "class_outputs": {
+    "Lcom/dragon/read/component/shortvideo/saas/ShortSeriesImpl;": "com-dragon-read-component-shortvideo-saas-ShortSeriesImpl.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

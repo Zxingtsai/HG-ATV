@@ -1,0 +1,19 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"error\":{\"code\":\"invalid_request\",\"category\":\"invalid_input\",\"message\":\"Analysis input is invalid. Check the arguments and try again.\",\"retryable\":true,\"remediation\":{\"action\":\"Correct the listed arguments and retry.\"},\"details\":{\"operation\":\"inspect_android_class\",\"issues\":[{\"path\":[\"class_name\"],\"reason\":\"invalid_value\",\"message\":\"Exact class not found: com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData; use search_android_classes to discover fully qualified names.\"}],\"partial_observation\":{\"provider_id\":\"jadx\",\"operation\":\"inspect_android_class\",\"target\":{\"selected_path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"sha256\":\"7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d\",\"format\":\"apk\"},\"provider_facts\":{\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"bridge_name\":\"rea-jadx-bridge\",\"bridge_version\":\"4\",\"server_name\":\"rea-jadx-bridge\",\"server_version\":\"4\",\"engine_version\":\"0.7.1\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":2147483648,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"message\\\":\\\"Exact class not found: com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData; use search_android_classes to discover fully qualified names.\\\",\\\"field\\\":\\\"class_name\\\",\\\"kind\\\":\\\"invalid-input\\\"}\"}],\"isError\":true}}]}}}}"
+      }
+    ],
+    "isError": true
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}

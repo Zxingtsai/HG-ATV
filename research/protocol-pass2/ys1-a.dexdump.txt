@@ -1,0 +1,56 @@
+  Class descriptor  : 'Lys1/a;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Lhl0/a;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lys1/a;)
+      name          : 'a'
+      type          : 'Z'
+      access        : 0x0049 (PUBLIC STATIC VOLATILE)
+    #1              : (in Lys1/a;)
+      name          : 'b'
+      type          : 'Z'
+      access        : 0x0049 (PUBLIC STATIC VOLATILE)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lys1/a;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+871798:                                        |[871798] ys1.a.<clinit>:()V
+8717a8: 1400 6ba0 0800                         |0000: const v0, #float 7.92231e-40 // #0008a06b
+8717ae: 7110 a516 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@16a5
+8717b4: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lys1/a;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+8717b8:                                        |[8717b8] ys1.a.<init>:()V
+8717c8: 7010 8ebf 0000                         |0000: invoke-direct {v0}, Lhl0/a;.<init>:()V // method@bf8e
+8717ce: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lys1/a;
+
+  Virtual methods   -
+  source_file_idx   : 27999 (SourceFile)
+

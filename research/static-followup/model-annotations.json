@@ -1,0 +1,479 @@
+[
+  {
+    "class": "Lkl8/a$a;",
+    "field_annotations": [],
+    "method_annotations": [
+      {
+        "method": "getVideoModelRxJava",
+        "annotations": [
+          {
+            "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+            "values": {
+              "value": "$POST /novel/player/video_model/v1/"
+            }
+          },
+          {
+            "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+            "values": {
+              "value": 1
+            }
+          },
+          {
+            "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+            "values": {
+              "value": {
+                "class": "Lcom/bytedance/rpc/serialize/SerializeType;",
+                "name": "JSON",
+                "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+              }
+            }
+          },
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelResponse;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+    "field_annotations": [
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "callerScene",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "caller_scene"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "detailPageVersion",
+          "type": "I"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "detail_page_version"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "deviceLevel",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/DeviceLevel;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "device_level"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "disableDiggStat",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "disable_digg_stat"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "disableVideoRelateBook",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "disable_video_relate_book"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "expireStrategy",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "expire_strategy"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "fromVideoId",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "from_video_id"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "imageShrinkDatasStr",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "image_shrink_datas_str"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "itemMap",
+          "type": "Ljava/util/Map;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "item_map"
+            }
+          },
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/Long;",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "multiLangLandingHint",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/MultiLangLandingHint;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "multi_lang_landing_hint"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "multiLangLandingHintMap",
+          "type": "Ljava/util/Map;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "multi_lang_landing_hint_map"
+            }
+          },
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lseriessdk/com/dragon/read/saas/rpc/model/MultiLangLandingHint;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "needAllVideoDefinition",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "need_all_video_definition"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "needMp4Align",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "need_mp4_align"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "openPlayletExtendParam",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/bytedance/rpc/annotation/RpcField;",
+            "values": {
+              "value": {
+                "class": "Lcom/bytedance/rpc/serialize/FieldType;",
+                "name": "QUERY",
+                "type": "Lcom/bytedance/rpc/serialize/FieldType;"
+              }
+            }
+          },
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "open_playlet_extend_param"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "screenWidthPx",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "screen_width_px"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "useOsPlayer",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "use_os_player"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "useServerDns",
+          "type": "Z"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "use_server_dns"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "useServerDnsScene",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "use_server_dns_scene"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "videoIdType",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id_type"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "name": "videoPlatform",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_platform"
+            }
+          }
+        ]
+      }
+    ],
+    "method_annotations": []
+  },
+  {
+    "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+    "field_annotations": [
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+          "name": "bizParam",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "biz_param"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+          "name": "mixedVideoIdMap",
+          "type": "Ljava/util/Map;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "mixed_video_id_map"
+            }
+          },
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/Short;",
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;>;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+          "name": "novelCommonParam",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/NovelCommonParam;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "NovelCommonParam"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+          "name": "videoContentType",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "content_type"
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+          "name": "videoId",
+          "type": "Ljava/lang/String;"
+        },
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id"
+            }
+          }
+        ]
+      }
+    ],
+    "method_annotations": []
+  }
+]

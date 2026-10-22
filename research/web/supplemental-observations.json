@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/api/category/page?content_type=1&page_num=2&gender=2&sort_type=1&min_first_visible_time=0&tab=1",
+    "status": 404,
+    "type": "text/html; charset=UTF-8",
+    "parse_error": "No official router-data assignment"
+  },
+  {
+    "path": "/incent_resource/suggestion?app_id=8662&query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&count=10",
+    "status": 200,
+    "type": "application/json",
+    "keys": [
+      "suggest_list"
+    ],
+    "body_summary": {
+      "suggest_list": 10
+    }
+  },
+  {
+    "path": "/search/%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF?page=2",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "search_count": 10,
+    "total_count": "197",
+    "ids": [
+      "7690961604636052505",
+      "7666404568275635224",
+      "7680845974494776345",
+      "7675678593866812440",
+      "7680564528135818302",
+      "7671966197985856536",
+      "7690845137529752600",
+      "7690186465237535768",
+      "7693153589933394968",
+      "7679367796244892696"
+    ]
+  }
+]

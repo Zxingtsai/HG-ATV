@@ -1,0 +1,11 @@
+{
+  "dex_member": "classes25.dex",
+  "sha256": "e556b98ae9f13cadf9c032277d09f1e01746f34633e7f2038a922895beee9a60",
+  "targets": [
+    "Lcom/dragon/read/app/SingleAppContext;"
+  ],
+  "found": [
+    "Lcom/dragon/read/app/SingleAppContext;"
+  ],
+  "text_decode_errors": "replace; source bytes unchanged"
+}

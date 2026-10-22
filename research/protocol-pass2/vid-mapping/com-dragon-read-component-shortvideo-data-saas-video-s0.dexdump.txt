@@ -1,0 +1,149 @@
+  Class descriptor  : 'Lcom/dragon/read/component/shortvideo/data/saas/video/s0;'
+  Access flags      : 0x1011 (PUBLIC FINAL SYNTHETIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lkotlin/jvm/functions/Function0;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/dragon/read/component/shortvideo/data/saas/video/s0;)
+      name          : 'a'
+      type          : 'Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc;'
+      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/dragon/read/component/shortvideo/data/saas/video/s0;)
+      name          : '<init>'
+      type          : '(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc;)V'
+      access        : 0x11001 (PUBLIC SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+5d4708:                                        |[5d4708] com.dragon.read.component.shortvideo.data.saas.video.s0.<init>:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc;)V
+5d4718: 7010 d8c7 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@c7d8
+5d471e: 5b01 da33                              |0003: iput-object v1, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/s0;.a:Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc; // field@33da
+5d4722: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+  Virtual methods   -
+    #0              : (in Lcom/dragon/read/component/shortvideo/data/saas/video/s0;)
+      name          : 'invoke'
+      type          : '()Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 2
+      insns size    : 67 16-bit code units
+5d4724:                                        |[5d4724] com.dragon.read.component.shortvideo.data.saas.video.s0.invoke:()Ljava/lang/Object;
+5d4734: 5470 da33                              |0000: iget-object v0, v7, Lcom/dragon/read/component/shortvideo/data/saas/video/s0;.a:Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc; // field@33da
+5d4738: 5400 0c32                              |0002: iget-object v0, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasModelWrapperByRpc;.rpc:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@320c
+5d473c: 5400 eea2                              |0004: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+5d4740: 1201                                   |0006: const/4 v1, #int 0 // #0
+5d4742: 3800 3b00                              |0007: if-eqz v0, 0042 // +003b
+5d4746: 2202 e340                              |0009: new-instance v2, Ljava/util/ArrayList; // type@40e3
+5d474a: 1303 0a00                              |000b: const/16 v3, #int 10 // #a
+5d474e: 7120 abcc 3000                         |000d: invoke-static {v0, v3}, Lkotlin/collections/CollectionsKt;.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I // method@ccab
+5d4754: 0a03                                   |0010: move-result v3
+5d4756: 7020 50c8 3200                         |0011: invoke-direct {v2, v3}, Ljava/util/ArrayList;.<init>:(I)V // method@c850
+5d475c: 7210 b7c7 0000                         |0014: invoke-interface {v0}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@c7b7
+5d4762: 0c00                                   |0017: move-result-object v0
+5d4764: 7210 98c8 0000                         |0018: invoke-interface {v0}, Ljava/util/Iterator;.hasNext:()Z // method@c898
+5d476a: 0a03                                   |001b: move-result v3
+5d476c: 3803 2500                              |001c: if-eqz v3, 0041 // +0025
+5d4770: 7210 99c8 0000                         |001e: invoke-interface {v0}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c899
+5d4776: 0c03                                   |0021: move-result-object v3
+5d4778: 1f03 e04b                              |0022: check-cast v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@4be0
+5d477c: 3903 0400                              |0024: if-nez v3, 0028 // +0004
+5d4780: 0714                                   |0026: move-object v4, v1
+5d4782: 2816                                   |0027: goto 003d // +0016
+5d4784: 2204 061b                              |0028: new-instance v4, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem; // type@1b06
+5d4788: 7010 ca59 0400                         |002a: invoke-direct {v4}, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.<init>:()V // method@59ca
+5d478e: 5435 65a2                              |002d: iget-object v5, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.vid:Ljava/lang/String; // field@a265
+5d4792: 5b45 c431                              |002f: iput-object v5, v4, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.videoId:Ljava/lang/String; // field@31c4
+5d4796: 5535 5ca2                              |0031: iget-boolean v5, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.needUnlock:Z // field@a25c
+5d479a: 5c45 c131                              |0033: iput-boolean v5, v4, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.needUnlock:Z // field@31c1
+5d479e: 5435 69a2                              |0035: iget-object v5, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.waitFree:Lseriessdk/com/dragon/read/saas/rpc/model/VideoWaitFreeConfig; // field@a269
+5d47a2: 5b45 c531                              |0037: iput-object v5, v4, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.waitFree:Lseriessdk/com/dragon/read/saas/rpc/model/VideoWaitFreeConfig; // field@31c5
+5d47a6: 5335 62a2                              |0039: iget-wide v5, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.trialDuration:J // field@a262
+5d47aa: 5a45 c331                              |003b: iput-wide v5, v4, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.trialDuration:J // field@31c3
+5d47ae: 6e20 53c8 4200                         |003d: invoke-virtual {v2, v4}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c853
+5d47b4: 28d8                                   |0040: goto 0018 // -0028
+5d47b6: 0721                                   |0041: move-object v1, v2
+5d47b8: 1101                                   |0042: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=327680
+        0x0001 line=327681
+        0x0002 line=327682
+        0x0003 line=327683
+        0x0004 line=327684
+        0x0005 line=327685
+        0x0006 line=327686
+        0x0007 line=327687
+        0x0008 line=327688
+        0x0009 line=327689
+        0x000a line=327690
+        0x000b line=327691
+        0x000c line=327692
+        0x000d line=327693
+        0x000e line=327694
+        0x000f line=327695
+        0x0010 line=327696
+        0x0011 line=327697
+        0x0012 line=327698
+        0x0013 line=327699
+        0x0014 line=327700
+        0x0015 line=327701
+        0x0016 line=327702
+        0x0017 line=327703
+        0x0018 line=327704
+        0x0019 line=327705
+        0x001a line=327706
+        0x001b line=327707
+        0x001c line=327708
+        0x001d line=327709
+        0x001e line=327710
+        0x001f line=327711
+        0x0020 line=327712
+        0x0021 line=327713
+        0x0022 line=327714
+        0x0023 line=327715
+        0x0024 line=327716
+        0x0025 line=327717
+        0x0026 line=327718
+        0x0027 line=327719
+        0x0028 line=327720
+        0x0029 line=327721
+        0x002a line=327722
+        0x002b line=327723
+        0x002c line=327724
+        0x002d line=327725
+        0x002e line=327726
+        0x002f line=327727
+        0x0030 line=327728
+        0x0031 line=327729
+        0x0032 line=327730
+        0x0033 line=327731
+        0x0034 line=327732
+        0x0035 line=327733
+        0x0036 line=327734
+        0x0037 line=327735
+        0x0038 line=327736
+        0x0039 line=327737
+        0x003a line=327738
+        0x003b line=327739
+        0x003c line=327740
+        0x003d line=327741
+        0x003e line=327742
+        0x003f line=327743
+        0x0040 line=327744
+        0x0041 line=327745
+        0x0042 line=327746
+      locals        :
+        0x0000 - 0x0043 reg=7 this Lcom/dragon/read/component/shortvideo/data/saas/video/s0;
+
+  source_file_idx   : 30212 (SourceFile)
+

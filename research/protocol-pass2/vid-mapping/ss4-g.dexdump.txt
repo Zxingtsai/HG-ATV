@@ -1,0 +1,2246 @@
+  Class descriptor  : 'Lss4/g;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lss4/g;)
+      name          : 'a'
+      type          : 'Lcom/dragon/read/base/util/LogHelper;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lss4/g;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 2
+      insns size    : 16 16-bit code units
+94e0a8:                                        |[94e0a8] ss4.g.<clinit>:()V
+94e0b8: 1400 475b 0900                         |0000: const v0, #float 8.59264e-40 // #00095b47
+94e0be: 7110 6514 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1465
+94e0c4: 2200 440a                              |0006: new-instance v0, Lcom/dragon/read/base/util/LogHelper; // type@0a44
+94e0c8: 1a01 2e7e                              |0008: const-string v1, "VideoDetailParserUtils" // string@7e2e
+94e0cc: 7020 5919 1000                         |000a: invoke-direct {v0, v1}, Lcom/dragon/read/base/util/LogHelper;.<init>:(Ljava/lang/String;)V // method@1959
+94e0d2: 6900 28a4                              |000d: sput-object v0, Lss4/g;.a:Lcom/dragon/read/base/util/LogHelper; // field@a428
+94e0d6: 0e00                                   |000f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+        0x000c line=131084
+        0x000d line=131085
+        0x000e line=131086
+        0x000f line=131087
+      locals        :
+
+    #1              : (in Lss4/g;)
+      name          : 'a'
+      type          : '(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 3
+      insns size    : 502 16-bit code units
+94e0d8:                                        |[94e0d8] ss4.g.a:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+94e0e8: 7110 ee5d 0500                         |0000: invoke-static {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/t4;.a:(Ljava/lang/Object;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@5dee
+94e0ee: 0c00                                   |0003: move-result-object v0
+94e0f0: 1201                                   |0004: const/4 v1, #int 0 // #0
+94e0f2: 3805 8801                              |0005: if-eqz v5, 018d // +0188
+94e0f6: 2002 111b                              |0007: instance-of v2, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModelWrapper; // type@1b11
+94e0fa: 3902 8401                              |0009: if-nez v2, 018d // +0184
+94e0fe: 6e10 975b 0500                         |000b: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.x:()Ljava/lang/String; // method@5b97
+94e104: 0c02                                   |000e: move-result-object v2
+94e106: 7110 05c8 0200                         |000f: invoke-static {v2}, Ljava/lang/String;.valueOf:(Ljava/lang/Object;)Ljava/lang/String; // method@c805
+94e10c: 0c02                                   |0012: move-result-object v2
+94e10e: 6e20 175b 2000                         |0013: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M1:(Ljava/lang/String;)V // method@5b17
+94e114: 6e10 595b 0500                         |0016: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.g1:()Z // method@5b59
+94e11a: 0a02                                   |0019: move-result v2
+94e11c: 6e20 335b 2000                         |001a: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.V1:(Z)V // method@5b33
+94e122: 6e10 085b 0500                         |001d: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.I:()J // method@5b08
+94e128: 0b02                                   |0020: move-result-wide v2
+94e12a: 6e30 365b 2003                         |0021: invoke-virtual {v0, v2, v3}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.W1:(J)V // method@5b36
+94e130: 6e10 5f5b 0500                         |0024: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.i:()I // method@5b5f
+94e136: 0a02                                   |0027: move-result v2
+94e138: 6e20 065b 2000                         |0028: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.H1:(I)V // method@5b06
+94e13e: 6e10 6b5b 0500                         |002b: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.l1:()Z // method@5b6b
+94e144: 0a02                                   |002e: move-result v2
+94e146: 6e20 6c5b 2000                         |002f: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.l2:(Z)V // method@5b6c
+94e14c: 6e10 f25a 0500                         |0032: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B0:()J // method@5af2
+94e152: 0b02                                   |0035: move-result-wide v2
+94e154: 6e30 9e5b 2003                         |0036: invoke-virtual {v0, v2, v3}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y2:(J)V // method@5b9e
+94e15a: 6e10 515b 0500                         |0039: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.e:()Lseriessdk/com/dragon/read/saas/rpc/model/SeriesStatus; // method@5b51
+94e160: 0c02                                   |003c: move-result-object v2
+94e162: 6e20 2c5b 2000                         |003d: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.T1:(Lseriessdk/com/dragon/read/saas/rpc/model/SeriesStatus;)V // method@5b2c
+94e168: 2202 e340                              |0040: new-instance v2, Ljava/util/ArrayList; // type@40e3
+94e16c: 7010 4fc8 0200                         |0042: invoke-direct {v2}, Ljava/util/ArrayList;.<init>:()V // method@c84f
+94e172: 1203                                   |0045: const/4 v3, #int 0 // #0
+94e174: 6e10 9f5b 0500                         |0046: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e17a: 0c04                                   |0049: move-result-object v4
+94e17c: 7210 ccc8 0400                         |004a: invoke-interface {v4}, Ljava/util/List;.size:()I // method@c8cc
+94e182: 0a04                                   |004d: move-result v4
+94e184: 3543 1200                              |004e: if-ge v3, v4, 0060 // +0012
+94e188: 6e10 9f5b 0500                         |0050: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e18e: 0c04                                   |0053: move-result-object v4
+94e190: 7220 c3c8 3400                         |0054: invoke-interface {v4, v3}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e196: 0c04                                   |0057: move-result-object v4
+94e198: 1f04 0d1b                              |0058: check-cast v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e19c: 6e20 53c8 4200                         |005a: invoke-virtual {v2, v4}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c853
+94e1a2: d803 0301                              |005d: add-int/lit8 v3, v3, #int 1 // #01
+94e1a6: 28e7                                   |005f: goto 0046 // -0019
+94e1a8: 6e20 1d5b 2000                         |0060: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.O1:(Ljava/util/List;)V // method@5b1d
+94e1ae: 6e10 045b 0500                         |0063: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.H:()Ljava/lang/String; // method@5b04
+94e1b4: 0c02                                   |0066: move-result-object v2
+94e1b6: 6e20 2f5b 2000                         |0067: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.U1:(Ljava/lang/String;)V // method@5b2f
+94e1bc: 6e10 1f5b 0500                         |006a: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.P0:()Ljava/lang/String; // method@5b1f
+94e1c2: 0c02                                   |006d: move-result-object v2
+94e1c4: 6e20 1e5b 2000                         |006e: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.O2:(Ljava/lang/String;)V // method@5b1e
+94e1ca: 6e10 195b 0500                         |0071: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.N0:()Lseriessdk/com/dragon/read/saas/rpc/model/UgcUserInfo; // method@5b19
+94e1d0: 0c02                                   |0074: move-result-object v2
+94e1d2: 6e20 1b5b 2000                         |0075: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.N2:(Lseriessdk/com/dragon/read/saas/rpc/model/UgcUserInfo;)V // method@5b1b
+94e1d8: 6e10 285b 0500                         |0078: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.S0:()Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaaSVideoBottomBar; // method@5b28
+94e1de: 0c02                                   |007b: move-result-object v2
+94e1e0: 6e20 2a5b 2000                         |007c: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.S2:(Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaaSVideoBottomBar;)V // method@5b2a
+94e1e6: 6e10 9c5b 0500                         |007f: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y0:()J // method@5b9c
+94e1ec: 0b02                                   |0082: move-result-wide v2
+94e1ee: 6e30 925b 2003                         |0083: invoke-virtual {v0, v2, v3}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.v2:(J)V // method@5b92
+94e1f4: 6e10 6d5b 0500                         |0086: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.m:()Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@5b6d
+94e1fa: 0c02                                   |0089: move-result-object v2
+94e1fc: 6e20 915b 2000                         |008a: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.v1:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;)V // method@5b91
+94e202: 6e10 555b 0500                         |008d: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.f:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType; // method@5b55
+94e208: 0c02                                   |0090: move-result-object v2
+94e20a: 6e20 2d5b 2000                         |0091: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.T2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;)V // method@5b2d
+94e210: 6e10 835b 0500                         |0094: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.s:()J // method@5b83
+94e216: 0b02                                   |0097: move-result-wide v2
+94e218: 6e30 005b 2003                         |0098: invoke-virtual {v0, v2, v3}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.F1:(J)V // method@5b00
+94e21e: 6e10 935b 0500                         |009b: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.w:()Ljava/lang/String; // method@5b93
+94e224: 0c02                                   |009e: move-result-object v2
+94e226: 6e20 145b 2000                         |009f: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.L1:(Ljava/lang/String;)V // method@5b14
+94e22c: 6e10 2e5b 0500                         |00a2: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.U0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoRecordInfo; // method@5b2e
+94e232: 0c02                                   |00a5: move-result-object v2
+94e234: 6e20 345b 2000                         |00a6: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.V2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoRecordInfo;)V // method@5b34
+94e23a: 6e10 f65a 0500                         |00a9: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C0:()Ljava/util/List; // method@5af6
+94e240: 0c02                                   |00ac: move-result-object v2
+94e242: 6e20 a25b 2000                         |00ad: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z2:(Ljava/util/List;)V // method@5ba2
+94e248: 6e10 675b 0500                         |00b0: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.k:()Ljava/util/List; // method@5b67
+94e24e: 0c02                                   |00b3: move-result-object v2
+94e250: 6e20 895b 2000                         |00b4: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.t1:(Ljava/util/List;)V // method@5b89
+94e256: 6e10 fd5a 0500                         |00b7: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.E0:()Ljava/lang/String; // method@5afd
+94e25c: 0c02                                   |00ba: move-result-object v2
+94e25e: 6e20 f45a 2000                         |00bb: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B2:(Ljava/lang/String;)V // method@5af4
+94e264: 6e10 fc5a 0500                         |00be: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.E:()J // method@5afc
+94e26a: 0b02                                   |00c1: move-result-wide v2
+94e26c: 6e30 295b 2003                         |00c2: invoke-virtual {v0, v2, v3}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.S1:(J)V // method@5b29
+94e272: 6e10 ed5a 0500                         |00c5: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.A:()Ljava/lang/String; // method@5aed
+94e278: 0c02                                   |00c8: move-result-object v2
+94e27a: 6e20 205b 2000                         |00c9: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.P1:(Ljava/lang/String;)V // method@5b20
+94e280: 6e10 9b5b 0500                         |00cc: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y:()Ljava/lang/String; // method@5b9b
+94e286: 0c02                                   |00cf: move-result-object v2
+94e288: 6e20 1a5b 2000                         |00d0: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.N1:(Ljava/lang/String;)V // method@5b1a
+94e28e: 6e10 2b5b 0500                         |00d3: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.T0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // method@5b2b
+94e294: 0c02                                   |00d6: move-result-object v2
+94e296: 6e20 305b 2000                         |00d7: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.U2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;)V // method@5b30
+94e29c: 6e10 f95a 0500                         |00da: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.D0:()Ljava/lang/String; // method@5af9
+94e2a2: 0c02                                   |00dd: move-result-object v2
+94e2a4: 6e20 f05a 2000                         |00de: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.A2:(Ljava/lang/String;)V // method@5af0
+94e2aa: 6e10 715b 0500                         |00e1: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.n:()Ljava/util/List; // method@5b71
+94e2b0: 0c02                                   |00e4: move-result-object v2
+94e2b2: 6e20 9d5b 2000                         |00e5: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y1:(Ljava/util/List;)V // method@5b9d
+94e2b8: 6e10 7b5b 0500                         |00e8: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.q:()Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData; // method@5b7b
+94e2be: 0c02                                   |00eb: move-result-object v2
+94e2c0: 6e20 f75a 2000                         |00ec: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C1:(Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData;)V // method@5af7
+94e2c6: 6e10 7f5b 0500                         |00ef: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.r:()Ljava/util/List; // method@5b7f
+94e2cc: 0c02                                   |00f2: move-result-object v2
+94e2ce: 6e20 fa5a 2000                         |00f3: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.D1:(Ljava/util/List;)V // method@5afa
+94e2d4: 6e10 525b 0500                         |00f6: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.e0:()Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoHighlight; // method@5b52
+94e2da: 0c02                                   |00f9: move-result-object v2
+94e2dc: 6e20 545b 2000                         |00fa: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.e2:(Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoHighlight;)V // method@5b54
+94e2e2: 6e10 535b 0500                         |00fd: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.e1:()Z // method@5b53
+94e2e8: 0a02                                   |0100: move-result v2
+94e2ea: 6e20 fe5a 2000                         |0101: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.E1:(Z)V // method@5afe
+94e2f0: 6e10 945b 0500                         |0104: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.w0:()Ljava/lang/String; // method@5b94
+94e2f6: 0c02                                   |0107: move-result-object v2
+94e2f8: 6e20 8a5b 2000                         |0108: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.t2:(Ljava/lang/String;)V // method@5b8a
+94e2fe: 6e10 8d5b 0500                         |010b: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.u0:()Ljava/lang/String; // method@5b8d
+94e304: 0c02                                   |010e: move-result-object v2
+94e306: 6e20 865b 2000                         |010f: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.s2:(Ljava/lang/String;)V // method@5b86
+94e30c: 6e10 7c5b 0500                         |0112: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.q0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoPayInfo; // method@5b7c
+94e312: 0c02                                   |0115: move-result-object v2
+94e314: 6e20 765b 2000                         |0116: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.o2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoPayInfo;)V // method@5b76
+94e31a: 6e10 405b 0500                         |0119: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Z0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoUpdateInfo; // method@5b40
+94e320: 0c02                                   |011c: move-result-object v2
+94e322: 6e20 465b 2000                         |011d: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.a3:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoUpdateInfo;)V // method@5b46
+94e328: 6e10 905b 0500                         |0120: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.v:()I // method@5b90
+94e32e: 0a02                                   |0123: move-result v2
+94e330: 6e20 115b 2000                         |0124: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.K1:(I)V // method@5b11
+94e336: 6e10 395b 0500                         |0127: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.X0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoShareInfo; // method@5b39
+94e33c: 0c02                                   |012a: move-result-object v2
+94e33e: 6e20 3f5b 2000                         |012b: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Y2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoShareInfo;)V // method@5b3f
+94e344: 6e10 745b 0500                         |012e: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.o:()Ljava/util/List; // method@5b74
+94e34a: 0c02                                   |0131: move-result-object v2
+94e34c: 6e20 a15b 2000                         |0132: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z1:(Ljava/util/List;)V // method@5ba1
+94e352: 6e10 055b 0500                         |0135: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.H0:()Ljava/util/List; // method@5b05
+94e358: 0c02                                   |0138: move-result-object v2
+94e35a: 6e20 f85a 2000                         |0139: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C2:(Ljava/util/List;)V // method@5af8
+94e360: 6e10 255b 0500                         |013c: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.R0:()Lseriessdk/com/dragon/read/saas/rpc/model/UseStatus; // method@5b25
+94e366: 0c02                                   |013f: move-result-object v2
+94e368: 3802 0900                              |0140: if-eqz v2, 0149 // +0009
+94e36c: 6e10 255b 0500                         |0142: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.R0:()Lseriessdk/com/dragon/read/saas/rpc/model/UseStatus; // method@5b25
+94e372: 0c02                                   |0145: move-result-object v2
+94e374: 6e20 275b 2000                         |0146: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.R2:(Lseriessdk/com/dragon/read/saas/rpc/model/UseStatus;)V // method@5b27
+94e37a: 6e10 4b5b 0500                         |0149: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.c1:()Z // method@5b4b
+94e380: 0a02                                   |014c: move-result v2
+94e382: 6e20 995b 2000                         |014d: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.x1:(Z)V // method@5b99
+94e388: 6e10 3d5b 0500                         |0150: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Y0:()Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo; // method@5b3d
+94e38e: 0c02                                   |0153: move-result-object v2
+94e390: 6e20 425b 2000                         |0154: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Z2:(Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo;)V // method@5b42
+94e396: 6e10 565b 0500                         |0157: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.f1:()Z // method@5b56
+94e39c: 0a02                                   |015a: move-result v2
+94e39e: 6e20 025b 2000                         |015b: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.G1:(Z)V // method@5b02
+94e3a4: 6e10 645b 0500                         |015e: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.j0:()I // method@5b64
+94e3aa: 0a02                                   |0161: move-result v2
+94e3ac: 6e20 625b 2000                         |0162: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.i2:(I)V // method@5b62
+94e3b2: 6e10 105b 0500                         |0165: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.K0:()Ljava/util/List; // method@5b10
+94e3b8: 0c02                                   |0168: move-result-object v2
+94e3ba: 6e20 0b5b 2000                         |0169: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.I2:(Ljava/util/List;)V // method@5b0b
+94e3c0: 6e10 6e5b 0500                         |016c: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.m0:()Ljava/util/List; // method@5b6e
+94e3c6: 0c02                                   |016f: move-result-object v2
+94e3c8: 6e20 695b 2000                         |0170: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.k2:(Ljava/util/List;)V // method@5b69
+94e3ce: 6e10 815b 0500                         |0173: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.r1:()Z // method@5b81
+94e3d4: 0a02                                   |0176: move-result v2
+94e3d6: 6e20 0f5b 2000                         |0177: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.J2:(Z)V // method@5b0f
+94e3dc: 5352 b832                              |017a: iget-wide v2, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.aiUsageType:J // field@32b8
+94e3e0: 5a02 b832                              |017c: iput-wide v2, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.aiUsageType:J // field@32b8
+94e3e4: 6e10 325b 0500                         |017e: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.V0:()Lseriessdk/com/dragon/read/saas/rpc/model/VideoRelateBook; // method@5b32
+94e3ea: 0c02                                   |0181: move-result-object v2
+94e3ec: 6e20 375b 2000                         |0182: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.W2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoRelateBook;)V // method@5b37
+94e3f2: 5452 f132                              |0185: iget-object v2, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.playBtnSchema:Ljava/lang/String; // field@32f1
+94e3f6: 5b02 f132                              |0187: iput-object v2, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.playBtnSchema:Ljava/lang/String; // field@32f1
+94e3fa: 5352 c032                              |0189: iget-wide v2, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.createTime:J // field@32c0
+94e3fe: 5a02 c032                              |018b: iput-wide v2, v0, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.createTime:J // field@32c0
+94e402: 6e10 165b 0500                         |018d: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e408: 0c02                                   |0190: move-result-object v2
+94e40a: 7110 23ad 0200                         |0191: invoke-static {v2}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e410: 0a02                                   |0194: move-result v2
+94e412: 3902 5900                              |0195: if-nez v2, 01ee // +0059
+94e416: 6e10 9f5b 0500                         |0197: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e41c: 0c02                                   |019a: move-result-object v2
+94e41e: 7110 23ad 0200                         |019b: invoke-static {v2}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e424: 0a02                                   |019e: move-result v2
+94e426: 3902 2900                              |019f: if-nez v2, 01c8 // +0029
+94e42a: 6e10 165b 0500                         |01a1: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e430: 0c02                                   |01a4: move-result-object v2
+94e432: 7220 c3c8 1200                         |01a5: invoke-interface {v2, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e438: 0c02                                   |01a8: move-result-object v2
+94e43a: 1f02 0d1b                              |01a9: check-cast v2, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e43e: 5522 a832                              |01ab: iget-boolean v2, v2, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.vertical:Z // field@32a8
+94e442: 1213                                   |01ad: const/4 v3, #int 1 // #1
+94e444: 3332 1a00                              |01ae: if-ne v2, v3, 01c8 // +001a
+94e448: 6e10 9f5b 0500                         |01b0: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e44e: 0c02                                   |01b3: move-result-object v2
+94e450: 7220 c3c8 1200                         |01b4: invoke-interface {v2, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e456: 0c02                                   |01b7: move-result-object v2
+94e458: 1f02 0d1b                              |01b8: check-cast v2, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e45c: 5522 a832                              |01ba: iget-boolean v2, v2, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.vertical:Z // field@32a8
+94e460: 3902 0c00                              |01bc: if-nez v2, 01c8 // +000c
+94e464: 6202 28a4                              |01be: sget-object v2, Lss4/g;.a:Lcom/dragon/read/base/util/LogHelper; // field@a428
+94e468: 1a03 9ccc                              |01c0: const-string v3, "剧为横，预告片为竖，横屏屏蔽预告片" // string@cc9c
+94e46c: 2311 8f55                              |01c2: new-array v1, v1, [Ljava/lang/Object; // type@558f
+94e470: 6e30 5d19 3201                         |01c4: invoke-virtual {v2, v3, v1}, Lcom/dragon/read/base/util/LogHelper;.i:(Ljava/lang/String;[Ljava/lang/Object;)V // method@195d
+94e476: 2827                                   |01c7: goto 01ee // +0027
+94e478: 2202 e340                              |01c8: new-instance v2, Ljava/util/ArrayList; // type@40e3
+94e47c: 7010 4fc8 0200                         |01ca: invoke-direct {v2}, Ljava/util/ArrayList;.<init>:()V // method@c84f
+94e482: 6e10 165b 0500                         |01cd: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e488: 0c03                                   |01d0: move-result-object v3
+94e48a: 7210 ccc8 0300                         |01d1: invoke-interface {v3}, Ljava/util/List;.size:()I // method@c8cc
+94e490: 0a03                                   |01d4: move-result v3
+94e492: 3531 1200                              |01d5: if-ge v1, v3, 01e7 // +0012
+94e496: 6e10 165b 0500                         |01d7: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e49c: 0c03                                   |01da: move-result-object v3
+94e49e: 7220 c3c8 1300                         |01db: invoke-interface {v3, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e4a4: 0c03                                   |01de: move-result-object v3
+94e4a6: 1f03 0d1b                              |01df: check-cast v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e4aa: 6e20 53c8 3200                         |01e1: invoke-virtual {v2, v3}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c853
+94e4b0: d801 0101                              |01e4: add-int/lit8 v1, v1, #int 1 // #01
+94e4b4: 28e7                                   |01e6: goto 01cd // -0019
+94e4b6: 6e10 165b 0500                         |01e7: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e4bc: 0c01                                   |01ea: move-result-object v1
+94e4be: 6e20 155b 1000                         |01eb: invoke-virtual {v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.L2:(Ljava/util/List;)V // method@5b15
+94e4c4: 6e10 ee5a 0500                         |01ee: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.A0:()Ljava/io/Serializable; // method@5aee
+94e4ca: 0c05                                   |01f1: move-result-object v5
+94e4cc: 6e20 9a5b 5000                         |01f2: invoke-virtual {v0, v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.x2:(Ljava/io/Serializable;)V // method@5b9a
+94e4d2: 1100                                   |01f5: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=17235968
+        0x0001 line=17235969
+        0x0002 line=17235970
+        0x0003 line=17235971
+        0x0004 line=17235972
+        0x0005 line=17235973
+        0x0006 line=17235974
+        0x0007 line=17235975
+        0x0008 line=17235976
+        0x0009 line=17235977
+        0x000a line=17235978
+        0x000b line=17235979
+        0x000c line=17235980
+        0x000d line=17235981
+        0x000e line=17235982
+        0x000f line=17235983
+        0x0010 line=17235984
+        0x0011 line=17235985
+        0x0012 line=17235986
+        0x0013 line=17235987
+        0x0014 line=17235988
+        0x0015 line=17235989
+        0x0016 line=17235990
+        0x0017 line=17235991
+        0x0018 line=17235992
+        0x0019 line=17235993
+        0x001a line=17235994
+        0x001b line=17235995
+        0x001c line=17235996
+        0x001d line=17235997
+        0x001e line=17235998
+        0x001f line=17235999
+        0x0020 line=17236000
+        0x0021 line=17236001
+        0x0022 line=17236002
+        0x0023 line=17236003
+        0x0024 line=17236004
+        0x0025 line=17236005
+        0x0026 line=17236006
+        0x0027 line=17236007
+        0x0028 line=17236008
+        0x0029 line=17236009
+        0x002a line=17236010
+        0x002b line=17236011
+        0x002c line=17236012
+        0x002d line=17236013
+        0x002e line=17236014
+        0x002f line=17236015
+        0x0030 line=17236016
+        0x0031 line=17236017
+        0x0032 line=17236018
+        0x0033 line=17236019
+        0x0034 line=17236020
+        0x0035 line=17236021
+        0x0036 line=17236022
+        0x0037 line=17236023
+        0x0038 line=17236024
+        0x0039 line=17236025
+        0x003a line=17236026
+        0x003b line=17236027
+        0x003c line=17236028
+        0x003d line=17236029
+        0x003e line=17236030
+        0x003f line=17236031
+        0x0040 line=17236032
+        0x0041 line=17236033
+        0x0042 line=17236034
+        0x0043 line=17236035
+        0x0044 line=17236036
+        0x0045 line=17236037
+        0x0046 line=17236038
+        0x0047 line=17236039
+        0x0048 line=17236040
+        0x0049 line=17236041
+        0x004a line=17236042
+        0x004b line=17236043
+        0x004c line=17236044
+        0x004d line=17236045
+        0x004e line=17236046
+        0x004f line=17236047
+        0x0050 line=17236048
+        0x0051 line=17236049
+        0x0052 line=17236050
+        0x0053 line=17236051
+        0x0054 line=17236052
+        0x0055 line=17236053
+        0x0056 line=17236054
+        0x0057 line=17236055
+        0x0058 line=17236056
+        0x0059 line=17236057
+        0x005a line=17236058
+        0x005b line=17236059
+        0x005c line=17236060
+        0x005d line=17236061
+        0x005e line=17236062
+        0x005f line=17236063
+        0x0060 line=17236064
+        0x0061 line=17236065
+        0x0062 line=17236066
+        0x0063 line=17236067
+        0x0064 line=17236068
+        0x0065 line=17236069
+        0x0066 line=17236070
+        0x0067 line=17236071
+        0x0068 line=17236072
+        0x0069 line=17236073
+        0x006a line=17236074
+        0x006b line=17236075
+        0x006c line=17236076
+        0x006d line=17236077
+        0x006e line=17236078
+        0x006f line=17236079
+        0x0070 line=17236080
+        0x0071 line=17236081
+        0x0072 line=17236082
+        0x0073 line=17236083
+        0x0074 line=17236084
+        0x0075 line=17236085
+        0x0076 line=17236086
+        0x0077 line=17236087
+        0x0078 line=17236088
+        0x0079 line=17236089
+        0x007a line=17236090
+        0x007b line=17236091
+        0x007c line=17236092
+        0x007d line=17236093
+        0x007e line=17236094
+        0x007f line=17236095
+        0x0080 line=17236096
+        0x0081 line=17236097
+        0x0082 line=17236098
+        0x0083 line=17236099
+        0x0084 line=17236100
+        0x0085 line=17236101
+        0x0086 line=17236102
+        0x0087 line=17236103
+        0x0088 line=17236104
+        0x0089 line=17236105
+        0x008a line=17236106
+        0x008b line=17236107
+        0x008c line=17236108
+        0x008d line=17236109
+        0x008e line=17236110
+        0x008f line=17236111
+        0x0090 line=17236112
+        0x0091 line=17236113
+        0x0092 line=17236114
+        0x0093 line=17236115
+        0x0094 line=17236116
+        0x0095 line=17236117
+        0x0096 line=17236118
+        0x0097 line=17236119
+        0x0098 line=17236120
+        0x0099 line=17236121
+        0x009a line=17236122
+        0x009b line=17236123
+        0x009c line=17236124
+        0x009d line=17236125
+        0x009e line=17236126
+        0x009f line=17236127
+        0x00a0 line=17236128
+        0x00a1 line=17236129
+        0x00a2 line=17236130
+        0x00a3 line=17236131
+        0x00a4 line=17236132
+        0x00a5 line=17236133
+        0x00a6 line=17236134
+        0x00a7 line=17236135
+        0x00a8 line=17236136
+        0x00a9 line=17236137
+        0x00aa line=17236138
+        0x00ab line=17236139
+        0x00ac line=17236140
+        0x00ad line=17236141
+        0x00ae line=17236142
+        0x00af line=17236143
+        0x00b0 line=17236144
+        0x00b1 line=17236145
+        0x00b2 line=17236146
+        0x00b3 line=17236147
+        0x00b4 line=17236148
+        0x00b5 line=17236149
+        0x00b6 line=17236150
+        0x00b7 line=17236151
+        0x00b8 line=17236152
+        0x00b9 line=17236153
+        0x00ba line=17236154
+        0x00bb line=17236155
+        0x00bc line=17236156
+        0x00bd line=17236157
+        0x00be line=17236158
+        0x00bf line=17236159
+        0x00c0 line=17236160
+        0x00c1 line=17236161
+        0x00c2 line=17236162
+        0x00c3 line=17236163
+        0x00c4 line=17236164
+        0x00c5 line=17236165
+        0x00c6 line=17236166
+        0x00c7 line=17236167
+        0x00c8 line=17236168
+        0x00c9 line=17236169
+        0x00ca line=17236170
+        0x00cb line=17236171
+        0x00cc line=17236172
+        0x00cd line=17236173
+        0x00ce line=17236174
+        0x00cf line=17236175
+        0x00d0 line=17236176
+        0x00d1 line=17236177
+        0x00d2 line=17236178
+        0x00d3 line=17236179
+        0x00d4 line=17236180
+        0x00d5 line=17236181
+        0x00d6 line=17236182
+        0x00d7 line=17236183
+        0x00d8 line=17236184
+        0x00d9 line=17236185
+        0x00da line=17236186
+        0x00db line=17236187
+        0x00dc line=17236188
+        0x00dd line=17236189
+        0x00de line=17236190
+        0x00df line=17236191
+        0x00e0 line=17236192
+        0x00e1 line=17236193
+        0x00e2 line=17236194
+        0x00e3 line=17236195
+        0x00e4 line=17236196
+        0x00e5 line=17236197
+        0x00e6 line=17236198
+        0x00e7 line=17236199
+        0x00e8 line=17236200
+        0x00e9 line=17236201
+        0x00ea line=17236202
+        0x00eb line=17236203
+        0x00ec line=17236204
+        0x00ed line=17236205
+        0x00ee line=17236206
+        0x00ef line=17236207
+        0x00f0 line=17236208
+        0x00f1 line=17236209
+        0x00f2 line=17236210
+        0x00f3 line=17236211
+        0x00f4 line=17236212
+        0x00f5 line=17236213
+        0x00f6 line=17236214
+        0x00f7 line=17236215
+        0x00f8 line=17236216
+        0x00f9 line=17236217
+        0x00fa line=17236218
+        0x00fb line=17236219
+        0x00fc line=17236220
+        0x00fd line=17236221
+        0x00fe line=17236222
+        0x00ff line=17236223
+        0x0100 line=17236224
+        0x0101 line=17236225
+        0x0102 line=17236226
+        0x0103 line=17236227
+        0x0104 line=17236228
+        0x0105 line=17236229
+        0x0106 line=17236230
+        0x0107 line=17236231
+        0x0108 line=17236232
+        0x0109 line=17236233
+        0x010a line=17236234
+        0x010b line=17236235
+        0x010c line=17236236
+        0x010d line=17236237
+        0x010e line=17236238
+        0x010f line=17236239
+        0x0110 line=17236240
+        0x0111 line=17236241
+        0x0112 line=17236242
+        0x0113 line=17236243
+        0x0114 line=17236244
+        0x0115 line=17236245
+        0x0116 line=17236246
+        0x0117 line=17236247
+        0x0118 line=17236248
+        0x0119 line=17236249
+        0x011a line=17236250
+        0x011b line=17236251
+        0x011c line=17236252
+        0x011d line=17236253
+        0x011e line=17236254
+        0x011f line=17236255
+        0x0120 line=17236256
+        0x0121 line=17236257
+        0x0122 line=17236258
+        0x0123 line=17236259
+        0x0124 line=17236260
+        0x0125 line=17236261
+        0x0126 line=17236262
+        0x0127 line=17236263
+        0x0128 line=17236264
+        0x0129 line=17236265
+        0x012a line=17236266
+        0x012b line=17236267
+        0x012c line=17236268
+        0x012d line=17236269
+        0x012e line=17236270
+        0x012f line=17236271
+        0x0130 line=17236272
+        0x0131 line=17236273
+        0x0132 line=17236274
+        0x0133 line=17236275
+        0x0134 line=17236276
+        0x0135 line=17236277
+        0x0136 line=17236278
+        0x0137 line=17236279
+        0x0138 line=17236280
+        0x0139 line=17236281
+        0x013a line=17236282
+        0x013b line=17236283
+        0x013c line=17236284
+        0x013d line=17236285
+        0x013e line=17236286
+        0x013f line=17236287
+        0x0140 line=17236288
+        0x0141 line=17236289
+        0x0142 line=17236290
+        0x0143 line=17236291
+        0x0144 line=17236292
+        0x0145 line=17236293
+        0x0146 line=17236294
+        0x0147 line=17236295
+        0x0148 line=17236296
+        0x0149 line=17236297
+        0x014a line=17236298
+        0x014b line=17236299
+        0x014c line=17236300
+        0x014d line=17236301
+        0x014e line=17236302
+        0x014f line=17236303
+        0x0150 line=17236304
+        0x0151 line=17236305
+        0x0152 line=17236306
+        0x0153 line=17236307
+        0x0154 line=17236308
+        0x0155 line=17236309
+        0x0156 line=17236310
+        0x0157 line=17236311
+        0x0158 line=17236312
+        0x0159 line=17236313
+        0x015a line=17236314
+        0x015b line=17236315
+        0x015c line=17236316
+        0x015d line=17236317
+        0x015e line=17236318
+        0x015f line=17236319
+        0x0160 line=17236320
+        0x0161 line=17236321
+        0x0162 line=17236322
+        0x0163 line=17236323
+        0x0164 line=17236324
+        0x0165 line=17236325
+        0x0166 line=17236326
+        0x0167 line=17236327
+        0x0168 line=17236328
+        0x0169 line=17236329
+        0x016a line=17236330
+        0x016b line=17236331
+        0x016c line=17236332
+        0x016d line=17236333
+        0x016e line=17236334
+        0x016f line=17236335
+        0x0170 line=17236336
+        0x0171 line=17236337
+        0x0172 line=17236338
+        0x0173 line=17236339
+        0x0174 line=17236340
+        0x0175 line=17236341
+        0x0176 line=17236342
+        0x0177 line=17236343
+        0x0178 line=17236344
+        0x0179 line=17236345
+        0x017a line=17236346
+        0x017b line=17236347
+        0x017c line=17236348
+        0x017d line=17236349
+        0x017e line=17236350
+        0x017f line=17236351
+        0x0180 line=17236352
+        0x0181 line=17236353
+        0x0182 line=17236354
+        0x0183 line=17236355
+        0x0184 line=17236356
+        0x0185 line=17236357
+        0x0186 line=17236358
+        0x0187 line=17236359
+        0x0188 line=17236360
+        0x0189 line=17236361
+        0x018a line=17236362
+        0x018b line=17236363
+        0x018c line=17236364
+        0x018d line=17236365
+        0x018e line=17236366
+        0x018f line=17236367
+        0x0190 line=17236368
+        0x0191 line=17236369
+        0x0192 line=17236370
+        0x0193 line=17236371
+        0x0194 line=17236372
+        0x0195 line=17236373
+        0x0196 line=17236374
+        0x0197 line=17236375
+        0x0198 line=17236376
+        0x0199 line=17236377
+        0x019a line=17236378
+        0x019b line=17236379
+        0x019c line=17236380
+        0x019d line=17236381
+        0x019e line=17236382
+        0x019f line=17236383
+        0x01a0 line=17236384
+        0x01a1 line=17236385
+        0x01a2 line=17236386
+        0x01a3 line=17236387
+        0x01a4 line=17236388
+        0x01a5 line=17236389
+        0x01a6 line=17236390
+        0x01a7 line=17236391
+        0x01a8 line=17236392
+        0x01a9 line=17236393
+        0x01aa line=17236394
+        0x01ab line=17236395
+        0x01ac line=17236396
+        0x01ad line=17236397
+        0x01ae line=17236398
+        0x01af line=17236399
+        0x01b0 line=17236400
+        0x01b1 line=17236401
+        0x01b2 line=17236402
+        0x01b3 line=17236403
+        0x01b4 line=17236404
+        0x01b5 line=17236405
+        0x01b6 line=17236406
+        0x01b7 line=17236407
+        0x01b8 line=17236408
+        0x01b9 line=17236409
+        0x01ba line=17236410
+        0x01bb line=17236411
+        0x01bc line=17236412
+        0x01bd line=17236413
+        0x01be line=17236414
+        0x01bf line=17236415
+        0x01c0 line=17236416
+        0x01c1 line=17236417
+        0x01c2 line=17236418
+        0x01c3 line=17236419
+        0x01c4 line=17236420
+        0x01c5 line=17236421
+        0x01c6 line=17236422
+        0x01c7 line=17236423
+        0x01c8 line=17236424
+        0x01c9 line=17236425
+        0x01ca line=17236426
+        0x01cb line=17236427
+        0x01cc line=17236428
+        0x01cd line=17236429
+        0x01ce line=17236430
+        0x01cf line=17236431
+        0x01d0 line=17236432
+        0x01d1 line=17236433
+        0x01d2 line=17236434
+        0x01d3 line=17236435
+        0x01d4 line=17236436
+        0x01d5 line=17236437
+        0x01d6 line=17236438
+        0x01d7 line=17236439
+        0x01d8 line=17236440
+        0x01d9 line=17236441
+        0x01da line=17236442
+        0x01db line=17236443
+        0x01dc line=17236444
+        0x01dd line=17236445
+        0x01de line=17236446
+        0x01df line=17236447
+        0x01e0 line=17236448
+        0x01e1 line=17236449
+        0x01e2 line=17236450
+        0x01e3 line=17236451
+        0x01e4 line=17236452
+        0x01e5 line=17236453
+        0x01e6 line=17236454
+        0x01e7 line=17236455
+        0x01e8 line=17236456
+        0x01e9 line=17236457
+        0x01ea line=17236458
+        0x01eb line=17236459
+        0x01ec line=17236460
+        0x01ed line=17236461
+        0x01ee line=17236462
+        0x01ef line=17236463
+        0x01f0 line=17236464
+        0x01f1 line=17236465
+        0x01f2 line=17236466
+        0x01f3 line=17236467
+        0x01f4 line=17236468
+        0x01f5 line=17236469
+      locals        :
+        0x0000 - 0x01f6 reg=5 (null) Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+
+    #2              : (in Lss4/g;)
+      name          : 'b'
+      type          : '(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 2
+      outs          : 4
+      insns size    : 207 16-bit code units
+94e4d4:                                        |[94e4d4] ss4.g.b:(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+94e4e4: 5460 84a2                              |0000: iget-object v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@a284
+94e4e8: 5461 81a2                              |0002: iget-object v1, v6, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.lockData:Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData; // field@a281
+94e4ec: 7110 ee5d 0000                         |0004: invoke-static {v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/t4;.a:(Ljava/lang/Object;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@5dee
+94e4f2: 0c02                                   |0007: move-result-object v2
+94e4f4: 6203 f2a2                              |0008: sget-object v3, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.Unknown:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@a2f2
+94e4f8: 3800 0700                              |000a: if-eqz v0, 0011 // +0007
+94e4fc: 7130 00ec 0205                         |000c: invoke-static {v2, v0, v5}, Lss4/g;.e:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;Ljava/lang/String;)V // method@ec00
+94e502: 5403 efa2                              |000f: iget-object v3, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoPlatform:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@a2ef
+94e506: 6200 23a4                              |0011: sget-object v0, Lss4/e;.a:Lss4/e; // field@a423
+94e50a: 5464 82a2                              |0013: iget-object v4, v6, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.previewMaterialList:Ljava/util/List; // field@a282
+94e50e: 6e10 dbc7 0000                         |0015: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94e514: 1a00 0000                              |0018: const-string v0, "" // string@0000
+94e518: 7140 f3eb 0435                         |001a: invoke-static {v4, v0, v5, v3}, Lss4/e;.a:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;)Ljava/util/List; // method@ebf3
+94e51e: 0c05                                   |001d: move-result-object v5
+94e520: 6e20 155b 5200                         |001e: invoke-virtual {v2, v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.L2:(Ljava/util/List;)V // method@5b15
+94e526: 6e10 f15a 0200                         |0021: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94e52c: 0c05                                   |0024: move-result-object v5
+94e52e: 7110 23ad 0500                         |0025: invoke-static {v5}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e534: 0a05                                   |0028: move-result v5
+94e536: 1200                                   |0029: const/4 v0, #int 0 // #0
+94e538: 3905 2c00                              |002a: if-nez v5, 0056 // +002c
+94e53c: 1205                                   |002c: const/4 v5, #int 0 // #0
+94e53e: 6e10 f15a 0200                         |002d: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94e544: 0c03                                   |0030: move-result-object v3
+94e546: 7210 ccc8 0300                         |0031: invoke-interface {v3}, Ljava/util/List;.size:()I // method@c8cc
+94e54c: 0a03                                   |0034: move-result v3
+94e54e: 3535 2100                              |0035: if-ge v5, v3, 0056 // +0021
+94e552: 6e10 f15a 0200                         |0037: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94e558: 0c03                                   |003a: move-result-object v3
+94e55a: 7220 c3c8 5300                         |003b: invoke-interface {v3, v5}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e560: 0c03                                   |003e: move-result-object v3
+94e562: 1f03 0d1b                              |003f: check-cast v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e566: 6e10 f15a 0200                         |0041: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94e56c: 0c04                                   |0044: move-result-object v4
+94e56e: 7220 c3c8 0400                         |0045: invoke-interface {v4, v0}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e574: 0c04                                   |0048: move-result-object v4
+94e576: 1f04 0d1b                              |0049: check-cast v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e57a: 5544 a832                              |004b: iget-boolean v4, v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.vertical:Z // field@32a8
+94e57e: 7110 79c7 0400                         |004d: invoke-static {v4}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@c779
+94e584: 0c04                                   |0050: move-result-object v4
+94e586: 5b34 8b32                              |0051: iput-object v4, v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.isVideoDetailModelVertical:Ljava/lang/Boolean; // field@328b
+94e58a: d805 0501                              |0053: add-int/lit8 v5, v5, #int 1 // #01
+94e58e: 28d8                                   |0055: goto 002d // -0028
+94e590: 6e10 9f5b 0200                         |0056: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e596: 0c05                                   |0059: move-result-object v5
+94e598: 7110 23ad 0500                         |005a: invoke-static {v5}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e59e: 0a05                                   |005d: move-result v5
+94e5a0: 3905 2c00                              |005e: if-nez v5, 008a // +002c
+94e5a4: 1205                                   |0060: const/4 v5, #int 0 // #0
+94e5a6: 6e10 9f5b 0200                         |0061: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e5ac: 0c03                                   |0064: move-result-object v3
+94e5ae: 7210 ccc8 0300                         |0065: invoke-interface {v3}, Ljava/util/List;.size:()I // method@c8cc
+94e5b4: 0a03                                   |0068: move-result v3
+94e5b6: 3535 2100                              |0069: if-ge v5, v3, 008a // +0021
+94e5ba: 6e10 9f5b 0200                         |006b: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e5c0: 0c03                                   |006e: move-result-object v3
+94e5c2: 7220 c3c8 5300                         |006f: invoke-interface {v3, v5}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e5c8: 0c03                                   |0072: move-result-object v3
+94e5ca: 1f03 0d1b                              |0073: check-cast v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e5ce: 6e10 9f5b 0200                         |0075: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z:()Ljava/util/List; // method@5b9f
+94e5d4: 0c04                                   |0078: move-result-object v4
+94e5d6: 7220 c3c8 0400                         |0079: invoke-interface {v4, v0}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e5dc: 0c04                                   |007c: move-result-object v4
+94e5de: 1f04 0d1b                              |007d: check-cast v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e5e2: 5544 a832                              |007f: iget-boolean v4, v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.vertical:Z // field@32a8
+94e5e6: 7110 79c7 0400                         |0081: invoke-static {v4}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@c779
+94e5ec: 0c04                                   |0084: move-result-object v4
+94e5ee: 5b34 8b32                              |0085: iput-object v4, v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.isVideoDetailModelVertical:Ljava/lang/Boolean; // field@328b
+94e5f2: d805 0501                              |0087: add-int/lit8 v5, v5, #int 1 // #01
+94e5f6: 28d8                                   |0089: goto 0061 // -0028
+94e5f8: 6e10 165b 0200                         |008a: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e5fe: 0c05                                   |008d: move-result-object v5
+94e600: 7110 23ad 0500                         |008e: invoke-static {v5}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e606: 0a05                                   |0091: move-result v5
+94e608: 3905 2c00                              |0092: if-nez v5, 00be // +002c
+94e60c: 1205                                   |0094: const/4 v5, #int 0 // #0
+94e60e: 6e10 165b 0200                         |0095: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e614: 0c03                                   |0098: move-result-object v3
+94e616: 7210 ccc8 0300                         |0099: invoke-interface {v3}, Ljava/util/List;.size:()I // method@c8cc
+94e61c: 0a03                                   |009c: move-result v3
+94e61e: 3535 2100                              |009d: if-ge v5, v3, 00be // +0021
+94e622: 6e10 165b 0200                         |009f: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e628: 0c03                                   |00a2: move-result-object v3
+94e62a: 7220 c3c8 5300                         |00a3: invoke-interface {v3, v5}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e630: 0c03                                   |00a6: move-result-object v3
+94e632: 1f03 0d1b                              |00a7: check-cast v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e636: 6e10 165b 0200                         |00a9: invoke-virtual {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M0:()Ljava/util/List; // method@5b16
+94e63c: 0c04                                   |00ac: move-result-object v4
+94e63e: 7220 c3c8 0400                         |00ad: invoke-interface {v4, v0}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e644: 0c04                                   |00b0: move-result-object v4
+94e646: 1f04 0d1b                              |00b1: check-cast v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94e64a: 5544 a832                              |00b3: iget-boolean v4, v4, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.vertical:Z // field@32a8
+94e64e: 7110 79c7 0400                         |00b5: invoke-static {v4}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@c779
+94e654: 0c04                                   |00b8: move-result-object v4
+94e656: 5b34 8b32                              |00b9: iput-object v4, v3, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;.isVideoDetailModelVertical:Ljava/lang/Boolean; // field@328b
+94e65a: d805 0501                              |00bb: add-int/lit8 v5, v5, #int 1 // #01
+94e65e: 28d8                                   |00bd: goto 0095 // -0028
+94e660: 6e20 f75a 1200                         |00be: invoke-virtual {v2, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C1:(Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData;)V // method@5af7
+94e666: 5465 85a2                              |00c1: iget-object v5, v6, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoRelateBook:Lseriessdk/com/dragon/read/saas/rpc/model/VideoRelateBook; // field@a285
+94e66a: 6e20 375b 5200                         |00c3: invoke-virtual {v2, v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.W2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoRelateBook;)V // method@5b37
+94e670: 5465 83a2                              |00c6: iget-object v5, v6, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.style:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailStyle; // field@a283
+94e674: 6e20 075b 5200                         |00c8: invoke-virtual {v2, v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.H2:(Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailStyle;)V // method@5b07
+94e67a: 6e20 9a5b 6200                         |00cb: invoke-virtual {v2, v6}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.x2:(Ljava/io/Serializable;)V // method@5b9a
+94e680: 1102                                   |00ce: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=33947648
+        0x0001 line=33947649
+        0x0002 line=33947650
+        0x0003 line=33947651
+        0x0004 line=33947652
+        0x0005 line=33947653
+        0x0006 line=33947654
+        0x0007 line=33947655
+        0x0008 line=33947656
+        0x0009 line=33947657
+        0x000a line=33947658
+        0x000b line=33947659
+        0x000c line=33947660
+        0x000d line=33947661
+        0x000e line=33947662
+        0x000f line=33947663
+        0x0010 line=33947664
+        0x0011 line=33947665
+        0x0012 line=33947666
+        0x0013 line=33947667
+        0x0014 line=33947668
+        0x0015 line=33947669
+        0x0016 line=33947670
+        0x0017 line=33947671
+        0x0018 line=33947672
+        0x0019 line=33947673
+        0x001a line=33947674
+        0x001b line=33947675
+        0x001c line=33947676
+        0x001d line=33947677
+        0x001e line=33947678
+        0x001f line=33947679
+        0x0020 line=33947680
+        0x0021 line=33947681
+        0x0022 line=33947682
+        0x0023 line=33947683
+        0x0024 line=33947684
+        0x0025 line=33947685
+        0x0026 line=33947686
+        0x0027 line=33947687
+        0x0028 line=33947688
+        0x0029 line=33947689
+        0x002a line=33947690
+        0x002b line=33947691
+        0x002c line=33947692
+        0x002d line=33947693
+        0x002e line=33947694
+        0x002f line=33947695
+        0x0030 line=33947696
+        0x0031 line=33947697
+        0x0032 line=33947698
+        0x0033 line=33947699
+        0x0034 line=33947700
+        0x0035 line=33947701
+        0x0036 line=33947702
+        0x0037 line=33947703
+        0x0038 line=33947704
+        0x0039 line=33947705
+        0x003a line=33947706
+        0x003b line=33947707
+        0x003c line=33947708
+        0x003d line=33947709
+        0x003e line=33947710
+        0x003f line=33947711
+        0x0040 line=33947712
+        0x0041 line=33947713
+        0x0042 line=33947714
+        0x0043 line=33947715
+        0x0044 line=33947716
+        0x0045 line=33947717
+        0x0046 line=33947718
+        0x0047 line=33947719
+        0x0048 line=33947720
+        0x0049 line=33947721
+        0x004a line=33947722
+        0x004b line=33947723
+        0x004c line=33947724
+        0x004d line=33947725
+        0x004e line=33947726
+        0x004f line=33947727
+        0x0050 line=33947728
+        0x0051 line=33947729
+        0x0052 line=33947730
+        0x0053 line=33947731
+        0x0054 line=33947732
+        0x0055 line=33947733
+        0x0056 line=33947734
+        0x0057 line=33947735
+        0x0058 line=33947736
+        0x0059 line=33947737
+        0x005a line=33947738
+        0x005b line=33947739
+        0x005c line=33947740
+        0x005d line=33947741
+        0x005e line=33947742
+        0x005f line=33947743
+        0x0060 line=33947744
+        0x0061 line=33947745
+        0x0062 line=33947746
+        0x0063 line=33947747
+        0x0064 line=33947748
+        0x0065 line=33947749
+        0x0066 line=33947750
+        0x0067 line=33947751
+        0x0068 line=33947752
+        0x0069 line=33947753
+        0x006a line=33947754
+        0x006b line=33947755
+        0x006c line=33947756
+        0x006d line=33947757
+        0x006e line=33947758
+        0x006f line=33947759
+        0x0070 line=33947760
+        0x0071 line=33947761
+        0x0072 line=33947762
+        0x0073 line=33947763
+        0x0074 line=33947764
+        0x0075 line=33947765
+        0x0076 line=33947766
+        0x0077 line=33947767
+        0x0078 line=33947768
+        0x0079 line=33947769
+        0x007a line=33947770
+        0x007b line=33947771
+        0x007c line=33947772
+        0x007d line=33947773
+        0x007e line=33947774
+        0x007f line=33947775
+        0x0080 line=33947776
+        0x0081 line=33947777
+        0x0082 line=33947778
+        0x0083 line=33947779
+        0x0084 line=33947780
+        0x0085 line=33947781
+        0x0086 line=33947782
+        0x0087 line=33947783
+        0x0088 line=33947784
+        0x0089 line=33947785
+        0x008a line=33947786
+        0x008b line=33947787
+        0x008c line=33947788
+        0x008d line=33947789
+        0x008e line=33947790
+        0x008f line=33947791
+        0x0090 line=33947792
+        0x0091 line=33947793
+        0x0092 line=33947794
+        0x0093 line=33947795
+        0x0094 line=33947796
+        0x0095 line=33947797
+        0x0096 line=33947798
+        0x0097 line=33947799
+        0x0098 line=33947800
+        0x0099 line=33947801
+        0x009a line=33947802
+        0x009b line=33947803
+        0x009c line=33947804
+        0x009d line=33947805
+        0x009e line=33947806
+        0x009f line=33947807
+        0x00a0 line=33947808
+        0x00a1 line=33947809
+        0x00a2 line=33947810
+        0x00a3 line=33947811
+        0x00a4 line=33947812
+        0x00a5 line=33947813
+        0x00a6 line=33947814
+        0x00a7 line=33947815
+        0x00a8 line=33947816
+        0x00a9 line=33947817
+        0x00aa line=33947818
+        0x00ab line=33947819
+        0x00ac line=33947820
+        0x00ad line=33947821
+        0x00ae line=33947822
+        0x00af line=33947823
+        0x00b0 line=33947824
+        0x00b1 line=33947825
+        0x00b2 line=33947826
+        0x00b3 line=33947827
+        0x00b4 line=33947828
+        0x00b5 line=33947829
+        0x00b6 line=33947830
+        0x00b7 line=33947831
+        0x00b8 line=33947832
+        0x00b9 line=33947833
+        0x00ba line=33947834
+        0x00bb line=33947835
+        0x00bc line=33947836
+        0x00bd line=33947837
+        0x00be line=33947838
+        0x00bf line=33947839
+        0x00c0 line=33947840
+        0x00c1 line=33947841
+        0x00c2 line=33947842
+        0x00c3 line=33947843
+        0x00c4 line=33947844
+        0x00c5 line=33947845
+        0x00c6 line=33947846
+        0x00c7 line=33947847
+        0x00c8 line=33947848
+        0x00c9 line=33947849
+        0x00ca line=33947850
+        0x00cb line=33947851
+        0x00cc line=33947852
+        0x00cd line=33947853
+        0x00ce line=33947854
+      locals        :
+        0x0000 - 0x00cf reg=5 (null) Ljava/lang/String;
+        0x0000 - 0x00cf reg=6 (null) Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;
+
+    #3              : (in Lss4/g;)
+      name          : 'c'
+      type          : '(Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 7 16-bit code units
+94e684:                                        |[94e684] ss4.g.c:(Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+94e694: 1a00 0000                              |0000: const-string v0, "" // string@0000
+94e698: 7120 fdeb 1000                         |0002: invoke-static {v0, v1}, Lss4/g;.b:(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@ebfd
+94e69e: 0c01                                   |0005: move-result-object v1
+94e6a0: 1101                                   |0006: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;
+
+    #4              : (in Lss4/g;)
+      name          : 'd'
+      type          : '(Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 16 16-bit code units
+94e6a4:                                        |[94e6a4] ss4.g.d:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+94e6b4: 7110 ee5d 0200                         |0000: invoke-static {v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/t4;.a:(Ljava/lang/Object;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@5dee
+94e6ba: 0c00                                   |0003: move-result-object v0
+94e6bc: 3802 0700                              |0004: if-eqz v2, 000b // +0007
+94e6c0: 1a01 0000                              |0006: const-string v1, "" // string@0000
+94e6c4: 7130 00ec 2001                         |0008: invoke-static {v0, v2, v1}, Lss4/g;.e:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;Ljava/lang/String;)V // method@ec00
+94e6ca: 1202                                   |000b: const/4 v2, #int 0 // #0
+94e6cc: 6e20 f75a 2000                         |000c: invoke-virtual {v0, v2}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C1:(Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData;)V // method@5af7
+94e6d2: 1100                                   |000f: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+        0x000b line=16908299
+        0x000c line=16908300
+        0x000d line=16908301
+        0x000e line=16908302
+        0x000f line=16908303
+      locals        :
+        0x0000 - 0x0010 reg=2 (null) Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;
+
+    #5              : (in Lss4/g;)
+      name          : 'e'
+      type          : '(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 8
+      ins           : 3
+      outs          : 4
+      insns size    : 524 16-bit code units
+94e6d4:                                        |[94e6d4] ss4.g.e:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;Ljava/lang/String;)V
+94e6e4: 2050 111b                              |0000: instance-of v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModelWrapper; // type@1b11
+94e6e8: 3800 0300                              |0002: if-eqz v0, 0005 // +0003
+94e6ec: 0e00                                   |0004: return-void
+94e6ee: 5360 e0a2                              |0005: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesId:J // field@a2e0
+94e6f2: 7120 04c8 1000                         |0007: invoke-static {v0, v1}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@c804
+94e6f8: 0c00                                   |000a: move-result-object v0
+94e6fa: 6e20 175b 0500                         |000b: invoke-virtual {v5, v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.M1:(Ljava/lang/String;)V // method@5b17
+94e700: 5360 dba2                              |000e: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.relatedNovelBookId:J // field@a2db
+94e704: 7120 04c8 1000                         |0010: invoke-static {v0, v1}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@c804
+94e70a: 0c00                                   |0013: move-result-object v0
+94e70c: 5b50 fb32                              |0014: iput-object v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.relatedNovelBookId:Ljava/lang/String; // field@32fb
+94e710: 5560 cba2                              |0016: iget-boolean v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.followed:Z // field@a2cb
+94e714: 6e20 335b 0500                         |0018: invoke-virtual {v5, v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.V1:(Z)V // method@5b33
+94e71a: 5560 cda2                              |001b: iget-boolean v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.followedUpdate:Z // field@a2cd
+94e71e: 5c50 da32                              |001d: iput-boolean v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.followedUpdate:Z // field@32da
+94e722: 5360 cca2                              |001f: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.followedCnt:J // field@a2cc
+94e726: 6e30 365b 0501                         |0021: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.W1:(J)V // method@5b36
+94e72c: 5260 c8a2                              |0024: iget v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.episodeCnt:I // field@a2c8
+94e730: 6e20 065b 0500                         |0026: invoke-virtual {v5, v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.H1:(I)V // method@5b06
+94e736: 5560 d0a2                              |0029: iget-boolean v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.isMultiSeason:Z // field@a2d0
+94e73a: 6e20 6c5b 0500                         |002b: invoke-virtual {v5, v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.l2:(Z)V // method@5b6c
+94e740: 5360 dca2                              |002e: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seasonIndex:J // field@a2dc
+94e744: 6e30 9e5b 0501                         |0030: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y2:(J)V // method@5b9e
+94e74a: 5460 e3a2                              |0033: iget-object v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesStatus:Lseriessdk/com/dragon/read/saas/rpc/model/SeriesStatus; // field@a2e3
+94e74e: 6e20 2c5b 0500                         |0035: invoke-virtual {v5, v0}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.T1:(Lseriessdk/com/dragon/read/saas/rpc/model/SeriesStatus;)V // method@5b2c
+94e754: 6200 23a4                              |0038: sget-object v0, Lss4/e;.a:Lss4/e; // field@a423
+94e758: 5461 eea2                              |003a: iget-object v1, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e75c: 5462 dea2                              |003c: iget-object v2, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesColorHex:Ljava/lang/String; // field@a2de
+94e760: 5463 efa2                              |003e: iget-object v3, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoPlatform:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@a2ef
+94e764: 6e10 dbc7 0000                         |0040: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94e76a: 7140 f3eb 2137                         |0043: invoke-static {v1, v2, v7, v3}, Lss4/e;.a:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;)Ljava/util/List; // method@ebf3
+94e770: 0c07                                   |0046: move-result-object v7
+94e772: 6e20 1d5b 7500                         |0047: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.O1:(Ljava/util/List;)V // method@5b1d
+94e778: 5467 e5a2                              |004a: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesTitle:Ljava/lang/String; // field@a2e5
+94e77c: 6e20 2f5b 7500                         |004c: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.U1:(Ljava/lang/String;)V // method@5b2f
+94e782: 5467 c1a2                              |004f: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.contentType:Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType; // field@a2c1
+94e786: 6e20 2d5b 7500                         |0051: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.T2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;)V // method@5b2d
+94e78c: 5360 c6a2                              |0054: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.duration:J // field@a2c6
+94e790: 6e30 005b 0501                         |0056: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.F1:(J)V // method@5b00
+94e796: 5467 c3a2                              |0059: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.detailRecTags:Ljava/util/List; // field@a2c3
+94e79a: 6e20 f35a 7500                         |005b: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B1:(Ljava/util/List;)V // method@5af3
+94e7a0: 5467 eca2                              |005e: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoCategoryType:Ljava/lang/String; // field@a2ec
+94e7a4: 5b57 1033                              |0060: iput-object v7, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.videoCategoryType:Ljava/lang/String; // field@3310
+94e7a8: 5567 c7a2                              |0062: iget-boolean v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.enableVisionProduct:Z // field@a2c7
+94e7ac: 6e20 025b 7500                         |0064: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.G1:(Z)V // method@5b02
+94e7b2: 5467 cfa2                              |0067: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.insertAdRitType:Lseriessdk/com/dragon/read/saas/rpc/model/InsertAdRitType; // field@a2cf
+94e7b6: 3807 0900                              |0069: if-eqz v7, 0072 // +0009
+94e7ba: 6e10 6ae9 0700                         |006b: invoke-virtual {v7}, Lseriessdk/com/dragon/read/saas/rpc/model/InsertAdRitType;.getValue:()I // method@e96a
+94e7c0: 0a07                                   |006e: move-result v7
+94e7c2: 6e20 625b 7500                         |006f: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.i2:(I)V // method@5b62
+94e7c8: 5467 d9a2                              |0072: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.recordInfo:Lseriessdk/com/dragon/read/saas/rpc/model/VideoRecordInfo; // field@a2d9
+94e7cc: 6e20 345b 7500                         |0074: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.V2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoRecordInfo;)V // method@5b34
+94e7d2: 5467 dda2                              |0077: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.secondaryInfos:Ljava/util/List; // field@a2dd
+94e7d6: 6e20 a25b 7500                         |0079: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z2:(Ljava/util/List;)V // method@5ba2
+94e7dc: 5467 bba2                              |007c: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.abstractTags:Ljava/util/List; // field@a2bb
+94e7e0: 6e20 895b 7500                         |007e: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.t1:(Ljava/util/List;)V // method@5b89
+94e7e6: 5467 e1a2                              |0081: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesIntro:Ljava/lang/String; // field@a2e1
+94e7ea: 6e20 f45a 7500                         |0083: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B2:(Ljava/lang/String;)V // method@5af4
+94e7f0: 5360 e2a2                              |0086: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesPlayCnt:J // field@a2e2
+94e7f4: 6e30 295b 0501                         |0088: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.S1:(J)V // method@5b29
+94e7fa: 5360 cea2                              |008b: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.hotScore:J // field@a2ce
+94e7fe: 5a50 e532                              |008d: iput-wide v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.hotScore:J // field@32e5
+94e802: 5467 c9a2                              |008f: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.episodeRightText:Ljava/lang/String; // field@a2c9
+94e806: 6e20 205b 7500                         |0091: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.P1:(Ljava/lang/String;)V // method@5b20
+94e80c: 5467 e1a2                              |0094: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesIntro:Ljava/lang/String; // field@a2e1
+94e810: 6e20 1a5b 7500                         |0096: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.N1:(Ljava/lang/String;)V // method@5b1a
+94e816: 5467 efa2                              |0099: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoPlatform:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@a2ef
+94e81a: 6e20 305b 7500                         |009b: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.U2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;)V // method@5b30
+94e820: 5467 dea2                              |009e: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesColorHex:Ljava/lang/String; // field@a2de
+94e824: 6e20 f05a 7500                         |00a0: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.A2:(Ljava/lang/String;)V // method@5af0
+94e82a: 5467 eaa2                              |00a3: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.ugcUserInfo:Lseriessdk/com/dragon/read/saas/rpc/model/UgcUserInfo; // field@a2ea
+94e82e: 6e20 1b5b 7500                         |00a5: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.N2:(Lseriessdk/com/dragon/read/saas/rpc/model/UgcUserInfo;)V // method@5b1b
+94e834: 5467 bea2                              |00a8: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.bottomBar:Lseriessdk/com/dragon/read/saas/rpc/model/VideoBottomBar; // field@a2be
+94e838: 3807 0e00                              |00aa: if-eqz v7, 00b8 // +000e
+94e83c: 6200 21a4                              |00ac: sget-object v0, Lss4/d;.a:Lss4/d; // field@a421
+94e840: 6e10 dbc7 0000                         |00ae: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94e846: 7110 efeb 0700                         |00b1: invoke-static {v7}, Lss4/d;.f:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoBottomBar;)Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaaSVideoBottomBar; // method@ebef
+94e84c: 0c07                                   |00b4: move-result-object v7
+94e84e: 6e20 2a5b 7500                         |00b5: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.S2:(Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaaSVideoBottomBar;)V // method@5b2a
+94e854: 5360 daa2                              |00b8: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.relatedAlbumId:J // field@a2da
+94e858: 6e30 925b 0501                         |00ba: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.v2:(J)V // method@5b92
+94e85e: 5467 f0a2                              |00bd: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoTagInfo:Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo; // field@a2f0
+94e862: 3807 0b00                              |00bf: if-eqz v7, 00ca // +000b
+94e866: 7110 01ec 0700                         |00c1: invoke-static {v7}, Lss4/g;.f:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;)Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo; // method@ec01
+94e86c: 0c07                                   |00c4: move-result-object v7
+94e86e: 6e20 425b 7500                         |00c5: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Z2:(Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo;)V // method@5b42
+94e874: 2802                                   |00c8: goto 00ca // +0002
+94e876: 0000                                   |00c9: nop // spacer
+94e878: 5467 d6a2                              |00ca: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.recTags:Ljava/util/List; // field@a2d6
+94e87c: 6e20 825b 7500                         |00cc: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.r2:(Ljava/util/List;)V // method@5b82
+94e882: 5467 bda2                              |00cf: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.bigImages:Ljava/util/List; // field@a2bd
+94e886: 6e20 8e5b 7500                         |00d1: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.u1:(Ljava/util/List;)V // method@5b8e
+94e88c: 5467 d1a2                              |00d4: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.mainCreatorUsers:Ljava/util/List; // field@a2d1
+94e890: 6e20 695b 7500                         |00d6: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.k2:(Ljava/util/List;)V // method@5b69
+94e896: 5467 eda2                              |00d9: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoDetailList:Ljava/util/List; // field@a2ed
+94e89a: 7110 23ad 0700                         |00db: invoke-static {v7}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94e8a0: 0a07                                   |00de: move-result v7
+94e8a2: 1200                                   |00df: const/4 v0, #int 0 // #0
+94e8a4: 3907 1100                              |00e0: if-nez v7, 00f1 // +0011
+94e8a8: 5467 eda2                              |00e2: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoDetailList:Ljava/util/List; // field@a2ed
+94e8ac: 7220 c3c8 0700                         |00e4: invoke-interface {v7, v0}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e8b2: 0c07                                   |00e7: move-result-object v7
+94e8b4: 1f07 024c                              |00e8: check-cast v7, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // type@4c02
+94e8b8: 7110 ffeb 0700                         |00ea: invoke-static {v7}, Lss4/g;.d:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;)Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel; // method@ebff
+94e8be: 0c07                                   |00ed: move-result-object v7
+94e8c0: 6e20 915b 7500                         |00ee: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.v1:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;)V // method@5b91
+94e8c6: 5467 bfa2                              |00f1: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.categorySchema:Ljava/lang/String; // field@a2bf
+94e8ca: 2201 e74c                              |00f3: new-instance v1, Lss4/g$a; // type@4ce7
+94e8ce: 7010 faeb 0100                         |00f5: invoke-direct {v1}, Lss4/g$a;.<init>:()V // method@ebfa
+94e8d4: 6e10 02af 0100                         |00f8: invoke-virtual {v1}, Lcom/google/gson/reflect/TypeToken;.getType:()Ljava/lang/reflect/Type; // method@af02
+94e8da: 0c01                                   |00fb: move-result-object v1
+94e8dc: 7120 4d19 1700                         |00fc: invoke-static {v7, v1}, Lcom/dragon/read/base/util/JSONUtils;.fromJson:(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object; // method@194d
+94e8e2: 0c07                                   |00ff: move-result-object v7
+94e8e4: 1f07 f040                              |0100: check-cast v7, Ljava/util/List; // type@40f0
+94e8e8: 6e20 9d5b 7500                         |0102: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.y1:(Ljava/util/List;)V // method@5b9d
+94e8ee: 5467 eea2                              |0105: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e8f2: 3807 4e00                              |0107: if-eqz v7, 0155 // +004e
+94e8f6: 2207 e340                              |0109: new-instance v7, Ljava/util/ArrayList; // type@40e3
+94e8fa: 7010 4fc8 0700                         |010b: invoke-direct {v7}, Ljava/util/ArrayList;.<init>:()V // method@c84f
+94e900: 1201                                   |010e: const/4 v1, #int 0 // #0
+94e902: 5462 eea2                              |010f: iget-object v2, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e906: 7210 ccc8 0200                         |0111: invoke-interface {v2}, Ljava/util/List;.size:()I // method@c8cc
+94e90c: 0a02                                   |0114: move-result v2
+94e90e: 3521 3d00                              |0115: if-ge v1, v2, 0152 // +003d
+94e912: 2202 061b                              |0117: new-instance v2, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem; // type@1b06
+94e916: 7010 ca59 0200                         |0119: invoke-direct {v2}, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.<init>:()V // method@59ca
+94e91c: 5463 eea2                              |011c: iget-object v3, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e920: 7220 c3c8 1300                         |011e: invoke-interface {v3, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e926: 0c03                                   |0121: move-result-object v3
+94e928: 1f03 e04b                              |0122: check-cast v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@4be0
+94e92c: 5433 65a2                              |0124: iget-object v3, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.vid:Ljava/lang/String; // field@a265
+94e930: 5b23 c431                              |0126: iput-object v3, v2, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.videoId:Ljava/lang/String; // field@31c4
+94e934: 5463 eea2                              |0128: iget-object v3, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e938: 7220 c3c8 1300                         |012a: invoke-interface {v3, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e93e: 0c03                                   |012d: move-result-object v3
+94e940: 1f03 e04b                              |012e: check-cast v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@4be0
+94e944: 5533 5ca2                              |0130: iget-boolean v3, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.needUnlock:Z // field@a25c
+94e948: 5c23 c131                              |0132: iput-boolean v3, v2, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.needUnlock:Z // field@31c1
+94e94c: 5463 eea2                              |0134: iget-object v3, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e950: 7220 c3c8 1300                         |0136: invoke-interface {v3, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e956: 0c03                                   |0139: move-result-object v3
+94e958: 1f03 e04b                              |013a: check-cast v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@4be0
+94e95c: 5433 69a2                              |013c: iget-object v3, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.waitFree:Lseriessdk/com/dragon/read/saas/rpc/model/VideoWaitFreeConfig; // field@a269
+94e960: 5b23 c531                              |013e: iput-object v3, v2, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.waitFree:Lseriessdk/com/dragon/read/saas/rpc/model/VideoWaitFreeConfig; // field@31c5
+94e964: 5463 eea2                              |0140: iget-object v3, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@a2ee
+94e968: 7220 c3c8 1300                         |0142: invoke-interface {v3, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94e96e: 0c03                                   |0145: move-result-object v3
+94e970: 1f03 e04b                              |0146: check-cast v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@4be0
+94e974: 5333 62a2                              |0148: iget-wide v3, v3, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.trialDuration:J // field@a262
+94e978: 5a23 c331                              |014a: iput-wide v3, v2, Lcom/dragon/read/component/shortvideo/data/saas/rpcmodel/SaasVideoDirectoryItem;.trialDuration:J // field@31c3
+94e97c: 6e20 53c8 2700                         |014c: invoke-virtual {v7, v2}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@c853
+94e982: d801 0101                              |014f: add-int/lit8 v1, v1, #int 1 // #01
+94e986: 28be                                   |0151: goto 010f // -0042
+94e988: 6e20 fa5a 7500                         |0152: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.D1:(Ljava/util/List;)V // method@5afa
+94e98e: 5567 c4a2                              |0155: iget-boolean v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.disableInsertAd:Z // field@a2c4
+94e992: 6e20 fe5a 7500                         |0157: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.E1:(Z)V // method@5afe
+94e998: 5467 d8a2                              |015a: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.recommendInfo:Ljava/lang/String; // field@a2d8
+94e99c: 6e20 8a5b 7500                         |015c: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.t2:(Ljava/lang/String;)V // method@5b8a
+94e9a2: 5467 d7a2                              |015f: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.recommendGroupId:Ljava/lang/String; // field@a2d7
+94e9a6: 6e20 865b 7500                         |0161: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.s2:(Ljava/lang/String;)V // method@5b86
+94e9ac: 5467 d4a2                              |0164: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.payInfo:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPayInfo; // field@a2d4
+94e9b0: 6e20 765b 7500                         |0166: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.o2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoPayInfo;)V // method@5b76
+94e9b6: 5467 eba2                              |0169: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.updateInfo:Lseriessdk/com/dragon/read/saas/rpc/model/VideoUpdateInfo; // field@a2eb
+94e9ba: 6e20 465b 7500                         |016b: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.a3:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoUpdateInfo;)V // method@5b46
+94e9c0: 5267 caa2                              |016e: iget v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.episodeTotalCnt:I // field@a2ca
+94e9c4: 6e20 115b 7500                         |0170: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.K1:(I)V // method@5b11
+94e9ca: 5467 e6a2                              |0173: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.shareInfo:Lseriessdk/com/dragon/read/saas/rpc/model/VideoShareInfo; // field@a2e6
+94e9ce: 6e20 3f5b 7500                         |0175: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.Y2:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoShareInfo;)V // method@5b3f
+94e9d4: 5467 c0a2                              |0178: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.celebrities:Ljava/util/List; // field@a2c0
+94e9d8: 6e20 a15b 7500                         |017a: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.z1:(Ljava/util/List;)V // method@5ba1
+94e9de: 5467 e4a2                              |017d: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesSubTitleList:Ljava/util/List; // field@a2e4
+94e9e2: 3807 0500                              |017f: if-eqz v7, 0184 // +0005
+94e9e6: 6e20 f85a 7500                         |0181: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.C2:(Ljava/util/List;)V // method@5af8
+94e9ec: 5467 dfa2                              |0184: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesCover:Ljava/lang/String; // field@a2df
+94e9f0: 6e20 145b 7500                         |0186: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.L1:(Ljava/lang/String;)V // method@5b14
+94e9f6: 6e10 f15a 0500                         |0189: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94e9fc: 0c07                                   |018c: move-result-object v7
+94e9fe: 7110 23ad 0700                         |018d: invoke-static {v7}, Lcom/dragon/read/util/w0;.a:(Ljava/util/List;)Z // method@ad23
+94ea04: 0a07                                   |0190: move-result v7
+94ea06: 3907 3100                              |0191: if-nez v7, 01c2 // +0031
+94ea0a: 6e10 f15a 0500                         |0193: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94ea10: 0c07                                   |0196: move-result-object v7
+94ea12: 7210 ccc8 0700                         |0197: invoke-interface {v7}, Ljava/util/List;.size:()I // method@c8cc
+94ea18: 0a07                                   |019a: move-result v7
+94ea1a: 3570 2700                              |019b: if-ge v0, v7, 01c2 // +0027
+94ea1e: 6e10 f15a 0500                         |019d: invoke-virtual {v5}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.B:()Ljava/util/List; // method@5af1
+94ea24: 0c07                                   |01a0: move-result-object v7
+94ea26: 7220 c3c8 0700                         |01a1: invoke-interface {v7, v0}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c8c3
+94ea2c: 0c07                                   |01a4: move-result-object v7
+94ea2e: 1f07 0d1b                              |01a5: check-cast v7, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData; // type@1b0d
+94ea32: 6201 0829                              |01a7: sget-object v1, Lcom/dragon/read/component/shortvideo/api/ShortSeriesApi;.Companion:Lcom/dragon/read/component/shortvideo/api/ShortSeriesApi$a; // field@2908
+94ea36: 6e10 dbc7 0100                         |01a9: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94ea3c: 7100 7d4e 0000                         |01ac: invoke-static {}, Lcom/dragon/read/component/shortvideo/api/ShortSeriesApi$a;.a:()Lcom/dragon/read/component/shortvideo/api/ShortSeriesApi; // method@4e7d
+94ea42: 0c01                                   |01af: move-result-object v1
+94ea44: 7210 964e 0100                         |01b0: invoke-interface {v1}, Lcom/dragon/read/component/shortvideo/api/ShortSeriesApi;.getDocker:()Laq4/z; // method@4e96
+94ea4a: 0c01                                   |01b3: move-result-object v1
+94ea4c: 1c02 ee45                              |01b4: const-class v2, Lnq4/e; // type@45ee
+94ea50: 6e20 bf0a 2100                         |01b6: invoke-virtual {v1, v2}, Laq4/z;.b:(Ljava/lang/Class;)Lcq4/a; // method@0abf
+94ea56: 0c01                                   |01b9: move-result-object v1
+94ea58: 1f01 ee45                              |01ba: check-cast v1, Lnq4/e; // type@45ee
+94ea5c: 7220 51d7 7100                         |01bc: invoke-interface {v1, v7}, Lnq4/e;.D4:(Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoData;)V // method@d751
+94ea62: d800 0001                              |01bf: add-int/lit8 v0, v0, #int 1 // #01
+94ea66: 28d2                                   |01c1: goto 0193 // -002e
+94ea68: 5467 e7a2                              |01c2: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.status:Lseriessdk/com/dragon/read/saas/rpc/model/UseStatus; // field@a2e7
+94ea6c: 3807 0500                              |01c4: if-eqz v7, 01c9 // +0005
+94ea70: 6e20 275b 7500                         |01c6: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.R2:(Lseriessdk/com/dragon/read/saas/rpc/model/UseStatus;)V // method@5b27
+94ea76: 5467 c5a2                              |01c9: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.downloadConfig:Lseriessdk/com/dragon/read/saas/rpc/model/DownloadConfig; // field@a2c5
+94ea7a: 3807 0700                              |01cb: if-eqz v7, 01d2 // +0007
+94ea7e: 5577 4fa2                              |01cd: iget-boolean v7, v7, Lseriessdk/com/dragon/read/saas/rpc/model/DownloadConfig;.canDownload:Z // field@a24f
+94ea82: 6e20 995b 7500                         |01cf: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.x1:(Z)V // method@5b99
+94ea88: 5567 d2a2                              |01d2: iget-boolean v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.onlineSubscribed:Z // field@a2d2
+94ea8c: 6e20 705b 7500                         |01d4: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.m2:(Z)V // method@5b70
+94ea92: 5360 d3a2                              |01d7: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.onlineTime:J // field@a2d3
+94ea96: 6e30 735b 0501                         |01d9: invoke-virtual {v5, v0, v1}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.n2:(J)V // method@5b73
+94ea9c: 5467 e8a2                              |01dc: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.subTitleList:Ljava/util/List; // field@a2e8
+94eaa0: 6e20 0b5b 7500                         |01de: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.I2:(Ljava/util/List;)V // method@5b0b
+94eaa6: 5467 d1a2                              |01e1: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.mainCreatorUsers:Ljava/util/List; // field@a2d1
+94eaaa: 6e20 695b 7500                         |01e3: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.k2:(Ljava/util/List;)V // method@5b69
+94eab0: 5567 e9a2                              |01e6: iget-boolean v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.supportListen:Z // field@a2e9
+94eab4: 6e20 0f5b 7500                         |01e8: invoke-virtual {v5, v7}, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.J2:(Z)V // method@5b0f
+94eaba: 5467 bca2                              |01eb: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.aiUsageType:Lseriessdk/com/dragon/read/saas/rpc/model/AiUsageType; // field@a2bc
+94eabe: 3807 0900                              |01ed: if-eqz v7, 01f6 // +0009
+94eac2: 6e10 65e9 0700                         |01ef: invoke-virtual {v7}, Lseriessdk/com/dragon/read/saas/rpc/model/AiUsageType;.getValue:()I // method@e965
+94eac8: 0a07                                   |01f2: move-result v7
+94eaca: 8170                                   |01f3: int-to-long v0, v7
+94eacc: 5a50 b832                              |01f4: iput-wide v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.aiUsageType:J // field@32b8
+94ead0: 5467 d5a2                              |01f6: iget-object v7, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.playBtnSchema:Ljava/lang/String; // field@a2d5
+94ead4: 3807 0400                              |01f8: if-eqz v7, 01fc // +0004
+94ead8: 5b57 f132                              |01fa: iput-object v7, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.playBtnSchema:Ljava/lang/String; // field@32f1
+94eadc: 5360 c2a2                              |01fc: iget-wide v0, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.createTime:J // field@a2c2
+94eae0: 5a50 c032                              |01fe: iput-wide v0, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.createTime:J // field@32c0
+94eae4: 5466 eca2                              |0200: iget-object v6, v6, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoCategoryType:Ljava/lang/String; // field@a2ec
+94eae8: 3806 0900                              |0202: if-eqz v6, 020b // +0009
+94eaec: 5455 d732                              |0204: iget-object v5, v5, Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;.extraDataMap:Ljava/util/Map; // field@32d7
+94eaf0: 1a07 1bca                              |0206: const-string v7, "video_category_type" // string@ca1b
+94eaf4: 7230 ddc8 7506                         |0208: invoke-interface {v5, v7, v6}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@c8dd
+94eafa: 0e00                                   |020b: return-void
+      catches       : 1
+        0x00c1 - 0x00c8
+          Lorg/json/JSONException; -> 0x00c9
+      positions     :
+        0x0000 line=50855936
+        0x0001 line=50855937
+        0x0002 line=50855938
+        0x0003 line=50855939
+        0x0004 line=50855940
+        0x0005 line=50855941
+        0x0006 line=50855942
+        0x0007 line=50855943
+        0x0008 line=50855944
+        0x0009 line=50855945
+        0x000a line=50855946
+        0x000b line=50855947
+        0x000c line=50855948
+        0x000d line=50855949
+        0x000e line=50855950
+        0x000f line=50855951
+        0x0010 line=50855952
+        0x0011 line=50855953
+        0x0012 line=50855954
+        0x0013 line=50855955
+        0x0014 line=50855956
+        0x0015 line=50855957
+        0x0016 line=50855958
+        0x0017 line=50855959
+        0x0018 line=50855960
+        0x0019 line=50855961
+        0x001a line=50855962
+        0x001b line=50855963
+        0x001c line=50855964
+        0x001d line=50855965
+        0x001e line=50855966
+        0x001f line=50855967
+        0x0020 line=50855968
+        0x0021 line=50855969
+        0x0022 line=50855970
+        0x0023 line=50855971
+        0x0024 line=50855972
+        0x0025 line=50855973
+        0x0026 line=50855974
+        0x0027 line=50855975
+        0x0028 line=50855976
+        0x0029 line=50855977
+        0x002a line=50855978
+        0x002b line=50855979
+        0x002c line=50855980
+        0x002d line=50855981
+        0x002e line=50855982
+        0x002f line=50855983
+        0x0030 line=50855984
+        0x0031 line=50855985
+        0x0032 line=50855986
+        0x0033 line=50855987
+        0x0034 line=50855988
+        0x0035 line=50855989
+        0x0036 line=50855990
+        0x0037 line=50855991
+        0x0038 line=50855992
+        0x0039 line=50855993
+        0x003a line=50855994
+        0x003b line=50855995
+        0x003c line=50855996
+        0x003d line=50855997
+        0x003e line=50855998
+        0x003f line=50855999
+        0x0040 line=50856000
+        0x0041 line=50856001
+        0x0042 line=50856002
+        0x0043 line=50856003
+        0x0044 line=50856004
+        0x0045 line=50856005
+        0x0046 line=50856006
+        0x0047 line=50856007
+        0x0048 line=50856008
+        0x0049 line=50856009
+        0x004a line=50856010
+        0x004b line=50856011
+        0x004c line=50856012
+        0x004d line=50856013
+        0x004e line=50856014
+        0x004f line=50856015
+        0x0050 line=50856016
+        0x0051 line=50856017
+        0x0052 line=50856018
+        0x0053 line=50856019
+        0x0054 line=50856020
+        0x0055 line=50856021
+        0x0056 line=50856022
+        0x0057 line=50856023
+        0x0058 line=50856024
+        0x0059 line=50856025
+        0x005a line=50856026
+        0x005b line=50856027
+        0x005c line=50856028
+        0x005d line=50856029
+        0x005e line=50856030
+        0x005f line=50856031
+        0x0060 line=50856032
+        0x0061 line=50856033
+        0x0062 line=50856034
+        0x0063 line=50856035
+        0x0064 line=50856036
+        0x0065 line=50856037
+        0x0066 line=50856038
+        0x0067 line=50856039
+        0x0068 line=50856040
+        0x0069 line=50856041
+        0x006a line=50856042
+        0x006b line=50856043
+        0x006c line=50856044
+        0x006d line=50856045
+        0x006e line=50856046
+        0x006f line=50856047
+        0x0070 line=50856048
+        0x0071 line=50856049
+        0x0072 line=50856050
+        0x0073 line=50856051
+        0x0074 line=50856052
+        0x0075 line=50856053
+        0x0076 line=50856054
+        0x0077 line=50856055
+        0x0078 line=50856056
+        0x0079 line=50856057
+        0x007a line=50856058
+        0x007b line=50856059
+        0x007c line=50856060
+        0x007d line=50856061
+        0x007e line=50856062
+        0x007f line=50856063
+        0x0080 line=50856064
+        0x0081 line=50856065
+        0x0082 line=50856066
+        0x0083 line=50856067
+        0x0084 line=50856068
+        0x0085 line=50856069
+        0x0086 line=50856070
+        0x0087 line=50856071
+        0x0088 line=50856072
+        0x0089 line=50856073
+        0x008a line=50856074
+        0x008b line=50856075
+        0x008c line=50856076
+        0x008d line=50856077
+        0x008e line=50856078
+        0x008f line=50856079
+        0x0090 line=50856080
+        0x0091 line=50856081
+        0x0092 line=50856082
+        0x0093 line=50856083
+        0x0094 line=50856084
+        0x0095 line=50856085
+        0x0096 line=50856086
+        0x0097 line=50856087
+        0x0098 line=50856088
+        0x0099 line=50856089
+        0x009a line=50856090
+        0x009b line=50856091
+        0x009c line=50856092
+        0x009d line=50856093
+        0x009e line=50856094
+        0x009f line=50856095
+        0x00a0 line=50856096
+        0x00a1 line=50856097
+        0x00a2 line=50856098
+        0x00a3 line=50856099
+        0x00a4 line=50856100
+        0x00a5 line=50856101
+        0x00a6 line=50856102
+        0x00a7 line=50856103
+        0x00a8 line=50856104
+        0x00a9 line=50856105
+        0x00aa line=50856106
+        0x00ab line=50856107
+        0x00ac line=50856108
+        0x00ad line=50856109
+        0x00ae line=50856110
+        0x00af line=50856111
+        0x00b0 line=50856112
+        0x00b1 line=50856113
+        0x00b2 line=50856114
+        0x00b3 line=50856115
+        0x00b4 line=50856116
+        0x00b5 line=50856117
+        0x00b6 line=50856118
+        0x00b7 line=50856119
+        0x00b8 line=50856120
+        0x00b9 line=50856121
+        0x00ba line=50856122
+        0x00bb line=50856123
+        0x00bc line=50856124
+        0x00bd line=50856125
+        0x00be line=50856126
+        0x00bf line=50856127
+        0x00c0 line=50856128
+        0x00c1 line=50856129
+        0x00c2 line=50856130
+        0x00c3 line=50856131
+        0x00c4 line=50856132
+        0x00c5 line=50856133
+        0x00c6 line=50856134
+        0x00c7 line=50856135
+        0x00c8 line=50856136
+        0x00c9 line=50856137
+        0x00ca line=50856138
+        0x00cb line=50856139
+        0x00cc line=50856140
+        0x00cd line=50856141
+        0x00ce line=50856142
+        0x00cf line=50856143
+        0x00d0 line=50856144
+        0x00d1 line=50856145
+        0x00d2 line=50856146
+        0x00d3 line=50856147
+        0x00d4 line=50856148
+        0x00d5 line=50856149
+        0x00d6 line=50856150
+        0x00d7 line=50856151
+        0x00d8 line=50856152
+        0x00d9 line=50856153
+        0x00da line=50856154
+        0x00db line=50856155
+        0x00dc line=50856156
+        0x00dd line=50856157
+        0x00de line=50856158
+        0x00df line=50856159
+        0x00e0 line=50856160
+        0x00e1 line=50856161
+        0x00e2 line=50856162
+        0x00e3 line=50856163
+        0x00e4 line=50856164
+        0x00e5 line=50856165
+        0x00e6 line=50856166
+        0x00e7 line=50856167
+        0x00e8 line=50856168
+        0x00e9 line=50856169
+        0x00ea line=50856170
+        0x00eb line=50856171
+        0x00ec line=50856172
+        0x00ed line=50856173
+        0x00ee line=50856174
+        0x00ef line=50856175
+        0x00f0 line=50856176
+        0x00f1 line=50856177
+        0x00f2 line=50856178
+        0x00f3 line=50856179
+        0x00f4 line=50856180
+        0x00f5 line=50856181
+        0x00f6 line=50856182
+        0x00f7 line=50856183
+        0x00f8 line=50856184
+        0x00f9 line=50856185
+        0x00fa line=50856186
+        0x00fb line=50856187
+        0x00fc line=50856188
+        0x00fd line=50856189
+        0x00fe line=50856190
+        0x00ff line=50856191
+        0x0100 line=50856192
+        0x0101 line=50856193
+        0x0102 line=50856194
+        0x0103 line=50856195
+        0x0104 line=50856196
+        0x0105 line=50856197
+        0x0106 line=50856198
+        0x0107 line=50856199
+        0x0108 line=50856200
+        0x0109 line=50856201
+        0x010a line=50856202
+        0x010b line=50856203
+        0x010c line=50856204
+        0x010d line=50856205
+        0x010e line=50856206
+        0x010f line=50856207
+        0x0110 line=50856208
+        0x0111 line=50856209
+        0x0112 line=50856210
+        0x0113 line=50856211
+        0x0114 line=50856212
+        0x0115 line=50856213
+        0x0116 line=50856214
+        0x0117 line=50856215
+        0x0118 line=50856216
+        0x0119 line=50856217
+        0x011a line=50856218
+        0x011b line=50856219
+        0x011c line=50856220
+        0x011d line=50856221
+        0x011e line=50856222
+        0x011f line=50856223
+        0x0120 line=50856224
+        0x0121 line=50856225
+        0x0122 line=50856226
+        0x0123 line=50856227
+        0x0124 line=50856228
+        0x0125 line=50856229
+        0x0126 line=50856230
+        0x0127 line=50856231
+        0x0128 line=50856232
+        0x0129 line=50856233
+        0x012a line=50856234
+        0x012b line=50856235
+        0x012c line=50856236
+        0x012d line=50856237
+        0x012e line=50856238
+        0x012f line=50856239
+        0x0130 line=50856240
+        0x0131 line=50856241
+        0x0132 line=50856242
+        0x0133 line=50856243
+        0x0134 line=50856244
+        0x0135 line=50856245
+        0x0136 line=50856246
+        0x0137 line=50856247
+        0x0138 line=50856248
+        0x0139 line=50856249
+        0x013a line=50856250
+        0x013b line=50856251
+        0x013c line=50856252
+        0x013d line=50856253
+        0x013e line=50856254
+        0x013f line=50856255
+        0x0140 line=50856256
+        0x0141 line=50856257
+        0x0142 line=50856258
+        0x0143 line=50856259
+        0x0144 line=50856260
+        0x0145 line=50856261
+        0x0146 line=50856262
+        0x0147 line=50856263
+        0x0148 line=50856264
+        0x0149 line=50856265
+        0x014a line=50856266
+        0x014b line=50856267
+        0x014c line=50856268
+        0x014d line=50856269
+        0x014e line=50856270
+        0x014f line=50856271
+        0x0150 line=50856272
+        0x0151 line=50856273
+        0x0152 line=50856274
+        0x0153 line=50856275
+        0x0154 line=50856276
+        0x0155 line=50856277
+        0x0156 line=50856278
+        0x0157 line=50856279
+        0x0158 line=50856280
+        0x0159 line=50856281
+        0x015a line=50856282
+        0x015b line=50856283
+        0x015c line=50856284
+        0x015d line=50856285
+        0x015e line=50856286
+        0x015f line=50856287
+        0x0160 line=50856288
+        0x0161 line=50856289
+        0x0162 line=50856290
+        0x0163 line=50856291
+        0x0164 line=50856292
+        0x0165 line=50856293
+        0x0166 line=50856294
+        0x0167 line=50856295
+        0x0168 line=50856296
+        0x0169 line=50856297
+        0x016a line=50856298
+        0x016b line=50856299
+        0x016c line=50856300
+        0x016d line=50856301
+        0x016e line=50856302
+        0x016f line=50856303
+        0x0170 line=50856304
+        0x0171 line=50856305
+        0x0172 line=50856306
+        0x0173 line=50856307
+        0x0174 line=50856308
+        0x0175 line=50856309
+        0x0176 line=50856310
+        0x0177 line=50856311
+        0x0178 line=50856312
+        0x0179 line=50856313
+        0x017a line=50856314
+        0x017b line=50856315
+        0x017c line=50856316
+        0x017d line=50856317
+        0x017e line=50856318
+        0x017f line=50856319
+        0x0180 line=50856320
+        0x0181 line=50856321
+        0x0182 line=50856322
+        0x0183 line=50856323
+        0x0184 line=50856324
+        0x0185 line=50856325
+        0x0186 line=50856326
+        0x0187 line=50856327
+        0x0188 line=50856328
+        0x0189 line=50856329
+        0x018a line=50856330
+        0x018b line=50856331
+        0x018c line=50856332
+        0x018d line=50856333
+        0x018e line=50856334
+        0x018f line=50856335
+        0x0190 line=50856336
+        0x0191 line=50856337
+        0x0192 line=50856338
+        0x0193 line=50856339
+        0x0194 line=50856340
+        0x0195 line=50856341
+        0x0196 line=50856342
+        0x0197 line=50856343
+        0x0198 line=50856344
+        0x0199 line=50856345
+        0x019a line=50856346
+        0x019b line=50856347
+        0x019c line=50856348
+        0x019d line=50856349
+        0x019e line=50856350
+        0x019f line=50856351
+        0x01a0 line=50856352
+        0x01a1 line=50856353
+        0x01a2 line=50856354
+        0x01a3 line=50856355
+        0x01a4 line=50856356
+        0x01a5 line=50856357
+        0x01a6 line=50856358
+        0x01a7 line=50856359
+        0x01a8 line=50856360
+        0x01a9 line=50856361
+        0x01aa line=50856362
+        0x01ab line=50856363
+        0x01ac line=50856364
+        0x01ad line=50856365
+        0x01ae line=50856366
+        0x01af line=50856367
+        0x01b0 line=50856368
+        0x01b1 line=50856369
+        0x01b2 line=50856370
+        0x01b3 line=50856371
+        0x01b4 line=50856372
+        0x01b5 line=50856373
+        0x01b6 line=50856374
+        0x01b7 line=50856375
+        0x01b8 line=50856376
+        0x01b9 line=50856377
+        0x01ba line=50856378
+        0x01bb line=50856379
+        0x01bc line=50856380
+        0x01bd line=50856381
+        0x01be line=50856382
+        0x01bf line=50856383
+        0x01c0 line=50856384
+        0x01c1 line=50856385
+        0x01c2 line=50856386
+        0x01c3 line=50856387
+        0x01c4 line=50856388
+        0x01c5 line=50856389
+        0x01c6 line=50856390
+        0x01c7 line=50856391
+        0x01c8 line=50856392
+        0x01c9 line=50856393
+        0x01ca line=50856394
+        0x01cb line=50856395
+        0x01cc line=50856396
+        0x01cd line=50856397
+        0x01ce line=50856398
+        0x01cf line=50856399
+        0x01d0 line=50856400
+        0x01d1 line=50856401
+        0x01d2 line=50856402
+        0x01d3 line=50856403
+        0x01d4 line=50856404
+        0x01d5 line=50856405
+        0x01d6 line=50856406
+        0x01d7 line=50856407
+        0x01d8 line=50856408
+        0x01d9 line=50856409
+        0x01da line=50856410
+        0x01db line=50856411
+        0x01dc line=50856412
+        0x01dd line=50856413
+        0x01de line=50856414
+        0x01df line=50856415
+        0x01e0 line=50856416
+        0x01e1 line=50856417
+        0x01e2 line=50856418
+        0x01e3 line=50856419
+        0x01e4 line=50856420
+        0x01e5 line=50856421
+        0x01e6 line=50856422
+        0x01e7 line=50856423
+        0x01e8 line=50856424
+        0x01e9 line=50856425
+        0x01ea line=50856426
+        0x01eb line=50856427
+        0x01ec line=50856428
+        0x01ed line=50856429
+        0x01ee line=50856430
+        0x01ef line=50856431
+        0x01f0 line=50856432
+        0x01f1 line=50856433
+        0x01f2 line=50856434
+        0x01f3 line=50856435
+        0x01f4 line=50856436
+        0x01f5 line=50856437
+        0x01f6 line=50856438
+        0x01f7 line=50856439
+        0x01f8 line=50856440
+        0x01f9 line=50856441
+        0x01fa line=50856442
+        0x01fb line=50856443
+        0x01fc line=50856444
+        0x01fd line=50856445
+        0x01fe line=50856446
+        0x01ff line=50856447
+        0x0200 line=50856448
+        0x0201 line=50856449
+        0x0202 line=50856450
+        0x0203 line=50856451
+        0x0204 line=50856452
+        0x0205 line=50856453
+        0x0206 line=50856454
+        0x0207 line=50856455
+        0x0208 line=50856456
+        0x0209 line=50856457
+        0x020a line=50856458
+        0x020b line=50856459
+      locals        :
+        0x0000 - 0x020c reg=5 (null) Lcom/dragon/read/component/shortvideo/data/saas/video/SaasVideoDetailModel;
+        0x0000 - 0x020c reg=6 (null) Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;
+        0x0000 - 0x020c reg=7 (null) Ljava/lang/String;
+
+    #6              : (in Lss4/g;)
+      name          : 'f'
+      type          : '(Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;)Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 16
+      ins           : 1
+      outs          : 13
+      insns size    : 169 16-bit code units
+94eb0c:                                        |[94eb0c] ss4.g.f:(Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;)Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo;
+94eb1c: 1200                                   |0000: const/4 v0, #int 0 // #0
+94eb1e: 220e ed1a                              |0001: new-instance v14, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo; // type@1aed
+94eb22: 54f2 01a3                              |0003: iget-object v2, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.text:Ljava/lang/String; // field@a301
+94eb26: 54f3 f7a2                              |0005: iget-object v3, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.bgColor:Ljava/util/List; // field@a2f7
+94eb2a: 54f4 faa2                              |0007: iget-object v4, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.darkBgColor:Ljava/util/List; // field@a2fa
+94eb2e: 54f5 fda2                              |0009: iget-object v5, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.iconUrl:Ljava/lang/String; // field@a2fd
+94eb32: 54f6 fba2                              |000b: iget-object v6, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.darkIconUrl:Ljava/lang/String; // field@a2fb
+94eb36: 55f7 f9a2                              |000d: iget-boolean v7, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.canUseBrandColor:Z // field@a2f9
+94eb3a: 54f8 02a3                              |000f: iget-object v8, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.textColor:Ljava/lang/String; // field@a302
+94eb3e: 54f9 fca2                              |0011: iget-object v9, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.darkTextColor:Ljava/lang/String; // field@a2fc
+94eb42: 6201 2e30                              |0013: sget-object v1, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagMode;.Companion:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagMode$a; // field@302e
+94eb46: 54fa ffa2                              |0015: iget-object v10, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.mode:Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagMode; // field@a2ff
+94eb4a: 380a 0b00                              |0017: if-eqz v10, 0022 // +000b
+94eb4e: 6e10 76e9 0a00                         |0019: invoke-virtual {v10}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagMode;.getValue:()I // method@e976
+94eb54: 0a0a                                   |001c: move-result v10
+94eb56: 7110 b5c7 0a00                         |001d: invoke-static {v10}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c7b5
+94eb5c: 0c0a                                   |0020: move-result-object v10
+94eb5e: 2802                                   |0021: goto 0023 // +0002
+94eb60: 070a                                   |0022: move-object v10, v0
+94eb62: 6e10 dbc7 0100                         |0023: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94eb68: 1211                                   |0026: const/4 v1, #int 1 // #1
+94eb6a: 390a 0300                              |0027: if-nez v10, 002a // +0003
+94eb6e: 280a                                   |0029: goto 0033 // +000a
+94eb70: 6e10 b0c7 0a00                         |002a: invoke-virtual {v10}, Ljava/lang/Integer;.intValue:()I // method@c7b0
+94eb76: 0a0a                                   |002d: move-result v10
+94eb78: 331a 0500                              |002e: if-ne v10, v1, 0033 // +0005
+94eb7c: 620a 2f30                              |0030: sget-object v10, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagMode;.ContentTagStrengthen:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagMode; // field@302f
+94eb80: 2802                                   |0032: goto 0034 // +0002
+94eb82: 070a                                   |0033: move-object v10, v0
+94eb84: 620b 1130                              |0034: sget-object v11, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasGradientOrientation;.Companion:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasGradientOrientation$a; // field@3011
+94eb88: 54fc f8a2                              |0036: iget-object v12, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.bgColorOrientation:Lseriessdk/com/dragon/read/saas/rpc/model/GradientOrientation; // field@a2f8
+94eb8c: 380c 0b00                              |0038: if-eqz v12, 0043 // +000b
+94eb90: 6e10 69e9 0c00                         |003a: invoke-virtual {v12}, Lseriessdk/com/dragon/read/saas/rpc/model/GradientOrientation;.getValue:()I // method@e969
+94eb96: 0a0c                                   |003d: move-result v12
+94eb98: 7110 b5c7 0c00                         |003e: invoke-static {v12}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c7b5
+94eb9e: 0c0c                                   |0041: move-result-object v12
+94eba0: 2802                                   |0042: goto 0044 // +0002
+94eba2: 070c                                   |0043: move-object v12, v0
+94eba4: 6e10 dbc7 0b00                         |0044: invoke-virtual {v11}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94ebaa: 7110 7159 0c00                         |0047: invoke-static {v12}, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasGradientOrientation$a;.a:(Ljava/lang/Integer;)Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasGradientOrientation; // method@5971
+94ebb0: 0c0b                                   |004a: move-result-object v11
+94ebb2: 620c 2830                              |004b: sget-object v12, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType;.Companion:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType$a; // field@3028
+94ebb6: 54fd 00a3                              |004d: iget-object v13, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.tagInfoType:Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfoType; // field@a300
+94ebba: 380d 0700                              |004f: if-eqz v13, 0056 // +0007
+94ebbe: 6e10 75e9 0d00                         |0051: invoke-virtual {v13}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfoType;.getValue:()I // method@e975
+94ebc4: 0a0d                                   |0054: move-result v13
+94ebc6: 2802                                   |0055: goto 0057 // +0002
+94ebc8: 120d                                   |0056: const/4 v13, #int 0 // #0
+94ebca: 6e10 dbc7 0c00                         |0057: invoke-virtual {v12}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94ebd0: 380d 0900                              |005a: if-eqz v13, 0063 // +0009
+94ebd4: 321d 0400                              |005c: if-eq v13, v1, 0060 // +0004
+94ebd8: 070c                                   |005e: move-object v12, v0
+94ebda: 2806                                   |005f: goto 0065 // +0006
+94ebdc: 620c 2a30                              |0060: sget-object v12, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType;.Update:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType; // field@302a
+94ebe0: 2803                                   |0062: goto 0065 // +0003
+94ebe2: 620c 2930                              |0063: sget-object v12, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType;.Default:Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType; // field@3029
+94ebe6: 54ff fea2                              |0065: iget-object v15, v15, Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;.infoType:Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType; // field@a2fe
+94ebea: 380f 0700                              |0067: if-eqz v15, 006e // +0007
+94ebee: 6e10 6de9 0f00                         |0069: invoke-virtual {v15}, Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType;.getValue:()I // method@e96d
+94ebf4: 0a0f                                   |006c: move-result v15
+94ebf6: 2802                                   |006d: goto 006f // +0002
+94ebf8: 121f                                   |006e: const/4 v15, #int 1 // #1
+94ebfa: 321f 0c00                              |006f: if-eq v15, v1, 007b // +000c
+94ebfe: 1221                                   |0071: const/4 v1, #int 2 // #2
+94ec00: 321f 0600                              |0072: if-eq v15, v1, 0078 // +0006
+94ec04: 620f 9aa2                              |0074: sget-object v15, Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType;.Text:Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType; // field@a29a
+94ec08: 070d                                   |0076: move-object v13, v0
+94ec0a: 2807                                   |0077: goto 007e // +0007
+94ec0c: 620f 99a2                              |0078: sget-object v15, Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType;.IconUrl:Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType; // field@a299
+94ec10: 2803                                   |007a: goto 007d // +0003
+94ec12: 620f 9aa2                              |007b: sget-object v15, Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType;.Text:Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType; // field@a29a
+94ec16: 07fd                                   |007d: move-object v13, v15
+94ec18: 07e1                                   |007e: move-object v1, v14
+94ec1a: 760d 7959 0100                         |007f: invoke-direct/range {v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13}, Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfo;.<init>:(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagMode;Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasGradientOrientation;Lcom/dragon/read/component/shortvideo/data/saas/model/videotag/SaasVideoTagInfoType;Lseriessdk/com/dragon/read/saas/rpc/model/TagInfoType;)V // method@5979
+94ec20: 110e                                   |0082: return-object v14
+94ec22: 0d0f                                   |0083: move-exception v15
+94ec24: 6201 662b                              |0084: sget-object v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SaasVideoTagInfoCrashUploadV711;.a:Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SaasVideoTagInfoCrashUploadV711$a; // field@2b66
+94ec28: 6e10 dbc7 0100                         |0086: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c7db
+94ec2e: 6201 672b                              |0089: sget-object v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SaasVideoTagInfoCrashUploadV711;.b:Lkotlin/Lazy; // field@2b67
+94ec32: 7210 76cc 0100                         |008b: invoke-interface {v1}, Lkotlin/Lazy;.getValue:()Ljava/lang/Object; // method@cc76
+94ec38: 0c01                                   |008e: move-result-object v1
+94ec3a: 1f01 d918                              |008f: check-cast v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SaasVideoTagInfoCrashUploadV711; // type@18d9
+94ec3e: 5511 682b                              |0091: iget-boolean v1, v1, Lcom/dragon/read/component/shortvideo/api/config/ssconfig/SaasVideoTagInfoCrashUploadV711;.enable:Z // field@2b68
+94ec42: 3801 1500                              |0093: if-eqz v1, 00a8 // +0015
+94ec46: 2201 3c47                              |0095: new-instance v1, Lorg/json/JSONObject; // type@473c
+94ec4a: 7010 e3dc 0100                         |0097: invoke-direct {v1}, Lorg/json/JSONObject;.<init>:()V // method@dce3
+94ec50: 1a02 d89a                              |009a: const-string v2, "error_stack" // string@9ad8
+94ec54: 7110 c402 0f00                         |009c: invoke-static {v15}, Landroid/util/Log;.getStackTraceString:(Ljava/lang/Throwable;)Ljava/lang/String; // method@02c4
+94ec5a: 0c0f                                   |009f: move-result-object v15
+94ec5c: 6e30 00dd 210f                         |00a0: invoke-virtual {v1, v2, v15}, Lorg/json/JSONObject;.putOpt:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@dd00
+94ec62: 1a0f 77ca                              |00a3: const-string v15, "video_tag_info_parse_error" // string@ca77
+94ec66: 7120 6daf 1f00                         |00a5: invoke-static {v15, v1}, Lcom/ss/android/common/lib/AppLogNewUtils;.onEventV3:(Ljava/lang/String;Lorg/json/JSONObject;)V // method@af6d
+94ec6c: 1100                                   |00a8: return-object v0
+      catches       : 1
+        0x0001 - 0x0082
+          <any> -> 0x0083
+      positions     :
+        0x0000 line=17170432
+        0x0001 line=17170433
+        0x0002 line=17170434
+        0x0003 line=17170435
+        0x0004 line=17170436
+        0x0005 line=17170437
+        0x0006 line=17170438
+        0x0007 line=17170439
+        0x0008 line=17170440
+        0x0009 line=17170441
+        0x000a line=17170442
+        0x000b line=17170443
+        0x000c line=17170444
+        0x000d line=17170445
+        0x000e line=17170446
+        0x000f line=17170447
+        0x0010 line=17170448
+        0x0011 line=17170449
+        0x0012 line=17170450
+        0x0013 line=17170451
+        0x0014 line=17170452
+        0x0015 line=17170453
+        0x0016 line=17170454
+        0x0017 line=17170455
+        0x0018 line=17170456
+        0x0019 line=17170457
+        0x001a line=17170458
+        0x001b line=17170459
+        0x001c line=17170460
+        0x001d line=17170461
+        0x001e line=17170462
+        0x001f line=17170463
+        0x0020 line=17170464
+        0x0021 line=17170465
+        0x0022 line=17170466
+        0x0023 line=17170467
+        0x0024 line=17170468
+        0x0025 line=17170469
+        0x0026 line=17170470
+        0x0027 line=17170471
+        0x0028 line=17170472
+        0x0029 line=17170473
+        0x002a line=17170474
+        0x002b line=17170475
+        0x002c line=17170476
+        0x002d line=17170477
+        0x002e line=17170478
+        0x002f line=17170479
+        0x0030 line=17170480
+        0x0031 line=17170481
+        0x0032 line=17170482
+        0x0033 line=17170483
+        0x0034 line=17170484
+        0x0035 line=17170485
+        0x0036 line=17170486
+        0x0037 line=17170487
+        0x0038 line=17170488
+        0x0039 line=17170489
+        0x003a line=17170490
+        0x003b line=17170491
+        0x003c line=17170492
+        0x003d line=17170493
+        0x003e line=17170494
+        0x003f line=17170495
+        0x0040 line=17170496
+        0x0041 line=17170497
+        0x0042 line=17170498
+        0x0043 line=17170499
+        0x0044 line=17170500
+        0x0045 line=17170501
+        0x0046 line=17170502
+        0x0047 line=17170503
+        0x0048 line=17170504
+        0x0049 line=17170505
+        0x004a line=17170506
+        0x004b line=17170507
+        0x004c line=17170508
+        0x004d line=17170509
+        0x004e line=17170510
+        0x004f line=17170511
+        0x0050 line=17170512
+        0x0051 line=17170513
+        0x0052 line=17170514
+        0x0053 line=17170515
+        0x0054 line=17170516
+        0x0055 line=17170517
+        0x0056 line=17170518
+        0x0057 line=17170519
+        0x0058 line=17170520
+        0x0059 line=17170521
+        0x005a line=17170522
+        0x005b line=17170523
+        0x005c line=17170524
+        0x005d line=17170525
+        0x005e line=17170526
+        0x005f line=17170527
+        0x0060 line=17170528
+        0x0061 line=17170529
+        0x0062 line=17170530
+        0x0063 line=17170531
+        0x0064 line=17170532
+        0x0065 line=17170533
+        0x0066 line=17170534
+        0x0067 line=17170535
+        0x0068 line=17170536
+        0x0069 line=17170537
+        0x006a line=17170538
+        0x006b line=17170539
+        0x006c line=17170540
+        0x006d line=17170541
+        0x006e line=17170542
+        0x006f line=17170543
+        0x0070 line=17170544
+        0x0071 line=17170545
+        0x0072 line=17170546
+        0x0073 line=17170547
+        0x0074 line=17170548
+        0x0075 line=17170549
+        0x0076 line=17170550
+        0x0077 line=17170551
+        0x0078 line=17170552
+        0x0079 line=17170553
+        0x007a line=17170554
+        0x007b line=17170555
+        0x007c line=17170556
+        0x007d line=17170557
+        0x007e line=17170558
+        0x007f line=17170559
+        0x0080 line=17170560
+        0x0081 line=17170561
+        0x0082 line=17170562
+        0x0083 line=17170563
+        0x0084 line=17170564
+        0x0085 line=17170565
+        0x0086 line=17170566
+        0x0087 line=17170567
+        0x0088 line=17170568
+        0x0089 line=17170569
+        0x008a line=17170570
+        0x008b line=17170571
+        0x008c line=17170572
+        0x008d line=17170573
+        0x008e line=17170574
+        0x008f line=17170575
+        0x0090 line=17170576
+        0x0091 line=17170577
+        0x0092 line=17170578
+        0x0093 line=17170579
+        0x0094 line=17170580
+        0x0095 line=17170581
+        0x0096 line=17170582
+        0x0097 line=17170583
+        0x0098 line=17170584
+        0x0099 line=17170585
+        0x009a line=17170586
+        0x009b line=17170587
+        0x009c line=17170588
+        0x009d line=17170589
+        0x009e line=17170590
+        0x009f line=17170591
+        0x00a0 line=17170592
+        0x00a1 line=17170593
+        0x00a2 line=17170594
+        0x00a3 line=17170595
+        0x00a4 line=17170596
+        0x00a5 line=17170597
+        0x00a6 line=17170598
+        0x00a7 line=17170599
+        0x00a8 line=17170600
+      locals        :
+        0x0000 - 0x00a9 reg=15 (null) Lseriessdk/com/dragon/read/saas/rpc/model/VideoTagInfo;
+
+  Virtual methods   -
+  source_file_idx   : 30212 (SourceFile)
+

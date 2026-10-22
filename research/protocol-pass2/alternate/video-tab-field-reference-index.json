@@ -1,0 +1,164 @@
+[
+  {
+    "dex": "classes15.dex",
+    "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+    "references": [
+      {
+        "field_index": 15132,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375",
+    "references": [
+      {
+        "field_index": 24034,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "isTrailer",
+        "type": "Ljava/lang/Boolean;"
+      },
+      {
+        "field_index": 24073,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 24075,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 24079,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes17.dex",
+    "sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+    "references": [
+      {
+        "field_index": 10263,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes2.dex",
+    "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3",
+    "references": [
+      {
+        "field_index": 22990,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 22991,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes4.dex",
+    "sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+    "references": [
+      {
+        "field_index": 21642,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 21647,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes5.dex",
+    "sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+    "references": [
+      {
+        "field_index": 35681,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "isTrailer",
+        "type": "Ljava/lang/Boolean;"
+      },
+      {
+        "field_index": 35701,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508",
+    "references": [
+      {
+        "field_index": 39251,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+    "references": [
+      {
+        "field_index": 23597,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "isTrailer",
+        "type": "Ljava/lang/Boolean;"
+      },
+      {
+        "field_index": 23642,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 23644,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 23650,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf",
+    "references": [
+      {
+        "field_index": 6019,
+        "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  }
+]

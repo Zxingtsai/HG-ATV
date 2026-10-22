@@ -1,0 +1,3281 @@
+  Class descriptor  : 'Lcom/ss/android/deviceregister/DeviceRegisterManager;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'api'
+      type          : 'Lcom/ss/android/deviceregister/d;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+    #1              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'egdiRetryInterval'
+      type          : 'I'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #2              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'enableGetEgdi'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #3              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'enableReinstallActivate'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+    #4              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isEnableIpv6'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #5              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isEnablePassFinger'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+    #6              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'mBdtrackerApi'
+      type          : 'Lcom/ss/android/deviceregister/d;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+    #7              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sAdIdConfig'
+      type          : 'Lcom/ss/android/deviceregister/c;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #8              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sAppTraitCallback'
+      type          : 'Lj80/b;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #9              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sAppVersionMinor'
+      type          : 'Ljava/lang/String;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #10              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sCheckPermissionBeforeCallSensitiveApi'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+    #11              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sContext'
+      type          : 'Landroid/content/Context;'
+      access        : 0x000a (PRIVATE STATIC)
+    #12              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sDeleteSharedStorage'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #13              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sInitGuard'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #14              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sInstance'
+      type          : 'Lcom/ss/android/deviceregister/DeviceRegisterManager;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #15              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sIsBoe'
+      type          : 'Z'
+      access        : 0x000a (PRIVATE STATIC)
+    #16              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sIsTouristMode'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #17              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sMacAddressApiCallback'
+      type          : 'Lf48/k;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #18              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sNeedSharedStorage'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #19              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sOpenBpea'
+      type          : 'Z'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+    #20              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sRetryCount'
+      type          : 'I'
+      access        : 0x000a (PRIVATE STATIC)
+    #21              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'sSensitiveApiCallback'
+      type          : 'Lf48/n;'
+      access        : 0x004a (PRIVATE STATIC VOLATILE)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 1
+      insns size    : 48 16-bit code units
+5a77b0:                                        |[5a77b0] com.ss.android.deviceregister.DeviceRegisterManager.<clinit>:()V
+5a77c0: 1400 3690 0a00                         |0000: const v0, #float 9.70088e-40 // #000a9036
+5a77c6: 7110 9f10 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@109f
+5a77cc: 1a00 0000                              |0006: const-string v0, "" // string@0000
+5a77d0: 6900 b23b                              |0008: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAppVersionMinor:Ljava/lang/String; // field@3bb2
+5a77d4: 1210                                   |000a: const/4 v0, #int 1 // #1
+5a77d6: 6a00 b53b                              |000b: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sDeleteSharedStorage:Z // field@3bb5
+5a77da: 2201 8419                              |000d: new-instance v1, Lcom/ss/android/deviceregister/c$a; // type@1984
+5a77de: 7010 538f 0100                         |000f: invoke-direct {v1}, Lcom/ss/android/deviceregister/c$a;.<init>:()V // method@8f53
+5a77e4: 6901 b03b                              |0012: sput-object v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAdIdConfig:Lcom/ss/android/deviceregister/c; // field@3bb0
+5a77e8: 1201                                   |0014: const/4 v1, #int 0 // #0
+5a77ea: 6a01 b33b                              |0015: sput-boolean v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sCheckPermissionBeforeCallSensitiveApi:Z // field@3bb3
+5a77ee: 12f2                                   |0017: const/4 v2, #int -1 // #ff
+5a77f0: 6702 bd3b                              |0018: sput v2, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sRetryCount:I // field@3bbd
+5a77f4: 6a01 ab3b                              |001a: sput-boolean v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableGetEgdi:Z // field@3bab
+5a77f8: 6701 aa3b                              |001c: sput v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.egdiRetryInterval:I // field@3baa
+5a77fc: 6a00 ad3b                              |001e: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnableIpv6:Z // field@3bad
+5a7800: 6a00 ae3b                              |0020: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnablePassFinger:Z // field@3bae
+5a7804: 6a00 ac3b                              |0022: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableReinstallActivate:Z // field@3bac
+5a7808: 2200 8219                              |0024: new-instance v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a780c: 7010 4b8f 0000                         |0026: invoke-direct {v0}, Lcom/ss/android/deviceregister/b;.<init>:()V // method@8f4b
+5a7812: 6900 af3b                              |0029: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.mBdtrackerApi:Lcom/ss/android/deviceregister/d; // field@3baf
+5a7816: 6900 a93b                              |002b: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a781a: 6a01 b83b                              |002d: sput-boolean v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sIsBoe:Z // field@3bb8
+5a781e: 0e00                                   |002f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+        0x0029 line=262185
+        0x002a line=262186
+        0x002b line=262187
+        0x002c line=262188
+        0x002d line=262189
+        0x002e line=262190
+        0x002f line=262191
+      locals        :
+
+    #1              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : '<init>'
+      type          : '(ZZ)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 1
+      insns size    : 14 16-bit code units
+5a7820:                                        |[5a7820] com.ss.android.deviceregister.DeviceRegisterManager.<init>:(ZZ)V
+5a7830: 7010 87ea 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@ea87
+5a7836: 6201 a93b                              |0003: sget-object v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a783a: 6e10 8bea 0100                         |0005: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7840: 2805                                   |0008: goto 000d // +0005
+5a7842: 0d01                                   |0009: move-exception v1
+5a7844: 6e10 33eb 0100                         |000a: invoke-virtual {v1}, Ljava/lang/Throwable;.printStackTrace:()V // method@eb33
+5a784a: 0e00                                   |000d: return-void
+      catches       : 1
+        0x0003 - 0x0008
+          <any> -> 0x0009
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+        0x000b line=33685515
+        0x000c line=33685516
+        0x000d line=33685517
+      locals        :
+        0x0000 - 0x000e reg=0 this Lcom/ss/android/deviceregister/DeviceRegisterManager;
+        0x0000 - 0x000e reg=1 (null) Z
+        0x0000 - 0x000e reg=2 (null) Z
+
+    #2              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'activeUser'
+      type          : '(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a7858:                                        |[5a7858] com.ss.android.deviceregister.DeviceRegisterManager.activeUser:(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+5a7868: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a786c: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7872: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50397184
+        0x0001 line=50397185
+        0x0002 line=50397186
+        0x0003 line=50397187
+        0x0004 line=50397188
+        0x0005 line=50397189
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0006 reg=2 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'addCustomHeader'
+      type          : '(Ljava/lang/String;Ljava/lang/Object;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 19 16-bit code units
+5a7874:                                        |[5a7874] com.ss.android.deviceregister.DeviceRegisterManager.addCustomHeader:(Ljava/lang/String;Ljava/lang/Object;)V
+5a7884: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7888: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a788c: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7892: 2200 452a                              |0007: new-instance v0, Ljava/util/HashMap; // type@2a45
+5a7896: 7010 7eec 0000                         |0009: invoke-direct {v0}, Ljava/util/HashMap;.<init>:()V // method@ec7e
+5a789c: 6e30 88ec 1002                         |000c: invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ec88
+5a78a2: 7110 2310 0000                         |000f: invoke-static {v0}, Lcom/bytedance/applog/AppLog;.setHeaderInfo:(Ljava/util/HashMap;)V // method@1023
+5a78a8: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33751040
+        0x0001 line=33751041
+        0x0002 line=33751042
+        0x0003 line=33751043
+        0x0004 line=33751044
+        0x0005 line=33751045
+        0x0006 line=33751046
+        0x0007 line=33751047
+        0x0008 line=33751048
+        0x0009 line=33751049
+        0x000a line=33751050
+        0x000b line=33751051
+        0x000c line=33751052
+        0x000d line=33751053
+        0x000e line=33751054
+        0x000f line=33751055
+        0x0010 line=33751056
+        0x0011 line=33751057
+        0x0012 line=33751058
+      locals        :
+        0x0000 - 0x0013 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0013 reg=2 (null) Ljava/lang/Object;
+
+    #4              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'addCustomerHeaser'
+      type          : '(Landroid/os/Bundle;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a78ac:                                        |[5a78ac] com.ss.android.deviceregister.DeviceRegisterManager.addCustomerHeaser:(Landroid/os/Bundle;)V
+5a78bc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a78c0: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a78c6: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/os/Bundle;
+
+    #5              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'addDeviceResultListener'
+      type          : '(Lf48/d;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 16 16-bit code units
+5a78c8:                                        |[5a78c8] com.ss.android.deviceregister.DeviceRegisterManager.addDeviceResultListener:(Lf48/d;)V
+5a78d8: 3902 0500                              |0000: if-nez v2, 0005 // +0005
+5a78dc: 6202 7161                              |0002: sget-object v2, Li48/b;.a:Ljava/lang/Object; // field@6171
+5a78e0: 280b                                   |0004: goto 000f // +000b
+5a78e2: 6200 7561                              |0005: sget-object v0, Li48/b;.e:Ljava/util/List; // field@6175
+5a78e6: 2201 ea29                              |0007: new-instance v1, Ljava/lang/ref/WeakReference; // type@29ea
+5a78ea: 7020 3beb 2100                         |0009: invoke-direct {v1, v2}, Ljava/lang/ref/WeakReference;.<init>:(Ljava/lang/Object;)V // method@eb3b
+5a78f0: 7220 d0ec 1000                         |000c: invoke-interface {v0, v1}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@ecd0
+5a78f6: 0e00                                   |000f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+        0x000b line=16908299
+        0x000c line=16908300
+        0x000d line=16908301
+        0x000e line=16908302
+        0x000f line=16908303
+      locals        :
+        0x0000 - 0x0010 reg=2 (null) Lf48/d;
+
+    #6              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'addOnDeviceConfigUpdateListener'
+      type          : '(Lcom/ss/android/deviceregister/DeviceRegisterManager$OnDeviceConfigUpdateListener;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 19 16-bit code units
+5a78f8:                                        |[5a78f8] com.ss.android.deviceregister.DeviceRegisterManager.addOnDeviceConfigUpdateListener:(Lcom/ss/android/deviceregister/DeviceRegisterManager$OnDeviceConfigUpdateListener;)V
+5a7908: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a790c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7910: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7916: 3901 0300                              |0007: if-nez v1, 000a // +0003
+5a791a: 2809                                   |0009: goto 0012 // +0009
+5a791c: 2200 8119                              |000a: new-instance v0, Lcom/ss/android/deviceregister/a; // type@1981
+5a7920: 7020 448f 1000                         |000c: invoke-direct {v0, v1}, Lcom/ss/android/deviceregister/a;.<init>:(Lcom/ss/android/deviceregister/DeviceRegisterManager$OnDeviceConfigUpdateListener;)V // method@8f44
+5a7926: 7110 f20f 0000                         |000f: invoke-static {v0}, Lcom/bytedance/applog/AppLog;.addDataObserver:(Lcom/bytedance/applog/IDataObserver;)V // method@0ff2
+5a792c: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+      locals        :
+        0x0000 - 0x0013 reg=1 (null) Lcom/ss/android/deviceregister/DeviceRegisterManager$OnDeviceConfigUpdateListener;
+
+    #7              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'checkPermissionBeforeCallSensitiveApi'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7930:                                        |[5a7930] com.ss.android.deviceregister.DeviceRegisterManager.checkPermissionBeforeCallSensitiveApi:(Z)V
+5a7940: 6a00 b33b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sCheckPermissionBeforeCallSensitiveApi:Z // field@3bb3
+5a7944: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #8              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'checkPermissionBeforeCallSensitiveApi'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7948:                                        |[5a7948] com.ss.android.deviceregister.DeviceRegisterManager.checkPermissionBeforeCallSensitiveApi:()Z
+5a7958: 6300 b33b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sCheckPermissionBeforeCallSensitiveApi:Z // field@3bb3
+5a795c: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+      locals        :
+
+    #9              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'clearDidAndIid'
+      type          : '(Landroid/content/Context;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a7960:                                        |[5a7960] com.ss.android.deviceregister.DeviceRegisterManager.clearDidAndIid:(Landroid/content/Context;Ljava/lang/String;)V
+5a7970: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7974: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a797a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/String;
+
+    #10              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'clearWhenSwitchChildMode'
+      type          : '(Z)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 1
+      insns size    : 24 16-bit code units
+5a797c:                                        |[5a797c] com.ss.android.deviceregister.DeviceRegisterManager.clearWhenSwitchChildMode:(Z)Z
+5a798c: 6202 b73b                              |0000: sget-object v2, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a7990: 7100 058f 0000                         |0002: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.hasInit:()Z // method@8f05
+5a7996: 0a00                                   |0005: move-result v0
+5a7998: 1201                                   |0006: const/4 v1, #int 0 // #0
+5a799a: 3800 0b00                              |0007: if-eqz v0, 0012 // +000b
+5a799e: 3902 0300                              |0009: if-nez v2, 000c // +0003
+5a79a2: 2807                                   |000b: goto 0012 // +0007
+5a79a4: 6202 a93b                              |000c: sget-object v2, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a79a8: 6e10 8bea 0200                         |000e: invoke-virtual {v2}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a79ae: 0f01                                   |0011: return v1
+5a79b0: 6202 a93b                              |0012: sget-object v2, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a79b4: 6e10 8bea 0200                         |0014: invoke-virtual {v2}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a79ba: 0f01                                   |0017: return v1
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+        0x0014 line=16973844
+        0x0015 line=16973845
+        0x0016 line=16973846
+        0x0017 line=16973847
+      locals        :
+        0x0000 - 0x0018 reg=2 (null) Z
+
+    #11              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'filterHeader'
+      type          : '(Lorg/json/JSONObject;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a79bc:                                        |[5a79bc] com.ss.android.deviceregister.DeviceRegisterManager.filterHeader:(Lorg/json/JSONObject;)V
+5a79cc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a79d0: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a79d6: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Lorg/json/JSONObject;
+
+    #12              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getAdIdConfig'
+      type          : '()Lcom/ss/android/deviceregister/c;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a79d8:                                        |[5a79d8] com.ss.android.deviceregister.DeviceRegisterManager.getAdIdConfig:()Lcom/ss/android/deviceregister/c;
+5a79e8: 6200 b03b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAdIdConfig:Lcom/ss/android/deviceregister/c; // field@3bb0
+5a79ec: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #13              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getAppId'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 1
+      insns size    : 19 16-bit code units
+5a79f0:                                        |[5a79f0] com.ss.android.deviceregister.DeviceRegisterManager.getAppId:()I
+5a7a00: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7a04: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7a08: 5201 c13b                              |0004: iget v1, v0, Lcom/ss/android/deviceregister/b;.b:I // field@3bc1
+5a7a0c: 3c01 0c00                              |0006: if-gtz v1, 0012 // +000c
+5a7a10: 5402 c03b                              |0008: iget-object v2, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7a14: 3802 0800                              |000a: if-eqz v2, 0012 // +0008
+5a7a18: 5400 c03b                              |000c: iget-object v0, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7a1c: 7210 8d8a 0000                         |000e: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getAid:()I // method@8a8d
+5a7a22: 0a01                                   |0011: move-result v1
+5a7a24: 0f01                                   |0012: return v1
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+      locals        :
+
+    #14              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getAppTraitCallback'
+      type          : '()Lj80/b;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 2 16-bit code units
+5a7a28:                                        |[5a7a28] com.ss.android.deviceregister.DeviceRegisterManager.getAppTraitCallback:()Lj80/b;
+5a7a38: 1200                                   |0000: const/4 v0, #int 0 // #0
+5a7a3a: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #15              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getAppVersionMinor'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7a3c:                                        |[5a7a3c] com.ss.android.deviceregister.DeviceRegisterManager.getAppVersionMinor:()Ljava/lang/String;
+5a7a4c: 6200 b23b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAppVersionMinor:Ljava/lang/String; // field@3bb2
+5a7a50: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #16              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getBdtrackerImpl'
+      type          : '()Lcom/ss/android/deviceregister/d;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7a54:                                        |[5a7a54] com.ss.android.deviceregister.DeviceRegisterManager.getBdtrackerImpl:()Lcom/ss/android/deviceregister/d;
+5a7a64: 6200 af3b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.mBdtrackerApi:Lcom/ss/android/deviceregister/d; // field@3baf
+5a7a68: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #17              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getBpeaApiCallback'
+      type          : '()Lf48/n;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 2 16-bit code units
+5a7a6c:                                        |[5a7a6c] com.ss.android.deviceregister.DeviceRegisterManager.getBpeaApiCallback:()Lf48/n;
+5a7a7c: 1200                                   |0000: const/4 v0, #int 0 // #0
+5a7a7e: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #18              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getCdid'
+      type          : '(Landroid/content/Context;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7a80:                                        |[5a7a80] com.ss.android.deviceregister.DeviceRegisterManager.getCdid:(Landroid/content/Context;)Ljava/lang/String;
+5a7a90: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7a94: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7a98: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7a9e: 7110 53f3 0100                         |0007: invoke-static {v1}, Ln48/a;.a:(Landroid/content/Context;)Ljava/lang/String; // method@f353
+5a7aa4: 0c01                                   |000a: move-result-object v1
+5a7aa6: 1101                                   |000b: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+        0x000b line=16908299
+      locals        :
+        0x0000 - 0x000c reg=1 (null) Landroid/content/Context;
+
+    #19              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getChannel'
+      type          : '(Landroid/content/Context;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 3
+      insns size    : 93 16-bit code units
+5a7aa8:                                        |[5a7aa8] com.ss.android.deviceregister.DeviceRegisterManager.getChannel:(Landroid/content/Context;)Ljava/lang/String;
+5a7ab8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7abc: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7ac0: 5401 c23b                              |0004: iget-object v1, v0, Lcom/ss/android/deviceregister/b;.c:Ljava/lang/String; // field@3bc2
+5a7ac4: 7110 f305 0100                         |0006: invoke-static {v1}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+5a7aca: 0a02                                   |0009: move-result v2
+5a7acc: 3802 0c00                              |000a: if-eqz v2, 0016 // +000c
+5a7ad0: 5402 c03b                              |000c: iget-object v2, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7ad4: 3802 0800                              |000e: if-eqz v2, 0016 // +0008
+5a7ad8: 5401 c03b                              |0010: iget-object v1, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7adc: 7210 968a 0100                         |0012: invoke-interface {v1}, Lcom/ss/android/common/AppContext;.getTweakedChannel:()Ljava/lang/String; // method@8a96
+5a7ae2: 0c01                                   |0015: move-result-object v1
+5a7ae4: 7110 f305 0100                         |0016: invoke-static {v1}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+5a7aea: 0a02                                   |0019: move-result v2
+5a7aec: 3802 4200                              |001a: if-eqz v2, 005c // +0042
+5a7af0: 6e10 c401 0600                         |001c: invoke-virtual {v6}, Landroid/content/Context;.getPackageManager:()Landroid/content/pm/PackageManager; // method@01c4
+5a7af6: 0c02                                   |001f: move-result-object v2
+5a7af8: 6e10 c501 0600                         |0020: invoke-virtual {v6}, Landroid/content/Context;.getPackageName:()Ljava/lang/String; // method@01c5
+5a7afe: 0c06                                   |0023: move-result-object v6
+5a7b00: 1203                                   |0024: const/4 v3, #int 0 // #0
+5a7b02: 7120 4ed7 3600                         |0025: invoke-static {v6, v3}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@d74e
+5a7b08: 7100 fbf4 0000                         |0028: invoke-static {}, Loq6/a;.a:()Z // method@f4fb
+5a7b0e: 0a03                                   |002b: move-result v3
+5a7b10: 1a04 0000                              |002c: const-string v4, "" // string@0000
+5a7b14: 1305 8000                              |002e: const/16 v5, #int 128 // #80
+5a7b18: 3803 0a00                              |0030: if-eqz v3, 003a // +000a
+5a7b1c: 6e30 4902 6205                         |0032: invoke-virtual {v2, v6, v5}, Landroid/content/pm/PackageManager;.getApplicationInfo:(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo; // method@0249
+5a7b22: 0c06                                   |0035: move-result-object v6
+5a7b24: 7120 5ef0 4600                         |0036: invoke-static {v6, v4}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V // method@f05e
+5a7b2a: 2819                                   |0039: goto 0052 // +0019
+5a7b2c: 6203 1466                              |003a: sget-object v3, Loq6/b;.a:Loq6/b; // field@6614
+5a7b30: 6e10 8bea 0300                         |003c: invoke-virtual {v3}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7b36: 7120 fff4 6500                         |003f: invoke-static {v5, v6}, Loq6/b;.d:(ILjava/lang/String;)Landroid/content/pm/ApplicationInfo; // method@f4ff
+5a7b3c: 0c03                                   |0042: move-result-object v3
+5a7b3e: 3803 0400                              |0043: if-eqz v3, 0047 // +0004
+5a7b42: 0736                                   |0045: move-object v6, v3
+5a7b44: 280c                                   |0046: goto 0052 // +000c
+5a7b46: 6e30 4902 6205                         |0047: invoke-virtual {v2, v6, v5}, Landroid/content/pm/PackageManager;.getApplicationInfo:(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo; // method@0249
+5a7b4c: 0c02                                   |004a: move-result-object v2
+5a7b4e: 7120 5ef0 4200                         |004b: invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V // method@f05e
+5a7b54: 7130 fcf4 5602                         |004e: invoke-static {v6, v5, v2}, Loq6/b;.a:(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)V // method@f4fc
+5a7b5a: 0726                                   |0051: move-object v6, v2
+5a7b5c: 5466 5c00                              |0052: iget-object v6, v6, Landroid/content/pm/ApplicationInfo;.metaData:Landroid/os/Bundle; // field@005c
+5a7b60: 1a02 7855                              |0054: const-string v2, "UMENG_CHANNEL" // string@5578
+5a7b64: 6e20 a304 2600                         |0056: invoke-virtual {v6, v2}, Landroid/os/Bundle;.getString:(Ljava/lang/String;)Ljava/lang/String; // method@04a3
+5a7b6a: 0c01                                   |0059: move-result-object v1
+5a7b6c: 5b01 c23b                              |005a: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.c:Ljava/lang/String; // field@3bc2
+5a7b70: 1101                                   |005c: return-object v1
+      catches       : 1
+        0x001c - 0x005c
+          <any> -> 0x005c
+      positions     :
+        0x0000 line=17104896
+        0x0001 line=17104897
+        0x0002 line=17104898
+        0x0003 line=17104899
+        0x0004 line=17104900
+        0x0005 line=17104901
+        0x0006 line=17104902
+        0x0007 line=17104903
+        0x0008 line=17104904
+        0x0009 line=17104905
+        0x000a line=17104906
+        0x000b line=17104907
+        0x000c line=17104908
+        0x000d line=17104909
+        0x000e line=17104910
+        0x000f line=17104911
+        0x0010 line=17104912
+        0x0011 line=17104913
+        0x0012 line=17104914
+        0x0013 line=17104915
+        0x0014 line=17104916
+        0x0015 line=17104917
+        0x0016 line=17104918
+        0x0017 line=17104919
+        0x0018 line=17104920
+        0x0019 line=17104921
+        0x001a line=17104922
+        0x001b line=17104923
+        0x001c line=17104924
+        0x001d line=17104925
+        0x001e line=17104926
+        0x001f line=17104927
+        0x0020 line=17104928
+        0x0021 line=17104929
+        0x0022 line=17104930
+        0x0023 line=17104931
+        0x0024 line=17104932
+        0x0025 line=17104933
+        0x0026 line=17104934
+        0x0027 line=17104935
+        0x0028 line=17104936
+        0x0029 line=17104937
+        0x002a line=17104938
+        0x002b line=17104939
+        0x002c line=17104940
+        0x002d line=17104941
+        0x002e line=17104942
+        0x002f line=17104943
+        0x0030 line=17104944
+        0x0031 line=17104945
+        0x0032 line=17104946
+        0x0033 line=17104947
+        0x0034 line=17104948
+        0x0035 line=17104949
+        0x0036 line=17104950
+        0x0037 line=17104951
+        0x0038 line=17104952
+        0x0039 line=17104953
+        0x003a line=17104954
+        0x003b line=17104955
+        0x003c line=17104956
+        0x003d line=17104957
+        0x003e line=17104958
+        0x003f line=17104959
+        0x0040 line=17104960
+        0x0041 line=17104961
+        0x0042 line=17104962
+        0x0043 line=17104963
+        0x0044 line=17104964
+        0x0045 line=17104965
+        0x0046 line=17104966
+        0x0047 line=17104967
+        0x0048 line=17104968
+        0x0049 line=17104969
+        0x004a line=17104970
+        0x004b line=17104971
+        0x004c line=17104972
+        0x004d line=17104973
+        0x004e line=17104974
+        0x004f line=17104975
+        0x0050 line=17104976
+        0x0051 line=17104977
+        0x0052 line=17104978
+        0x0053 line=17104979
+        0x0054 line=17104980
+        0x0055 line=17104981
+        0x0056 line=17104982
+        0x0057 line=17104983
+        0x0058 line=17104984
+        0x0059 line=17104985
+        0x005a line=17104986
+        0x005b line=17104987
+        0x005c line=17104988
+      locals        :
+        0x0000 - 0x005d reg=6 (null) Landroid/content/Context;
+
+    #20              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getClientUDID'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7b80:                                        |[5a7b80] com.ss.android.deviceregister.DeviceRegisterManager.getClientUDID:()Ljava/lang/String;
+5a7b90: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7b94: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7b98: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7b9e: 7100 f90f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getClientUdid:()Ljava/lang/String; // method@0ff9
+5a7ba4: 0c00                                   |000a: move-result-object v0
+5a7ba6: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #21              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getClientUDIDWithBackup'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7ba8:                                        |[5a7ba8] com.ss.android.deviceregister.DeviceRegisterManager.getClientUDIDWithBackup:()Ljava/lang/String;
+5a7bb8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7bbc: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7bc0: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7bc6: 7100 f90f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getClientUdid:()Ljava/lang/String; // method@0ff9
+5a7bcc: 0c00                                   |000a: move-result-object v0
+5a7bce: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #22              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getCustomVersion'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a7bd0:                                        |[5a7bd0] com.ss.android.deviceregister.DeviceRegisterManager.getCustomVersion:()Ljava/lang/String;
+5a7be0: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7be4: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7be8: 5400 c33b                              |0004: iget-object v0, v0, Lcom/ss/android/deviceregister/b;.d:Ljava/lang/String; // field@3bc3
+5a7bec: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+      locals        :
+
+    #23              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getDeviceId'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7bf0:                                        |[5a7bf0] com.ss.android.deviceregister.DeviceRegisterManager.getDeviceId:()Ljava/lang/String;
+5a7c00: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7c04: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7c08: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7c0e: 7100 fb0f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getDid:()Ljava/lang/String; // method@0ffb
+5a7c14: 0c00                                   |000a: move-result-object v0
+5a7c16: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #24              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getDeviceIdWithBackup'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7c18:                                        |[5a7c18] com.ss.android.deviceregister.DeviceRegisterManager.getDeviceIdWithBackup:()Ljava/lang/String;
+5a7c28: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7c2c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7c30: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7c36: 7100 fb0f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getDid:()Ljava/lang/String; // method@0ffb
+5a7c3c: 0c00                                   |000a: move-result-object v0
+5a7c3e: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #25              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getEgdiRetryInterval'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 10 16-bit code units
+5a7c40:                                        |[5a7c40] com.ss.android.deviceregister.DeviceRegisterManager.getEgdiRetryInterval:()I
+5a7c50: 6000 aa3b                              |0000: sget v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.egdiRetryInterval:I // field@3baa
+5a7c54: 3d00 0500                              |0002: if-lez v0, 0007 // +0005
+5a7c58: 6000 aa3b                              |0004: sget v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.egdiRetryInterval:I // field@3baa
+5a7c5c: 0f00                                   |0006: return v0
+5a7c5e: 1300 1027                              |0007: const/16 v0, #int 10000 // #2710
+5a7c62: 0f00                                   |0009: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+      locals        :
+
+    #26              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getFakePackage'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a7c64:                                        |[5a7c64] com.ss.android.deviceregister.DeviceRegisterManager.getFakePackage:()Ljava/lang/String;
+5a7c74: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7c78: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7c7c: 5400 c43b                              |0004: iget-object v0, v0, Lcom/ss/android/deviceregister/b;.e:Ljava/lang/String; // field@3bc4
+5a7c80: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+      locals        :
+
+    #27              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getHeader'
+      type          : '(Landroid/content/Context;Lorg/json/JSONObject;Z)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 2
+      insns size    : 20 16-bit code units
+5a7c84:                                        |[5a7c84] com.ss.android.deviceregister.DeviceRegisterManager.getHeader:(Landroid/content/Context;Lorg/json/JSONObject;Z)Z
+5a7c94: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7c98: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7c9c: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7ca2: 7100 fc0f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getHeader:()Lorg/json/JSONObject; // method@0ffc
+5a7ca8: 0c00                                   |000a: move-result-object v0
+5a7caa: 3800 0700                              |000b: if-eqz v0, 0012 // +0007
+5a7cae: 7120 5810 0100                         |000d: invoke-static {v1, v0}, Lcom/bytedance/bdinstall/e1;.d:(Lorg/json/JSONObject;Lorg/json/JSONObject;)V // method@1058
+5a7cb4: 1210                                   |0010: const/4 v0, #int 1 // #1
+5a7cb6: 2802                                   |0011: goto 0013 // +0002
+5a7cb8: 1200                                   |0012: const/4 v0, #int 0 // #0
+5a7cba: 0f00                                   |0013: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=50528256
+        0x0001 line=50528257
+        0x0002 line=50528258
+        0x0003 line=50528259
+        0x0004 line=50528260
+        0x0005 line=50528261
+        0x0006 line=50528262
+        0x0007 line=50528263
+        0x0008 line=50528264
+        0x0009 line=50528265
+        0x000a line=50528266
+        0x000b line=50528267
+        0x000c line=50528268
+        0x000d line=50528269
+        0x000e line=50528270
+        0x000f line=50528271
+        0x0010 line=50528272
+        0x0011 line=50528273
+        0x0012 line=50528274
+        0x0013 line=50528275
+      locals        :
+        0x0000 - 0x0014 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0014 reg=1 (null) Lorg/json/JSONObject;
+        0x0000 - 0x0014 reg=2 (null) Z
+
+    #28              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getInstallId'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7cbc:                                        |[5a7cbc] com.ss.android.deviceregister.DeviceRegisterManager.getInstallId:()Ljava/lang/String;
+5a7ccc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7cd0: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7cd4: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7cda: 7100 ff0f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getIid:()Ljava/lang/String; // method@0fff
+5a7ce0: 0c00                                   |000a: move-result-object v0
+5a7ce2: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #29              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getInstallIdWithBackup'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7ce4:                                        |[5a7ce4] com.ss.android.deviceregister.DeviceRegisterManager.getInstallIdWithBackup:()Ljava/lang/String;
+5a7cf4: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7cf8: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7cfc: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7d02: 7100 ff0f 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getIid:()Ljava/lang/String; // method@0fff
+5a7d08: 0c00                                   |000a: move-result-object v0
+5a7d0a: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #30              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getMacAddressApiCallback'
+      type          : '()Lf48/k;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 2 16-bit code units
+5a7d0c:                                        |[5a7d0c] com.ss.android.deviceregister.DeviceRegisterManager.getMacAddressApiCallback:()Lf48/k;
+5a7d1c: 1200                                   |0000: const/4 v0, #int 0 // #0
+5a7d1e: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #31              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getOpenIdWithBackup'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7d20:                                        |[5a7d20] com.ss.android.deviceregister.DeviceRegisterManager.getOpenIdWithBackup:()Ljava/lang/String;
+5a7d30: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7d34: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7d38: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7d3e: 7100 0210 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getOpenUdid:()Ljava/lang/String; // method@1002
+5a7d44: 0c00                                   |000a: move-result-object v0
+5a7d46: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #32              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getOpenUdId'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7d48:                                        |[5a7d48] com.ss.android.deviceregister.DeviceRegisterManager.getOpenUdId:()Ljava/lang/String;
+5a7d58: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7d5c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7d60: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7d66: 7100 0210 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getOpenUdid:()Ljava/lang/String; // method@1002
+5a7d6c: 0c00                                   |000a: move-result-object v0
+5a7d6e: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #33              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getRequestHeader'
+      type          : '()Ljava/util/Map;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a7d70:                                        |[5a7d70] com.ss.android.deviceregister.DeviceRegisterManager.getRequestHeader:()Ljava/util/Map;
+5a7d80: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7d84: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7d88: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7d8e: 7100 0310 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.getRequestHeader:()Ljava/util/Map; // method@1003
+5a7d94: 0c00                                   |000a: move-result-object v0
+5a7d96: 1100                                   |000b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+      locals        :
+
+    #34              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getRequestId'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+5a7d98:                                        |[5a7d98] com.ss.android.deviceregister.DeviceRegisterManager.getRequestId:()Ljava/lang/String;
+5a7da8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7dac: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7db2: 1200                                   |0005: const/4 v0, #int 0 // #0
+5a7db4: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+      locals        :
+
+    #35              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getRetryCount'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7db8:                                        |[5a7db8] com.ss.android.deviceregister.DeviceRegisterManager.getRetryCount:()I
+5a7dc8: 6000 bd3b                              |0000: sget v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sRetryCount:I // field@3bbd
+5a7dcc: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #36              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getSSIDs'
+      type          : '(Ljava/util/Map;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 24 16-bit code units
+5a7dd0:                                        |[5a7dd0] com.ss.android.deviceregister.DeviceRegisterManager.getSSIDs:(Ljava/util/Map;)V
+5a7de0: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7de4: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7de8: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7dee: 3802 1000                              |0007: if-eqz v2, 0017 // +0010
+5a7df2: 7110 0510 0200                         |0009: invoke-static {v2}, Lcom/bytedance/applog/AppLog;.getSsidGroup:(Ljava/util/Map;)V // method@1005
+5a7df8: 7100 0610 0000                         |000c: invoke-static {}, Lcom/bytedance/applog/AppLog;.getUserID:()Ljava/lang/String; // method@1006
+5a7dfe: 0c00                                   |000f: move-result-object v0
+5a7e00: 3800 0700                              |0010: if-eqz v0, 0017 // +0007
+5a7e04: 1a01 b8e4                              |0012: const-string v1, "user_id" // string@e4b8
+5a7e08: 7230 f7ec 1200                         |0014: invoke-interface {v2, v1, v0}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ecf7
+5a7e0e: 0e00                                   |0017: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+        0x0014 line=16973844
+        0x0015 line=16973845
+        0x0016 line=16973846
+        0x0017 line=16973847
+      locals        :
+        0x0000 - 0x0018 reg=2 (null) Ljava/util/Map;
+
+    #37              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getSigHash'
+      type          : '(Landroid/content/Context;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 5 16-bit code units
+5a7e10:                                        |[5a7e10] com.ss.android.deviceregister.DeviceRegisterManager.getSigHash:(Landroid/content/Context;)Ljava/lang/String;
+5a7e20: 7110 15e5 0000                         |0000: invoke-static {v0}, Lg48/w;.d:(Landroid/content/Context;)Ljava/lang/String; // method@e515
+5a7e26: 0c00                                   |0003: move-result-object v0
+5a7e28: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Landroid/content/Context;
+
+    #38              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getSwitchToBdtracker'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 2 16-bit code units
+5a7e2c:                                        |[5a7e2c] com.ss.android.deviceregister.DeviceRegisterManager.getSwitchToBdtracker:()Z
+5a7e3c: 1210                                   |0000: const/4 v0, #int 1 // #1
+5a7e3e: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #39              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getUserAgent'
+      type          : '(Landroid/content/Context;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+5a7e40:                                        |[5a7e40] com.ss.android.deviceregister.DeviceRegisterManager.getUserAgent:(Landroid/content/Context;)Ljava/lang/String;
+5a7e50: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7e54: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7e5a: 1200                                   |0005: const/4 v0, #int 0 // #0
+5a7e5c: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=0 (null) Landroid/content/Context;
+
+    #40              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getVersionCode'
+      type          : '()I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 1
+      insns size    : 17 16-bit code units
+5a7e60:                                        |[5a7e60] com.ss.android.deviceregister.DeviceRegisterManager.getVersionCode:()I
+5a7e70: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7e74: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7e78: 5401 c03b                              |0004: iget-object v1, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7e7c: 3801 0900                              |0006: if-eqz v1, 000f // +0009
+5a7e80: 5400 c03b                              |0008: iget-object v0, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7e84: 7210 998a 0000                         |000a: invoke-interface {v0}, Lcom/ss/android/common/AppContext;.getVersionCode:()I // method@8a99
+5a7e8a: 0a00                                   |000d: move-result v0
+5a7e8c: 2802                                   |000e: goto 0010 // +0002
+5a7e8e: 1200                                   |000f: const/4 v0, #int 0 // #0
+5a7e90: 0f00                                   |0010: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+      locals        :
+
+    #41              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'getVersionName'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 0
+      outs          : 3
+      insns size    : 54 16-bit code units
+5a7e94:                                        |[5a7e94] com.ss.android.deviceregister.DeviceRegisterManager.getVersionName:()Ljava/lang/String;
+5a7ea4: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7ea8: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a7eac: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7eb2: 1c01 d629                              |0007: const-class v1, Ljava/lang/String; // type@29d6
+5a7eb6: 1a02 8062                              |0009: const-string v2, "app_version" // string@6280
+5a7eba: 1a03 0000                              |000b: const-string v3, "" // string@0000
+5a7ebe: 7130 fd0f 3201                         |000d: invoke-static {v2, v3, v1}, Lcom/bytedance/applog/AppLog;.getHeaderValue:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0ffd
+5a7ec4: 0c01                                   |0010: move-result-object v1
+5a7ec6: 1f01 d629                              |0011: check-cast v1, Ljava/lang/String; // type@29d6
+5a7eca: 7110 f305 0100                         |0013: invoke-static {v1}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+5a7ed0: 0a02                                   |0016: move-result v2
+5a7ed2: 3802 0c00                              |0017: if-eqz v2, 0023 // +000c
+5a7ed6: 5402 c03b                              |0019: iget-object v2, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7eda: 3802 0800                              |001b: if-eqz v2, 0023 // +0008
+5a7ede: 5401 c03b                              |001d: iget-object v1, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a7ee2: 7210 988a 0100                         |001f: invoke-interface {v1}, Lcom/ss/android/common/AppContext;.getVersion:()Ljava/lang/String; // method@8a98
+5a7ee8: 0c01                                   |0022: move-result-object v1
+5a7eea: 5402 c33b                              |0023: iget-object v2, v0, Lcom/ss/android/deviceregister/b;.d:Ljava/lang/String; // field@3bc3
+5a7eee: 7120 f105 2100                         |0025: invoke-static {v1, v2}, Landroid/text/TextUtils;.equals:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z // method@05f1
+5a7ef4: 0a02                                   |0028: move-result v2
+5a7ef6: 3902 0c00                              |0029: if-nez v2, 0035 // +000c
+5a7efa: 5402 c33b                              |002b: iget-object v2, v0, Lcom/ss/android/deviceregister/b;.d:Ljava/lang/String; // field@3bc3
+5a7efe: 7110 f305 0200                         |002d: invoke-static {v2}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@05f3
+5a7f04: 0a02                                   |0030: move-result v2
+5a7f06: 3902 0400                              |0031: if-nez v2, 0035 // +0004
+5a7f0a: 5401 c33b                              |0033: iget-object v1, v0, Lcom/ss/android/deviceregister/b;.d:Ljava/lang/String; // field@3bc3
+5a7f0e: 1101                                   |0035: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+        0x0029 line=262185
+        0x002a line=262186
+        0x002b line=262187
+        0x002c line=262188
+        0x002d line=262189
+        0x002e line=262190
+        0x002f line=262191
+        0x0030 line=262192
+        0x0031 line=262193
+        0x0032 line=262194
+        0x0033 line=262195
+        0x0034 line=262196
+        0x0035 line=262197
+      locals        :
+
+    #42              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'hasInit'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7f10:                                        |[5a7f10] com.ss.android.deviceregister.DeviceRegisterManager.hasInit:()Z
+5a7f20: 6300 b63b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInitGuard:Z // field@3bb6
+5a7f24: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #43              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'init'
+      type          : '(Landroid/content/Context;ZZ)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 58 16-bit code units
+5a7f28:                                        |[5a7f28] com.ss.android.deviceregister.DeviceRegisterManager.init:(Landroid/content/Context;ZZ)V
+5a7f38: 3802 3200                              |0000: if-eqz v2, 0032 // +0032
+5a7f3c: 1210                                   |0002: const/4 v0, #int 1 // #1
+5a7f3e: 6a00 b63b                              |0003: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInitGuard:Z // field@3bb6
+5a7f42: 2021 3e00                              |0005: instance-of v1, v2, Landroid/app/Activity; // type@003e
+5a7f46: 3801 0500                              |0007: if-eqz v1, 000c // +0005
+5a7f4a: 7110 2f8f 0000                         |0009: invoke-static {v0}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.setInitWithActivity:(Z)V // method@8f2f
+5a7f50: 6e10 b601 0200                         |000c: invoke-virtual {v2}, Landroid/content/Context;.getApplicationContext:()Landroid/content/Context; // method@01b6
+5a7f56: 0c00                                   |000f: move-result-object v0
+5a7f58: 6900 b43b                              |0010: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sContext:Landroid/content/Context; // field@3bb4
+5a7f5c: 6200 b73b                              |0012: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a7f60: 3900 1a00                              |0014: if-nez v0, 002e // +001a
+5a7f64: 1c00 8019                              |0016: const-class v0, Lcom/ss/android/deviceregister/DeviceRegisterManager; // type@1980
+5a7f68: 1d00                                   |0018: monitor-enter v0
+5a7f6a: 6201 b73b                              |0019: sget-object v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a7f6e: 3901 0e00                              |001b: if-nez v1, 0029 // +000e
+5a7f72: 2201 8019                              |001d: new-instance v1, Lcom/ss/android/deviceregister/DeviceRegisterManager; // type@1980
+5a7f76: 7030 dc8e 3104                         |001f: invoke-direct {v1, v3, v4}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.<init>:(ZZ)V // method@8edc
+5a7f7c: 6901 b73b                              |0022: sput-object v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a7f80: 6203 b73b                              |0024: sget-object v3, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a7f84: 7020 128f 2300                         |0026: invoke-direct {v3, v2}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.onCreate:(Landroid/content/Context;)V // method@8f12
+5a7f8a: 1e00                                   |0029: monitor-exit v0
+5a7f8c: 2804                                   |002a: goto 002e // +0004
+5a7f8e: 0d02                                   |002b: move-exception v2
+5a7f90: 1e00                                   |002c: monitor-exit v0
+5a7f92: 2702                                   |002d: throw v2
+5a7f94: 7100 6d10 0000                         |002e: invoke-static {}, Lcom/bytedance/common/utility/Logger;.debug:()Z // method@106d
+5a7f9a: 0e00                                   |0031: return-void
+5a7f9c: 2202 b929                              |0032: new-instance v2, Ljava/lang/IllegalArgumentException; // type@29b9
+5a7fa0: 1a03 d16f                              |0034: const-string v3, "context = null" // string@6fd1
+5a7fa4: 7020 2bea 3200                         |0036: invoke-direct {v2, v3}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@ea2b
+5a7faa: 2702                                   |0039: throw v2
+      catches       : 1
+        0x0019 - 0x002d
+          <any> -> 0x002b
+      positions     :
+        0x0000 line=50593792
+        0x0001 line=50593793
+        0x0002 line=50593794
+        0x0003 line=50593795
+        0x0004 line=50593796
+        0x0005 line=50593797
+        0x0006 line=50593798
+        0x0007 line=50593799
+        0x0008 line=50593800
+        0x0009 line=50593801
+        0x000a line=50593802
+        0x000b line=50593803
+        0x000c line=50593804
+        0x000d line=50593805
+        0x000e line=50593806
+        0x000f line=50593807
+        0x0010 line=50593808
+        0x0011 line=50593809
+        0x0012 line=50593810
+        0x0013 line=50593811
+        0x0014 line=50593812
+        0x0015 line=50593813
+        0x0016 line=50593814
+        0x0017 line=50593815
+        0x0018 line=50593816
+        0x0019 line=50593817
+        0x001a line=50593818
+        0x001b line=50593819
+        0x001c line=50593820
+        0x001d line=50593821
+        0x001e line=50593822
+        0x001f line=50593823
+        0x0020 line=50593824
+        0x0021 line=50593825
+        0x0022 line=50593826
+        0x0023 line=50593827
+        0x0024 line=50593828
+        0x0025 line=50593829
+        0x0026 line=50593830
+        0x0027 line=50593831
+        0x0028 line=50593832
+        0x0029 line=50593833
+        0x002a line=50593834
+        0x002b line=50593835
+        0x002c line=50593836
+        0x002d line=50593837
+        0x002e line=50593838
+        0x002f line=50593839
+        0x0030 line=50593840
+        0x0031 line=50593841
+        0x0032 line=50593842
+        0x0033 line=50593843
+        0x0034 line=50593844
+        0x0035 line=50593845
+        0x0036 line=50593846
+        0x0037 line=50593847
+        0x0038 line=50593848
+        0x0039 line=50593849
+      locals        :
+        0x0000 - 0x003a reg=2 (null) Landroid/content/Context;
+        0x0000 - 0x003a reg=3 (null) Z
+        0x0000 - 0x003a reg=4 (null) Z
+
+    #44              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isChildMode'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+5a7fb8:                                        |[5a7fb8] com.ss.android.deviceregister.DeviceRegisterManager.isChildMode:()Z
+5a7fc8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a7fcc: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a7fd2: 1200                                   |0005: const/4 v0, #int 0 // #0
+5a7fd4: 0f00                                   |0006: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+      locals        :
+
+    #45              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isDeleteSharedStorage'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7fd8:                                        |[5a7fd8] com.ss.android.deviceregister.DeviceRegisterManager.isDeleteSharedStorage:()Z
+5a7fe8: 6300 b53b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sDeleteSharedStorage:Z // field@3bb5
+5a7fec: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #46              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isEnableGetEgdi'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a7ff0:                                        |[5a7ff0] com.ss.android.deviceregister.DeviceRegisterManager.isEnableGetEgdi:()Z
+5a8000: 6300 ab3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableGetEgdi:Z // field@3bab
+5a8004: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #47              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isEnablePassFinger'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8008:                                        |[5a8008] com.ss.android.deviceregister.DeviceRegisterManager.isEnablePassFinger:()Z
+5a8018: 6300 ae3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnablePassFinger:Z // field@3bae
+5a801c: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #48              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isEnableReinstallActivate'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8020:                                        |[5a8020] com.ss.android.deviceregister.DeviceRegisterManager.isEnableReinstallActivate:()Z
+5a8030: 6300 ac3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableReinstallActivate:Z // field@3bac
+5a8034: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #49              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isIsEnableIpv6'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8038:                                        |[5a8038] com.ss.android.deviceregister.DeviceRegisterManager.isIsEnableIpv6:()Z
+5a8048: 6300 ad3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnableIpv6:Z // field@3bad
+5a804c: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #50              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isLocalTest'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a8050:                                        |[5a8050] com.ss.android.deviceregister.DeviceRegisterManager.isLocalTest:()Z
+5a8060: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8064: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8068: 5500 c53b                              |0004: iget-boolean v0, v0, Lcom/ss/android/deviceregister/b;.f:Z // field@3bc5
+5a806c: 0f00                                   |0006: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+      locals        :
+
+    #51              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isNeedSharedStorage'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8070:                                        |[5a8070] com.ss.android.deviceregister.DeviceRegisterManager.isNeedSharedStorage:()Z
+5a8080: 6300 bb3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sNeedSharedStorage:Z // field@3bbb
+5a8084: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #52              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isNewUserMode'
+      type          : '(Landroid/content/Context;)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 12 16-bit code units
+5a8088:                                        |[5a8088] com.ss.android.deviceregister.DeviceRegisterManager.isNewUserMode:(Landroid/content/Context;)Z
+5a8098: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a809c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a80a0: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a80a6: 7110 0910 0100                         |0007: invoke-static {v1}, Lcom/bytedance/applog/AppLog;.isNewUserMode:(Landroid/content/Context;)Z // method@1009
+5a80ac: 0a01                                   |000a: move-result v1
+5a80ae: 0f01                                   |000b: return v1
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+        0x000a line=16908298
+        0x000b line=16908299
+      locals        :
+        0x0000 - 0x000c reg=1 (null) Landroid/content/Context;
+
+    #53              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isOpenBpe'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a80b0:                                        |[5a80b0] com.ss.android.deviceregister.DeviceRegisterManager.isOpenBpe:()Z
+5a80c0: 6300 bc3b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sOpenBpea:Z // field@3bbc
+5a80c4: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #54              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'isTouristMode'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a80c8:                                        |[5a80c8] com.ss.android.deviceregister.DeviceRegisterManager.isTouristMode:()Z
+5a80d8: 6300 b93b                              |0000: sget-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sIsTouristMode:Z // field@3bb9
+5a80dc: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+
+    #55              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'onCreate'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a80e0:                                        |[5a80e0] com.ss.android.deviceregister.DeviceRegisterManager.onCreate:(Landroid/content/Context;)V
+5a80f0: 6201 a93b                              |0000: sget-object v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a80f4: 6e10 8bea 0100                         |0002: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a80fa: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/ss/android/deviceregister/DeviceRegisterManager;
+        0x0000 - 0x0006 reg=1 (null) Landroid/content/Context;
+
+    #56              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'onPause'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a80fc:                                        |[5a80fc] com.ss.android.deviceregister.DeviceRegisterManager.onPause:(Landroid/content/Context;)V
+5a810c: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8110: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8116: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+
+    #57              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'onResume'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a8118:                                        |[5a8118] com.ss.android.deviceregister.DeviceRegisterManager.onResume:(Landroid/content/Context;)V
+5a8128: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a812c: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8132: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+
+    #58              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'resetDidWhenSwitchChildMode'
+      type          : '(ZJLf48/l;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 1
+      insns size    : 23 16-bit code units
+5a8134:                                        |[5a8134] com.ss.android.deviceregister.DeviceRegisterManager.resetDidWhenSwitchChildMode:(ZJLf48/l;)V
+5a8144: 6200 b73b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a8148: 7100 058f 0000                         |0002: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.hasInit:()Z // method@8f05
+5a814e: 0a01                                   |0005: move-result v1
+5a8150: 3801 0b00                              |0006: if-eqz v1, 0011 // +000b
+5a8154: 3900 0300                              |0008: if-nez v0, 000b // +0003
+5a8158: 2807                                   |000a: goto 0011 // +0007
+5a815a: 6200 a93b                              |000b: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a815e: 6e10 8bea 0000                         |000d: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8164: 0e00                                   |0010: return-void
+5a8166: 6200 a93b                              |0011: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a816a: 6e10 8bea 0000                         |0013: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8170: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50528256
+        0x0001 line=50528257
+        0x0002 line=50528258
+        0x0003 line=50528259
+        0x0004 line=50528260
+        0x0005 line=50528261
+        0x0006 line=50528262
+        0x0007 line=50528263
+        0x0008 line=50528264
+        0x0009 line=50528265
+        0x000a line=50528266
+        0x000b line=50528267
+        0x000c line=50528268
+        0x000d line=50528269
+        0x000e line=50528270
+        0x000f line=50528271
+        0x0010 line=50528272
+        0x0011 line=50528273
+        0x0012 line=50528274
+        0x0013 line=50528275
+        0x0014 line=50528276
+        0x0015 line=50528277
+        0x0016 line=50528278
+      locals        :
+        0x0000 - 0x0017 reg=0 (null) Z
+        0x0000 - 0x0017 reg=1 (null) J
+        0x0000 - 0x0017 reg=3 (null) Lf48/l;
+
+    #59              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'saveAppTrack'
+      type          : '(Landroid/content/Context;Lorg/json/JSONObject;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a8174:                                        |[5a8174] com.ss.android.deviceregister.DeviceRegisterManager.saveAppTrack:(Landroid/content/Context;Lorg/json/JSONObject;)V
+5a8184: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8188: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a818e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0006 reg=1 (null) Lorg/json/JSONObject;
+
+    #60              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAccount'
+      type          : '(Landroid/content/Context;Landroid/accounts/Account;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 17 16-bit code units
+5a8190:                                        |[5a8190] com.ss.android.deviceregister.DeviceRegisterManager.setAccount:(Landroid/content/Context;Landroid/accounts/Account;)V
+5a81a0: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a81a4: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a81a8: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a81ae: 7100 0710 0000                         |0007: invoke-static {}, Lcom/bytedance/applog/AppLog;.hasStarted:()Z // method@1007
+5a81b4: 0a00                                   |000a: move-result v0
+5a81b6: 3800 0500                              |000b: if-eqz v0, 0010 // +0005
+5a81ba: 7110 1710 0100                         |000d: invoke-static {v1}, Lcom/bytedance/applog/AppLog;.setAccount:(Landroid/accounts/Account;)V // method@1017
+5a81c0: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33751040
+        0x0001 line=33751041
+        0x0002 line=33751042
+        0x0003 line=33751043
+        0x0004 line=33751044
+        0x0005 line=33751045
+        0x0006 line=33751046
+        0x0007 line=33751047
+        0x0008 line=33751048
+        0x0009 line=33751049
+        0x000a line=33751050
+        0x000b line=33751051
+        0x000c line=33751052
+        0x000d line=33751053
+        0x000e line=33751054
+        0x000f line=33751055
+        0x0010 line=33751056
+      locals        :
+        0x0000 - 0x0011 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0011 reg=1 (null) Landroid/accounts/Account;
+
+    #61              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAdIdConfig'
+      type          : '(Lcom/ss/android/deviceregister/c;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 6 16-bit code units
+5a81c4:                                        |[5a81c4] com.ss.android.deviceregister.DeviceRegisterManager.setAdIdConfig:(Lcom/ss/android/deviceregister/c;)V
+5a81d4: 3900 0300                              |0000: if-nez v0, 0003 // +0003
+5a81d8: 0e00                                   |0002: return-void
+5a81da: 6900 b03b                              |0003: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAdIdConfig:Lcom/ss/android/deviceregister/c; // field@3bb0
+5a81de: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Lcom/ss/android/deviceregister/c;
+
+    #62              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAnonymous'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 10 16-bit code units
+5a81e0:                                        |[5a81e0] com.ss.android.deviceregister.DeviceRegisterManager.setAnonymous:(Z)V
+5a81f0: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a81f4: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a81f8: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a81fe: 6a01 c63b                              |0007: sput-boolean v1, Lcom/ss/android/deviceregister/b;.g:Z // field@3bc6
+5a8202: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+      locals        :
+        0x0000 - 0x000a reg=1 (null) Z
+
+    #63              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAntiCheatingSwitch'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 10 16-bit code units
+5a8204:                                        |[5a8204] com.ss.android.deviceregister.DeviceRegisterManager.setAntiCheatingSwitch:(Z)V
+5a8214: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8218: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a821c: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8222: 6a01 cc3b                              |0007: sput-boolean v1, Lcom/ss/android/deviceregister/b;.m:Z // field@3bcc
+5a8226: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+      locals        :
+        0x0000 - 0x000a reg=1 (null) Z
+
+    #64              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppContext'
+      type          : '(Lcom/ss/android/common/AppContext;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 10 16-bit code units
+5a8228:                                        |[5a8228] com.ss.android.deviceregister.DeviceRegisterManager.setAppContext:(Lcom/ss/android/common/AppContext;)V
+5a8238: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a823c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8240: 5b01 c03b                              |0004: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.a:Lcom/ss/android/common/AppContext; // field@3bc0
+5a8244: 7110 4d8c 0100                         |0006: invoke-static {v1}, Lcom/ss/android/common/applog/NetUtil;.setAppContext:(Lcom/ss/android/common/AppContext;)V // method@8c4d
+5a824a: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+      locals        :
+        0x0000 - 0x000a reg=1 (null) Lcom/ss/android/common/AppContext;
+
+    #65              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppId'
+      type          : '(I)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a824c:                                        |[5a824c] com.ss.android.deviceregister.DeviceRegisterManager.setAppId:(I)V
+5a825c: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8260: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8264: 5901 c13b                              |0004: iput v1, v0, Lcom/ss/android/deviceregister/b;.b:I // field@3bc1
+5a8268: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) I
+
+    #66              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppLanguage'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 3
+      insns size    : 23 16-bit code units
+5a826c:                                        |[5a826c] com.ss.android.deviceregister.DeviceRegisterManager.setAppLanguage:(Ljava/lang/String;)V
+5a827c: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8280: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8284: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a828a: 1c00 d629                              |0007: const-class v0, Ljava/lang/String; // type@29d6
+5a828e: 1a01 7b62                              |0009: const-string v1, "app_region" // string@627b
+5a8292: 1a02 0000                              |000b: const-string v2, "" // string@0000
+5a8296: 7130 fd0f 2100                         |000d: invoke-static {v1, v2, v0}, Lcom/bytedance/applog/AppLog;.getHeaderValue:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0ffd
+5a829c: 0c00                                   |0010: move-result-object v0
+5a829e: 1f00 d629                              |0011: check-cast v0, Ljava/lang/String; // type@29d6
+5a82a2: 7120 1910 0300                         |0013: invoke-static {v3, v0}, Lcom/bytedance/applog/AppLog;.setAppLanguageAndRegion:(Ljava/lang/String;Ljava/lang/String;)V // method@1019
+5a82a8: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+        0x0014 line=16973844
+        0x0015 line=16973845
+        0x0016 line=16973846
+      locals        :
+        0x0000 - 0x0017 reg=3 (null) Ljava/lang/String;
+
+    #67              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppRegion'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 3
+      insns size    : 23 16-bit code units
+5a82ac:                                        |[5a82ac] com.ss.android.deviceregister.DeviceRegisterManager.setAppRegion:(Ljava/lang/String;)V
+5a82bc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a82c0: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a82c4: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a82ca: 1c00 d629                              |0007: const-class v0, Ljava/lang/String; // type@29d6
+5a82ce: 1a01 7b62                              |0009: const-string v1, "app_region" // string@627b
+5a82d2: 1a02 0000                              |000b: const-string v2, "" // string@0000
+5a82d6: 7130 fd0f 2100                         |000d: invoke-static {v1, v2, v0}, Lcom/bytedance/applog/AppLog;.getHeaderValue:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0ffd
+5a82dc: 0c00                                   |0010: move-result-object v0
+5a82de: 1f00 d629                              |0011: check-cast v0, Ljava/lang/String; // type@29d6
+5a82e2: 7120 1910 3000                         |0013: invoke-static {v0, v3}, Lcom/bytedance/applog/AppLog;.setAppLanguageAndRegion:(Ljava/lang/String;Ljava/lang/String;)V // method@1019
+5a82e8: 0e00                                   |0016: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16973824
+        0x0001 line=16973825
+        0x0002 line=16973826
+        0x0003 line=16973827
+        0x0004 line=16973828
+        0x0005 line=16973829
+        0x0006 line=16973830
+        0x0007 line=16973831
+        0x0008 line=16973832
+        0x0009 line=16973833
+        0x000a line=16973834
+        0x000b line=16973835
+        0x000c line=16973836
+        0x000d line=16973837
+        0x000e line=16973838
+        0x000f line=16973839
+        0x0010 line=16973840
+        0x0011 line=16973841
+        0x0012 line=16973842
+        0x0013 line=16973843
+        0x0014 line=16973844
+        0x0015 line=16973845
+        0x0016 line=16973846
+      locals        :
+        0x0000 - 0x0017 reg=3 (null) Ljava/lang/String;
+
+    #68              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppTraitCallback'
+      type          : '(Lj80/b;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+5a82ec:                                        |[5a82ec] com.ss.android.deviceregister.DeviceRegisterManager.setAppTraitCallback:(Lj80/b;)V
+5a82fc: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #69              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setAppVersionMinor'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 8 16-bit code units
+5a8300:                                        |[5a8300] com.ss.android.deviceregister.DeviceRegisterManager.setAppVersionMinor:(Ljava/lang/String;)V
+5a8310: 6900 b23b                              |0000: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sAppVersionMinor:Ljava/lang/String; // field@3bb2
+5a8314: 6200 a93b                              |0002: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8318: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a831e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+        0x0007 line=16842759
+      locals        :
+        0x0000 - 0x0008 reg=0 (null) Ljava/lang/String;
+
+    #70              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setChannel'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a8320:                                        |[5a8320] com.ss.android.deviceregister.DeviceRegisterManager.setChannel:(Ljava/lang/String;)V
+5a8330: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8334: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8338: 5b01 c23b                              |0004: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.c:Ljava/lang/String; // field@3bc2
+5a833c: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Ljava/lang/String;
+
+    #71              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setChildModeBeforeInit'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a8340:                                        |[5a8340] com.ss.android.deviceregister.DeviceRegisterManager.setChildModeBeforeInit:(Z)V
+5a8350: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8354: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a835a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Z
+
+    #72              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setContext'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+5a835c:                                        |[5a835c] com.ss.android.deviceregister.DeviceRegisterManager.setContext:(Landroid/content/Context;)V
+5a836c: 6e10 b601 0000                         |0000: invoke-virtual {v0}, Landroid/content/Context;.getApplicationContext:()Landroid/content/Context; // method@01b6
+5a8372: 0c00                                   |0003: move-result-object v0
+5a8374: 6900 b43b                              |0004: sput-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sContext:Landroid/content/Context; // field@3bb4
+5a8378: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=0 (null) Landroid/content/Context;
+
+    #73              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setContextAndUploader'
+      type          : '(Landroid/content/Context;Ly60/a;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a837c:                                        |[5a837c] com.ss.android.deviceregister.DeviceRegisterManager.setContextAndUploader:(Landroid/content/Context;Ly60/a;)V
+5a838c: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8390: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8396: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+        0x0005 line=33619973
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x0006 reg=1 (null) Ly60/a;
+
+    #74              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setCustomMonitor'
+      type          : '(Lg48/j;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a8398:                                        |[5a8398] com.ss.android.deviceregister.DeviceRegisterManager.setCustomMonitor:(Lg48/j;)V
+5a83a8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a83ac: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a83b2: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Lg48/j;
+
+    #75              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setCustomVersion'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a83b4:                                        |[5a83b4] com.ss.android.deviceregister.DeviceRegisterManager.setCustomVersion:(Ljava/lang/String;)V
+5a83c4: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a83c8: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a83cc: 5b01 c33b                              |0004: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.d:Ljava/lang/String; // field@3bc3
+5a83d0: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Ljava/lang/String;
+
+    #76              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setDeviceRegisterURL'
+      type          : '([Ljava/lang/String;[Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 15 16-bit code units
+5a83d4:                                        |[5a83d4] com.ss.android.deviceregister.DeviceRegisterManager.setDeviceRegisterURL:([Ljava/lang/String;[Ljava/lang/String;)V
+5a83e4: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a83e8: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a83ec: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a83f2: 6901 c73b                              |0007: sput-object v1, Lcom/ss/android/deviceregister/b;.h:[Ljava/lang/String; // field@3bc7
+5a83f6: 1201                                   |0009: const/4 v1, #int 0 // #0
+5a83f8: 4601 0201                              |000a: aget-object v1, v2, v1
+5a83fc: 6901 c83b                              |000c: sput-object v1, Lcom/ss/android/deviceregister/b;.i:Ljava/lang/String; // field@3bc8
+5a8400: 0e00                                   |000e: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+        0x000b line=33685515
+        0x000c line=33685516
+        0x000d line=33685517
+        0x000e line=33685518
+      locals        :
+        0x0000 - 0x000f reg=1 (null) [Ljava/lang/String;
+        0x0000 - 0x000f reg=2 (null) [Ljava/lang/String;
+
+    #77              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setEdgiRetryInterval'
+      type          : '(I)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8404:                                        |[5a8404] com.ss.android.deviceregister.DeviceRegisterManager.setEdgiRetryInterval:(I)V
+5a8414: 6700 aa3b                              |0000: sput v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.egdiRetryInterval:I // field@3baa
+5a8418: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) I
+
+    #78              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setEnableGetEdgi'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a841c:                                        |[5a841c] com.ss.android.deviceregister.DeviceRegisterManager.setEnableGetEdgi:(Z)V
+5a842c: 6a00 ab3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableGetEgdi:Z // field@3bab
+5a8430: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #79              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setEnableReinstallActivate'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8434:                                        |[5a8434] com.ss.android.deviceregister.DeviceRegisterManager.setEnableReinstallActivate:(Z)V
+5a8444: 6a00 ac3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.enableReinstallActivate:Z // field@3bac
+5a8448: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #80              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setExecutor'
+      type          : '(Ll48/a;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a844c:                                        |[5a844c] com.ss.android.deviceregister.DeviceRegisterManager.setExecutor:(Ll48/a;)V
+5a845c: 6000 ee63                              |0000: sget v0, Ll48/b;.a:I // field@63ee
+5a8460: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Ll48/a;
+
+    #81              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setFakePackage'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a8464:                                        |[5a8464] com.ss.android.deviceregister.DeviceRegisterManager.setFakePackage:(Ljava/lang/String;)V
+5a8474: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8478: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a847c: 5b01 c43b                              |0004: iput-object v1, v0, Lcom/ss/android/deviceregister/b;.e:Ljava/lang/String; // field@3bc4
+5a8480: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Ljava/lang/String;
+
+    #82              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setForbidReportPhoneDetailInfo'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a8484:                                        |[5a8484] com.ss.android.deviceregister.DeviceRegisterManager.setForbidReportPhoneDetailInfo:(Z)V
+5a8494: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8498: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a849e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Z
+
+    #83              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setILogDepend'
+      type          : '(Lg48/k;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a84a0:                                        |[5a84a0] com.ss.android.deviceregister.DeviceRegisterManager.setILogDepend:(Lg48/k;)V
+5a84b0: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a84b4: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a84ba: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Lg48/k;
+
+    #84              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setInitWithActivity'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a84bc:                                        |[5a84bc] com.ss.android.deviceregister.DeviceRegisterManager.setInitWithActivity:(Z)V
+5a84cc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a84d0: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a84d6: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Z
+
+    #85              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setIsBoe'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 5 16-bit code units
+5a84d8:                                        |[5a84d8] com.ss.android.deviceregister.DeviceRegisterManager.setIsBoe:(Z)V
+5a84e8: 6a00 b83b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sIsBoe:Z // field@3bb8
+5a84ec: 6a00 ca3b                              |0002: sput-boolean v0, Lcom/ss/android/deviceregister/b;.k:Z // field@3bca
+5a84f0: 0e00                                   |0004: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Z
+
+    #86              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setIsEnableIpv6'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a84f4:                                        |[5a84f4] com.ss.android.deviceregister.DeviceRegisterManager.setIsEnableIpv6:(Z)V
+5a8504: 6a00 ad3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnableIpv6:Z // field@3bad
+5a8508: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #87              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setIsEnablePassFinger'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a850c:                                        |[5a850c] com.ss.android.deviceregister.DeviceRegisterManager.setIsEnablePassFinger:(Z)V
+5a851c: 6a00 ae3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.isEnablePassFinger:Z // field@3bae
+5a8520: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #88              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setLocalTest'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 7 16-bit code units
+5a8524:                                        |[5a8524] com.ss.android.deviceregister.DeviceRegisterManager.setLocalTest:(Z)V
+5a8534: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8538: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a853c: 5c01 c53b                              |0004: iput-boolean v1, v0, Lcom/ss/android/deviceregister/b;.f:Z // field@3bc5
+5a8540: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+        0x0006 line=16842758
+      locals        :
+        0x0000 - 0x0007 reg=1 (null) Z
+
+    #89              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setMacAddressApiCallback'
+      type          : '(Lf48/k;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+5a8544:                                        |[5a8544] com.ss.android.deviceregister.DeviceRegisterManager.setMacAddressApiCallback:(Lf48/k;)V
+5a8554: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #90              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setNewUserMode'
+      type          : '(Landroid/content/Context;Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 11 16-bit code units
+5a8558:                                        |[5a8558] com.ss.android.deviceregister.DeviceRegisterManager.setNewUserMode:(Landroid/content/Context;Z)V
+5a8568: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a856c: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8570: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8576: 7120 2610 2100                         |0007: invoke-static {v1, v2}, Lcom/bytedance/applog/AppLog;.setNewUserMode:(Landroid/content/Context;Z)V // method@1026
+5a857c: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+      locals        :
+        0x0000 - 0x000b reg=1 (null) Landroid/content/Context;
+        0x0000 - 0x000b reg=2 (null) Z
+
+    #91              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setOpenBpea'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8580:                                        |[5a8580] com.ss.android.deviceregister.DeviceRegisterManager.setOpenBpea:(Z)V
+5a8590: 6a00 bc3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sOpenBpea:Z // field@3bbc
+5a8594: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #92              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setPreInstallChannelCallback'
+      type          : '(Lf48/m;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 10 16-bit code units
+5a8598:                                        |[5a8598] com.ss.android.deviceregister.DeviceRegisterManager.setPreInstallChannelCallback:(Lf48/m;)V
+5a85a8: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a85ac: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a85b0: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a85b6: 6901 c93b                              |0007: sput-object v1, Lcom/ss/android/deviceregister/b;.j:Lf48/m; // field@3bc9
+5a85ba: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+      locals        :
+        0x0000 - 0x000a reg=1 (null) Lf48/m;
+
+    #93              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setReleaseBuild'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 10 16-bit code units
+5a85bc:                                        |[5a85bc] com.ss.android.deviceregister.DeviceRegisterManager.setReleaseBuild:(Ljava/lang/String;)V
+5a85cc: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a85d0: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a85d4: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a85da: 6901 cb3b                              |0007: sput-object v1, Lcom/ss/android/deviceregister/b;.l:Ljava/lang/String; // field@3bcb
+5a85de: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+        0x0009 line=16908297
+      locals        :
+        0x0000 - 0x000a reg=1 (null) Ljava/lang/String;
+
+    #94              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setRetryCount'
+      type          : '(I)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a85e0:                                        |[5a85e0] com.ss.android.deviceregister.DeviceRegisterManager.setRetryCount:(I)V
+5a85f0: 6700 bd3b                              |0000: sput v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sRetryCount:I // field@3bbd
+5a85f4: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) I
+
+    #95              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setSDKVersion'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a85f8:                                        |[5a85f8] com.ss.android.deviceregister.DeviceRegisterManager.setSDKVersion:(Ljava/lang/String;)V
+5a8608: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a860c: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8612: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16842752
+        0x0001 line=16842753
+        0x0002 line=16842754
+        0x0003 line=16842755
+        0x0004 line=16842756
+        0x0005 line=16842757
+      locals        :
+        0x0000 - 0x0006 reg=0 (null) Ljava/lang/String;
+
+    #96              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setSensitiveApiCallback'
+      type          : '(Lf48/n;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+5a8614:                                        |[5a8614] com.ss.android.deviceregister.DeviceRegisterManager.setSensitiveApiCallback:(Lf48/n;)V
+5a8624: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #97              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setSharedStorageConfig'
+      type          : '(ZZ)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 5 16-bit code units
+5a8628:                                        |[5a8628] com.ss.android.deviceregister.DeviceRegisterManager.setSharedStorageConfig:(ZZ)V
+5a8638: 6a00 bb3b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sNeedSharedStorage:Z // field@3bbb
+5a863c: 6a01 b53b                              |0002: sput-boolean v1, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sDeleteSharedStorage:Z // field@3bb5
+5a8640: 0e00                                   |0004: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33619968
+        0x0001 line=33619969
+        0x0002 line=33619970
+        0x0003 line=33619971
+        0x0004 line=33619972
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Z
+        0x0000 - 0x0005 reg=1 (null) Z
+
+    #98              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setSwitchToBdtracker'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+5a8644:                                        |[5a8644] com.ss.android.deviceregister.DeviceRegisterManager.setSwitchToBdtracker:(Z)V
+5a8654: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #99              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setTouristMode'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+5a8658:                                        |[5a8658] com.ss.android.deviceregister.DeviceRegisterManager.setTouristMode:(Z)V
+5a8668: 6a00 b93b                              |0000: sput-boolean v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sIsTouristMode:Z // field@3bb9
+5a866c: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=16777216
+        0x0001 line=16777217
+        0x0002 line=16777218
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Z
+
+    #100              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'setUseGoogleAdId'
+      type          : '(Z)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+5a8670:                                        |[5a8670] com.ss.android.deviceregister.DeviceRegisterManager.setUseGoogleAdId:(Z)V
+5a8680: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #101              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'tryWaitDeviceIdInit'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 16 16-bit code units
+5a8684:                                        |[5a8684] com.ss.android.deviceregister.DeviceRegisterManager.tryWaitDeviceIdInit:()V
+5a8694: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8698: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a869c: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a86a2: 7100 5a10 0000                         |0007: invoke-static {}, Lcom/bytedance/bdinstall/i;.a:()V // method@105a
+5a86a8: 2805                                   |000a: goto 000f // +0005
+5a86aa: 0d00                                   |000b: move-exception v0
+5a86ac: 6e10 47ea 0000                         |000c: invoke-virtual {v0}, Ljava/lang/InterruptedException;.printStackTrace:()V // method@ea47
+5a86b2: 0e00                                   |000f: return-void
+      catches       : 1
+        0x0007 - 0x000a
+          Ljava/lang/InterruptedException; -> 0x000b
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+        0x000c line=131084
+        0x000d line=131085
+        0x000e line=131086
+        0x000f line=131087
+      locals        :
+
+    #102              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'updateDeviceInfo'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 6 16-bit code units
+5a86c4:                                        |[5a86c4] com.ss.android.deviceregister.DeviceRegisterManager.updateDeviceInfo:()V
+5a86d4: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a86d8: 6e10 8bea 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a86de: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+      locals        :
+
+    #103              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'updateDidAndIid'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 1
+      insns size    : 22 16-bit code units
+5a86e0:                                        |[5a86e0] com.ss.android.deviceregister.DeviceRegisterManager.updateDidAndIid:()V
+5a86f0: 6200 b73b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.sInstance:Lcom/ss/android/deviceregister/DeviceRegisterManager; // field@3bb7
+5a86f4: 7100 058f 0000                         |0002: invoke-static {}, Lcom/ss/android/deviceregister/DeviceRegisterManager;.hasInit:()Z // method@8f05
+5a86fa: 0a01                                   |0005: move-result v1
+5a86fc: 3801 0f00                              |0006: if-eqz v1, 0015 // +000f
+5a8700: 3900 0300                              |0008: if-nez v0, 000b // +0003
+5a8704: 280b                                   |000a: goto 0015 // +000b
+5a8706: 6200 a93b                              |000b: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a870a: 6e10 8bea 0000                         |000d: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a8710: 1a00 4ae3                              |0010: const-string v0, "updateDidAndIid call  device_register" // string@e34a
+5a8714: 7110 97fd 0000                         |0012: invoke-static {v0}, Lx38/h;.a:(Ljava/lang/String;)V // method@fd97
+5a871a: 0e00                                   |0015: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+        0x0013 line=196627
+        0x0014 line=196628
+        0x0015 line=196629
+      locals        :
+
+    #104              : (in Lcom/ss/android/deviceregister/DeviceRegisterManager;)
+      name          : 'updateUserAgentString'
+      type          : '(Landroid/content/Context;Ljava/lang/String;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 11 16-bit code units
+5a871c:                                        |[5a871c] com.ss.android.deviceregister.DeviceRegisterManager.updateUserAgentString:(Landroid/content/Context;Ljava/lang/String;)V
+5a872c: 6200 a93b                              |0000: sget-object v0, Lcom/ss/android/deviceregister/DeviceRegisterManager;.api:Lcom/ss/android/deviceregister/d; // field@3ba9
+5a8730: 1f00 8219                              |0002: check-cast v0, Lcom/ss/android/deviceregister/b; // type@1982
+5a8734: 6e10 8bea 0000                         |0004: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@ea8b
+5a873a: 7110 2810 0100                         |0007: invoke-static {v1}, Lcom/bytedance/applog/AppLog;.setUserAgent:(Ljava/lang/String;)V // method@1028
+5a8740: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+      locals        :
+        0x0000 - 0x000b reg=0 (null) Landroid/content/Context;
+        0x0000 - 0x000b reg=1 (null) Ljava/lang/String;
+
+  Virtual methods   -
+  source_file_idx   : 21190 (SourceFile)
+

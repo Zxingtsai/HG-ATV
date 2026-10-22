@@ -1,0 +1,105 @@
+    #1              : (in Lcom/dragon/read/rpc/model/VideoInfoRequest$a;)
+      name          : 'deserialize'
+      type          : '(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 13
+      ins           : 2
+      outs          : 5
+      insns size    : 93 16-bit code units
+6555c0:                                        |[6555c0] com.dragon.read.rpc.model.VideoInfoRequest$a.deserialize:(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+6555d0: 1200                                   |0000: const/4 v0, #int 0 // #0
+6555d2: 7120 d8cc 0c00                         |0001: invoke-static {v12, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@ccd8
+6555d8: 6201 8a38                              |0004: sget-object v1, Lcom/dragon/read/rpc/model/VideoInfoRequest$a;.descriptor:Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor; // field@388a
+6555dc: 7220 31e8 1c00                         |0006: invoke-interface {v12, v1}, Lkotlinx/serialization/encoding/Decoder;.beginStructure:(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/CompositeDecoder; // method@e831
+6555e2: 0c0c                                   |0009: move-result-object v12
+6555e4: 6202 8b38                              |000a: sget-object v2, Lcom/dragon/read/rpc/model/VideoInfoRequest;.$childSerializers:[Lkotlinx/serialization/KSerializer; // field@388b
+6555e8: 7210 25e8 0c00                         |000c: invoke-interface {v12}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeSequentially:()Z // method@e825
+6555ee: 0a03                                   |000f: move-result v3
+6555f0: 1214                                   |0010: const/4 v4, #int 1 // #1
+6555f2: 1205                                   |0011: const/4 v5, #int 0 // #0
+6555f4: 3803 1200                              |0012: if-eqz v3, 0024 // +0012
+6555f8: 4602 0200                              |0014: aget-object v2, v2, v0
+6555fc: 1f02 1e3c                              |0016: check-cast v2, Lkotlinx/serialization/DeserializationStrategy; // type@3c1e
+655600: 7255 24e8 1c20                         |0018: invoke-interface {v12, v1, v0, v2, v5}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeNullableSerializableElement:(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object; // method@e824
+655606: 0c00                                   |001b: move-result-object v0
+655608: 1f00 a33b                              |001c: check-cast v0, Ljava/util/List; // type@3ba3
+65560c: 7230 1ee8 1c04                         |001e: invoke-interface {v12, v1, v4}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeBooleanElement:(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z // method@e81e
+655612: 0a02                                   |0021: move-result v2
+655614: 1233                                   |0022: const/4 v3, #int 3 // #3
+655616: 2831                                   |0023: goto 0054 // +0031
+655618: 0753                                   |0024: move-object v3, v5
+65561a: 1206                                   |0025: const/4 v6, #int 0 // #0
+65561c: 1207                                   |0026: const/4 v7, #int 0 // #0
+65561e: 1218                                   |0027: const/4 v8, #int 1 // #1
+655620: 3808 2900                              |0028: if-eqz v8, 0051 // +0029
+655624: 7220 21e8 1c00                         |002a: invoke-interface {v12, v1}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeElementIndex:(Lkotlinx/serialization/descriptors/SerialDescriptor;)I // method@e821
+65562a: 0a09                                   |002d: move-result v9
+65562c: 12fa                                   |002e: const/4 v10, #int -1 // #ff
+65562e: 32a9 2000                              |002f: if-eq v9, v10, 004f // +0020
+655632: 3809 1100                              |0031: if-eqz v9, 0042 // +0011
+655636: 3349 0900                              |0033: if-ne v9, v4, 003c // +0009
+65563a: 7230 1ee8 1c04                         |0035: invoke-interface {v12, v1, v4}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeBooleanElement:(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z // method@e81e
+655640: 0a06                                   |0038: move-result v6
+655642: de07 0702                              |0039: or-int/lit8 v7, v7, #int 2 // #02
+655646: 28ed                                   |003b: goto 0028 // -0013
+655648: 220c 263c                              |003c: new-instance v12, Lkotlinx/serialization/UnknownFieldException; // type@3c26
+65564c: 7020 18e8 9c00                         |003e: invoke-direct {v12, v9}, Lkotlinx/serialization/UnknownFieldException;.<init>:(I)V // method@e818
+655652: 270c                                   |0041: throw v12
+655654: 4609 0200                              |0042: aget-object v9, v2, v0
+655658: 1f09 1e3c                              |0044: check-cast v9, Lkotlinx/serialization/DeserializationStrategy; // type@3c1e
+65565c: 7253 24e8 1c90                         |0046: invoke-interface {v12, v1, v0, v9, v3}, Lkotlinx/serialization/encoding/CompositeDecoder;.decodeNullableSerializableElement:(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/DeserializationStrategy;Ljava/lang/Object;)Ljava/lang/Object; // method@e824
+655662: 0c03                                   |0049: move-result-object v3
+655664: 1f03 a33b                              |004a: check-cast v3, Ljava/util/List; // type@3ba3
+655668: de07 0701                              |004c: or-int/lit8 v7, v7, #int 1 // #01
+65566c: 28da                                   |004e: goto 0028 // -0026
+65566e: 1208                                   |004f: const/4 v8, #int 0 // #0
+655670: 28d8                                   |0050: goto 0028 // -0028
+655672: 0730                                   |0051: move-object v0, v3
+655674: 0162                                   |0052: move v2, v6
+655676: 0173                                   |0053: move v3, v7
+655678: 7220 27e8 1c00                         |0054: invoke-interface {v12, v1}, Lkotlinx/serialization/encoding/CompositeDecoder;.endStructure:(Lkotlinx/serialization/descriptors/SerialDescriptor;)V // method@e827
+65567e: 220c 3c17                              |0057: new-instance v12, Lcom/dragon/read/rpc/model/VideoInfoRequest; // type@173c
+655682: 7055 0846 3c20                         |0059: invoke-direct {v12, v3, v0, v2, v5}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(ILjava/util/List;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V // method@4608
+655688: 110c                                   |005c: return-object v12
+      catches       : (none)
+
+
+    #1              : (in Lcom/dragon/read/rpc/model/VideoInfoRequest;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 5
+      insns size    : 7 16-bit code units
+6557d8:                                        |[6557d8] com.dragon.read.rpc.model.VideoInfoRequest.<init>:()V
+6557e8: 1200                                   |0000: const/4 v0, #int 0 // #0
+6557ea: 1231                                   |0001: const/4 v1, #int 3 // #3
+6557ec: 1202                                   |0002: const/4 v2, #int 0 // #0
+6557ee: 7052 0a46 2310                         |0003: invoke-direct {v3, v2, v0, v1, v2}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(Ljava/util/List;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@460a
+6557f4: 0e00                                   |0006: return-void
+      catches       : (none)
+
+
+    #4              : (in Lcom/dragon/read/rpc/model/VideoInfoRequest;)
+      name          : '<init>'
+      type          : '(Ljava/util/List;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V'
+      access        : 0x11001 (PUBLIC SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 5
+      ins           : 5
+      outs          : 3
+      insns size    : 14 16-bit code units
+65586c:                                        |[65586c] com.dragon.read.rpc.model.VideoInfoRequest.<init>:(Ljava/util/List;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+65587c: dd04 0301                              |0000: and-int/lit8 v4, v3, #int 1 // #01
+655880: 3804 0300                              |0002: if-eqz v4, 0005 // +0003
+655884: 1201                                   |0004: const/4 v1, #int 0 // #0
+655886: dd03 0302                              |0005: and-int/lit8 v3, v3, #int 2 // #02
+65588a: 3803 0300                              |0007: if-eqz v3, 000a // +0003
+65588e: 1202                                   |0009: const/4 v2, #int 0 // #0
+655890: 7030 0946 1002                         |000a: invoke-direct {v0, v1, v2}, Lcom/dragon/read/rpc/model/VideoInfoRequest;.<init>:(Ljava/util/List;Z)V // method@4609
+655896: 0e00                                   |000d: return-void
+      catches       : (none)
+

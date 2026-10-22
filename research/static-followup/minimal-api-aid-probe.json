@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-21T00:10:55.455018+00:00",
+  "url": "https://reading.snssdk.com/novel/player/video_model/v1/?aid=8662",
+  "method": "POST",
+  "body": {
+    "video_id": "7693807842205125657"
+  },
+  "no_account_or_device_credentials": true,
+  "scope": "Minimal probe with the AppProperty.getAppId() value added; other App parameters, signatures, and platform selection are not reproduced.",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "content-type": "application/json",
+    "content-length": "0",
+    "x-tt-trace-tag": "id=03;cdn-cache=miss;type=dyn"
+  },
+  "bytes_read": 0,
+  "truncated": false,
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "response_kind": "empty"
+}

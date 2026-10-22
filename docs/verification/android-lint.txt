@@ -1,0 +1,131 @@
+/workspace/hongguo-tv/client/app/src/main/res/drawable/tv_banner.xml:1: Warning: Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more [VectorRaster]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="180dp" android:viewportWidth="320" android:viewportHeight="180"><path android:fillColor="#0A1020" android:pathData="M0,0H320V180H0Z"/><path android:fillColor="#FF6659" android:pathData="M126,40L208,90L126,140Z"/><path android:fillColor="#FFFFFF" android:pathData="M40,150H280V154H40Z"/></vector>
+                                                                                  ~~~~~
+
+   Explanation for issues of type "VectorRaster":
+   Vector icons require API 21 or API 24 depending on used features, but when
+   minSdkVersion is less than 21 or 24 and Android Gradle plugin 1.4 or higher
+   is used, a vector drawable placed in the drawable folder is automatically
+   moved to drawable-anydpi-v21 or drawable-anydpi-v24 and bitmap images are
+   generated for different screen resolutions for backwards compatibility.
+
+   However, there are some limitations to this raster image generation, and
+   this lint check flags elements and attributes that are not fully supported.
+   You should manually check whether the generated output is acceptable for
+   those older devices.
+
+/workspace/hongguo-tv/client/app/build.gradle.kts:12: Warning: A newer version of androidx.media3:media3-exoplayer than 1.5.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-exoplayer:1.5.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/build.gradle.kts:13: Warning: A newer version of androidx.media3:media3-exoplayer-hls than 1.5.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-exoplayer-hls:1.5.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/build.gradle.kts:14: Warning: A newer version of androidx.media3:media3-ui than 1.5.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-ui:1.5.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/workspace/hongguo-tv/client/app/src/main/AndroidManifest.xml:9: Warning: Should not restrict activity to fixed orientation. This may not be suitable for different form factors, causing the app to be letterboxed. [DiscouragedApi]
+        <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask">
+                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+/workspace/hongguo-tv/client/app/src/main/AndroidManifest.xml:8: Warning: The attribute android:dataExtractionRules only applies for Android 12 and higher; since minSdkVersion is API 26 you should also set android:fullBackupContent [DataExtractionRules]
+    <application android:label="红果 TV" android:theme="@style/AppTheme" android:icon="@drawable/ic_app" android:banner="@drawable/tv_banner" android:usesCleartextTraffic="true" android:allowBackup="false" android:dataExtractionRules="@xml/data_extraction_rules" android:supportsRtl="true">
+                                                                                                                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:222: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+                catalogRecycler?.adapter?.notifyDataSetChanged()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:298: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                holder.button.text = "第${ep.index}集" + if (saved != null && saved.seconds > 2) " · ${if (saved.duration > 0 && saved.seconds >= saved.duration - 2) "✓" else clock(saved.seconds)}" else ""
+                                     ~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:298: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                holder.button.text = "第${ep.index}集" + if (saved != null && saved.seconds > 2) " · ${if (saved.duration > 0 && saved.seconds >= saved.duration - 2) "✓" else clock(saved.seconds)}" else ""
+                                     ~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:298: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                holder.button.text = "第${ep.index}集" + if (saved != null && saved.seconds > 2) " · ${if (saved.duration > 0 && saved.seconds >= saved.duration - 2) "✓" else clock(saved.seconds)}" else ""
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:298: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                holder.button.text = "第${ep.index}集" + if (saved != null && saved.seconds > 2) " · ${if (saved.duration > 0 && saved.seconds >= saved.duration - 2) "✓" else clock(saved.seconds)}" else ""
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/MainActivity.kt:411: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                main.post { if (generation == discoveryGeneration && !isDestroyed) status.text = "未发现电脑，可手动输入服务地址；检查同一网络和 Windows 防火墙。" }
+                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:119: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        retry.visibility = View.GONE; message.visibility = View.VISIBLE; message.text = "正在准备第${episode.index}集…"; showOverlay(); refresh()
+                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:145: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                message.text = "$stage…" + if (progress >= 0 && progress <= 1) " ${(progress*100).toInt()}%" else ""
+                               ~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:145: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                message.text = "$stage…" + if (progress >= 0 && progress <= 1) " ${(progress*100).toInt()}%" else ""
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:203: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        heading.text = "${detail.drama.title}  ·  第${episode.index}集 / ${detail.episodes.size}集"
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:204: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        val pos = position(); time.text = "${MainActivity.clock(pos)} / ${if (duration > 0) MainActivity.clock(duration) else "正在读取时长"}" + if (pendingTarget != null) "   松开后跳转" else if (preparing) "   正在准备…" else ""
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:204: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        val pos = position(); time.text = "${MainActivity.clock(pos)} / ${if (duration > 0) MainActivity.clock(duration) else "正在读取时长"}" + if (pendingTarget != null) "   松开后跳转" else if (preparing) "   正在准备…" else ""
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:243: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                val ep = detail.episodes[position]; holder.button.text = "第${ep.index}集" + if (ep.id == episode.id) " ▶" else ""
+                                                                         ~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:243: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                val ep = detail.episodes[position]; holder.button.text = "第${ep.index}集" + if (ep.id == episode.id) " ▶" else ""
+                                                                         ~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:243: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                val ep = detail.episodes[position]; holder.button.text = "第${ep.index}集" + if (ep.id == episode.id) " ▶" else ""
+                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/hongguo-tv/client/app/src/main/java/cn/hongguotv/PlaybackController.kt:243: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                val ep = detail.episodes[position]; holder.button.text = "第${ep.index}集" + if (ep.id == episode.id) " ▶" else ""
+                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+0 errors, 22 warnings

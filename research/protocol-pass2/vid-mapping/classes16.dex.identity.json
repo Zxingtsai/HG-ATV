@@ -1,0 +1,13 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes16.dex",
+  "dex_sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375",
+  "dex_bytes": 9962648,
+  "requested_classes": [
+    "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1;"
+  ],
+  "class_outputs": {
+    "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1;": "com-dragon-read-component-biz-impl-bookmall-holder-video-VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

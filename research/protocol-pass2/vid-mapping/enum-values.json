@@ -1,0 +1,354 @@
+{
+  "seriessdk-com-dragon-read-saas-rpc-model.VideoPlatformType": [
+    {
+      "name": "Unknown",
+      "ordinal": 0,
+      "value": 0,
+      "source_line": "85d5b2: 7040 7ce7 1022                         |000b: invoke-direct {v0, v1, v2, v2}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "PlatformDouyin",
+      "ordinal": 1,
+      "value": 1,
+      "source_line": "85d5c6: 7040 7ce7 3144                         |0015: invoke-direct {v1, v3, v4, v4}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "UgcVideo",
+      "ordinal": 2,
+      "value": 2,
+      "source_line": "85d5da: 7040 7ce7 5366                         |001f: invoke-direct {v3, v5, v6, v6}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "Outer",
+      "ordinal": 3,
+      "value": 3,
+      "source_line": "85d5ee: 7040 7ce7 7588                         |0029: invoke-direct {v5, v7, v8, v8}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "PlatformXigua",
+      "ordinal": 4,
+      "value": 4,
+      "source_line": "85d602: 7040 7ce7 97aa                         |0033: invoke-direct {v7, v9, v10, v10}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "Chameleon",
+      "ordinal": 5,
+      "value": 5,
+      "source_line": "85d616: 7040 7ce7 b9cc                         |003d: invoke-direct {v9, v11, v12, v12}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    },
+    {
+      "name": "Mixed",
+      "ordinal": 6,
+      "value": 1024,
+      "source_line": "85d62e: 7040 7ce7 ebdf                         |0049: invoke-direct {v11, v14, v15, v13}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@e77c"
+    }
+  ],
+  "seriessdk-com-dragon-read-saas-rpc-model.VideoContentType": [
+    {
+      "name": "ShortSeriesPlay",
+      "ordinal": 0,
+      "value": 1,
+      "source_line": "85c234: 7040 56e7 1032                         |000c: invoke-direct {v0, v1, v2, v3}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "ScenePlay",
+      "ordinal": 1,
+      "value": 2,
+      "source_line": "85c248: 7040 56e7 4153                         |0016: invoke-direct {v1, v4, v3, v5}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "ExpertRecommendBook",
+      "ordinal": 2,
+      "value": 3,
+      "source_line": "85c25c: 7040 56e7 6475                         |0020: invoke-direct {v4, v6, v5, v7}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "PPTRecommendBook",
+      "ordinal": 3,
+      "value": 4,
+      "source_line": "85c270: 7040 56e7 8697                         |002a: invoke-direct {v6, v8, v7, v9}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "Movie",
+      "ordinal": 4,
+      "value": 5,
+      "source_line": "85c284: 7040 56e7 a8b9                         |0034: invoke-direct {v8, v10, v9, v11}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "TelePlay",
+      "ordinal": 5,
+      "value": 6,
+      "source_line": "85c298: 7040 56e7 cadb                         |003e: invoke-direct {v10, v12, v11, v13}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "ShortPlay",
+      "ordinal": 6,
+      "value": 7,
+      "source_line": "85c2ac: 7040 56e7 ecfd                         |0048: invoke-direct {v12, v14, v13, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "DropMaterial",
+      "ordinal": 7,
+      "value": 1000,
+      "source_line": "85c2c2: 7040 56e7 debf                         |0053: invoke-direct {v14, v13, v15, v11}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "PUGC",
+      "ordinal": 8,
+      "value": 1001,
+      "source_line": "85c2dc: 7040 56e7 fbd9                         |0060: invoke-direct {v11, v15, v9, v13}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "UnrealShortPlay",
+      "ordinal": 9,
+      "value": 1002,
+      "source_line": "85c2f6: 7040 56e7 9df7                         |006d: invoke-direct {v13, v9, v7, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "Album",
+      "ordinal": 10,
+      "value": 1003,
+      "source_line": "85c310: 7040 56e7 79f5                         |007a: invoke-direct {v9, v7, v5, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "MotionComic",
+      "ordinal": 11,
+      "value": 1004,
+      "source_line": "85c32a: 7040 56e7 57f3                         |0087: invoke-direct {v7, v5, v3, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "FamousSceneVideo",
+      "ordinal": 12,
+      "value": 1005,
+      "source_line": "85c344: 7040 56e7 35f2                         |0094: invoke-direct {v5, v3, v2, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "UgcPostVideo",
+      "ordinal": 13,
+      "value": 1006,
+      "source_line": "85c362: 7040 56e7 23f5                         |00a3: invoke-direct {v3, v2, v5, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "UnrealMotionComic",
+      "ordinal": 14,
+      "value": 1007,
+      "source_line": "85c380: 7040 56e7 52f3                         |00b2: invoke-direct {v2, v5, v3, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "CommerceVideoSlice",
+      "ordinal": 15,
+      "value": 1008,
+      "source_line": "85c39e: 7040 56e7 35f2                         |00c1: invoke-direct {v5, v3, v2, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "AIRewriteDraft",
+      "ordinal": 16,
+      "value": 1009,
+      "source_line": "85c3bc: 7040 56e7 23f5                         |00d0: invoke-direct {v3, v2, v5, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "Video1ColPushBookVideo",
+      "ordinal": 17,
+      "value": 1010,
+      "source_line": "85c3da: 7040 56e7 52f3                         |00df: invoke-direct {v2, v5, v3, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "FamousSceneTtv",
+      "ordinal": 18,
+      "value": 1011,
+      "source_line": "85c3f8: 7040 56e7 35f2                         |00ee: invoke-direct {v5, v3, v2, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    },
+    {
+      "name": "AdReplacePlay",
+      "ordinal": 19,
+      "value": 1012,
+      "source_line": "85c416: 7040 56e7 23f5                         |00fd: invoke-direct {v3, v2, v5, v15}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@e756"
+    }
+  ],
+  "seriessdk-com-dragon-read-saas-rpc-model.VideoSeriesIdType": [
+    {
+      "name": "VideoId",
+      "ordinal": 0,
+      "value": 0,
+      "source_line": "85d82a: 7040 88e7 1022                         |000b: invoke-direct {v0, v1, v2, v2}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788"
+    },
+    {
+      "name": "SeriesId",
+      "ordinal": 1,
+      "value": 1,
+      "source_line": "85d83e: 7040 88e7 3144                         |0015: invoke-direct {v1, v3, v4, v4}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788"
+    },
+    {
+      "name": "PostId",
+      "ordinal": 2,
+      "value": 2,
+      "source_line": "85d852: 7040 88e7 5366                         |001f: invoke-direct {v3, v5, v6, v6}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788"
+    }
+  ],
+  "com-dragon-read-rpc-model.VideoPlatformType": [
+    {
+      "name": "Unknown",
+      "ordinal": 0,
+      "value": 0,
+      "source_line": "6588ce: 7040 ab46 1022                         |000b: invoke-direct {v0, v1, v2, v2}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "PlatformDouyin",
+      "ordinal": 1,
+      "value": 1,
+      "source_line": "6588e2: 7040 ab46 3144                         |0015: invoke-direct {v1, v3, v4, v4}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "UgcVideo",
+      "ordinal": 2,
+      "value": 2,
+      "source_line": "6588f6: 7040 ab46 5366                         |001f: invoke-direct {v3, v5, v6, v6}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "Outer",
+      "ordinal": 3,
+      "value": 3,
+      "source_line": "65890a: 7040 ab46 7588                         |0029: invoke-direct {v5, v7, v8, v8}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "PlatformXigua",
+      "ordinal": 4,
+      "value": 4,
+      "source_line": "65891e: 7040 ab46 97aa                         |0033: invoke-direct {v7, v9, v10, v10}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "Chameleon",
+      "ordinal": 5,
+      "value": 5,
+      "source_line": "658932: 7040 ab46 b9cc                         |003d: invoke-direct {v9, v11, v12, v12}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    },
+    {
+      "name": "Mixed",
+      "ordinal": 6,
+      "value": 1024,
+      "source_line": "65894a: 7040 ab46 ebdf                         |0049: invoke-direct {v11, v14, v15, v13}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab"
+    }
+  ],
+  "com-dragon-read-rpc-model.VideoContentType": [
+    {
+      "name": "ShortSeriesPlay",
+      "ordinal": 0,
+      "value": 1,
+      "source_line": "6396bc: 7040 6c44 1032                         |000c: invoke-direct {v0, v1, v2, v3}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "ScenePlay",
+      "ordinal": 1,
+      "value": 2,
+      "source_line": "6396d0: 7040 6c44 4153                         |0016: invoke-direct {v1, v4, v3, v5}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "ExpertRecommendBook",
+      "ordinal": 2,
+      "value": 3,
+      "source_line": "6396e4: 7040 6c44 6475                         |0020: invoke-direct {v4, v6, v5, v7}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "PPTRecommendBook",
+      "ordinal": 3,
+      "value": 4,
+      "source_line": "6396f8: 7040 6c44 8697                         |002a: invoke-direct {v6, v8, v7, v9}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "Movie",
+      "ordinal": 4,
+      "value": 5,
+      "source_line": "63970c: 7040 6c44 a8b9                         |0034: invoke-direct {v8, v10, v9, v11}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "TelePlay",
+      "ordinal": 5,
+      "value": 6,
+      "source_line": "639720: 7040 6c44 cadb                         |003e: invoke-direct {v10, v12, v11, v13}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "ShortPlay",
+      "ordinal": 6,
+      "value": 7,
+      "source_line": "639734: 7040 6c44 ecfd                         |0048: invoke-direct {v12, v14, v13, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "DropMaterial",
+      "ordinal": 7,
+      "value": 1000,
+      "source_line": "63974a: 7040 6c44 debf                         |0053: invoke-direct {v14, v13, v15, v11}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "PUGC",
+      "ordinal": 8,
+      "value": 1001,
+      "source_line": "639764: 7040 6c44 fbd9                         |0060: invoke-direct {v11, v15, v9, v13}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "UnrealShortPlay",
+      "ordinal": 9,
+      "value": 1002,
+      "source_line": "63977e: 7040 6c44 9df7                         |006d: invoke-direct {v13, v9, v7, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "Album",
+      "ordinal": 10,
+      "value": 1003,
+      "source_line": "639798: 7040 6c44 79f5                         |007a: invoke-direct {v9, v7, v5, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "MotionComic",
+      "ordinal": 11,
+      "value": 1004,
+      "source_line": "6397b2: 7040 6c44 57f3                         |0087: invoke-direct {v7, v5, v3, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "FamousSceneVideo",
+      "ordinal": 12,
+      "value": 1005,
+      "source_line": "6397cc: 7040 6c44 35f2                         |0094: invoke-direct {v5, v3, v2, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "UgcPostVideo",
+      "ordinal": 13,
+      "value": 1006,
+      "source_line": "6397ea: 7040 6c44 23f5                         |00a3: invoke-direct {v3, v2, v5, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "UnrealMotionComic",
+      "ordinal": 14,
+      "value": 1007,
+      "source_line": "639808: 7040 6c44 52f3                         |00b2: invoke-direct {v2, v5, v3, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "CommerceVideoSlice",
+      "ordinal": 15,
+      "value": 1008,
+      "source_line": "639826: 7040 6c44 35f2                         |00c1: invoke-direct {v5, v3, v2, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "AIRewriteDraft",
+      "ordinal": 16,
+      "value": 1009,
+      "source_line": "639844: 7040 6c44 23f5                         |00d0: invoke-direct {v3, v2, v5, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "Video1ColPushBookVideo",
+      "ordinal": 17,
+      "value": 1010,
+      "source_line": "639862: 7040 6c44 52f3                         |00df: invoke-direct {v2, v5, v3, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "FamousSceneTtv",
+      "ordinal": 18,
+      "value": 1011,
+      "source_line": "639880: 7040 6c44 35f2                         |00ee: invoke-direct {v5, v3, v2, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    },
+    {
+      "name": "AdReplacePlay",
+      "ordinal": 19,
+      "value": 1012,
+      "source_line": "63989e: 7040 6c44 23f5                         |00fd: invoke-direct {v3, v2, v5, v15}, Lcom/dragon/read/rpc/model/VideoContentType;.<init>:(Ljava/lang/String;II)V // method@446c"
+    }
+  ]
+}

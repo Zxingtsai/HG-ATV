@@ -1,0 +1,333 @@
+    #2              : (in Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;)
+      name          : 'f'
+      type          : '(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 3
+      insns size    : 654 16-bit code units
+706304:                                        |[706304] com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData.f:(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;
+706314: 3905 0400                              |0000: if-nez v5, 0004 // +0004
+706318: 1205                                   |0002: const/4 v5, #int 0 // #0
+70631a: 1105                                   |0003: return-object v5
+70631c: 2200 c01f                              |0004: new-instance v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData; // type@1fc0
+706320: 7010 576f 0000                         |0006: invoke-direct {v0}, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.<init>:()V // method@6f57
+706326: 5451 47b7                              |0009: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@b747
+70632a: 5b01 5c5c                              |000b: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.vid:Ljava/lang/String; // field@5c5c
+70632e: 5451 09b7                              |000d: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.cover:Ljava/lang/String; // field@b709
+706332: 5b01 155c                              |000f: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.cover:Ljava/lang/String; // field@5c15
+706336: 5451 06b7                              |0011: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.colorDominate:Ljava/lang/String; // field@b706
+70633a: 5b01 165c                              |0013: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.coverDominate:Ljava/lang/String; // field@5c16
+70633e: 5352 0db7                              |0015: iget-wide v2, v5, Lcom/dragon/read/rpc/model/VideoData;.duration:J // field@b70d
+706342: 5a02 1b5c                              |0017: iput-wide v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.duration:J // field@5c1b
+706346: 5452 40b7                              |0019: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.title:Ljava/lang/String; // field@b740
+70634a: 5b02 575c                              |001b: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.title:Ljava/lang/String; // field@5c57
+70634e: 5452 3bb7                              |001d: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.subTitle:Ljava/lang/String; // field@b73b
+706352: 5b02 525c                              |001f: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.subTitle:Ljava/lang/String; // field@5c52
+706356: 5452 4bb7                              |0021: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoDesc:Ljava/lang/String; // field@b74b
+70635a: 5b02 5e5c                              |0023: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDesc:Ljava/lang/String; // field@5c5e
+70635e: 5452 1cb7                              |0025: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.materialId:Ljava/lang/String; // field@b71c
+706362: 5b02 325c                              |0027: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.materialId:Ljava/lang/String; // field@5c32
+706366: 5452 32b7                              |0029: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@b732
+70636a: 5b02 485c                              |002b: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.seriesId:Ljava/lang/String; // field@5c48
+70636e: 5352 0cb7                              |002d: iget-wide v2, v5, Lcom/dragon/read/rpc/model/VideoData;.diggedCount:J // field@b70c
+706372: 5a02 145c                              |002f: iput-wide v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.countOfLikes:J // field@5c14
+706376: 5352 07b7                              |0031: iget-wide v2, v5, Lcom/dragon/read/rpc/model/VideoData;.commentCount:J // field@b707
+70637a: 5a02 125c                              |0033: iput-wide v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.commentCount:J // field@5c12
+70637e: 5552 45b7                              |0035: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.userDigg:Z // field@b745
+706382: 5c02 5b5c                              |0037: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.userLike:Z // field@5c5b
+706386: 5552 0fb7                              |0039: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.episode:Z // field@b70f
+70638a: 5c02 275c                              |003b: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isEpisodes:Z // field@5c27
+70638e: 5552 46b7                              |003d: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.vertical:Z // field@b746
+706392: 5c02 2f5c                              |003f: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isVertical:Z // field@5c2f
+706396: 5552 42b7                              |0041: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.top:Z // field@b742
+70639a: 5c02 2c5c                              |0043: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isTop:Z // field@5c2c
+70639e: 5552 fcb6                              |0045: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.autoPlay:Z // field@b6fc
+7063a2: 5c02 085c                              |0047: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.autoPlay:Z // field@5c08
+7063a6: 5552 11b7                              |0049: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.followed:Z // field@b711
+7063aa: 5c02 285c                              |004b: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isFollowed:Z // field@5c28
+7063ae: 5552 1db7                              |004d: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.onlineSubscribed:Z // field@b71d
+7063b2: 5c02 2b5c                              |004f: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isSubscribed:Z // field@5c2b
+7063b6: 5452 08b7                              |0051: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@b708
+7063ba: 5b02 135c                              |0053: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@5c13
+7063be: 5452 2ab7                              |0055: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recommendInfo:Ljava/lang/String; // field@b72a
+7063c2: 5b02 3e5c                              |0057: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recommendInfo:Ljava/lang/String; // field@5c3e
+7063c6: 5452 2bb7                              |0059: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recommendReasonList:Ljava/lang/String; // field@b72b
+7063ca: 5b02 3f5c                              |005b: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recommendReasonList:Ljava/lang/String; // field@5c3f
+7063ce: 5552 36b7                              |005d: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showPlayCnt:Z // field@b736
+7063d2: 5c02 4d5c                              |005f: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showPlayCount:Z // field@5c4d
+7063d6: 5352 1fb7                              |0061: iget-wide v2, v5, Lcom/dragon/read/rpc/model/VideoData;.playCnt:J // field@b71f
+7063da: 5a02 345c                              |0063: iput-wide v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.playCount:J // field@5c34
+7063de: 5452 20b7                              |0065: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.playCntDesc:Ljava/lang/String; // field@b720
+7063e2: 5b02 355c                              |0067: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.playCountDesc:Ljava/lang/String; // field@5c35
+7063e6: 5552 feb6                              |0069: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.bookExist:Z // field@b6fe
+7063ea: 5c02 0a5c                              |006b: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.bookExist:Z // field@5c0a
+7063ee: 5452 29b7                              |006d: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recommendGroupId:Ljava/lang/String; // field@b729
+7063f2: 5b02 3d5c                              |006f: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recommendGroupId:Ljava/lang/String; // field@5c3d
+7063f6: 5252 05b7                              |0071: iget v2, v5, Lcom/dragon/read/rpc/model/VideoData;.clusterId:I // field@b705
+7063fa: 5902 1d5c                              |0073: iput v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.embeddingClusterId:I // field@5c1d
+7063fe: 5552 39b7                              |0075: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showScore:Z // field@b739
+706402: 5c02 505c                              |0077: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showScore:Z // field@5c50
+706406: 5452 2fb7                              |0079: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.score:Ljava/lang/String; // field@b72f
+70640a: 5b02 445c                              |007b: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.score:Ljava/lang/String; // field@5c44
+70640e: 5552 38b7                              |007d: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showRecText:Z // field@b738
+706412: 5c02 4f5c                              |007f: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showRecommendText:Z // field@5c4f
+706416: 5552 3ab7                              |0081: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showSubTile:Z // field@b73a
+70641a: 5c02 515c                              |0083: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showSubTitle:Z // field@5c51
+70641e: 5452 26b7                              |0085: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recText:Ljava/lang/String; // field@b726
+706422: 5b02 415c                              |0087: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recommendText:Ljava/lang/String; // field@5c41
+706426: 5352 10b7                              |0089: iget-wide v2, v5, Lcom/dragon/read/rpc/model/VideoData;.episodeCnt:J // field@b710
+70642a: 5a02 1e5c                              |008b: iput-wide v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.episodesCount:J // field@5c1e
+70642e: 5552 33b7                              |008d: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showContentTag:Z // field@b733
+706432: 5c02 4a5c                              |008f: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showContentTag:Z // field@5c4a
+706436: 5552 35b7                              |0091: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.showEpisodeCnt:Z // field@b735
+70643a: 5c02 4c5c                              |0093: iput-boolean v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showEpisodeCount:Z // field@5c4c
+70643e: 5452 23b7                              |0095: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.rankScore:Ljava/lang/String; // field@b723
+706442: 5b02 215c                              |0097: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.heatScore:Ljava/lang/String; // field@5c21
+706446: 5252 3fb7                              |0099: iget v2, v5, Lcom/dragon/read/rpc/model/VideoData;.time:I // field@b73f
+70644a: 5902 565c                              |009b: iput v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.timeYear:I // field@5c56
+70644e: 5452 1bb7                              |009d: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.location:Ljava/lang/String; // field@b71b
+706452: 5b02 315c                              |009f: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.location:Ljava/lang/String; // field@5c31
+706456: 5452 1ab7                              |00a1: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.language:Ljava/lang/String; // field@b71a
+70645a: 5b02 305c                              |00a3: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.language:Ljava/lang/String; // field@5c30
+70645e: 5452 50b7                              |00a5: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoTag:Ljava/lang/String; // field@b750
+706462: 3802 0400                              |00a7: if-eqz v2, 00ab // +0004
+706466: 5b02 645c                              |00a9: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoTag:Ljava/lang/String; // field@5c64
+70646a: 5452 4fb7                              |00ab: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoPlatform:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@b74f
+70646e: 5b02 635c                              |00ad: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoPlatform:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@5c63
+706472: 5452 fbb6                              |00af: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.authorNickname:Ljava/lang/String; // field@b6fb
+706476: 5b02 075c                              |00b1: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.authorNickName:Ljava/lang/String; // field@5c07
+70647a: 5452 02b7                              |00b3: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.categoryList:Ljava/util/List; // field@b702
+70647e: 5b02 0d5c                              |00b5: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.categoryList:Ljava/util/List; // field@5c0d
+706482: 5452 4eb7                              |00b7: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@b74e
+706486: 5b02 625c                              |00b9: iput-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoModel:Ljava/lang/String; // field@5c62
+70648a: 5b01 115c                              |00bb: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.colorDominate:Ljava/lang/String; // field@5c11
+70648e: 5451 49b7                              |00bd: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.videoBgColorHex:Ljava/lang/String; // field@b749
+706492: 5b01 095c                              |00bf: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.bgColorHex:Ljava/lang/String; // field@5c09
+706496: 5451 fab6                              |00c1: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.aliasName:Ljava/lang/String; // field@b6fa
+70649a: 5b01 065c                              |00c3: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.aliasName:Ljava/lang/String; // field@5c06
+70649e: 5451 24b7                              |00c5: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.rawAlias:Ljava/lang/String; // field@b724
+7064a2: 5b01 385c                              |00c7: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.rawAliasName:Ljava/lang/String; // field@5c38
+7064a6: 5451 3db7                              |00c9: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.subscribeItem:Lcom/dragon/read/rpc/model/SubscribeItem; // field@b73d
+7064aa: 5b01 545c                              |00cb: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.subscribeItem:Lcom/dragon/read/rpc/model/SubscribeItem; // field@5c54
+7064ae: 5451 12b7                              |00cd: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.forceVid:Ljava/lang/String; // field@b712
+7064b2: 5b01 205c                              |00cf: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.forceVid:Ljava/lang/String; // field@5c20
+7064b6: 5451 43b7                              |00d1: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.updateTag:Ljava/lang/String; // field@b743
+7064ba: 5b01 595c                              |00d3: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.updateTag:Ljava/lang/String; // field@5c59
+7064be: 5451 01b7                              |00d5: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.cardTips:Ljava/lang/String; // field@b701
+7064c2: 5b01 0c5c                              |00d7: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.cardTips:Ljava/lang/String; // field@5c0c
+7064c6: 5451 14b7                              |00d9: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.highlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@b714
+7064ca: 5b01 615c                              |00db: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoHighlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@5c61
+7064ce: 5451 0bb7                              |00dd: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.createTime:Ljava/lang/String; // field@b70b
+7064d2: 1602 0000                              |00df: const-wide/16 v2, #int 0 // #0
+7064d6: 7130 4ab8 2103                         |00e1: invoke-static {v1, v2, v3}, Lcom/dragon/read/util/NumberUtils;.parse:(Ljava/lang/String;J)J // method@b84a
+7064dc: 0b01                                   |00e4: move-result-wide v1
+7064de: 7120 13cd 2100                         |00e5: invoke-static {v1, v2}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@cd13
+7064e4: 0c01                                   |00e8: move-result-object v1
+7064e6: 5b01 185c                              |00e9: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.createTime:Ljava/lang/Long; // field@5c18
+7064ea: 5451 15b7                              |00eb: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.horizCover:Ljava/lang/String; // field@b715
+7064ee: 5b01 235c                              |00ed: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.horizontalCover:Ljava/lang/String; // field@5c23
+7064f2: 5451 30b7                              |00ef: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.secondaryInfoList:Ljava/util/List; // field@b730
+7064f6: 5b01 455c                              |00f1: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.secondaryInfoList:Ljava/util/List; // field@5c45
+7064fa: 5451 3cb7                              |00f3: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.subTitleList:Ljava/util/List; // field@b73c
+7064fe: 5b01 535c                              |00f5: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.subTitleList:Ljava/util/List; // field@5c53
+706502: 5451 2cb7                              |00f7: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.recommendTagInfo:Ljava/util/List; // field@b72c
+706506: 5b01 405c                              |00f9: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recommendTagInfoList:Ljava/util/List; // field@5c40
+70650a: 5451 1eb7                              |00fb: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.payInfo:Lcom/dragon/read/rpc/model/VideoPayInfo; // field@b71e
+70650e: 5b01 335c                              |00fd: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.payInfo:Lcom/dragon/read/rpc/model/VideoPayInfo; // field@5c33
+706512: 5451 2eb7                              |00ff: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.relatedMaterialId:Ljava/lang/String; // field@b72e
+706516: 7110 a802 0100                         |0101: invoke-static {v1}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@02a8
+70651c: 0a01                                   |0104: move-result v1
+70651e: df01 0101                              |0105: xor-int/lit8 v1, v1, #int 1 // #01
+706522: 5c01 2a5c                              |0107: iput-boolean v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isRelatedMaterialId:Z // field@5c2a
+706526: 5451 2eb7                              |0109: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.relatedMaterialId:Ljava/lang/String; // field@b72e
+70652a: 5b01 425c                              |010b: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.relatedMaterialId:Ljava/lang/String; // field@5c42
+70652e: 5551 18b7                              |010d: iget-boolean v1, v5, Lcom/dragon/read/rpc/model/VideoData;.isPreviewMaterial:Z // field@b718
+706532: 7110 c4cc 0100                         |010f: invoke-static {v1}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@ccc4
+706538: 0c01                                   |0112: move-result-object v1
+70653a: 5b01 2d5c                              |0113: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isTrailer:Ljava/lang/Boolean; // field@5c2d
+70653e: 6201 39bd                              |0115: sget-object v1, Ljava/lang/Boolean;.TRUE:Ljava/lang/Boolean; // field@bd39
+706542: 5552 17b7                              |0117: iget-boolean v2, v5, Lcom/dragon/read/rpc/model/VideoData;.isAiSeries:Z // field@b717
+706546: 7110 c4cc 0200                         |0119: invoke-static {v2}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@ccc4
+70654c: 0c02                                   |011c: move-result-object v2
+70654e: 6e20 c2cc 2100                         |011d: invoke-virtual {v1, v2}, Ljava/lang/Boolean;.equals:(Ljava/lang/Object;)Z // method@ccc2
+706554: 0a01                                   |0120: move-result v1
+706556: 5c01 265c                              |0121: iput-boolean v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isAiSeries:Z // field@5c26
+70655a: 5451 3eb7                              |0123: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.tagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@b73e
+70655e: 5b01 555c                              |0125: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.tagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@5c55
+706562: 5451 0ab7                              |0127: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.coverTagInfoList:Ljava/util/List; // field@b70a
+706566: 3801 0300                              |0129: if-eqz v1, 012c // +0003
+70656a: 2806                                   |012b: goto 0131 // +0006
+70656c: 2201 0137                              |012c: new-instance v1, Ljava/util/ArrayList; // type@3701
+706570: 7010 b9cd 0100                         |012e: invoke-direct {v1}, Ljava/util/ArrayList;.<init>:()V // method@cdb9
+706576: 5b01 175c                              |0131: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.coverTagInfoList:Ljava/util/List; // field@5c17
+70657a: 5451 26b7                              |0133: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.recText:Ljava/lang/String; // field@b726
+70657e: 5b01 3a5c                              |0135: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recText:Ljava/lang/String; // field@5c3a
+706582: 5451 25b7                              |0137: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.recTags:Ljava/util/List; // field@b725
+706586: 5b01 395c                              |0139: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recTags:Ljava/util/List; // field@5c39
+70658a: 5551 37b7                              |013b: iget-boolean v1, v5, Lcom/dragon/read/rpc/model/VideoData;.showPlayIcon:Z // field@b737
+70658e: 5c01 4e5c                              |013d: iput-boolean v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showPlayIcon:Z // field@5c4e
+706592: 5451 27b7                              |013f: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.recTextIconType:Lcom/dragon/read/rpc/model/RecTypeStyle; // field@b727
+706596: 3801 0800                              |0141: if-eqz v1, 0149 // +0008
+70659a: 6e10 76b7 0100                         |0143: invoke-virtual {v1}, Lcom/dragon/read/rpc/model/RecTypeStyle;.getValue:()I // method@b776
+7065a0: 0a01                                   |0146: move-result v1
+7065a2: 5901 3b5c                              |0147: iput v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recTextIconType:I // field@5c3b
+7065a6: 5451 41b7                              |0149: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.titleTagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@b741
+7065aa: 5b01 585c                              |014b: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.titleTagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@5c58
+7065ae: 5451 ffb6                              |014d: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.buriedParams:Lcom/dragon/read/rpc/model/BuriedParams; // field@b6ff
+7065b2: 5b01 0b5c                              |014f: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.buriedParams:Lcom/dragon/read/rpc/model/BuriedParams; // field@5c0b
+7065b6: 5451 28b7                              |0151: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.recTextItem:Lcom/dragon/read/rpc/model/RecommendTagInfo; // field@b728
+7065ba: 5b01 3c5c                              |0153: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.recTextItem:Lcom/dragon/read/rpc/model/RecommendTagInfo; // field@5c3c
+7065be: 5551 19b7                              |0155: iget-boolean v1, v5, Lcom/dragon/read/rpc/model/VideoData;.isPrivate:Z // field@b719
+7065c2: 5c01 295c                              |0157: iput-boolean v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.isPrivate:Z // field@5c29
+7065c6: 5451 f8b6                              |0159: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.albumInfo:Lcom/dragon/read/rpc/model/VideoAlbumDetailInfo; // field@b6f8
+7065ca: 5b01 045c                              |015b: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.albumDetailInfo:Lcom/dragon/read/rpc/model/VideoAlbumDetailInfo; // field@5c04
+7065ce: 5451 f9b6                              |015d: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.albumShowStyle:Lcom/dragon/read/rpc/model/AlbumShowStyle; // field@b6f9
+7065d2: 5b01 055c                              |015f: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.albumShowStyle:Lcom/dragon/read/rpc/model/AlbumShowStyle; // field@5c05
+7065d6: 2201 be1f                              |0161: new-instance v1, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$BookData; // type@1fbe
+7065da: 7010 526f 0100                         |0163: invoke-direct {v1}, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$BookData;.<init>:()V // method@6f52
+7065e0: 5452 fdb6                              |0166: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+7065e4: 3802 0a00                              |0168: if-eqz v2, 0172 // +000a
+7065e8: 5423 5ab2                              |016a: iget-object v3, v2, Lcom/dragon/read/rpc/model/ApiBookInfo;.bookId:Ljava/lang/String; // field@b25a
+7065ec: 5b13 f75b                              |016c: iput-object v3, v1, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$BookData;.bookId:Ljava/lang/String; // field@5bf7
+7065f0: 5422 5bb2                              |016e: iget-object v2, v2, Lcom/dragon/read/rpc/model/ApiBookInfo;.bookName:Ljava/lang/String; // field@b25b
+7065f4: 5b12 f85b                              |0170: iput-object v2, v1, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$BookData;.bookName:Ljava/lang/String; // field@5bf8
+7065f8: 5b01 435c                              |0172: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.relativeBookData:Lcom/dragon/read/pages/bookmall/model/VideoTabModel$BookData; // field@5c43
+7065fc: 5451 03b7                              |0174: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.categorySchema:Ljava/lang/String; // field@b703
+706600: 2202 c51f                              |0176: new-instance v2, Lcom/dragon/read/pages/bookmall/model/a; // type@1fc5
+706604: 7010 6a6f 0200                         |0178: invoke-direct {v2}, Lcom/dragon/read/pages/bookmall/model/a;.<init>:()V // method@6f6a
+70660a: 6e10 aaba 0200                         |017b: invoke-virtual {v2}, Lcom/google/gson/reflect/TypeToken;.getType:()Ljava/lang/reflect/Type; // method@baaa
+706610: 0c02                                   |017e: move-result-object v2
+706612: 7120 1b10 2100                         |017f: invoke-static {v1, v2}, Lcom/dragon/read/base/util/JSONUtils;.fromJson:(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object; // method@101b
+706618: 0c01                                   |0182: move-result-object v1
+70661a: 1f01 0e37                              |0183: check-cast v1, Ljava/util/List; // type@370e
+70661e: 5402 0e5c                              |0185: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.categorySchemaList:Ljava/util/List; // field@5c0e
+706622: 7210 2cce 0200                         |0187: invoke-interface {v2}, Ljava/util/List;.clear:()V // method@ce2c
+706628: 7110 2a10 0100                         |018a: invoke-static {v1}, Lcom/dragon/read/base/util/ListUtils;.isEmpty:(Ljava/util/Collection;)Z // method@102a
+70662e: 0a02                                   |018d: move-result v2
+706630: 3902 0700                              |018e: if-nez v2, 0195 // +0007
+706634: 5402 0e5c                              |0190: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.categorySchemaList:Ljava/util/List; // field@5c0e
+706638: 7220 2bce 1200                         |0192: invoke-interface {v2, v1}, Ljava/util/List;.addAll:(Ljava/util/Collection;)Z // method@ce2b
+70663e: 5451 21b7                              |0195: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.playCoverInfoList:Ljava/util/List; // field@b721
+706642: 5b01 365c                              |0197: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.playCoverInfo:Ljava/util/List; // field@5c36
+706646: 5451 44b7                              |0199: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.url:Ljava/lang/String; // field@b744
+70664a: 5b01 5a5c                              |019b: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.url:Ljava/lang/String; // field@5c5a
+70664e: 5451 0eb7                              |019d: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.dynamicCover:Ljava/lang/String; // field@b70e
+706652: 5b01 1c5c                              |019f: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.dynamicCover:Ljava/lang/String; // field@5c1c
+706656: 5451 31b7                              |01a1: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@b731
+70665a: 5b01 475c                              |01a3: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@5c47
+70665e: 5451 04b7                              |01a5: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.clipVideoHighlightList:Ljava/util/List; // field@b704
+706662: 5b01 105c                              |01a7: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.clipVideoHighlights:Ljava/util/List; // field@5c10
+706666: 5451 22b7                              |01a9: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.rankChangeData:Lcom/dragon/read/rpc/model/RankChangeData; // field@b722
+70666a: 5b01 375c                              |01ab: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.rankChangeData:Lcom/dragon/read/rpc/model/RankChangeData; // field@5c37
+70666e: 2201 9f30                              |01ad: new-instance v1, Lcom/dragon/read/video/VideoDetailModel; // type@309f
+706672: 7010 1ab9 0100                         |01af: invoke-direct {v1}, Lcom/dragon/read/video/VideoDetailModel;.<init>:()V // method@b91a
+706678: 5452 4cb7                              |01b2: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@b74c
+70667c: 6e20 1cb9 2100                         |01b4: invoke-virtual {v1, v2}, Lcom/dragon/read/video/VideoDetailModel;.b:(Lcom/dragon/read/rpc/model/VideoDetailVideoData;)Lcom/dragon/read/video/VideoDetailModel; // method@b91c
+706682: 5452 4cb7                              |01b7: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@b74c
+706686: 6e20 1db9 2100                         |01b9: invoke-virtual {v1, v2}, Lcom/dragon/read/video/VideoDetailModel;.c:(Lcom/dragon/read/rpc/model/VideoDetailVideoData;)V // method@b91d
+70668c: 6e20 1bb9 5100                         |01bc: invoke-virtual {v1, v5}, Lcom/dragon/read/video/VideoDetailModel;.a:(Lcom/dragon/read/rpc/model/VideoData;)V // method@b91b
+706692: 5b01 5f5c                              |01bf: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+706696: 5452 25b7                              |01c1: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recTags:Ljava/util/List; // field@b725
+70669a: 5b12 cfb7                              |01c3: iput-object v2, v1, Lcom/dragon/read/video/VideoDetailModel;.recTagList:Ljava/util/List; // field@b7cf
+70669e: 5452 2bb7                              |01c5: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.recommendReasonList:Ljava/lang/String; // field@b72b
+7066a2: 5b12 d0b7                              |01c7: iput-object v2, v1, Lcom/dragon/read/video/VideoDetailModel;.recommendReasonList:Ljava/lang/String; // field@b7d0
+7066a6: 5451 2db7                              |01c9: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.relatedBookEntryInInteractiveArea:Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea; // field@b72d
+7066aa: 3801 5500                              |01cb: if-eqz v1, 0220 // +0055
+7066ae: 2201 bd1f                              |01cd: new-instance v1, Lcom/dragon/read/pages/bookmall/model/VideoRelateBookInfo; // type@1fbd
+7066b2: 7010 506f 0100                         |01cf: invoke-direct {v1}, Lcom/dragon/read/pages/bookmall/model/VideoRelateBookInfo;.<init>:()V // method@6f50
+7066b8: 5452 fdb6                              |01d2: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+7066bc: 5b12 f45b                              |01d4: iput-object v2, v1, Lcom/dragon/read/pages/bookmall/model/VideoRelateBookInfo;.bookInfo:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@5bf4
+7066c0: 5452 2db7                              |01d6: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.relatedBookEntryInInteractiveArea:Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea; // field@b72d
+7066c4: 5b12 f55b                              |01d8: iput-object v2, v1, Lcom/dragon/read/pages/bookmall/model/VideoRelateBookInfo;.relatedBookEntryInInteractiveArea:Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea; // field@5bf5
+7066c8: 5402 5f5c                              |01da: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+7066cc: 6e10 11b9 0200                         |01dc: invoke-virtual {v2}, Lcom/dragon/read/video/BaseVideoDetailModel;.getEpisodesList:()Ljava/util/List; // method@b911
+7066d2: 0c02                                   |01df: move-result-object v2
+7066d4: 7110 2a10 0200                         |01e0: invoke-static {v2}, Lcom/dragon/read/base/util/ListUtils;.isEmpty:(Ljava/util/Collection;)Z // method@102a
+7066da: 0a02                                   |01e3: move-result v2
+7066dc: 1a03 a0da                              |01e4: const-string v3, "videoRelateBookInfo" // string@daa0
+7066e0: 3902 2500                              |01e6: if-nez v2, 020b // +0025
+7066e4: 1202                                   |01e8: const/4 v2, #int 0 // #0
+7066e6: 5404 5f5c                              |01e9: iget-object v4, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+7066ea: 6e10 11b9 0400                         |01eb: invoke-virtual {v4}, Lcom/dragon/read/video/BaseVideoDetailModel;.getEpisodesList:()Ljava/util/List; // method@b911
+7066f0: 0c04                                   |01ee: move-result-object v4
+7066f2: 7210 38ce 0400                         |01ef: invoke-interface {v4}, Ljava/util/List;.size:()I // method@ce38
+7066f8: 0a04                                   |01f2: move-result v4
+7066fa: 3542 1800                              |01f3: if-ge v2, v4, 020b // +0018
+7066fe: 5404 5f5c                              |01f5: iget-object v4, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+706702: 6e10 11b9 0400                         |01f7: invoke-virtual {v4}, Lcom/dragon/read/video/BaseVideoDetailModel;.getEpisodesList:()Ljava/util/List; // method@b911
+706708: 0c04                                   |01fa: move-result-object v4
+70670a: 7220 2fce 2400                         |01fb: invoke-interface {v4, v2}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@ce2f
+706710: 0c04                                   |01fe: move-result-object v4
+706712: 1f04 9e30                              |01ff: check-cast v4, Lcom/dragon/read/video/VideoData; // type@309e
+706716: 6e10 19b9 0400                         |0201: invoke-virtual {v4}, Lcom/dragon/read/video/VideoData;.getExtraData:()Ljava/util/Map; // method@b919
+70671c: 0c04                                   |0204: move-result-object v4
+70671e: 7230 49ce 3401                         |0205: invoke-interface {v4, v3, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ce49
+706724: d802 0201                              |0208: add-int/lit8 v2, v2, #int 1 // #01
+706728: 28df                                   |020a: goto 01e9 // -0021
+70672a: 5402 5f5c                              |020b: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+70672e: 6e10 12b9 0200                         |020d: invoke-virtual {v2}, Lcom/dragon/read/video/BaseVideoDetailModel;.getVideoData:()Lcom/dragon/read/video/VideoData; // method@b912
+706734: 0c02                                   |0210: move-result-object v2
+706736: 3802 0f00                              |0211: if-eqz v2, 0220 // +000f
+70673a: 5402 5f5c                              |0213: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+70673e: 6e10 12b9 0200                         |0215: invoke-virtual {v2}, Lcom/dragon/read/video/BaseVideoDetailModel;.getVideoData:()Lcom/dragon/read/video/VideoData; // method@b912
+706744: 0c02                                   |0218: move-result-object v2
+706746: 6e10 19b9 0200                         |0219: invoke-virtual {v2}, Lcom/dragon/read/video/VideoData;.getExtraData:()Ljava/util/Map; // method@b919
+70674c: 0c02                                   |021c: move-result-object v2
+70674e: 7230 49ce 3201                         |021d: invoke-interface {v2, v3, v1}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ce49
+706754: 5401 5f5c                              |0220: iget-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+706758: 3801 4200                              |0222: if-eqz v1, 0264 // +0042
+70675c: 5452 fdb6                              |0224: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+706760: 3802 3e00                              |0226: if-eqz v2, 0264 // +003e
+706764: 5403 135c                              |0228: iget-object v3, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@5c13
+706768: 6204 f7b6                              |022a: sget-object v4, Lcom/dragon/read/rpc/model/VideoContentType;.Video1ColPushBookVideo:Lcom/dragon/read/rpc/model/VideoContentType; // field@b6f7
+70676c: 3343 3800                              |022c: if-ne v3, v4, 0264 // +0038
+706770: 5422 5bb2                              |022e: iget-object v2, v2, Lcom/dragon/read/rpc/model/ApiBookInfo;.bookName:Ljava/lang/String; // field@b25b
+706774: 6e20 13b9 2100                         |0230: invoke-virtual {v1, v2}, Lcom/dragon/read/video/BaseVideoDetailModel;.setEpisodesTitle:(Ljava/lang/String;)V // method@b913
+70677a: 5401 5f5c                              |0233: iget-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+70677e: 5452 fdb6                              |0235: iget-object v2, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+706782: 5422 79b2                              |0237: iget-object v2, v2, Lcom/dragon/read/rpc/model/ApiBookInfo;.secondaryInfoList:Ljava/util/List; // field@b279
+706786: 6e20 14b9 2100                         |0239: invoke-virtual {v1, v2}, Lcom/dragon/read/video/BaseVideoDetailModel;.setSecondaryInfoList:(Ljava/util/List;)V // method@b914
+70678c: 5451 fdb6                              |023c: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+706790: 5411 59b2                              |023e: iget-object v1, v1, Lcom/dragon/read/rpc/model/ApiBookInfo;.bookAbstractV2:Ljava/lang/String; // field@b259
+706794: 3801 0b00                              |0240: if-eqz v1, 024b // +000b
+706798: 5402 5f5c                              |0242: iget-object v2, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+70679c: 6e10 5fcd 0100                         |0244: invoke-virtual {v1}, Ljava/lang/String;.trim:()Ljava/lang/String; // method@cd5f
+7067a2: 0c01                                   |0247: move-result-object v1
+7067a4: 6e20 15b9 1200                         |0248: invoke-virtual {v2, v1}, Lcom/dragon/read/video/BaseVideoDetailModel;.setSeriesIntro:(Ljava/lang/String;)V // method@b915
+7067aa: 5401 5f5c                              |024b: iget-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+7067ae: 6e10 12b9 0100                         |024d: invoke-virtual {v1}, Lcom/dragon/read/video/BaseVideoDetailModel;.getVideoData:()Lcom/dragon/read/video/VideoData; // method@b912
+7067b4: 0c01                                   |0250: move-result-object v1
+7067b6: 3801 1300                              |0251: if-eqz v1, 0264 // +0013
+7067ba: 5401 5f5c                              |0253: iget-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoDetailModel:Lcom/dragon/read/video/VideoDetailModel; // field@5c5f
+7067be: 6e10 12b9 0100                         |0255: invoke-virtual {v1}, Lcom/dragon/read/video/BaseVideoDetailModel;.getVideoData:()Lcom/dragon/read/video/VideoData; // method@b912
+7067c4: 0c01                                   |0258: move-result-object v1
+7067c6: 6e10 19b9 0100                         |0259: invoke-virtual {v1}, Lcom/dragon/read/video/VideoData;.getExtraData:()Ljava/util/Map; // method@b919
+7067cc: 0c01                                   |025c: move-result-object v1
+7067ce: 1a02 77da                              |025d: const-string v2, "videoBookData" // string@da77
+7067d2: 5453 fdb6                              |025f: iget-object v3, v5, Lcom/dragon/read/rpc/model/VideoData;.bookData:Lcom/dragon/read/rpc/model/ApiBookInfo; // field@b6fd
+7067d6: 7230 49ce 2103                         |0261: invoke-interface {v1, v2, v3}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ce49
+7067dc: 5451 16b7                              |0264: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.hotComments:Ljava/util/List; // field@b716
+7067e0: 5b01 245c                              |0266: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.hotCommentList:Ljava/util/List; // field@5c24
+7067e4: 5251 51b7                              |0268: iget v1, v5, Lcom/dragon/read/rpc/model/VideoData;.videoWidth:I // field@b751
+7067e8: 5901 655c                              |026a: iput v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoWidth:I // field@5c65
+7067ec: 5251 4db7                              |026c: iget v1, v5, Lcom/dragon/read/rpc/model/VideoData;.videoHeight:I // field@b74d
+7067f0: 5901 605c                              |026e: iput v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoHeight:I // field@5c60
+7067f4: 5451 4ab7                              |0270: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@b74a
+7067f8: 7110 a802 0100                         |0272: invoke-static {v1}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@02a8
+7067fe: 0a01                                   |0275: move-result v1
+706800: 3901 0b00                              |0276: if-nez v1, 0281 // +000b
+706804: 5401 1f5c                              |0278: iget-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.extraMap:Ljava/util/HashMap; // field@5c1f
+706808: 1a02 b8da                              |027a: const-string v2, "video_category_type" // string@dab8
+70680c: 5453 4ab7                              |027c: iget-object v3, v5, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@b74a
+706810: 6e30 ffcd 2103                         |027e: invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@cdff
+706816: 5451 4ab7                              |0281: iget-object v1, v5, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@b74a
+70681a: 5b01 5d5c                              |0283: iput-object v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.videoCategoryType:Ljava/lang/String; // field@5c5d
+70681e: 5551 34b7                              |0285: iget-boolean v1, v5, Lcom/dragon/read/rpc/model/VideoData;.showDiggedCount:Z // field@b734
+706822: 5c01 4b5c                              |0287: iput-boolean v1, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.showDiggedCount:Z // field@5c4b
+706826: 5555 13b7                              |0289: iget-boolean v5, v5, Lcom/dragon/read/rpc/model/VideoData;.hideDiggedIcon:Z // field@b713
+70682a: 5c05 225c                              |028b: iput-boolean v5, v0, Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;.hideDiggedIcon:Z // field@5c22
+70682e: 1100                                   |028d: return-object v0
+      catches       : (none)
+

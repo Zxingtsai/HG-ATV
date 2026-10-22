@@ -1,0 +1,1 @@
+PASS: Windows PowerShell syntax only, Linux PowerShell 7.6.7; Windows runtime not tested.

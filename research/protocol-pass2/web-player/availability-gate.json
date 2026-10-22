@@ -1,0 +1,153 @@
+{
+  "observed_at": "2026-10-21T07:29:09.676411+00:00",
+  "scope": "four declared series, first/middle/last; availability is not complete decode",
+  "series": [
+    {
+      "series_id": "7690961604636052505",
+      "name": "军需处长的账本",
+      "episodes": 46,
+      "accessible_episode_cnt": 46
+    },
+    {
+      "series_id": "7693806079737613336",
+      "name": "夜晚的答案",
+      "episodes": 31,
+      "accessible_episode_cnt": 5
+    },
+    {
+      "series_id": "7530119479875882009",
+      "name": "十八岁太奶奶驾到，重整家族荣耀第二部",
+      "episodes": 100,
+      "accessible_episode_cnt": 3
+    },
+    {
+      "series_id": "7503745441910017049",
+      "name": "宴律，你的白月光回国了",
+      "episodes": 76,
+      "accessible_episode_cnt": 30
+    }
+  ],
+  "probes": [
+    {
+      "series_id": "7690961604636052505",
+      "item_id": "7690963410778868761",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000datsku7og65tsj5oop8g",
+      "duration": 108.331,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "item_id": "7690963491330477081",
+      "episode": 24,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 206,
+      "public_available": true,
+      "public_range": "bytes 0-63/12217147"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "item_id": "7690963495944211481",
+      "episode": 46,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7693806079737613336",
+      "item_id": "7693807842205125657",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000db2uatvog65sqpjusl1g",
+      "duration": 455.274,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7693806079737613336",
+      "item_id": "7693807829781580825",
+      "episode": 16,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000db2uatfog65homecgp7g",
+      "duration": 376.535,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7693806079737613336",
+      "item_id": "7693807856054717465",
+      "episode": 31,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000db2uauvog65k72ekg5bg",
+      "duration": 268.54,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7530119479875882009",
+      "item_id": "7530164910215416894",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000d21f5dfog65kvl24r9eg",
+      "duration": 125.183,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7530119479875882009",
+      "item_id": "7530164977915677758",
+      "episode": 51,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7530119479875882009",
+      "item_id": "7530165044600917054",
+      "episode": 100,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7503745441910017049",
+      "item_id": "7503780574541122622",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000d0hc10vog65pavtiedhg",
+      "duration": 211.834,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7503745441910017049",
+      "item_id": "7503784183248981054",
+      "episode": 39,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000d0skuu7og65o4kcckp0g",
+      "duration": 110.9,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7503745441910017049",
+      "item_id": "7503780672947899454",
+      "episode": 76,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    }
+  ]
+}

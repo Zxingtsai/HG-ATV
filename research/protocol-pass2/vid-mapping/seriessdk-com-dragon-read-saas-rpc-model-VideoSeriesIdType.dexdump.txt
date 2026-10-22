@@ -1,0 +1,220 @@
+  Class descriptor  : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+  Access flags      : 0x4011 (PUBLIC FINAL ENUM)
+  Superclass        : 'Ljava/lang/Enum;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : '$VALUES'
+      type          : '[Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x101a (PRIVATE STATIC FINAL SYNTHETIC)
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'PostId'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #2              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'SeriesId'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #3              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'VideoId'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+  Instance fields   -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'value'
+      type          : 'I'
+      access        : 0x0012 (PRIVATE FINAL)
+  Direct methods    -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 7
+      ins           : 0
+      outs          : 4
+      insns size    : 48 16-bit code units
+85d804:                                        |[85d804] seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType.<clinit>:()V
+85d814: 1400 aae2 0a00                         |0000: const v0, #float 9.99667e-40 // #000ae2aa
+85d81a: 7110 900a 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@0a90
+85d820: 2200 4348                              |0006: new-instance v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@4843
+85d824: 1a01 2a89                              |0008: const-string v1, "VideoId" // string@892a
+85d828: 1202                                   |000a: const/4 v2, #int 0 // #0
+85d82a: 7040 88e7 1022                         |000b: invoke-direct {v0, v1, v2, v2}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788
+85d830: 6900 6da8                              |000e: sput-object v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.VideoId:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a86d
+85d834: 2201 4348                              |0010: new-instance v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@4843
+85d838: 1a03 387f                              |0012: const-string v3, "SeriesId" // string@7f38
+85d83c: 1214                                   |0014: const/4 v4, #int 1 // #1
+85d83e: 7040 88e7 3144                         |0015: invoke-direct {v1, v3, v4, v4}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788
+85d844: 6901 6ca8                              |0018: sput-object v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.SeriesId:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a86c
+85d848: 2203 4348                              |001a: new-instance v3, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@4843
+85d84c: 1a05 837a                              |001c: const-string v5, "PostId" // string@7a83
+85d850: 1226                                   |001e: const/4 v6, #int 2 // #2
+85d852: 7040 88e7 5366                         |001f: invoke-direct {v3, v5, v6, v6}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.<init>:(Ljava/lang/String;II)V // method@e788
+85d858: 6903 6ba8                              |0022: sput-object v3, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.PostId:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a86b
+85d85c: 1235                                   |0024: const/4 v5, #int 3 // #3
+85d85e: 2355 fa52                              |0025: new-array v5, v5, [Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@52fa
+85d862: 4d00 0502                              |0027: aput-object v0, v5, v2
+85d866: 4d01 0504                              |0029: aput-object v1, v5, v4
+85d86a: 4d03 0506                              |002b: aput-object v3, v5, v6
+85d86e: 6905 6aa8                              |002d: sput-object v5, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.$VALUES:[Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a86a
+85d872: 0e00                                   |002f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+        0x0029 line=262185
+        0x002a line=262186
+        0x002b line=262187
+        0x002c line=262188
+        0x002d line=262189
+        0x002e line=262190
+        0x002f line=262191
+      locals        :
+
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;II)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 3
+      insns size    : 6 16-bit code units
+85d874:                                        |[85d874] seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType.<init>:(Ljava/lang/String;II)V
+85d884: 7030 2373 1002                         |0000: invoke-direct {v0, v1, v2}, Ljava/lang/Enum;.<init>:(Ljava/lang/String;I)V // method@7323
+85d88a: 5903 6ea8                              |0003: iput v3, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.value:I // field@a86e
+85d88e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50397184
+        0x0001 line=50397185
+        0x0002 line=50397186
+        0x0003 line=50397187
+        0x0004 line=50397188
+        0x0005 line=50397189
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0006 reg=2 (null) I
+        0x0000 - 0x0006 reg=3 (null) I
+
+    #2              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'valueOf'
+      type          : '(Ljava/lang/String;)Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 9 16-bit code units
+85d890:                                        |[85d890] seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType.valueOf:(Ljava/lang/String;)Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;
+85d8a0: 1c00 4348                              |0000: const-class v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@4843
+85d8a4: 7120 2b73 1000                         |0002: invoke-static {v0, v1}, Ljava/lang/Enum;.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum; // method@732b
+85d8aa: 0c01                                   |0005: move-result-object v1
+85d8ac: 1f01 4348                              |0006: check-cast v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@4843
+85d8b0: 1101                                   |0008: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=16908288
+        0x0001 line=16908289
+        0x0002 line=16908290
+        0x0003 line=16908291
+        0x0004 line=16908292
+        0x0005 line=16908293
+        0x0006 line=16908294
+        0x0007 line=16908295
+        0x0008 line=16908296
+      locals        :
+        0x0000 - 0x0009 reg=1 (null) Ljava/lang/String;
+
+    #3              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'values'
+      type          : '()[Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 9 16-bit code units
+85d8b4:                                        |[85d8b4] seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType.values:()[Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;
+85d8c4: 6200 6aa8                              |0000: sget-object v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.$VALUES:[Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a86a
+85d8c8: 6e10 f6ff 0000                         |0002: invoke-virtual {v0}, [Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.clone:()Ljava/lang/Object; // method@fff6
+85d8ce: 0c00                                   |0005: move-result-object v0
+85d8d0: 1f00 fa52                              |0006: check-cast v0, [Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // type@52fa
+85d8d4: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+      locals        :
+
+  Virtual methods   -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;)
+      name          : 'getValue'
+      type          : '()I'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+85d8d8:                                        |[85d8d8] seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType.getValue:()I
+85d8e8: 5210 6ea8                              |0000: iget v0, v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.value:I // field@a86e
+85d8ec: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;
+
+  source_file_idx   : 32745 (SourceFile)
+

@@ -1,0 +1,98 @@
+  Class descriptor  : 'Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/io/Serializable;'
+  Static fields     -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'fieldTypeClassRef'
+      type          : 'Ljava/lang/Class;'
+      access        : 0x000a (PRIVATE STATIC)
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'serialVersionUID'
+      type          : 'J'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'lockData'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeLockData;'
+      access        : 0x0001 (PUBLIC)
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'logPb'
+      type          : 'Ljava/util/Map;'
+      access        : 0x0001 (PUBLIC)
+    #2              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'previewMaterialList'
+      type          : 'Ljava/util/List;'
+      access        : 0x0001 (PUBLIC)
+    #3              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'style'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailStyle;'
+      access        : 0x0001 (PUBLIC)
+    #4              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'videoData'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;'
+      access        : 0x0001 (PUBLIC)
+    #5              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'videoPostData'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoPostData;'
+      access        : 0x0001 (PUBLIC)
+    #6              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : 'videoRelateBook'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoRelateBook;'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 11 16-bit code units
+852404:                                        |[852404] seriessdk.com.dragon.read.saas.rpc.model.SaaSVideoDetailData.<clinit>:()V
+852414: 1400 21e2 0a00                         |0000: const v0, #float 9.99475e-40 // #000ae221
+85241a: 7110 900a 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@0a90
+852420: 1c00 9505                              |0006: const-class v0, Lcom/bytedance/rpc/serialize/FieldType; // type@0595
+852424: 6900 44a1                              |0008: sput-object v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.fieldTypeClassRef:Ljava/lang/Class; // field@a144
+852428: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+      locals        :
+
+    #1              : (in Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+85242c:                                        |[85242c] seriessdk.com.dragon.read.saas.rpc.model.SaaSVideoDetailData.<init>:()V
+85243c: 7010 b673 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@73b6
+852442: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;
+
+  Virtual methods   -
+  source_file_idx   : 32745 (SourceFile)
+

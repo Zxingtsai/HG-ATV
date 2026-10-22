@@ -1,0 +1,398 @@
+[
+  {
+    "dex": "classes.dex",
+    "sha256": "5c4440ecc49358cad357be829eb9e3ead69383beaa71144f07bc1551b45c7ddb",
+    "references": [
+      {
+        "field_index": 33915,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 33974,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "trialDuration",
+        "type": "J"
+      },
+      {
+        "field_index": 33976,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 33977,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "useVideoModel",
+        "type": "Z"
+      },
+      {
+        "field_index": 33981,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 33988,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes10.dex",
+    "sha256": "9d8f8ca30cc1f43315700e9ceeab8ca4429591316b9b24413cf3f1d28d1750ac",
+    "references": [
+      {
+        "field_index": 9104,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 9164,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "trialDuration",
+        "type": "J"
+      },
+      {
+        "field_index": 9166,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 9167,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "useVideoModel",
+        "type": "Z"
+      },
+      {
+        "field_index": 9171,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 9178,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "references": [
+      {
+        "field_index": 4099,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 4124,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "trialDuration",
+        "type": "J"
+      },
+      {
+        "field_index": 4126,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "useVideoModel",
+        "type": "Z"
+      },
+      {
+        "field_index": 4130,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes15.dex",
+    "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+    "references": [
+      {
+        "field_index": 17075,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375",
+    "references": [
+      {
+        "field_index": 27934,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 27937,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 27942,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes17.dex",
+    "sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+    "references": [
+      {
+        "field_index": 34913,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 34917,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes2.dex",
+    "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3",
+    "references": [
+      {
+        "field_index": 25398,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes3.dex",
+    "sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+    "references": [
+      {
+        "field_index": 34666,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes4.dex",
+    "sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+    "references": [
+      {
+        "field_index": 23373,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 23464,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+        "field": "videoId",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes5.dex",
+    "sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+    "references": [
+      {
+        "field_index": 37893,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 37924,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "trialDuration",
+        "type": "J"
+      },
+      {
+        "field_index": 37929,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 37936,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508",
+    "references": [
+      {
+        "field_index": 41556,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 41585,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 41589,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 41595,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+    "references": [
+      {
+        "field_index": 46872,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 46916,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 46919,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 46926,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 46936,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+        "field": "videoId",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf",
+    "references": [
+      {
+        "field_index": 18364,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+    "references": [
+      {
+        "field_index": 13966,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "isPreviewMaterial",
+        "type": "Z"
+      },
+      {
+        "field_index": 14027,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "trialDuration",
+        "type": "J"
+      },
+      {
+        "field_index": 14029,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "url",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14030,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "useVideoModel",
+        "type": "Z"
+      },
+      {
+        "field_index": 14034,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "vid",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14041,
+        "class": "Lcom/dragon/read/rpc/model/VideoData;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14459,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+        "field": "videoId",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14460,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+        "field": "videoModel",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14463,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+        "field": "videoUrl",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14470,
+        "class": "Lcom/dragon/read/rpc/model/VideoInfoData;",
+        "field": "mainUrl",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14603,
+        "class": "Lcom/dragon/read/rpc/model/VideoPlayInfo;",
+        "field": "mainURL",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "field_index": 14607,
+        "class": "Lcom/dragon/read/rpc/model/VideoPlayInfo;",
+        "field": "videoID",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  }
+]

@@ -1,0 +1,637 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_a9a0be153e855bba57eb6acb9d9da7196e017caa3a3bf8d990d696cd33679613\",\"subject\":{\"name\":\"analysis-feed-slice.apk\",\"digest\":{\"sha256\":\"7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d\"},\"local_path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"class_name\":\"ov5.s\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"class_count\":13023,\"resource_count\":4,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":2147483648,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"ov5.s\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"A(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"A\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\\\"},{\\\"signature\\\":\\\"B(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"B\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"C(com.dragon.read.rpc.model.VideoData): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"C\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"D(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"D\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"E(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"E\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Z\\\"},{\\\"signature\\\":\\\"F(java.lang.String, com.dragon.read.rpc.model.VideoTagInfo): com.dragon.read.rpc.model.VideoTagInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"F\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;)Lcom/dragon/read/rpc/model/VideoTagInfo;\\\"},{\\\"signature\\\":\\\"G(java.lang.String): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"G\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"H(java.lang.Object): java.util.List\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"H\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"I(java.lang.Object): java.lang.Boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"I\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;)Ljava/lang/Boolean;\\\"},{\\\"signature\\\":\\\"J(com.dragon.read.rpc.model.CellViewData): java.util.List\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"J\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"K(java.lang.Object): java.lang.Long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"K\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;)Ljava/lang/Long;\\\"},{\\\"signature\\\":\\\"L(java.lang.Integer, java.lang.Integer): float\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"L\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Integer;Ljava/lang/Integer;)F\\\"},{\\\"signature\\\":\\\"M(com.dragon.read.rpc.model.CellViewData, int, java.lang.String, long, java.lang.String): pv5.c\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"M\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;\\\"},{\\\"signature\\\":\\\"N(java.lang.Object): pv5.h\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"N\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;)Lpv5/h;\\\"},{\\\"signature\\\":\\\"O(java.lang.Boolean, java.lang.Integer, java.lang.Integer): float\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"O\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;)F\\\"},{\\\"signature\\\":\\\"a(com.dragon.read.rpc.model.CellViewData, com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): java.util.Map\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/CellViewData;Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/Map;\\\"},{\\\"signature\\\":\\\"b(com.dragon.read.rpc.model.CellViewData): java.util.Map\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map;\\\"},{\\\"signature\\\":\\\"c(java.lang.String): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"c\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"d(java.util.Map): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Map;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"e(java.util.Map): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Map;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"f(java.util.Map): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Map;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"g(java.util.Map\\\\u003cjava.lang.String, ? extends java.lang.Object\\\\u003e): java.util.List\\\\u003cpv5.j\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"g\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Map;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"h(com.dragon.read.rpc.model.VideoData, java.util.Map\\\\u003cjava.lang.String, ? extends java.lang.Object\\\\u003e): java.util.List\\\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"h\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"i(com.dragon.read.rpc.model.VideoData, java.util.Map\\\\u003cjava.lang.String, ? extends java.lang.Object\\\\u003e): java.util.List\\\\u003cpv5.h\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"i\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"j(java.util.Set, java.lang.Object): java.lang.Boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"j\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/Boolean;\\\"},{\\\"signature\\\":\\\"k(java.lang.Object, java.util.List): java.util.List\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"k\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"l(java.util.Set, java.lang.Object): java.util.List\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"l\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"m(java.util.Set, java.lang.Object): long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"m\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)J\\\"},{\\\"signature\\\":\\\"n(java.lang.Object, java.util.List): java.util.Map\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"n\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/Map;\\\"},{\\\"signature\\\":\\\"o(java.util.Set, java.lang.Object): java.util.Map\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"o\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Map;\\\"},{\\\"signature\\\":\\\"p(java.lang.Object, java.util.List): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"p\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"q(java.lang.Object, java.util.List): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"q\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"r(java.util.Set, java.lang.Object): java.util.List\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"r\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\\\"},{\\\"signature\\\":\\\"s(java.util.Set, java.lang.Object): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"s\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"t(pv5.m): pv5.m\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"t\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lpv5/m;)Lpv5/m;\\\"},{\\\"signature\\\":\\\"u(java.lang.String, java.lang.String, java.util.Map): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"u\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V\\\"},{\\\"signature\\\":\\\"v(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"v\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Ljava/lang/String;\\\"},{\\\"signature\\\":\\\"w(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map\\\\u003cjava.lang.String, ? extends java.lang.Object\\\\u003e, boolean, boolean, boolean): float\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"w\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;ZZZ)F\\\"},{\\\"signature\\\":\\\"x(com.dragon.read.rpc.model.VideoData, com.dragon.read.rpc.model.CellViewStyle, java.util.Map): com.dragon.read.rpc.model.VideoTagInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"x\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/CellViewStyle;Ljava/util/Map;)Lcom/dragon/read/rpc/model/VideoTagInfo;\\\"},{\\\"signature\\\":\\\"y(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"y\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\\\"},{\\\"signature\\\":\\\"z(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"z\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Z\\\"}],\\\"method_count\\\":43,\\\"inner_class_count\\\":2,\\\"inner_classes\\\":[\\\"ov5.s.a\\\",\\\"ov5.s.b\\\"],\\\"name\\\":\\\"s\\\",\\\"full_name\\\":\\\"ov5.s\\\",\\\"field_count\\\":54,\\\"fields\\\":[{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"A\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"B\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"C\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"D\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"E\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"F\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"G\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"H\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"I\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"J\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"K\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"L\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"M\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"N\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"O\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"P\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"Q\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"R\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"S\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"T\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"U\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"V\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"W\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"X\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"Y\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"Z\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a0\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b0\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"c\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"g\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"h\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"i\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"j\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"k\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"l\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"m\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"n\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"o\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"p\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"q\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"r\\\"},{\\\"type\\\":\\\"java.util.List\\\\u003cjava.util.List\\\\u003cjava.lang.String\\\\u003e\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"s\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"t\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"u\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"v\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"w\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"x\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"y\\\"},{\\\"type\\\":\\\"java.util.Set\\\\u003cjava.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"z\\\"}]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":2048},\"class_name\":\"ov5.s\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"name\":\"A\",\"reported_signature\":\"A(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\"},{\"name\":\"B\",\"reported_signature\":\"B(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\"},{\"name\":\"C\",\"reported_signature\":\"C(com.dragon.read.rpc.model.VideoData): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String;\"},{\"name\":\"D\",\"reported_signature\":\"D(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\"},{\"name\":\"E\",\"reported_signature\":\"E(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Z\"},{\"name\":\"F\",\"reported_signature\":\"F(java.lang.String, com.dragon.read.rpc.model.VideoTagInfo): com.dragon.read.rpc.model.VideoTagInfo\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;)Lcom/dragon/read/rpc/model/VideoTagInfo;\"},{\"name\":\"G\",\"reported_signature\":\"G(java.lang.String): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"name\":\"H\",\"reported_signature\":\"H(java.lang.Object): java.util.List\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/util/List;\"},{\"name\":\"I\",\"reported_signature\":\"I(java.lang.Object): java.lang.Boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Boolean;\"},{\"name\":\"J\",\"reported_signature\":\"J(com.dragon.read.rpc.model.CellViewData): java.util.List\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/List;\"},{\"name\":\"K\",\"reported_signature\":\"K(java.lang.Object): java.lang.Long\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Long;\"},{\"name\":\"L\",\"reported_signature\":\"L(java.lang.Integer, java.lang.Integer): float\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Integer;Ljava/lang/Integer;)F\"},{\"name\":\"M\",\"reported_signature\":\"M(com.dragon.read.rpc.model.CellViewData, int, java.lang.String, long, java.lang.String): pv5.c\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;\"},{\"name\":\"N\",\"reported_signature\":\"N(java.lang.Object): pv5.h\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Lpv5/h;\"},{\"name\":\"O\",\"reported_signature\":\"O(java.lang.Boolean, java.lang.Integer, java.lang.Integer): float\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;)F\"},{\"name\":\"a\",\"reported_signature\":\"a(com.dragon.read.rpc.model.CellViewData, com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): java.util.Map\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/Map;\"},{\"name\":\"b\",\"reported_signature\":\"b(com.dragon.read.rpc.model.CellViewData): java.util.Map\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map;\"},{\"name\":\"c\",\"reported_signature\":\"c(java.lang.String): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"name\":\"d\",\"reported_signature\":\"d(java.util.Map): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"name\":\"e\",\"reported_signature\":\"e(java.util.Map): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"name\":\"f\",\"reported_signature\":\"f(java.util.Map): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"name\":\"g\",\"reported_signature\":\"g(java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<pv5.j>\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/util/List;\"},{\"name\":\"h\",\"reported_signature\":\"h(com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<com.dragon.read.rpc.model.SecondaryInfo>\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\"},{\"name\":\"i\",\"reported_signature\":\"i(com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<pv5.h>\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\"},{\"name\":\"j\",\"reported_signature\":\"j(java.util.Set, java.lang.Object): java.lang.Boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/Boolean;\"},{\"name\":\"k\",\"reported_signature\":\"k(java.lang.Object, java.util.List): java.util.List\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;\"},{\"name\":\"l\",\"reported_signature\":\"l(java.util.Set, java.lang.Object): java.util.List\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\"},{\"name\":\"m\",\"reported_signature\":\"m(java.util.Set, java.lang.Object): long\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)J\"},{\"name\":\"n\",\"reported_signature\":\"n(java.lang.Object, java.util.List): java.util.Map\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/Map;\"},{\"name\":\"o\",\"reported_signature\":\"o(java.util.Set, java.lang.Object): java.util.Map\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Map;\"},{\"name\":\"p\",\"reported_signature\":\"p(java.lang.Object, java.util.List): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\"},{\"name\":\"q\",\"reported_signature\":\"q(java.lang.Object, java.util.List): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\"},{\"name\":\"r\",\"reported_signature\":\"r(java.util.Set, java.lang.Object): java.util.List\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\"},{\"name\":\"s\",\"reported_signature\":\"s(java.util.Set, java.lang.Object): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String;\"},{\"name\":\"t\",\"reported_signature\":\"t(pv5.m): pv5.m\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lpv5/m;)Lpv5/m;\"},{\"name\":\"u\",\"reported_signature\":\"u(java.lang.String, java.lang.String, java.util.Map): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V\"},{\"name\":\"v\",\"reported_signature\":\"v(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Ljava/lang/String;\"},{\"name\":\"w\",\"reported_signature\":\"w(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>, boolean, boolean, boolean): float\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;ZZZ)F\"},{\"name\":\"x\",\"reported_signature\":\"x(com.dragon.read.rpc.model.VideoData, com.dragon.read.rpc.model.CellViewStyle, java.util.Map): com.dragon.read.rpc.model.VideoTagInfo\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/CellViewStyle;Ljava/util/Map;)Lcom/dragon/read/rpc/model/VideoTagInfo;\"},{\"name\":\"y\",\"reported_signature\":\"y(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\"},{\"name\":\"z\",\"reported_signature\":\"z(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Z\"}],\"fields\":[{\"name\":\"A\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"B\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"C\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"D\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"E\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"F\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"G\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"H\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"I\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"J\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"K\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"L\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"M\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"N\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"O\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"P\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"Q\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"R\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"S\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"T\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"U\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"V\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"W\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"X\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"Y\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"Z\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"a\",\"reported_type\":\"java.util.List<java.lang.String>\"},{\"name\":\"a0\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"b\",\"reported_type\":\"java.util.List<java.lang.String>\"},{\"name\":\"b0\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"c\",\"reported_type\":\"java.util.List<java.lang.String>\"},{\"name\":\"d\",\"reported_type\":\"java.util.List<java.lang.String>\"},{\"name\":\"e\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"f\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"g\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"h\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"i\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"j\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"k\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"l\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"m\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"n\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"o\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"p\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"q\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"r\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"s\",\"reported_type\":\"java.util.List<java.util.List<java.lang.String>>\"},{\"name\":\"t\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"u\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"v\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"w\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"x\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"y\",\"reported_type\":\"java.util.Set<java.lang.String>\"},{\"name\":\"z\",\"reported_type\":\"java.util.Set<java.lang.String>\"}],\"inner_classes\":[\"ov5.s.a\",\"ov5.s.b\"]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_a9a0be153e855bba57eb6acb9d9da7196e017caa3a3bf8d990d696cd33679613",
+      "subject": {
+        "name": "analysis-feed-slice.apk",
+        "digest": {
+          "sha256": "7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d"
+        },
+        "local_path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "class_name": "ov5.s"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-e8g3B0/target.apk",
+          "class_count": 13023,
+          "resource_count": 4,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.12.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "ov5.s"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"A(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\",\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\"},{\"signature\":\"B(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\"},{\"signature\":\"C(com.dragon.read.rpc.model.VideoData): java.lang.String\",\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String;\"},{\"signature\":\"D(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;\"},{\"signature\":\"E(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): boolean\",\"def_pos\":0,\"name\":\"E\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Z\"},{\"signature\":\"F(java.lang.String, com.dragon.read.rpc.model.VideoTagInfo): com.dragon.read.rpc.model.VideoTagInfo\",\"def_pos\":0,\"name\":\"F\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;)Lcom/dragon/read/rpc/model/VideoTagInfo;\"},{\"signature\":\"G(java.lang.String): java.lang.String\",\"def_pos\":0,\"name\":\"G\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"signature\":\"H(java.lang.Object): java.util.List\",\"def_pos\":0,\"name\":\"H\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/util/List;\"},{\"signature\":\"I(java.lang.Object): java.lang.Boolean\",\"def_pos\":0,\"name\":\"I\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Boolean;\"},{\"signature\":\"J(com.dragon.read.rpc.model.CellViewData): java.util.List\",\"def_pos\":0,\"name\":\"J\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/List;\"},{\"signature\":\"K(java.lang.Object): java.lang.Long\",\"def_pos\":0,\"name\":\"K\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Long;\"},{\"signature\":\"L(java.lang.Integer, java.lang.Integer): float\",\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Integer;Ljava/lang/Integer;)F\"},{\"signature\":\"M(com.dragon.read.rpc.model.CellViewData, int, java.lang.String, long, java.lang.String): pv5.c\",\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;\"},{\"signature\":\"N(java.lang.Object): pv5.h\",\"def_pos\":0,\"name\":\"N\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Lpv5/h;\"},{\"signature\":\"O(java.lang.Boolean, java.lang.Integer, java.lang.Integer): float\",\"def_pos\":0,\"name\":\"O\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;)F\"},{\"signature\":\"a(com.dragon.read.rpc.model.CellViewData, com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): java.util.Map\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/Map;\"},{\"signature\":\"b(com.dragon.read.rpc.model.CellViewData): java.util.Map\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map;\"},{\"signature\":\"c(java.lang.String): java.lang.String\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"signature\":\"d(java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"signature\":\"e(java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"signature\":\"f(java.util.Map): java.lang.String\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/lang/String;\"},{\"signature\":\"g(java.util.Map\\u003cjava.lang.String, ? extends java.lang.Object\\u003e): java.util.List\\u003cpv5.j\\u003e\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Map;)Ljava/util/List;\"},{\"signature\":\"h(com.dragon.read.rpc.model.VideoData, java.util.Map\\u003cjava.lang.String, ? extends java.lang.Object\\u003e): java.util.List\\u003ccom.dragon.read.rpc.model.SecondaryInfo\\u003e\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\"},{\"signature\":\"i(com.dragon.read.rpc.model.VideoData, java.util.Map\\u003cjava.lang.String, ? extends java.lang.Object\\u003e): java.util.List\\u003cpv5.h\\u003e\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;\"},{\"signature\":\"j(java.util.Set, java.lang.Object): java.lang.Boolean\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/Boolean;\"},{\"signature\":\"k(java.lang.Object, java.util.List): java.util.List\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;\"},{\"signature\":\"l(java.util.Set, java.lang.Object): java.util.List\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\"},{\"signature\":\"m(java.util.Set, java.lang.Object): long\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)J\"},{\"signature\":\"n(java.lang.Object, java.util.List): java.util.Map\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/util/Map;\"},{\"signature\":\"o(java.util.Set, java.lang.Object): java.util.Map\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Map;\"},{\"signature\":\"p(java.lang.Object, java.util.List): java.lang.String\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\"},{\"signature\":\"q(java.lang.Object, java.util.List): java.lang.String\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;\"},{\"signature\":\"r(java.util.Set, java.lang.Object): java.util.List\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;\"},{\"signature\":\"s(java.util.Set, java.lang.Object): java.lang.String\",\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String;\"},{\"signature\":\"t(pv5.m): pv5.m\",\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"dex_descriptor\":\"(Lpv5/m;)Lpv5/m;\"},{\"signature\":\"u(java.lang.String, java.lang.String, java.util.Map): void\",\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V\"},{\"signature\":\"v(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): java.lang.String\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Ljava/lang/String;\"},{\"signature\":\"w(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map\\u003cjava.lang.String, ? extends java.lang.Object\\u003e, boolean, boolean, boolean): float\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;ZZZ)F\"},{\"signature\":\"x(com.dragon.read.rpc.model.VideoData, com.dragon.read.rpc.model.CellViewStyle, java.util.Map): com.dragon.read.rpc.model.VideoTagInfo\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/CellViewStyle;Ljava/util/Map;)Lcom/dragon/read/rpc/model/VideoTagInfo;\"},{\"signature\":\"y(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J\"},{\"signature\":\"z(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): boolean\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"dex_descriptor\":\"(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Z\"}],\"method_count\":43,\"inner_class_count\":2,\"inner_classes\":[\"ov5.s.a\",\"ov5.s.b\"],\"name\":\"s\",\"full_name\":\"ov5.s\",\"field_count\":54,\"fields\":[{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"A\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"B\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"C\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"D\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"E\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"F\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"G\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"H\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"I\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"J\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"K\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"L\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"M\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"N\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"O\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"P\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"Q\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"R\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"S\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"T\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"U\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"V\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"W\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"X\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"Y\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"Z\"},{\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"a\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"a0\"},{\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"b\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"b0\"},{\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"c\"},{\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"d\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"e\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"f\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"g\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"h\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"k\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"l\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"m\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"n\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"o\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"p\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"q\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"r\"},{\"type\":\"java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\",\"def_pos\":0,\"name\":\"s\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"t\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"u\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"v\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"w\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"x\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"y\"},{\"type\":\"java.util.Set\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"z\"}]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 2048
+        },
+        "class_name": "ov5.s",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "A",
+            "reported_signature": "A(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J"
+          },
+          {
+            "name": "B",
+            "reported_signature": "B(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;"
+          },
+          {
+            "name": "C",
+            "reported_signature": "C(com.dragon.read.rpc.model.VideoData): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String;"
+          },
+          {
+            "name": "D",
+            "reported_signature": "D(com.dragon.read.rpc.model.VideoData, java.util.Map): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String;"
+          },
+          {
+            "name": "E",
+            "reported_signature": "E(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Z"
+          },
+          {
+            "name": "F",
+            "reported_signature": "F(java.lang.String, com.dragon.read.rpc.model.VideoTagInfo): com.dragon.read.rpc.model.VideoTagInfo",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;)Lcom/dragon/read/rpc/model/VideoTagInfo;"
+          },
+          {
+            "name": "G",
+            "reported_signature": "G(java.lang.String): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "name": "H",
+            "reported_signature": "H(java.lang.Object): java.util.List",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;)Ljava/util/List;"
+          },
+          {
+            "name": "I",
+            "reported_signature": "I(java.lang.Object): java.lang.Boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Boolean;"
+          },
+          {
+            "name": "J",
+            "reported_signature": "J(com.dragon.read.rpc.model.CellViewData): java.util.List",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/List;"
+          },
+          {
+            "name": "K",
+            "reported_signature": "K(java.lang.Object): java.lang.Long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Long;"
+          },
+          {
+            "name": "L",
+            "reported_signature": "L(java.lang.Integer, java.lang.Integer): float",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Integer;Ljava/lang/Integer;)F"
+          },
+          {
+            "name": "M",
+            "reported_signature": "M(com.dragon.read.rpc.model.CellViewData, int, java.lang.String, long, java.lang.String): pv5.c",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;"
+          },
+          {
+            "name": "N",
+            "reported_signature": "N(java.lang.Object): pv5.h",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;)Lpv5/h;"
+          },
+          {
+            "name": "O",
+            "reported_signature": "O(java.lang.Boolean, java.lang.Integer, java.lang.Integer): float",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;)F"
+          },
+          {
+            "name": "a",
+            "reported_signature": "a(com.dragon.read.rpc.model.CellViewData, com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): java.util.Map",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/Map;"
+          },
+          {
+            "name": "b",
+            "reported_signature": "b(com.dragon.read.rpc.model.CellViewData): java.util.Map",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map;"
+          },
+          {
+            "name": "c",
+            "reported_signature": "c(java.lang.String): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+          },
+          {
+            "name": "d",
+            "reported_signature": "d(java.util.Map): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Map;)Ljava/lang/String;"
+          },
+          {
+            "name": "e",
+            "reported_signature": "e(java.util.Map): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Map;)Ljava/lang/String;"
+          },
+          {
+            "name": "f",
+            "reported_signature": "f(java.util.Map): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Map;)Ljava/lang/String;"
+          },
+          {
+            "name": "g",
+            "reported_signature": "g(java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<pv5.j>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Map;)Ljava/util/List;"
+          },
+          {
+            "name": "h",
+            "reported_signature": "h(com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<com.dragon.read.rpc.model.SecondaryInfo>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;"
+          },
+          {
+            "name": "i",
+            "reported_signature": "i(com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>): java.util.List<pv5.h>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List;"
+          },
+          {
+            "name": "j",
+            "reported_signature": "j(java.util.Set, java.lang.Object): java.lang.Boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/Boolean;"
+          },
+          {
+            "name": "k",
+            "reported_signature": "k(java.lang.Object, java.util.List): java.util.List",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;"
+          },
+          {
+            "name": "l",
+            "reported_signature": "l(java.util.Set, java.lang.Object): java.util.List",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;"
+          },
+          {
+            "name": "m",
+            "reported_signature": "m(java.util.Set, java.lang.Object): long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)J"
+          },
+          {
+            "name": "n",
+            "reported_signature": "n(java.lang.Object, java.util.List): java.util.Map",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;Ljava/util/List;)Ljava/util/Map;"
+          },
+          {
+            "name": "o",
+            "reported_signature": "o(java.util.Set, java.lang.Object): java.util.Map",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Map;"
+          },
+          {
+            "name": "p",
+            "reported_signature": "p(java.lang.Object, java.util.List): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;"
+          },
+          {
+            "name": "q",
+            "reported_signature": "q(java.lang.Object, java.util.List): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String;"
+          },
+          {
+            "name": "r",
+            "reported_signature": "r(java.util.Set, java.lang.Object): java.util.List",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/List;"
+          },
+          {
+            "name": "s",
+            "reported_signature": "s(java.util.Set, java.lang.Object): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String;"
+          },
+          {
+            "name": "t",
+            "reported_signature": "t(pv5.m): pv5.m",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lpv5/m;)Lpv5/m;"
+          },
+          {
+            "name": "u",
+            "reported_signature": "u(java.lang.String, java.lang.String, java.util.Map): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V"
+          },
+          {
+            "name": "v",
+            "reported_signature": "v(com.dragon.read.rpc.model.VideoData, java.util.Map, boolean): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Ljava/lang/String;"
+          },
+          {
+            "name": "w",
+            "reported_signature": "w(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map<java.lang.String, ? extends java.lang.Object>, boolean, boolean, boolean): float",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;ZZZ)F"
+          },
+          {
+            "name": "x",
+            "reported_signature": "x(com.dragon.read.rpc.model.VideoData, com.dragon.read.rpc.model.CellViewStyle, java.util.Map): com.dragon.read.rpc.model.VideoTagInfo",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/CellViewStyle;Ljava/util/Map;)Lcom/dragon/read/rpc/model/VideoTagInfo;"
+          },
+          {
+            "name": "y",
+            "reported_signature": "y(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J"
+          },
+          {
+            "name": "z",
+            "reported_signature": "z(com.dragon.read.rpc.model.UgcPostData, com.dragon.read.rpc.model.VideoData, java.util.Map): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Z"
+          }
+        ],
+        "fields": [
+          {
+            "name": "A",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "B",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "C",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "D",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "E",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "F",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "G",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "H",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "I",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "J",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "K",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "L",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "M",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "N",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "O",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "P",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "Q",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "R",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "S",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "T",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "U",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "V",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "W",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "X",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "Y",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "Z",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "a",
+            "reported_type": "java.util.List<java.lang.String>"
+          },
+          {
+            "name": "a0",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "b",
+            "reported_type": "java.util.List<java.lang.String>"
+          },
+          {
+            "name": "b0",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "c",
+            "reported_type": "java.util.List<java.lang.String>"
+          },
+          {
+            "name": "d",
+            "reported_type": "java.util.List<java.lang.String>"
+          },
+          {
+            "name": "e",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "f",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "g",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "h",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "i",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "j",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "k",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "l",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "m",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "n",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "o",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "p",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "q",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "r",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "s",
+            "reported_type": "java.util.List<java.util.List<java.lang.String>>"
+          },
+          {
+            "name": "t",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "u",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "v",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "w",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "x",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "y",
+            "reported_type": "java.util.Set<java.lang.String>"
+          },
+          {
+            "name": "z",
+            "reported_type": "java.util.Set<java.lang.String>"
+          }
+        ],
+        "inner_classes": [
+          "ov5.s.a",
+          "ov5.s.b"
+        ]
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 5
+}

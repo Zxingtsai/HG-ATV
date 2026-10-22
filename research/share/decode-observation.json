@@ -1,0 +1,5 @@
+{
+  "ffprobe_exit": 0,
+  "ffmpeg_decode_exit": 0,
+  "decode_errors": ""
+}

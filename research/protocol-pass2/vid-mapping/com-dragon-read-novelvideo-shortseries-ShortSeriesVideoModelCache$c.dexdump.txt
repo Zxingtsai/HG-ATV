@@ -1,0 +1,172 @@
+  Class descriptor  : 'Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'a'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #1              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'b'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #2              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'c'
+      type          : 'I'
+      access        : 0x0011 (PUBLIC FINAL)
+  Direct methods    -
+    #0              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+5f1974:                                        |[5f1974] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.<clinit>:()V
+5f1984: 1400 8acb 0900                         |0000: const v0, #float 8.99536e-40 // #0009cb8a
+5f198a: 7110 da0c 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@0cda
+5f1990: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;I)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 2
+      insns size    : 13 16-bit code units
+5f1994:                                        |[5f1994] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.<init>:(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;I)V
+5f19a4: 7120 89bb 2100                         |0000: invoke-static {v1, v2}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.n:(Ljava/lang/Object;Ljava/lang/Object;)V // method@bb89
+5f19aa: 7010 2acd 0000                         |0003: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@cd2a
+5f19b0: 5b01 bb36                              |0006: iput-object v1, v0, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:Ljava/lang/String; // field@36bb
+5f19b4: 5b02 bc36                              |0008: iput-object v2, v0, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.b:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@36bc
+5f19b8: 5903 bd36                              |000a: iput v3, v0, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.c:I // field@36bd
+5f19bc: 0e00                                   |000c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50462720
+        0x0001 line=50462721
+        0x0002 line=50462722
+        0x0003 line=50462723
+        0x0004 line=50462724
+        0x0005 line=50462725
+        0x0006 line=50462726
+        0x0007 line=50462727
+        0x0008 line=50462728
+        0x0009 line=50462729
+        0x000a line=50462730
+        0x000b line=50462731
+        0x000c line=50462732
+      locals        :
+        0x0000 - 0x000d reg=0 this Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;
+        0x0000 - 0x000d reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x000d reg=2 (null) Lcom/dragon/read/rpc/model/VideoPlatformType;
+        0x0000 - 0x000d reg=3 (null) I
+
+  Virtual methods   -
+    #0              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'a'
+      type          : '()[Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 23 16-bit code units
+5f19c0:                                        |[5f19c0] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.a:()[Ljava/lang/Object;
+5f19d0: 1230                                   |0000: const/4 v0, #int 3 // #3
+5f19d2: 2300 554a                              |0001: new-array v0, v0, [Ljava/lang/Object; // type@4a55
+5f19d6: 1201                                   |0003: const/4 v1, #int 0 // #0
+5f19d8: 5432 bb36                              |0004: iget-object v2, v3, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:Ljava/lang/String; // field@36bb
+5f19dc: 4d02 0001                              |0006: aput-object v2, v0, v1
+5f19e0: 1211                                   |0008: const/4 v1, #int 1 // #1
+5f19e2: 5432 bc36                              |0009: iget-object v2, v3, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.b:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@36bc
+5f19e6: 4d02 0001                              |000b: aput-object v2, v0, v1
+5f19ea: 5231 bd36                              |000d: iget v1, v3, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.c:I // field@36bd
+5f19ee: 7110 09cd 0100                         |000f: invoke-static {v1}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@cd09
+5f19f4: 0c01                                   |0012: move-result-object v1
+5f19f6: 1222                                   |0013: const/4 v2, #int 2 // #2
+5f19f8: 4d01 0002                              |0014: aput-object v1, v0, v2
+5f19fc: 1100                                   |0016: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'equals'
+      type          : '(Ljava/lang/Object;)Z'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 25 16-bit code units
+5f1a00:                                        |[5f1a00] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.equals:(Ljava/lang/Object;)Z
+5f1a10: 3321 0400                              |0000: if-ne v1, v2, 0004 // +0004
+5f1a14: 1212                                   |0002: const/4 v2, #int 1 // #1
+5f1a16: 0f02                                   |0003: return v2
+5f1a18: 2020 4614                              |0004: instance-of v0, v2, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c; // type@1446
+5f1a1c: 3900 0400                              |0006: if-nez v0, 000a // +0004
+5f1a20: 1202                                   |0008: const/4 v2, #int 0 // #0
+5f1a22: 0f02                                   |0009: return v2
+5f1a24: 1f02 4614                              |000a: check-cast v2, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c; // type@1446
+5f1a28: 6e10 1737 0200                         |000c: invoke-virtual {v2}, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:()[Ljava/lang/Object; // method@3717
+5f1a2e: 0c02                                   |000f: move-result-object v2
+5f1a30: 6e10 1737 0100                         |0010: invoke-virtual {v1}, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:()[Ljava/lang/Object; // method@3717
+5f1a36: 0c00                                   |0013: move-result-object v0
+5f1a38: 7120 b9d5 0200                         |0014: invoke-static {v2, v0}, Lo88/a;.a:([Ljava/lang/Object;[Ljava/lang/Object;)Z // method@d5b9
+5f1a3e: 0a02                                   |0017: move-result v2
+5f1a40: 0f02                                   |0018: return v2
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #2              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'hashCode'
+      type          : '()I'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 9 16-bit code units
+5f1a44:                                        |[5f1a44] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.hashCode:()I
+5f1a54: 6e10 1737 0100                         |0000: invoke-virtual {v1}, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:()[Ljava/lang/Object; // method@3717
+5f1a5a: 0c00                                   |0003: move-result-object v0
+5f1a5c: 7110 51ce 0000                         |0004: invoke-static {v0}, Ljava/util/Objects;.hash:([Ljava/lang/Object;)I // method@ce51
+5f1a62: 0a00                                   |0007: move-result v0
+5f1a64: 0f00                                   |0008: return v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #3              : (in Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;)
+      name          : 'toString'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 11 16-bit code units
+5f1a68:                                        |[5f1a68] com.dragon.read.novelvideo.shortseries.ShortSeriesVideoModelCache$c.toString:()Ljava/lang/String;
+5f1a78: 6e10 1737 0200                         |0000: invoke-virtual {v2}, Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$c;.a:()[Ljava/lang/Object; // method@3717
+5f1a7e: 0c00                                   |0003: move-result-object v0
+5f1a80: 1a01 3b7f                              |0004: const-string v1, "ShortSeriesVideoModelCache$LoadVideoModelParams:%s,%s,%s" // string@7f3b
+5f1a84: 7120 bad5 0100                         |0006: invoke-static {v1, v0}, Lo88/a;.b:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; // method@d5ba
+5f1a8a: 0c00                                   |0009: move-result-object v0
+5f1a8c: 1100                                   |000a: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+  source_file_idx   : 32921 (SourceFile)
+

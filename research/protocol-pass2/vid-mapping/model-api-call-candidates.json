@@ -1,0 +1,85 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "targets": [
+    [
+      "Lc95/s0;",
+      "g"
+    ],
+    [
+      "Lkl8/a$a;",
+      "getVideoModelRxJava"
+    ],
+    [
+      "Lvs4/a;",
+      "g"
+    ]
+  ],
+  "limitations": "Raw code-unit pattern scan; candidates only until SDK dexdump confirms instruction boundaries.",
+  "candidates": [
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lap4/d;",
+      "caller_method": "apply",
+      "caller_method_id": 2483,
+      "code_unit_candidate": 147,
+      "target_method_id": 62279,
+      "target": [
+        "Lvs4/a;",
+        "g"
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Ldt4/b;",
+      "caller_method": "a",
+      "caller_method_id": 46399,
+      "code_unit_candidate": 160,
+      "target_method_id": 62279,
+      "target": [
+        "Lvs4/a;",
+        "g"
+      ]
+    },
+    {
+      "dex": "classes5.dex",
+      "dex_sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "caller_class": "Lc95/s0;",
+      "caller_method": "g",
+      "caller_method_id": 3450,
+      "code_unit_candidate": 122,
+      "target_method_id": 62433,
+      "target": [
+        "Lvs4/a;",
+        "g"
+      ]
+    },
+    {
+      "dex": "classes5.dex",
+      "dex_sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "caller_class": "Lc95/s0;",
+      "caller_method": "g",
+      "caller_method_id": 3450,
+      "code_unit_candidate": 131,
+      "target_method_id": 51812,
+      "target": [
+        "Lkl8/a$a;",
+        "getVideoModelRxJava"
+      ]
+    },
+    {
+      "dex": "classes7.dex",
+      "dex_sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+      "caller_class": "Lcom/dragon/read/novelvideo/shortseries/ShortSeriesVideoModelCache$doLoadVideoModel$videoModelData$1$1;",
+      "caller_method": "invokeSuspend",
+      "caller_method_id": 14118,
+      "code_unit_candidate": 141,
+      "target_method_id": 60250,
+      "target": [
+        "Lvs4/a;",
+        "g"
+      ]
+    }
+  ]
+}

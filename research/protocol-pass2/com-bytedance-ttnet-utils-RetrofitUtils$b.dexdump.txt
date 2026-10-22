@@ -1,0 +1,56 @@
+  Class descriptor  : 'Lcom/bytedance/ttnet/utils/RetrofitUtils$b;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/bytedance/retrofit2/client/Client$Provider;'
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils$b;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+52ab7c:                                        |[52ab7c] com.bytedance.ttnet.utils.RetrofitUtils$b.<init>:()V
+52ab8c: 7010 cfc5 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@c5cf
+52ab92: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+        0x0003 line=3
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/bytedance/ttnet/utils/RetrofitUtils$b;
+
+  Virtual methods   -
+    #0              : (in Lcom/bytedance/ttnet/utils/RetrofitUtils$b;)
+      name          : 'get'
+      type          : '()Lcom/bytedance/retrofit2/client/Client;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+52ab94:                                        |[52ab94] com.bytedance.ttnet.utils.RetrofitUtils$b.get:()Lcom/bytedance/retrofit2/client/Client;
+52aba4: 2200 1a16                              |0000: new-instance v0, Lcom/bytedance/ttnet/retrofit/SsRetrofitClient; // type@161a
+52aba8: 7010 7052 0000                         |0002: invoke-direct {v0}, Lcom/bytedance/ttnet/retrofit/SsRetrofitClient;.<init>:()V // method@5270
+52abae: 1100                                   |0005: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/bytedance/ttnet/utils/RetrofitUtils$b;
+
+  source_file_idx   : 27999 (SourceFile)
+

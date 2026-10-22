@@ -1,0 +1,20 @@
+{
+  "input": {
+    "public_item_id": "7696136947638471705",
+    "video": [
+      {
+        "codec": "h264",
+        "width": 640,
+        "height": 360
+      }
+    ],
+    "duration": "91.672562"
+  },
+  "limitation": "Cloud CPU test only; does not benchmark user E3-1275v3 or prove full-series source access.",
+  "transcode_test": {
+    "exit_code": 0,
+    "seconds": 14.624,
+    "clip_seconds": 10,
+    "stderr": ""
+  }
+}

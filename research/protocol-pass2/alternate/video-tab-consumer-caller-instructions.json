@@ -1,0 +1,412 @@
+[
+  {
+    "dex": "classes4.dex",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/reader/view/AutoPlaySeriesLine;",
+    "method": "Q0",
+    "descriptor": "(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+    "method_index": 24634,
+    "code_offset": 6181576,
+    "hits": [
+      {
+        "code_unit_offset": 66,
+        "opcode": "0x54",
+        "field_index": 21647,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 88,
+        "opcode": "0x54",
+        "field_index": 21647,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+    "method": "<init>",
+    "descriptor": "()V",
+    "method_index": 28503,
+    "code_offset": 7365244,
+    "hits": [
+      {
+        "code_unit_offset": 5,
+        "opcode": "0x5b",
+        "field_index": 23597,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "class": "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+    "method": "f",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+    "method_index": 28507,
+    "code_offset": 7365380,
+    "hits": [
+      {
+        "code_unit_offset": 185,
+        "opcode": "0x5b",
+        "field_index": 23650,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 275,
+        "opcode": "0x5b",
+        "field_index": 23597,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      },
+      {
+        "code_unit_offset": 411,
+        "opcode": "0x5b",
+        "field_index": 23642,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/VideoAutoPlayListHolder$ItemViewHolder$bindVideoView$1;",
+    "method": "invokeSuspend",
+    "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "method_index": 8959,
+    "code_offset": 4663604,
+    "hits": [
+      {
+        "code_unit_offset": 74,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 125,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlayHalfLayout$bindVideoViewAndPlay$1;",
+    "method": "invokeSuspend",
+    "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "method_index": 10276,
+    "code_offset": 4812948,
+    "hits": [
+      {
+        "code_unit_offset": 442,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      },
+      {
+        "code_unit_offset": 641,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 657,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlayHalfLayout;",
+    "method": "E",
+    "descriptor": "()V",
+    "method_index": 10306,
+    "code_offset": 4818204,
+    "hits": [
+      {
+        "code_unit_offset": 20,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlayHalfLayout;",
+    "method": "I",
+    "descriptor": "(Z)Z",
+    "method_index": 10310,
+    "code_offset": 4819112,
+    "hits": [
+      {
+        "code_unit_offset": 100,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlaySingleLayout$bindVideoViewAndPlay$1;",
+    "method": "invokeSuspend",
+    "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "method_index": 10464,
+    "code_offset": 4835448,
+    "hits": [
+      {
+        "code_unit_offset": 683,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 701,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlayV2Layout$bindVideoViewAndPlay$1;",
+    "method": "invokeSuspend",
+    "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "method_index": 10552,
+    "code_offset": 4846612,
+    "hits": [
+      {
+        "code_unit_offset": 621,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      },
+      {
+        "code_unit_offset": 829,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 847,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/VideoAutoPlayV2Layout;",
+    "method": "n",
+    "descriptor": "()V",
+    "method_index": 10596,
+    "code_offset": 4857028,
+    "hits": [
+      {
+        "code_unit_offset": 22,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/c0;",
+    "method": "subscribe",
+    "descriptor": "(Lio/reactivex/SingleEmitter;)V",
+    "method_index": 10681,
+    "code_offset": 4870324,
+    "hits": [
+      {
+        "code_unit_offset": 8,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 26,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/i2;",
+    "method": "a",
+    "descriptor": "()V",
+    "method_index": 10787,
+    "code_offset": 4877576,
+    "hits": [
+      {
+        "code_unit_offset": 210,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/p0;",
+    "method": "subscribe",
+    "descriptor": "(Lio/reactivex/SingleEmitter;)V",
+    "method_index": 10884,
+    "code_offset": 4886584,
+    "hits": [
+      {
+        "code_unit_offset": 431,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 447,
+        "opcode": "0x54",
+        "field_index": 24079,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/bookmall/holder/video/view/r0;",
+    "method": "a",
+    "descriptor": "()V",
+    "method_index": 10914,
+    "code_offset": 4890868,
+    "hits": [
+      {
+        "code_unit_offset": 277,
+        "opcode": "0x54",
+        "field_index": 24034,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "isTrailer",
+          "Ljava/lang/Boolean;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes16.dex",
+    "class": "Lcom/dragon/read/component/biz/impl/help/o0;",
+    "method": "e",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/component/biz/impl/holder/staggered/SearchActorVideoListModel;",
+    "method_index": 21473,
+    "code_offset": 6006084,
+    "hits": [
+      {
+        "code_unit_offset": 48,
+        "opcode": "0x54",
+        "field_index": 24073,
+        "field": [
+          "Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  }
+]

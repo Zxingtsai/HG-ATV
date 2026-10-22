@@ -1,0 +1,583 @@
+  Class descriptor  : 'La35/b1;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/dragon/read/component/shortvideo/impl/profile/container/AbsVideoListItemModel;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in La35/b1;)
+      name          : 'b'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #1              : (in La35/b1;)
+      name          : 'c'
+      type          : 'Lcom/dragon/read/saas/ugc/model/UgcVideoData;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #2              : (in La35/b1;)
+      name          : 'd'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;'
+      access        : 0x0011 (PUBLIC FINAL)
+    #3              : (in La35/b1;)
+      name          : 'e'
+      type          : 'Z'
+      access        : 0x0011 (PUBLIC FINAL)
+  Direct methods    -
+    #0              : (in La35/b1;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+3ecbc0:                                        |[3ecbc0] a35.b1.<clinit>:()V
+3ecbd0: 1400 c66b 0900                         |0000: const v0, #float 8.65181e-40 // #00096bc6
+3ecbd6: 7110 9815 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1598
+3ecbdc: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in La35/b1;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;Lcom/dragon/read/saas/ugc/model/UgcVideoData;Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;Z)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 6
+      ins           : 5
+      outs          : 2
+      insns size    : 16 16-bit code units
+3ecbe0:                                        |[3ecbe0] a35.b1.<init>:(Ljava/lang/String;Lcom/dragon/read/saas/ugc/model/UgcVideoData;Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;Z)V
+3ecbf0: 1200                                   |0000: const/4 v0, #int 0 // #0
+3ecbf2: 7120 618b 0200                         |0001: invoke-static {v2, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@8b61
+3ecbf8: 7010 035e 0100                         |0004: invoke-direct {v1}, Lcom/dragon/read/component/shortvideo/impl/profile/container/AbsVideoListItemModel;.<init>:()V // method@5e03
+3ecbfe: 5b12 ba00                              |0007: iput-object v2, v1, La35/b1;.b:Ljava/lang/String; // field@00ba
+3ecc02: 5b13 bb00                              |0009: iput-object v3, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ecc06: 5b14 bc00                              |000b: iput-object v4, v1, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ecc0a: 5c15 bd00                              |000d: iput-boolean v5, v1, La35/b1;.e:Z // field@00bd
+3ecc0e: 0e00                                   |000f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=67239936
+        0x0001 line=67239937
+        0x0002 line=67239938
+        0x0003 line=67239939
+        0x0004 line=67239940
+        0x0005 line=67239941
+        0x0006 line=67239942
+        0x0007 line=67239943
+        0x0008 line=67239944
+        0x0009 line=67239945
+        0x000a line=67239946
+        0x000b line=67239947
+        0x000c line=67239948
+        0x000d line=67239949
+        0x000e line=67239950
+        0x000f line=67239951
+      locals        :
+        0x0000 - 0x0010 reg=1 this La35/b1;
+        0x0000 - 0x0010 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0010 reg=3 (null) Lcom/dragon/read/saas/ugc/model/UgcVideoData;
+        0x0000 - 0x0010 reg=4 (null) Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;
+        0x0000 - 0x0010 reg=5 (null) Z
+
+  Virtual methods   -
+    #0              : (in La35/b1;)
+      name          : 'a'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 41 16-bit code units
+3ecc10:                                        |[3ecc10] a35.b1.a:()Ljava/lang/String;
+3ecc20: 5410 bb00                              |0000: iget-object v0, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ecc24: 3800 0a00                              |0002: if-eqz v0, 000c // +000a
+3ecc28: 5400 cf5d                              |0004: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/UgcVideoData;.common:Lcom/dragon/read/saas/ugc/model/VideoCommon; // field@5dcf
+3ecc2c: 3800 0600                              |0006: if-eqz v0, 000c // +0006
+3ecc30: 5400 105e                              |0008: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/VideoCommon;.cover:Ljava/lang/String; // field@5e10
+3ecc34: 3900 1e00                              |000a: if-nez v0, 0028 // +001e
+3ecc38: 5410 bc00                              |000c: iget-object v0, v1, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ecc3c: 3800 1500                              |000e: if-eqz v0, 0023 // +0015
+3ecc40: 5400 518c                              |0010: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@8c51
+3ecc44: 3800 1100                              |0012: if-eqz v0, 0023 // +0011
+3ecc48: 5400 e48c                              |0014: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@8ce4
+3ecc4c: 3800 0d00                              |0016: if-eqz v0, 0023 // +000d
+3ecc50: 7110 29b3 0000                         |0018: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@b329
+3ecc56: 0c00                                   |001b: move-result-object v0
+3ecc58: 1f00 f249                              |001c: check-cast v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@49f2
+3ecc5c: 3800 0500                              |001e: if-eqz v0, 0023 // +0005
+3ecc60: 5400 088c                              |0020: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.cover:Ljava/lang/String; // field@8c08
+3ecc64: 2802                                   |0022: goto 0024 // +0002
+3ecc66: 1200                                   |0023: const/4 v0, #int 0 // #0
+3ecc68: 3900 0400                              |0024: if-nez v0, 0028 // +0004
+3ecc6c: 1a00 0000                              |0026: const-string v0, "" // string@0000
+3ecc70: 1100                                   |0028: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+      locals        :
+        0x0000 - 0x0029 reg=1 this La35/b1;
+
+    #1              : (in La35/b1;)
+      name          : 'c'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 2 16-bit code units
+3ecc74:                                        |[3ecc74] a35.b1.c:()Ljava/lang/String;
+3ecc84: 1200                                   |0000: const/4 v0, #int 0 // #0
+3ecc86: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #2              : (in La35/b1;)
+      name          : 'd'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+3ecc88:                                        |[3ecc88] a35.b1.d:()Ljava/lang/String;
+3ecc98: 1a00 05b6                              |0000: const-string v0, "pugc_material" // string@b605
+3ecc9c: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #3              : (in La35/b1;)
+      name          : 'f'
+      type          : '()Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+3ecca0:                                        |[3ecca0] a35.b1.f:()Ljava/lang/Object;
+3eccb0: 5410 bb00                              |0000: iget-object v0, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3eccb4: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+        0x0000 - 0x0003 reg=1 this La35/b1;
+
+    #4              : (in La35/b1;)
+      name          : 'g'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 1
+      insns size    : 26 16-bit code units
+3eccb8:                                        |[3eccb8] a35.b1.g:()Ljava/lang/String;
+3eccc8: 5420 bc00                              |0000: iget-object v0, v2, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ecccc: 1201                                   |0002: const/4 v1, #int 0 // #0
+3eccce: 3800 1100                              |0003: if-eqz v0, 0014 // +0011
+3eccd2: 5400 518c                              |0005: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@8c51
+3eccd6: 3800 0d00                              |0007: if-eqz v0, 0014 // +000d
+3eccda: 5400 e38c                              |0009: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoDetailList:Ljava/util/List; // field@8ce3
+3eccde: 3800 0900                              |000b: if-eqz v0, 0014 // +0009
+3ecce2: 7110 29b3 0000                         |000d: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@b329
+3ecce8: 0c00                                   |0010: move-result-object v0
+3eccea: 1f00 1e4a                              |0011: check-cast v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // type@4a1e
+3eccee: 2802                                   |0013: goto 0015 // +0002
+3eccf0: 0710                                   |0014: move-object v0, v1
+3eccf2: 3800 0400                              |0015: if-eqz v0, 0019 // +0004
+3eccf6: 5401 dd8c                              |0017: iget-object v1, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.seriesIdStr:Ljava/lang/String; // field@8cdd
+3eccfa: 1101                                   |0019: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+        0x0012 line=196626
+        0x0013 line=196627
+        0x0014 line=196628
+        0x0015 line=196629
+        0x0016 line=196630
+        0x0017 line=196631
+        0x0018 line=196632
+        0x0019 line=196633
+      locals        :
+        0x0000 - 0x001a reg=2 this La35/b1;
+
+    #5              : (in La35/b1;)
+      name          : 'h'
+      type          : '()Ljava/lang/Integer;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 8 16-bit code units
+3eccfc:                                        |[3eccfc] a35.b1.h:()Ljava/lang/Integer;
+3ecd0c: 1400 4d1e 027f                         |0000: const v0, #float 1.72957e+38 // #7f021e4d
+3ecd12: 7110 cfac 0000                         |0003: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@accf
+3ecd18: 0c00                                   |0006: move-result-object v0
+3ecd1a: 1100                                   |0007: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=65536
+        0x0001 line=65537
+        0x0002 line=65538
+        0x0003 line=65539
+        0x0004 line=65540
+        0x0005 line=65541
+        0x0006 line=65542
+        0x0007 line=65543
+      locals        :
+        0x0000 - 0x0008 reg=1 this La35/b1;
+
+    #6              : (in La35/b1;)
+      name          : 'i'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 18 16-bit code units
+3ecd1c:                                        |[3ecd1c] a35.b1.i:()Ljava/lang/String;
+3ecd2c: 5420 bb00                              |0000: iget-object v0, v2, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ecd30: 3800 0900                              |0002: if-eqz v0, 000b // +0009
+3ecd34: 5400 d15d                              |0004: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/UgcVideoData;.stat:Lcom/dragon/read/saas/ugc/model/VideoStat; // field@5dd1
+3ecd38: 3800 0500                              |0006: if-eqz v0, 000b // +0005
+3ecd3c: 5200 1f5e                              |0008: iget v0, v0, Lcom/dragon/read/saas/ugc/model/VideoStat;.playCnt:I // field@5e1f
+3ecd40: 2802                                   |000a: goto 000c // +0002
+3ecd42: 1200                                   |000b: const/4 v0, #int 0 // #0
+3ecd44: 8100                                   |000c: int-to-long v0, v0
+3ecd46: 7120 a988 1000                         |000d: invoke-static {v0, v1}, Lcom/dragon/read/video/w;.e:(J)Ljava/lang/String; // method@88a9
+3ecd4c: 0c00                                   |0010: move-result-object v0
+3ecd4e: 1100                                   |0011: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=196608
+        0x0001 line=196609
+        0x0002 line=196610
+        0x0003 line=196611
+        0x0004 line=196612
+        0x0005 line=196613
+        0x0006 line=196614
+        0x0007 line=196615
+        0x0008 line=196616
+        0x0009 line=196617
+        0x000a line=196618
+        0x000b line=196619
+        0x000c line=196620
+        0x000d line=196621
+        0x000e line=196622
+        0x000f line=196623
+        0x0010 line=196624
+        0x0011 line=196625
+      locals        :
+        0x0000 - 0x0012 reg=2 this La35/b1;
+
+    #7              : (in La35/b1;)
+      name          : 'j'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 37 16-bit code units
+3ecd50:                                        |[3ecd50] a35.b1.j:()Ljava/lang/String;
+3ecd60: 5410 bb00                              |0000: iget-object v0, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ecd64: 3800 0600                              |0002: if-eqz v0, 0008 // +0006
+3ecd68: 5400 d35d                              |0004: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/UgcVideoData;.videoID:Ljava/lang/String; // field@5dd3
+3ecd6c: 3900 1e00                              |0006: if-nez v0, 0024 // +001e
+3ecd70: 5410 bc00                              |0008: iget-object v0, v1, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ecd74: 3800 1500                              |000a: if-eqz v0, 001f // +0015
+3ecd78: 5400 518c                              |000c: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@8c51
+3ecd7c: 3800 1100                              |000e: if-eqz v0, 001f // +0011
+3ecd80: 5400 e48c                              |0010: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@8ce4
+3ecd84: 3800 0d00                              |0012: if-eqz v0, 001f // +000d
+3ecd88: 7110 29b3 0000                         |0014: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@b329
+3ecd8e: 0c00                                   |0017: move-result-object v0
+3ecd90: 1f00 f249                              |0018: check-cast v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@49f2
+3ecd94: 3800 0500                              |001a: if-eqz v0, 001f // +0005
+3ecd98: 5400 0b8c                              |001c: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.vid:Ljava/lang/String; // field@8c0b
+3ecd9c: 2802                                   |001e: goto 0020 // +0002
+3ecd9e: 1200                                   |001f: const/4 v0, #int 0 // #0
+3ecda0: 3900 0400                              |0020: if-nez v0, 0024 // +0004
+3ecda4: 1a00 0000                              |0022: const-string v0, "" // string@0000
+3ecda8: 1100                                   |0024: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+      locals        :
+        0x0000 - 0x0025 reg=1 this La35/b1;
+
+    #8              : (in La35/b1;)
+      name          : 'k'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 33 16-bit code units
+3ecdac:                                        |[3ecdac] a35.b1.k:()Ljava/lang/String;
+3ecdbc: 5410 bb00                              |0000: iget-object v0, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ecdc0: 3800 0600                              |0002: if-eqz v0, 0008 // +0006
+3ecdc4: 5400 d35d                              |0004: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/UgcVideoData;.videoID:Ljava/lang/String; // field@5dd3
+3ecdc8: 3900 1a00                              |0006: if-nez v0, 0020 // +001a
+3ecdcc: 5410 bc00                              |0008: iget-object v0, v1, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ecdd0: 3800 1500                              |000a: if-eqz v0, 001f // +0015
+3ecdd4: 5400 518c                              |000c: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@8c51
+3ecdd8: 3800 1100                              |000e: if-eqz v0, 001f // +0011
+3ecddc: 5400 e48c                              |0010: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@8ce4
+3ecde0: 3800 0d00                              |0012: if-eqz v0, 001f // +000d
+3ecde4: 7110 29b3 0000                         |0014: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@b329
+3ecdea: 0c00                                   |0017: move-result-object v0
+3ecdec: 1f00 f249                              |0018: check-cast v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@49f2
+3ecdf0: 3800 0500                              |001a: if-eqz v0, 001f // +0005
+3ecdf4: 5400 0b8c                              |001c: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.vid:Ljava/lang/String; // field@8c0b
+3ecdf8: 2802                                   |001e: goto 0020 // +0002
+3ecdfa: 1200                                   |001f: const/4 v0, #int 0 // #0
+3ecdfc: 1100                                   |0020: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+      locals        :
+        0x0000 - 0x0021 reg=1 this La35/b1;
+
+    #9              : (in La35/b1;)
+      name          : 'l'
+      type          : '()Ljava/util/List;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 10 16-bit code units
+3ece00:                                        |[3ece00] a35.b1.l:()Ljava/util/List;
+3ece10: 7100 83ad 0000                         |0000: invoke-static {}, Ljava/util/Collections;.emptyList:()Ljava/util/List; // method@ad83
+3ece16: 0c00                                   |0003: move-result-object v0
+3ece18: 1a01 0000                              |0004: const-string v1, "" // string@0000
+3ece1c: 7120 9fb3 1000                         |0006: invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@b39f
+3ece22: 1100                                   |0009: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+      locals        :
+        0x0000 - 0x000a reg=2 this La35/b1;
+
+    #10              : (in La35/b1;)
+      name          : 'n'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 37 16-bit code units
+3ece24:                                        |[3ece24] a35.b1.n:()Ljava/lang/String;
+3ece34: 5410 bb00                              |0000: iget-object v0, v1, La35/b1;.c:Lcom/dragon/read/saas/ugc/model/UgcVideoData; // field@00bb
+3ece38: 3800 0a00                              |0002: if-eqz v0, 000c // +000a
+3ece3c: 5400 cf5d                              |0004: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/UgcVideoData;.common:Lcom/dragon/read/saas/ugc/model/VideoCommon; // field@5dcf
+3ece40: 3800 0600                              |0006: if-eqz v0, 000c // +0006
+3ece44: 5400 135e                              |0008: iget-object v0, v0, Lcom/dragon/read/saas/ugc/model/VideoCommon;.title:Ljava/lang/String; // field@5e13
+3ece48: 3900 1a00                              |000a: if-nez v0, 0024 // +001a
+3ece4c: 5410 bc00                              |000c: iget-object v0, v1, La35/b1;.d:Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData; // field@00bc
+3ece50: 3800 1500                              |000e: if-eqz v0, 0023 // +0015
+3ece54: 5400 518c                              |0010: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;.videoData:Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo; // field@8c51
+3ece58: 3800 1100                              |0012: if-eqz v0, 0023 // +0011
+3ece5c: 5400 e48c                              |0014: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;.videoList:Ljava/util/List; // field@8ce4
+3ece60: 3800 0d00                              |0016: if-eqz v0, 0023 // +000d
+3ece64: 7110 29b3 0000                         |0018: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@b329
+3ece6a: 0c00                                   |001b: move-result-object v0
+3ece6c: 1f00 f249                              |001c: check-cast v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo; // type@49f2
+3ece70: 3800 0500                              |001e: if-eqz v0, 0023 // +0005
+3ece74: 5400 098c                              |0020: iget-object v0, v0, Lseriessdk/com/dragon/read/saas/rpc/model/EpisodeInfo;.title:Ljava/lang/String; // field@8c09
+3ece78: 2802                                   |0022: goto 0024 // +0002
+3ece7a: 1200                                   |0023: const/4 v0, #int 0 // #0
+3ece7c: 1100                                   |0024: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+      locals        :
+        0x0000 - 0x0025 reg=1 this La35/b1;
+
+  source_file_idx   : 29508 (SourceFile)
+

@@ -1,0 +1,23 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes15.dex",
+  "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+  "dex_bytes": 9799700,
+  "requested_classes": [
+    "Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;"
+  ],
+  "class_outputs": {
+    "Lseriessdk/com/dragon/read/saas/rpc/model/SaaSVideoDetailData;": "seriessdk-com-dragon-read-saas-rpc-model-SaaSVideoDetailData.dexdump.txt",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;": "seriessdk-com-dragon-read-saas-rpc-model-VideoContentType.dexdump.txt",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailData;": "seriessdk-com-dragon-read-saas-rpc-model-VideoDetailData.dexdump.txt",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoDetailInfo;": "seriessdk-com-dragon-read-saas-rpc-model-VideoDetailInfo.dexdump.txt",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;": "seriessdk-com-dragon-read-saas-rpc-model-VideoPlatformType.dexdump.txt",
+    "Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;": "seriessdk-com-dragon-read-saas-rpc-model-VideoSeriesIdType.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

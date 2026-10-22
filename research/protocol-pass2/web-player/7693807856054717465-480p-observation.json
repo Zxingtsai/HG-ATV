@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-21T07:45:20.233780+00:00",
+  "series_id": "7693806079737613336",
+  "item_id": "7693807856054717465",
+  "definition": "480p",
+  "method": "Official play-info response and unmodified public player worker messages; no key export or CDM bypass.",
+  "api_http_status": 403,
+  "api_transport": "normal_browser_fetch",
+  "api_attempts": [
+    {
+      "status": 403,
+      "error": "protected_playback_unavailable"
+    }
+  ],
+  "api_error": "protected_playback_unavailable",
+  "failure": {
+    "phase": "play-info",
+    "type": "ValueError",
+    "code": "NO_PLAY_INFO"
+  }
+}

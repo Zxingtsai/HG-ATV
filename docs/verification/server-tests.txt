@@ -1,0 +1,51 @@
+
+> hongguo-tv-lan-server@0.1.0 test
+> node --test tests/*.test.mjs
+
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+尚无本机 1080p ≥1.3 倍实时测速记录，使用 720p；可先运行 windows/benchmark.cmd。
+✔ 1080p requires a recent passing measurement for this hardware, encoder and recipe (330.836935ms)
+✔ same-episode overlapping requests share preparation; switching away cancels it and retry starts fresh (45.592755ms)
+✔ clear media cache evicts old entries at the configured three-episode bound (58.499317ms)
+✔ a modified player component is never accepted or executed (245.775465ms)
+✔ media subprocess timeout also terminates a child that ignores SIGTERM (2620.887454ms)
+✔ cancelling media processing has a bounded shutdown even for an uncooperative child (3154.597628ms)
+✔ pairing persists hashes only and all paired devices survive concurrent writes (241.796411ms)
+✔ wrong pairing codes have a bounded attempt window (60.568911ms)
+✔ byte ranges clamp ends and reject invalid, multiple and unsafe ranges (5.361645ms)
+✔ API and every HLS resource require pairing; errors never include upstream details (1950.028022ms)
+✔ session ownership, replacement, and encoder serialization hold during overlapping seeks (637.88541ms)
+✔ a slow earlier detail lookup cannot replace the newest seek (198.784011ms)
+✔ shutdown waits for the encoder even after rapid seeks evict its old session record (3472.323733ms)
+✔ real homepage maps four sections and exact string IDs (792.655968ms)
+✔ real category page and recorded second page retain pagination (1542.638151ms)
+✔ real streamed rank content merges without executing scripts (190.379278ms)
+✔ real search unwraps video_data and never invents search pagination (179.892642ms)
+✔ real detail includes every vid despite accessible_episode_cnt=3 and streamed recommendations (599.501898ms)
+✔ JSON parser stops at the first value and supports quoted HTML entities in streamed args (10.209553ms)
+✔ source errors and incomplete episodes are errors, never empty successful pages (69.371346ms)
+✔ invalid user parameters never reach the upstream fetch function (6.283994ms)
+✔ metadata coalesces concurrent requests and clones cached results (28.291764ms)
+✔ metadata TTL expires and cache evicts past 256 entries (1160.027767ms)
+✔ one cancelled metadata subscriber does not cancel another (51.344367ms)
+✔ cancelling the final subscriber aborts the upstream request (43.240974ms)
+✔ an immediate metadata retry does not reuse an aborted in-flight request (6.060711ms)
+✔ timeout and pre-cancelled signals have fixed localized errors (3.176522ms)
+✔ upstream failures redact exception details and URLs (46.647261ms)
+✔ response byte cap applies to both content-length and streamed bodies (451.84664ms)
+✔ protected play-info uses the official POST shape and is never cached (24.024931ms)
+✔ protected play-info validates independent audio and base_resp without leaking data (25.912643ms)
+✔ only protected_playback_unavailable gets bounded 1s/2s retries (3239.114219ms)
+✔ play-info retry wait respects cancellation (29.342286ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29215.49804

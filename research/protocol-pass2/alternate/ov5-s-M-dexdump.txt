@@ -1,0 +1,1618 @@
+    #12              : (in Lov5/s;)
+      name          : 'M'
+      type          : 'Ljava/util/Set;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+    #0              : (in Lov5/s;)
+      name          : 'M'
+      type          : '(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 221
+      ins           : 7
+      outs          : 144
+      insns size    : 3026 16-bit code units
+b1d80c:                                        |[b1d80c] ov5.s.M:(Lcom/dragon/read/rpc/model/CellViewData;ILjava/lang/String;JLjava/lang/String;)Lpv5/c;
+b1d81c: 0808 d600                              |0000: move-object/from16 v8, v214
+b1d820: 0807 d700                              |0002: move-object/from16 v7, v215
+b1d824: 0201 d800                              |0004: move/from16 v1, v216
+b1d828: 5470 389c                              |0006: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.showType:Lcom/dragon/read/rpc/model/ShowType; // field@9c38
+b1d82c: 1209                                   |0008: const/4 v9, #int 0 // #0
+b1d82e: 3800 0800                              |0009: if-eqz v0, 0011 // +0008
+b1d832: 6e10 1aa7 0000                         |000b: invoke-virtual {v0}, Lcom/dragon/read/rpc/model/ShowType;.getValue:()I // method@a71a
+b1d838: 0a00                                   |000e: move-result v0
+b1d83a: 010e                                   |000f: move v14, v0
+b1d83c: 2802                                   |0010: goto 0012 // +0002
+b1d83e: 120e                                   |0011: const/4 v14, #int 0 // #0
+b1d840: 5372 1d9c                              |0012: iget-wide v2, v7, Lcom/dragon/read/rpc/model/CellViewData;.cellId:J // field@9c1d
+b1d844: 7120 68c6 3200                         |0014: invoke-static {v2, v3}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@c668
+b1d84a: 0c00                                   |0017: move-result-object v0
+b1d84c: 6e10 80c6 0000                         |0018: invoke-virtual {v0}, Ljava/lang/Number;.longValue:()J // method@c680
+b1d852: 0b02                                   |001b: move-result-wide v2
+b1d854: 1604 0000                              |001c: const-wide/16 v4, #int 0 // #0
+b1d858: 121a                                   |001e: const/4 v10, #int 1 // #1
+b1d85a: 3106 0204                              |001f: cmp-long v6, v2, v4
+b1d85e: 3806 0400                              |0021: if-eqz v6, 0025 // +0004
+b1d862: 1212                                   |0023: const/4 v2, #int 1 // #1
+b1d864: 2802                                   |0024: goto 0026 // +0002
+b1d866: 1202                                   |0025: const/4 v2, #int 0 // #0
+b1d868: 3802 0300                              |0026: if-eqz v2, 0029 // +0003
+b1d86c: 2802                                   |0028: goto 002a // +0002
+b1d86e: 1200                                   |0029: const/4 v0, #int 0 // #0
+b1d870: 3800 0700                              |002a: if-eqz v0, 0031 // +0007
+b1d874: 6e10 63c6 0000                         |002c: invoke-virtual {v0}, Ljava/lang/Long;.longValue:()J // method@c663
+b1d87a: 0b02                                   |002f: move-result-wide v2
+b1d87c: 2803                                   |0030: goto 0033 // +0003
+b1d87e: 0502 da00                              |0031: move-wide/from16 v2, v218
+b1d882: 5470 1f9c                              |0033: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.cellName:Ljava/lang/String; // field@9c1f
+b1d886: 3900 0500                              |0035: if-nez v0, 003a // +0005
+b1d88a: 0845 dc00                              |0037: move-object/from16 v69, v220
+b1d88e: 2803                                   |0039: goto 003c // +0003
+b1d890: 0845 0000                              |003a: move-object/from16 v69, v0
+b1d894: 6000 b9bb                              |003c: sget v0, Lov5/d;.a:I // field@bbb9
+b1d898: 6000 58a5                              |003e: sget v0, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.a:I // field@a558
+b1d89c: 5470 279c                              |0040: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.groupIdType:Lcom/dragon/read/rpc/model/CandidateDataType; // field@9c27
+b1d8a0: 6206 f49b                              |0042: sget-object v6, Lcom/dragon/read/rpc/model/CandidateDataType;.SeriesComment:Lcom/dragon/read/rpc/model/CandidateDataType; // field@9bf4
+b1d8a4: 1a0c 0000                              |0044: const-string v12, "" // string@0000
+b1d8a8: 3260 0300                              |0046: if-eq v0, v6, 0049 // +0003
+b1d8ac: 284b                                   |0048: goto 0093 // +004b
+b1d8ae: 5470 369c                              |0049: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.seriesCommentData:Ljava/util/List; // field@9c36
+b1d8b2: 3800 4800                              |004b: if-eqz v0, 0093 // +0048
+b1d8b6: 7110 e9c9 0000                         |004d: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1d8bc: 0c00                                   |0050: move-result-object v0
+b1d8be: 1f00 373c                              |0051: check-cast v0, Lcom/dragon/read/rpc/model/SeriesComment; // type@3c37
+b1d8c2: 3800 4000                              |0053: if-eqz v0, 0093 // +0040
+b1d8c6: 7110 7edd 0000                         |0055: invoke-static {v0}, Lov5/d;.a:(Lcom/dragon/read/rpc/model/SeriesComment;)Lxq6/u5; // method@dd7e
+b1d8cc: 0c00                                   |0058: move-result-object v0
+b1d8ce: 7120 afb0 9000                         |0059: invoke-static {v0, v9}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@b0af
+b1d8d4: 620d 70ab                              |005c: sget-object v13, Lg06/w0;.s:Lg06/w0$a; // field@ab70
+b1d8d8: 6e10 85c6 0d00                         |005e: invoke-virtual {v13}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1d8de: 7110 a9bb 0000                         |0061: invoke-static {v0}, Lg06/w0$a;.c:(Lxq6/u5;)Z // method@bba9
+b1d8e4: 0a0d                                   |0064: move-result v13
+b1d8e6: 7110 1dc6 0d00                         |0065: invoke-static {v13}, Ljava/lang/Boolean;.valueOf:(Z)Ljava/lang/Boolean; // method@c61d
+b1d8ec: 0c0d                                   |0068: move-result-object v13
+b1d8ee: 6e10 1bc6 0d00                         |0069: invoke-virtual {v13}, Ljava/lang/Boolean;.booleanValue:()Z // method@c61b
+b1d8f4: 0a0d                                   |006c: move-result v13
+b1d8f6: 390d 0300                              |006d: if-nez v13, 0070 // +0003
+b1d8fa: 2824                                   |006f: goto 0093 // +0024
+b1d8fc: 620d 70ab                              |0070: sget-object v13, Lg06/w0;.s:Lg06/w0$a; // field@ab70
+b1d900: 6e10 85c6 0d00                         |0072: invoke-virtual {v13}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1d906: 7110 a7bb 0000                         |0075: invoke-static {v0}, Lg06/w0$a;.a:(Lxq6/u5;)Ljava/lang/String; // method@bba7
+b1d90c: 0c0d                                   |0078: move-result-object v13
+b1d90e: 390d 0300                              |0079: if-nez v13, 007c // +0003
+b1d912: 07cd                                   |007b: move-object v13, v12
+b1d914: 6e10 a0c6 0d00                         |007c: invoke-virtual {v13}, Ljava/lang/String;.length:()I // method@c6a0
+b1d91a: 0a0f                                   |007f: move-result v15
+b1d91c: 390f 0400                              |0080: if-nez v15, 0084 // +0004
+b1d920: 121f                                   |0082: const/4 v15, #int 1 // #1
+b1d922: 2802                                   |0083: goto 0085 // +0002
+b1d924: 120f                                   |0084: const/4 v15, #int 0 // #0
+b1d926: 380f 0300                              |0085: if-eqz v15, 0088 // +0003
+b1d92a: 280c                                   |0087: goto 0093 // +000c
+b1d92c: 7120 a8bb d000                         |0088: invoke-static {v0, v13}, Lg06/w0$a;.b:(Lxq6/u5;Ljava/lang/String;)Lg06/w0; // method@bba8
+b1d932: 0c00                                   |008b: move-result-object v0
+b1d934: 5c09 6cab                              |008c: iput-boolean v9, v0, Lg06/w0;.o:Z // field@ab6c
+b1d938: 5c0a 6bab                              |008e: iput-boolean v10, v0, Lg06/w0;.n:Z // field@ab6b
+b1d93c: 5c0a 6eab                              |0090: iput-boolean v10, v0, Lg06/w0;.q:Z // field@ab6e
+b1d940: 2802                                   |0092: goto 0094 // +0002
+b1d942: 1200                                   |0093: const/4 v0, #int 0 // #0
+b1d944: 130d 5f00                              |0094: const/16 v13, #int 95 // #5f
+b1d948: 3800 ab00                              |0096: if-eqz v0, 0141 // +00ab
+b1d94c: 7701 b1dd d700                         |0098: invoke-static/range {v215}, Lov5/s;.b:(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map; // method@ddb1
+b1d952: 0c04                                   |009b: move-result-object v4
+b1d954: 5405 60ab                              |009c: iget-object v5, v0, Lg06/w0;.c:Ljava/lang/String; // field@ab60
+b1d958: 7110 daca 0500                         |009e: invoke-static {v5}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1d95e: 0a06                                   |00a1: move-result v6
+b1d960: 3806 1c00                              |00a2: if-eqz v6, 00be // +001c
+b1d964: 2205 b145                              |00a4: new-instance v5, Ljava/lang/StringBuilder; // type@45b1
+b1d968: 7010 b7c6 0500                         |00a6: invoke-direct {v5}, Ljava/lang/StringBuilder;.<init>:()V // method@c6b7
+b1d96e: 6e30 bfc6 2503                         |00a9: invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1d974: 6e20 bbc6 d500                         |00ac: invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1d97a: 6e20 bec6 e500                         |00af: invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1d980: 6e20 bbc6 d500                         |00b2: invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1d986: 6e20 bec6 1500                         |00b5: invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1d98c: 6e10 c6c6 0500                         |00b8: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1d992: 0c01                                   |00bb: move-result-object v1
+b1d994: 071a                                   |00bc: move-object v10, v1
+b1d996: 2802                                   |00bd: goto 00bf // +0002
+b1d998: 075a                                   |00be: move-object v10, v5
+b1d99a: 540b 64ab                              |00bf: iget-object v11, v0, Lg06/w0;.g:Ljava/lang/String; // field@ab64
+b1d99e: 120c                                   |00c1: const/4 v12, #int 0 // #0
+b1d9a0: 5401 63ab                              |00c2: iget-object v1, v0, Lg06/w0;.f:Ljava/lang/String; // field@ab63
+b1d9a4: 0811 0100                              |00c4: move-object/from16 v17, v1
+b1d9a8: 1312 0000                              |00c6: const/16 v18, #int 0 // #0
+b1d9ac: 5401 66ab                              |00c8: iget-object v1, v0, Lg06/w0;.i:Ljava/lang/String; // field@ab66
+b1d9b0: 0813 0100                              |00ca: move-object/from16 v19, v1
+b1d9b4: 1314 0000                              |00cc: const/16 v20, #int 0 // #0
+b1d9b8: 1315 0000                              |00ce: const/16 v21, #int 0 // #0
+b1d9bc: 1316 0000                              |00d0: const/16 v22, #int 0 // #0
+b1d9c0: 1317 0000                              |00d2: const/16 v23, #int 0 // #0
+b1d9c4: 1318 0000                              |00d4: const/16 v24, #int 0 // #0
+b1d9c8: 1319 0000                              |00d6: const/16 v25, #int 0 // #0
+b1d9cc: 131a 0000                              |00d8: const/16 v26, #int 0 // #0
+b1d9d0: 131b 0000                              |00da: const/16 v27, #int 0 // #0
+b1d9d4: 5305 68ab                              |00dc: iget-wide v5, v0, Lg06/w0;.k:J // field@ab68
+b1d9d8: 051c 0500                              |00de: move-wide/from16 v28, v5
+b1d9dc: 5501 67ab                              |00e0: iget-boolean v1, v0, Lg06/w0;.j:Z // field@ab67
+b1d9e0: 021e 0100                              |00e2: move/from16 v30, v1
+b1d9e4: 161f 0000                              |00e4: const-wide/16 v31, #int 0 // #0
+b1d9e8: 1621 0000                              |00e6: const-wide/16 v33, #int 0 // #0
+b1d9ec: 1323 0000                              |00e8: const/16 v35, #int 0 // #0
+b1d9f0: 1324 0000                              |00ea: const/16 v36, #int 0 // #0
+b1d9f4: 1325 0000                              |00ec: const/16 v37, #int 0 // #0
+b1d9f8: 1326 0000                              |00ee: const/16 v38, #int 0 // #0
+b1d9fc: 1327 0000                              |00f0: const/16 v39, #int 0 // #0
+b1da00: 1328 0000                              |00f2: const/16 v40, #int 0 // #0
+b1da04: 1329 0000                              |00f4: const/16 v41, #int 0 // #0
+b1da08: 132a 0000                              |00f6: const/16 v42, #int 0 // #0
+b1da0c: 132b 0000                              |00f8: const/16 v43, #int 0 // #0
+b1da10: 132c 0000                              |00fa: const/16 v44, #int 0 // #0
+b1da14: 132d 0000                              |00fc: const/16 v45, #int 0 // #0
+b1da18: 162e 0000                              |00fe: const-wide/16 v46, #int 0 // #0
+b1da1c: 1630 0000                              |0100: const-wide/16 v48, #int 0 // #0
+b1da20: 1332 0000                              |0102: const/16 v50, #int 0 // #0
+b1da24: 1333 0000                              |0104: const/16 v51, #int 0 // #0
+b1da28: 1334 0000                              |0106: const/16 v52, #int 0 // #0
+b1da2c: 1335 0000                              |0108: const/16 v53, #int 0 // #0
+b1da30: 1336 0000                              |010a: const/16 v54, #int 0 // #0
+b1da34: 1337 0000                              |010c: const/16 v55, #int 0 // #0
+b1da38: 1338 0000                              |010e: const/16 v56, #int 0 // #0
+b1da3c: 133a 0000                              |0110: const/16 v58, #int 0 // #0
+b1da40: 223c 094c                              |0112: new-instance v60, Lpv5/i; // type@4c09
+b1da44: 083b 3c00                              |0114: move-object/from16 v59, v60
+b1da48: 5401 60ab                              |0116: iget-object v1, v0, Lg06/w0;.c:Ljava/lang/String; // field@ab60
+b1da4c: 6205 e6bb                              |0118: sget-object v5, Lov5/s;.b0:Ljava/util/Set; // field@bbe6
+b1da50: 7120 c2dd 4500                         |011a: invoke-static {v5, v4}, Lov5/s;.s:(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String; // method@ddc2
+b1da56: 0c43                                   |011d: move-result-object v67
+b1da58: 1344 4000                              |011e: const/16 v68, #int 64 // #40
+b1da5c: 083d d900                              |0120: move-object/from16 v61, v217
+b1da60: 083e 0100                              |0122: move-object/from16 v62, v1
+b1da64: 023f 0e00                              |0124: move/from16 v63, v14
+b1da68: 0540 0200                              |0126: move-wide/from16 v64, v2
+b1da6c: 0842 4500                              |0128: move-object/from16 v66, v69
+b1da70: 7609 55e0 3c00                         |012a: invoke-direct/range {v60, v61, v62, v63, v64, v65, v66, v67, v68}, Lpv5/i;.<init>:(Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;I)V // method@e055
+b1da76: 143d 84fe f9ff                         |012d: const v61, #float -nan // #fff9fe84
+b1da7c: 133e ff05                              |0130: const/16 v62, #int 1535 // #5ff
+b1da80: 2201 034c                              |0132: new-instance v1, Lpv5/c; // type@4c03
+b1da84: 0719                                   |0134: move-object v9, v1
+b1da86: 01ed                                   |0135: move v13, v14
+b1da88: 042e                                   |0136: move-wide v14, v2
+b1da8a: 0810 4500                              |0137: move-object/from16 v16, v69
+b1da8e: 0839 0000                              |0139: move-object/from16 v57, v0
+b1da92: 083c d700                              |013b: move-object/from16 v60, v215
+b1da96: 7636 36e0 0900                         |013d: invoke-direct/range {v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60, v61, v62}, Lpv5/c;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;JZJJLjava/lang/String;Ljava/lang/String;ZZZZLpv5/l;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZJJZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;Ljava/lang/Integer;Lpv5/d;Lg06/w0;Lg06/x0;Lpv5/i;Ljava/lang/Object;II)V // method@e036
+b1da9c: 1101                                   |0140: return-object v1
+b1da9e: 6000 b1bb                              |0141: sget v0, Lov5/a;.a:I // field@bbb1
+b1daa2: 7120 afb0 9700                         |0143: invoke-static {v7, v9}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@b0af
+b1daa8: 5470 279c                              |0146: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.groupIdType:Lcom/dragon/read/rpc/model/CandidateDataType; // field@9c27
+b1daac: 3260 0300                              |0148: if-eq v0, v6, 014b // +0003
+b1dab0: 281b                                   |014a: goto 0165 // +001b
+b1dab2: 5470 369c                              |014b: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.seriesCommentData:Ljava/util/List; // field@9c36
+b1dab6: 3800 1800                              |014d: if-eqz v0, 0165 // +0018
+b1daba: 7110 e9c9 0000                         |014f: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1dac0: 0c00                                   |0152: move-result-object v0
+b1dac2: 1f00 373c                              |0153: check-cast v0, Lcom/dragon/read/rpc/model/SeriesComment; // type@3c37
+b1dac6: 3800 1000                              |0155: if-eqz v0, 0165 // +0010
+b1daca: 7110 7edd 0000                         |0157: invoke-static {v0}, Lov5/d;.a:(Lcom/dragon/read/rpc/model/SeriesComment;)Lxq6/u5; // method@dd7e
+b1dad0: 0c00                                   |015a: move-result-object v0
+b1dad2: 6206 85ab                              |015b: sget-object v6, Lg06/x0;.p:Lg06/x0$a; // field@ab85
+b1dad6: 6e10 85c6 0600                         |015d: invoke-virtual {v6}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1dadc: 7110 d2bb 0000                         |0160: invoke-static {v0}, Lg06/x0$a;.a:(Lxq6/u5;)Lg06/x0; // method@bbd2
+b1dae2: 0c00                                   |0163: move-result-object v0
+b1dae4: 2802                                   |0164: goto 0166 // +0002
+b1dae6: 1200                                   |0165: const/4 v0, #int 0 // #0
+b1dae8: 3800 ab00                              |0166: if-eqz v0, 0211 // +00ab
+b1daec: 7701 b1dd d700                         |0168: invoke-static/range {v215}, Lov5/s;.b:(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map; // method@ddb1
+b1daf2: 0c04                                   |016b: move-result-object v4
+b1daf4: 5405 78ab                              |016c: iget-object v5, v0, Lg06/x0;.c:Ljava/lang/String; // field@ab78
+b1daf8: 7110 daca 0500                         |016e: invoke-static {v5}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1dafe: 0a06                                   |0171: move-result v6
+b1db00: 3806 1c00                              |0172: if-eqz v6, 018e // +001c
+b1db04: 2205 b145                              |0174: new-instance v5, Ljava/lang/StringBuilder; // type@45b1
+b1db08: 7010 b7c6 0500                         |0176: invoke-direct {v5}, Ljava/lang/StringBuilder;.<init>:()V // method@c6b7
+b1db0e: 6e30 bfc6 2503                         |0179: invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1db14: 6e20 bbc6 d500                         |017c: invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1db1a: 6e20 bec6 e500                         |017f: invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1db20: 6e20 bbc6 d500                         |0182: invoke-virtual {v5, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1db26: 6e20 bec6 1500                         |0185: invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1db2c: 6e10 c6c6 0500                         |0188: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1db32: 0c01                                   |018b: move-result-object v1
+b1db34: 071a                                   |018c: move-object v10, v1
+b1db36: 2802                                   |018d: goto 018f // +0002
+b1db38: 075a                                   |018e: move-object v10, v5
+b1db3a: 540b 7dab                              |018f: iget-object v11, v0, Lg06/x0;.h:Ljava/lang/String; // field@ab7d
+b1db3e: 120c                                   |0191: const/4 v12, #int 0 // #0
+b1db40: 1311 0000                              |0192: const/16 v17, #int 0 // #0
+b1db44: 1312 0000                              |0194: const/16 v18, #int 0 // #0
+b1db48: 5401 7fab                              |0196: iget-object v1, v0, Lg06/x0;.j:Ljava/lang/String; // field@ab7f
+b1db4c: 0813 0100                              |0198: move-object/from16 v19, v1
+b1db50: 0814 0100                              |019a: move-object/from16 v20, v1
+b1db54: 5401 7eab                              |019c: iget-object v1, v0, Lg06/x0;.i:Ljava/lang/String; // field@ab7e
+b1db58: 0815 0100                              |019e: move-object/from16 v21, v1
+b1db5c: 1316 0000                              |01a0: const/16 v22, #int 0 // #0
+b1db60: 1317 0000                              |01a2: const/16 v23, #int 0 // #0
+b1db64: 1318 0000                              |01a4: const/16 v24, #int 0 // #0
+b1db68: 1319 0000                              |01a6: const/16 v25, #int 0 // #0
+b1db6c: 131a 0000                              |01a8: const/16 v26, #int 0 // #0
+b1db70: 131b 0000                              |01aa: const/16 v27, #int 0 // #0
+b1db74: 5305 81ab                              |01ac: iget-wide v5, v0, Lg06/x0;.l:J // field@ab81
+b1db78: 051c 0500                              |01ae: move-wide/from16 v28, v5
+b1db7c: 5501 80ab                              |01b0: iget-boolean v1, v0, Lg06/x0;.k:Z // field@ab80
+b1db80: 021e 0100                              |01b2: move/from16 v30, v1
+b1db84: 161f 0000                              |01b4: const-wide/16 v31, #int 0 // #0
+b1db88: 1621 0000                              |01b6: const-wide/16 v33, #int 0 // #0
+b1db8c: 1323 0000                              |01b8: const/16 v35, #int 0 // #0
+b1db90: 1324 0000                              |01ba: const/16 v36, #int 0 // #0
+b1db94: 1325 0000                              |01bc: const/16 v37, #int 0 // #0
+b1db98: 1326 0000                              |01be: const/16 v38, #int 0 // #0
+b1db9c: 1327 0000                              |01c0: const/16 v39, #int 0 // #0
+b1dba0: 1328 0000                              |01c2: const/16 v40, #int 0 // #0
+b1dba4: 1329 0000                              |01c4: const/16 v41, #int 0 // #0
+b1dba8: 132a 0000                              |01c6: const/16 v42, #int 0 // #0
+b1dbac: 132b 0000                              |01c8: const/16 v43, #int 0 // #0
+b1dbb0: 132c 0000                              |01ca: const/16 v44, #int 0 // #0
+b1dbb4: 132d 0000                              |01cc: const/16 v45, #int 0 // #0
+b1dbb8: 162e 0000                              |01ce: const-wide/16 v46, #int 0 // #0
+b1dbbc: 1630 0000                              |01d0: const-wide/16 v48, #int 0 // #0
+b1dbc0: 1332 0000                              |01d2: const/16 v50, #int 0 // #0
+b1dbc4: 1333 0000                              |01d4: const/16 v51, #int 0 // #0
+b1dbc8: 1334 0000                              |01d6: const/16 v52, #int 0 // #0
+b1dbcc: 1335 0000                              |01d8: const/16 v53, #int 0 // #0
+b1dbd0: 1336 0000                              |01da: const/16 v54, #int 0 // #0
+b1dbd4: 1337 0000                              |01dc: const/16 v55, #int 0 // #0
+b1dbd8: 1338 0000                              |01de: const/16 v56, #int 0 // #0
+b1dbdc: 1339 0000                              |01e0: const/16 v57, #int 0 // #0
+b1dbe0: 223c 094c                              |01e2: new-instance v60, Lpv5/i; // type@4c09
+b1dbe4: 083b 3c00                              |01e4: move-object/from16 v59, v60
+b1dbe8: 5401 78ab                              |01e6: iget-object v1, v0, Lg06/x0;.c:Ljava/lang/String; // field@ab78
+b1dbec: 6205 e6bb                              |01e8: sget-object v5, Lov5/s;.b0:Ljava/util/Set; // field@bbe6
+b1dbf0: 7120 c2dd 4500                         |01ea: invoke-static {v5, v4}, Lov5/s;.s:(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String; // method@ddc2
+b1dbf6: 0c43                                   |01ed: move-result-object v67
+b1dbf8: 1344 4000                              |01ee: const/16 v68, #int 64 // #40
+b1dbfc: 083d d900                              |01f0: move-object/from16 v61, v217
+b1dc00: 083e 0100                              |01f2: move-object/from16 v62, v1
+b1dc04: 023f 0e00                              |01f4: move/from16 v63, v14
+b1dc08: 0540 0200                              |01f6: move-wide/from16 v64, v2
+b1dc0c: 0842 4500                              |01f8: move-object/from16 v66, v69
+b1dc10: 7609 55e0 3c00                         |01fa: invoke-direct/range {v60, v61, v62, v63, v64, v65, v66, v67, v68}, Lpv5/i;.<init>:(Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;I)V // method@e055
+b1dc16: 143d c4f8 f9ff                         |01fd: const v61, #float -nan // #fff9f8c4
+b1dc1c: 133e ff03                              |0200: const/16 v62, #int 1023 // #3ff
+b1dc20: 2201 034c                              |0202: new-instance v1, Lpv5/c; // type@4c03
+b1dc24: 0719                                   |0204: move-object v9, v1
+b1dc26: 01ed                                   |0205: move v13, v14
+b1dc28: 042e                                   |0206: move-wide v14, v2
+b1dc2a: 0810 4500                              |0207: move-object/from16 v16, v69
+b1dc2e: 083a 0000                              |0209: move-object/from16 v58, v0
+b1dc32: 083c d700                              |020b: move-object/from16 v60, v215
+b1dc36: 7636 36e0 0900                         |020d: invoke-direct/range {v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60, v61, v62}, Lpv5/c;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;JZJJLjava/lang/String;Ljava/lang/String;ZZZZLpv5/l;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZJJZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;Ljava/lang/Integer;Lpv5/d;Lg06/w0;Lg06/x0;Lpv5/i;Ljava/lang/Object;II)V // method@e036
+b1dc3c: 1101                                   |0210: return-object v1
+b1dc3e: 5470 389c                              |0211: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.showType:Lcom/dragon/read/rpc/model/ShowType; // field@9c38
+b1dc42: 3800 0b00                              |0213: if-eqz v0, 021e // +000b
+b1dc46: 6e10 1aa7 0000                         |0215: invoke-virtual {v0}, Lcom/dragon/read/rpc/model/ShowType;.getValue:()I // method@a71a
+b1dc4c: 0a00                                   |0218: move-result v0
+b1dc4e: 7110 5fc6 0000                         |0219: invoke-static {v0}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1dc54: 0c00                                   |021c: move-result-object v0
+b1dc56: 2802                                   |021d: goto 021f // +0002
+b1dc58: 1200                                   |021e: const/4 v0, #int 0 // #0
+b1dc5a: 6006 ffbb                              |021f: sget v6, Lov5/t;.a:I // field@bbff
+b1dc5e: 6206 12a1                              |0221: sget-object v6, Lcom/dragon/read/rpc/model/ShowType;.VideoFeedDoubleColNpsV2:Lcom/dragon/read/rpc/model/ShowType; // field@a112
+b1dc62: 6e10 1aa7 0600                         |0223: invoke-virtual {v6}, Lcom/dragon/read/rpc/model/ShowType;.getValue:()I // method@a71a
+b1dc68: 0a06                                   |0226: move-result v6
+b1dc6a: 3900 0300                              |0227: if-nez v0, 022a // +0003
+b1dc6e: 2807                                   |0229: goto 0230 // +0007
+b1dc70: 6e10 59c6 0000                         |022a: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@c659
+b1dc76: 0a0f                                   |022d: move-result v15
+b1dc78: 326f 1400                              |022e: if-eq v15, v6, 0242 // +0014
+b1dc7c: 6206 0aa1                              |0230: sget-object v6, Lcom/dragon/read/rpc/model/ShowType;.SeriesDetailNpsData:Lcom/dragon/read/rpc/model/ShowType; // field@a10a
+b1dc80: 6e10 1aa7 0600                         |0232: invoke-virtual {v6}, Lcom/dragon/read/rpc/model/ShowType;.getValue:()I // method@a71a
+b1dc86: 0a06                                   |0235: move-result v6
+b1dc88: 3900 0300                              |0236: if-nez v0, 0239 // +0003
+b1dc8c: 2808                                   |0238: goto 0240 // +0008
+b1dc8e: 6e10 59c6 0000                         |0239: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@c659
+b1dc94: 0a00                                   |023c: move-result v0
+b1dc96: 3360 0300                              |023d: if-ne v0, v6, 0240 // +0003
+b1dc9a: 2803                                   |023f: goto 0242 // +0003
+b1dc9c: 1200                                   |0240: const/4 v0, #int 0 // #0
+b1dc9e: 2802                                   |0241: goto 0243 // +0002
+b1dca0: 1210                                   |0242: const/4 v0, #int 1 // #1
+b1dca2: 3900 0300                              |0243: if-nez v0, 0246 // +0003
+b1dca6: 2805                                   |0245: goto 024a // +0005
+b1dca8: 5470 3e9c                              |0246: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.userResearch:Lcom/dragon/read/rpc/model/UserResearch; // field@9c3e
+b1dcac: 3900 0400                              |0248: if-nez v0, 024c // +0004
+b1dcb0: 1206                                   |024a: const/4 v6, #int 0 // #0
+b1dcb2: 284f                                   |024b: goto 029a // +004f
+b1dcb4: 2206 044c                              |024c: new-instance v6, Lpv5/d; // type@4c04
+b1dcb8: 540f f8a1                              |024e: iget-object v15, v0, Lcom/dragon/read/rpc/model/UserResearch;.researchId:Ljava/lang/String; // field@a1f8
+b1dcbc: 390f 0500                              |0250: if-nez v15, 0255 // +0005
+b1dcc0: 0810 0c00                              |0252: move-object/from16 v16, v12
+b1dcc4: 2803                                   |0254: goto 0257 // +0003
+b1dcc6: 0810 0f00                              |0255: move-object/from16 v16, v15
+b1dcca: 540f f9a1                              |0257: iget-object v15, v0, Lcom/dragon/read/rpc/model/UserResearch;.researchTitle:Ljava/lang/String; // field@a1f9
+b1dcce: 390f 0500                              |0259: if-nez v15, 025e // +0005
+b1dcd2: 0811 0c00                              |025b: move-object/from16 v17, v12
+b1dcd6: 2803                                   |025d: goto 0260 // +0003
+b1dcd8: 0811 0f00                              |025e: move-object/from16 v17, v15
+b1dcdc: 540f f7a1                              |0260: iget-object v15, v0, Lcom/dragon/read/rpc/model/UserResearch;.optionInfos:Lcom/dragon/read/rpc/model/UserResearchOptionInfo; // field@a1f7
+b1dce0: 540b faa1                              |0262: iget-object v11, v0, Lcom/dragon/read/rpc/model/UserResearch;.scoreOptionInfo:Ljava/util/Map; // field@a1fa
+b1dce4: 5404 fca1                              |0264: iget-object v4, v0, Lcom/dragon/read/rpc/model/UserResearch;.showType:Lcom/dragon/read/rpc/model/ResearchShowType; // field@a1fc
+b1dce8: 3804 0900                              |0266: if-eqz v4, 026f // +0009
+b1dcec: 6e10 f8a6 0400                         |0268: invoke-virtual {v4}, Lcom/dragon/read/rpc/model/ResearchShowType;.getValue:()I // method@a6f8
+b1dcf2: 0a04                                   |026b: move-result v4
+b1dcf4: 0214 0400                              |026c: move/from16 v20, v4
+b1dcf8: 2803                                   |026e: goto 0271 // +0003
+b1dcfa: 1314 0000                              |026f: const/16 v20, #int 0 // #0
+b1dcfe: 5400 fba1                              |0271: iget-object v0, v0, Lcom/dragon/read/rpc/model/UserResearch;.scoreRemarks:Ljava/util/Map; // field@a1fb
+b1dd02: 3900 0600                              |0273: if-nez v0, 0279 // +0006
+b1dd06: 7100 22ca 0000                         |0275: invoke-static {}, Lkotlin/collections/MapsKt;.emptyMap:()Ljava/util/Map; // method@ca22
+b1dd0c: 0c00                                   |0278: move-result-object v0
+b1dd0e: 0815 0000                              |0279: move-object/from16 v21, v0
+b1dd12: 5470 1e9c                              |027b: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.cellLongPressAction:Lcom/dragon/read/rpc/model/LongPressAction; // field@9c1e
+b1dd16: 5474 249c                              |027d: iget-object v4, v7, Lcom/dragon/read/rpc/model/CellViewData;.dislikeTargetType:Lcom/dragon/read/rpc/model/DislikeTargetType; // field@9c24
+b1dd1a: 3804 0e00                              |027f: if-eqz v4, 028d // +000e
+b1dd1e: 6e10 58a6 0400                         |0281: invoke-virtual {v4}, Lcom/dragon/read/rpc/model/DislikeTargetType;.getValue:()I // method@a658
+b1dd24: 0a04                                   |0284: move-result v4
+b1dd26: 7110 5fc6 0400                         |0285: invoke-static {v4}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1dd2c: 0c04                                   |0288: move-result-object v4
+b1dd2e: 0817 0400                              |0289: move-object/from16 v23, v4
+b1dd32: 07f4                                   |028b: move-object v4, v15
+b1dd34: 2804                                   |028c: goto 0290 // +0004
+b1dd36: 07f4                                   |028d: move-object v4, v15
+b1dd38: 1317 0000                              |028e: const/16 v23, #int 0 // #0
+b1dd3c: 076f                                   |0290: move-object v15, v6
+b1dd3e: 0812 0400                              |0291: move-object/from16 v18, v4
+b1dd42: 0813 0b00                              |0293: move-object/from16 v19, v11
+b1dd46: 0816 0000                              |0295: move-object/from16 v22, v0
+b1dd4a: 7609 3ce0 0f00                         |0297: invoke-direct/range {v15, v16, v17, v18, v19, v20, v21, v22, v23}, Lpv5/d;.<init>:(Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/UserResearchOptionInfo;Ljava/util/Map;ILjava/util/Map;Lcom/dragon/read/rpc/model/LongPressAction;Ljava/lang/Integer;)V // method@e03c
+b1dd50: 3806 b300                              |029a: if-eqz v6, 034d // +00b3
+b1dd54: 7701 b1dd d700                         |029c: invoke-static/range {v215}, Lov5/s;.b:(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map; // method@ddb1
+b1dd5a: 0c00                                   |029f: move-result-object v0
+b1dd5c: 5464 e8bd                              |02a0: iget-object v4, v6, Lpv5/d;.a:Ljava/lang/String; // field@bde8
+b1dd60: 7110 daca 0400                         |02a2: invoke-static {v4}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1dd66: 0a05                                   |02a5: move-result v5
+b1dd68: b7a5                                   |02a6: xor-int/2addr v5, v10
+b1dd6a: 3805 0400                              |02a7: if-eqz v5, 02ab // +0004
+b1dd6e: 074b                                   |02a9: move-object v11, v4
+b1dd70: 2802                                   |02aa: goto 02ac // +0002
+b1dd72: 120b                                   |02ab: const/4 v11, #int 0 // #0
+b1dd74: 390b 1b00                              |02ac: if-nez v11, 02c7 // +001b
+b1dd78: 2204 b145                              |02ae: new-instance v4, Ljava/lang/StringBuilder; // type@45b1
+b1dd7c: 7010 b7c6 0400                         |02b0: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@c6b7
+b1dd82: 6e30 bfc6 2403                         |02b3: invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1dd88: 6e20 bbc6 d400                         |02b6: invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1dd8e: 6e20 bec6 e400                         |02b9: invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1dd94: 6e20 bbc6 d400                         |02bc: invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1dd9a: 6e20 bec6 1400                         |02bf: invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1dda0: 6e10 c6c6 0400                         |02c2: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1dda6: 0c01                                   |02c5: move-result-object v1
+b1dda8: 2802                                   |02c6: goto 02c8 // +0002
+b1ddaa: 07b1                                   |02c7: move-object v1, v11
+b1ddac: 2204 034c                              |02c8: new-instance v4, Lpv5/c; // type@4c03
+b1ddb0: 0749                                   |02ca: move-object v9, v4
+b1ddb2: 2205 b145                              |02cb: new-instance v5, Ljava/lang/StringBuilder; // type@45b1
+b1ddb6: 1a0a 4bb5                              |02cd: const-string v10, "nps_" // string@b54b
+b1ddba: 7020 b9c6 a500                         |02cf: invoke-direct {v5, v10}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@c6b9
+b1ddc0: 6e20 c1c6 1500                         |02d2: invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ddc6: 6e10 c6c6 0500                         |02d5: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1ddcc: 0c0a                                   |02d8: move-result-object v10
+b1ddce: 546b e9bd                              |02d9: iget-object v11, v6, Lpv5/d;.b:Ljava/lang/String; // field@bde9
+b1ddd2: 120c                                   |02db: const/4 v12, #int 0 // #0
+b1ddd4: 1311 0000                              |02dc: const/16 v17, #int 0 // #0
+b1ddd8: 1312 0000                              |02de: const/16 v18, #int 0 // #0
+b1dddc: 1313 0000                              |02e0: const/16 v19, #int 0 // #0
+b1dde0: 1314 0000                              |02e2: const/16 v20, #int 0 // #0
+b1dde4: 1315 0000                              |02e4: const/16 v21, #int 0 // #0
+b1dde8: 1316 0000                              |02e6: const/16 v22, #int 0 // #0
+b1ddec: 1317 0000                              |02e8: const/16 v23, #int 0 // #0
+b1ddf0: 1318 0000                              |02ea: const/16 v24, #int 0 // #0
+b1ddf4: 1319 0000                              |02ec: const/16 v25, #int 0 // #0
+b1ddf8: 131a 0000                              |02ee: const/16 v26, #int 0 // #0
+b1ddfc: 131b 0000                              |02f0: const/16 v27, #int 0 // #0
+b1de00: 161c 0000                              |02f2: const-wide/16 v28, #int 0 // #0
+b1de04: 131e 0000                              |02f4: const/16 v30, #int 0 // #0
+b1de08: 161f 0000                              |02f6: const-wide/16 v31, #int 0 // #0
+b1de0c: 1621 0000                              |02f8: const-wide/16 v33, #int 0 // #0
+b1de10: 1323 0000                              |02fa: const/16 v35, #int 0 // #0
+b1de14: 1324 0000                              |02fc: const/16 v36, #int 0 // #0
+b1de18: 1325 0000                              |02fe: const/16 v37, #int 0 // #0
+b1de1c: 1326 0000                              |0300: const/16 v38, #int 0 // #0
+b1de20: 1327 0000                              |0302: const/16 v39, #int 0 // #0
+b1de24: 1328 0000                              |0304: const/16 v40, #int 0 // #0
+b1de28: 1329 0000                              |0306: const/16 v41, #int 0 // #0
+b1de2c: 132a 0000                              |0308: const/16 v42, #int 0 // #0
+b1de30: 132b 0000                              |030a: const/16 v43, #int 0 // #0
+b1de34: 132c 0000                              |030c: const/16 v44, #int 0 // #0
+b1de38: 132d 0000                              |030e: const/16 v45, #int 0 // #0
+b1de3c: 162e 0000                              |0310: const-wide/16 v46, #int 0 // #0
+b1de40: 1630 0000                              |0312: const-wide/16 v48, #int 0 // #0
+b1de44: 1332 0000                              |0314: const/16 v50, #int 0 // #0
+b1de48: 1333 0000                              |0316: const/16 v51, #int 0 // #0
+b1de4c: 1334 0000                              |0318: const/16 v52, #int 0 // #0
+b1de50: 1335 0000                              |031a: const/16 v53, #int 0 // #0
+b1de54: 1336 0000                              |031c: const/16 v54, #int 0 // #0
+b1de58: 1337 0000                              |031e: const/16 v55, #int 0 // #0
+b1de5c: 1339 0000                              |0320: const/16 v57, #int 0 // #0
+b1de60: 133a 0000                              |0322: const/16 v58, #int 0 // #0
+b1de64: 223c 094c                              |0324: new-instance v60, Lpv5/i; // type@4c09
+b1de68: 083b 3c00                              |0326: move-object/from16 v59, v60
+b1de6c: 6205 e6bb                              |0328: sget-object v5, Lov5/s;.b0:Ljava/util/Set; // field@bbe6
+b1de70: 7120 c2dd 0500                         |032a: invoke-static {v5, v0}, Lov5/s;.s:(Ljava/util/Set;Ljava/lang/Object;)Ljava/lang/String; // method@ddc2
+b1de76: 0c43                                   |032d: move-result-object v67
+b1de78: 1344 4000                              |032e: const/16 v68, #int 64 // #40
+b1de7c: 083d d900                              |0330: move-object/from16 v61, v217
+b1de80: 083e 0100                              |0332: move-object/from16 v62, v1
+b1de84: 023f 0e00                              |0334: move/from16 v63, v14
+b1de88: 0540 0200                              |0336: move-wide/from16 v64, v2
+b1de8c: 0842 4500                              |0338: move-object/from16 v66, v69
+b1de90: 7609 55e0 3c00                         |033a: invoke-direct/range {v60, v61, v62, v63, v64, v65, v66, v67, v68}, Lpv5/i;.<init>:(Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;I)V // method@e055
+b1de96: 133d c4ff                              |033d: const/16 v61, #int -60 // #ffc4
+b1de9a: 133e ff06                              |033f: const/16 v62, #int 1791 // #6ff
+b1de9e: 01ed                                   |0341: move v13, v14
+b1dea0: 042e                                   |0342: move-wide v14, v2
+b1dea2: 0810 4500                              |0343: move-object/from16 v16, v69
+b1dea6: 0838 0600                              |0345: move-object/from16 v56, v6
+b1deaa: 083c d700                              |0347: move-object/from16 v60, v215
+b1deae: 7636 36e0 0900                         |0349: invoke-direct/range {v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60, v61, v62}, Lpv5/c;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;JZJJLjava/lang/String;Ljava/lang/String;ZZZZLpv5/l;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZJJZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;Ljava/lang/Integer;Lpv5/d;Lg06/w0;Lg06/x0;Lpv5/i;Ljava/lang/Object;II)V // method@e036
+b1deb4: 1104                                   |034c: return-object v4
+b1deb6: 5470 2c9c                              |034d: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.postData:Ljava/util/List; // field@9c2c
+b1deba: 3800 0a00                              |034f: if-eqz v0, 0359 // +000a
+b1debe: 7120 edc9 9000                         |0351: invoke-static {v0, v9}, Lkotlin/collections/CollectionsKt;.getOrNull:(Ljava/util/List;I)Ljava/lang/Object; // method@c9ed
+b1dec4: 0c00                                   |0354: move-result-object v0
+b1dec6: 1f00 953c                              |0355: check-cast v0, Lcom/dragon/read/rpc/model/UgcPostData; // type@3c95
+b1deca: 070b                                   |0357: move-object v11, v0
+b1decc: 2802                                   |0358: goto 035a // +0002
+b1dece: 120b                                   |0359: const/4 v11, #int 0 // #0
+b1ded0: 5470 389c                              |035a: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.showType:Lcom/dragon/read/rpc/model/ShowType; // field@9c38
+b1ded4: 6204 0ea1                              |035c: sget-object v4, Lcom/dragon/read/rpc/model/ShowType;.VideoDoubleColPost:Lcom/dragon/read/rpc/model/ShowType; // field@a10e
+b1ded8: 3340 7502                              |035e: if-ne v0, v4, 05d3 // +0275
+b1dedc: 5470 279c                              |0360: iget-object v0, v7, Lcom/dragon/read/rpc/model/CellViewData;.groupIdType:Lcom/dragon/read/rpc/model/CandidateDataType; // field@9c27
+b1dee0: 6204 f39b                              |0362: sget-object v4, Lcom/dragon/read/rpc/model/CandidateDataType;.PUGCVideo:Lcom/dragon/read/rpc/model/CandidateDataType; // field@9bf3
+b1dee4: 3240 0400                              |0364: if-eq v0, v4, 0368 // +0004
+b1dee8: 2900 6d02                              |0366: goto/16 05d3 // +026d
+b1deec: 5474 409c                              |0368: iget-object v4, v7, Lcom/dragon/read/rpc/model/CellViewData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@9c40
+b1def0: 3904 0400                              |036a: if-nez v4, 036e // +0004
+b1def4: 2900 6702                              |036c: goto/16 05d3 // +0267
+b1def8: 5440 bda2                              |036e: iget-object v0, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoList:Ljava/util/List; // field@a2bd
+b1defc: 3800 6302                              |0370: if-eqz v0, 05d3 // +0263
+b1df00: 7110 e9c9 0000                         |0372: invoke-static {v0}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1df06: 0c00                                   |0375: move-result-object v0
+b1df08: 0705                                   |0376: move-object v5, v0
+b1df0a: 1f05 d33c                              |0377: check-cast v5, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1df0e: 3905 0400                              |0379: if-nez v5, 037d // +0004
+b1df12: 2900 5802                              |037b: goto/16 05d3 // +0258
+b1df16: 6200 b098                              |037d: sget-object v0, Lcom/dragon/read/kmp/utils/z;.a:Lcom/dragon/read/kmp/utils/z; // field@98b0
+b1df1a: 6200 ca08                              |037f: sget-object v0, Lcom/dragon/read/kmp/base/h;.a:Lhi8/o; // field@08ca
+b1df1e: 6e10 85c6 0000                         |0381: invoke-virtual {v0}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1df24: 6206 3ea2                              |0384: sget-object v6, Lcom/dragon/read/rpc/model/VideoData;.Companion:Lcom/dragon/read/rpc/model/VideoData$b; // field@a23e
+b1df28: 6e10 53a7 0600                         |0386: invoke-virtual {v6}, Lcom/dragon/read/rpc/model/VideoData$b;.serializer:()Lkotlinx/serialization/KSerializer; // method@a753
+b1df2e: 0c0f                                   |0389: move-result-object v15
+b1df30: 1f0f 7147                              |038a: check-cast v15, Lkotlinx/serialization/SerializationStrategy; // type@4771
+b1df34: 6e30 6dc0 f005                         |038c: invoke-virtual {v0, v15, v5}, Lhi8/a;.a:(Lkotlinx/serialization/SerializationStrategy;Ljava/lang/Object;)Ljava/lang/String; // method@c06d
+b1df3a: 0c00                                   |038f: move-result-object v0
+b1df3c: 6e10 a0c6 0000                         |0390: invoke-virtual {v0}, Ljava/lang/String;.length:()I // method@c6a0
+b1df42: 0a0f                                   |0393: move-result v15
+b1df44: 390f 0400                              |0394: if-nez v15, 0398 // +0004
+b1df48: 121f                                   |0396: const/4 v15, #int 1 // #1
+b1df4a: 2802                                   |0397: goto 0399 // +0002
+b1df4c: 120f                                   |0398: const/4 v15, #int 0 // #0
+b1df4e: 380f 0300                              |0399: if-eqz v15, 039c // +0003
+b1df52: 2849                                   |039b: goto 03e4 // +0049
+b1df54: 620f 21b4                              |039c: sget-object v15, Lkotlin/Result;.Companion:Lkotlin/Result$Companion; // field@b421
+b1df58: 620f ca08                              |039e: sget-object v15, Lcom/dragon/read/kmp/base/h;.a:Lhi8/o; // field@08ca
+b1df5c: 6e10 85c6 0f00                         |03a0: invoke-virtual {v15}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1df62: 6e10 53a7 0600                         |03a3: invoke-virtual {v6}, Lcom/dragon/read/rpc/model/VideoData$b;.serializer:()Lkotlinx/serialization/KSerializer; // method@a753
+b1df68: 0c06                                   |03a6: move-result-object v6
+b1df6a: 1f06 6c47                              |03a7: check-cast v6, Lkotlinx/serialization/DeserializationStrategy; // type@476c
+b1df6e: 6e30 6fc0 6f00                         |03a9: invoke-virtual {v15, v6, v0}, Lhi8/a;.c:(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object; // method@c06f
+b1df74: 0c00                                   |03ac: move-result-object v0
+b1df76: 7110 b5c9 0000                         |03ad: invoke-static {v0}, Lkotlin/Result;.constructor-impl:(Ljava/lang/Object;)Ljava/lang/Object; // method@c9b5
+b1df7c: 0c00                                   |03b0: move-result-object v0
+b1df7e: 280c                                   |03b1: goto 03bd // +000c
+b1df80: 0d00                                   |03b2: move-exception v0
+b1df82: 6206 21b4                              |03b3: sget-object v6, Lkotlin/Result;.Companion:Lkotlin/Result$Companion; // field@b421
+b1df86: 7110 bac9 0000                         |03b5: invoke-static {v0}, Lkotlin/ResultKt;.createFailure:(Ljava/lang/Throwable;)Ljava/lang/Object; // method@c9ba
+b1df8c: 0c00                                   |03b8: move-result-object v0
+b1df8e: 7110 b5c9 0000                         |03b9: invoke-static {v0}, Lkotlin/Result;.constructor-impl:(Ljava/lang/Object;)Ljava/lang/Object; // method@c9b5
+b1df94: 0c00                                   |03bc: move-result-object v0
+b1df96: 7110 b6c9 0000                         |03bd: invoke-static {v0}, Lkotlin/Result;.exceptionOrNull-impl:(Ljava/lang/Object;)Ljava/lang/Throwable; // method@c9b6
+b1df9c: 0c06                                   |03c0: move-result-object v6
+b1df9e: 3806 1d00                              |03c1: if-eqz v6, 03de // +001d
+b1dfa2: 620f 78d6                              |03c3: sget-object v15, Lzw0/b;.b:Lzw0/b; // field@d678
+b1dfa6: 220a b145                              |03c5: new-instance v10, Ljava/lang/StringBuilder; // type@45b1
+b1dfaa: 1a0d 56a8                              |03c7: const-string v13, "fromJson json error " // string@a856
+b1dfae: 7020 b9c6 da00                         |03c9: invoke-direct {v10, v13}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@c6b9
+b1dfb4: 6e10 d9c6 0600                         |03cc: invoke-virtual {v6}, Ljava/lang/Throwable;.getMessage:()Ljava/lang/String; // method@c6d9
+b1dfba: 0c06                                   |03cf: move-result-object v6
+b1dfbc: 6e20 c1c6 6a00                         |03d0: invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1dfc2: 6e10 c6c6 0a00                         |03d3: invoke-virtual {v10}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1dfc8: 0c06                                   |03d6: move-result-object v6
+b1dfca: 600a 77d6                              |03d7: sget v10, Lzw0/a$a;.a:I // field@d677
+b1dfce: 1a0a f41a                              |03d9: const-string v10, "JSONUtils" // string@1af4
+b1dfd2: 6e40 3dff af96                         |03db: invoke-virtual {v15, v10, v6, v9}, Lzw0/b;.Pm:(Ljava/lang/String;Ljava/lang/String;Z)V // method@ff3d
+b1dfd8: 7110 b7c9 0000                         |03de: invoke-static {v0}, Lkotlin/Result;.isFailure-impl:(Ljava/lang/Object;)Z // method@c9b7
+b1dfde: 0a06                                   |03e1: move-result v6
+b1dfe0: 3806 0300                              |03e2: if-eqz v6, 03e5 // +0003
+b1dfe4: 1200                                   |03e4: const/4 v0, #int 0 // #0
+b1dfe6: 1f00 d33c                              |03e5: check-cast v0, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1dfea: 3900 2001                              |03e7: if-nez v0, 0507 // +0120
+b1dfee: 2200 d33c                              |03e9: new-instance v0, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1dff2: 0846 0000                              |03eb: move-object/from16 v70, v0
+b1dff6: 5456 75a2                              |03ed: iget-object v6, v5, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1dffa: 0847 0600                              |03ef: move-object/from16 v71, v6
+b1dffe: 5456 49a2                              |03f1: iget-object v6, v5, Lcom/dragon/read/rpc/model/VideoData;.cover:Ljava/lang/String; // field@a249
+b1e002: 0848 0600                              |03f3: move-object/from16 v72, v6
+b1e006: 5359 4da2                              |03f5: iget-wide v9, v5, Lcom/dragon/read/rpc/model/VideoData;.duration:J // field@a24d
+b1e00a: 0549 0900                              |03f7: move-wide/from16 v73, v9
+b1e00e: 134b 0000                              |03f9: const/16 v75, #int 0 // #0
+b1e012: 5456 6fa2                              |03fb: iget-object v6, v5, Lcom/dragon/read/rpc/model/VideoData;.title:Ljava/lang/String; // field@a26f
+b1e016: 084c 0600                              |03fd: move-object/from16 v76, v6
+b1e01a: 134d 0000                              |03ff: const/16 v77, #int 0 // #0
+b1e01e: 134e 0000                              |0401: const/16 v78, #int 0 // #0
+b1e022: 134f 0000                              |0403: const/16 v79, #int 0 // #0
+b1e026: 1350 0000                              |0405: const/16 v80, #int 0 // #0
+b1e02a: 1351 0000                              |0407: const/16 v81, #int 0 // #0
+b1e02e: 1352 0000                              |0409: const/16 v82, #int 0 // #0
+b1e032: 1353 0000                              |040b: const/16 v83, #int 0 // #0
+b1e036: 1354 0000                              |040d: const/16 v84, #int 0 // #0
+b1e03a: 1355 0000                              |040f: const/16 v85, #int 0 // #0
+b1e03e: 1356 0000                              |0411: const/16 v86, #int 0 // #0
+b1e042: 5456 66a2                              |0413: iget-object v6, v5, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@a266
+b1e046: 0857 0600                              |0415: move-object/from16 v87, v6
+b1e04a: 1658 0000                              |0417: const-wide/16 v88, #int 0 // #0
+b1e04e: 135a 0000                              |0419: const/16 v90, #int 0 // #0
+b1e052: 135b 0000                              |041b: const/16 v91, #int 0 // #0
+b1e056: 135c 0000                              |041d: const/16 v92, #int 0 // #0
+b1e05a: 135d 0000                              |041f: const/16 v93, #int 0 // #0
+b1e05e: 135e 0000                              |0421: const/16 v94, #int 0 // #0
+b1e062: 135f 0000                              |0423: const/16 v95, #int 0 // #0
+b1e066: 1360 0000                              |0425: const/16 v96, #int 0 // #0
+b1e06a: 5455 48a2                              |0427: iget-object v5, v5, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e06e: 0861 0500                              |0429: move-object/from16 v97, v5
+b1e072: 1362 0000                              |042b: const/16 v98, #int 0 // #0
+b1e076: 1363 0000                              |042d: const/16 v99, #int 0 // #0
+b1e07a: 1364 0000                              |042f: const/16 v100, #int 0 // #0
+b1e07e: 1665 0000                              |0431: const-wide/16 v101, #int 0 // #0
+b1e082: 1367 0000                              |0433: const/16 v103, #int 0 // #0
+b1e086: 1368 0000                              |0435: const/16 v104, #int 0 // #0
+b1e08a: 1369 0000                              |0437: const/16 v105, #int 0 // #0
+b1e08e: 136a 0000                              |0439: const/16 v106, #int 0 // #0
+b1e092: 136b 0000                              |043b: const/16 v107, #int 0 // #0
+b1e096: 136c 0000                              |043d: const/16 v108, #int 0 // #0
+b1e09a: 136d 0000                              |043f: const/16 v109, #int 0 // #0
+b1e09e: 136e 0000                              |0441: const/16 v110, #int 0 // #0
+b1e0a2: 136f 0000                              |0443: const/16 v111, #int 0 // #0
+b1e0a6: 1370 0000                              |0445: const/16 v112, #int 0 // #0
+b1e0aa: 1671 0000                              |0447: const-wide/16 v113, #int 0 // #0
+b1e0ae: 1373 0000                              |0449: const/16 v115, #int 0 // #0
+b1e0b2: 1374 0000                              |044b: const/16 v116, #int 0 // #0
+b1e0b6: 1375 0000                              |044d: const/16 v117, #int 0 // #0
+b1e0ba: 1376 0000                              |044f: const/16 v118, #int 0 // #0
+b1e0be: 1377 0000                              |0451: const/16 v119, #int 0 // #0
+b1e0c2: 1378 0000                              |0453: const/16 v120, #int 0 // #0
+b1e0c6: 1379 0000                              |0455: const/16 v121, #int 0 // #0
+b1e0ca: 137a 0000                              |0457: const/16 v122, #int 0 // #0
+b1e0ce: 137b 0000                              |0459: const/16 v123, #int 0 // #0
+b1e0d2: 137c 0000                              |045b: const/16 v124, #int 0 // #0
+b1e0d6: 137d 0000                              |045d: const/16 v125, #int 0 // #0
+b1e0da: 137e 0000                              |045f: const/16 v126, #int 0 // #0
+b1e0de: 137f 0000                              |0461: const/16 v127, #int 0 // #0
+b1e0e2: 1680 0000                              |0463: const-wide/16 v128, #int 0 // #0
+b1e0e6: 1382 0000                              |0465: const/16 v130, #int 0 // #0
+b1e0ea: 1383 0000                              |0467: const/16 v131, #int 0 // #0
+b1e0ee: 1684 0000                              |0469: const-wide/16 v132, #int 0 // #0
+b1e0f2: 1386 0000                              |046b: const/16 v134, #int 0 // #0
+b1e0f6: 1387 0000                              |046d: const/16 v135, #int 0 // #0
+b1e0fa: 1388 0000                              |046f: const/16 v136, #int 0 // #0
+b1e0fe: 1389 0000                              |0471: const/16 v137, #int 0 // #0
+b1e102: 138a 0000                              |0473: const/16 v138, #int 0 // #0
+b1e106: 138b 0000                              |0475: const/16 v139, #int 0 // #0
+b1e10a: 138c 0000                              |0477: const/16 v140, #int 0 // #0
+b1e10e: 138d 0000                              |0479: const/16 v141, #int 0 // #0
+b1e112: 138e 0000                              |047b: const/16 v142, #int 0 // #0
+b1e116: 138f 0000                              |047d: const/16 v143, #int 0 // #0
+b1e11a: 1390 0000                              |047f: const/16 v144, #int 0 // #0
+b1e11e: 1391 0000                              |0481: const/16 v145, #int 0 // #0
+b1e122: 1392 0000                              |0483: const/16 v146, #int 0 // #0
+b1e126: 1393 0000                              |0485: const/16 v147, #int 0 // #0
+b1e12a: 1394 0000                              |0487: const/16 v148, #int 0 // #0
+b1e12e: 1395 0000                              |0489: const/16 v149, #int 0 // #0
+b1e132: 1396 0000                              |048b: const/16 v150, #int 0 // #0
+b1e136: 1697 0000                              |048d: const-wide/16 v151, #int 0 // #0
+b1e13a: 1399 0000                              |048f: const/16 v153, #int 0 // #0
+b1e13e: 139a 0000                              |0491: const/16 v154, #int 0 // #0
+b1e142: 139b 0000                              |0493: const/16 v155, #int 0 // #0
+b1e146: 169c 0000                              |0495: const-wide/16 v156, #int 0 // #0
+b1e14a: 139e 0000                              |0497: const/16 v158, #int 0 // #0
+b1e14e: 139f 0000                              |0499: const/16 v159, #int 0 // #0
+b1e152: 13a0 0000                              |049b: const/16 v160, #int 0 // #0
+b1e156: 13a1 0000                              |049d: const/16 v161, #int 0 // #0
+b1e15a: 13a2 0000                              |049f: const/16 v162, #int 0 // #0
+b1e15e: 13a3 0000                              |04a1: const/16 v163, #int 0 // #0
+b1e162: 13a4 0000                              |04a3: const/16 v164, #int 0 // #0
+b1e166: 13a5 0000                              |04a5: const/16 v165, #int 0 // #0
+b1e16a: 13a6 0000                              |04a7: const/16 v166, #int 0 // #0
+b1e16e: 13a7 0000                              |04a9: const/16 v167, #int 0 // #0
+b1e172: 13a8 0000                              |04ab: const/16 v168, #int 0 // #0
+b1e176: 13a9 0000                              |04ad: const/16 v169, #int 0 // #0
+b1e17a: 13aa 0000                              |04af: const/16 v170, #int 0 // #0
+b1e17e: 13ab 0000                              |04b1: const/16 v171, #int 0 // #0
+b1e182: 13ac 0000                              |04b3: const/16 v172, #int 0 // #0
+b1e186: 13ad 0000                              |04b5: const/16 v173, #int 0 // #0
+b1e18a: 13ae 0000                              |04b7: const/16 v174, #int 0 // #0
+b1e18e: 13af 0000                              |04b9: const/16 v175, #int 0 // #0
+b1e192: 13b0 0000                              |04bb: const/16 v176, #int 0 // #0
+b1e196: 13b1 0000                              |04bd: const/16 v177, #int 0 // #0
+b1e19a: 13b2 0000                              |04bf: const/16 v178, #int 0 // #0
+b1e19e: 13b3 0000                              |04c1: const/16 v179, #int 0 // #0
+b1e1a2: 13b4 0000                              |04c3: const/16 v180, #int 0 // #0
+b1e1a6: 13b5 0000                              |04c5: const/16 v181, #int 0 // #0
+b1e1aa: 13b6 0000                              |04c7: const/16 v182, #int 0 // #0
+b1e1ae: 13b7 0000                              |04c9: const/16 v183, #int 0 // #0
+b1e1b2: 13b8 0000                              |04cb: const/16 v184, #int 0 // #0
+b1e1b6: 13b9 0000                              |04cd: const/16 v185, #int 0 // #0
+b1e1ba: 13ba 0000                              |04cf: const/16 v186, #int 0 // #0
+b1e1be: 13bb 0000                              |04d1: const/16 v187, #int 0 // #0
+b1e1c2: 13bc 0000                              |04d3: const/16 v188, #int 0 // #0
+b1e1c6: 13bd 0000                              |04d5: const/16 v189, #int 0 // #0
+b1e1ca: 13be 0000                              |04d7: const/16 v190, #int 0 // #0
+b1e1ce: 13bf 0000                              |04d9: const/16 v191, #int 0 // #0
+b1e1d2: 13c0 0000                              |04db: const/16 v192, #int 0 // #0
+b1e1d6: 16c1 0000                              |04dd: const-wide/16 v193, #int 0 // #0
+b1e1da: 13c3 0000                              |04df: const/16 v195, #int 0 // #0
+b1e1de: 16c4 0000                              |04e1: const-wide/16 v196, #int 0 // #0
+b1e1e2: 13c6 0000                              |04e3: const/16 v198, #int 0 // #0
+b1e1e6: 13c7 0000                              |04e5: const/16 v199, #int 0 // #0
+b1e1ea: 13c8 0000                              |04e7: const/16 v200, #int 0 // #0
+b1e1ee: 13c9 0000                              |04e9: const/16 v201, #int 0 // #0
+b1e1f2: 13ca 0000                              |04eb: const/16 v202, #int 0 // #0
+b1e1f6: 13cb 0000                              |04ed: const/16 v203, #int 0 // #0
+b1e1fa: 13cc 0000                              |04ef: const/16 v204, #int 0 // #0
+b1e1fe: 13cd 0000                              |04f1: const/16 v205, #int 0 // #0
+b1e202: 13ce 0000                              |04f3: const/16 v206, #int 0 // #0
+b1e206: 13cf 0000                              |04f5: const/16 v207, #int 0 // #0
+b1e20a: 13d0 0000                              |04f7: const/16 v208, #int 0 // #0
+b1e20e: 14d1 e87f fffe                         |04f9: const v209, #float -1.69809e+38 // #feff7fe8
+b1e214: 13d2 ffff                              |04fc: const/16 v210, #int -1 // #ffff
+b1e218: 13d3 ffff                              |04fe: const/16 v211, #int -1 // #ffff
+b1e21c: 13d4 ffff                              |0500: const/16 v212, #int -1 // #ffff
+b1e220: 13d5 0000                              |0502: const/16 v213, #int 0 // #0
+b1e224: 7690 54a7 4600                         |0504: invoke-direct/range {v70, v71, v72, v73, v74, v75, v76, v77, v78, v79, v80, v81, v82, v83, v84, v85, v86, v87, v88, v89, v90, v91, v92, v93, v94, v95, v96, v97, v98, v99, v100, v101, v102, v103, v104, v105, v106, v107, v108, v109, v110, v111, v112, v113, v114, v115, v116, v117, v118, v119, v120, v121, v122, v123, v124, v125, v126, v127, v128, v129, v130, v131, v132, v133, v134, v135, v136, v137, v138, v139, v140, v141, v142, v143, v144, v145, v146, v147, v148, v149, v150, v151, v152, v153, v154, v155, v156, v157, v158, v159, v160, v161, v162, v163, v164, v165, v166, v167, v168, v169, v170, v171, v172, v173, v174, v175, v176, v177, v178, v179, v180, v181, v182, v183, v184, v185, v186, v187, v188, v189, v190, v191, v192, v193, v194, v195, v196, v197, v198, v199, v200, v201, v202, v203, v204, v205, v206, v207, v208, v209, v210, v211, v212, v213}, Lcom/dragon/read/rpc/model/VideoData;.<init>:(Ljava/lang/String;Ljava/lang/String;JLcom/dragon/read/rpc/model/ApiBookInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdTransferType;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdUrlData;Ljava/lang/String;Ljava/lang/String;JZZZZZZZLcom/dragon/read/rpc/model/VideoContentType;Ljava/lang/String;Ljava/lang/String;ZJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZZJZLjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/dragon/read/rpc/model/VideoPlatformType;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IIJZLjava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoDetailVideoData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/CloudReviewStatus;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoHighlight;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoEpisodeStatus;Ljava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/VideoPayInfo;Ljava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;JLjava/util/List;Ljava/util/List;ZLjava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/RecTypeStyle;Lcom/dragon/read/rpc/model/VideoTagInfo;Lcom/dragon/read/rpc/model/BuriedParams;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/RecommendTagInfo;Ljava/lang/String;ZZLcom/dragon/read/rpc/model/VideoAlbumDetailInfo;Lcom/dragon/read/rpc/model/AlbumShowStyle;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoImageData;Lcom/dragon/read/rpc/model/SubscribeItem;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RankChangeData;Ljava/util/List;Lcom/dragon/read/rpc/model/DisplayDim;Lcom/dragon/read/rpc/model/AutoPlayData;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea;Lcom/dragon/read/rpc/model/VideoBottomBar;Lcom/dragon/read/rpc/model/VideoRelateBook;JLjava/lang/String;JLjava/util/List;Ljava/lang/String;ZZILjava/util/List;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;ZIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@a754
+b1e22a: 5b04 79a2                              |0507: iput-object v4, v0, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e22e: 5405 49a2                              |0509: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.cover:Ljava/lang/String; // field@a249
+b1e232: 3905 0a00                              |050b: if-nez v5, 0515 // +000a
+b1e236: 5445 b1a2                              |050d: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@a2b1
+b1e23a: 3805 0500                              |050f: if-eqz v5, 0514 // +0005
+b1e23e: 5455 c3a2                              |0511: iget-object v5, v5, Lcom/dragon/read/rpc/model/VideoImageData;.webUrl:Ljava/lang/String; // field@a2c3
+b1e242: 2802                                   |0513: goto 0515 // +0002
+b1e244: 1205                                   |0514: const/4 v5, #int 0 // #0
+b1e246: 5b05 49a2                              |0515: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.cover:Ljava/lang/String; // field@a249
+b1e24a: 5305 4da2                              |0517: iget-wide v5, v0, Lcom/dragon/read/rpc/model/VideoData;.duration:J // field@a24d
+b1e24e: 1609 0000                              |0519: const-wide/16 v9, #int 0 // #0
+b1e252: 310f 0509                              |051b: cmp-long v15, v5, v9
+b1e256: 3c0f 0600                              |051d: if-gtz v15, 0523 // +0006
+b1e25a: 5345 a4a2                              |051f: iget-wide v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.duration:J // field@a2a4
+b1e25e: 5a05 4da2                              |0521: iput-wide v5, v0, Lcom/dragon/read/rpc/model/VideoData;.duration:J // field@a24d
+b1e262: 5405 6fa2                              |0523: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.title:Ljava/lang/String; // field@a26f
+b1e266: 3905 0400                              |0525: if-nez v5, 0529 // +0004
+b1e26a: 5445 b7a2                              |0527: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesTitle:Ljava/lang/String; // field@a2b7
+b1e26e: 5b05 6fa2                              |0529: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.title:Ljava/lang/String; // field@a26f
+b1e272: 5405 78a2                              |052b: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.videoDesc:Ljava/lang/String; // field@a278
+b1e276: 3905 0400                              |052d: if-nez v5, 0531 // +0004
+b1e27a: 5445 b4a2                              |052f: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesIntro:Ljava/lang/String; // field@a2b4
+b1e27e: 5b05 78a2                              |0531: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.videoDesc:Ljava/lang/String; // field@a278
+b1e282: 5405 66a2                              |0533: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@a266
+b1e286: 3905 0c00                              |0535: if-nez v5, 0541 // +000c
+b1e28a: 5445 b3a2                              |0537: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesIdStr:Ljava/lang/String; // field@a2b3
+b1e28e: 3905 0800                              |0539: if-nez v5, 0541 // +0008
+b1e292: 5345 b2a2                              |053b: iget-wide v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesId:J // field@a2b2
+b1e296: 7120 b0c6 6500                         |053d: invoke-static {v5, v6}, Ljava/lang/String;.valueOf:(J)Ljava/lang/String; // method@c6b0
+b1e29c: 0c05                                   |0540: move-result-object v5
+b1e29e: 5b05 66a2                              |0541: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@a266
+b1e2a2: 5505 74a2                              |0543: iget-boolean v5, v0, Lcom/dragon/read/rpc/model/VideoData;.vertical:Z // field@a274
+b1e2a6: 3905 0900                              |0545: if-nez v5, 054e // +0009
+b1e2aa: 5545 a3a2                              |0547: iget-boolean v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.coverVertical:Z // field@a2a3
+b1e2ae: 3805 0300                              |0549: if-eqz v5, 054c // +0003
+b1e2b2: 2803                                   |054b: goto 054e // +0003
+b1e2b4: 1205                                   |054c: const/4 v5, #int 0 // #0
+b1e2b6: 2802                                   |054d: goto 054f // +0002
+b1e2b8: 1215                                   |054e: const/4 v5, #int 1 // #1
+b1e2ba: 5c05 74a2                              |054f: iput-boolean v5, v0, Lcom/dragon/read/rpc/model/VideoData;.vertical:Z // field@a274
+b1e2be: 5405 48a2                              |0551: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e2c2: 3905 0800                              |0553: if-nez v5, 055b // +0008
+b1e2c6: 5445 a2a2                              |0555: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a2a2
+b1e2ca: 3905 0400                              |0557: if-nez v5, 055b // +0004
+b1e2ce: 6205 35a2                              |0559: sget-object v5, Lcom/dragon/read/rpc/model/VideoContentType;.PUGC:Lcom/dragon/read/rpc/model/VideoContentType; // field@a235
+b1e2d2: 5b05 48a2                              |055b: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e2d6: 5405 60a2                              |055d: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recommendInfo:Ljava/lang/String; // field@a260
+b1e2da: 3905 0800                              |055f: if-nez v5, 0567 // +0008
+b1e2de: 5445 aca2                              |0561: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.recommendInfo:Ljava/lang/String; // field@a2ac
+b1e2e2: 3905 0400                              |0563: if-nez v5, 0567 // +0004
+b1e2e6: 5475 2f9c                              |0565: iget-object v5, v7, Lcom/dragon/read/rpc/model/CellViewData;.recommendInfo:Ljava/lang/String; // field@9c2f
+b1e2ea: 5b05 60a2                              |0567: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recommendInfo:Ljava/lang/String; // field@a260
+b1e2ee: 5405 5fa2                              |0569: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recommendGroupId:Ljava/lang/String; // field@a25f
+b1e2f2: 3905 0800                              |056b: if-nez v5, 0573 // +0008
+b1e2f6: 5445 aba2                              |056d: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.recommendGroupId:Ljava/lang/String; // field@a2ab
+b1e2fa: 3905 0400                              |056f: if-nez v5, 0573 // +0004
+b1e2fe: 5475 2e9c                              |0571: iget-object v5, v7, Lcom/dragon/read/rpc/model/CellViewData;.recommendGroupId:Ljava/lang/String; // field@9c2e
+b1e302: 5b05 5fa2                              |0573: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recommendGroupId:Ljava/lang/String; // field@a25f
+b1e306: 5405 77a2                              |0575: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e30a: 3905 0400                              |0577: if-nez v5, 057b // +0004
+b1e30e: 5445 bba2                              |0579: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoCategoryType:Ljava/lang/String; // field@a2bb
+b1e312: 5b05 77a2                              |057b: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e316: 5405 5ba2                              |057d: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recTags:Ljava/util/List; // field@a25b
+b1e31a: 3905 0400                              |057f: if-nez v5, 0583 // +0004
+b1e31e: 5445 aaa2                              |0581: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.recTags:Ljava/util/List; // field@a2aa
+b1e322: 5b05 5ba2                              |0583: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.recTags:Ljava/util/List; // field@a25b
+b1e326: 5405 6ba2                              |0585: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.subTitleList:Ljava/util/List; // field@a26b
+b1e32a: 3905 0400                              |0587: if-nez v5, 058b // +0004
+b1e32e: 5445 b8a2                              |0589: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.subTitleList:Ljava/util/List; // field@a2b8
+b1e332: 5b05 6ba2                              |058b: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.subTitleList:Ljava/util/List; // field@a26b
+b1e336: 5405 64a2                              |058d: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.secondaryInfoList:Ljava/util/List; // field@a264
+b1e33a: 3905 0400                              |058f: if-nez v5, 0593 // +0004
+b1e33e: 5445 afa2                              |0591: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.secondaryInfos:Ljava/util/List; // field@a2af
+b1e342: 5b05 64a2                              |0593: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.secondaryInfoList:Ljava/util/List; // field@a264
+b1e346: 5405 6da2                              |0595: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.tagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@a26d
+b1e34a: 3905 0400                              |0597: if-nez v5, 059b // +0004
+b1e34e: 5445 b9a2                              |0599: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.tagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@a2b9
+b1e352: 5b05 6da2                              |059b: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.tagInfo:Lcom/dragon/read/rpc/model/VideoTagInfo; // field@a26d
+b1e356: 5405 45a2                              |059d: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.bottomBar:Lcom/dragon/read/rpc/model/VideoBottomBar; // field@a245
+b1e35a: 3905 0400                              |059f: if-nez v5, 05a3 // +0004
+b1e35e: 5445 9fa2                              |05a1: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.bottomBar:Lcom/dragon/read/rpc/model/VideoBottomBar; // field@a29f
+b1e362: 5b05 45a2                              |05a3: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.bottomBar:Lcom/dragon/read/rpc/model/VideoBottomBar; // field@a245
+b1e366: 5405 65a2                              |05a5: iget-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@a265
+b1e36a: 3905 0400                              |05a7: if-nez v5, 05ab // +0004
+b1e36e: 5445 b1a2                              |05a9: iget-object v5, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@a2b1
+b1e372: 5b05 65a2                              |05ab: iput-object v5, v0, Lcom/dragon/read/rpc/model/VideoData;.seriesCoverInfo:Lcom/dragon/read/rpc/model/VideoImageData; // field@a265
+b1e376: 2205 0e4c                              |05ad: new-instance v5, Lpv5/l; // type@4c0e
+b1e37a: 5446 bca2                              |05af: iget-object v6, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoDetailList:Ljava/util/List; // field@a2bc
+b1e37e: 3806 0b00                              |05b1: if-eqz v6, 05bc // +000b
+b1e382: 7110 e9c9 0600                         |05b3: invoke-static {v6}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e388: 0c06                                   |05b6: move-result-object v6
+b1e38a: 1f06 d73c                              |05b7: check-cast v6, Lcom/dragon/read/rpc/model/VideoDetailVideoData; // type@3cd7
+b1e38e: 0813 0600                              |05b9: move-object/from16 v19, v6
+b1e392: 2803                                   |05bb: goto 05be // +0003
+b1e394: 1313 0000                              |05bc: const/16 v19, #int 0 // #0
+b1e398: 5406 77a2                              |05be: iget-object v6, v0, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e39c: 5444 b7a2                              |05c0: iget-object v4, v4, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesTitle:Ljava/lang/String; // field@a2b7
+b1e3a0: 7110 a3dd 0000                         |05c2: invoke-static {v0}, Lov5/s;.C:(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String; // method@dda3
+b1e3a6: 0c16                                   |05c5: move-result-object v22
+b1e3a8: 0811 0500                              |05c6: move-object/from16 v17, v5
+b1e3ac: 0812 0000                              |05c8: move-object/from16 v18, v0
+b1e3b0: 0814 0600                              |05ca: move-object/from16 v20, v6
+b1e3b4: 0815 0400                              |05cc: move-object/from16 v21, v4
+b1e3b8: 7606 6ae0 1100                         |05ce: invoke-direct/range {v17, v18, v19, v20, v21, v22}, Lpv5/l;.<init>:(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/VideoDetailVideoData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V // method@e06a
+b1e3be: 0750                                   |05d1: move-object v0, v5
+b1e3c0: 2802                                   |05d2: goto 05d4 // +0002
+b1e3c2: 1200                                   |05d3: const/4 v0, #int 0 // #0
+b1e3c4: 5474 3f9c                              |05d4: iget-object v4, v7, Lcom/dragon/read/rpc/model/CellViewData;.videoData:Ljava/util/List; // field@9c3f
+b1e3c8: 3804 0a00                              |05d6: if-eqz v4, 05e0 // +000a
+b1e3cc: 7110 e9c9 0400                         |05d8: invoke-static {v4}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e3d2: 0c04                                   |05db: move-result-object v4
+b1e3d4: 1f04 d33c                              |05dc: check-cast v4, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1e3d8: 3904 0600                              |05de: if-nez v4, 05e4 // +0006
+b1e3dc: 3800 0600                              |05e0: if-eqz v0, 05e6 // +0006
+b1e3e0: 5404 10be                              |05e2: iget-object v4, v0, Lpv5/l;.a:Lcom/dragon/read/rpc/model/VideoData; // field@be10
+b1e3e4: 0749                                   |05e4: move-object v9, v4
+b1e3e6: 2802                                   |05e5: goto 05e7 // +0002
+b1e3e8: 1209                                   |05e6: const/4 v9, #int 0 // #0
+b1e3ea: 7701 b1dd d700                         |05e7: invoke-static/range {v215}, Lov5/s;.b:(Lcom/dragon/read/rpc/model/CellViewData;)Ljava/util/Map; // method@ddb1
+b1e3f0: 0c0a                                   |05ea: move-result-object v10
+b1e3f2: 7140 b0dd b7a9                         |05eb: invoke-static {v7, v11, v9, v10}, Lov5/s;.a:(Lcom/dragon/read/rpc/model/CellViewData;Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/Map; // method@ddb0
+b1e3f8: 0c17                                   |05ee: move-result-object v23
+b1e3fa: 080f 1700                              |05ef: move-object/from16 v15, v23
+b1e3fe: 1f0f ed45                              |05f1: check-cast v15, Ljava/util/LinkedHashMap; // type@45ed
+b1e402: 1a04 deb9                              |05f3: const-string v4, "post_id" // string@b9de
+b1e406: 6e20 59c7 4f00                         |05f5: invoke-virtual {v15, v4}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1e40c: 0c04                                   |05f8: move-result-object v4
+b1e40e: 1f04 af45                              |05f9: check-cast v4, Ljava/lang/String; // type@45af
+b1e412: 7110 a7dd 0400                         |05fb: invoke-static {v4}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e418: 0c1b                                   |05fe: move-result-object v27
+b1e41a: 7701 a7dd 1b00                         |05ff: invoke-static/range {v27}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e420: 0c04                                   |0602: move-result-object v4
+b1e422: 3904 3200                              |0603: if-nez v4, 0635 // +0032
+b1e426: 3809 0500                              |0605: if-eqz v9, 060a // +0005
+b1e42a: 5494 66a2                              |0607: iget-object v4, v9, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@a266
+b1e42e: 2802                                   |0609: goto 060b // +0002
+b1e430: 1204                                   |060a: const/4 v4, #int 0 // #0
+b1e432: 7110 a7dd 0400                         |060b: invoke-static {v4}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e438: 0c04                                   |060e: move-result-object v4
+b1e43a: 3904 2600                              |060f: if-nez v4, 0635 // +0026
+b1e43e: 3809 0500                              |0611: if-eqz v9, 0616 // +0005
+b1e442: 5494 75a2                              |0613: iget-object v4, v9, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1e446: 2802                                   |0615: goto 0617 // +0002
+b1e448: 1204                                   |0616: const/4 v4, #int 0 // #0
+b1e44a: 7110 a7dd 0400                         |0617: invoke-static {v4}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e450: 0c04                                   |061a: move-result-object v4
+b1e452: 3904 1a00                              |061b: if-nez v4, 0635 // +001a
+b1e456: 2204 b145                              |061d: new-instance v4, Ljava/lang/StringBuilder; // type@45b1
+b1e45a: 7010 b7c6 0400                         |061f: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@c6b7
+b1e460: 0505 da00                              |0622: move-wide/from16 v5, v218
+b1e464: 6e30 bfc6 5406                         |0624: invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1e46a: 1305 5f00                              |0627: const/16 v5, #int 95 // #5f
+b1e46e: 6e20 bbc6 5400                         |0629: invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;.append:(C)Ljava/lang/StringBuilder; // method@c6bb
+b1e474: 6e20 bec6 1400                         |062c: invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1e47a: 6e10 c6c6 0400                         |062f: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1e480: 0c01                                   |0632: move-result-object v1
+b1e482: 0716                                   |0633: move-object v6, v1
+b1e484: 2802                                   |0634: goto 0636 // +0002
+b1e486: 0746                                   |0635: move-object v6, v4
+b1e488: 1a01 4e8b                              |0636: const-string v1, "author_name" // string@8b4e
+b1e48c: 6e20 59c7 1f00                         |0638: invoke-virtual {v15, v1}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1e492: 0c01                                   |063b: move-result-object v1
+b1e494: 081c 0100                              |063c: move-object/from16 v28, v1
+b1e498: 1f1c af45                              |063e: check-cast v28, Ljava/lang/String; // type@45af
+b1e49c: 380b 0500                              |0640: if-eqz v11, 0645 // +0005
+b1e4a0: 54b1 8aa1                              |0642: iget-object v1, v11, Lcom/dragon/read/rpc/model/UgcPostData;.videoInfo:Lcom/dragon/read/rpc/model/UgcVideo; // field@a18a
+b1e4a4: 2802                                   |0644: goto 0646 // +0002
+b1e4a6: 1201                                   |0645: const/4 v1, #int 0 // #0
+b1e4a8: 3901 0800                              |0646: if-nez v1, 064e // +0008
+b1e4ac: 3809 0300                              |0648: if-eqz v9, 064b // +0003
+b1e4b0: 2804                                   |064a: goto 064e // +0004
+b1e4b2: 1326 0000                              |064b: const/16 v38, #int 0 // #0
+b1e4b6: 2803                                   |064d: goto 0650 // +0003
+b1e4b8: 1326 0100                              |064e: const/16 v38, #int 1 // #1
+b1e4bc: 3926 0700                              |0650: if-nez v38, 0657 // +0007
+b1e4c0: 381b 0500                              |0652: if-eqz v27, 0657 // +0005
+b1e4c4: 131d 0100                              |0654: const/16 v29, #int 1 // #1
+b1e4c8: 2803                                   |0656: goto 0659 // +0003
+b1e4ca: 131d 0000                              |0657: const/16 v29, #int 0 // #0
+b1e4ce: 5471 399c                              |0659: iget-object v1, v7, Lcom/dragon/read/rpc/model/CellViewData;.style:Lcom/dragon/read/rpc/model/CellViewStyle; // field@9c39
+b1e4d2: 7130 c7dd 190a                         |065b: invoke-static {v9, v1, v10}, Lov5/s;.x:(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/CellViewStyle;Ljava/util/Map;)Lcom/dragon/read/rpc/model/VideoTagInfo; // method@ddc7
+b1e4d8: 0c05                                   |065e: move-result-object v5
+b1e4da: 3909 0300                              |065f: if-nez v9, 0662 // +0003
+b1e4de: 283e                                   |0661: goto 069f // +003e
+b1e4e0: 5491 59a2                              |0662: iget-object v1, v9, Lcom/dragon/read/rpc/model/VideoData;.playCoverInfoList:Ljava/util/List; // field@a259
+b1e4e4: 3801 3000                              |0664: if-eqz v1, 0694 // +0030
+b1e4e8: 7210 61c6 0100                         |0666: invoke-interface {v1}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@c661
+b1e4ee: 0c01                                   |0669: move-result-object v1
+b1e4f0: 7210 4ec7 0100                         |066a: invoke-interface {v1}, Ljava/util/Iterator;.hasNext:()Z // method@c74e
+b1e4f6: 0a04                                   |066d: move-result v4
+b1e4f8: 3804 2000                              |066e: if-eqz v4, 068e // +0020
+b1e4fc: 7210 4fc7 0100                         |0670: invoke-interface {v1}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c74f
+b1e502: 0c04                                   |0673: move-result-object v4
+b1e504: 074d                                   |0674: move-object v13, v4
+b1e506: 1f0d b73b                              |0675: check-cast v13, Lcom/dragon/read/rpc/model/PlayCoverInfo; // type@3bb7
+b1e50a: 54dd 909f                              |0677: iget-object v13, v13, Lcom/dragon/read/rpc/model/PlayCoverInfo;.vid:Ljava/lang/String; // field@9f90
+b1e50e: 380d 0d00                              |0679: if-eqz v13, 0686 // +000d
+b1e512: 7110 daca 0d00                         |067b: invoke-static {v13}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1e518: 0a0d                                   |067e: move-result v13
+b1e51a: 380d 0300                              |067f: if-eqz v13, 0682 // +0003
+b1e51e: 2805                                   |0681: goto 0686 // +0005
+b1e520: 121d                                   |0682: const/4 v13, #int 1 // #1
+b1e522: 1310 0000                              |0683: const/16 v16, #int 0 // #0
+b1e526: 2804                                   |0685: goto 0689 // +0004
+b1e528: 121d                                   |0686: const/4 v13, #int 1 // #1
+b1e52a: 1310 0100                              |0687: const/16 v16, #int 1 // #1
+b1e52e: df11 1001                              |0689: xor-int/lit8 v17, v16, #int 1 // #01
+b1e532: 3811 dfff                              |068b: if-eqz v17, 066a // -0021
+b1e536: 2802                                   |068d: goto 068f // +0002
+b1e538: 1204                                   |068e: const/4 v4, #int 0 // #0
+b1e53a: 0741                                   |068f: move-object v1, v4
+b1e53c: 1f01 b73b                              |0690: check-cast v1, Lcom/dragon/read/rpc/model/PlayCoverInfo; // type@3bb7
+b1e540: 3901 0e00                              |0692: if-nez v1, 06a0 // +000e
+b1e544: 5491 59a2                              |0694: iget-object v1, v9, Lcom/dragon/read/rpc/model/VideoData;.playCoverInfoList:Ljava/util/List; // field@a259
+b1e548: 3801 0900                              |0696: if-eqz v1, 069f // +0009
+b1e54c: 7110 e9c9 0100                         |0698: invoke-static {v1}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e552: 0c01                                   |069b: move-result-object v1
+b1e554: 1f01 b73b                              |069c: check-cast v1, Lcom/dragon/read/rpc/model/PlayCoverInfo; // type@3bb7
+b1e558: 2802                                   |069e: goto 06a0 // +0002
+b1e55a: 1201                                   |069f: const/4 v1, #int 0 // #0
+b1e55c: 3909 0600                              |06a0: if-nez v9, 06a6 // +0006
+b1e560: 051e 0200                              |06a2: move-wide/from16 v30, v2
+b1e564: 1204                                   |06a4: const/4 v4, #int 0 // #0
+b1e566: 2838                                   |06a5: goto 06dd // +0038
+b1e568: 3801 0500                              |06a6: if-eqz v1, 06ab // +0005
+b1e56c: 5414 909f                              |06a8: iget-object v4, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.vid:Ljava/lang/String; // field@9f90
+b1e570: 2802                                   |06aa: goto 06ac // +0002
+b1e572: 1204                                   |06ab: const/4 v4, #int 0 // #0
+b1e574: 7110 a7dd 0400                         |06ac: invoke-static {v4}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e57a: 0c04                                   |06af: move-result-object v4
+b1e57c: 3904 2b00                              |06b0: if-nez v4, 06db // +002b
+b1e580: 5494 51a2                              |06b2: iget-object v4, v9, Lcom/dragon/read/rpc/model/VideoData;.forceVid:Ljava/lang/String; // field@a251
+b1e584: 7110 a7dd 0400                         |06b4: invoke-static {v4}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e58a: 0c04                                   |06b7: move-result-object v4
+b1e58c: 3904 2300                              |06b8: if-nez v4, 06db // +0023
+b1e590: 5494 52a2                              |06ba: iget-object v4, v9, Lcom/dragon/read/rpc/model/VideoData;.highlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@a252
+b1e594: 3804 0f00                              |06bc: if-eqz v4, 06cb // +000f
+b1e598: 051e 0200                              |06be: move-wide/from16 v30, v2
+b1e59c: 5342 c1a2                              |06c0: iget-wide v2, v4, Lcom/dragon/read/rpc/model/VideoHighlight;.vid:J // field@a2c1
+b1e5a0: 7120 68c6 3200                         |06c2: invoke-static {v2, v3}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@c668
+b1e5a6: 0c02                                   |06c5: move-result-object v2
+b1e5a8: 6e10 66c6 0200                         |06c6: invoke-virtual {v2}, Ljava/lang/Long;.toString:()Ljava/lang/String; // method@c666
+b1e5ae: 0c02                                   |06c9: move-result-object v2
+b1e5b0: 2804                                   |06ca: goto 06ce // +0004
+b1e5b2: 051e 0200                              |06cb: move-wide/from16 v30, v2
+b1e5b6: 1202                                   |06cd: const/4 v2, #int 0 // #0
+b1e5b8: 7110 a7dd 0200                         |06ce: invoke-static {v2}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e5be: 0c04                                   |06d1: move-result-object v4
+b1e5c0: 3904 0b00                              |06d2: if-nez v4, 06dd // +000b
+b1e5c4: 5492 75a2                              |06d4: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1e5c8: 7110 a7dd 0200                         |06d6: invoke-static {v2}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e5ce: 0c04                                   |06d9: move-result-object v4
+b1e5d0: 2803                                   |06da: goto 06dd // +0003
+b1e5d2: 051e 0200                              |06db: move-wide/from16 v30, v2
+b1e5d6: 3909 0500                              |06dd: if-nez v9, 06e2 // +0005
+b1e5da: 132c 0000                              |06df: const/16 v44, #int 0 // #0
+b1e5de: 2855                                   |06e1: goto 0736 // +0055
+b1e5e0: 5492 7ba2                              |06e2: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@a27b
+b1e5e4: 7110 a7dd 0200                         |06e4: invoke-static {v2}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e5ea: 0c02                                   |06e7: move-result-object v2
+b1e5ec: 3802 0300                              |06e8: if-eqz v2, 06eb // +0003
+b1e5f0: 284a                                   |06ea: goto 0734 // +004a
+b1e5f2: 5492 79a2                              |06eb: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e5f6: 3802 2800                              |06ed: if-eqz v2, 0715 // +0028
+b1e5fa: 5422 bda2                              |06ef: iget-object v2, v2, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoList:Ljava/util/List; // field@a2bd
+b1e5fe: 3802 2400                              |06f1: if-eqz v2, 0715 // +0024
+b1e602: 7210 61c6 0200                         |06f3: invoke-interface {v2}, Ljava/lang/Iterable;.iterator:()Ljava/util/Iterator; // method@c661
+b1e608: 0c02                                   |06f6: move-result-object v2
+b1e60a: 7210 4ec7 0200                         |06f7: invoke-interface {v2}, Ljava/util/Iterator;.hasNext:()Z // method@c74e
+b1e610: 0a03                                   |06fa: move-result v3
+b1e612: 3803 1200                              |06fb: if-eqz v3, 070d // +0012
+b1e616: 7210 4fc7 0200                         |06fd: invoke-interface {v2}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c74f
+b1e61c: 0c03                                   |0700: move-result-object v3
+b1e61e: 073d                                   |0701: move-object v13, v3
+b1e620: 1f0d d33c                              |0702: check-cast v13, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1e624: 54dd 75a2                              |0704: iget-object v13, v13, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1e628: 7120 72ca 4d00                         |0706: invoke-static {v13, v4}, Lkotlin/jvm/internal/Intrinsics;.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z // method@ca72
+b1e62e: 0a0d                                   |0709: move-result v13
+b1e630: 380d edff                              |070a: if-eqz v13, 06f7 // -0013
+b1e634: 2802                                   |070c: goto 070e // +0002
+b1e636: 1203                                   |070d: const/4 v3, #int 0 // #0
+b1e638: 1f03 d33c                              |070e: check-cast v3, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1e63c: 3803 0500                              |0710: if-eqz v3, 0715 // +0005
+b1e640: 5432 7ba2                              |0712: iget-object v2, v3, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@a27b
+b1e644: 2802                                   |0714: goto 0716 // +0002
+b1e646: 1202                                   |0715: const/4 v2, #int 0 // #0
+b1e648: 7110 a7dd 0200                         |0716: invoke-static {v2}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e64e: 0c02                                   |0719: move-result-object v2
+b1e650: 3902 1a00                              |071a: if-nez v2, 0734 // +001a
+b1e654: 5492 79a2                              |071c: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e658: 3802 1100                              |071e: if-eqz v2, 072f // +0011
+b1e65c: 5422 bda2                              |0720: iget-object v2, v2, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoList:Ljava/util/List; // field@a2bd
+b1e660: 3802 0d00                              |0722: if-eqz v2, 072f // +000d
+b1e664: 7110 e9c9 0200                         |0724: invoke-static {v2}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e66a: 0c02                                   |0727: move-result-object v2
+b1e66c: 1f02 d33c                              |0728: check-cast v2, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1e670: 3802 0500                              |072a: if-eqz v2, 072f // +0005
+b1e674: 5422 7ba2                              |072c: iget-object v2, v2, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@a27b
+b1e678: 2802                                   |072e: goto 0730 // +0002
+b1e67a: 1202                                   |072f: const/4 v2, #int 0 // #0
+b1e67c: 7110 a7dd 0200                         |0730: invoke-static {v2}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1e682: 0c02                                   |0733: move-result-object v2
+b1e684: 082c 0200                              |0734: move-object/from16 v44, v2
+b1e688: 3801 0900                              |0736: if-eqz v1, 073f // +0009
+b1e68c: 5412 8a9f                              |0738: iget-object v2, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@9f8a
+b1e690: 3902 0300                              |073a: if-nez v2, 073d // +0003
+b1e694: 2803                                   |073c: goto 073f // +0003
+b1e696: 0723                                   |073d: move-object v3, v2
+b1e698: 2807                                   |073e: goto 0745 // +0007
+b1e69a: 3809 0500                              |073f: if-eqz v9, 0744 // +0005
+b1e69e: 5492 48a2                              |0741: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e6a2: 28fa                                   |0743: goto 073d // -0006
+b1e6a4: 1203                                   |0744: const/4 v3, #int 0 // #0
+b1e6a6: 6202 35a2                              |0745: sget-object v2, Lcom/dragon/read/rpc/model/VideoContentType;.PUGC:Lcom/dragon/read/rpc/model/VideoContentType; // field@a235
+b1e6aa: 3223 0d00                              |0747: if-eq v3, v2, 0754 // +000d
+b1e6ae: 620d 2ea2                              |0749: sget-object v13, Lcom/dragon/read/rpc/model/VideoContentType;.Album:Lcom/dragon/read/rpc/model/VideoContentType; // field@a22e
+b1e6b2: 32d3 0900                              |074b: if-eq v3, v13, 0754 // +0009
+b1e6b6: 620d 3da2                              |074d: sget-object v13, Lcom/dragon/read/rpc/model/VideoContentType;.Video1ColPushBookVideo:Lcom/dragon/read/rpc/model/VideoContentType; // field@a23d
+b1e6ba: 33d3 0300                              |074f: if-ne v3, v13, 0752 // +0003
+b1e6be: 2803                                   |0751: goto 0754 // +0003
+b1e6c0: 120d                                   |0752: const/4 v13, #int 0 // #0
+b1e6c2: 2802                                   |0753: goto 0755 // +0002
+b1e6c4: 121d                                   |0754: const/4 v13, #int 1 // #1
+b1e6c6: 0820 0300                              |0755: move-object/from16 v32, v3
+b1e6ca: 1a03 e0ba                              |0757: const-string v3, "pugc_" // string@bae0
+b1e6ce: 390d 3c00                              |0759: if-nez v13, 0795 // +003c
+b1e6d2: 3809 0500                              |075b: if-eqz v9, 0760 // +0005
+b1e6d6: 549d 48a2                              |075d: iget-object v13, v9, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e6da: 2802                                   |075f: goto 0761 // +0002
+b1e6dc: 120d                                   |0760: const/4 v13, #int 0 // #0
+b1e6de: 08da 0500                              |0761: move-object/from16 v218, v5
+b1e6e2: 322d 0d00                              |0763: if-eq v13, v2, 0770 // +000d
+b1e6e6: 6205 2ea2                              |0765: sget-object v5, Lcom/dragon/read/rpc/model/VideoContentType;.Album:Lcom/dragon/read/rpc/model/VideoContentType; // field@a22e
+b1e6ea: 325d 0900                              |0767: if-eq v13, v5, 0770 // +0009
+b1e6ee: 6205 3da2                              |0769: sget-object v5, Lcom/dragon/read/rpc/model/VideoContentType;.Video1ColPushBookVideo:Lcom/dragon/read/rpc/model/VideoContentType; // field@a23d
+b1e6f2: 335d 0300                              |076b: if-ne v13, v5, 076e // +0003
+b1e6f6: 2803                                   |076d: goto 0770 // +0003
+b1e6f8: 1205                                   |076e: const/4 v5, #int 0 // #0
+b1e6fa: 2802                                   |076f: goto 0771 // +0002
+b1e6fc: 1215                                   |0770: const/4 v5, #int 1 // #1
+b1e6fe: 3905 2600                              |0771: if-nez v5, 0797 // +0026
+b1e702: 3809 1600                              |0773: if-eqz v9, 0789 // +0016
+b1e706: 5495 77a2                              |0775: iget-object v5, v9, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e70a: 3805 1200                              |0777: if-eqz v5, 0789 // +0012
+b1e70e: 08dc 0c00                              |0779: move-object/from16 v220, v12
+b1e712: 0221 0e00                              |077b: move/from16 v33, v14
+b1e716: 120c                                   |077d: const/4 v12, #int 0 // #0
+b1e718: 122d                                   |077e: const/4 v13, #int 2 // #2
+b1e71a: 120e                                   |077f: const/4 v14, #int 0 // #0
+b1e71c: 715c ecca 35de                         |0780: invoke-static {v5, v3, v14, v13, v12}, Lkotlin/text/StringsKt;.startsWith$default:(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z // method@caec
+b1e722: 0a05                                   |0783: move-result v5
+b1e724: 121c                                   |0784: const/4 v12, #int 1 // #1
+b1e726: 33c5 0800                              |0785: if-ne v5, v12, 078d // +0008
+b1e72a: 1215                                   |0787: const/4 v5, #int 1 // #1
+b1e72c: 2806                                   |0788: goto 078e // +0006
+b1e72e: 08dc 0c00                              |0789: move-object/from16 v220, v12
+b1e732: 0221 0e00                              |078b: move/from16 v33, v14
+b1e736: 1205                                   |078d: const/4 v5, #int 0 // #0
+b1e738: 3905 0d00                              |078e: if-nez v5, 079b // +000d
+b1e73c: 3800 0300                              |0790: if-eqz v0, 0793 // +0003
+b1e740: 2809                                   |0792: goto 079b // +0009
+b1e742: 120e                                   |0793: const/4 v14, #int 0 // #0
+b1e744: 2808                                   |0794: goto 079c // +0008
+b1e746: 08da 0500                              |0795: move-object/from16 v218, v5
+b1e74a: 08dc 0c00                              |0797: move-object/from16 v220, v12
+b1e74e: 0221 0e00                              |0799: move/from16 v33, v14
+b1e752: 121e                                   |079b: const/4 v14, #int 1 // #1
+b1e754: 3900 2e00                              |079c: if-nez v0, 07ca // +002e
+b1e758: 3809 0500                              |079e: if-eqz v9, 07a3 // +0005
+b1e75c: 549c 48a2                              |07a0: iget-object v12, v9, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e760: 2802                                   |07a2: goto 07a4 // +0002
+b1e762: 120c                                   |07a3: const/4 v12, #int 0 // #0
+b1e764: 322c 2600                              |07a4: if-eq v12, v2, 07ca // +0026
+b1e768: 3809 0500                              |07a6: if-eqz v9, 07ab // +0005
+b1e76c: 549c 48a2                              |07a8: iget-object v12, v9, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1e770: 2802                                   |07aa: goto 07ac // +0002
+b1e772: 120c                                   |07ab: const/4 v12, #int 0 // #0
+b1e774: 6202 3da2                              |07ac: sget-object v2, Lcom/dragon/read/rpc/model/VideoContentType;.Video1ColPushBookVideo:Lcom/dragon/read/rpc/model/VideoContentType; // field@a23d
+b1e778: 322c 1c00                              |07ae: if-eq v12, v2, 07ca // +001c
+b1e77c: 3809 1200                              |07b0: if-eqz v9, 07c2 // +0012
+b1e780: 5492 77a2                              |07b2: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e784: 3802 0e00                              |07b4: if-eqz v2, 07c2 // +000e
+b1e788: 1225                                   |07b6: const/4 v5, #int 2 // #2
+b1e78a: 120c                                   |07b7: const/4 v12, #int 0 // #0
+b1e78c: 120d                                   |07b8: const/4 v13, #int 0 // #0
+b1e78e: 715d ecca 325c                         |07b9: invoke-static {v2, v3, v12, v5, v13}, Lkotlin/text/StringsKt;.startsWith$default:(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z // method@caec
+b1e794: 0a02                                   |07bc: move-result v2
+b1e796: 1213                                   |07bd: const/4 v3, #int 1 // #1
+b1e798: 3332 0600                              |07be: if-ne v2, v3, 07c4 // +0006
+b1e79c: 1212                                   |07c0: const/4 v2, #int 1 // #1
+b1e79e: 2804                                   |07c1: goto 07c5 // +0004
+b1e7a0: 120c                                   |07c2: const/4 v12, #int 0 // #0
+b1e7a2: 120d                                   |07c3: const/4 v13, #int 0 // #0
+b1e7a4: 1202                                   |07c4: const/4 v2, #int 0 // #0
+b1e7a6: 3802 0300                              |07c5: if-eqz v2, 07c8 // +0003
+b1e7aa: 2805                                   |07c7: goto 07cc // +0005
+b1e7ac: 1202                                   |07c8: const/4 v2, #int 0 // #0
+b1e7ae: 2804                                   |07c9: goto 07cd // +0004
+b1e7b0: 120c                                   |07ca: const/4 v12, #int 0 // #0
+b1e7b2: 120d                                   |07cb: const/4 v13, #int 0 // #0
+b1e7b4: 1212                                   |07cc: const/4 v2, #int 1 // #1
+b1e7b6: 3802 4700                              |07cd: if-eqz v2, 0814 // +0047
+b1e7ba: 3809 4500                              |07cf: if-eqz v9, 0814 // +0045
+b1e7be: 3900 4000                              |07d1: if-nez v0, 0811 // +0040
+b1e7c2: 2202 0e4c                              |07d3: new-instance v2, Lpv5/l; // type@4c0e
+b1e7c6: 5493 79a2                              |07d5: iget-object v3, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e7ca: 3803 0f00                              |07d7: if-eqz v3, 07e6 // +000f
+b1e7ce: 5433 bca2                              |07d9: iget-object v3, v3, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoDetailList:Ljava/util/List; // field@a2bc
+b1e7d2: 3803 0b00                              |07db: if-eqz v3, 07e6 // +000b
+b1e7d6: 7110 e9c9 0300                         |07dd: invoke-static {v3}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e7dc: 0c03                                   |07e0: move-result-object v3
+b1e7de: 1f03 d73c                              |07e1: check-cast v3, Lcom/dragon/read/rpc/model/VideoDetailVideoData; // type@3cd7
+b1e7e2: 0813 0300                              |07e3: move-object/from16 v19, v3
+b1e7e6: 2803                                   |07e5: goto 07e8 // +0003
+b1e7e8: 0813 0d00                              |07e6: move-object/from16 v19, v13
+b1e7ec: 5493 77a2                              |07e8: iget-object v3, v9, Lcom/dragon/read/rpc/model/VideoData;.videoCategoryType:Ljava/lang/String; // field@a277
+b1e7f0: 3903 0c00                              |07ea: if-nez v3, 07f6 // +000c
+b1e7f4: 5493 79a2                              |07ec: iget-object v3, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e7f8: 3803 0500                              |07ee: if-eqz v3, 07f3 // +0005
+b1e7fc: 5433 bba2                              |07f0: iget-object v3, v3, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoCategoryType:Ljava/lang/String; // field@a2bb
+b1e800: 2804                                   |07f2: goto 07f6 // +0004
+b1e802: 0814 0d00                              |07f3: move-object/from16 v20, v13
+b1e806: 2803                                   |07f5: goto 07f8 // +0003
+b1e808: 0814 0300                              |07f6: move-object/from16 v20, v3
+b1e80c: 5493 79a2                              |07f8: iget-object v3, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e810: 3803 0700                              |07fa: if-eqz v3, 0801 // +0007
+b1e814: 5433 b7a2                              |07fc: iget-object v3, v3, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.seriesTitle:Ljava/lang/String; // field@a2b7
+b1e818: 0815 0300                              |07fe: move-object/from16 v21, v3
+b1e81c: 2803                                   |0800: goto 0803 // +0003
+b1e81e: 0815 0d00                              |0801: move-object/from16 v21, v13
+b1e822: 7110 a3dd 0900                         |0803: invoke-static {v9}, Lov5/s;.C:(Lcom/dragon/read/rpc/model/VideoData;)Ljava/lang/String; // method@dda3
+b1e828: 0c16                                   |0806: move-result-object v22
+b1e82a: 0811 0200                              |0807: move-object/from16 v17, v2
+b1e82e: 0812 0900                              |0809: move-object/from16 v18, v9
+b1e832: 7606 6ae0 1100                         |080b: invoke-direct/range {v17, v18, v19, v20, v21, v22}, Lpv5/l;.<init>:(Lcom/dragon/read/rpc/model/VideoData;Lcom/dragon/read/rpc/model/VideoDetailVideoData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V // method@e06a
+b1e838: 0829 0200                              |080e: move-object/from16 v41, v2
+b1e83c: 2806                                   |0810: goto 0816 // +0006
+b1e83e: 0829 0000                              |0811: move-object/from16 v41, v0
+b1e842: 2803                                   |0813: goto 0816 // +0003
+b1e844: 0829 0d00                              |0814: move-object/from16 v41, v13
+b1e848: 3809 0500                              |0816: if-eqz v9, 081b // +0005
+b1e84c: 5492 52a2                              |0818: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.highlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@a252
+b1e850: 2802                                   |081a: goto 081c // +0002
+b1e852: 07d2                                   |081b: move-object v2, v13
+b1e854: 3902 0700                              |081c: if-nez v2, 0823 // +0007
+b1e858: 3801 0300                              |081e: if-eqz v1, 0821 // +0003
+b1e85c: 2803                                   |0820: goto 0823 // +0003
+b1e85e: 1205                                   |0821: const/4 v5, #int 0 // #0
+b1e860: 2802                                   |0822: goto 0824 // +0002
+b1e862: 1215                                   |0823: const/4 v5, #int 1 // #1
+b1e864: 3801 0c00                              |0824: if-eqz v1, 0830 // +000c
+b1e868: 5212 8f9f                              |0826: iget v2, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.startTime:I // field@9f8f
+b1e86c: 8122                                   |0828: int-to-long v2, v2
+b1e86e: 160c 0000                              |0829: const-wide/16 v12, #int 0 // #0
+b1e872: 7140 9bca 32dc                         |082b: invoke-static {v2, v3, v12, v13}, Lkotlin/ranges/RangesKt;.coerceAtLeast:(JJ)J // method@ca9b
+b1e878: 0b02                                   |082e: move-result-wide v2
+b1e87a: 2812                                   |082f: goto 0841 // +0012
+b1e87c: 160c 0000                              |0830: const-wide/16 v12, #int 0 // #0
+b1e880: 3809 0e00                              |0832: if-eqz v9, 0840 // +000e
+b1e884: 5492 52a2                              |0834: iget-object v2, v9, Lcom/dragon/read/rpc/model/VideoData;.highlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@a252
+b1e888: 3802 0a00                              |0836: if-eqz v2, 0840 // +000a
+b1e88c: 5222 c0a2                              |0838: iget v2, v2, Lcom/dragon/read/rpc/model/VideoHighlight;.startTimeInMillisecond:I // field@a2c0
+b1e890: 8122                                   |083a: int-to-long v2, v2
+b1e892: 7140 9bca 32dc                         |083b: invoke-static {v2, v3, v12, v13}, Lkotlin/ranges/RangesKt;.coerceAtLeast:(JJ)J // method@ca9b
+b1e898: 0b02                                   |083e: move-result-wide v2
+b1e89a: 2802                                   |083f: goto 0841 // +0002
+b1e89c: 04c2                                   |0840: move-wide v2, v12
+b1e89e: 3801 2100                              |0841: if-eqz v1, 0862 // +0021
+b1e8a2: 521c 8d9f                              |0843: iget v12, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.secondLimit:I // field@9f8d
+b1e8a6: 81cc                                   |0845: int-to-long v12, v12
+b1e8a8: 7120 68c6 dc00                         |0846: invoke-static {v12, v13}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@c668
+b1e8ae: 0c0c                                   |0849: move-result-object v12
+b1e8b0: 6e10 80c6 0c00                         |084a: invoke-virtual {v12}, Ljava/lang/Number;.longValue:()J // method@c680
+b1e8b6: 0b12                                   |084d: move-result-wide v18
+b1e8b8: 1614 0000                              |084e: const-wide/16 v20, #int 0 // #0
+b1e8bc: 310d 1214                              |0850: cmp-long v13, v18, v20
+b1e8c0: 3d0d 0400                              |0852: if-lez v13, 0856 // +0004
+b1e8c4: 121d                                   |0854: const/4 v13, #int 1 // #1
+b1e8c6: 2802                                   |0855: goto 0857 // +0002
+b1e8c8: 120d                                   |0856: const/4 v13, #int 0 // #0
+b1e8ca: 380d 0300                              |0857: if-eqz v13, 085a // +0003
+b1e8ce: 2802                                   |0859: goto 085b // +0002
+b1e8d0: 120c                                   |085a: const/4 v12, #int 0 // #0
+b1e8d2: 380c 0700                              |085b: if-eqz v12, 0862 // +0007
+b1e8d6: 6e10 80c6 0c00                         |085d: invoke-virtual {v12}, Ljava/lang/Number;.longValue:()J // method@c680
+b1e8dc: 0b0c                                   |0860: move-result-wide v12
+b1e8de: 2825                                   |0861: goto 0886 // +0025
+b1e8e0: 3809 2900                              |0862: if-eqz v9, 088b // +0029
+b1e8e4: 549c 42a2                              |0864: iget-object v12, v9, Lcom/dragon/read/rpc/model/VideoData;.autoPlayData:Lcom/dragon/read/rpc/model/AutoPlayData; // field@a242
+b1e8e8: 380c 2500                              |0866: if-eqz v12, 088b // +0025
+b1e8ec: 52cc 4e9b                              |0868: iget v12, v12, Lcom/dragon/read/rpc/model/AutoPlayData;.duration:I // field@9b4e
+b1e8f0: 81cc                                   |086a: int-to-long v12, v12
+b1e8f2: 7120 68c6 dc00                         |086b: invoke-static {v12, v13}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@c668
+b1e8f8: 0c0c                                   |086e: move-result-object v12
+b1e8fa: 6e10 80c6 0c00                         |086f: invoke-virtual {v12}, Ljava/lang/Number;.longValue:()J // method@c680
+b1e900: 0b12                                   |0872: move-result-wide v18
+b1e902: 1614 0000                              |0873: const-wide/16 v20, #int 0 // #0
+b1e906: 310d 1214                              |0875: cmp-long v13, v18, v20
+b1e90a: 3d0d 0400                              |0877: if-lez v13, 087b // +0004
+b1e90e: 121d                                   |0879: const/4 v13, #int 1 // #1
+b1e910: 2802                                   |087a: goto 087c // +0002
+b1e912: 120d                                   |087b: const/4 v13, #int 0 // #0
+b1e914: 380d 0300                              |087c: if-eqz v13, 087f // +0003
+b1e918: 2802                                   |087e: goto 0880 // +0002
+b1e91a: 120c                                   |087f: const/4 v12, #int 0 // #0
+b1e91c: 380c 0b00                              |0880: if-eqz v12, 088b // +000b
+b1e920: 6e10 80c6 0c00                         |0882: invoke-virtual {v12}, Ljava/lang/Number;.longValue:()J // method@c680
+b1e926: 0b0c                                   |0885: move-result-wide v12
+b1e928: 1612 e803                              |0886: const-wide/16 v18, #int 1000 // #3e8
+b1e92c: 9d0c 0c12                              |0888: mul-long v12, v12, v18
+b1e930: 2803                                   |088a: goto 088d // +0003
+b1e932: 160c 983a                              |088b: const-wide/16 v12, #int 15000 // #3a98
+b1e936: 0812 0000                              |088d: move-object/from16 v18, v0
+b1e93a: 3809 0d00                              |088f: if-eqz v9, 089c // +000d
+b1e93e: 5490 42a2                              |0891: iget-object v0, v9, Lcom/dragon/read/rpc/model/VideoData;.autoPlayData:Lcom/dragon/read/rpc/model/AutoPlayData; // field@a242
+b1e942: 3800 0900                              |0893: if-eqz v0, 089c // +0009
+b1e946: 5500 4f9b                              |0895: iget-boolean v0, v0, Lcom/dragon/read/rpc/model/AutoPlayData;.supportAutoPlay:Z // field@9b4f
+b1e94a: 1218                                   |0897: const/4 v8, #int 1 // #1
+b1e94c: 3380 0500                              |0898: if-ne v0, v8, 089d // +0005
+b1e950: 1210                                   |089a: const/4 v0, #int 1 // #1
+b1e952: 2803                                   |089b: goto 089e // +0003
+b1e954: 1218                                   |089c: const/4 v8, #int 1 // #1
+b1e956: 1200                                   |089d: const/4 v0, #int 0 // #0
+b1e958: 3900 0700                              |089e: if-nez v0, 08a5 // +0007
+b1e95c: 3801 0300                              |08a0: if-eqz v1, 08a3 // +0003
+b1e960: 2803                                   |08a2: goto 08a5 // +0003
+b1e962: 1200                                   |08a3: const/4 v0, #int 0 // #0
+b1e964: 2802                                   |08a4: goto 08a6 // +0002
+b1e966: 1210                                   |08a5: const/4 v0, #int 1 // #1
+b1e968: 3809 bd01                              |08a6: if-eqz v9, 0a63 // +01bd
+b1e96c: 5498 79a2                              |08a8: iget-object v8, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1e970: 3808 0d00                              |08aa: if-eqz v8, 08b7 // +000d
+b1e974: 5488 bda2                              |08ac: iget-object v8, v8, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoList:Ljava/util/List; // field@a2bd
+b1e978: 3808 0900                              |08ae: if-eqz v8, 08b7 // +0009
+b1e97c: 7110 e9c9 0800                         |08b0: invoke-static {v8}, Lkotlin/collections/CollectionsKt;.firstOrNull:(Ljava/util/List;)Ljava/lang/Object; // method@c9e9
+b1e982: 0c08                                   |08b3: move-result-object v8
+b1e984: 1f08 d33c                              |08b4: check-cast v8, Lcom/dragon/read/rpc/model/VideoData; // type@3cd3
+b1e988: 2802                                   |08b6: goto 08b8 // +0002
+b1e98a: 1208                                   |08b7: const/4 v8, #int 0 // #0
+b1e98c: 6213 0aae                              |08b8: sget-object v19, Lhi5/j;.a:Lhi5/j; // field@ae0a
+b1e990: 0814 0b00                              |08ba: move-object/from16 v20, v11
+b1e994: 220b b145                              |08bc: new-instance v11, Ljava/lang/StringBuilder; // type@45b1
+b1e998: 1a07 56b3                              |08be: const-string v7, "map video item id=" // string@b356
+b1e99c: 7020 b9c6 7b00                         |08c0: invoke-direct {v11, v7}, Ljava/lang/StringBuilder;.<init>:(Ljava/lang/String;)V // method@c6b9
+b1e9a2: 6e20 c1c6 6b00                         |08c3: invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9a8: 1a07 b001                              |08c6: const-string v7, " seriesId=" // string@01b0
+b1e9ac: 6e20 c1c6 7b00                         |08c8: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9b2: 5497 66a2                              |08cb: iget-object v7, v9, Lcom/dragon/read/rpc/model/VideoData;.seriesId:Ljava/lang/String; // field@a266
+b1e9b6: 6e20 c1c6 7b00                         |08cd: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9bc: 1a07 fb01                              |08d0: const-string v7, " vid=" // string@01fb
+b1e9c0: 6e20 c1c6 7b00                         |08d2: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9c6: 5497 75a2                              |08d5: iget-object v7, v9, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1e9ca: 6e20 c1c6 7b00                         |08d7: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9d0: 1a07 e700                              |08da: const-string v7, " highlight=" // string@00e7
+b1e9d4: 6e20 c1c6 7b00                         |08dc: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9da: 6e20 c2c6 5b00                         |08df: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1e9e0: 1a07 e900                              |08e2: const-string v7, " highlightVid=" // string@00e9
+b1e9e4: 6e20 c1c6 7b00                         |08e4: invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1e9ea: 5497 52a2                              |08e7: iget-object v7, v9, Lcom/dragon/read/rpc/model/VideoData;.highlight:Lcom/dragon/read/rpc/model/VideoHighlight; // field@a252
+b1e9ee: 0216 0500                              |08e9: move/from16 v22, v5
+b1e9f2: 0815 0600                              |08eb: move-object/from16 v21, v6
+b1e9f6: 3807 0900                              |08ed: if-eqz v7, 08f6 // +0009
+b1e9fa: 5375 c1a2                              |08ef: iget-wide v5, v7, Lcom/dragon/read/rpc/model/VideoHighlight;.vid:J // field@a2c1
+b1e9fe: 7120 68c6 6500                         |08f1: invoke-static {v5, v6}, Ljava/lang/Long;.valueOf:(J)Ljava/lang/Long; // method@c668
+b1ea04: 0c05                                   |08f4: move-result-object v5
+b1ea06: 2802                                   |08f5: goto 08f7 // +0002
+b1ea08: 1205                                   |08f6: const/4 v5, #int 0 // #0
+b1ea0a: 6e20 c0c6 5b00                         |08f7: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ea10: 1a05 5700                              |08fa: const-string v5, " autoPlayVid=" // string@0057
+b1ea14: 6e20 c1c6 5b00                         |08fc: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea1a: 6e20 c1c6 4b00                         |08ff: invoke-virtual {v11, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea20: 1a05 8400                              |0902: const-string v5, " contentType=" // string@0084
+b1ea24: 6e20 c1c6 5b00                         |0904: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea2a: 5495 48a2                              |0907: iget-object v5, v9, Lcom/dragon/read/rpc/model/VideoData;.contentType:Lcom/dragon/read/rpc/model/VideoContentType; // field@a248
+b1ea2e: 1a06 50b5                              |0909: const-string v6, "null" // string@b550
+b1ea32: 3805 0b00                              |090b: if-eqz v5, 0916 // +000b
+b1ea36: 6e10 51a7 0500                         |090d: invoke-virtual {v5}, Lcom/dragon/read/rpc/model/VideoContentType;.getValue:()I // method@a751
+b1ea3c: 0a05                                   |0910: move-result v5
+b1ea3e: 7110 5fc6 0500                         |0911: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ea44: 0c05                                   |0914: move-result-object v5
+b1ea46: 2802                                   |0915: goto 0917 // +0002
+b1ea48: 0765                                   |0916: move-object v5, v6
+b1ea4a: 6e20 c0c6 5b00                         |0917: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ea50: 1a05 e800                              |091a: const-string v5, " highlightStart=" // string@00e8
+b1ea54: 6e20 c1c6 5b00                         |091c: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea5a: 6e30 bfc6 2b03                         |091f: invoke-virtual {v11, v2, v3}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1ea60: 1a05 d901                              |0922: const-string v5, " supportAutoPlay=" // string@01d9
+b1ea64: 6e20 c1c6 5b00                         |0924: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea6a: 6e20 c2c6 0b00                         |0927: invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1ea70: 1a05 5300                              |092a: const-string v5, " autoPlayDurationMs=" // string@0053
+b1ea74: 6e20 c1c6 5b00                         |092c: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea7a: 6e30 bfc6 cb0d                         |092f: invoke-virtual {v11, v12, v13}, Ljava/lang/StringBuilder;.append:(J)Ljava/lang/StringBuilder; // method@c6bf
+b1ea80: 1a05 fc01                              |0932: const-string v5, " videoModelEmpty=" // string@01fc
+b1ea84: 6e20 c1c6 5b00                         |0934: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ea8a: 382c 0b00                              |0937: if-eqz v44, 0942 // +000b
+b1ea8e: 7701 daca 2c00                         |0939: invoke-static/range {v44}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1ea94: 0a05                                   |093c: move-result v5
+b1ea96: 3805 0300                              |093d: if-eqz v5, 0940 // +0003
+b1ea9a: 2803                                   |093f: goto 0942 // +0003
+b1ea9c: 1205                                   |0940: const/4 v5, #int 0 // #0
+b1ea9e: 2802                                   |0941: goto 0943 // +0002
+b1eaa0: 1215                                   |0942: const/4 v5, #int 1 // #1
+b1eaa2: 6e20 c2c6 5b00                         |0943: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1eaa8: 1a05 4701                              |0946: const-string v5, " outerVideoModelEmpty=" // string@0147
+b1eaac: 6e20 c1c6 5b00                         |0948: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eab2: 5495 7ba2                              |094b: iget-object v5, v9, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@a27b
+b1eab6: 3805 0b00                              |094d: if-eqz v5, 0958 // +000b
+b1eaba: 7110 daca 0500                         |094f: invoke-static {v5}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1eac0: 0a05                                   |0952: move-result v5
+b1eac2: 3805 0300                              |0953: if-eqz v5, 0956 // +0003
+b1eac6: 2803                                   |0955: goto 0958 // +0003
+b1eac8: 1205                                   |0956: const/4 v5, #int 0 // #0
+b1eaca: 2802                                   |0957: goto 0959 // +0002
+b1eacc: 1215                                   |0958: const/4 v5, #int 1 // #1
+b1eace: 6e20 c2c6 5b00                         |0959: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1ead4: 1a05 9e00                              |095c: const-string v5, " detailVideoListSize=" // string@009e
+b1ead8: 6e20 c1c6 5b00                         |095e: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eade: 5495 79a2                              |0961: iget-object v5, v9, Lcom/dragon/read/rpc/model/VideoData;.videoDetail:Lcom/dragon/read/rpc/model/VideoDetailVideoData; // field@a279
+b1eae2: 3805 0b00                              |0963: if-eqz v5, 096e // +000b
+b1eae6: 5455 bda2                              |0965: iget-object v5, v5, Lcom/dragon/read/rpc/model/VideoDetailVideoData;.videoList:Ljava/util/List; // field@a2bd
+b1eaea: 3805 0700                              |0967: if-eqz v5, 096e // +0007
+b1eaee: 7210 7bc7 0500                         |0969: invoke-interface {v5}, Ljava/util/List;.size:()I // method@c77b
+b1eaf4: 0a05                                   |096c: move-result v5
+b1eaf6: 2802                                   |096d: goto 096f // +0002
+b1eaf8: 1205                                   |096e: const/4 v5, #int 0 // #0
+b1eafa: 6e20 bec6 5b00                         |096f: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1eb00: 1a05 9c00                              |0972: const-string v5, " detailFirstVid=" // string@009c
+b1eb04: 6e20 c1c6 5b00                         |0974: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb0a: 3808 0500                              |0977: if-eqz v8, 097c // +0005
+b1eb0e: 5485 75a2                              |0979: iget-object v5, v8, Lcom/dragon/read/rpc/model/VideoData;.vid:Ljava/lang/String; // field@a275
+b1eb12: 2802                                   |097b: goto 097d // +0002
+b1eb14: 1205                                   |097c: const/4 v5, #int 0 // #0
+b1eb16: 6e20 c1c6 5b00                         |097d: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb1c: 1a05 9d00                              |0980: const-string v5, " detailFirstVideoModelEmpty=" // string@009d
+b1eb20: 6e20 c1c6 5b00                         |0982: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb26: 3808 0500                              |0985: if-eqz v8, 098a // +0005
+b1eb2a: 5485 7ba2                              |0987: iget-object v5, v8, Lcom/dragon/read/rpc/model/VideoData;.videoModel:Ljava/lang/String; // field@a27b
+b1eb2e: 2802                                   |0989: goto 098b // +0002
+b1eb30: 1205                                   |098a: const/4 v5, #int 0 // #0
+b1eb32: 3805 0b00                              |098b: if-eqz v5, 0996 // +000b
+b1eb36: 7110 daca 0500                         |098d: invoke-static {v5}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@cada
+b1eb3c: 0a05                                   |0990: move-result v5
+b1eb3e: 3805 0300                              |0991: if-eqz v5, 0994 // +0003
+b1eb42: 2803                                   |0993: goto 0996 // +0003
+b1eb44: 1205                                   |0994: const/4 v5, #int 0 // #0
+b1eb46: 2802                                   |0995: goto 0997 // +0002
+b1eb48: 1215                                   |0996: const/4 v5, #int 1 // #1
+b1eb4a: 6e20 c2c6 5b00                         |0997: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1eb50: 1a05 5f01                              |099a: const-string v5, " playCoverInfoSize=" // string@015f
+b1eb54: 6e20 c1c6 5b00                         |099c: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb5a: 5495 59a2                              |099f: iget-object v5, v9, Lcom/dragon/read/rpc/model/VideoData;.playCoverInfoList:Ljava/util/List; // field@a259
+b1eb5e: 3805 0700                              |09a1: if-eqz v5, 09a8 // +0007
+b1eb62: 7210 7bc7 0500                         |09a3: invoke-interface {v5}, Ljava/util/List;.size:()I // method@c77b
+b1eb68: 0a05                                   |09a6: move-result v5
+b1eb6a: 2802                                   |09a7: goto 09a9 // +0002
+b1eb6c: 1205                                   |09a8: const/4 v5, #int 0 // #0
+b1eb6e: 6e20 bec6 5b00                         |09a9: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@c6be
+b1eb74: 1a05 5e01                              |09ac: const-string v5, " playCoverFirstVid=" // string@015e
+b1eb78: 6e20 c1c6 5b00                         |09ae: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb7e: 3801 0500                              |09b1: if-eqz v1, 09b6 // +0005
+b1eb82: 5415 909f                              |09b3: iget-object v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.vid:Ljava/lang/String; // field@9f90
+b1eb86: 2802                                   |09b5: goto 09b7 // +0002
+b1eb88: 1205                                   |09b6: const/4 v5, #int 0 // #0
+b1eb8a: 6e20 c1c6 5b00                         |09b7: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb90: 1a05 6101                              |09ba: const-string v5, " playCoverStart=" // string@0161
+b1eb94: 6e20 c1c6 5b00                         |09bc: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1eb9a: 3801 0900                              |09bf: if-eqz v1, 09c8 // +0009
+b1eb9e: 5215 8f9f                              |09c1: iget v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.startTime:I // field@9f8f
+b1eba2: 7110 5fc6 0500                         |09c3: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1eba8: 0c05                                   |09c6: move-result-object v5
+b1ebaa: 2802                                   |09c7: goto 09c9 // +0002
+b1ebac: 1205                                   |09c8: const/4 v5, #int 0 // #0
+b1ebae: 6e20 c0c6 5b00                         |09c9: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ebb4: 1a05 5d01                              |09cc: const-string v5, " playCoverEnd=" // string@015d
+b1ebb8: 6e20 c1c6 5b00                         |09ce: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ebbe: 3801 0900                              |09d1: if-eqz v1, 09da // +0009
+b1ebc2: 5215 8b9f                              |09d3: iget v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.endTime:I // field@9f8b
+b1ebc6: 7110 5fc6 0500                         |09d5: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ebcc: 0c05                                   |09d8: move-result-object v5
+b1ebce: 2802                                   |09d9: goto 09db // +0002
+b1ebd0: 1205                                   |09da: const/4 v5, #int 0 // #0
+b1ebd2: 6e20 c0c6 5b00                         |09db: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ebd8: 1a05 6001                              |09de: const-string v5, " playCoverSecondLimit=" // string@0160
+b1ebdc: 6e20 c1c6 5b00                         |09e0: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ebe2: 3801 0900                              |09e3: if-eqz v1, 09ec // +0009
+b1ebe6: 5215 8d9f                              |09e5: iget v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.secondLimit:I // field@9f8d
+b1ebea: 7110 5fc6 0500                         |09e7: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ebf0: 0c05                                   |09ea: move-result-object v5
+b1ebf2: 2802                                   |09eb: goto 09ed // +0002
+b1ebf4: 1205                                   |09ec: const/4 v5, #int 0 // #0
+b1ebf6: 6e20 c0c6 5b00                         |09ed: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ebfc: 1a05 6201                              |09f0: const-string v5, " playCoverStyle=" // string@0162
+b1ec00: 6e20 c1c6 5b00                         |09f2: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ec06: 3801 0f00                              |09f5: if-eqz v1, 0a04 // +000f
+b1ec0a: 5415 899f                              |09f7: iget-object v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.autoPlayStyle:Lcom/dragon/read/rpc/model/AutoPlayStyle; // field@9f89
+b1ec0e: 3805 0b00                              |09f9: if-eqz v5, 0a04 // +000b
+b1ec12: 6e10 2aa6 0500                         |09fb: invoke-virtual {v5}, Lcom/dragon/read/rpc/model/AutoPlayStyle;.getValue:()I // method@a62a
+b1ec18: 0a05                                   |09fe: move-result v5
+b1ec1a: 7110 5fc6 0500                         |09ff: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ec20: 0c05                                   |0a02: move-result-object v5
+b1ec22: 2802                                   |0a03: goto 0a05 // +0002
+b1ec24: 1205                                   |0a04: const/4 v5, #int 0 // #0
+b1ec26: 6e20 c0c6 5b00                         |0a05: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ec2c: 1a05 6401                              |0a08: const-string v5, " playStrategy=" // string@0164
+b1ec30: 6e20 c1c6 5b00                         |0a0a: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ec36: 3801 0f00                              |0a0d: if-eqz v1, 0a1c // +000f
+b1ec3a: 5415 8c9f                              |0a0f: iget-object v5, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.playStrategyType:Lcom/dragon/read/rpc/model/PlayStrategyType; // field@9f8c
+b1ec3e: 3805 0b00                              |0a11: if-eqz v5, 0a1c // +000b
+b1ec42: 6e10 d7a6 0500                         |0a13: invoke-virtual {v5}, Lcom/dragon/read/rpc/model/PlayStrategyType;.getValue:()I // method@a6d7
+b1ec48: 0a05                                   |0a16: move-result v5
+b1ec4a: 7110 5fc6 0500                         |0a17: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ec50: 0c05                                   |0a1a: move-result-object v5
+b1ec52: 2802                                   |0a1b: goto 0a1d // +0002
+b1ec54: 1205                                   |0a1c: const/4 v5, #int 0 // #0
+b1ec56: 6e20 c0c6 5b00                         |0a1d: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ec5c: 1a05 c601                              |0a20: const-string v5, " startPlayStrategy=" // string@01c6
+b1ec60: 6e20 c1c6 5b00                         |0a22: invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ec66: 3801 0500                              |0a25: if-eqz v1, 0a2a // +0005
+b1ec6a: 5411 8e9f                              |0a27: iget-object v1, v1, Lcom/dragon/read/rpc/model/PlayCoverInfo;.startPlayStrategy:Lcom/dragon/read/rpc/model/StartPlayStrategy; // field@9f8e
+b1ec6e: 2802                                   |0a29: goto 0a2b // +0002
+b1ec70: 1201                                   |0a2a: const/4 v1, #int 0 // #0
+b1ec72: 6e20 c0c6 1b00                         |0a2b: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1ec78: 1a01 a400                              |0a2e: const-string v1, " displayDim=" // string@00a4
+b1ec7c: 6e20 c1c6 1b00                         |0a30: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ec82: 5491 4ca2                              |0a33: iget-object v1, v9, Lcom/dragon/read/rpc/model/VideoData;.displayDim:Lcom/dragon/read/rpc/model/DisplayDim; // field@a24c
+b1ec86: 3801 0a00                              |0a35: if-eqz v1, 0a3f // +000a
+b1ec8a: 6e10 59a6 0100                         |0a37: invoke-virtual {v1}, Lcom/dragon/read/rpc/model/DisplayDim;.getValue:()I // method@a659
+b1ec90: 0a01                                   |0a3a: move-result v1
+b1ec92: 7110 5fc6 0100                         |0a3b: invoke-static {v1}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ec98: 0c06                                   |0a3e: move-result-object v6
+b1ec9a: 6e20 c0c6 6b00                         |0a3f: invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@c6c0
+b1eca0: 1a01 b501                              |0a42: const-string v1, " showPlayIcon=" // string@01b5
+b1eca4: 6e20 c1c6 1b00                         |0a44: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ecaa: 5591 68a2                              |0a47: iget-boolean v1, v9, Lcom/dragon/read/rpc/model/VideoData;.showPlayIcon:Z // field@a268
+b1ecae: 6e20 c2c6 1b00                         |0a49: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@c6c2
+b1ecb4: 1a01 d900                              |0a4c: const-string v1, " forceVid=" // string@00d9
+b1ecb8: 6e20 c1c6 1b00                         |0a4e: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ecbe: 5491 51a2                              |0a51: iget-object v1, v9, Lcom/dragon/read/rpc/model/VideoData;.forceVid:Ljava/lang/String; // field@a251
+b1ecc2: 6e20 c1c6 1b00                         |0a53: invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@c6c1
+b1ecc8: 6e10 c6c6 0b00                         |0a56: invoke-virtual {v11}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@c6c6
+b1ecce: 0c01                                   |0a59: move-result-object v1
+b1ecd0: 7401 85c6 1300                         |0a5a: invoke-virtual/range {v19}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1ecd6: 1a05 d17b                              |0a5d: const-string v5, "StaggeredRecommendMapper" // string@7bd1
+b1ecda: 7120 55c0 1500                         |0a5f: invoke-static {v5, v1}, Lhi5/j;.d:(Ljava/lang/String;Ljava/lang/String;)V // method@c055
+b1ece0: 2807                                   |0a62: goto 0a69 // +0007
+b1ece2: 0216 0500                              |0a63: move/from16 v22, v5
+b1ece6: 0815 0600                              |0a65: move-object/from16 v21, v6
+b1ecea: 0814 0b00                              |0a67: move-object/from16 v20, v11
+b1ecee: 2208 034c                              |0a69: new-instance v8, Lpv5/c; // type@4c03
+b1ecf2: 1a01 34c6                              |0a6b: const-string v1, "title" // string@c634
+b1ecf6: 6e20 59c7 1f00                         |0a6d: invoke-virtual {v15, v1}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1ecfc: 0c01                                   |0a70: move-result-object v1
+b1ecfe: 1f01 af45                              |0a71: check-cast v1, Ljava/lang/String; // type@45af
+b1ed02: 3901 0a00                              |0a73: if-nez v1, 0a7d // +000a
+b1ed06: 3945 0500                              |0a75: if-nez v69, 0a7a // +0005
+b1ed0a: 0813 dc00                              |0a77: move-object/from16 v19, v220
+b1ed0e: 2806                                   |0a79: goto 0a7f // +0006
+b1ed10: 0813 4500                              |0a7a: move-object/from16 v19, v69
+b1ed14: 2803                                   |0a7c: goto 0a7f // +0003
+b1ed16: 0813 0100                              |0a7d: move-object/from16 v19, v1
+b1ed1a: 3809 2200                              |0a7f: if-eqz v9, 0aa1 // +0022
+b1ed1e: 390e 2000                              |0a81: if-nez v14, 0aa1 // +0020
+b1ed22: 6201 b4bb                              |0a83: sget-object v1, Lov5/c;.Companion:Lov5/c$b; // field@bbb4
+b1ed26: 6e10 85c6 0100                         |0a85: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@c685
+b1ed2c: 6201 b8bb                              |0a88: sget-object v1, Lov5/c;.d:Lkotlin/Lazy; // field@bbb8
+b1ed30: 7210 aac9 0100                         |0a8a: invoke-interface {v1}, Lkotlin/Lazy;.getValue:()Ljava/lang/Object; // method@c9aa
+b1ed36: 0c01                                   |0a8d: move-result-object v1
+b1ed38: 1f01 f74a                              |0a8e: check-cast v1, Lov5/c; // type@4af7
+b1ed3c: 5511 b6bb                              |0a90: iget-boolean v1, v1, Lov5/c;.b:Z // field@bbb6
+b1ed40: 3801 0f00                              |0a92: if-eqz v1, 0aa1 // +000f
+b1ed44: 6201 eabb                              |0a94: sget-object v1, Lov5/s;.f:Ljava/util/List; // field@bbea
+b1ed48: 7120 c0dd 1a00                         |0a96: invoke-static {v10, v1}, Lov5/s;.q:(Ljava/lang/Object;Ljava/util/List;)Ljava/lang/String; // method@ddc0
+b1ed4e: 0c01                                   |0a99: move-result-object v1
+b1ed50: 7110 a7dd 0100                         |0a9a: invoke-static {v1}, Lov5/s;.G:(Ljava/lang/String;)Ljava/lang/String; // method@dda7
+b1ed56: 0c01                                   |0a9d: move-result-object v1
+b1ed58: 3801 0300                              |0a9e: if-eqz v1, 0aa1 // +0003
+b1ed5c: 2809                                   |0aa0: goto 0aa9 // +0009
+b1ed5e: 1a01 47a2                              |0aa1: const-string v1, "cover" // string@a247
+b1ed62: 6e20 59c7 1f00                         |0aa3: invoke-virtual {v15, v1}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1ed68: 0c01                                   |0aa6: move-result-object v1
+b1ed6a: 1f01 af45                              |0aa7: check-cast v1, Ljava/lang/String; // type@45af
+b1ed6e: 0807 d700                              |0aa9: move-object/from16 v7, v215
+b1ed72: 0819 0100                              |0aab: move-object/from16 v25, v1
+b1ed76: 5471 389c                              |0aad: iget-object v1, v7, Lcom/dragon/read/rpc/model/CellViewData;.showType:Lcom/dragon/read/rpc/model/ShowType; // field@9c38
+b1ed7a: 6205 0da1                              |0aaf: sget-object v5, Lcom/dragon/read/rpc/model/ShowType;.VideoDoubleColPUGC:Lcom/dragon/read/rpc/model/ShowType; // field@a10d
+b1ed7e: 3351 0400                              |0ab1: if-ne v1, v5, 0ab5 // +0004
+b1ed82: 121b                                   |0ab3: const/4 v11, #int 1 // #1
+b1ed84: 2802                                   |0ab4: goto 0ab6 // +0002
+b1ed86: 120b                                   |0ab5: const/4 v11, #int 0 // #0
+b1ed88: 0801 d600                              |0ab6: move-object/from16 v1, v214
+b1ed8c: 052e 0200                              |0ab8: move-wide/from16 v46, v2
+b1ed90: 0802 1400                              |0aba: move-object/from16 v2, v20
+b1ed94: 081a 2000                              |0abc: move-object/from16 v26, v32
+b1ed98: 0793                                   |0abe: move-object v3, v9
+b1ed9a: 082a 0400                              |0abf: move-object/from16 v42, v4
+b1ed9e: 07a4                                   |0ac1: move-object v4, v10
+b1eda0: 0806 da00                              |0ac2: move-object/from16 v6, v218
+b1eda4: 022d 1600                              |0ac4: move/from16 v45, v22
+b1eda8: 01e5                                   |0ac6: move v5, v14
+b1edaa: 0232 0000                              |0ac7: move/from16 v50, v0
+b1edae: 0760                                   |0ac9: move-object v0, v6
+b1edb0: 0206 1d00                              |0aca: move/from16 v6, v29
+b1edb4: 08d8 0800                              |0acc: move-object/from16 v216, v8
+b1edb8: 0778                                   |0ace: move-object v8, v7
+b1edba: 01b7                                   |0acf: move v7, v11
+b1edbc: 7407 c6dd 0100                         |0ad0: invoke-virtual/range {v1, v2, v3, v4, v5, v6, v7}, Lov5/s;.w:(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;ZZZ)F // method@ddc6
+b1edc2: 0a01                                   |0ad3: move-result v1
+b1edc4: 1a02 4b8b                              |0ad4: const-string v2, "author_avatar" // string@8b4b
+b1edc8: 6e20 59c7 2f00                         |0ad6: invoke-virtual {v15, v2}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1edce: 0c02                                   |0ad9: move-result-object v2
+b1edd0: 1f02 af45                              |0ada: check-cast v2, Ljava/lang/String; // type@45af
+b1edd4: 1a03 4c8b                              |0adc: const-string v3, "author_id" // string@8b4c
+b1edd8: 6e20 59c7 3f00                         |0ade: invoke-virtual {v15, v3}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1edde: 0c03                                   |0ae1: move-result-object v3
+b1ede0: 0816 0300                              |0ae2: move-object/from16 v22, v3
+b1ede4: 1f16 af45                              |0ae4: check-cast v22, Ljava/lang/String; // type@45af
+b1ede8: 1214                                   |0ae6: const/4 v4, #int 1 // #1
+b1edea: 0803 d600                              |0ae7: move-object/from16 v3, v214
+b1edee: 6e20 b6dd a300                         |0ae9: invoke-virtual {v3, v10}, Lov5/s;.g:(Ljava/util/Map;)Ljava/util/List; // method@ddb6
+b1edf4: 0c05                                   |0aec: move-result-object v5
+b1edf6: 6e30 b7dd 930a                         |0aed: invoke-virtual {v3, v9, v10}, Lov5/s;.h:(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List; // method@ddb7
+b1edfc: 0c06                                   |0af0: move-result-object v6
+b1edfe: 6e30 b8dd 930a                         |0af1: invoke-virtual {v3, v9, v10}, Lov5/s;.i:(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/util/List; // method@ddb8
+b1ee04: 0c07                                   |0af4: move-result-object v7
+b1ee06: 7110 b5dd 0a00                         |0af5: invoke-static {v10}, Lov5/s;.f:(Ljava/util/Map;)Ljava/lang/String; // method@ddb5
+b1ee0c: 0c20                                   |0af8: move-result-object v32
+b1ee0e: 7110 b4dd 0a00                         |0af9: invoke-static {v10}, Lov5/s;.e:(Ljava/util/Map;)Ljava/lang/String; // method@ddb4
+b1ee14: 0c22                                   |0afc: move-result-object v34
+b1ee16: 080b 1400                              |0afd: move-object/from16 v11, v20
+b1ee1a: 7130 c8dd 9b0a                         |0aff: invoke-static {v11, v9, v10}, Lov5/s;.y:(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J // method@ddc8
+b1ee20: 0b23                                   |0b02: move-result-wide v35
+b1ee22: 7130 c9dd 9b0a                         |0b03: invoke-static {v11, v9, v10}, Lov5/s;.z:(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Z // method@ddc9
+b1ee28: 0a25                                   |0b06: move-result v37
+b1ee2a: 380b 0600                              |0b07: if-eqz v11, 0b0d // +0006
+b1ee2e: 52b4 83a1                              |0b09: iget v4, v11, Lcom/dragon/read/rpc/model/UgcPostData;.replyCnt:I // field@a183
+b1ee32: 8143                                   |0b0b: int-to-long v3, v4
+b1ee34: 2807                                   |0b0c: goto 0b13 // +0007
+b1ee36: 6203 debb                              |0b0d: sget-object v3, Lov5/s;.V:Ljava/util/Set; // field@bbde
+b1ee3a: 7120 bcdd a300                         |0b0f: invoke-static {v3, v10}, Lov5/s;.m:(Ljava/util/Set;Ljava/lang/Object;)J // method@ddbc
+b1ee40: 0b03                                   |0b12: move-result-wide v3
+b1ee42: 7130 a1dd 9b0a                         |0b13: invoke-static {v11, v9, v10}, Lov5/s;.A:(Lcom/dragon/read/rpc/model/UgcPostData;Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)J // method@dda1
+b1ee48: 0b27                                   |0b16: move-result-wide v39
+b1ee4a: 7120 a2dd a900                         |0b17: invoke-static {v9, v10}, Lov5/s;.B:(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;)Ljava/lang/String; // method@dda2
+b1ee50: 0c2b                                   |0b1a: move-result-object v43
+b1ee52: 7130 c5dd a90e                         |0b1b: invoke-static {v9, v10, v14}, Lov5/s;.v:(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Ljava/lang/String; // method@ddc5
+b1ee58: 0c30                                   |0b1e: move-result-object v48
+b1ee5a: 7130 a5dd a90e                         |0b1f: invoke-static {v9, v10, v14}, Lov5/s;.E:(Lcom/dragon/read/rpc/model/VideoData;Ljava/util/Map;Z)Z // method@dda5
+b1ee60: 0a31                                   |0b22: move-result v49
+b1ee62: 3812 0500                              |0b23: if-eqz v18, 0b28 // +0005
+b1ee66: 1333 0100                              |0b25: const/16 v51, #int 1 // #1
+b1ee6a: 2803                                   |0b27: goto 0b2a // +0003
+b1ee6c: 1333 0000                              |0b28: const/16 v51, #int 0 // #0
+b1ee70: 381a 0d00                              |0b2a: if-eqz v26, 0b37 // +000d
+b1ee74: 7401 51a7 1a00                         |0b2c: invoke-virtual/range {v26}, Lcom/dragon/read/rpc/model/VideoContentType;.getValue:()I // method@a751
+b1ee7a: 0a09                                   |0b2f: move-result v9
+b1ee7c: 7110 5fc6 0900                         |0b30: invoke-static {v9}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1ee82: 0c09                                   |0b33: move-result-object v9
+b1ee84: 0834 0900                              |0b34: move-object/from16 v52, v9
+b1ee88: 2803                                   |0b36: goto 0b39 // +0003
+b1ee8a: 1334 0000                              |0b37: const/16 v52, #int 0 // #0
+b1ee8e: 3800 0600                              |0b39: if-eqz v0, 0b3f // +0006
+b1ee92: 5409 f4a2                              |0b3b: iget-object v9, v0, Lcom/dragon/read/rpc/model/VideoTagInfo;.text:Ljava/lang/String; // field@a2f4
+b1ee96: 3909 0600                              |0b3d: if-nez v9, 0b43 // +0006
+b1ee9a: 7110 b3dd 0a00                         |0b3f: invoke-static {v10}, Lov5/s;.d:(Ljava/util/Map;)Ljava/lang/String; // method@ddb3
+b1eea0: 0c09                                   |0b42: move-result-object v9
+b1eea2: 0835 0900                              |0b43: move-object/from16 v53, v9
+b1eea6: 381d 0700                              |0b45: if-eqz v29, 0b4c // +0007
+b1eeaa: 1a09 a6cb                              |0b47: const-string v9, "图文" // string@cba6
+b1eeae: 0836 0900                              |0b49: move-object/from16 v54, v9
+b1eeb2: 2803                                   |0b4b: goto 0b4e // +0003
+b1eeb4: 1336 0000                              |0b4c: const/16 v54, #int 0 // #0
+b1eeb8: 5489 1e9c                              |0b4e: iget-object v9, v8, Lcom/dragon/read/rpc/model/CellViewData;.cellLongPressAction:Lcom/dragon/read/rpc/model/LongPressAction; // field@9c1e
+b1eebc: 548a 249c                              |0b50: iget-object v10, v8, Lcom/dragon/read/rpc/model/CellViewData;.dislikeTargetType:Lcom/dragon/read/rpc/model/DislikeTargetType; // field@9c24
+b1eec0: 380a 0d00                              |0b52: if-eqz v10, 0b5f // +000d
+b1eec4: 6e10 58a6 0a00                         |0b54: invoke-virtual {v10}, Lcom/dragon/read/rpc/model/DislikeTargetType;.getValue:()I // method@a658
+b1eeca: 0a0a                                   |0b57: move-result v10
+b1eecc: 7110 5fc6 0a00                         |0b58: invoke-static {v10}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@c65f
+b1eed2: 0c0a                                   |0b5b: move-result-object v10
+b1eed4: 0837 0a00                              |0b5c: move-object/from16 v55, v10
+b1eed8: 2803                                   |0b5e: goto 0b61 // +0003
+b1eeda: 1337 0000                              |0b5f: const/16 v55, #int 0 // #0
+b1eede: 1338 0000                              |0b61: const/16 v56, #int 0 // #0
+b1eee2: 1339 0000                              |0b63: const/16 v57, #int 0 // #0
+b1eee6: 133a 0000                              |0b65: const/16 v58, #int 0 // #0
+b1eeea: 220a 094c                              |0b67: new-instance v10, Lpv5/i; // type@4c09
+b1eeee: 083b 0a00                              |0b69: move-object/from16 v59, v10
+b1eef2: 1a0b e9b2                              |0b6b: const-string v11, "log_id" // string@b2e9
+b1eef6: 6e20 59c7 bf00                         |0b6d: invoke-virtual {v15, v11}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@c759
+b1eefc: 0c0b                                   |0b70: move-result-object v11
+b1eefe: 0811 0b00                              |0b71: move-object/from16 v17, v11
+b1ef02: 1f11 af45                              |0b73: check-cast v17, Ljava/lang/String; // type@45af
+b1ef06: 080b d900                              |0b75: move-object/from16 v11, v217
+b1ef0a: 053f 0c00                              |0b77: move-wide/from16 v63, v12
+b1ef0e: 080c 1500                              |0b79: move-object/from16 v12, v21
+b1ef12: 020d 2100                              |0b7b: move/from16 v13, v33
+b1ef16: 023c 0e00                              |0b7d: move/from16 v60, v14
+b1ef1a: 0214 2100                              |0b7f: move/from16 v20, v33
+b1ef1e: 050e 1e00                              |0b81: move-wide/from16 v14, v30
+b1ef22: 0810 4500                              |0b83: move-object/from16 v16, v69
+b1ef26: 0812 1700                              |0b85: move-object/from16 v18, v23
+b1ef2a: 7609 56e0 0a00                         |0b87: invoke-direct/range {v10, v11, v12, v13, v14, v15, v16, v17, v18}, Lpv5/i;.<init>:(Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;Ljava/util/Map;)V // method@e056
+b1ef30: 133d 0000                              |0b8a: const/16 v61, #int 0 // #0
+b1ef34: 133e 0007                              |0b8c: const/16 v62, #int 1792 // #700
+b1ef38: 0841 0900                              |0b8e: move-object/from16 v65, v9
+b1ef3c: 0809 d800                              |0b90: move-object/from16 v9, v216
+b1ef40: 080a 1500                              |0b92: move-object/from16 v10, v21
+b1ef44: 080b 1300                              |0b94: move-object/from16 v11, v19
+b1ef48: 080c 1b00                              |0b96: move-object/from16 v12, v27
+b1ef4c: 020d 1400                              |0b98: move/from16 v13, v20
+b1ef50: 0811 1900                              |0b9a: move-object/from16 v17, v25
+b1ef54: 0212 0100                              |0b9c: move/from16 v18, v1
+b1ef58: 0813 1c00                              |0b9e: move-object/from16 v19, v28
+b1ef5c: 0814 1c00                              |0ba0: move-object/from16 v20, v28
+b1ef60: 0815 0200                              |0ba2: move-object/from16 v21, v2
+b1ef64: 0817 0500                              |0ba4: move-object/from16 v23, v5
+b1ef68: 0818 0600                              |0ba6: move-object/from16 v24, v6
+b1ef6c: 0819 0700                              |0ba8: move-object/from16 v25, v7
+b1ef70: 081a 2000                              |0baa: move-object/from16 v26, v32
+b1ef74: 081b 2200                              |0bac: move-object/from16 v27, v34
+b1ef78: 051c 2300                              |0bae: move-wide/from16 v28, v35
+b1ef7c: 021e 2500                              |0bb0: move/from16 v30, v37
+b1ef80: 051f 0300                              |0bb2: move-wide/from16 v31, v3
+b1ef84: 0521 2700                              |0bb4: move-wide/from16 v33, v39
+b1ef88: 0823 2b00                              |0bb6: move-object/from16 v35, v43
+b1ef8c: 0824 3000                              |0bb8: move-object/from16 v36, v48
+b1ef90: 0225 3100                              |0bba: move/from16 v37, v49
+b1ef94: 0227 3c00                              |0bbc: move/from16 v39, v60
+b1ef98: 0228 3300                              |0bbe: move/from16 v40, v51
+b1ef9c: 082b 3400                              |0bc0: move-object/from16 v43, v52
+b1efa0: 0530 3f00                              |0bc2: move-wide/from16 v48, v63
+b1efa4: 0833 3500                              |0bc4: move-object/from16 v51, v53
+b1efa8: 0834 0000                              |0bc6: move-object/from16 v52, v0
+b1efac: 0835 3600                              |0bc8: move-object/from16 v53, v54
+b1efb0: 0836 4100                              |0bca: move-object/from16 v54, v65
+b1efb4: 083c d700                              |0bcc: move-object/from16 v60, v215
+b1efb8: 7636 36e0 0900                         |0bce: invoke-direct/range {v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23, v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60, v61, v62}, Lpv5/c;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;JZJJLjava/lang/String;Ljava/lang/String;ZZZZLpv5/l;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZJJZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;Ljava/lang/Integer;Lpv5/d;Lg06/w0;Lg06/x0;Lpv5/i;Ljava/lang/Object;II)V // method@e036
+b1efbe: 11d8                                   |0bd1: return-object v216
+      catches       : 1
+        0x039c - 0x03b1
+          <any> -> 0x03b2
+

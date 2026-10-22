@@ -1,0 +1,27 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "derived_apk_sha256": "7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d",
+  "limitations": "Unsigned offline analysis carrier containing only byte-identical original classes6.dex/classes7.dex, manifest and resources; excludes other DEX/native/runtime behavior. Not installable and not a third-party client.",
+  "members": [
+    {
+      "member": "AndroidManifest.xml",
+      "bytes": 424412,
+      "sha256": "f9f43da3d8d110694f1be9c37afa39356655e5f1476cc077da3bb5ddfef94209"
+    },
+    {
+      "member": "resources.arsc",
+      "bytes": 4591580,
+      "sha256": "debaa17d7720ffee09c632d81b809e79a86635e46a8e4eb9777baff92661875f"
+    },
+    {
+      "member": "classes6.dex",
+      "bytes": 13244968,
+      "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508"
+    },
+    {
+      "member": "classes7.dex",
+      "bytes": 11728768,
+      "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367"
+    }
+  ]
+}

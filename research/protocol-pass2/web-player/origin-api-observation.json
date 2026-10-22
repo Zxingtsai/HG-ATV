@@ -1,0 +1,8 @@
+{
+  "status": 403,
+  "play_info_present": false,
+  "error": "protected_playback_unavailable",
+  "duration": null,
+  "origin_header_used": true,
+  "cookies_used": false
+}

@@ -1,0 +1,73 @@
+{
+  "source": "research/web/observations.json",
+  "source_sha256": "cc59fd5d168e0d18707cdadf3e3721494ddf221b8121144e10d05071c83e50c5",
+  "scope": "Only public content identifiers retained; no media credentials/keys; historic API response not a successful playback proof.",
+  "observed_mappings": [
+    {
+      "series_id": "7690961604636052505",
+      "episode": 1,
+      "item_id": "7690963410778868761",
+      "tt_vid": "v02ebeg10000datsku7og65tsj5oop8g"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 2,
+      "item_id": "7690963562042248217",
+      "tt_vid": "v02ebeg10000datsl77og65lrdhng7cg"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 3,
+      "item_id": "7690963468219845657",
+      "tt_vid": "v02ebeg10000datsl1nog65tjafpoffg"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 24,
+      "item_id": "7690963491330477081",
+      "tt_vid": "v02ebeg10000datsl2vog65to9f3a5f0"
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 46,
+      "item_id": "7690963495944211481",
+      "tt_vid": "v02ebeg10000db45skq7dld5iuaj1mng"
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 1,
+      "item_id": "7694655440692448281",
+      "tt_vid": "v03ebeg10000db87lfi7dldfk1ifq83g"
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 2,
+      "item_id": "7694655210777480217",
+      "tt_vid": "v03ebeg10000db86nha7dldeh8dun920"
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 3,
+      "item_id": "7694655216007777305",
+      "tt_vid": "v03ebeg10000db880g27dldeh8e1i4fg"
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 1,
+      "item_id": "7697855411688311833",
+      "tt_vid": "v02ebeg10000dba4ddnog65tr8i3oiqg"
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 2,
+      "item_id": "7697855365819419673",
+      "tt_vid": "v02ebeg10000dba4davog65lrdl6rbr0"
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 3,
+      "item_id": "7697855263528733721",
+      "tt_vid": "v02ebeg10000dba4d4vog65tr8i3obg0"
+    }
+  ]
+}

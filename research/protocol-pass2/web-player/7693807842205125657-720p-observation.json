@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-10-21T07:31:41.740643+00:00",
+  "series_id": "7693806079737613336",
+  "item_id": "7693807842205125657",
+  "definition": "720p",
+  "method": "Official play-info response and unmodified public player worker messages; no key export or CDM bypass.",
+  "api_http_status": 200,
+  "vid": "v02ebeg10000db2uatvog65sqpjusl1g",
+  "expected_duration": 455.274,
+  "width": "1280",
+  "height": "720",
+  "codec": "h264",
+  "normal_software_decryption": true,
+  "shared_audio_video_key": true,
+  "downloads": [
+    {
+      "track": "video",
+      "bytes": 73325676,
+      "sha256": "1a21d8533862ac5c0584776ecbdd16c48d1de253689131d87071b6dbd5f90107",
+      "host": "v3-hgweb.qznovelvod.com"
+    },
+    {
+      "track": "audio",
+      "bytes": 7695030,
+      "sha256": "ba4518a0c544ef908be71a19cc4b35afa14cfd2f180e42cc95280e9534ccdc8f",
+      "host": "v3-hgweb.qznovelvod.com"
+    }
+  ],
+  "worker_exit_code": 0,
+  "worker": {
+    "ok": true,
+    "tracks": [
+      {
+        "inputBytes": 73325676,
+        "outputBytes": 73099491,
+        "fragments": 92,
+        "samples": 0,
+        "sdkLogCount": 0,
+        "isVideo": true
+      },
+      {
+        "inputBytes": 7695030,
+        "outputBytes": 7629435,
+        "fragments": 92,
+        "samples": 0,
+        "sdkLogCount": 0,
+        "isVideo": false
+      }
+    ]
+  },
+  "remux_exit_code": 0,
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "455.233333"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "duration": "455.320091"
+      }
+    ],
+    "format": {
+      "duration": "455.320091",
+      "size": "80637218"
+    }
+  },
+  "decode_exit_code": 0,
+  "decode_progress": {
+    "frame": "13657",
+    "out_time": "00:07:35.233333",
+    "progress": "end"
+  },
+  "decode_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "duration_difference": 0.04609099999998989,
+  "full_decode_passed": true
+}

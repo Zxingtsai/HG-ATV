@@ -1,0 +1,945 @@
+{
+  "observed_at": "2026-10-20T09:31:44.038460+00:00",
+  "base_url": "https://hongguoduanju.com",
+  "catalogue": {
+    "/": {
+      "isSuccess": true,
+      "routes": {
+        "layout": null,
+        "page": [
+          "isSuccess",
+          "req",
+          "bannerList",
+          "mBannerList",
+          "mBannerSchedule",
+          "bannerServerTime",
+          "homeSections"
+        ]
+      },
+      "list_counts": {
+        "homeSections": 4
+      }
+    },
+    "/category/real-drama": {
+      "isSuccess": true,
+      "pagination": {
+        "total": 800,
+        "pageNum": 1,
+        "pageSize": 24,
+        "totalPages": 34
+      },
+      "routes": {
+        "category_layout": null,
+        "category_$": [
+          "req",
+          "isSuccess",
+          "query",
+          "apiQuery",
+          "canonicalUrl",
+          "categoryRoute",
+          "seo",
+          "noIndex",
+          "selectorList",
+          "recommendList",
+          "pagination"
+        ]
+      },
+      "list_counts": {
+        "recommendList": 24
+      }
+    },
+    "/category/real-drama?page=2": {
+      "isSuccess": true,
+      "pagination": {
+        "total": 800,
+        "pageNum": 2,
+        "pageSize": 24,
+        "totalPages": 34
+      },
+      "routes": {
+        "category_layout": null,
+        "category_$": [
+          "req",
+          "isSuccess",
+          "query",
+          "apiQuery",
+          "canonicalUrl",
+          "categoryRoute",
+          "seo",
+          "noIndex",
+          "selectorList",
+          "recommendList",
+          "pagination"
+        ]
+      },
+      "list_counts": {
+        "recommendList": 24
+      }
+    },
+    "/rank/hot-drama": {
+      "routes": {
+        "rank_layout": null,
+        "rank_hot-drama/page": [
+          "req",
+          "rankKey",
+          "canonicalUrl",
+          "updatedText",
+          "pageNum",
+          "isCrawler",
+          "content"
+        ]
+      },
+      "list_counts": {},
+      "rank_count": 20
+    },
+    "/search/%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF": {
+      "isSuccess": true,
+      "totalCount": "197",
+      "accessibleEpisodeCnt": 3,
+      "routes": {
+        "search_layout": null,
+        "search_(keyword)/page": [
+          "req",
+          "query",
+          "isSuccess",
+          "searchList",
+          "totalCount",
+          "accessibleEpisodeCnt"
+        ]
+      },
+      "list_counts": {
+        "searchList": 10
+      }
+    }
+  },
+  "series": [
+    {
+      "series_id": "7690961604636052505",
+      "series_name": "军需处长的账本",
+      "episode_cnt": 46,
+      "accessible_episode_cnt": 10,
+      "series_episode_info": {
+        "episode_cnt": 46,
+        "episode_total_cnt": 46,
+        "series_status": 1
+      },
+      "vid_list_count": 46
+    },
+    {
+      "series_id": "7694653385668037657",
+      "series_name": "王妈在顾家当保姆后全家只会搞笑了",
+      "episode_cnt": 86,
+      "accessible_episode_cnt": 10,
+      "series_episode_info": {
+        "episode_cnt": 86,
+        "episode_total_cnt": 86,
+        "series_status": 1
+      },
+      "vid_list_count": 86
+    },
+    {
+      "series_id": "7697852455970671678",
+      "series_name": "觉醒伪神：神明弃我我自为神7",
+      "episode_cnt": 193,
+      "accessible_episode_cnt": 30,
+      "series_episode_info": {
+        "episode_cnt": 193,
+        "episode_total_cnt": 193,
+        "series_status": 1
+      },
+      "vid_list_count": 193
+    }
+  ],
+  "episode_probes": [
+    {
+      "series_id": "7690961604636052505",
+      "episode": 1,
+      "item_id": "7690963410778868761",
+      "page_success": true,
+      "page_vid": "7690963410778868761",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7690961604636052505",
+        "itemId": "7690963410778868761",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-v-6fcc8e/oclg57abtWdxXf2w78rIBAk1SQJQQhEIQ1bEw7~tplv-noop.image?dy_q=1792487908&l=20261020171828B8227ED0CE953114FC21&x-expires=1792491616&x-signature=tchJV1IhdeFkS2%2FSFNMKnhYTycY%3D",
+        "durationSeconds": 108.331,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/6971183",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000datsku7og65tsj5oop8g",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 108.331,
+              "size": "1833171",
+              "bitrate": "135926",
+              "init_range": "0-1026",
+              "index_range": "1027-1322",
+              "kid": "<redacted>",
+              "expires_at": "1792492433"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 108.331,
+            "size": "12782348",
+            "bitrate": "951135",
+            "init_range": "0-1276",
+            "index_range": "1277-1572",
+            "first_moof_range": "1573-5850",
+            "expires_at": "1792492433"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 2,
+      "item_id": "7690963562042248217",
+      "page_success": true,
+      "page_vid": "7690963562042248217",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7690961604636052505",
+        "itemId": "7690963562042248217",
+        "posterUrl": "https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-v-6fcc8e/oAt57BDsshAw3dIaurWkgAQ1KKAMm6IKeRtv1D~tplv-noop.image?dy_q=1792488128&l=202610201722082C91AABD7C1E5C1F0FEF&x-expires=1792491840&x-signature=2icnKT1ji7agcw2%2Fb5eySKQ6YHM%3D",
+        "durationSeconds": 112.491,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/12088797",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000datsl77og65lrdhng7cg",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 112.491,
+              "size": "1903285",
+              "bitrate": "135243",
+              "init_range": "0-1026",
+              "index_range": "1027-1334",
+              "kid": "<redacted>",
+              "expires_at": "1792492436"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 112.491,
+            "size": "21539104",
+            "bitrate": "1714389",
+            "init_range": "0-1276",
+            "index_range": "1277-1584",
+            "first_moof_range": "1585-5862",
+            "expires_at": "1792492436"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 3,
+      "item_id": "7690963468219845657",
+      "page_success": true,
+      "page_vid": "7690963468219845657",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7690961604636052505",
+        "itemId": "7690963468219845657",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-v-6fcc8e/ooCrfqJENzgbvfqmF2AB1KOIfTAHw5X2f97hbV~tplv-noop.image?dy_q=1792486258&l=20261020165058A93D114B00665F2298EF&x-expires=1792489975&x-signature=IwnREKzDdUyYcHJRz2YBPGSZdzo%3D",
+        "durationSeconds": 117.739,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/8503706",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000datsl1nog65tjafpoffg",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 117.739,
+              "size": "1991985",
+              "bitrate": "135290",
+              "init_range": "0-1026",
+              "index_range": "1027-1346",
+              "kid": "<redacted>",
+              "expires_at": "1792492440"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 117.739,
+            "size": "17603654",
+            "bitrate": "1458622",
+            "init_range": "0-1276",
+            "index_range": "1277-1596",
+            "first_moof_range": "1597-5874",
+            "expires_at": "1792492440"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 24,
+      "item_id": "7690963491330477081",
+      "page_error": "/player/7690961604636052505/7690963491330477081: HTTP 404",
+      "public_mp4": {
+        "status": 404,
+        "type": null,
+        "sample_hex": "",
+        "error_body": ""
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000datsl2vog65to9f3a5f0",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 123.776,
+              "size": "2094136",
+              "bitrate": "135424",
+              "init_range": "0-1026",
+              "index_range": "1027-1358",
+              "kid": "<redacted>",
+              "expires_at": "1792492446"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 123.776,
+            "size": "21090746",
+            "bitrate": "1505780",
+            "init_range": "0-1276",
+            "index_range": "1277-1608",
+            "first_moof_range": "1609-5886",
+            "expires_at": "1792492446"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7690961604636052505",
+      "episode": 46,
+      "item_id": "7690963495944211481",
+      "page_error": "/player/7690961604636052505/7690963495944211481: HTTP 404",
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/12505770",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000db45skq7dld5iuaj1mng",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 175.339,
+              "size": "2965044",
+              "bitrate": "135786",
+              "init_range": "0-1026",
+              "index_range": "1027-1490",
+              "kid": "<redacted>",
+              "expires_at": "1792492500"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 175.339,
+            "size": "22940812",
+            "bitrate": "1036891",
+            "init_range": "0-1276",
+            "index_range": "1277-1740",
+            "first_moof_range": "1741-6018",
+            "expires_at": "1792492500"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 1,
+      "item_id": "7694655440692448281",
+      "page_success": true,
+      "page_vid": "7694655440692448281",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7694653385668037657",
+        "itemId": "7694655440692448281",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-v-6fcc8e/46abaac44de446cbb9f30718de9a7344_1792047885~tplv-noop.image?dy_q=1792485260&l=2026102016341584000805CD376621D12C&x-expires=1792488939&x-signature=0ZHPWCw4vQMAhMEJorl0uBEtZUo%3D",
+        "durationSeconds": 79.534,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/10004275",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v03ebeg10000db87lfi7dldfk1ifq83g",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 79.567,
+              "size": "1346609",
+              "bitrate": "135714",
+              "init_range": "0-1026",
+              "index_range": "1027-1250",
+              "kid": "<redacted>",
+              "expires_at": "1792492404"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 79.567,
+            "size": "16308513",
+            "bitrate": "1876406",
+            "init_range": "0-1276",
+            "index_range": "1277-1500",
+            "first_moof_range": "1501-6603",
+            "expires_at": "1792492404"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 2,
+      "item_id": "7694655210777480217",
+      "page_success": true,
+      "page_vid": "7694655210777480217",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7694653385668037657",
+        "itemId": "7694655210777480217",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-v-6fcc8e/okete2uAQU0vMDQEkg2qjCQmeKO1EkaAdecrgN~tplv-noop.image?dy_q=1792488579&l=202610201729396A88E674782349304007&x-expires=1792492306&x-signature=UEObEjG7HjtkRYN0LkjzDLOxLXU%3D",
+        "durationSeconds": 127.067,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/10632912",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v03ebeg10000db86nha7dldeh8dun920",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 127.1,
+              "size": "2149616",
+              "bitrate": "135519",
+              "init_range": "0-1026",
+              "index_range": "1027-1370",
+              "kid": "<redacted>",
+              "expires_at": "1792492454"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 127.1,
+            "size": "18472296",
+            "bitrate": "1150564",
+            "init_range": "0-1276",
+            "index_range": "1277-1620",
+            "first_moof_range": "1621-6723",
+            "expires_at": "1792492454"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 3,
+      "item_id": "7694655216007777305",
+      "page_success": true,
+      "page_vid": "7694655216007777305",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7694653385668037657",
+        "itemId": "7694655216007777305",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-v-6fcc8e/oQE1Qt1FEAAIggadIIgMChBQ70gDfadgybAB8G~tplv-noop.image?dy_q=1792486299&l=20261020165139FACC47C78D23AC24C109&x-expires=1792490004&x-signature=DhblTlqJQVoHwGnJMrrZvQ3BtVM%3D",
+        "durationSeconds": 105.2,
+        "width": 360,
+        "height": 640
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/10411352",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v03ebeg10000db880g27dldeh8e1i4fg",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 105.2,
+              "size": "1779381",
+              "bitrate": "135891",
+              "init_range": "0-1026",
+              "index_range": "1027-1322",
+              "kid": "<redacted>",
+              "expires_at": "1792492431"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "720",
+            "height": "1280",
+            "duration": 105.2,
+            "size": "18243357",
+            "bitrate": "1870065",
+            "init_range": "0-1276",
+            "index_range": "1277-1572",
+            "first_moof_range": "1573-6675",
+            "expires_at": "1792492431"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 44,
+      "item_id": "7694655347952208921",
+      "page_error": "/player/7694653385668037657/7694655347952208921: HTTP 404",
+      "public_mp4": {
+        "status": 404,
+        "type": null,
+        "sample_hex": "",
+        "error_body": ""
+      },
+      "protected_api": {
+        "status": 403,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "error": "protected_playback_unavailable"
+        }
+      }
+    },
+    {
+      "series_id": "7694653385668037657",
+      "episode": 86,
+      "item_id": "7694655429351066649",
+      "page_error": "/player/7694653385668037657/7694655429351066649: HTTP 404",
+      "public_mp4": {
+        "status": 404,
+        "type": null,
+        "sample_hex": "",
+        "error_body": ""
+      },
+      "protected_api": {
+        "status": 403,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "error": "protected_playback_unavailable"
+        }
+      }
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 1,
+      "item_id": "7697855411688311833",
+      "page_success": true,
+      "page_vid": "7697855411688311833",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7697852455970671678",
+        "itemId": "7697855411688311833",
+        "posterUrl": "https://p11-sign.douyinpic.com/tos-cn-p-ca21bf/osjbtkBMCQ3EWQH6VEgBa0ZPQ43IIiXtdQxwB~tplv-noop.image?dy_q=1792485774&l=20261020164253991D7C5B0B04441E97D0&x-expires=1792489424&x-signature=44vaBfceQCn7ItK7j7aQOK3Y2FQ%3D",
+        "durationSeconds": 51,
+        "width": 628,
+        "height": 360
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/4710190",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000dba4ddnog65tr8i3oiqg",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 51.034,
+              "size": "867276",
+              "bitrate": "136046",
+              "init_range": "0-1026",
+              "index_range": "1027-1190",
+              "kid": "<redacted>",
+              "expires_at": "1792492380"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "1254",
+            "height": "720",
+            "duration": 51.034,
+            "size": "9153452",
+            "bitrate": "1600608",
+            "init_range": "0-1278",
+            "index_range": "1279-1442",
+            "first_moof_range": "1443-6545",
+            "expires_at": "1792492380"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 2,
+      "item_id": "7697855365819419673",
+      "page_success": true,
+      "page_vid": "7697855365819419673",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7697852455970671678",
+        "itemId": "7697855365819419673",
+        "posterUrl": "https://p26-sign.douyinpic.com/tos-cn-p-ca21bf/oA7eOmIRDLnjSMahBgIftITCCtEYtaPhAPa19Q~tplv-noop.image?dy_q=1792486236&l=2026102016503678FB0F5604D80D1A1ADA&x-expires=1792489918&x-signature=BfDBfE%2FfCAOG0Av42v8u7CN0e04%3D",
+        "durationSeconds": 82.267,
+        "width": 628,
+        "height": 360
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/7804295",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000dba4davog65lrdl6rbr0",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 82.3,
+              "size": "1397848",
+              "bitrate": "135972",
+              "init_range": "0-1026",
+              "index_range": "1027-1262",
+              "kid": "<redacted>",
+              "expires_at": "1792492411"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "1254",
+            "height": "720",
+            "duration": 82.3,
+            "size": "15528015",
+            "bitrate": "1660512",
+            "init_range": "0-1278",
+            "index_range": "1279-1514",
+            "first_moof_range": "1515-6617",
+            "expires_at": "1792492411"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 3,
+      "item_id": "7697855263528733721",
+      "page_success": true,
+      "page_vid": "7697855263528733721",
+      "public_video_seo": {
+        "available": true,
+        "seriesId": "7697852455970671678",
+        "itemId": "7697855263528733721",
+        "posterUrl": "https://p9-sign.douyinpic.com/tos-cn-p-ca21bf/oszDIDYyFaTygQ7egCtKAe1DWQRguBhaQwIdg7~tplv-noop.image?dy_q=1792487159&l=20261020170559B463525EF5D6F8209946&x-expires=1792490809&x-signature=Gl%2B3NODun1FxQsUiTnZvavcpA28%3D",
+        "durationSeconds": 50.067,
+        "width": 628,
+        "height": 360
+      },
+      "protected_playback": true,
+      "public_mp4": {
+        "status": 206,
+        "type": "video/mp4",
+        "length": "128",
+        "range": "bytes 0-127/4137876",
+        "sample_hex": "000000206674797069736f6d0000020069736f6d69736f32"
+      },
+      "protected_api": {
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "play_info": {
+            "vid": "v02ebeg10000dba4d4vog65tr8i3obg0",
+            "kid": "<redacted>",
+            "audio": {
+              "main_url": "<signed media URL redacted>",
+              "backup_url": "<signed media URL redacted>",
+              "player_access_key": "<redacted>",
+              "codec_type": "h264",
+              "format": "dash",
+              "duration": 50.067,
+              "size": "851149",
+              "bitrate": "135774",
+              "init_range": "0-1026",
+              "index_range": "1027-1190",
+              "kid": "<redacted>",
+              "expires_at": "1792492382"
+            },
+            "main_url": "<signed media URL redacted>",
+            "backup_url": "<signed media URL redacted>",
+            "player_access_key": "<redacted>",
+            "definition": "720p",
+            "format": "dash",
+            "codec_type": "h264",
+            "width": "1254",
+            "height": "720",
+            "duration": 50.067,
+            "size": "8157909",
+            "bitrate": "1215865",
+            "init_range": "0-1278",
+            "index_range": "1279-1442",
+            "first_moof_range": "1443-6545",
+            "expires_at": "1792492382"
+          },
+          "base_resp": {
+            "StatusCode": 0,
+            "StatusMessage": ""
+          }
+        }
+      }
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 97,
+      "item_id": "7697855273368554521",
+      "page_error": "/player/7697852455970671678/7697855273368554521: HTTP 404",
+      "public_mp4": {
+        "status": 404,
+        "type": null,
+        "sample_hex": "",
+        "error_body": ""
+      },
+      "protected_api": {
+        "status": 403,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "error": "protected_playback_unavailable"
+        }
+      }
+    },
+    {
+      "series_id": "7697852455970671678",
+      "episode": 193,
+      "item_id": "7697855384366631961",
+      "page_error": "/player/7697852455970671678/7697855384366631961: HTTP 404",
+      "public_mp4": {
+        "status": 404,
+        "type": null,
+        "sample_hex": "",
+        "error_body": ""
+      },
+      "protected_api": {
+        "status": 403,
+        "type": "application/json; charset=utf-8",
+        "body": {
+          "error": "protected_playback_unavailable"
+        }
+      }
+    }
+  ]
+}

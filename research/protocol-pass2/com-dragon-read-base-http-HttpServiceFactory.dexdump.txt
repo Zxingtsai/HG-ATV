@@ -1,0 +1,261 @@
+  Class descriptor  : 'Lcom/dragon/read/base/http/HttpServiceFactory;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/dragon/read/base/http/HttpServiceFactory;)
+      name          : 'a'
+      type          : 'Ljava/util/LinkedHashMap;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/dragon/read/base/http/HttpServiceFactory;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 14 16-bit code units
+690600:                                        |[690600] com.dragon.read.base.http.HttpServiceFactory.<clinit>:()V
+690610: 1400 79e6 0800                         |0000: const v0, #float 8.17362e-40 // #0008e679
+690616: 7110 0813 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1308
+69061c: 2200 0913                              |0006: new-instance v0, Lcom/dragon/read/base/http/HttpServiceFactory$1; // type@1309
+690620: 7010 0f3c 0000                         |0008: invoke-direct {v0}, Lcom/dragon/read/base/http/HttpServiceFactory$1;.<init>:()V // method@3c0f
+690626: 6900 f01d                              |000b: sput-object v0, Lcom/dragon/read/base/http/HttpServiceFactory;.a:Ljava/util/LinkedHashMap; // field@1df0
+69062a: 0e00                                   |000d: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+        0x0009 line=131081
+        0x000a line=131082
+        0x000b line=131083
+        0x000c line=131084
+        0x000d line=131085
+      locals        :
+
+    #1              : (in Lcom/dragon/read/base/http/HttpServiceFactory;)
+      name          : 'a'
+      type          : '(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 16 16-bit code units
+69062c:                                        |[69062c] com.dragon.read.base.http.HttpServiceFactory.a:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+69063c: 1c00 0a13                              |0000: const-class v0, Lcom/dragon/read/base/http/HttpServiceFactory; // type@130a
+690640: 1d00                                   |0002: monitor-enter v0
+690642: 7100 12ce 0000                         |0003: invoke-static {}, Ljava/util/Collections;.emptyList:()Ljava/util/List; // method@ce12
+690648: 0c01                                   |0006: move-result-object v1
+69064a: 7130 133c 3102                         |0007: invoke-static {v1, v3, v2}, Lcom/dragon/read/base/http/HttpServiceFactory;.b:(Ljava/util/List;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object; // method@3c13
+690650: 0c02                                   |000a: move-result-object v2
+690652: 1e00                                   |000b: monitor-exit v0
+690654: 1102                                   |000c: return-object v2
+690656: 0d02                                   |000d: move-exception v2
+690658: 1e00                                   |000e: monitor-exit v0
+69065a: 2702                                   |000f: throw v2
+      catches       : 1
+        0x0003 - 0x000b
+          <any> -> 0x000d
+      positions     :
+        0x0000 line=33685504
+        0x0001 line=33685505
+        0x0002 line=33685506
+        0x0003 line=33685507
+        0x0004 line=33685508
+        0x0005 line=33685509
+        0x0006 line=33685510
+        0x0007 line=33685511
+        0x0008 line=33685512
+        0x0009 line=33685513
+        0x000a line=33685514
+        0x000b line=33685515
+        0x000c line=33685516
+        0x000d line=33685517
+        0x000e line=33685518
+        0x000f line=33685519
+      locals        :
+        0x0000 - 0x0010 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0010 reg=3 (null) Ljava/lang/Class;
+
+    #2              : (in Lcom/dragon/read/base/http/HttpServiceFactory;)
+      name          : 'b'
+      type          : '(Ljava/util/List;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;'
+      access        : 0x20009 (PUBLIC STATIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 7
+      ins           : 3
+      outs          : 3
+      insns size    : 42 16-bit code units
+690668:                                        |[690668] com.dragon.read.base.http.HttpServiceFactory.b:(Ljava/util/List;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+690678: 1c00 0a13                              |0000: const-class v0, Lcom/dragon/read/base/http/HttpServiceFactory; // type@130a
+69067c: 1d00                                   |0002: monitor-enter v0
+69067e: 2201 fb50                              |0003: new-instance v1, Ljava/lang/StringBuilder; // type@50fb
+690682: 7010 10cd 0100                         |0005: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@cd10
+690688: 6e20 1acd 6100                         |0008: invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@cd1a
+69068e: 6e20 19cd 5100                         |000b: invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@cd19
+690694: 6e10 20cd 0100                         |000e: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@cd20
+69069a: 0c01                                   |0011: move-result-object v1
+69069c: 6202 f01d                              |0012: sget-object v2, Lcom/dragon/read/base/http/HttpServiceFactory;.a:Ljava/util/LinkedHashMap; // field@1df0
+6906a0: 6e20 54ce 1200                         |0014: invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@ce54
+6906a6: 0c03                                   |0017: move-result-object v3
+6906a8: 3903 0d00                              |0018: if-nez v3, 0025 // +000d
+6906ac: 7120 143c 4600                         |001a: invoke-static {v6, v4}, Lcom/dragon/read/base/http/HttpServiceFactory;.c:(Ljava/lang/String;Ljava/util/List;)Lcom/bytedance/retrofit2/Retrofit; // method@3c14
+6906b2: 0c04                                   |001d: move-result-object v4
+6906b4: 6e20 9214 5400                         |001e: invoke-virtual {v4, v5}, Lcom/bytedance/retrofit2/Retrofit;.create:(Ljava/lang/Class;)Ljava/lang/Object; // method@1492
+6906ba: 0c03                                   |0021: move-result-object v3
+6906bc: 6e30 57ce 1203                         |0022: invoke-virtual {v2, v1, v3}, Ljava/util/LinkedHashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@ce57
+6906c2: 1e00                                   |0025: monitor-exit v0
+6906c4: 1103                                   |0026: return-object v3
+6906c6: 0d04                                   |0027: move-exception v4
+6906c8: 1e00                                   |0028: monitor-exit v0
+6906ca: 2704                                   |0029: throw v4
+      catches       : 1
+        0x0003 - 0x0025
+          <any> -> 0x0027
+      positions     :
+        0x0000 line=50593792
+        0x0001 line=50593793
+        0x0002 line=50593794
+        0x0003 line=50593795
+        0x0004 line=50593796
+        0x0005 line=50593797
+        0x0006 line=50593798
+        0x0007 line=50593799
+        0x0008 line=50593800
+        0x0009 line=50593801
+        0x000a line=50593802
+        0x000b line=50593803
+        0x000c line=50593804
+        0x000d line=50593805
+        0x000e line=50593806
+        0x000f line=50593807
+        0x0010 line=50593808
+        0x0011 line=50593809
+        0x0012 line=50593810
+        0x0013 line=50593811
+        0x0014 line=50593812
+        0x0015 line=50593813
+        0x0016 line=50593814
+        0x0017 line=50593815
+        0x0018 line=50593816
+        0x0019 line=50593817
+        0x001a line=50593818
+        0x001b line=50593819
+        0x001c line=50593820
+        0x001d line=50593821
+        0x001e line=50593822
+        0x001f line=50593823
+        0x0020 line=50593824
+        0x0021 line=50593825
+        0x0022 line=50593826
+        0x0023 line=50593827
+        0x0024 line=50593828
+        0x0025 line=50593829
+        0x0026 line=50593830
+        0x0027 line=50593831
+        0x0028 line=50593832
+        0x0029 line=50593833
+      locals        :
+        0x0000 - 0x002a reg=4 (null) Ljava/util/List;
+        0x0000 - 0x002a reg=5 (null) Ljava/lang/Class;
+        0x0000 - 0x002a reg=6 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/dragon/read/base/http/HttpServiceFactory;)
+      name          : 'c'
+      type          : '(Ljava/lang/String;Ljava/util/List;)Lcom/bytedance/retrofit2/Retrofit;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 5
+      insns size    : 47 16-bit code units
+6906d8:                                        |[6906d8] com.dragon.read.base.http.HttpServiceFactory.c:(Ljava/lang/String;Ljava/util/List;)Lcom/bytedance/retrofit2/Retrofit;
+6906e8: 2200 8c46                              |0000: new-instance v0, Lcom/google/gson/GsonBuilder; // type@468c
+6906ec: 7010 3faf 0000                         |0002: invoke-direct {v0}, Lcom/google/gson/GsonBuilder;.<init>:()V // method@af3f
+6906f2: 6e10 43af 0000                         |0005: invoke-virtual {v0}, Lcom/google/gson/GsonBuilder;.setLenient:()Lcom/google/gson/GsonBuilder; // method@af43
+6906f8: 0c00                                   |0008: move-result-object v0
+6906fa: 2201 0e13                              |0009: new-instance v1, Lcom/dragon/read/base/http/XCollectionTypeAdapterFactory; // type@130e
+6906fe: 2202 9c46                              |000b: new-instance v2, Lcom/google/gson/internal/ConstructorConstructor; // type@469c
+690702: 2203 4b51                              |000d: new-instance v3, Ljava/util/HashMap; // type@514b
+690706: 7010 27ce 0300                         |000f: invoke-direct {v3}, Ljava/util/HashMap;.<init>:()V // method@ce27
+69070c: 7020 63af 3200                         |0012: invoke-direct {v2, v3}, Lcom/google/gson/internal/ConstructorConstructor;.<init>:(Ljava/util/Map;)V // method@af63
+690712: 7020 203c 2100                         |0015: invoke-direct {v1, v2}, Lcom/dragon/read/base/http/XCollectionTypeAdapterFactory;.<init>:(Lcom/google/gson/internal/ConstructorConstructor;)V // method@3c20
+690718: 6e20 42af 1000                         |0018: invoke-virtual {v0, v1}, Lcom/google/gson/GsonBuilder;.registerTypeAdapterFactory:(Lcom/google/gson/TypeAdapterFactory;)Lcom/google/gson/GsonBuilder; // method@af42
+69071e: 0c00                                   |001b: move-result-object v0
+690720: 6e10 40af 0000                         |001c: invoke-virtual {v0}, Lcom/google/gson/GsonBuilder;.create:()Lcom/google/gson/Gson; // method@af40
+690726: 0c00                                   |001f: move-result-object v0
+690728: 7110 3c13 0000                         |0020: invoke-static {v0}, Lcom/bytedance/frameworks/baselib/network/http/retrofit/converter/gson/GsonConverterFactory;.create:(Lcom/google/gson/Gson;)Lcom/bytedance/frameworks/baselib/network/http/retrofit/converter/gson/GsonConverterFactory; // method@133c
+69072e: 0c00                                   |0023: move-result-object v0
+690730: 2201 5a5c                              |0024: new-instance v1, Lsd3/g; // type@5c5a
+690734: 7010 11ee 0100                         |0026: invoke-direct {v1}, Lsd3/g;.<init>:()V // method@ee11
+69073a: 1202                                   |0029: const/4 v2, #int 0 // #0
+69073c: 7152 7f15 5410                         |002a: invoke-static {v4, v5, v0, v1, v2}, Lcom/bytedance/ttnet/utils/RetrofitUtils;.createRetrofit:(Ljava/lang/String;Ljava/util/List;Lcom/bytedance/retrofit2/Converter$Factory;Lcom/bytedance/retrofit2/CallAdapter$Factory;Lcom/bytedance/retrofit2/client/Client$Provider;)Lcom/bytedance/retrofit2/Retrofit; // method@157f
+690742: 0c04                                   |002d: move-result-object v4
+690744: 1104                                   |002e: return-object v4
+      catches       : (none)
+      positions     :
+        0x0000 line=33816576
+        0x0001 line=33816577
+        0x0002 line=33816578
+        0x0003 line=33816579
+        0x0004 line=33816580
+        0x0005 line=33816581
+        0x0006 line=33816582
+        0x0007 line=33816583
+        0x0008 line=33816584
+        0x0009 line=33816585
+        0x000a line=33816586
+        0x000b line=33816587
+        0x000c line=33816588
+        0x000d line=33816589
+        0x000e line=33816590
+        0x000f line=33816591
+        0x0010 line=33816592
+        0x0011 line=33816593
+        0x0012 line=33816594
+        0x0013 line=33816595
+        0x0014 line=33816596
+        0x0015 line=33816597
+        0x0016 line=33816598
+        0x0017 line=33816599
+        0x0018 line=33816600
+        0x0019 line=33816601
+        0x001a line=33816602
+        0x001b line=33816603
+        0x001c line=33816604
+        0x001d line=33816605
+        0x001e line=33816606
+        0x001f line=33816607
+        0x0020 line=33816608
+        0x0021 line=33816609
+        0x0022 line=33816610
+        0x0023 line=33816611
+        0x0024 line=33816612
+        0x0025 line=33816613
+        0x0026 line=33816614
+        0x0027 line=33816615
+        0x0028 line=33816616
+        0x0029 line=33816617
+        0x002a line=33816618
+        0x002b line=33816619
+        0x002c line=33816620
+        0x002d line=33816621
+        0x002e line=33816622
+      locals        :
+        0x0000 - 0x002f reg=4 (null) Ljava/lang/String;
+        0x0000 - 0x002f reg=5 (null) Ljava/util/List;
+
+  Virtual methods   -
+  source_file_idx   : 31809 (SourceFile)
+

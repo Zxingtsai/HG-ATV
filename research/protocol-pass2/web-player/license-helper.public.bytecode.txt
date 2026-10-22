@@ -1,0 +1,476 @@
+0000 scope_get            depth=1 index=1
+0003 dup                  
+0004 get_named            'emit'
+0007 scope_get            depth=2 index=2
+0010 get_named            'CDM_LICENSE_SUCCESS'
+0013 scope_get            depth=0 index=1
+0016 call                 2
+0018 pop                  
+0019 undefined            
+0020 return               
+0021 scope_get            depth=1 index=1
+0024 dup                  
+0025 get_named            'emit'
+0028 scope_get            depth=2 index=2
+0031 get_named            'CDM_LICENSE_ERROR'
+0034 scope_get            depth=0 index=1
+0037 call                 2
+0039 pop                  
+0040 undefined            
+0041 return               
+0042 null                 
+0043 scope_get            depth=3 index=7
+0046 call                 0
+0048 dup                  
+0049 get_named            'wrap'
+0052 i32                  76
+0057 recursive_closure    1
+0059 scope_get            depth=1 index=0
+0062 null                 
+0063 i8                   1
+0065 i8                   30
+0067 array                2
+0070 array                1
+0073 call                 4
+0075 return               
+0076 i8                   1
+0078 branch_false         target=810
+0081 scope_get            depth=0 index=1
+0084 get_named            'next'
+0087 scope_get            depth=0 index=1
+0090 string               'prev'
+0093 set_index_keep       
+0094 i8                   0
+0096 branch_eq            target=164
+0099 i8                   4
+0101 branch_eq            target=210
+0104 i8                   6
+0106 branch_eq            target=254
+0109 i8                   11
+0111 branch_eq            target=346
+0114 i8                   12
+0116 branch_eq            target=355
+0119 i8                   15
+0121 branch_eq            target=401
+0124 i8                   16
+0126 branch_eq            target=410
+0129 i8                   23
+0131 branch_eq            target=599
+0134 i8                   24
+0136 branch_eq            target=608
+0139 i8                   25
+0141 branch_eq            target=638
+0144 i8                   30
+0146 branch_eq            target=742
+0149 i8                   35
+0151 branch_eq            target=797
+0154 string               'end'
+0157 branch_eq            target=797
+0160 pop                  
+0161 jump                 target=807
+0164 object               
+0165 string               'getLicense'
+0168 set_named            'method'
+0171 false                
+0172 set_named            'success'
+0175 scope_set            depth=2 index=1
+0178 i8                   1
+0180 scope_get            depth=0 index=1
+0183 set_named_alt        'prev'
+0186 i8                   4
+0188 scope_get            depth=0 index=1
+0191 set_named_alt        'next'
+0194 scope_get            depth=4 index=1
+0197 dup                  
+0198 get_named            '_tryGetSecretKeyByToken'
+0201 scope_get            depth=2 index=1
+0204 scope_get            depth=4 index=15
+0207 call                 2
+0209 return               
+0210 scope_get            depth=2 index=1
+0213 get_named            'success'
+0216 not                  
+0217 branch_or_keep       target=226
+0220 scope_get            depth=2 index=1
+0223 get_named            'error'
+0226 not                  
+0227 branch_false         target=241
+0230 i8                   6
+0232 scope_get            depth=0 index=1
+0235 set_named_alt        'next'
+0238 jump                 target=807
+0241 scope_get            depth=0 index=1
+0244 dup                  
+0245 get_named            'abrupt'
+0248 string               'return'
+0251 call                 1
+0253 return               
+0254 scope_get            depth=4 index=1
+0257 get_named            'config'
+0260 get_named            'secretKey'
+0263 scope_set            depth=2 index=2
+0266 scope_get            depth=2 index=2
+0269 not                  
+0270 branch_or_keep       target=277
+0273 scope_get            depth=4 index=7
+0276 not                  
+0277 not                  
+0278 branch_false         target=292
+0281 i8                   12
+0283 scope_get            depth=0 index=1
+0286 set_named_alt        'next'
+0289 jump                 target=807
+0292 scope_get            depth=4 index=4
+0295 branch_or_keep       target=301
+0298 scope_get            depth=4 index=5
+0301 not                  
+0302 branch_false         target=316
+0305 i8                   12
+0307 scope_get            depth=0 index=1
+0310 set_named_alt        'next'
+0313 jump                 target=807
+0316 i8                   11
+0318 scope_get            depth=0 index=1
+0321 set_named_alt        'next'
+0324 null                 
+0325 scope_get            depth=5 index=8
+0328 scope_get            depth=4 index=3
+0331 branch_and_keep      target=337
+0334 string               ''
+0337 scope_get            depth=4 index=4
+0340 scope_get            depth=4 index=5
+0343 call                 3
+0345 return               
+0346 scope_get            depth=0 index=1
+0349 get_named            'sent'
+0352 scope_set            depth=2 index=2
+0355 scope_get            depth=4 index=8
+0358 scope_get            depth=5 index=9
+0361 get_named            'PRIVATE_ENCRYPT_UPGRADE'
+0364 strict_eq            
+0365 not                  
+0366 branch_false         target=380
+0369 i8                   16
+0371 scope_get            depth=0 index=1
+0374 set_named_alt        'next'
+0377 jump                 target=807
+0380 i8                   15
+0382 scope_get            depth=0 index=1
+0385 set_named_alt        'next'
+0388 null                 
+0389 scope_get            depth=5 index=10
+0392 scope_get            depth=2 index=2
+0395 scope_get            depth=5 index=11
+0398 call                 2
+0400 return               
+0401 scope_get            depth=0 index=1
+0404 get_named            'sent'
+0407 scope_set            depth=2 index=2
+0410 scope_get            depth=4 index=6
+0413 branch_false         target=455
+0416 scope_get            depth=4 index=7
+0419 branch_false         target=431
+0422 scope_get            depth=4 index=7
+0425 scope_set            depth=2 index=2
+0428 jump                 target=455
+0431 scope_get            depth=2 index=2
+0434 branch_false         target=455
+0437 null                 
+0438 scope_get            depth=5 index=12
+0441 null                 
+0442 scope_get            depth=5 index=13
+0445 scope_get            depth=2 index=2
+0448 call                 1
+0450 call                 1
+0452 scope_set            depth=2 index=2
+0455 scope_get            depth=4 index=1
+0458 get_named            'config'
+0461 scope_ref            depth=2 index=3
+0464 set_index_keep       
+0465 pop                  
+0466 scope_get            depth=2 index=3
+0469 get_named            'useUnionInfoDRM'
+0472 scope_ref            depth=2 index=4
+0475 set_index_keep       
+0476 pop                  
+0477 scope_get            depth=2 index=3
+0480 get_named            'keyTokenExpiredDuration'
+0483 scope_ref            depth=2 index=5
+0486 set_index_keep       
+0487 pop                  
+0488 scope_get            depth=4 index=1
+0491 dup                  
+0492 get_named            '_getUnionInfo'
+0495 call                 0
+0497 scope_set            depth=2 index=6
+0500 scope_get            depth=2 index=4
+0503 branch_or_keep       target=509
+0506 scope_get            depth=2 index=6
+0509 branch_or_keep       target=536
+0512 scope_get            depth=5 index=14
+0515 dup                  
+0516 get_named            'checkUnionInfoExpired'
+0519 scope_get            depth=2 index=6
+0522 get_named            'unionID'
+0525 scope_get            depth=2 index=6
+0528 get_named            'unionInfo'
+0531 scope_get            depth=2 index=5
+0534 call                 3
+0536 not                  
+0537 branch_false         target=551
+0540 i8                   25
+0542 scope_get            depth=0 index=1
+0545 set_named_alt        'next'
+0548 jump                 target=807
+0551 scope_get            depth=4 index=6
+0554 branch_or_keep       target=560
+0557 scope_get            depth=2 index=2
+0560 not                  
+0561 branch_false         target=575
+0564 i8                   24
+0566 scope_get            depth=0 index=1
+0569 set_named_alt        'next'
+0572 jump                 target=807
+0575 i8                   23
+0577 scope_get            depth=0 index=1
+0580 set_named_alt        'next'
+0583 null                 
+0584 scope_get            depth=5 index=15
+0587 scope_get            depth=2 index=2
+0590 scope_get            depth=2 index=6
+0593 get_named            'unionInfo'
+0596 call                 2
+0598 return               
+0599 scope_get            depth=0 index=1
+0602 get_named            'sent'
+0605 scope_set            depth=2 index=2
+0608 scope_get            depth=5 index=14
+0611 dup                  
+0612 get_named            'StringToArrayBuffer'
+0615 scope_get            depth=5 index=16
+0618 dup                  
+0619 get_named            'hash'
+0622 scope_get            depth=2 index=6
+0625 get_named            'unionInfo'
+0628 call                 1
+0630 call                 1
+0632 scope_get            depth=2 index=1
+0635 set_named_alt        'decryptKey'
+0638 scope_get            depth=4 index=6
+0641 branch_false         target=705
+0644 object               
+0645 object               
+0646 set_named            'clearKeys'
+0649 scope_set            depth=2 index=7
+0652 scope_get            depth=4 index=4
+0655 branch_and_keep      target=661
+0658 scope_get            depth=5 index=17
+0661 scope_set            depth=2 index=8
+0664 scope_get            depth=2 index=2
+0667 scope_get            depth=2 index=7
+0670 get_named            'clearKeys'
+0673 scope_get            depth=2 index=8
+0676 set_index            
+0677 scope_get            depth=4 index=1
+0680 get_named            'eme'
+0683 dup                  
+0684 get_named            'updateDrm'
+0687 scope_get            depth=2 index=7
+0690 call                 1
+0692 pop                  
+0693 i8                   0
+0695 void                 
+0696 scope_get            depth=2 index=1
+0699 set_named_alt        'secretKey'
+0702 jump                 target=714
+0705 scope_get            depth=2 index=2
+0708 scope_get            depth=2 index=1
+0711 set_named_alt        'secretKey'
+0714 true                 
+0715 scope_get            depth=2 index=1
+0718 set_named_alt        'success'
+0721 null                 
+0722 scope_get            depth=4 index=14
+0725 scope_get            depth=2 index=1
+0728 call                 1
+0730 pop                  
+0731 i8                   35
+0733 scope_get            depth=0 index=1
+0736 set_named_alt        'next'
+0739 jump                 target=807
+0742 i8                   30
+0744 scope_get            depth=0 index=1
+0747 set_named_alt        'prev'
+0750 scope_get            depth=0 index=1
+0753 dup                  
+0754 string               'catch'
+0757 get_index            
+0758 i8                   1
+0760 call                 1
+0762 scope_get            depth=0 index=1
+0765 set_named_alt        't0'
+0768 false                
+0769 scope_get            depth=2 index=1
+0772 set_named_alt        'success'
+0775 scope_get            depth=0 index=1
+0778 get_named            't0'
+0781 scope_get            depth=2 index=1
+0784 set_named_alt        'error'
+0787 null                 
+0788 scope_get            depth=4 index=15
+0791 scope_get            depth=2 index=1
+0794 call                 1
+0796 pop                  
+0797 scope_get            depth=0 index=1
+0800 dup                  
+0801 get_named            'stop'
+0804 call                 0
+0806 return               
+0807 jump                 target=76
+0810 undefined            
+0811 return               
+0812 this                 
+0813 scope_set            depth=0 index=1
+0816 this                 
+0817 get_named            'config'
+0820 scope_set            depth=0 index=2
+0823 scope_get            depth=0 index=2
+0826 get_named            'vid'
+0829 scope_set            depth=0 index=3
+0832 scope_get            depth=0 index=2
+0835 get_named            'kid'
+0838 scope_set            depth=0 index=4
+0841 scope_get            depth=0 index=2
+0844 get_named            'getLicenseUrl'
+0847 scope_set            depth=0 index=5
+0850 scope_get            depth=0 index=2
+0853 get_named            'useEME'
+0856 scope_set            depth=0 index=6
+0859 scope_get            depth=0 index=2
+0862 get_named            'keyValue'
+0865 scope_set            depth=0 index=7
+0868 scope_get            depth=0 index=2
+0871 get_named            'drmType'
+0874 scope_set            depth=0 index=8
+0877 this                 
+0878 get_named            'config'
+0881 get_named            'useEME'
+0884 branch_false         target=1078
+0887 scope_get            depth=1 index=1
+0890 new                  0
+0892 this                 
+0893 set_named_alt        'eme'
+0896 this                 
+0897 get_named            'eme'
+0900 dup                  
+0901 get_named            'on'
+0904 scope_get            depth=1 index=2
+0907 get_named            'ERROR'
+0910 this                 
+0911 get_named            'EMEError'
+0914 call                 2
+0916 pop                  
+0917 this                 
+0918 get_named            'eme'
+0921 dup                  
+0922 get_named            'on'
+0925 scope_get            depth=1 index=2
+0928 get_named            'CDM_LICENSE_SUCCESS'
+0931 i32                  0
+0936 closure              1
+0938 call                 2
+0940 pop                  
+0941 this                 
+0942 get_named            'eme'
+0945 dup                  
+0946 get_named            'on'
+0949 scope_get            depth=1 index=2
+0952 get_named            'CDM_LICENSE_ERROR'
+0955 i32                  21
+0960 closure              1
+0962 call                 2
+0964 pop                  
+0965 this                 
+0966 get_named            'config'
+0969 get_named            'intertrustServerURL'
+0972 scope_set            depth=0 index=9
+0975 scope_get            depth=0 index=4
+0978 branch_or_keep       target=984
+0981 scope_get            depth=0 index=9
+0984 branch_false         target=1078
+0987 scope_get            depth=1 index=3
+0990 get_named            'navigator'
+0993 get_named            'userAgent'
+0996 dup                  
+0997 get_named            'toLocaleLowerCase'
+1000 call                 0
+1002 dup                  
+1003 get_named            'indexOf'
+1006 string               'chrome'
+1009 call                 1
+1011 i8                   1
+1013 neg                  
+1014 greater              
+1015 branch_false         target=1024
+1018 string               'widevine'
+1021 jump                 target=1027
+1024 string               'playready'
+1027 scope_set            depth=0 index=10
+1030 null                 
+1031 scope_get            depth=1 index=4
+1034 object               
+1035 scope_get            depth=0 index=10
+1038 object               
+1039 scope_get            depth=0 index=9
+1042 scope_get            depth=0 index=4
+1045 add                  
+1046 set_named            'serverURL'
+1049 call                 3
+1051 scope_set            depth=0 index=11
+1054 this                 
+1055 get_named            'eme'
+1058 dup                  
+1059 get_named            'updateDrm'
+1062 scope_get            depth=0 index=11
+1065 call                 1
+1067 pop                  
+1068 scope_get            depth=1 index=5
+1071 dup                  
+1072 get_named            'resolve'
+1075 call                 0
+1077 return               
+1078 scope_get            depth=1 index=5
+1081 dup                  
+1082 get_named            'withResolvers'
+1085 call                 0
+1087 scope_set            depth=0 index=12
+1090 scope_get            depth=0 index=12
+1093 get_named            'promise'
+1096 scope_set            depth=0 index=13
+1099 scope_get            depth=0 index=12
+1102 get_named            'resolve'
+1105 scope_set            depth=0 index=14
+1108 scope_get            depth=0 index=12
+1111 get_named            'reject'
+1114 scope_set            depth=0 index=15
+1117 scope_get            depth=1 index=5
+1120 dup                  
+1121 get_named            'resolve'
+1124 call                 0
+1126 dup                  
+1127 get_named            'then'
+1130 null                 
+1131 scope_get            depth=1 index=6
+1134 null                 
+1135 scope_get            depth=1 index=7
+1138 call                 0
+1140 dup                  
+1141 get_named            'mark'
+1144 i32                  42
+1149 recursive_closure    0
+1151 call                 1
+1153 call                 1
+1155 call                 1
+1157 pop                  
+1158 scope_get            depth=0 index=13
+1161 return               

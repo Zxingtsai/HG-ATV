@@ -1,0 +1,2202 @@
+    /* JADX WARN: Code duplicated, block: B:149:0x03e4  */
+    /* JADX WARN: Code duplicated, block: B:243:0x0635 A[PHI: r4
+      0x0635: PHI (r4v8 java.lang.String) = (r4v7 java.lang.String), (r4v30 java.lang.String), (r4v33 java.lang.String) binds: [B:231:0x0603, B:236:0x060f, B:241:0x061b] A[DONT_GENERATE, DONT_INLINE]] */
+    /* JADX WARN: Code duplicated, block: B:278:0x0694  */
+    /* JADX WARN: Code duplicated, block: B:280:0x0698  */
+    /* JADX WARN: Code duplicated, block: B:281:0x069f  */
+    /* JADX WARN: Code duplicated, block: B:318:0x0715  */
+    /* JADX WARN: Code duplicated, block: B:379:0x079e A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:380:0x07a0  */
+    /* JADX WARN: Code duplicated, block: B:381:0x07a3  */
+    /* JADX WARN: Code duplicated, block: B:383:0x07a6 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:384:0x07a8  */
+    /* JADX WARN: Code duplicated, block: B:385:0x07ab  */
+    /* JADX WARN: Code duplicated, block: B:388:0x07b0  */
+    /* JADX WARN: Code duplicated, block: B:389:0x07b2  */
+    /* JADX WARN: Code duplicated, block: B:394:0x07c2  */
+    /* JADX WARN: Code duplicated, block: B:398:0x07c8  */
+    /* JADX WARN: Code duplicated, block: B:399:0x07ca  */
+    /* JADX WARN: Code duplicated, block: B:402:0x07cf A[ADDED_TO_REGION] */
+    /* JADX WARN: Code duplicated, block: B:40:0x0093  */
+    /* JADX WARN: Code duplicated, block: B:423:0x0814  */
+    /* JADX WARN: Code duplicated, block: B:425:0x0818  */
+    /* JADX WARN: Code duplicated, block: B:426:0x081b  */
+    /* JADX WARN: Code duplicated, block: B:428:0x081e A[ADDED_TO_REGION] */
+    /* JADX WARN: Code duplicated, block: B:431:0x0823  */
+    /* JADX WARN: Code duplicated, block: B:433:0x0826  */
+    /* JADX WARN: Code duplicated, block: B:434:0x0830  */
+    /* JADX WARN: Code duplicated, block: B:436:0x0834  */
+    /* JADX WARN: Code duplicated, block: B:439:0x0840  */
+    /* JADX WARN: Code duplicated, block: B:441:0x0843  */
+    /* JADX WARN: Code duplicated, block: B:443:0x0854  */
+    /* JADX WARN: Code duplicated, block: B:444:0x0856  */
+    /* JADX WARN: Code duplicated, block: B:447:0x085a  */
+    /* JADX WARN: Code duplicated, block: B:449:0x085d  */
+    /* JADX WARN: Code duplicated, block: B:450:0x0862  */
+    /* JADX WARN: Code duplicated, block: B:451:0x0864  */
+    /* JADX WARN: Code duplicated, block: B:455:0x0879  */
+    /* JADX WARN: Code duplicated, block: B:456:0x087b  */
+    /* JADX WARN: Code duplicated, block: B:459:0x087f  */
+    /* JADX WARN: Code duplicated, block: B:461:0x0882  */
+    /* JADX WARN: Code duplicated, block: B:466:0x0891  */
+    /* JADX WARN: Code duplicated, block: B:471:0x089c  */
+    /* JADX WARN: Code duplicated, block: B:474:0x08a0 A[ADDED_TO_REGION] */
+    /* JADX WARN: Code duplicated, block: B:477:0x08a5  */
+    /* JADX WARN: Code duplicated, block: B:479:0x08a8  */
+    /* JADX WARN: Code duplicated, block: B:481:0x08ac  */
+    /* JADX WARN: Code duplicated, block: B:484:0x08b7  */
+    /* JADX WARN: Code duplicated, block: B:487:0x08ef  */
+    /* JADX WARN: Code duplicated, block: B:488:0x08f6  */
+    /* JADX WARN: Code duplicated, block: B:491:0x090d  */
+    /* JADX WARN: Code duplicated, block: B:492:0x0916  */
+    /* JADX WARN: Code duplicated, block: B:495:0x0939  */
+    /* JADX WARN: Code duplicated, block: B:499:0x0942  */
+    /* JADX WARN: Code duplicated, block: B:502:0x094f  */
+    /* JADX WARN: Code duplicated, block: B:506:0x0958  */
+    /* JADX WARN: Code duplicated, block: B:509:0x0965  */
+    /* JADX WARN: Code duplicated, block: B:512:0x096e  */
+    /* JADX WARN: Code duplicated, block: B:515:0x0979  */
+    /* JADX WARN: Code duplicated, block: B:516:0x097c  */
+    /* JADX WARN: Code duplicated, block: B:519:0x0987  */
+    /* JADX WARN: Code duplicated, block: B:520:0x098a  */
+    /* JADX WARN: Code duplicated, block: B:522:0x098d  */
+    /* JADX WARN: Code duplicated, block: B:526:0x0996  */
+    /* JADX WARN: Code duplicated, block: B:529:0x09a3  */
+    /* JADX WARN: Code duplicated, block: B:530:0x09a8  */
+    /* JADX WARN: Code duplicated, block: B:533:0x09b3  */
+    /* JADX WARN: Code duplicated, block: B:534:0x09b6  */
+    /* JADX WARN: Code duplicated, block: B:537:0x09c1  */
+    /* JADX WARN: Code duplicated, block: B:538:0x09c8  */
+    /* JADX WARN: Code duplicated, block: B:541:0x09d3  */
+    /* JADX WARN: Code duplicated, block: B:542:0x09da  */
+    /* JADX WARN: Code duplicated, block: B:545:0x09e5  */
+    /* JADX WARN: Code duplicated, block: B:546:0x09ec  */
+    /* JADX WARN: Code duplicated, block: B:549:0x09f7  */
+    /* JADX WARN: Code duplicated, block: B:552:0x0a04  */
+    /* JADX WARN: Code duplicated, block: B:555:0x0a0f  */
+    /* JADX WARN: Code duplicated, block: B:558:0x0a1c  */
+    /* JADX WARN: Code duplicated, block: B:561:0x0a27  */
+    /* JADX WARN: Code duplicated, block: B:562:0x0a2a  */
+    /* JADX WARN: Code duplicated, block: B:565:0x0a37  */
+    /* JADX WARN: Code duplicated, block: B:567:0x0a63  */
+    /* JADX WARN: Code duplicated, block: B:570:0x0a75 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:571:0x0a77  */
+    /* JADX WARN: Code duplicated, block: B:572:0x0a7a  */
+    /* JADX WARN: Code duplicated, block: B:573:0x0a7d  */
+    /* JADX WARN: Code duplicated, block: B:575:0x0a81 A[ADDED_TO_REGION] */
+    /* JADX WARN: Code duplicated, block: B:581:0x0aa1  */
+    /* JADX WARN: Code duplicated, block: B:584:0x0ab3  */
+    /* JADX WARN: Code duplicated, block: B:585:0x0ab5  */
+    /* JADX WARN: Code duplicated, block: B:588:0x0b09  */
+    /* JADX WARN: Code duplicated, block: B:589:0x0b0d  */
+    /* JADX WARN: Code duplicated, block: B:592:0x0b25  */
+    /* JADX WARN: Code duplicated, block: B:593:0x0b28  */
+    /* JADX WARN: Code duplicated, block: B:595:0x0b2c  */
+    /* JADX WARN: Code duplicated, block: B:596:0x0b37  */
+    /* JADX WARN: Code duplicated, block: B:598:0x0b3b  */
+    /* JADX WARN: Code duplicated, block: B:600:0x0b3f  */
+    /* JADX WARN: Code duplicated, block: B:603:0x0b47  */
+    /* JADX WARN: Code duplicated, block: B:604:0x0b4c  */
+    /* JADX WARN: Code duplicated, block: B:607:0x0b54  */
+    /* JADX WARN: Code duplicated, block: B:608:0x0b5f  */
+    /* JADX WARN: Code duplicated, block: B:81:0x0242  */
+    public final pv5.c M(CellViewData cellViewData, int i2, String str, long j2, String str2) {
+        w0 w0VarB;
+        x0 x0VarA;
+        boolean z2;
+        pv5.d dVar;
+        VideoDetailVideoData lVar;
+        VideoData videoData;
+        String string;
+        PlayCoverInfo playCoverInfo;
+        String strG;
+        String str3;
+        String str4;
+        List list;
+        VideoData videoData2;
+        List list2;
+        Object next;
+        VideoContentType videoContentType;
+        VideoTagInfo videoTagInfo;
+        String str5;
+        int i3;
+        boolean z3;
+        VideoDetailVideoData videoDetailVideoData;
+        boolean z4;
+        VideoDetailVideoData lVar2;
+        VideoDetailVideoData videoDetailVideoData2;
+        boolean z5;
+        long jCoerceAtLeast;
+        VideoHighlight videoHighlight;
+        long j3;
+        AutoPlayData autoPlayData;
+        Long lValueOf;
+        boolean z6;
+        long jLongValue;
+        VideoDetailVideoData videoDetailVideoData3;
+        boolean z7;
+        boolean z8;
+        String str6;
+        String str7;
+        String strG2;
+        boolean z9;
+        VideoTagInfo videoTagInfo2;
+        UgcPostData ugcPostData;
+        long jM;
+        boolean z10;
+        Integer numValueOf;
+        String strD;
+        String str8;
+        DislikeTargetType dislikeTargetType;
+        Integer numValueOf2;
+        VideoDetailVideoData videoDetailVideoData4;
+        VideoData videoData3;
+        VideoHighlight videoHighlight2;
+        Long lValueOf2;
+        VideoContentType videoContentType2;
+        Object objValueOf;
+        boolean z11;
+        String str9;
+        boolean z12;
+        VideoDetailVideoData videoDetailVideoData5;
+        int size;
+        String str10;
+        String str11;
+        boolean z13;
+        List list3;
+        int size2;
+        String str12;
+        Integer numValueOf3;
+        Integer numValueOf4;
+        Integer numValueOf5;
+        Integer numValueOf6;
+        Integer numValueOf7;
+        StartPlayStrategy startPlayStrategy;
+        PlayStrategyType playStrategyType;
+        AutoPlayStyle autoPlayStyle;
+        List list4;
+        List list5;
+        AutoPlayData autoPlayData2;
+        Long lValueOf3;
+        boolean z14;
+        VideoDetailVideoData videoDetailVideoData6;
+        List list6;
+        VideoContentType videoContentType3;
+        VideoContentType videoContentType4;
+        boolean z15;
+        String str13;
+        boolean z17;
+        String str14;
+        List list7;
+        Object next2;
+        String str15;
+        VideoDetailVideoData videoDetailVideoData7;
+        List list8;
+        VideoData videoData4;
+        Object obj;
+        String string2;
+        UserResearch userResearch;
+        String string3;
+        List list9;
+        SeriesComment seriesComment;
+        String string4;
+        List list10;
+        SeriesComment seriesComment2;
+        ShowType showType = cellViewData.showType;
+        int value = showType != null ? showType.getValue() : 0;
+        Long lValueOf4 = Long.valueOf(cellViewData.cellId);
+        if (!(lValueOf4.longValue() != 0)) {
+            lValueOf4 = null;
+        }
+        long jLongValue2 = lValueOf4 != null ? lValueOf4.longValue() : j2;
+        String str16 = cellViewData.cellName;
+        String str17 = str16 == null ? str2 : str16;
+        int i4 = d.a;
+        int i5 = CheckNpeV2.a;
+        CandidateDataType candidateDataType = cellViewData.groupIdType;
+        CandidateDataType candidateDataType2 = CandidateDataType.SeriesComment;
+        if (candidateDataType != candidateDataType2 || (list10 = cellViewData.seriesCommentData) == null || (seriesComment2 = (SeriesComment) CollectionsKt.firstOrNull(list10)) == null) {
+            w0VarB = null;
+        } else {
+            u5 u5VarA = d.a(seriesComment2);
+            CheckNpeV2.throwNpe1(u5VarA, 0);
+            w0.s.getClass();
+            if (Boolean.valueOf(w0.a.c(u5VarA)).booleanValue()) {
+                w0.s.getClass();
+                String strA = w0.a.a(u5VarA);
+                if (strA == null) {
+                    strA = "";
+                }
+                if (strA.length() == 0) {
+                    w0VarB = null;
+                } else {
+                    w0VarB = w0.a.b(u5VarA, strA);
+                    w0VarB.o = false;
+                    w0VarB.n = true;
+                    w0VarB.q = true;
+                }
+            } else {
+                w0VarB = null;
+            }
+        }
+        if (w0VarB != null) {
+            Map mapB = b(cellViewData);
+            String str18 = w0VarB.c;
+            if (StringsKt.isBlank(str18)) {
+                StringBuilder sb = new StringBuilder();
+                sb.append(jLongValue2);
+                sb.append('_');
+                sb.append(value);
+                sb.append('_');
+                sb.append(i2);
+                string4 = sb.toString();
+            } else {
+                string4 = str18;
+            }
+            return new pv5.c(string4, w0VarB.g, null, value, jLongValue2, str17, w0VarB.f, 0.0f, w0VarB.i, null, null, null, null, null, null, null, null, w0VarB.k, w0VarB.j, 0L, 0L, null, null, false, false, false, false, null, null, null, null, false, 0L, 0L, false, null, null, null, null, null, null, w0VarB, null, new pv5.i(str, w0VarB.c, value, jLongValue2, str17, s(b0, mapB), 64), cellViewData, -393596, 1535);
+        }
+        int i6 = ov5.a.a;
+        CheckNpeV2.throwNpe1(cellViewData, 0);
+        if (cellViewData.groupIdType != candidateDataType2 || (list9 = cellViewData.seriesCommentData) == null || (seriesComment = (SeriesComment) CollectionsKt.firstOrNull(list9)) == null) {
+            x0VarA = null;
+        } else {
+            u5 u5VarA2 = d.a(seriesComment);
+            x0.p.getClass();
+            x0VarA = x0.a.a(u5VarA2);
+        }
+        if (x0VarA != null) {
+            Map mapB2 = b(cellViewData);
+            String str19 = x0VarA.c;
+            if (StringsKt.isBlank(str19)) {
+                StringBuilder sb2 = new StringBuilder();
+                sb2.append(jLongValue2);
+                sb2.append('_');
+                sb2.append(value);
+                sb2.append('_');
+                sb2.append(i2);
+                string3 = sb2.toString();
+            } else {
+                string3 = str19;
+            }
+            String str20 = x0VarA.j;
+            return new pv5.c(string3, x0VarA.h, null, value, jLongValue2, str17, null, 0.0f, str20, str20, x0VarA.i, null, null, null, null, null, null, x0VarA.l, x0VarA.k, 0L, 0L, null, null, false, false, false, false, null, null, null, null, false, 0L, 0L, false, null, null, null, null, null, null, null, x0VarA, new pv5.i(str, x0VarA.c, value, jLongValue2, str17, s(b0, mapB2), 64), cellViewData, -395068, 1023);
+        }
+        ShowType showType2 = cellViewData.showType;
+        Integer numValueOf8 = showType2 != null ? Integer.valueOf(showType2.getValue()) : null;
+        int i7 = t.a;
+        int value2 = ShowType.VideoFeedDoubleColNpsV2.getValue();
+        if (numValueOf8 != null && numValueOf8.intValue() == value2) {
+            z2 = true;
+        } else {
+            int value3 = ShowType.SeriesDetailNpsData.getValue();
+            if (numValueOf8 != null && numValueOf8.intValue() == value3) {
+                z2 = true;
+            } else {
+                z2 = false;
+            }
+        }
+        if (z2 && (userResearch = cellViewData.userResearch) != null) {
+            String str21 = userResearch.researchId;
+            String str22 = str21 == null ? "" : str21;
+            String str23 = userResearch.researchTitle;
+            String str24 = str23 == null ? "" : str23;
+            UserResearchOptionInfo userResearchOptionInfo = userResearch.optionInfos;
+            Map map = userResearch.scoreOptionInfo;
+            ResearchShowType researchShowType = userResearch.showType;
+            int value4 = researchShowType != null ? researchShowType.getValue() : 0;
+            Map mapEmptyMap = userResearch.scoreRemarks;
+            if (mapEmptyMap == null) {
+                mapEmptyMap = MapsKt.emptyMap();
+            }
+            Map map2 = mapEmptyMap;
+            LongPressAction longPressAction = cellViewData.cellLongPressAction;
+            DislikeTargetType dislikeTargetType2 = cellViewData.dislikeTargetType;
+            dVar = new pv5.d(str22, str24, userResearchOptionInfo, map, value4, map2, longPressAction, dislikeTargetType2 != null ? Integer.valueOf(dislikeTargetType2.getValue()) : null);
+        } else {
+            dVar = null;
+        }
+        if (dVar != null) {
+            Map mapB3 = b(cellViewData);
+            String str25 = dVar.a;
+            String str26 = StringsKt.isBlank(str25) ^ true ? str25 : null;
+            if (str26 == null) {
+                StringBuilder sb3 = new StringBuilder();
+                sb3.append(jLongValue2);
+                sb3.append('_');
+                sb3.append(value);
+                sb3.append('_');
+                sb3.append(i2);
+                string2 = sb3.toString();
+            } else {
+                string2 = str26;
+            }
+            return new pv5.c("nps_" + string2, dVar.b, null, value, jLongValue2, str17, null, 0.0f, null, null, null, null, null, null, null, null, null, 0L, false, 0L, 0L, null, null, false, false, false, false, null, null, null, null, false, 0L, 0L, false, null, null, null, null, null, dVar, null, null, new pv5.i(str, string2, value, jLongValue2, str17, s(b0, mapB3), 64), cellViewData, -60, 1791);
+        }
+        List list11 = cellViewData.postData;
+        UgcPostData ugcPostData2 = list11 != null ? (UgcPostData) CollectionsKt.getOrNull(list11, 0) : null;
+        if (cellViewData.showType != ShowType.VideoDoubleColPost || cellViewData.groupIdType != CandidateDataType.PUGCVideo || (videoDetailVideoData7 = cellViewData.videoDetail) == null || (list8 = videoDetailVideoData7.videoList) == null || (videoData4 = (VideoData) CollectionsKt.firstOrNull(list8)) == null) {
+            lVar = null;
+        } else {
+            z zVar = z.a;
+            hi8.o oVar = com.dragon.read.kmp.base.h.a;
+            oVar.getClass();
+            VideoData.b bVar = VideoData.Companion;
+            String strA2 = oVar.a(bVar.serializer(), videoData4);
+            if (strA2.length() == 0) {
+                obj = null;
+            } else {
+                try {
+                    Result.Companion companion = Result.Companion;
+                    hi8.o oVar2 = com.dragon.read.kmp.base.h.a;
+                    oVar2.getClass();
+                    obj = Result.constructor-impl(oVar2.c(bVar.serializer(), strA2));
+                } catch (Throwable th) {
+                    Result.Companion companion2 = Result.Companion;
+                    obj = Result.constructor-impl(ResultKt.createFailure(th));
+                }
+                Throwable th2 = Result.exceptionOrNull-impl(obj);
+                if (th2 != null) {
+                    zw0.b bVar2 = zw0.b.b;
+                    String str27 = "fromJson json error " + th2.getMessage();
+                    int i8 = zw0.a.a.a;
+                    bVar2.Pm("JSONUtils", str27, false);
+                }
+                if (Result.isFailure-impl(obj)) {
+                    obj = null;
+                }
+            }
+            VideoData videoData5 = (VideoData) obj;
+            if (videoData5 == null) {
+                videoData5 = new VideoData(videoData4.vid, videoData4.cover, videoData4.duration, (ApiBookInfo) null, videoData4.title, (String) null, (String) null, (String) null, (String) null, (String) null, (AdTransferType) null, (String) null, (String) null, (AdUrlData) null, (String) null, videoData4.seriesId, 0L, false, false, false, false, false, false, false, videoData4.contentType, (String) null, (String) null, false, 0L, false, (String) null, (String) null, (String) null, false, (String) null, false, (String) null, false, false, 0L, false, (String) null, 0, (String) null, (String) null, (String) null, (Map) null, (VideoPlatformType) null, (String) null, (String) null, (List) null, 0, 0, 0L, false, (String) null, 0L, (String) null, (VideoDetailVideoData) null, (String) null, (String) null, (String) null, (String) null, (CloudReviewStatus) null, (String) null, (String) null, (String) null, (VideoHighlight) null, (String) null, (VideoEpisodeStatus) null, (List) null, (List) null, (VideoPayInfo) null, (String) null, 0L, (String) null, (VideoTagInfo) null, (String) null, 0L, (List) null, (List) null, false, (List) null, (List) null, (RecTypeStyle) null, (VideoTagInfo) null, (BuriedParams) null, false, (String) null, (String) null, (String) null, (RecommendTagInfo) null, (String) null, false, false, (VideoAlbumDetailInfo) null, (AlbumShowStyle) null, false, false, (String) null, (VideoImageData) null, (SubscribeItem) null, (String) null, (String) null, (List) null, (RankChangeData) null, (List) null, (DisplayDim) null, (AutoPlayData) null, (String) null, (List) null, (RelatedBookEntryInInteractiveArea) null, (VideoBottomBar) null, (VideoRelateBook) null, 0L, (String) null, 0L, (List) null, (String) null, false, false, 0, (List) null, false, false, (String) null, (LongPressAction) null, false, -16810008, -1, -1, -1, (DefaultConstructorMarker) null);
+            }
+            videoData5.videoDetail = videoDetailVideoData7;
+            String str28 = videoData5.cover;
+            if (str28 == null) {
+                VideoImageData videoImageData = videoDetailVideoData7.seriesCoverInfo;
+                str28 = videoImageData != null ? videoImageData.webUrl : null;
+            }
+            videoData5.cover = str28;
+            if (videoData5.duration <= 0) {
+                videoData5.duration = videoDetailVideoData7.duration;
+            }
+            String str29 = videoData5.title;
+            if (str29 == null) {
+                str29 = videoDetailVideoData7.seriesTitle;
+            }
+            videoData5.title = str29;
+            String str30 = videoData5.videoDesc;
+            if (str30 == null) {
+                str30 = videoDetailVideoData7.seriesIntro;
+            }
+            videoData5.videoDesc = str30;
+            String strValueOf = videoData5.seriesId;
+            if (strValueOf == null && (strValueOf = videoDetailVideoData7.seriesIdStr) == null) {
+                strValueOf = String.valueOf(videoDetailVideoData7.seriesId);
+            }
+            videoData5.seriesId = strValueOf;
+            videoData5.vertical = videoData5.vertical || videoDetailVideoData7.coverVertical;
+            VideoContentType videoContentType5 = videoData5.contentType;
+            if (videoContentType5 == null && (videoContentType5 = videoDetailVideoData7.contentType) == null) {
+                videoContentType5 = VideoContentType.PUGC;
+            }
+            videoData5.contentType = videoContentType5;
+            String str31 = videoData5.recommendInfo;
+            if (str31 == null && (str31 = videoDetailVideoData7.recommendInfo) == null) {
+                str31 = cellViewData.recommendInfo;
+            }
+            videoData5.recommendInfo = str31;
+            String str32 = videoData5.recommendGroupId;
+            if (str32 == null && (str32 = videoDetailVideoData7.recommendGroupId) == null) {
+                str32 = cellViewData.recommendGroupId;
+            }
+            videoData5.recommendGroupId = str32;
+            String str33 = videoData5.videoCategoryType;
+            if (str33 == null) {
+                str33 = videoDetailVideoData7.videoCategoryType;
+            }
+            videoData5.videoCategoryType = str33;
+            List list12 = videoData5.recTags;
+            if (list12 == null) {
+                list12 = videoDetailVideoData7.recTags;
+            }
+            videoData5.recTags = list12;
+            List list13 = videoData5.subTitleList;
+            if (list13 == null) {
+                list13 = videoDetailVideoData7.subTitleList;
+            }
+            videoData5.subTitleList = list13;
+            List list14 = videoData5.secondaryInfoList;
+            if (list14 == null) {
+                list14 = videoDetailVideoData7.secondaryInfos;
+            }
+            videoData5.secondaryInfoList = list14;
+            VideoTagInfo videoTagInfo3 = videoData5.tagInfo;
+            if (videoTagInfo3 == null) {
+                videoTagInfo3 = videoDetailVideoData7.tagInfo;
+            }
+            videoData5.tagInfo = videoTagInfo3;
+            VideoBottomBar videoBottomBar = videoData5.bottomBar;
+            if (videoBottomBar == null) {
+                videoBottomBar = videoDetailVideoData7.bottomBar;
+            }
+            videoData5.bottomBar = videoBottomBar;
+            VideoImageData videoImageData2 = videoData5.seriesCoverInfo;
+            if (videoImageData2 == null) {
+                videoImageData2 = videoDetailVideoData7.seriesCoverInfo;
+            }
+            videoData5.seriesCoverInfo = videoImageData2;
+            List list15 = videoDetailVideoData7.videoDetailList;
+            lVar = new pv5.l(videoData5, list15 != null ? (VideoDetailVideoData) CollectionsKt.firstOrNull(list15) : null, videoData5.videoCategoryType, videoDetailVideoData7.seriesTitle, C(videoData5));
+        }
+        List list16 = cellViewData.videoData;
+        if (list16 != null && (videoData = (VideoData) CollectionsKt.firstOrNull(list16)) != null) {
+            videoData = videoData;
+        } else if (lVar != null) {
+            VideoData videoData6 = lVar.a;
+            videoData = videoData6;
+        } else {
+            videoData = null;
+        }
+        Map<String, ? extends Object> mapB4 = b(cellViewData);
+        Map mapA = a(cellViewData, ugcPostData2, videoData, mapB4);
+        LinkedHashMap linkedHashMap = (LinkedHashMap) mapA;
+        String strG3 = G((String) linkedHashMap.get("post_id"));
+        String strG4 = G(strG3);
+        if (strG4 != null) {
+            string = strG4;
+        } else {
+            strG4 = G(videoData != null ? videoData.seriesId : null);
+            if (strG4 != null) {
+                string = strG4;
+            } else {
+                strG4 = G(videoData != null ? videoData.vid : null);
+                if (strG4 == null) {
+                    StringBuilder sb4 = new StringBuilder();
+                    sb4.append(j2);
+                    sb4.append('_');
+                    sb4.append(i2);
+                    string = sb4.toString();
+                } else {
+                    string = strG4;
+                }
+            }
+        }
+        String str34 = (String) linkedHashMap.get("author_name");
+        boolean z18 = ((ugcPostData2 != null ? ugcPostData2.videoInfo : null) == null && videoData == null) ? false : true;
+        boolean z19 = (z18 || strG3 == null) ? false : true;
+        VideoTagInfo videoTagInfoX = x(videoData, cellViewData.style, mapB4);
+        if (videoData != null) {
+            List list17 = videoData.playCoverInfoList;
+            if (list17 != null) {
+                Iterator it = list17.iterator();
+                do {
+                    if (!it.hasNext()) {
+                        next2 = null;
+                        break;
+                    }
+                    next2 = it.next();
+                    str15 = ((PlayCoverInfo) next2).vid;
+                } while (!(!(str15 == null || StringsKt.isBlank(str15))));
+                playCoverInfo = (PlayCoverInfo) next2;
+                if (playCoverInfo == null) {
+                    list7 = videoData.playCoverInfoList;
+                    if (list7 != null) {
+                        playCoverInfo = (PlayCoverInfo) CollectionsKt.firstOrNull(list7);
+                    } else {
+                        playCoverInfo = null;
+                    }
+                }
+            } else {
+                list7 = videoData.playCoverInfoList;
+                if (list7 != null) {
+                    playCoverInfo = (PlayCoverInfo) CollectionsKt.firstOrNull(list7);
+                } else {
+                    playCoverInfo = null;
+                }
+            }
+        } else {
+            playCoverInfo = null;
+        }
+        if (videoData == null) {
+            jLongValue2 = jLongValue2;
+            strG = null;
+        } else {
+            strG = G(playCoverInfo != null ? playCoverInfo.vid : null);
+            if (strG == null && (strG = G(videoData.forceVid)) == null) {
+                VideoHighlight videoHighlight3 = videoData.highlight;
+                strG = G(videoHighlight3 != null ? Long.valueOf(videoHighlight3.vid).toString() : null);
+                if (strG == null) {
+                    strG = G(videoData.vid);
+                }
+            } else {
+                jLongValue2 = jLongValue2;
+            }
+        }
+        if (videoData == null) {
+            str3 = null;
+        } else {
+            String strG5 = G(videoData.videoModel);
+            if (strG5 == null) {
+                VideoDetailVideoData videoDetailVideoData8 = videoData.videoDetail;
+                if (videoDetailVideoData8 == null || (list2 = videoDetailVideoData8.videoList) == null) {
+                    str4 = null;
+                } else {
+                    Iterator it2 = list2.iterator();
+                    do {
+                        if (!it2.hasNext()) {
+                            next = null;
+                            break;
+                        }
+                        next = it2.next();
+                    } while (!Intrinsics.areEqual(((VideoData) next).vid, strG));
+                    VideoData videoData7 = (VideoData) next;
+                    if (videoData7 != null) {
+                        str4 = videoData7.videoModel;
+                    } else {
+                        str4 = null;
+                    }
+                }
+                strG5 = G(str4);
+                if (strG5 == null) {
+                    VideoDetailVideoData videoDetailVideoData9 = videoData.videoDetail;
+                    strG5 = G((videoDetailVideoData9 == null || (list = videoDetailVideoData9.videoList) == null || (videoData2 = (VideoData) CollectionsKt.firstOrNull(list)) == null) ? null : videoData2.videoModel);
+                }
+            }
+            str3 = strG5;
+        }
+        if (playCoverInfo != null && (videoContentType = playCoverInfo.contentType) != null) {
+            videoContentType = videoContentType;
+        } else if (videoData != null) {
+            VideoContentType videoContentType6 = videoData.contentType;
+            videoContentType = videoContentType6;
+        } else {
+            videoContentType = null;
+        }
+        VideoContentType videoContentType7 = VideoContentType.PUGC;
+        VideoContentType videoContentType8 = videoContentType;
+        if (!(videoContentType == videoContentType7 || videoContentType == VideoContentType.Album || videoContentType == VideoContentType.Video1ColPushBookVideo)) {
+            VideoContentType videoContentType9 = videoData != null ? videoData.contentType : null;
+            videoTagInfo = videoTagInfoX;
+            if (!(videoContentType9 == videoContentType7 || videoContentType9 == VideoContentType.Album || videoContentType9 == VideoContentType.Video1ColPushBookVideo)) {
+                if (videoData != null && (str14 = videoData.videoCategoryType) != null) {
+                    str5 = "";
+                    i3 = value;
+                    z17 = StringsKt.startsWith$default(str14, "pugc_", false, 2, (Object) null);
+                    if (z17 && lVar == null) {
+                        z3 = false;
+                    }
+                    if (lVar != null) {
+                        videoDetailVideoData = null;
+                        z4 = true;
+                    } else {
+                        if (videoData != null) {
+                            videoContentType3 = videoData.contentType;
+                        } else {
+                            videoContentType3 = null;
+                        }
+                        if (videoContentType3 == videoContentType7) {
+                            videoDetailVideoData = null;
+                            z4 = true;
+                        } else {
+                            if (videoData != null) {
+                                videoContentType4 = videoData.contentType;
+                            } else {
+                                videoContentType4 = null;
+                            }
+                            if (videoContentType4 != VideoContentType.Video1ColPushBookVideo) {
+                                if (videoData != null || (str13 = videoData.videoCategoryType) == null) {
+                                    videoDetailVideoData = null;
+                                } else {
+                                    videoDetailVideoData = null;
+                                    z15 = StringsKt.startsWith$default(str13, "pugc_", false, 2, (Object) null);
+                                    if (!z15) {
+                                        z4 = false;
+                                    }
+                                }
+                                if (!z15) {
+                                    z4 = false;
+                                }
+                            } else {
+                                videoDetailVideoData = null;
+                            }
+                            z4 = true;
+                        }
+                    }
+                    if (z4 || videoData == null) {
+                        lVar2 = videoDetailVideoData;
+                    } else if (lVar == null) {
+                        VideoDetailVideoData videoDetailVideoData10 = videoData.videoDetail;
+                        VideoDetailVideoData videoDetailVideoData11 = (videoDetailVideoData10 == null || (list6 = videoDetailVideoData10.videoDetailList) == null) ? videoDetailVideoData : (VideoDetailVideoData) CollectionsKt.firstOrNull(list6);
+                        VideoDetailVideoData videoDetailVideoData12 = videoData.videoCategoryType;
+                        if (videoDetailVideoData12 != null) {
+                            videoDetailVideoData6 = videoDetailVideoData12;
+                        } else {
+                            VideoDetailVideoData videoDetailVideoData13 = videoData.videoDetail;
+                            if (videoDetailVideoData13 != null) {
+                                videoDetailVideoData12 = videoDetailVideoData13.videoCategoryType;
+                                videoDetailVideoData6 = videoDetailVideoData12;
+                            } else {
+                                videoDetailVideoData6 = videoDetailVideoData;
+                            }
+                        }
+                        VideoDetailVideoData videoDetailVideoData14 = videoData.videoDetail;
+                        lVar2 = new pv5.l(videoData, videoDetailVideoData11, videoDetailVideoData6, videoDetailVideoData14 != null ? videoDetailVideoData14.seriesTitle : videoDetailVideoData, C(videoData));
+                    } else {
+                        lVar2 = lVar;
+                    }
+                    if (videoData != null) {
+                        videoDetailVideoData2 = videoData.highlight;
+                    } else {
+                        videoDetailVideoData2 = videoDetailVideoData;
+                    }
+                    if (videoDetailVideoData2 == null || playCoverInfo != null) {
+                        z5 = true;
+                    } else {
+                        z5 = false;
+                    }
+                    if (playCoverInfo != null) {
+                        jCoerceAtLeast = RangesKt.coerceAtLeast(playCoverInfo.startTime, 0L);
+                    } else if (videoData != null || (videoHighlight = videoData.highlight) == null) {
+                        jCoerceAtLeast = 0;
+                    } else {
+                        jCoerceAtLeast = RangesKt.coerceAtLeast(videoHighlight.startTimeInMillisecond, 0L);
+                    }
+                    if (playCoverInfo != null) {
+                        lValueOf3 = Long.valueOf(playCoverInfo.secondLimit);
+                        if (lValueOf3.longValue() > 0) {
+                            z14 = true;
+                        } else {
+                            z14 = false;
+                        }
+                        if (!z14) {
+                            lValueOf3 = null;
+                        }
+                        if (lValueOf3 != null) {
+                            jLongValue = lValueOf3.longValue();
+                        } else {
+                            if (videoData != null && (autoPlayData = videoData.autoPlayData) != null) {
+                                lValueOf = Long.valueOf(autoPlayData.duration);
+                                if (lValueOf.longValue() > 0) {
+                                    z6 = true;
+                                } else {
+                                    z6 = false;
+                                }
+                                if (!z6) {
+                                    lValueOf = null;
+                                }
+                                if (lValueOf != null) {
+                                    jLongValue = lValueOf.longValue();
+                                }
+                            }
+                            j3 = 15000;
+                        }
+                        j3 = jLongValue * 1000;
+                    } else {
+                        if (videoData != null) {
+                            lValueOf = Long.valueOf(autoPlayData.duration);
+                            if (lValueOf.longValue() > 0) {
+                                z6 = true;
+                            } else {
+                                z6 = false;
+                            }
+                            if (!z6) {
+                                lValueOf = null;
+                            }
+                            if (lValueOf != null) {
+                                jLongValue = lValueOf.longValue();
+                                j3 = jLongValue * 1000;
+                            }
+                        }
+                        j3 = 15000;
+                    }
+                    videoDetailVideoData3 = lVar;
+                    if (videoData == null && (autoPlayData2 = videoData.autoPlayData) != null) {
+                        z7 = autoPlayData2.supportAutoPlay;
+                        if (z7 && playCoverInfo == null) {
+                            z8 = false;
+                        } else {
+                            z8 = true;
+                        }
+                        if (videoData != null) {
+                            videoDetailVideoData4 = videoData.videoDetail;
+                            if (videoDetailVideoData4 != null || (list5 = videoDetailVideoData4.videoList) == null) {
+                                videoData3 = null;
+                            } else {
+                                videoData3 = (VideoData) CollectionsKt.firstOrNull(list5);
+                            }
+                            hi5.j jVar = hi5.j.a;
+                            StringBuilder sb5 = new StringBuilder("map video item id=");
+                            sb5.append(string);
+                            sb5.append(" seriesId=");
+                            sb5.append(videoData.seriesId);
+                            sb5.append(" vid=");
+                            sb5.append(videoData.vid);
+                            sb5.append(" highlight=");
+                            sb5.append(z5);
+                            sb5.append(" highlightVid=");
+                            videoHighlight2 = videoData.highlight;
+                            if (videoHighlight2 != null) {
+                                lValueOf2 = Long.valueOf(videoHighlight2.vid);
+                            } else {
+                                lValueOf2 = null;
+                            }
+                            sb5.append(lValueOf2);
+                            sb5.append(" autoPlayVid=");
+                            sb5.append(strG);
+                            sb5.append(" contentType=");
+                            videoContentType2 = videoData.contentType;
+                            if (videoContentType2 != null) {
+                                objValueOf = Integer.valueOf(videoContentType2.getValue());
+                            } else {
+                                objValueOf = "null";
+                            }
+                            sb5.append(objValueOf);
+                            sb5.append(" highlightStart=");
+                            sb5.append(jCoerceAtLeast);
+                            sb5.append(" supportAutoPlay=");
+                            sb5.append(z8);
+                            sb5.append(" autoPlayDurationMs=");
+                            sb5.append(j3);
+                            sb5.append(" videoModelEmpty=");
+                            if (str3 != null || StringsKt.isBlank(str3)) {
+                                z11 = true;
+                            } else {
+                                z11 = false;
+                            }
+                            sb5.append(z11);
+                            sb5.append(" outerVideoModelEmpty=");
+                            str9 = videoData.videoModel;
+                            if (str9 != null || StringsKt.isBlank(str9)) {
+                                z12 = true;
+                            } else {
+                                z12 = false;
+                            }
+                            sb5.append(z12);
+                            sb5.append(" detailVideoListSize=");
+                            videoDetailVideoData5 = videoData.videoDetail;
+                            if (videoDetailVideoData5 != null || (list4 = videoDetailVideoData5.videoList) == null) {
+                                size = 0;
+                            } else {
+                                size = list4.size();
+                            }
+                            sb5.append(size);
+                            sb5.append(" detailFirstVid=");
+                            if (videoData3 != null) {
+                                str10 = videoData3.vid;
+                            } else {
+                                str10 = null;
+                            }
+                            sb5.append(str10);
+                            sb5.append(" detailFirstVideoModelEmpty=");
+                            if (videoData3 != null) {
+                                str11 = videoData3.videoModel;
+                            } else {
+                                str11 = null;
+                            }
+                            if (str11 != null || StringsKt.isBlank(str11)) {
+                                z13 = true;
+                            } else {
+                                z13 = false;
+                            }
+                            sb5.append(z13);
+                            sb5.append(" playCoverInfoSize=");
+                            list3 = videoData.playCoverInfoList;
+                            if (list3 != null) {
+                                size2 = list3.size();
+                            } else {
+                                size2 = 0;
+                            }
+                            sb5.append(size2);
+                            sb5.append(" playCoverFirstVid=");
+                            if (playCoverInfo != null) {
+                                str12 = playCoverInfo.vid;
+                            } else {
+                                str12 = null;
+                            }
+                            sb5.append(str12);
+                            sb5.append(" playCoverStart=");
+                            if (playCoverInfo != null) {
+                                numValueOf3 = Integer.valueOf(playCoverInfo.startTime);
+                            } else {
+                                numValueOf3 = null;
+                            }
+                            sb5.append(numValueOf3);
+                            sb5.append(" playCoverEnd=");
+                            if (playCoverInfo != null) {
+                                numValueOf4 = Integer.valueOf(playCoverInfo.endTime);
+                            } else {
+                                numValueOf4 = null;
+                            }
+                            sb5.append(numValueOf4);
+                            sb5.append(" playCoverSecondLimit=");
+                            if (playCoverInfo != null) {
+                                numValueOf5 = Integer.valueOf(playCoverInfo.secondLimit);
+                            } else {
+                                numValueOf5 = null;
+                            }
+                            sb5.append(numValueOf5);
+                            sb5.append(" playCoverStyle=");
+                            if (playCoverInfo != null || (autoPlayStyle = playCoverInfo.autoPlayStyle) == null) {
+                                numValueOf6 = null;
+                            } else {
+                                numValueOf6 = Integer.valueOf(autoPlayStyle.getValue());
+                            }
+                            sb5.append(numValueOf6);
+                            sb5.append(" playStrategy=");
+                            if (playCoverInfo != null || (playStrategyType = playCoverInfo.playStrategyType) == null) {
+                                numValueOf7 = null;
+                            } else {
+                                numValueOf7 = Integer.valueOf(playStrategyType.getValue());
+                            }
+                            sb5.append(numValueOf7);
+                            sb5.append(" startPlayStrategy=");
+                            if (playCoverInfo != null) {
+                                startPlayStrategy = playCoverInfo.startPlayStrategy;
+                            } else {
+                                startPlayStrategy = null;
+                            }
+                            sb5.append(startPlayStrategy);
+                            sb5.append(" displayDim=");
+                            DisplayDim displayDim = videoData.displayDim;
+                            sb5.append(displayDim != null ? Integer.valueOf(displayDim.getValue()) : "null");
+                            sb5.append(" showPlayIcon=");
+                            sb5.append(videoData.showPlayIcon);
+                            sb5.append(" forceVid=");
+                            sb5.append(videoData.forceVid);
+                            String string5 = sb5.toString();
+                            jVar.getClass();
+                            hi5.j.d("StaggeredRecommendMapper", string5);
+                        }
+                        str6 = (String) linkedHashMap.get("title");
+                        if (str6 != null) {
+                            str7 = str6;
+                        } else if (str17 == null) {
+                            str7 = str5;
+                        } else {
+                            str7 = str17;
+                        }
+                        if (videoData != null || z3) {
+                            strG2 = (String) linkedHashMap.get("cover");
+                        } else {
+                            c.Companion.getClass();
+                            if (!((c) c.d.getValue()).b || (strG2 = G(q(mapB4, f))) == null) {
+                                strG2 = (String) linkedHashMap.get("cover");
+                            }
+                        }
+                        String str35 = strG2;
+                        if (cellViewData.showType == ShowType.VideoDoubleColPUGC) {
+                            z9 = true;
+                        } else {
+                            z9 = false;
+                        }
+                        long j4 = jCoerceAtLeast;
+                        String str36 = strG;
+                        videoTagInfo2 = videoTagInfo;
+                        boolean z20 = z5;
+                        boolean z21 = z8;
+                        float fW = w(ugcPostData2, videoData, mapB4, z3, z19, z9);
+                        String str37 = (String) linkedHashMap.get("author_avatar");
+                        String str38 = (String) linkedHashMap.get("author_id");
+                        List<pv5.j> listG = g(mapB4);
+                        List<SecondaryInfo> listH = h(videoData, mapB4);
+                        List<pv5.h> listI = i(videoData, mapB4);
+                        String strF = f(mapB4);
+                        String strE = e(mapB4);
+                        ugcPostData = ugcPostData2;
+                        long jY = y(ugcPostData, videoData, mapB4);
+                        boolean z22 = z(ugcPostData, videoData, mapB4);
+                        if (ugcPostData != null) {
+                            jM = ugcPostData.replyCnt;
+                        } else {
+                            jM = m(V, mapB4);
+                        }
+                        long jA = A(ugcPostData, videoData, mapB4);
+                        String strB = B(videoData, mapB4);
+                        String strV = v(videoData, mapB4, z3);
+                        boolean zE = E(videoData, mapB4, z3);
+                        if (videoDetailVideoData3 != null) {
+                            z10 = true;
+                        } else {
+                            z10 = false;
+                        }
+                        if (videoContentType8 != null) {
+                            numValueOf = Integer.valueOf(videoContentType8.getValue());
+                        } else {
+                            numValueOf = null;
+                        }
+                        if (videoTagInfo2 != null || (strD = videoTagInfo2.text) == null) {
+                            strD = d(mapB4);
+                        }
+                        String str39 = strD;
+                        if (z19) {
+                            str8 = "图文";
+                        } else {
+                            str8 = null;
+                        }
+                        LongPressAction longPressAction2 = cellViewData.cellLongPressAction;
+                        dislikeTargetType = cellViewData.dislikeTargetType;
+                        if (dislikeTargetType != null) {
+                            numValueOf2 = Integer.valueOf(dislikeTargetType.getValue());
+                        } else {
+                            numValueOf2 = null;
+                        }
+                        boolean z23 = z3;
+                        long j5 = jLongValue2;
+                        String str40 = str17;
+                        return new pv5.c(string, str7, strG3, i3, j5, str40, str35, fW, str34, str34, str37, str38, listG, listH, listI, strF, strE, jY, z22, jM, jA, strB, strV, zE, z18, z23, z10, lVar2, str36, numValueOf, str3, z20, j4, j3, z21, str39, videoTagInfo2, str8, longPressAction2, numValueOf2, null, null, null, new pv5.i(str, string, i3, j5, str40, (String) linkedHashMap.get("log_id"), (Map<String, String>) mapA), cellViewData, 0, 1792);
+                    }
+                    if (z7) {
+                        z8 = true;
+                    } else {
+                        z8 = true;
+                    }
+                    if (videoData != null) {
+                        videoDetailVideoData4 = videoData.videoDetail;
+                        if (videoDetailVideoData4 != null) {
+                            videoData3 = null;
+                        } else {
+                            videoData3 = null;
+                        }
+                        hi5.j jVar2 = hi5.j.a;
+                        StringBuilder sb7 = new StringBuilder("map video item id=");
+                        sb7.append(string);
+                        sb7.append(" seriesId=");
+                        sb7.append(videoData.seriesId);
+                        sb7.append(" vid=");
+                        sb7.append(videoData.vid);
+                        sb7.append(" highlight=");
+                        sb7.append(z5);
+                        sb7.append(" highlightVid=");
+                        videoHighlight2 = videoData.highlight;
+                        if (videoHighlight2 != null) {
+                            lValueOf2 = Long.valueOf(videoHighlight2.vid);
+                        } else {
+                            lValueOf2 = null;
+                        }
+                        sb7.append(lValueOf2);
+                        sb7.append(" autoPlayVid=");
+                        sb7.append(strG);
+                        sb7.append(" contentType=");
+                        videoContentType2 = videoData.contentType;
+                        if (videoContentType2 != null) {
+                            objValueOf = Integer.valueOf(videoContentType2.getValue());
+                        } else {
+                            objValueOf = "null";
+                        }
+                        sb7.append(objValueOf);
+                        sb7.append(" highlightStart=");
+                        sb7.append(jCoerceAtLeast);
+                        sb7.append(" supportAutoPlay=");
+                        sb7.append(z8);
+                        sb7.append(" autoPlayDurationMs=");
+                        sb7.append(j3);
+                        sb7.append(" videoModelEmpty=");
+                        if (str3 != null) {
+                            z11 = true;
+                        } else {
+                            z11 = true;
+                        }
+                        sb7.append(z11);
+                        sb7.append(" outerVideoModelEmpty=");
+                        str9 = videoData.videoModel;
+                        if (str9 != null) {
+                            z12 = true;
+                        } else {
+                            z12 = true;
+                        }
+                        sb7.append(z12);
+                        sb7.append(" detailVideoListSize=");
+                        videoDetailVideoData5 = videoData.videoDetail;
+                        if (videoDetailVideoData5 != null) {
+                            size = 0;
+                        } else {
+                            size = 0;
+                        }
+                        sb7.append(size);
+                        sb7.append(" detailFirstVid=");
+                        if (videoData3 != null) {
+                            str10 = videoData3.vid;
+                        } else {
+                            str10 = null;
+                        }
+                        sb7.append(str10);
+                        sb7.append(" detailFirstVideoModelEmpty=");
+                        if (videoData3 != null) {
+                            str11 = videoData3.videoModel;
+                        } else {
+                            str11 = null;
+                        }
+                        if (str11 != null) {
+                            z13 = true;
+                        } else {
+                            z13 = true;
+                        }
+                        sb7.append(z13);
+                        sb7.append(" playCoverInfoSize=");
+                        list3 = videoData.playCoverInfoList;
+                        if (list3 != null) {
+                            size2 = list3.size();
+                        } else {
+                            size2 = 0;
+                        }
+                        sb7.append(size2);
+                        sb7.append(" playCoverFirstVid=");
+                        if (playCoverInfo != null) {
+                            str12 = playCoverInfo.vid;
+                        } else {
+                            str12 = null;
+                        }
+                        sb7.append(str12);
+                        sb7.append(" playCoverStart=");
+                        if (playCoverInfo != null) {
+                            numValueOf3 = Integer.valueOf(playCoverInfo.startTime);
+                        } else {
+                            numValueOf3 = null;
+                        }
+                        sb7.append(numValueOf3);
+                        sb7.append(" playCoverEnd=");
+                        if (playCoverInfo != null) {
+                            numValueOf4 = Integer.valueOf(playCoverInfo.endTime);
+                        } else {
+                            numValueOf4 = null;
+                        }
+                        sb7.append(numValueOf4);
+                        sb7.append(" playCoverSecondLimit=");
+                        if (playCoverInfo != null) {
+                            numValueOf5 = Integer.valueOf(playCoverInfo.secondLimit);
+                        } else {
+                            numValueOf5 = null;
+                        }
+                        sb7.append(numValueOf5);
+                        sb7.append(" playCoverStyle=");
+                        if (playCoverInfo != null) {
+                            numValueOf6 = null;
+                        } else {
+                            numValueOf6 = null;
+                        }
+                        sb7.append(numValueOf6);
+                        sb7.append(" playStrategy=");
+                        if (playCoverInfo != null) {
+                            numValueOf7 = null;
+                        } else {
+                            numValueOf7 = null;
+                        }
+                        sb7.append(numValueOf7);
+                        sb7.append(" startPlayStrategy=");
+                        if (playCoverInfo != null) {
+                            startPlayStrategy = playCoverInfo.startPlayStrategy;
+                        } else {
+                            startPlayStrategy = null;
+                        }
+                        sb7.append(startPlayStrategy);
+                        sb7.append(" displayDim=");
+                        DisplayDim displayDim2 = videoData.displayDim;
+                        sb7.append(displayDim2 != null ? Integer.valueOf(displayDim2.getValue()) : "null");
+                        sb7.append(" showPlayIcon=");
+                        sb7.append(videoData.showPlayIcon);
+                        sb7.append(" forceVid=");
+                        sb7.append(videoData.forceVid);
+                        String string6 = sb7.toString();
+                        jVar2.getClass();
+                        hi5.j.d("StaggeredRecommendMapper", string6);
+                    }
+                    str6 = (String) linkedHashMap.get("title");
+                    if (str6 != null) {
+                        str7 = str6;
+                    } else if (str17 == null) {
+                        str7 = str5;
+                    } else {
+                        str7 = str17;
+                    }
+                    if (videoData != null) {
+                        strG2 = (String) linkedHashMap.get("cover");
+                    } else {
+                        strG2 = (String) linkedHashMap.get("cover");
+                    }
+                    String str310 = strG2;
+                    if (cellViewData.showType == ShowType.VideoDoubleColPUGC) {
+                        z9 = true;
+                    } else {
+                        z9 = false;
+                    }
+                    long j6 = jCoerceAtLeast;
+                    String str311 = strG;
+                    videoTagInfo2 = videoTagInfo;
+                    boolean z24 = z5;
+                    boolean z25 = z8;
+                    float fW2 = w(ugcPostData2, videoData, mapB4, z3, z19, z9);
+                    String str312 = (String) linkedHashMap.get("author_avatar");
+                    String str313 = (String) linkedHashMap.get("author_id");
+                    List<pv5.j> listG2 = g(mapB4);
+                    List<SecondaryInfo> listH2 = h(videoData, mapB4);
+                    List<pv5.h> listI2 = i(videoData, mapB4);
+                    String strF2 = f(mapB4);
+                    String strE2 = e(mapB4);
+                    ugcPostData = ugcPostData2;
+                    long jY2 = y(ugcPostData, videoData, mapB4);
+                    boolean z27 = z(ugcPostData, videoData, mapB4);
+                    if (ugcPostData != null) {
+                        jM = ugcPostData.replyCnt;
+                    } else {
+                        jM = m(V, mapB4);
+                    }
+                    long jA2 = A(ugcPostData, videoData, mapB4);
+                    String strB2 = B(videoData, mapB4);
+                    String strV2 = v(videoData, mapB4, z3);
+                    boolean zE2 = E(videoData, mapB4, z3);
+                    if (videoDetailVideoData3 != null) {
+                        z10 = true;
+                    } else {
+                        z10 = false;
+                    }
+                    if (videoContentType8 != null) {
+                        numValueOf = Integer.valueOf(videoContentType8.getValue());
+                    } else {
+                        numValueOf = null;
+                    }
+                    if (videoTagInfo2 != null) {
+                        strD = d(mapB4);
+                    } else {
+                        strD = d(mapB4);
+                    }
+                    String str314 = strD;
+                    if (z19) {
+                        str8 = "图文";
+                    } else {
+                        str8 = null;
+                    }
+                    LongPressAction longPressAction3 = cellViewData.cellLongPressAction;
+                    dislikeTargetType = cellViewData.dislikeTargetType;
+                    if (dislikeTargetType != null) {
+                        numValueOf2 = Integer.valueOf(dislikeTargetType.getValue());
+                    } else {
+                        numValueOf2 = null;
+                    }
+                    boolean z28 = z3;
+                    long j7 = jLongValue2;
+                    String str41 = str17;
+                    return new pv5.c(string, str7, strG3, i3, j7, str41, str310, fW2, str34, str34, str312, str313, listG2, listH2, listI2, strF2, strE2, jY2, z27, jM, jA2, strB2, strV2, zE2, z18, z28, z10, lVar2, str311, numValueOf, str3, z24, j6, j3, z25, str314, videoTagInfo2, str8, longPressAction3, numValueOf2, null, null, null, new pv5.i(str, string, i3, j7, str41, (String) linkedHashMap.get("log_id"), (Map<String, String>) mapA), cellViewData, 0, 1792);
+                }
+                str5 = "";
+                i3 = value;
+                if (z17) {
+                }
+                if (lVar != null) {
+                    videoDetailVideoData = null;
+                    z4 = true;
+                } else {
+                    if (videoData != null) {
+                        videoContentType3 = videoData.contentType;
+                    } else {
+                        videoContentType3 = null;
+                    }
+                    if (videoContentType3 == videoContentType7) {
+                        videoDetailVideoData = null;
+                        z4 = true;
+                    } else {
+                        if (videoData != null) {
+                            videoContentType4 = videoData.contentType;
+                        } else {
+                            videoContentType4 = null;
+                        }
+                        if (videoContentType4 != VideoContentType.Video1ColPushBookVideo) {
+                            if (videoData != null) {
+                                videoDetailVideoData = null;
+                            } else {
+                                videoDetailVideoData = null;
+                            }
+                            if (!z15) {
+                                z4 = false;
+                            }
+                        } else {
+                            videoDetailVideoData = null;
+                        }
+                        z4 = true;
+                    }
+                }
+                if (z4) {
+                    lVar2 = videoDetailVideoData;
+                } else {
+                    lVar2 = videoDetailVideoData;
+                }
+                if (videoData != null) {
+                    videoDetailVideoData2 = videoData.highlight;
+                } else {
+                    videoDetailVideoData2 = videoDetailVideoData;
+                }
+                if (videoDetailVideoData2 == null) {
+                    z5 = true;
+                } else {
+                    z5 = true;
+                }
+                if (playCoverInfo != null) {
+                    jCoerceAtLeast = RangesKt.coerceAtLeast(playCoverInfo.startTime, 0L);
+                } else if (videoData != null) {
+                    jCoerceAtLeast = 0;
+                } else {
+                    jCoerceAtLeast = 0;
+                }
+                if (playCoverInfo != null) {
+                    lValueOf3 = Long.valueOf(playCoverInfo.secondLimit);
+                    if (lValueOf3.longValue() > 0) {
+                        z14 = true;
+                    } else {
+                        z14 = false;
+                    }
+                    if (!z14) {
+                        lValueOf3 = null;
+                    }
+                    if (lValueOf3 != null) {
+                        jLongValue = lValueOf3.longValue();
+                    } else {
+                        if (videoData != null) {
+                            lValueOf = Long.valueOf(autoPlayData.duration);
+                            if (lValueOf.longValue() > 0) {
+                                z6 = true;
+                            } else {
+                                z6 = false;
+                            }
+                            if (!z6) {
+                                lValueOf = null;
+                            }
+                            if (lValueOf != null) {
+                                jLongValue = lValueOf.longValue();
+                            }
+                        }
+                        j3 = 15000;
+                    }
+                    j3 = jLongValue * 1000;
+                } else {
+                    if (videoData != null) {
+                        lValueOf = Long.valueOf(autoPlayData.duration);
+                        if (lValueOf.longValue() > 0) {
+                            z6 = true;
+                        } else {
+                            z6 = false;
+                        }
+                        if (!z6) {
+                            lValueOf = null;
+                        }
+                        if (lValueOf != null) {
+                            jLongValue = lValueOf.longValue();
+                            j3 = jLongValue * 1000;
+                        }
+                    }
+                    j3 = 15000;
+                }
+                videoDetailVideoData3 = lVar;
+                if (videoData == null) {
+                }
+                if (z7) {
+                    z8 = true;
+                } else {
+                    z8 = true;
+                }
+                if (videoData != null) {
+                    videoDetailVideoData4 = videoData.videoDetail;
+                    if (videoDetailVideoData4 != null) {
+                        videoData3 = null;
+                    } else {
+                        videoData3 = null;
+                    }
+                    hi5.j jVar3 = hi5.j.a;
+                    StringBuilder sb8 = new StringBuilder("map video item id=");
+                    sb8.append(string);
+                    sb8.append(" seriesId=");
+                    sb8.append(videoData.seriesId);
+                    sb8.append(" vid=");
+                    sb8.append(videoData.vid);
+                    sb8.append(" highlight=");
+                    sb8.append(z5);
+                    sb8.append(" highlightVid=");
+                    videoHighlight2 = videoData.highlight;
+                    if (videoHighlight2 != null) {
+                        lValueOf2 = Long.valueOf(videoHighlight2.vid);
+                    } else {
+                        lValueOf2 = null;
+                    }
+                    sb8.append(lValueOf2);
+                    sb8.append(" autoPlayVid=");
+                    sb8.append(strG);
+                    sb8.append(" contentType=");
+                    videoContentType2 = videoData.contentType;
+                    if (videoContentType2 != null) {
+                        objValueOf = Integer.valueOf(videoContentType2.getValue());
+                    } else {
+                        objValueOf = "null";
+                    }
+                    sb8.append(objValueOf);
+                    sb8.append(" highlightStart=");
+                    sb8.append(jCoerceAtLeast);
+                    sb8.append(" supportAutoPlay=");
+                    sb8.append(z8);
+                    sb8.append(" autoPlayDurationMs=");
+                    sb8.append(j3);
+                    sb8.append(" videoModelEmpty=");
+                    if (str3 != null) {
+                        z11 = true;
+                    } else {
+                        z11 = true;
+                    }
+                    sb8.append(z11);
+                    sb8.append(" outerVideoModelEmpty=");
+                    str9 = videoData.videoModel;
+                    if (str9 != null) {
+                        z12 = true;
+                    } else {
+                        z12 = true;
+                    }
+                    sb8.append(z12);
+                    sb8.append(" detailVideoListSize=");
+                    videoDetailVideoData5 = videoData.videoDetail;
+                    if (videoDetailVideoData5 != null) {
+                        size = 0;
+                    } else {
+                        size = 0;
+                    }
+                    sb8.append(size);
+                    sb8.append(" detailFirstVid=");
+                    if (videoData3 != null) {
+                        str10 = videoData3.vid;
+                    } else {
+                        str10 = null;
+                    }
+                    sb8.append(str10);
+                    sb8.append(" detailFirstVideoModelEmpty=");
+                    if (videoData3 != null) {
+                        str11 = videoData3.videoModel;
+                    } else {
+                        str11 = null;
+                    }
+                    if (str11 != null) {
+                        z13 = true;
+                    } else {
+                        z13 = true;
+                    }
+                    sb8.append(z13);
+                    sb8.append(" playCoverInfoSize=");
+                    list3 = videoData.playCoverInfoList;
+                    if (list3 != null) {
+                        size2 = list3.size();
+                    } else {
+                        size2 = 0;
+                    }
+                    sb8.append(size2);
+                    sb8.append(" playCoverFirstVid=");
+                    if (playCoverInfo != null) {
+                        str12 = playCoverInfo.vid;
+                    } else {
+                        str12 = null;
+                    }
+                    sb8.append(str12);
+                    sb8.append(" playCoverStart=");
+                    if (playCoverInfo != null) {
+                        numValueOf3 = Integer.valueOf(playCoverInfo.startTime);
+                    } else {
+                        numValueOf3 = null;
+                    }
+                    sb8.append(numValueOf3);
+                    sb8.append(" playCoverEnd=");
+                    if (playCoverInfo != null) {
+                        numValueOf4 = Integer.valueOf(playCoverInfo.endTime);
+                    } else {
+                        numValueOf4 = null;
+                    }
+                    sb8.append(numValueOf4);
+                    sb8.append(" playCoverSecondLimit=");
+                    if (playCoverInfo != null) {
+                        numValueOf5 = Integer.valueOf(playCoverInfo.secondLimit);
+                    } else {
+                        numValueOf5 = null;
+                    }
+                    sb8.append(numValueOf5);
+                    sb8.append(" playCoverStyle=");
+                    if (playCoverInfo != null) {
+                        numValueOf6 = null;
+                    } else {
+                        numValueOf6 = null;
+                    }
+                    sb8.append(numValueOf6);
+                    sb8.append(" playStrategy=");
+                    if (playCoverInfo != null) {
+                        numValueOf7 = null;
+                    } else {
+                        numValueOf7 = null;
+                    }
+                    sb8.append(numValueOf7);
+                    sb8.append(" startPlayStrategy=");
+                    if (playCoverInfo != null) {
+                        startPlayStrategy = playCoverInfo.startPlayStrategy;
+                    } else {
+                        startPlayStrategy = null;
+                    }
+                    sb8.append(startPlayStrategy);
+                    sb8.append(" displayDim=");
+                    DisplayDim displayDim3 = videoData.displayDim;
+                    sb8.append(displayDim3 != null ? Integer.valueOf(displayDim3.getValue()) : "null");
+                    sb8.append(" showPlayIcon=");
+                    sb8.append(videoData.showPlayIcon);
+                    sb8.append(" forceVid=");
+                    sb8.append(videoData.forceVid);
+                    String string7 = sb8.toString();
+                    jVar3.getClass();
+                    hi5.j.d("StaggeredRecommendMapper", string7);
+                }
+                str6 = (String) linkedHashMap.get("title");
+                if (str6 != null) {
+                    str7 = str6;
+                } else if (str17 == null) {
+                    str7 = str5;
+                } else {
+                    str7 = str17;
+                }
+                if (videoData != null) {
+                    strG2 = (String) linkedHashMap.get("cover");
+                } else {
+                    strG2 = (String) linkedHashMap.get("cover");
+                }
+                String str315 = strG2;
+                if (cellViewData.showType == ShowType.VideoDoubleColPUGC) {
+                    z9 = true;
+                } else {
+                    z9 = false;
+                }
+                long j8 = jCoerceAtLeast;
+                String str316 = strG;
+                videoTagInfo2 = videoTagInfo;
+                boolean z29 = z5;
+                boolean z210 = z8;
+                float fW3 = w(ugcPostData2, videoData, mapB4, z3, z19, z9);
+                String str317 = (String) linkedHashMap.get("author_avatar");
+                String str318 = (String) linkedHashMap.get("author_id");
+                List<pv5.j> listG3 = g(mapB4);
+                List<SecondaryInfo> listH3 = h(videoData, mapB4);
+                List<pv5.h> listI3 = i(videoData, mapB4);
+                String strF3 = f(mapB4);
+                String strE3 = e(mapB4);
+                ugcPostData = ugcPostData2;
+                long jY3 = y(ugcPostData, videoData, mapB4);
+                boolean z211 = z(ugcPostData, videoData, mapB4);
+                if (ugcPostData != null) {
+                    jM = ugcPostData.replyCnt;
+                } else {
+                    jM = m(V, mapB4);
+                }
+                long jA3 = A(ugcPostData, videoData, mapB4);
+                String strB3 = B(videoData, mapB4);
+                String strV3 = v(videoData, mapB4, z3);
+                boolean zE3 = E(videoData, mapB4, z3);
+                if (videoDetailVideoData3 != null) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                if (videoContentType8 != null) {
+                    numValueOf = Integer.valueOf(videoContentType8.getValue());
+                } else {
+                    numValueOf = null;
+                }
+                if (videoTagInfo2 != null) {
+                    strD = d(mapB4);
+                } else {
+                    strD = d(mapB4);
+                }
+                String str319 = strD;
+                if (z19) {
+                    str8 = "图文";
+                } else {
+                    str8 = null;
+                }
+                LongPressAction longPressAction4 = cellViewData.cellLongPressAction;
+                dislikeTargetType = cellViewData.dislikeTargetType;
+                if (dislikeTargetType != null) {
+                    numValueOf2 = Integer.valueOf(dislikeTargetType.getValue());
+                } else {
+                    numValueOf2 = null;
+                }
+                boolean z212 = z3;
+                long j9 = jLongValue2;
+                String str42 = str17;
+                return new pv5.c(string, str7, strG3, i3, j9, str42, str315, fW3, str34, str34, str317, str318, listG3, listH3, listI3, strF3, strE3, jY3, z211, jM, jA3, strB3, strV3, zE3, z18, z212, z10, lVar2, str316, numValueOf, str3, z29, j8, j3, z210, str319, videoTagInfo2, str8, longPressAction4, numValueOf2, null, null, null, new pv5.i(str, string, i3, j9, str42, (String) linkedHashMap.get("log_id"), (Map<String, String>) mapA), cellViewData, 0, 1792);
+            }
+            z3 = true;
+            if (lVar != null) {
+                videoDetailVideoData = null;
+                z4 = true;
+            } else {
+                if (videoData != null) {
+                    videoContentType3 = videoData.contentType;
+                } else {
+                    videoContentType3 = null;
+                }
+                if (videoContentType3 == videoContentType7) {
+                    videoDetailVideoData = null;
+                    z4 = true;
+                } else {
+                    if (videoData != null) {
+                        videoContentType4 = videoData.contentType;
+                    } else {
+                        videoContentType4 = null;
+                    }
+                    if (videoContentType4 != VideoContentType.Video1ColPushBookVideo) {
+                        if (videoData != null) {
+                            videoDetailVideoData = null;
+                        } else {
+                            videoDetailVideoData = null;
+                        }
+                        if (!z15) {
+                            z4 = false;
+                        }
+                    } else {
+                        videoDetailVideoData = null;
+                    }
+                    z4 = true;
+                }
+            }
+            if (z4) {
+                lVar2 = videoDetailVideoData;
+            } else {
+                lVar2 = videoDetailVideoData;
+            }
+            if (videoData != null) {
+                videoDetailVideoData2 = videoData.highlight;
+            } else {
+                videoDetailVideoData2 = videoDetailVideoData;
+            }
+            if (videoDetailVideoData2 == null) {
+                z5 = true;
+            } else {
+                z5 = true;
+            }
+            if (playCoverInfo != null) {
+                jCoerceAtLeast = RangesKt.coerceAtLeast(playCoverInfo.startTime, 0L);
+            } else if (videoData != null) {
+                jCoerceAtLeast = 0;
+            } else {
+                jCoerceAtLeast = 0;
+            }
+            if (playCoverInfo != null) {
+                lValueOf3 = Long.valueOf(playCoverInfo.secondLimit);
+                if (lValueOf3.longValue() > 0) {
+                    z14 = true;
+                } else {
+                    z14 = false;
+                }
+                if (!z14) {
+                    lValueOf3 = null;
+                }
+                if (lValueOf3 != null) {
+                    jLongValue = lValueOf3.longValue();
+                } else {
+                    if (videoData != null) {
+                        lValueOf = Long.valueOf(autoPlayData.duration);
+                        if (lValueOf.longValue() > 0) {
+                            z6 = true;
+                        } else {
+                            z6 = false;
+                        }
+                        if (!z6) {
+                            lValueOf = null;
+                        }
+                        if (lValueOf != null) {
+                            jLongValue = lValueOf.longValue();
+                        }
+                    }
+                    j3 = 15000;
+                }
+                j3 = jLongValue * 1000;
+            } else {
+                if (videoData != null) {
+                    lValueOf = Long.valueOf(autoPlayData.duration);
+                    if (lValueOf.longValue() > 0) {
+                        z6 = true;
+                    } else {
+                        z6 = false;
+                    }
+                    if (!z6) {
+                        lValueOf = null;
+                    }
+                    if (lValueOf != null) {
+                        jLongValue = lValueOf.longValue();
+                        j3 = jLongValue * 1000;
+                    }
+                }
+                j3 = 15000;
+            }
+            videoDetailVideoData3 = lVar;
+            if (videoData == null) {
+            }
+            if (z7) {
+                z8 = true;
+            } else {
+                z8 = true;
+            }
+            if (videoData != null) {
+                videoDetailVideoData4 = videoData.videoDetail;
+                if (videoDetailVideoData4 != null) {
+                    videoData3 = null;
+                } else {
+                    videoData3 = null;
+                }
+                hi5.j jVar4 = hi5.j.a;
+                StringBuilder sb9 = new StringBuilder("map video item id=");
+                sb9.append(string);
+                sb9.append(" seriesId=");
+                sb9.append(videoData.seriesId);
+                sb9.append(" vid=");
+                sb9.append(videoData.vid);
+                sb9.append(" highlight=");
+                sb9.append(z5);
+                sb9.append(" highlightVid=");
+                videoHighlight2 = videoData.highlight;
+                if (videoHighlight2 != null) {
+                    lValueOf2 = Long.valueOf(videoHighlight2.vid);
+                } else {
+                    lValueOf2 = null;
+                }
+                sb9.append(lValueOf2);
+                sb9.append(" autoPlayVid=");
+                sb9.append(strG);
+                sb9.append(" contentType=");
+                videoContentType2 = videoData.contentType;
+                if (videoContentType2 != null) {
+                    objValueOf = Integer.valueOf(videoContentType2.getValue());
+                } else {
+                    objValueOf = "null";
+                }
+                sb9.append(objValueOf);
+                sb9.append(" highlightStart=");
+                sb9.append(jCoerceAtLeast);
+                sb9.append(" supportAutoPlay=");
+                sb9.append(z8);
+                sb9.append(" autoPlayDurationMs=");
+                sb9.append(j3);
+                sb9.append(" videoModelEmpty=");
+                if (str3 != null) {
+                    z11 = true;
+                } else {
+                    z11 = true;
+                }
+                sb9.append(z11);
+                sb9.append(" outerVideoModelEmpty=");
+                str9 = videoData.videoModel;
+                if (str9 != null) {
+                    z12 = true;
+                } else {
+                    z12 = true;
+                }
+                sb9.append(z12);
+                sb9.append(" detailVideoListSize=");
+                videoDetailVideoData5 = videoData.videoDetail;
+                if (videoDetailVideoData5 != null) {
+                    size = 0;
+                } else {
+                    size = 0;
+                }
+                sb9.append(size);
+                sb9.append(" detailFirstVid=");
+                if (videoData3 != null) {
+                    str10 = videoData3.vid;
+                } else {
+                    str10 = null;
+                }
+                sb9.append(str10);
+                sb9.append(" detailFirstVideoModelEmpty=");
+                if (videoData3 != null) {
+                    str11 = videoData3.videoModel;
+                } else {
+                    str11 = null;
+                }
+                if (str11 != null) {
+                    z13 = true;
+                } else {
+                    z13 = true;
+                }
+                sb9.append(z13);
+                sb9.append(" playCoverInfoSize=");
+                list3 = videoData.playCoverInfoList;
+                if (list3 != null) {
+                    size2 = list3.size();
+                } else {
+                    size2 = 0;
+                }
+                sb9.append(size2);
+                sb9.append(" playCoverFirstVid=");
+                if (playCoverInfo != null) {
+                    str12 = playCoverInfo.vid;
+                } else {
+                    str12 = null;
+                }
+                sb9.append(str12);
+                sb9.append(" playCoverStart=");
+                if (playCoverInfo != null) {
+                    numValueOf3 = Integer.valueOf(playCoverInfo.startTime);
+                } else {
+                    numValueOf3 = null;
+                }
+                sb9.append(numValueOf3);
+                sb9.append(" playCoverEnd=");
+                if (playCoverInfo != null) {
+                    numValueOf4 = Integer.valueOf(playCoverInfo.endTime);
+                } else {
+                    numValueOf4 = null;
+                }
+                sb9.append(numValueOf4);
+                sb9.append(" playCoverSecondLimit=");
+                if (playCoverInfo != null) {
+                    numValueOf5 = Integer.valueOf(playCoverInfo.secondLimit);
+                } else {
+                    numValueOf5 = null;
+                }
+                sb9.append(numValueOf5);
+                sb9.append(" playCoverStyle=");
+                if (playCoverInfo != null) {
+                    numValueOf6 = null;
+                } else {
+                    numValueOf6 = null;
+                }
+                sb9.append(numValueOf6);
+                sb9.append(" playStrategy=");
+                if (playCoverInfo != null) {
+                    numValueOf7 = null;
+                } else {
+                    numValueOf7 = null;
+                }
+                sb9.append(numValueOf7);
+                sb9.append(" startPlayStrategy=");
+                if (playCoverInfo != null) {
+                    startPlayStrategy = playCoverInfo.startPlayStrategy;
+                } else {
+                    startPlayStrategy = null;
+                }
+                sb9.append(startPlayStrategy);
+                sb9.append(" displayDim=");
+                DisplayDim displayDim4 = videoData.displayDim;
+                sb9.append(displayDim4 != null ? Integer.valueOf(displayDim4.getValue()) : "null");
+                sb9.append(" showPlayIcon=");
+                sb9.append(videoData.showPlayIcon);
+                sb9.append(" forceVid=");
+                sb9.append(videoData.forceVid);
+                String string8 = sb9.toString();
+                jVar4.getClass();
+                hi5.j.d("StaggeredRecommendMapper", string8);
+            }
+            str6 = (String) linkedHashMap.get("title");
+            if (str6 != null) {
+                str7 = str6;
+            } else if (str17 == null) {
+                str7 = str5;
+            } else {
+                str7 = str17;
+            }
+            if (videoData != null) {
+                strG2 = (String) linkedHashMap.get("cover");
+            } else {
+                strG2 = (String) linkedHashMap.get("cover");
+            }
+            String str3110 = strG2;
+            if (cellViewData.showType == ShowType.VideoDoubleColPUGC) {
+                z9 = true;
+            } else {
+                z9 = false;
+            }
+            long j10 = jCoerceAtLeast;
+            String str3111 = strG;
+            videoTagInfo2 = videoTagInfo;
+            boolean z213 = z5;
+            boolean z214 = z8;
+            float fW4 = w(ugcPostData2, videoData, mapB4, z3, z19, z9);
+            String str3112 = (String) linkedHashMap.get("author_avatar");
+            String str3113 = (String) linkedHashMap.get("author_id");
+            List<pv5.j> listG4 = g(mapB4);
+            List<SecondaryInfo> listH4 = h(videoData, mapB4);
+            List<pv5.h> listI4 = i(videoData, mapB4);
+            String strF4 = f(mapB4);
+            String strE4 = e(mapB4);
+            ugcPostData = ugcPostData2;
+            long jY4 = y(ugcPostData, videoData, mapB4);
+            boolean z215 = z(ugcPostData, videoData, mapB4);
+            if (ugcPostData != null) {
+                jM = ugcPostData.replyCnt;
+            } else {
+                jM = m(V, mapB4);
+            }
+            long jA4 = A(ugcPostData, videoData, mapB4);
+            String strB4 = B(videoData, mapB4);
+            String strV4 = v(videoData, mapB4, z3);
+            boolean zE4 = E(videoData, mapB4, z3);
+            if (videoDetailVideoData3 != null) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if (videoContentType8 != null) {
+                numValueOf = Integer.valueOf(videoContentType8.getValue());
+            } else {
+                numValueOf = null;
+            }
+            if (videoTagInfo2 != null) {
+                strD = d(mapB4);
+            } else {
+                strD = d(mapB4);
+            }
+            String str3114 = strD;
+            if (z19) {
+                str8 = "图文";
+            } else {
+                str8 = null;
+            }
+            LongPressAction longPressAction5 = cellViewData.cellLongPressAction;
+            dislikeTargetType = cellViewData.dislikeTargetType;
+            if (dislikeTargetType != null) {
+                numValueOf2 = Integer.valueOf(dislikeTargetType.getValue());
+            } else {
+                numValueOf2 = null;
+            }
+            boolean z216 = z3;
+            long j11 = jLongValue2;
+            String str43 = str17;
+            return new pv5.c(string, str7, strG3, i3, j11, str43, str3110, fW4, str34, str34, str3112, str3113, listG4, listH4, listI4, strF4, strE4, jY4, z215, jM, jA4, strB4, strV4, zE4, z18, z216, z10, lVar2, str3111, numValueOf, str3, z213, j10, j3, z214, str3114, videoTagInfo2, str8, longPressAction5, numValueOf2, null, null, null, new pv5.i(str, string, i3, j11, str43, (String) linkedHashMap.get("log_id"), (Map<String, String>) mapA), cellViewData, 0, 1792);
+        }
+        videoTagInfo = videoTagInfoX;
+        str5 = "";
+        i3 = value;
+        z3 = true;
+        if (lVar != null) {
+            videoDetailVideoData = null;
+            z4 = true;
+        } else {
+            if (videoData != null) {
+                videoContentType3 = videoData.contentType;
+            } else {
+                videoContentType3 = null;
+            }
+            if (videoContentType3 == videoContentType7) {
+                videoDetailVideoData = null;
+                z4 = true;
+            } else {
+                if (videoData != null) {
+                    videoContentType4 = videoData.contentType;
+                } else {
+                    videoContentType4 = null;
+                }
+                if (videoContentType4 != VideoContentType.Video1ColPushBookVideo) {
+                    if (videoData != null) {
+                        videoDetailVideoData = null;
+                    } else {
+                        videoDetailVideoData = null;
+                    }
+                    if (!z15) {
+                        z4 = false;
+                    }
+                } else {
+                    videoDetailVideoData = null;
+                }
+                z4 = true;
+            }
+        }
+        if (z4) {
+            lVar2 = videoDetailVideoData;
+        } else {
+            lVar2 = videoDetailVideoData;
+        }
+        if (videoData != null) {
+            videoDetailVideoData2 = videoData.highlight;
+        } else {
+            videoDetailVideoData2 = videoDetailVideoData;
+        }
+        if (videoDetailVideoData2 == null) {
+            z5 = true;
+        } else {
+            z5 = true;
+        }
+        if (playCoverInfo != null) {
+            jCoerceAtLeast = RangesKt.coerceAtLeast(playCoverInfo.startTime, 0L);
+        } else if (videoData != null) {
+            jCoerceAtLeast = 0;
+        } else {
+            jCoerceAtLeast = 0;
+        }
+        if (playCoverInfo != null) {
+            lValueOf3 = Long.valueOf(playCoverInfo.secondLimit);
+            if (lValueOf3.longValue() > 0) {
+                z14 = true;
+            } else {
+                z14 = false;
+            }
+            if (!z14) {
+                lValueOf3 = null;
+            }
+            if (lValueOf3 != null) {
+                jLongValue = lValueOf3.longValue();
+            } else {
+                if (videoData != null) {
+                    lValueOf = Long.valueOf(autoPlayData.duration);
+                    if (lValueOf.longValue() > 0) {
+                        z6 = true;
+                    } else {
+                        z6 = false;
+                    }
+                    if (!z6) {
+                        lValueOf = null;
+                    }
+                    if (lValueOf != null) {
+                        jLongValue = lValueOf.longValue();
+                    }
+                }
+                j3 = 15000;
+            }
+            j3 = jLongValue * 1000;
+        } else {
+            if (videoData != null) {
+                lValueOf = Long.valueOf(autoPlayData.duration);
+                if (lValueOf.longValue() > 0) {
+                    z6 = true;
+                } else {
+                    z6 = false;
+                }
+                if (!z6) {
+                    lValueOf = null;
+                }
+                if (lValueOf != null) {
+                    jLongValue = lValueOf.longValue();
+                    j3 = jLongValue * 1000;
+                }
+            }
+            j3 = 15000;
+        }
+        videoDetailVideoData3 = lVar;
+        if (videoData == null) {
+        }
+        if (z7) {
+            z8 = true;
+        } else {
+            z8 = true;
+        }
+        if (videoData != null) {
+            videoDetailVideoData4 = videoData.videoDetail;
+            if (videoDetailVideoData4 != null) {
+                videoData3 = null;
+            } else {
+                videoData3 = null;
+            }
+            hi5.j jVar5 = hi5.j.a;
+            StringBuilder sb10 = new StringBuilder("map video item id=");
+            sb10.append(string);
+            sb10.append(" seriesId=");
+            sb10.append(videoData.seriesId);
+            sb10.append(" vid=");
+            sb10.append(videoData.vid);
+            sb10.append(" highlight=");
+            sb10.append(z5);
+            sb10.append(" highlightVid=");
+            videoHighlight2 = videoData.highlight;
+            if (videoHighlight2 != null) {
+                lValueOf2 = Long.valueOf(videoHighlight2.vid);
+            } else {
+                lValueOf2 = null;
+            }
+            sb10.append(lValueOf2);
+            sb10.append(" autoPlayVid=");
+            sb10.append(strG);
+            sb10.append(" contentType=");
+            videoContentType2 = videoData.contentType;
+            if (videoContentType2 != null) {
+                objValueOf = Integer.valueOf(videoContentType2.getValue());
+            } else {
+                objValueOf = "null";
+            }
+            sb10.append(objValueOf);
+            sb10.append(" highlightStart=");
+            sb10.append(jCoerceAtLeast);
+            sb10.append(" supportAutoPlay=");
+            sb10.append(z8);
+            sb10.append(" autoPlayDurationMs=");
+            sb10.append(j3);
+            sb10.append(" videoModelEmpty=");
+            if (str3 != null) {
+                z11 = true;
+            } else {
+                z11 = true;
+            }
+            sb10.append(z11);
+            sb10.append(" outerVideoModelEmpty=");
+            str9 = videoData.videoModel;
+            if (str9 != null) {
+                z12 = true;
+            } else {
+                z12 = true;
+            }
+            sb10.append(z12);
+            sb10.append(" detailVideoListSize=");
+            videoDetailVideoData5 = videoData.videoDetail;
+            if (videoDetailVideoData5 != null) {
+                size = 0;
+            } else {
+                size = 0;
+            }
+            sb10.append(size);
+            sb10.append(" detailFirstVid=");
+            if (videoData3 != null) {
+                str10 = videoData3.vid;
+            } else {
+                str10 = null;
+            }
+            sb10.append(str10);
+            sb10.append(" detailFirstVideoModelEmpty=");
+            if (videoData3 != null) {
+                str11 = videoData3.videoModel;
+            } else {
+                str11 = null;
+            }
+            if (str11 != null) {
+                z13 = true;
+            } else {
+                z13 = true;
+            }
+            sb10.append(z13);
+            sb10.append(" playCoverInfoSize=");
+            list3 = videoData.playCoverInfoList;
+            if (list3 != null) {
+                size2 = list3.size();
+            } else {
+                size2 = 0;
+            }
+            sb10.append(size2);
+            sb10.append(" playCoverFirstVid=");
+            if (playCoverInfo != null) {
+                str12 = playCoverInfo.vid;
+            } else {
+                str12 = null;
+            }
+            sb10.append(str12);
+            sb10.append(" playCoverStart=");
+            if (playCoverInfo != null) {
+                numValueOf3 = Integer.valueOf(playCoverInfo.startTime);
+            } else {
+                numValueOf3 = null;
+            }
+            sb10.append(numValueOf3);
+            sb10.append(" playCoverEnd=");
+            if (playCoverInfo != null) {
+                numValueOf4 = Integer.valueOf(playCoverInfo.endTime);
+            } else {
+                numValueOf4 = null;
+            }
+            sb10.append(numValueOf4);
+            sb10.append(" playCoverSecondLimit=");
+            if (playCoverInfo != null) {
+                numValueOf5 = Integer.valueOf(playCoverInfo.secondLimit);
+            } else {
+                numValueOf5 = null;
+            }
+            sb10.append(numValueOf5);
+            sb10.append(" playCoverStyle=");
+            if (playCoverInfo != null) {
+                numValueOf6 = null;
+            } else {
+                numValueOf6 = null;
+            }
+            sb10.append(numValueOf6);
+            sb10.append(" playStrategy=");
+            if (playCoverInfo != null) {
+                numValueOf7 = null;
+            } else {
+                numValueOf7 = null;
+            }
+            sb10.append(numValueOf7);
+            sb10.append(" startPlayStrategy=");
+            if (playCoverInfo != null) {
+                startPlayStrategy = playCoverInfo.startPlayStrategy;
+            } else {
+                startPlayStrategy = null;
+            }
+            sb10.append(startPlayStrategy);
+            sb10.append(" displayDim=");
+            DisplayDim displayDim5 = videoData.displayDim;
+            sb10.append(displayDim5 != null ? Integer.valueOf(displayDim5.getValue()) : "null");
+            sb10.append(" showPlayIcon=");
+            sb10.append(videoData.showPlayIcon);
+            sb10.append(" forceVid=");
+            sb10.append(videoData.forceVid);
+            String string9 = sb10.toString();
+            jVar5.getClass();
+            hi5.j.d("StaggeredRecommendMapper", string9);
+        }
+        str6 = (String) linkedHashMap.get("title");
+        if (str6 != null) {
+            str7 = str6;
+        } else if (str17 == null) {
+            str7 = str5;
+        } else {
+            str7 = str17;
+        }
+        if (videoData != null) {
+            strG2 = (String) linkedHashMap.get("cover");
+        } else {
+            strG2 = (String) linkedHashMap.get("cover");
+        }
+        String str3115 = strG2;
+        if (cellViewData.showType == ShowType.VideoDoubleColPUGC) {
+            z9 = true;
+        } else {
+            z9 = false;
+        }
+        long j12 = jCoerceAtLeast;
+        String str3116 = strG;
+        videoTagInfo2 = videoTagInfo;
+        boolean z217 = z5;
+        boolean z218 = z8;
+        float fW5 = w(ugcPostData2, videoData, mapB4, z3, z19, z9);
+        String str3117 = (String) linkedHashMap.get("author_avatar");
+        String str3118 = (String) linkedHashMap.get("author_id");
+        List<pv5.j> listG5 = g(mapB4);
+        List<SecondaryInfo> listH5 = h(videoData, mapB4);
+        List<pv5.h> listI5 = i(videoData, mapB4);
+        String strF5 = f(mapB4);
+        String strE5 = e(mapB4);
+        ugcPostData = ugcPostData2;
+        long jY5 = y(ugcPostData, videoData, mapB4);
+        boolean z219 = z(ugcPostData, videoData, mapB4);
+        if (ugcPostData != null) {
+            jM = ugcPostData.replyCnt;
+        } else {
+            jM = m(V, mapB4);
+        }
+        long jA5 = A(ugcPostData, videoData, mapB4);
+        String strB5 = B(videoData, mapB4);
+        String strV5 = v(videoData, mapB4, z3);
+        boolean zE5 = E(videoData, mapB4, z3);
+        if (videoDetailVideoData3 != null) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (videoContentType8 != null) {
+            numValueOf = Integer.valueOf(videoContentType8.getValue());
+        } else {
+            numValueOf = null;
+        }
+        if (videoTagInfo2 != null) {
+            strD = d(mapB4);
+        } else {
+            strD = d(mapB4);
+        }
+        String str3119 = strD;
+        if (z19) {
+            str8 = "图文";
+        } else {
+            str8 = null;
+        }
+        LongPressAction longPressAction6 = cellViewData.cellLongPressAction;
+        dislikeTargetType = cellViewData.dislikeTargetType;
+        if (dislikeTargetType != null) {
+            numValueOf2 = Integer.valueOf(dislikeTargetType.getValue());
+        } else {
+            numValueOf2 = null;
+        }
+        boolean z2110 = z3;
+        long j13 = jLongValue2;
+        String str44 = str17;
+        return new pv5.c(string, str7, strG3, i3, j13, str44, str3115, fW5, str34, str34, str3117, str3118, listG5, listH5, listI5, strF5, strE5, jY5, z219, jM, jA5, strB5, strV5, zE5, z18, z2110, z10, lVar2, str3116, numValueOf, str3, z217, j12, j3, z218, str3119, videoTagInfo2, str8, longPressAction6, numValueOf2, null, null, null, new pv5.i(str, string, i3, j13, str44, (String) linkedHashMap.get("log_id"), (Map<String, String>) mapA), cellViewData, 0, 1792);
+    }

@@ -1,0 +1,9 @@
+[
+  {
+    "dex": "classes25.dex",
+    "class": "Ltd3/a;",
+    "interfaces": [
+      "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-21T00:00:23.377986+00:00",
+  "method": "Original redirect query retained; only vid and share_toast_vid replaced by chapter IDs returned by the page. No media URL or authorization parameters modified.",
+  "results": [
+    {
+      "status": 200,
+      "requested_episode": 16,
+      "requested_vid": "7693807829781580825",
+      "used_chapter_id": "7693807842205125657",
+      "chapter_order": 1,
+      "title": "夜晚的答案",
+      "landingFirstChapterEnabled": true,
+      "media_start": [
+        "0"
+      ],
+      "media_end": [
+        "30"
+      ]
+    },
+    {
+      "status": 200,
+      "requested_episode": 31,
+      "requested_vid": "7693807856054717465",
+      "used_chapter_id": "7693807842205125657",
+      "chapter_order": 1,
+      "title": "夜晚的答案",
+      "landingFirstChapterEnabled": true,
+      "media_start": [
+        "0"
+      ],
+      "media_end": [
+        "30"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+    #4              : (in Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController;)
+      name          : 'c'
+      type          : '()V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 0
+      outs          : 5
+      insns size    : 99 16-bit code units
+5f1788:                                        |[5f1788] com.dragon.read.novelvideo.shortseries.PlayerStrategyController.c:()V
+5f1798: 6200 ab36                              |0000: sget-object v0, Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController;.e:Lcom/ss/android/ugc/bytex/taskmonitor/proxy/HandlerDelegate; // field@36ab
+5f179c: 6201 b336                              |0002: sget-object v1, Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController;.m:Lcom/dragon/read/novelvideo/shortseries/a; // field@36b3
+5f17a0: 6e20 7502 1000                         |0004: invoke-virtual {v0, v1}, Landroid/os/Handler;.removeCallbacks:(Ljava/lang/Runnable;)V // method@0275
+5f17a6: 2200 132f                              |0007: new-instance v0, Lcom/dragon/read/rpc/model/PlayStrategyRequest; // type@2f13
+5f17aa: 1201                                   |0009: const/4 v1, #int 0 // #0
+5f17ac: 1202                                   |000a: const/4 v2, #int 0 // #0
+5f17ae: 1233                                   |000b: const/4 v3, #int 3 // #3
+5f17b0: 7051 69b7 1032                         |000c: invoke-direct {v0, v1, v2, v3, v1}, Lcom/dragon/read/rpc/model/PlayStrategyRequest;.<init>:(Lcom/dragon/read/rpc/model/DeviceLevel;IILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@b769
+5f17b6: 6201 a736                              |000f: sget-object v1, Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController;.a:Lcom/dragon/read/novelvideo/shortseries/PlayerStrategyController; // field@36a7
+5f17ba: 6e10 2ccd 0100                         |0011: invoke-virtual {v1}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@cd2c
+5f17c0: 6201 1906                              |0014: sget-object v1, Lcom/dragon/read/NsUtilsDepend;.IMPL:Lcom/dragon/read/NsUtilsDepend; // field@0619
+5f17c4: 7210 730e 0100                         |0016: invoke-interface {v1}, Lcom/dragon/read/NsUtilsDepend;.isLowDevice:()Z // method@0e73
+5f17ca: 0a03                                   |0019: move-result v3
+5f17cc: 3803 0500                              |001a: if-eqz v3, 001f // +0005
+5f17d0: 6201 c1b3                              |001c: sget-object v1, Lcom/dragon/read/rpc/model/DeviceLevel;.Low:Lcom/dragon/read/rpc/model/DeviceLevel; // field@b3c1
+5f17d4: 280c                                   |001e: goto 002a // +000c
+5f17d6: 7210 740e 0100                         |001f: invoke-interface {v1}, Lcom/dragon/read/NsUtilsDepend;.isMiddleLowDevice:()Z // method@0e74
+5f17dc: 0a01                                   |0022: move-result v1
+5f17de: 3801 0500                              |0023: if-eqz v1, 0028 // +0005
+5f17e2: 6201 c2b3                              |0025: sget-object v1, Lcom/dragon/read/rpc/model/DeviceLevel;.Middle:Lcom/dragon/read/rpc/model/DeviceLevel; // field@b3c2
+5f17e6: 2803                                   |0027: goto 002a // +0003
+5f17e8: 6201 c0b3                              |0028: sget-object v1, Lcom/dragon/read/rpc/model/DeviceLevel;.High:Lcom/dragon/read/rpc/model/DeviceLevel; // field@b3c0
+5f17ec: 5b01 ecb4                              |002a: iput-object v1, v0, Lcom/dragon/read/rpc/model/PlayStrategyRequest;.deviceLevel:Lcom/dragon/read/rpc/model/DeviceLevel; // field@b4ec
+5f17f0: 5902 edb4                              |002c: iput v2, v0, Lcom/dragon/read/rpc/model/PlayStrategyRequest;.deviceScore:I // field@b4ed
+5f17f4: 6001 7ab7                              |002e: sget v1, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@b77a
+5f17f8: 7120 8fbb 2000                         |0030: invoke-static {v0, v2}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@bb8f
+5f17fe: 7100 d7b7 0000                         |0033: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@b7d7
+5f1804: 0c01                                   |0036: move-result-object v1
+5f1806: 7220 d6b7 0100                         |0037: invoke-interface {v1, v0}, Lcom/dragon/read/rpc/rpc/q7$a;.playStrategyRxJava:(Lcom/dragon/read/rpc/model/PlayStrategyRequest;)Lio/reactivex/Observable; // method@b7d6
+5f180c: 0c00                                   |003a: move-result-object v0
+5f180e: 7100 d5cb 0000                         |003b: invoke-static {}, Lio/reactivex/schedulers/Schedulers;.io:()Lio/reactivex/Scheduler; // method@cbd5
+5f1814: 0c01                                   |003e: move-result-object v1
+5f1816: 6e20 a9cb 1000                         |003f: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.subscribeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@cba9
+5f181c: 0c00                                   |0042: move-result-object v0
+5f181e: 7100 cbcb 0000                         |0043: invoke-static {}, Lio/reactivex/android/schedulers/AndroidSchedulers;.mainThread:()Lio/reactivex/Scheduler; // method@cbcb
+5f1824: 0c01                                   |0046: move-result-object v1
+5f1826: 6e20 9fcb 1000                         |0047: invoke-virtual {v0, v1}, Lio/reactivex/Observable;.observeOn:(Lio/reactivex/Scheduler;)Lio/reactivex/Observable; // method@cb9f
+5f182c: 0c00                                   |004a: move-result-object v0
+5f182e: 2201 5114                              |004b: new-instance v1, Lcom/dragon/read/novelvideo/shortseries/b; // type@1451
+5f1832: 7010 3c37 0100                         |004d: invoke-direct {v1}, Lcom/dragon/read/novelvideo/shortseries/b;.<init>:()V // method@373c
+5f1838: 2202 5214                              |0050: new-instance v2, Lcom/dragon/read/novelvideo/shortseries/c; // type@1452
+5f183c: 7020 3e37 1200                         |0052: invoke-direct {v2, v1}, Lcom/dragon/read/novelvideo/shortseries/c;.<init>:(Lcom/dragon/read/novelvideo/shortseries/b;)V // method@373e
+5f1842: 2201 5314                              |0055: new-instance v1, Lcom/dragon/read/novelvideo/shortseries/d; // type@1453
+5f1846: 7010 4037 0100                         |0057: invoke-direct {v1}, Lcom/dragon/read/novelvideo/shortseries/d;.<init>:()V // method@3740
+5f184c: 2203 5414                              |005a: new-instance v3, Lcom/dragon/read/novelvideo/shortseries/e; // type@1454
+5f1850: 7020 4237 1300                         |005c: invoke-direct {v3, v1}, Lcom/dragon/read/novelvideo/shortseries/e;.<init>:(Lcom/dragon/read/novelvideo/shortseries/d;)V // method@3742
+5f1856: 6e30 a7cb 2003                         |005f: invoke-virtual {v0, v2, v3}, Lio/reactivex/Observable;.subscribe:(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable; // method@cba7
+5f185c: 0e00                                   |0062: return-void
+      catches       : (none)
+

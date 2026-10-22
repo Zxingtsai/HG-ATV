@@ -1,0 +1,32 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "unsigned_analysis_only": true,
+  "members": [
+    {
+      "name": "AndroidManifest.xml",
+      "sha256": "f9f43da3d8d110694f1be9c37afa39356655e5f1476cc077da3bb5ddfef94209",
+      "bytes": 424412
+    },
+    {
+      "name": "resources.arsc",
+      "sha256": "debaa17d7720ffee09c632d81b809e79a86635e46a8e4eb9777baff92661875f",
+      "bytes": 4591580
+    },
+    {
+      "name": "classes15.dex",
+      "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "bytes": 9799700
+    },
+    {
+      "name": "classes20.dex",
+      "sha256": "22f7c0cb694c272e2b65a299ca9b5bb4aa3a95ff63df3f6e8a967bb7fd0b6a82",
+      "bytes": 8700988
+    },
+    {
+      "name": "classes25.dex",
+      "sha256": "e556b98ae9f13cadf9c032277d09f1e01746f34633e7f2038a922895beee9a60",
+      "bytes": 11361016
+    }
+  ],
+  "carrier_sha256": "eacc701a27dca016cdf4aa4cb307369663dccfd554ff30d6a89ee8b12e85b32f"
+}

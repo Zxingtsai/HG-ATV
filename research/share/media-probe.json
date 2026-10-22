@@ -1,0 +1,26 @@
+{
+    "programs": [
+
+    ],
+    "stream_groups": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "hevc",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "duration": "30.000000"
+        },
+        {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "29.976961"
+        }
+    ],
+    "format": {
+        "duration": "30.100000",
+        "size": "2715891"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "item_id": "7690963495944211481",
+  "source": "public 360p endpoint",
+  "method": "Complete normal HTTP file download followed by full FFmpeg decode",
+  "error_type": "HTTPError"
+}

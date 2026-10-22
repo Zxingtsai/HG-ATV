@@ -1,0 +1,90 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "targets": [
+    [
+      "Lpr4/f;",
+      "<init>"
+    ]
+  ],
+  "limitations": "Raw code-unit pattern scan; candidates only until SDK dexdump confirms instruction boundaries.",
+  "candidates": [
+    {
+      "dex": "classes17.dex",
+      "dex_sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+      "caller_class": "Lcom/dragon/read/component/biz/impl/seriesmall/SeriesMallFragment;",
+      "caller_method": "ji",
+      "caller_method_id": 11989,
+      "code_unit_candidate": 56,
+      "target_method_id": 57719,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    },
+    {
+      "dex": "classes17.dex",
+      "dex_sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+      "caller_class": "Lrh4/h0;",
+      "caller_method": "d",
+      "caller_method_id": 58175,
+      "code_unit_candidate": 56,
+      "target_method_id": 57719,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lpr4/f$a;",
+      "caller_method": "a",
+      "caller_method_id": 57741,
+      "code_unit_candidate": 5,
+      "target_method_id": 57745,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    },
+    {
+      "dex": "classes3.dex",
+      "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "caller_class": "Lpr4/f$a;",
+      "caller_method": "b",
+      "caller_method_id": 57742,
+      "code_unit_candidate": 5,
+      "target_method_id": 57745,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "Lax4/c2;",
+      "caller_method": "s",
+      "caller_method_id": 3754,
+      "code_unit_candidate": 170,
+      "target_method_id": 53602,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    },
+    {
+      "dex": "classes4.dex",
+      "dex_sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "caller_class": "Lcom/dragon/read/component/shortvideo/impl/NsShortVideoImpl;",
+      "caller_method": "prefetchMultiVideoModel",
+      "caller_method_id": 9390,
+      "code_unit_candidate": 51,
+      "target_method_id": 53602,
+      "target": [
+        "Lpr4/f;",
+        "<init>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_26f1a66c53efa988edd3aa51b4e568c7b1de76df386dd454e9c9b2c62a61ddf4\",\"subject\":{\"name\":\"analysis-feed-slice.apk\",\"digest\":{\"sha256\":\"7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d\"},\"local_path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"class_count\":13023,\"resource_count\":4,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":2147483648,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;)V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.CandidateDataType, boolean): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/CandidateDataType;Z)V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.LongPressAction): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/LongPressAction;)V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(com.dragon.read.video.VideoDetailModel, com.dragon.read.rpc.model.CandidateDataType, com.dragon.read.rpc.model.LongPressAction): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/rpc/model/CandidateDataType;Lcom/dragon/read/rpc/model/LongPressAction;)V\\\"},{\\\"signature\\\":\\\"toString(): java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"toString\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()Ljava/lang/String;\\\"}],\\\"method_count\\\":6,\\\"inner_class_count\\\":5,\\\"inner_classes\\\":[\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.BookData\\\",\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoCategoryDataModel\\\",\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\\\",\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoDataWrapper\\\",\\\"com.dragon.read.pages.bookmall.model.VideoTabModel.a\\\"],\\\"name\\\":\\\"VideoTabModel\\\",\\\"full_name\\\":\\\"com.dragon.read.pages.bookmall.model.VideoTabModel\\\",\\\"field_count\\\":16,\\\"fields\\\":[{\\\"type\\\":\\\"com.dragon.read.rpc.model.CandidateDataType\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"candidateDataType\\\"},{\\\"type\\\":\\\"java.util.Map\\\\u003cjava.lang.String, java.lang.String\\\\u003e\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"extraDataMap\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.UserResearch\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"holderUserResearch\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"index\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"isShown\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.LongPressAction\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"longPressAction\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.MaskInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"maskInfo\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.PushStartInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"pushStartInfo\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.RecFilterInfo\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recFilterInfo\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"recommendType\\\"},{\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"serialVersionUID\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"seriesCellStyle\\\"},{\\\"type\\\":\\\"com.dragon.read.rpc.model.ShowType\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"showType\\\"},{\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"useNewVideoFeedStyle\\\"},{\\\"type\\\":\\\"com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoData\\\"},{\\\"type\\\":\\\"com.dragon.read.video.VideoDetailModel\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"videoDetailModel\\\"}]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":2048},\"class_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;)V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.CandidateDataType, boolean): void\",\"overload_index\":1,\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/CandidateDataType;Z)V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.LongPressAction): void\",\"overload_index\":2,\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/LongPressAction;)V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(com.dragon.read.video.VideoDetailModel, com.dragon.read.rpc.model.CandidateDataType, com.dragon.read.rpc.model.LongPressAction): void\",\"overload_index\":3,\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/rpc/model/CandidateDataType;Lcom/dragon/read/rpc/model/LongPressAction;)V\"},{\"name\":\"toString\",\"reported_signature\":\"toString(): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"fields\":[{\"name\":\"candidateDataType\",\"reported_type\":\"com.dragon.read.rpc.model.CandidateDataType\"},{\"name\":\"extraDataMap\",\"reported_type\":\"java.util.Map<java.lang.String, java.lang.String>\"},{\"name\":\"holderUserResearch\",\"reported_type\":\"com.dragon.read.rpc.model.UserResearch\"},{\"name\":\"index\",\"reported_type\":\"int\"},{\"name\":\"isShown\",\"reported_type\":\"boolean\"},{\"name\":\"longPressAction\",\"reported_type\":\"com.dragon.read.rpc.model.LongPressAction\"},{\"name\":\"maskInfo\",\"reported_type\":\"com.dragon.read.rpc.model.MaskInfo\"},{\"name\":\"pushStartInfo\",\"reported_type\":\"com.dragon.read.rpc.model.PushStartInfo\"},{\"name\":\"recFilterInfo\",\"reported_type\":\"com.dragon.read.rpc.model.RecFilterInfo\"},{\"name\":\"recommendType\",\"reported_type\":\"int\"},{\"name\":\"serialVersionUID\",\"reported_type\":\"long\"},{\"name\":\"seriesCellStyle\",\"reported_type\":\"int\"},{\"name\":\"showType\",\"reported_type\":\"com.dragon.read.rpc.model.ShowType\"},{\"name\":\"useNewVideoFeedStyle\",\"reported_type\":\"boolean\"},{\"name\":\"videoData\",\"reported_type\":\"com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\"},{\"name\":\"videoDetailModel\",\"reported_type\":\"com.dragon.read.video.VideoDetailModel\"}],\"inner_classes\":[\"com.dragon.read.pages.bookmall.model.VideoTabModel.BookData\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoCategoryDataModel\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoDataWrapper\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.a\"]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_26f1a66c53efa988edd3aa51b4e568c7b1de76df386dd454e9c9b2c62a61ddf4",
+      "subject": {
+        "name": "analysis-feed-slice.apk",
+        "digest": {
+          "sha256": "7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d"
+        },
+        "local_path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-e8g3B0/target.apk",
+          "class_count": 13023,
+          "resource_count": 4,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.12.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;)V\"},{\"signature\":\"\\u003cinit\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.CandidateDataType, boolean): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/CandidateDataType;Z)V\"},{\"signature\":\"\\u003cinit\\u003e(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.LongPressAction): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/LongPressAction;)V\"},{\"signature\":\"\\u003cinit\\u003e(com.dragon.read.video.VideoDetailModel, com.dragon.read.rpc.model.CandidateDataType, com.dragon.read.rpc.model.LongPressAction): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/rpc/model/CandidateDataType;Lcom/dragon/read/rpc/model/LongPressAction;)V\"},{\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\"}],\"method_count\":6,\"inner_class_count\":5,\"inner_classes\":[\"com.dragon.read.pages.bookmall.model.VideoTabModel.BookData\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoCategoryDataModel\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.VideoDataWrapper\",\"com.dragon.read.pages.bookmall.model.VideoTabModel.a\"],\"name\":\"VideoTabModel\",\"full_name\":\"com.dragon.read.pages.bookmall.model.VideoTabModel\",\"field_count\":16,\"fields\":[{\"type\":\"com.dragon.read.rpc.model.CandidateDataType\",\"def_pos\":0,\"name\":\"candidateDataType\"},{\"type\":\"java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e\",\"def_pos\":0,\"name\":\"extraDataMap\"},{\"type\":\"com.dragon.read.rpc.model.UserResearch\",\"def_pos\":0,\"name\":\"holderUserResearch\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"index\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isShown\"},{\"type\":\"com.dragon.read.rpc.model.LongPressAction\",\"def_pos\":0,\"name\":\"longPressAction\"},{\"type\":\"com.dragon.read.rpc.model.MaskInfo\",\"def_pos\":0,\"name\":\"maskInfo\"},{\"type\":\"com.dragon.read.rpc.model.PushStartInfo\",\"def_pos\":0,\"name\":\"pushStartInfo\"},{\"type\":\"com.dragon.read.rpc.model.RecFilterInfo\",\"def_pos\":0,\"name\":\"recFilterInfo\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"recommendType\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"serialVersionUID\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"seriesCellStyle\"},{\"type\":\"com.dragon.read.rpc.model.ShowType\",\"def_pos\":0,\"name\":\"showType\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"useNewVideoFeedStyle\"},{\"type\":\"com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData\",\"def_pos\":0,\"name\":\"videoData\"},{\"type\":\"com.dragon.read.video.VideoDetailModel\",\"def_pos\":0,\"name\":\"videoDetailModel\"}]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 2048
+        },
+        "class_name": "com.dragon.read.pages.bookmall.model.VideoTabModel",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;)V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.CandidateDataType, boolean): void",
+            "overload_index": 1,
+            "is_constructor": true,
+            "dex_descriptor": "(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/CandidateDataType;Z)V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData, com.dragon.read.rpc.model.LongPressAction): void",
+            "overload_index": 2,
+            "is_constructor": true,
+            "dex_descriptor": "(Lcom/dragon/read/pages/bookmall/model/VideoTabModel$VideoData;Lcom/dragon/read/rpc/model/LongPressAction;)V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(com.dragon.read.video.VideoDetailModel, com.dragon.read.rpc.model.CandidateDataType, com.dragon.read.rpc.model.LongPressAction): void",
+            "overload_index": 3,
+            "is_constructor": true,
+            "dex_descriptor": "(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/rpc/model/CandidateDataType;Lcom/dragon/read/rpc/model/LongPressAction;)V"
+          },
+          {
+            "name": "toString",
+            "reported_signature": "toString(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          }
+        ],
+        "fields": [
+          {
+            "name": "candidateDataType",
+            "reported_type": "com.dragon.read.rpc.model.CandidateDataType"
+          },
+          {
+            "name": "extraDataMap",
+            "reported_type": "java.util.Map<java.lang.String, java.lang.String>"
+          },
+          {
+            "name": "holderUserResearch",
+            "reported_type": "com.dragon.read.rpc.model.UserResearch"
+          },
+          {
+            "name": "index",
+            "reported_type": "int"
+          },
+          {
+            "name": "isShown",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "longPressAction",
+            "reported_type": "com.dragon.read.rpc.model.LongPressAction"
+          },
+          {
+            "name": "maskInfo",
+            "reported_type": "com.dragon.read.rpc.model.MaskInfo"
+          },
+          {
+            "name": "pushStartInfo",
+            "reported_type": "com.dragon.read.rpc.model.PushStartInfo"
+          },
+          {
+            "name": "recFilterInfo",
+            "reported_type": "com.dragon.read.rpc.model.RecFilterInfo"
+          },
+          {
+            "name": "recommendType",
+            "reported_type": "int"
+          },
+          {
+            "name": "serialVersionUID",
+            "reported_type": "long"
+          },
+          {
+            "name": "seriesCellStyle",
+            "reported_type": "int"
+          },
+          {
+            "name": "showType",
+            "reported_type": "com.dragon.read.rpc.model.ShowType"
+          },
+          {
+            "name": "useNewVideoFeedStyle",
+            "reported_type": "boolean"
+          },
+          {
+            "name": "videoData",
+            "reported_type": "com.dragon.read.pages.bookmall.model.VideoTabModel$VideoData"
+          },
+          {
+            "name": "videoDetailModel",
+            "reported_type": "com.dragon.read.video.VideoDetailModel"
+          }
+        ],
+        "inner_classes": [
+          "com.dragon.read.pages.bookmall.model.VideoTabModel.BookData",
+          "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoCategoryDataModel",
+          "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoData",
+          "com.dragon.read.pages.bookmall.model.VideoTabModel.VideoDataWrapper",
+          "com.dragon.read.pages.bookmall.model.VideoTabModel.a"
+        ]
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}

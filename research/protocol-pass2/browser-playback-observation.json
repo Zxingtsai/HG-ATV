@@ -1,0 +1,273 @@
+{
+  "observed_at": "2026-10-21T00:48:01.892786+00:00",
+  "page_status": 200,
+  "snapshots": [
+    {
+      "video": [
+        {
+          "duration": null,
+          "currentTime": 0,
+          "readyState": 0,
+          "networkState": 2,
+          "paused": true,
+          "ended": false,
+          "width": 0,
+          "height": 0,
+          "error": null,
+          "quality": {
+            "decoded": 0,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 5
+    },
+    {
+      "video": [
+        {
+          "duration": 108.33068,
+          "currentTime": 1.260932,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "ended": false,
+          "width": 360,
+          "height": 640,
+          "error": null,
+          "quality": {
+            "decoded": 36,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 10
+    },
+    {
+      "video": [
+        {
+          "duration": 108.33068,
+          "currentTime": 6.27943,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "ended": false,
+          "width": 360,
+          "height": 640,
+          "error": null,
+          "quality": {
+            "decoded": 161,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 15
+    },
+    {
+      "video": [
+        {
+          "duration": 108.33068,
+          "currentTime": 11.289085,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "ended": false,
+          "width": 360,
+          "height": 640,
+          "error": null,
+          "quality": {
+            "decoded": 286,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 20
+    },
+    {
+      "video": [
+        {
+          "duration": 108.33068,
+          "currentTime": 16.24333,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "ended": false,
+          "width": 360,
+          "height": 640,
+          "error": null,
+          "quality": {
+            "decoded": 410,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 25
+    },
+    {
+      "video": [
+        {
+          "duration": 108.33068,
+          "currentTime": 21.258728,
+          "readyState": 4,
+          "networkState": 1,
+          "paused": false,
+          "ended": false,
+          "width": 360,
+          "height": 640,
+          "error": null,
+          "quality": {
+            "decoded": 535,
+            "dropped": 0
+          }
+        }
+      ],
+      "buttons": [
+        "",
+        "视频",
+        "评论",
+        "...展开",
+        ""
+      ],
+      "title": "军需处长的账本 第1集 | 全集在线免费观看 | 红果短剧",
+      "elapsed_seconds": 30
+    }
+  ],
+  "responses": [
+    {
+      "host": "hongguoduanju.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "p11-novel-seo.byteimg.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "lf-fe.fqnovelstatic.com",
+      "status": 200,
+      "count": 27
+    },
+    {
+      "host": "lf-dy-sourcecdn-tos.bytegecko.com",
+      "status": 200,
+      "count": 4
+    },
+    {
+      "host": "p26-sign.douyinpic.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "p9-novel-sign.byteimg.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "p6-novel-sign.byteimg.com",
+      "status": 200,
+      "count": 5
+    },
+    {
+      "host": "p6-novel.byteimg.com",
+      "status": 200,
+      "count": 6
+    },
+    {
+      "host": "p3-novel-sign.byteimg.com",
+      "status": 200,
+      "count": 2
+    },
+    {
+      "host": "p3-novel.byteimg.com",
+      "status": 200,
+      "count": 7
+    },
+    {
+      "host": "safe.usergrowth.com.cn",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "mcs.zijieapi.com",
+      "status": 200,
+      "count": 3
+    },
+    {
+      "host": "mon.zijieapi.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "lf3-short.ibytedapm.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "abtestvm.bytedance.com",
+      "status": 200,
+      "count": 1
+    },
+    {
+      "host": "mon.zijieapi.com",
+      "status": 204,
+      "count": 6
+    },
+    {
+      "host": "hongguoduanju.com",
+      "status": 206,
+      "count": 1
+    }
+  ],
+  "failures": [
+    {
+      "host": "zlink.toutiao.com",
+      "reason": "net::ERR_ABORTED",
+      "count": 1
+    },
+    {
+      "host": "mcs.zijieapi.com",
+      "reason": "net::ERR_FAILED",
+      "count": 2
+    }
+  ]
+}

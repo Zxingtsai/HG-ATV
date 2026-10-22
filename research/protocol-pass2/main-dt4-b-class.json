@@ -1,0 +1,159 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_08270ac8c84083029832a8c981b5fa557964bdab19947ec36ae28d3e47c41de5\",\"subject\":{\"name\":\"analysis-api-slice.apk\",\"digest\":{\"sha256\":\"057acc45b858b0ef91201b38ec1f4e6a3e0e14d3cc01046909e0b295884affa7\"},\"local_path\":\"/workspace/hongguo-tv/research/analysis-api-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/analysis-api-slice.apk\",\"class_name\":\"dt4.b\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-fVEp60/target.apk\",\"class_count\":12639,\"resource_count\":4,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":4294967296,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"/tmp/rea-android-fVEp60/target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"/tmp/rea-android-fVEp60/target.apk\\\",\\\"class_count\\\":12639,\\\"raw_class_count\\\":12639,\\\"resource_count\\\":4,\\\"load_duration_ms\\\":18505,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"dt4.b\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"is_constructor\\\":true,\\\"dex_descriptor\\\":\\\"()V\\\"},{\\\"signature\\\":\\\"a(java.lang.String, seriessdk.com.dragon.read.saas.rpc.model.VideoPlatformType, boolean, seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType, int, int, java.lang.String, pr4.p, java.lang.String): io.reactivex.Observable\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\",\\\"is_constructor\\\":false,\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;ZLseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;IILjava/lang/String;Lpr4/p;Ljava/lang/String;)Lio/reactivex/Observable;\\\"}],\\\"method_count\\\":3,\\\"inner_class_count\\\":0,\\\"inner_classes\\\":[],\\\"name\\\":\\\"b\\\",\\\"full_name\\\":\\\"dt4.b\\\",\\\"field_count\\\":1,\\\"fields\\\":[{\\\"type\\\":\\\"dt4.b\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\"}]}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":4096},\"class_name\":\"dt4.b\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"name\":\"a\",\"reported_signature\":\"a(java.lang.String, seriessdk.com.dragon.read.saas.rpc.model.VideoPlatformType, boolean, seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType, int, int, java.lang.String, pr4.p, java.lang.String): io.reactivex.Observable\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;ZLseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;IILjava/lang/String;Lpr4/p;Ljava/lang/String;)Lio/reactivex/Observable;\"}],\"fields\":[{\"name\":\"a\",\"reported_type\":\"dt4.b\"}],\"inner_classes\":[]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_08270ac8c84083029832a8c981b5fa557964bdab19947ec36ae28d3e47c41de5",
+      "subject": {
+        "name": "analysis-api-slice.apk",
+        "digest": {
+          "sha256": "057acc45b858b0ef91201b38ec1f4e6a3e0e14d3cc01046909e0b295884affa7"
+        },
+        "local_path": "/workspace/hongguo-tv/research/analysis-api-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/analysis-api-slice.apk",
+        "class_name": "dt4.b"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-fVEp60/target.apk",
+          "class_count": 12639,
+          "resource_count": 4,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":4294967296,\"java_version\":\"21.0.12.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "/tmp/rea-android-fVEp60/target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-fVEp60/target.apk\",\"class_count\":12639,\"raw_class_count\":12639,\"resource_count\":4,\"load_duration_ms\":18505,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "dt4.b"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"signature\":\"a(java.lang.String, seriessdk.com.dragon.read.saas.rpc.model.VideoPlatformType, boolean, seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType, int, int, java.lang.String, pr4.p, java.lang.String): io.reactivex.Observable\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;ZLseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;IILjava/lang/String;Lpr4/p;Ljava/lang/String;)Lio/reactivex/Observable;\"}],\"method_count\":3,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"b\",\"full_name\":\"dt4.b\",\"field_count\":1,\"fields\":[{\"type\":\"dt4.b\",\"def_pos\":0,\"name\":\"a\"}]}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 4096
+        },
+        "class_name": "dt4.b",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "a",
+            "reported_signature": "a(java.lang.String, seriessdk.com.dragon.read.saas.rpc.model.VideoPlatformType, boolean, seriessdk.com.dragon.read.saas.rpc.model.VideoSeriesIdType, int, int, java.lang.String, pr4.p, java.lang.String): io.reactivex.Observable",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;ZLseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;IILjava/lang/String;Lpr4/p;Ljava/lang/String;)Lio/reactivex/Observable;"
+          }
+        ],
+        "fields": [
+          {
+            "name": "a",
+            "reported_type": "dt4.b"
+          }
+        ],
+        "inner_classes": []
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 11
+}

@@ -1,0 +1,341 @@
+  Class descriptor  : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+  Access flags      : 0x4011 (PUBLIC FINAL ENUM)
+  Superclass        : 'Ljava/lang/Enum;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : '$VALUES'
+      type          : '[Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x101a (PRIVATE STATIC FINAL SYNTHETIC)
+    #1              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : '$cachedSerializer$delegate'
+      type          : 'Lkotlin/Lazy;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+    #2              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'Chameleon'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #3              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'Companion'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType$a;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+    #4              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'Mixed'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #5              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'Outer'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #6              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'PlatformDouyin'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #7              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'PlatformXigua'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #8              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'UgcVideo'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #9              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'Unknown'
+      type          : 'Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+  Instance fields   -
+    #0              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'value'
+      type          : 'I'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 16
+      ins           : 0
+      outs          : 4
+      insns size    : 115 16-bit code units
+6588a8:                                        |[6588a8] com.dragon.read.rpc.model.VideoPlatformType.<clinit>:()V
+6588b8: 1400 7626 0a00                         |0000: const v0, #float 9.32152e-40 // #000a2676
+6588be: 7110 d802 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@02d8
+6588c4: 2200 6017                              |0006: new-instance v0, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+6588c8: 1a01 8667                              |0008: const-string v1, "Unknown" // string@6786
+6588cc: 1202                                   |000a: const/4 v2, #int 0 // #0
+6588ce: 7040 ab46 1022                         |000b: invoke-direct {v0, v1, v2, v2}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+6588d4: 6900 fe38                              |000e: sput-object v0, Lcom/dragon/read/rpc/model/VideoPlatformType;.Unknown:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38fe
+6588d8: 2201 6017                              |0010: new-instance v1, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+6588dc: 1a03 a55f                              |0012: const-string v3, "PlatformDouyin" // string@5fa5
+6588e0: 1214                                   |0014: const/4 v4, #int 1 // #1
+6588e2: 7040 ab46 3144                         |0015: invoke-direct {v1, v3, v4, v4}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+6588e8: 6901 fb38                              |0018: sput-object v1, Lcom/dragon/read/rpc/model/VideoPlatformType;.PlatformDouyin:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38fb
+6588ec: 2203 6017                              |001a: new-instance v3, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+6588f0: 1a05 6567                              |001c: const-string v5, "UgcVideo" // string@6765
+6588f4: 1226                                   |001e: const/4 v6, #int 2 // #2
+6588f6: 7040 ab46 5366                         |001f: invoke-direct {v3, v5, v6, v6}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+6588fc: 6903 fd38                              |0022: sput-object v3, Lcom/dragon/read/rpc/model/VideoPlatformType;.UgcVideo:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38fd
+658900: 2205 6017                              |0024: new-instance v5, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+658904: 1a07 155f                              |0026: const-string v7, "Outer" // string@5f15
+658908: 1238                                   |0028: const/4 v8, #int 3 // #3
+65890a: 7040 ab46 7588                         |0029: invoke-direct {v5, v7, v8, v8}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+658910: 6905 fa38                              |002c: sput-object v5, Lcom/dragon/read/rpc/model/VideoPlatformType;.Outer:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38fa
+658914: 2207 6017                              |002e: new-instance v7, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+658918: 1a09 a85f                              |0030: const-string v9, "PlatformXigua" // string@5fa8
+65891c: 124a                                   |0032: const/4 v10, #int 4 // #4
+65891e: 7040 ab46 97aa                         |0033: invoke-direct {v7, v9, v10, v10}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+658924: 6907 fc38                              |0036: sput-object v7, Lcom/dragon/read/rpc/model/VideoPlatformType;.PlatformXigua:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38fc
+658928: 2209 6017                              |0038: new-instance v9, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+65892c: 1a0b 650d                              |003a: const-string v11, "Chameleon" // string@0d65
+658930: 125c                                   |003c: const/4 v12, #int 5 // #5
+658932: 7040 ab46 b9cc                         |003d: invoke-direct {v9, v11, v12, v12}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+658938: 6909 f738                              |0040: sput-object v9, Lcom/dragon/read/rpc/model/VideoPlatformType;.Chameleon:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38f7
+65893c: 220b 6017                              |0042: new-instance v11, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+658940: 130d 0004                              |0044: const/16 v13, #int 1024 // #400
+658944: 1a0e 7d5c                              |0046: const-string v14, "Mixed" // string@5c7d
+658948: 126f                                   |0048: const/4 v15, #int 6 // #6
+65894a: 7040 ab46 ebdf                         |0049: invoke-direct {v11, v14, v15, v13}, Lcom/dragon/read/rpc/model/VideoPlatformType;.<init>:(Ljava/lang/String;II)V // method@46ab
+658950: 690b f938                              |004c: sput-object v11, Lcom/dragon/read/rpc/model/VideoPlatformType;.Mixed:Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38f9
+658954: 127d                                   |004e: const/4 v13, #int 7 // #7
+658956: 23dd 5044                              |004f: new-array v13, v13, [Lcom/dragon/read/rpc/model/VideoPlatformType; // type@4450
+65895a: 4d00 0d02                              |0051: aput-object v0, v13, v2
+65895e: 4d01 0d04                              |0053: aput-object v1, v13, v4
+658962: 4d03 0d06                              |0055: aput-object v3, v13, v6
+658966: 4d05 0d08                              |0057: aput-object v5, v13, v8
+65896a: 4d07 0d0a                              |0059: aput-object v7, v13, v10
+65896e: 4d09 0d0c                              |005b: aput-object v9, v13, v12
+658972: 4d0b 0d0f                              |005d: aput-object v11, v13, v15
+658976: 690d f538                              |005f: sput-object v13, Lcom/dragon/read/rpc/model/VideoPlatformType;.$VALUES:[Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38f5
+65897a: 2200 5f17                              |0061: new-instance v0, Lcom/dragon/read/rpc/model/VideoPlatformType$a; // type@175f
+65897e: 7010 a646 0000                         |0063: invoke-direct {v0}, Lcom/dragon/read/rpc/model/VideoPlatformType$a;.<init>:()V // method@46a6
+658984: 6900 f838                              |0066: sput-object v0, Lcom/dragon/read/rpc/model/VideoPlatformType;.Companion:Lcom/dragon/read/rpc/model/VideoPlatformType$a; // field@38f8
+658988: 6200 5ac3                              |0068: sget-object v0, Lkotlin/LazyThreadSafetyMode;.PUBLICATION:Lkotlin/LazyThreadSafetyMode; // field@c35a
+65898c: 6201 f438                              |006a: sget-object v1, Lcom/dragon/read/rpc/model/VideoPlatformType$Companion$1;.INSTANCE:Lcom/dragon/read/rpc/model/VideoPlatformType$Companion$1; // field@38f4
+658990: 7120 b9e7 1000                         |006c: invoke-static {v0, v1}, Lkotlin/LazyKt;.lazy:(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy; // method@e7b9
+658996: 0c00                                   |006f: move-result-object v0
+658998: 6900 f638                              |0070: sput-object v0, Lcom/dragon/read/rpc/model/VideoPlatformType;.$cachedSerializer$delegate:Lkotlin/Lazy; // field@38f6
+65899c: 0e00                                   |0072: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=327680
+        0x0001 line=327681
+        0x0002 line=327682
+        0x0003 line=327683
+        0x0004 line=327684
+        0x0005 line=327685
+        0x0006 line=327686
+        0x0007 line=327687
+        0x0008 line=327688
+        0x0009 line=327689
+        0x000a line=327690
+        0x000b line=327691
+        0x000c line=327692
+        0x000d line=327693
+        0x000e line=327694
+        0x000f line=327695
+        0x0010 line=327696
+        0x0011 line=327697
+        0x0012 line=327698
+        0x0013 line=327699
+        0x0014 line=327700
+        0x0015 line=327701
+        0x0016 line=327702
+        0x0017 line=327703
+        0x0018 line=327704
+        0x0019 line=327705
+        0x001a line=327706
+        0x001b line=327707
+        0x001c line=327708
+        0x001d line=327709
+        0x001e line=327710
+        0x001f line=327711
+        0x0020 line=327712
+        0x0021 line=327713
+        0x0022 line=327714
+        0x0023 line=327715
+        0x0024 line=327716
+        0x0025 line=327717
+        0x0026 line=327718
+        0x0027 line=327719
+        0x0028 line=327720
+        0x0029 line=327721
+        0x002a line=327722
+        0x002b line=327723
+        0x002c line=327724
+        0x002d line=327725
+        0x002e line=327726
+        0x002f line=327727
+        0x0030 line=327728
+        0x0031 line=327729
+        0x0032 line=327730
+        0x0033 line=327731
+        0x0034 line=327732
+        0x0035 line=327733
+        0x0036 line=327734
+        0x0037 line=327735
+        0x0038 line=327736
+        0x0039 line=327737
+        0x003a line=327738
+        0x003b line=327739
+        0x003c line=327740
+        0x003d line=327741
+        0x003e line=327742
+        0x003f line=327743
+        0x0040 line=327744
+        0x0041 line=327745
+        0x0042 line=327746
+        0x0043 line=327747
+        0x0044 line=327748
+        0x0045 line=327749
+        0x0046 line=327750
+        0x0047 line=327751
+        0x0048 line=327752
+        0x0049 line=327753
+        0x004a line=327754
+        0x004b line=327755
+        0x004c line=327756
+        0x004d line=327757
+        0x004e line=327758
+        0x004f line=327759
+        0x0050 line=327760
+        0x0051 line=327761
+        0x0052 line=327762
+        0x0053 line=327763
+        0x0054 line=327764
+        0x0055 line=327765
+        0x0056 line=327766
+        0x0057 line=327767
+        0x0058 line=327768
+        0x0059 line=327769
+        0x005a line=327770
+        0x005b line=327771
+        0x005c line=327772
+        0x005d line=327773
+        0x005e line=327774
+        0x005f line=327775
+        0x0060 line=327776
+        0x0061 line=327777
+        0x0062 line=327778
+        0x0063 line=327779
+        0x0064 line=327780
+        0x0065 line=327781
+        0x0066 line=327782
+        0x0067 line=327783
+        0x0068 line=327784
+        0x0069 line=327785
+        0x006a line=327786
+        0x006b line=327787
+        0x006c line=327788
+        0x006d line=327789
+        0x006e line=327790
+        0x006f line=327791
+        0x0070 line=327792
+        0x0071 line=327793
+        0x0072 line=327794
+      locals        :
+
+    #1              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+6589a0:                                        |[6589a0] com.dragon.read.rpc.model.VideoPlatformType.<init>:()V
+6589b0: 7010 5de6 0000                         |0000: invoke-direct {v0}, Ljava/lang/Enum;.<init>:()V // method@e65d
+6589b6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #2              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;II)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 3
+      insns size    : 6 16-bit code units
+6589b8:                                        |[6589b8] com.dragon.read.rpc.model.VideoPlatformType.<init>:(Ljava/lang/String;II)V
+6589c8: 7030 5ee6 1002                         |0000: invoke-direct {v0, v1, v2}, Ljava/lang/Enum;.<init>:(Ljava/lang/String;I)V // method@e65e
+6589ce: 5903 ff38                              |0003: iput v3, v0, Lcom/dragon/read/rpc/model/VideoPlatformType;.value:I // field@38ff
+6589d2: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50397184
+        0x0001 line=50397185
+        0x0002 line=50397186
+        0x0003 line=50397187
+        0x0004 line=50397188
+        0x0005 line=50397189
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/dragon/read/rpc/model/VideoPlatformType;
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0006 reg=2 (null) I
+        0x0000 - 0x0006 reg=3 (null) I
+
+    #3              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'valueOf'
+      type          : '(Ljava/lang/String;)Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 9 16-bit code units
+6589d4:                                        |[6589d4] com.dragon.read.rpc.model.VideoPlatformType.valueOf:(Ljava/lang/String;)Lcom/dragon/read/rpc/model/VideoPlatformType;
+6589e4: 1c00 6017                              |0000: const-class v0, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+6589e8: 7120 61e6 1000                         |0002: invoke-static {v0, v1}, Ljava/lang/Enum;.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum; // method@e661
+6589ee: 0c01                                   |0005: move-result-object v1
+6589f0: 1f01 6017                              |0006: check-cast v1, Lcom/dragon/read/rpc/model/VideoPlatformType; // type@1760
+6589f4: 1101                                   |0008: return-object v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #4              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'values'
+      type          : '()[Lcom/dragon/read/rpc/model/VideoPlatformType;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 9 16-bit code units
+6589f8:                                        |[6589f8] com.dragon.read.rpc.model.VideoPlatformType.values:()[Lcom/dragon/read/rpc/model/VideoPlatformType;
+658a08: 6200 f538                              |0000: sget-object v0, Lcom/dragon/read/rpc/model/VideoPlatformType;.$VALUES:[Lcom/dragon/read/rpc/model/VideoPlatformType; // field@38f5
+658a0c: 6e10 8de6 0000                         |0002: invoke-virtual {v0}, Ljava/lang/Object;.clone:()Ljava/lang/Object; // method@e68d
+658a12: 0c00                                   |0005: move-result-object v0
+658a14: 1f00 5044                              |0006: check-cast v0, [Lcom/dragon/read/rpc/model/VideoPlatformType; // type@4450
+658a18: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+  Virtual methods   -
+    #0              : (in Lcom/dragon/read/rpc/model/VideoPlatformType;)
+      name          : 'getValue'
+      type          : '()I'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+658a1c:                                        |[658a1c] com.dragon.read.rpc.model.VideoPlatformType.getValue:()I
+658a2c: 5210 ff38                              |0000: iget v0, v1, Lcom/dragon/read/rpc/model/VideoPlatformType;.value:I // field@38ff
+658a30: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+        0x0001 line=1
+        0x0002 line=2
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lcom/dragon/read/rpc/model/VideoPlatformType;
+
+  source_file_idx   : 25789 (SourceFile)
+

@@ -1,0 +1,55 @@
+  Class descriptor  : 'Lkl8/a;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lkl8/a;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 7 16-bit code units
+687420:                                        |[687420] kl8.a.<clinit>:()V
+687430: 1400 c1e2 0a00                         |0000: const v0, #float 9.99699e-40 // #000ae2c1
+687436: 7110 900a 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@0a90
+68743c: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lkl8/a;)
+      name          : 'a'
+      type          : '()Lkl8/a$a;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 9 16-bit code units
+687440:                                        |[687440] kl8.a.a:()Lkl8/a$a;
+687450: 1c00 1031                              |0000: const-class v0, Lkl8/a$a; // type@3110
+687454: 7110 057b 0000                         |0002: invoke-static {v0}, Lkf1/j;.e:(Ljava/lang/Class;)Ljava/lang/Object; // method@7b05
+68745a: 0c00                                   |0005: move-result-object v0
+68745c: 1f00 1031                              |0006: check-cast v0, Lkl8/a$a; // type@3110
+687460: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131072
+        0x0001 line=131073
+        0x0002 line=131074
+        0x0003 line=131075
+        0x0004 line=131076
+        0x0005 line=131077
+        0x0006 line=131078
+        0x0007 line=131079
+        0x0008 line=131080
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 32745 (SourceFile)
+

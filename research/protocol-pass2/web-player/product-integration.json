@@ -1,0 +1,44 @@
+{
+  "observedAt": "2026-10-21T08:18:35.849Z",
+  "environment": "Linux cloud; not the user Windows hardware",
+  "profile": "720p",
+  "encoder": "libx264",
+  "stages": [
+    "正在取得播放信息",
+    "正在准备本集视频",
+    "正在处理播放格式",
+    "正在启动播放",
+    "可以播放"
+  ],
+  "homeSections": [
+    {
+      "title": "热播短剧",
+      "count": 9
+    },
+    {
+      "title": "热播真人剧",
+      "count": 9
+    },
+    {
+      "title": "热播漫剧",
+      "count": 9
+    },
+    {
+      "title": "热播AI剧",
+      "count": 9
+    }
+  ],
+  "seriesId": "7690961604636052505",
+  "episodeId": "7690963410778868761",
+  "phase": "seek",
+  "firstReadySeconds": 32.312366316,
+  "expectedDuration": 108.331,
+  "segmentCount": 55,
+  "completeHlsDecoded": true,
+  "decodeFrame": 3250,
+  "decodeOutTime": "00:01:48.366667",
+  "seekReadySeconds": 4.2057738149999935,
+  "seekPassed": true,
+  "stoppedSessionStatus": 404,
+  "passed": true
+}

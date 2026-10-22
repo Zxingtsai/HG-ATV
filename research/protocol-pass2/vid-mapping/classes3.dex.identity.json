@@ -1,0 +1,13 @@
+{
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes3.dex",
+  "dex_sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+  "dex_bytes": 10701380,
+  "requested_classes": [
+    "Lpr4/f$a;"
+  ],
+  "class_outputs": {
+    "Lpr4/f$a;": "pr4-f$a.dexdump.txt"
+  },
+  "method": "Android SDK 35.0.0 dexdump -d; no APK execution"
+}

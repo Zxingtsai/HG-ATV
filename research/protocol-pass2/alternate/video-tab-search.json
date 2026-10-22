@@ -1,0 +1,141 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_f6d819036e0863b473fe49d0ef69ac0a74a386705166ff89d6bc622a2db23395\",\"subject\":{\"name\":\"analysis-feed-slice.apk\",\"digest\":{\"sha256\":\"7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d\"},\"local_path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"search_android_classes\",\"parameters\":{\"path\":\"/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk\",\"query\":\"VideoTabModel\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"4\"},\"bridge_sha256\":\"a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"class_count\":13023,\"resource_count\":4,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":2147483648,\\\"java_version\\\":\\\"21.0.12.1\\\",\\\"available_processors\\\":2,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"/tmp/rea-android-e8g3B0/target.apk\\\",\\\"class_count\\\":13023,\\\"raw_class_count\\\":13023,\\\"resource_count\\\":4,\\\"load_duration_ms\\\":30900,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"list_classes\",\"input\":{\"query\":\"VideoTabModel\",\"offset\":0,\"limit\":4096},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"scope\\\":\\\"top_level\\\",\\\"total_classes\\\":13023,\\\"offset\\\":0,\\\"next_offset\\\":13023,\\\"limit\\\":4096,\\\"items_omitted\\\":1}\"}],\"isError\":false},\"inventory_elided\":true}],\"complete_evidence_id\":\"ev_2de2da9fb2e406f662086074856c37bbefe5ce13401f415a97c429734dd804b8\"},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":2048},\"query\":\"VideoTabModel\",\"total_classes\":13023,\"matches\":[\"com.dragon.read.pages.bookmall.model.VideoTabModel\"],\"duplicate_names\":[],\"coverage\":\"complete\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[\"ev_2de2da9fb2e406f662086074856c37bbefe5ce13401f415a97c429734dd804b8\"]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_f6d819036e0863b473fe49d0ef69ac0a74a386705166ff89d6bc622a2db23395",
+      "subject": {
+        "name": "analysis-feed-slice.apk",
+        "digest": {
+          "sha256": "7bbe990bd88e1cfb3bb5873096a38a4443666ad3d02110fc1d14b8ef3ee5402d"
+        },
+        "local_path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "search_android_classes",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/protocol-pass2/alternate/analysis-feed-slice.apk",
+        "query": "VideoTabModel"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "4"
+        },
+        "bridge_sha256": "a02b1ef0a4a40abd1ae310b9ee686ca163e0b59a3256df524c35b90ed17e9e63",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-e8g3B0/target.apk",
+          "class_count": 13023,
+          "resource_count": 4,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":2147483648,\"java_version\":\"21.0.12.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "/tmp/rea-android-e8g3B0/target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-e8g3B0/target.apk\",\"class_count\":13023,\"raw_class_count\":13023,\"resource_count\":4,\"load_duration_ms\":30900,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "list_classes",
+            "input": {
+              "query": "VideoTabModel",
+              "offset": 0,
+              "limit": 4096
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"scope\":\"top_level\",\"total_classes\":13023,\"offset\":0,\"next_offset\":13023,\"limit\":4096,\"items_omitted\":1}"
+                }
+              ],
+              "isError": false
+            },
+            "inventory_elided": true
+          }
+        ],
+        "complete_evidence_id": "ev_2de2da9fb2e406f662086074856c37bbefe5ce13401f415a97c429734dd804b8"
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 2048
+        },
+        "query": "VideoTabModel",
+        "total_classes": 13023,
+        "matches": [
+          "com.dragon.read.pages.bookmall.model.VideoTabModel"
+        ],
+        "duplicate_names": [],
+        "coverage": "complete"
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": [
+        "ev_2de2da9fb2e406f662086074856c37bbefe5ce13401f415a97c429734dd804b8"
+      ]
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

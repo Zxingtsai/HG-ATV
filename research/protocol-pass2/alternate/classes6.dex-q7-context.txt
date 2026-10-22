@@ -1,0 +1,26 @@
+    #0              : (in Lcom/dragon/read/kmp/im/bridge/impl/k6;)
+      name          : 'invoke'
+      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 24 16-bit code units
+6a516c:                                        |[6a516c] com.dragon.read.kmp.im.bridge.impl.k6.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+6a517c: 1f03 823c                              |0000: check-cast v3, Lcom/dragon/read/rpc/model/TranseferImageRequest; // type@3c82
+6a5180: 1200                                   |0002: const/4 v0, #int 0 // #0
+6a5182: 7120 afb0 0300                         |0003: invoke-static {v3, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@b0af
+6a5188: 6001 00a3                              |0006: sget v1, Lcom/dragon/read/rpc/rpc/q7;.a:I // field@a300
+6a518c: 7120 afb0 0300                         |0008: invoke-static {v3, v0}, Lcom/ss/android/ugc/bytex/kt_intermediate/lib/CheckNpeV2;.throwNpe1:(Ljava/lang/Object;I)V // method@b0af
+6a5192: 7100 87a7 0000                         |000b: invoke-static {}, Lcom/dragon/read/rpc/rpc/q7;.a:()Lcom/dragon/read/rpc/rpc/q7$a; // method@a787
+6a5198: 0c00                                   |000e: move-result-object v0
+6a519a: 7220 86a7 3000                         |000f: invoke-interface {v0, v3}, Lcom/dragon/read/rpc/rpc/q7$a;.transeferImageRxJava:(Lcom/dragon/read/rpc/model/TranseferImageRequest;)Lio/reactivex/Observable; // method@a786
+6a51a0: 0c03                                   |0012: move-result-object v3
+6a51a2: 6e10 23c3 0300                         |0013: invoke-virtual {v3}, Lio/reactivex/Observable;.firstOrError:()Lio/reactivex/Single; // method@c323
+6a51a8: 0c03                                   |0016: move-result-object v3
+6a51aa: 1103                                   |0017: return-object v3
+      catches       : (none)
+
+  source_file_idx   : 31684 (SourceFile)
+

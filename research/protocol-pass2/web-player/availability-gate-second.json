@@ -1,0 +1,117 @@
+{
+  "observed_at": "2026-10-21T07:35:09.783214+00:00",
+  "scope": "four declared series, first/middle/last; availability is not complete decode",
+  "series": [
+    {
+      "series_id": "7694243659176217662",
+      "name": "穷酸岳父竟是隐藏大佬",
+      "episodes": 71,
+      "accessible_episode_cnt": 30
+    },
+    {
+      "series_id": "7688352674999176254",
+      "name": "总裁是我前女友",
+      "episodes": 95,
+      "accessible_episode_cnt": 30
+    },
+    {
+      "series_id": "7683373426689461273",
+      "name": "扁担银行",
+      "episodes": 63,
+      "accessible_episode_cnt": 50
+    }
+  ],
+  "probes": [
+    {
+      "series_id": "7694243659176217662",
+      "item_id": "7694308808310393880",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000db3qq67og65tvokqq9pg",
+      "duration": 168,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7694243659176217662",
+      "item_id": "7694308884617382936",
+      "episode": 36,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7694243659176217662",
+      "item_id": "7694308894209739800",
+      "episode": 71,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7688352674999176254",
+      "item_id": "7688396347107445822",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v02ebeg10000dapanffog65rsaokvgkg",
+      "duration": 77.207,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7688352674999176254",
+      "item_id": "7688396196154444862",
+      "episode": 48,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7688352674999176254",
+      "item_id": "7688396333958319166",
+      "episode": 95,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    },
+    {
+      "series_id": "7683373426689461273",
+      "item_id": "7683375334204378174",
+      "episode": 1,
+      "protected_status": 200,
+      "protected_available": true,
+      "vid": "v03ebeg10000dahlqri7dldd1chscut0",
+      "duration": 178.774,
+      "codec": "h264"
+    },
+    {
+      "series_id": "7683373426689461273",
+      "item_id": "7683375319813721150",
+      "episode": 32,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 206,
+      "public_available": true,
+      "public_range": "bytes 0-63/8547924"
+    },
+    {
+      "series_id": "7683373426689461273",
+      "item_id": "7683375245062851646",
+      "episode": 63,
+      "protected_status": 403,
+      "protected_available": false,
+      "protected_error": "protected_playback_unavailable",
+      "public_status": 404,
+      "public_available": false
+    }
+  ]
+}

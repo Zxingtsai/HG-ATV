@@ -1,0 +1,163 @@
+  Class descriptor  : 'Lpr4/f;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lpr4/f;)
+      name          : 'm'
+      type          : 'Lpr4/f$a;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lpr4/f;)
+      name          : 'a'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #1              : (in Lpr4/f;)
+      name          : 'b'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #2              : (in Lpr4/f;)
+      name          : 'c'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;'
+      access        : 0x0001 (PUBLIC)
+    #3              : (in Lpr4/f;)
+      name          : 'd'
+      type          : 'Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;'
+      access        : 0x0001 (PUBLIC)
+    #4              : (in Lpr4/f;)
+      name          : 'e'
+      type          : 'I'
+      access        : 0x0001 (PUBLIC)
+    #5              : (in Lpr4/f;)
+      name          : 'f'
+      type          : 'I'
+      access        : 0x0001 (PUBLIC)
+    #6              : (in Lpr4/f;)
+      name          : 'g'
+      type          : 'I'
+      access        : 0x0001 (PUBLIC)
+    #7              : (in Lpr4/f;)
+      name          : 'h'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #8              : (in Lpr4/f;)
+      name          : 'i'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #9              : (in Lpr4/f;)
+      name          : 'j'
+      type          : 'Lpr4/p;'
+      access        : 0x0001 (PUBLIC)
+    #10              : (in Lpr4/f;)
+      name          : 'k'
+      type          : 'Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy;'
+      access        : 0x0001 (PUBLIC)
+    #11              : (in Lpr4/f;)
+      name          : 'l'
+      type          : 'Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lpr4/f;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10009 (PUBLIC STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 14 16-bit code units
+91bed8:                                        |[91bed8] pr4.f.<clinit>:()V
+91bee8: 1400 b759 0900                         |0000: const v0, #float 8.58703e-40 // #000959b7
+91beee: 7110 6514 0000                         |0003: invoke-static {v0}, Lcom/bytedance/covode/number/Covode;.recordClassIndex:(I)V // method@1465
+91bef4: 2200 3249                              |0006: new-instance v0, Lpr4/f$a; // type@4932
+91bef8: 7010 8ce1 0000                         |0008: invoke-direct {v0}, Lpr4/f$a;.<init>:()V // method@e18c
+91befe: 6900 3f9e                              |000b: sput-object v0, Lpr4/f;.m:Lpr4/f$a; // field@9e3f
+91bf02: 0e00                                   |000d: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lpr4/f;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 44 16-bit code units
+91bf04:                                        |[91bf04] pr4.f.<init>:()V
+91bf14: 7010 d8c7 0300                         |0000: invoke-direct {v3}, Ljava/lang/Object;.<init>:()V // method@c7d8
+91bf1a: 1a00 0000                              |0003: const-string v0, "" // string@0000
+91bf1e: 5b30 339e                              |0005: iput-object v0, v3, Lpr4/f;.a:Ljava/lang/String; // field@9e33
+91bf22: 5b30 349e                              |0007: iput-object v0, v3, Lpr4/f;.b:Ljava/lang/String; // field@9e34
+91bf26: 6201 f2a2                              |0009: sget-object v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType;.Unknown:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@a2f2
+91bf2a: 5b31 359e                              |000b: iput-object v1, v3, Lpr4/f;.c:Lseriessdk/com/dragon/read/saas/rpc/model/VideoPlatformType; // field@9e35
+91bf2e: 6201 f6a2                              |000d: sget-object v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType;.VideoId:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@a2f6
+91bf32: 5b31 369e                              |000f: iput-object v1, v3, Lpr4/f;.d:Lseriessdk/com/dragon/read/saas/rpc/model/VideoSeriesIdType; // field@9e36
+91bf36: 6201 b7a2                              |0011: sget-object v1, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.ShortSeriesPlay:Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType; // field@a2b7
+91bf3a: 6e10 72e9 0100                         |0013: invoke-virtual {v1}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.getValue:()I // method@e972
+91bf40: 0a02                                   |0016: move-result v2
+91bf42: 5932 379e                              |0017: iput v2, v3, Lpr4/f;.e:I // field@9e37
+91bf46: 6e10 72e9 0100                         |0019: invoke-virtual {v1}, Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;.getValue:()I // method@e972
+91bf4c: 0a01                                   |001c: move-result v1
+91bf4e: 5931 389e                              |001d: iput v1, v3, Lpr4/f;.f:I // field@9e38
+91bf52: 5b30 3a9e                              |001f: iput-object v0, v3, Lpr4/f;.h:Ljava/lang/String; // field@9e3a
+91bf56: 5b30 3b9e                              |0021: iput-object v0, v3, Lpr4/f;.i:Ljava/lang/String; // field@9e3b
+91bf5a: 6200 a12e                              |0023: sget-object v0, Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy;.NONE:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@2ea1
+91bf5e: 5b30 3d9e                              |0025: iput-object v0, v3, Lpr4/f;.k:Lcom/dragon/read/component/shortvideo/api/model/VideoModelExpireStrategy; // field@9e3d
+91bf62: 6200 102e                              |0027: sget-object v0, Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope;.OTHER:Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope; // field@2e10
+91bf66: 5b30 3e9e                              |0029: iput-object v0, v3, Lpr4/f;.l:Lcom/dragon/read/component/shortvideo/api/model/PrefetchScope; // field@9e3e
+91bf6a: 0e00                                   |002b: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=262144
+        0x0001 line=262145
+        0x0002 line=262146
+        0x0003 line=262147
+        0x0004 line=262148
+        0x0005 line=262149
+        0x0006 line=262150
+        0x0007 line=262151
+        0x0008 line=262152
+        0x0009 line=262153
+        0x000a line=262154
+        0x000b line=262155
+        0x000c line=262156
+        0x000d line=262157
+        0x000e line=262158
+        0x000f line=262159
+        0x0010 line=262160
+        0x0011 line=262161
+        0x0012 line=262162
+        0x0013 line=262163
+        0x0014 line=262164
+        0x0015 line=262165
+        0x0016 line=262166
+        0x0017 line=262167
+        0x0018 line=262168
+        0x0019 line=262169
+        0x001a line=262170
+        0x001b line=262171
+        0x001c line=262172
+        0x001d line=262173
+        0x001e line=262174
+        0x001f line=262175
+        0x0020 line=262176
+        0x0021 line=262177
+        0x0022 line=262178
+        0x0023 line=262179
+        0x0024 line=262180
+        0x0025 line=262181
+        0x0026 line=262182
+        0x0027 line=262183
+        0x0028 line=262184
+        0x0029 line=262185
+        0x002a line=262186
+        0x002b line=262187
+      locals        :
+        0x0000 - 0x002c reg=3 this Lpr4/f;
+
+  Virtual methods   -
+  source_file_idx   : 30212 (SourceFile)
+

@@ -1,0 +1,432 @@
+[
+  {
+    "dex": "classes.dex",
+    "class": "Lbeancopy/ConvertHelp;",
+    "method": "com$dragon$read$pbrpc$VideoData$$com$dragon$read$rpc$model$VideoData",
+    "descriptor": "(Lcom/dragon/read/pbrpc/VideoData;Lcom/dragon/read/rpc/model/VideoData;)Lcom/dragon/read/rpc/model/VideoData;",
+    "method_index": 48102,
+    "code_offset": 7600288,
+    "hits": [
+      {
+        "code_unit_offset": 80,
+        "opcode": "0x54",
+        "field_index": 33976,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 82,
+        "opcode": "0x5b",
+        "field_index": 33976,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 300,
+        "opcode": "0x54",
+        "field_index": 33988,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 302,
+        "opcode": "0x5b",
+        "field_index": 33988,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 342,
+        "opcode": "0x55",
+        "field_index": 33977,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      },
+      {
+        "code_unit_offset": 348,
+        "opcode": "0x5c",
+        "field_index": 33977,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes10.dex",
+    "class": "Lcom/ss/android/ugc/aweme/gsonopt/OptJsonAdapterFor$com$dragon$read$rpc$model$VideoData;",
+    "method": "setFieldValue",
+    "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Lcom/google/gson/stream/JsonReader;)Z",
+    "method_index": 29613,
+    "code_offset": 6028448,
+    "hits": [
+      {
+        "code_unit_offset": 613,
+        "opcode": "0x5b",
+        "field_index": 9178,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 1732,
+        "opcode": "0x5b",
+        "field_index": 9166,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 2611,
+        "opcode": "0x5c",
+        "field_index": 9167,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes10.dex",
+    "class": "Lmv6/a;",
+    "method": "b",
+    "descriptor": "(Lcom/dragon/read/saas/ugc/model/UgcVideoDetail;)Lcom/dragon/read/rpc/model/VideoData;",
+    "method_index": 48269,
+    "code_offset": 7312524,
+    "hits": [
+      {
+        "code_unit_offset": 302,
+        "opcode": "0x5b",
+        "field_index": 9178,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoData;",
+    "method": "<init>",
+    "descriptor": "(IIIIILjava/lang/String;Ljava/lang/String;JLcom/dragon/read/rpc/model/ApiBookInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdTransferType;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdUrlData;Ljava/lang/String;Ljava/lang/String;JZZZZZZZLcom/dragon/read/rpc/model/VideoContentType;Ljava/lang/String;Ljava/lang/String;ZJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZZJZLjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/dragon/read/rpc/model/VideoPlatformType;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IIJZLjava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoDetailVideoData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/CloudReviewStatus;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoHighlight;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoEpisodeStatus;Ljava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/VideoPayInfo;Ljava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;JLjava/util/List;Ljava/util/List;ZLjava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/RecTypeStyle;Lcom/dragon/read/rpc/model/VideoTagInfo;Lcom/dragon/read/rpc/model/BuriedParams;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/RecommendTagInfo;Ljava/lang/String;ZZLcom/dragon/read/rpc/model/VideoAlbumDetailInfo;Lcom/dragon/read/rpc/model/AlbumShowStyle;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoImageData;Lcom/dragon/read/rpc/model/SubscribeItem;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RankChangeData;Ljava/util/List;Lcom/dragon/read/rpc/model/DisplayDim;Lcom/dragon/read/rpc/model/AutoPlayData;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea;Lcom/dragon/read/rpc/model/VideoBottomBar;Lcom/dragon/read/rpc/model/VideoRelateBook;JLjava/lang/String;JLjava/util/List;Ljava/lang/String;ZZILjava/util/List;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V",
+    "method_index": 17573,
+    "code_offset": 6562936,
+    "hits": [
+      {
+        "code_unit_offset": 181,
+        "opcode": "0x5b",
+        "field_index": 14029,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 186,
+        "opcode": "0x5b",
+        "field_index": 14029,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 467,
+        "opcode": "0x5b",
+        "field_index": 14041,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 472,
+        "opcode": "0x5b",
+        "field_index": 14041,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 522,
+        "opcode": "0x5c",
+        "field_index": 14030,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      },
+      {
+        "code_unit_offset": 527,
+        "opcode": "0x5c",
+        "field_index": 14030,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoData;",
+    "method": "<init>",
+    "descriptor": "(Ljava/lang/String;Ljava/lang/String;JLcom/dragon/read/rpc/model/ApiBookInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdTransferType;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/AdUrlData;Ljava/lang/String;Ljava/lang/String;JZZZZZZZLcom/dragon/read/rpc/model/VideoContentType;Ljava/lang/String;Ljava/lang/String;ZJZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZZJZLjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/dragon/read/rpc/model/VideoPlatformType;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IIJZLjava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoDetailVideoData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/CloudReviewStatus;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoHighlight;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoEpisodeStatus;Ljava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/VideoPayInfo;Ljava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoTagInfo;Ljava/lang/String;JLjava/util/List;Ljava/util/List;ZLjava/util/List;Ljava/util/List;Lcom/dragon/read/rpc/model/RecTypeStyle;Lcom/dragon/read/rpc/model/VideoTagInfo;Lcom/dragon/read/rpc/model/BuriedParams;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/rpc/model/RecommendTagInfo;Ljava/lang/String;ZZLcom/dragon/read/rpc/model/VideoAlbumDetailInfo;Lcom/dragon/read/rpc/model/AlbumShowStyle;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/VideoImageData;Lcom/dragon/read/rpc/model/SubscribeItem;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RankChangeData;Ljava/util/List;Lcom/dragon/read/rpc/model/DisplayDim;Lcom/dragon/read/rpc/model/AutoPlayData;Ljava/lang/String;Ljava/util/List;Lcom/dragon/read/rpc/model/RelatedBookEntryInInteractiveArea;Lcom/dragon/read/rpc/model/VideoBottomBar;Lcom/dragon/read/rpc/model/VideoRelateBook;JLjava/lang/String;JLjava/util/List;Ljava/lang/String;ZZILjava/util/List;ZZLjava/lang/String;Lcom/dragon/read/rpc/model/LongPressAction;Z)V",
+    "method_index": 17574,
+    "code_offset": 6566100,
+    "hits": [
+      {
+        "code_unit_offset": 29,
+        "opcode": "0x5b",
+        "field_index": 14029,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 123,
+        "opcode": "0x5b",
+        "field_index": 14041,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 143,
+        "opcode": "0x5c",
+        "field_index": 14030,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoData;",
+    "method": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoData;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;)V",
+    "method_index": 17576,
+    "code_offset": 6570284,
+    "hits": [
+      {
+        "code_unit_offset": 185,
+        "opcode": "0x54",
+        "field_index": 14029,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 196,
+        "opcode": "0x54",
+        "field_index": 14029,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "url",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 587,
+        "opcode": "0x54",
+        "field_index": 14041,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 598,
+        "opcode": "0x54",
+        "field_index": 14041,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 669,
+        "opcode": "0x55",
+        "field_index": 14030,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoData;",
+          "useVideoModel",
+          "Z"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoInfo$a;",
+    "method": "serialize",
+    "descriptor": "(Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V",
+    "method_index": 17891,
+    "code_offset": 6637008,
+    "hits": [
+      {
+        "code_unit_offset": 105,
+        "opcode": "0x54",
+        "field_index": 14463,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoUrl",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 116,
+        "opcode": "0x54",
+        "field_index": 14463,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoUrl",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 416,
+        "opcode": "0x54",
+        "field_index": 14460,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 425,
+        "opcode": "0x54",
+        "field_index": 14460,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+    "method": "<init>",
+    "descriptor": "(ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JIILjava/lang/String;SSLcom/dragon/read/rpc/model/UseStatus;Ljava/lang/String;JJLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V",
+    "method_index": 17898,
+    "code_offset": 6638160,
+    "hits": [
+      {
+        "code_unit_offset": 74,
+        "opcode": "0x5b",
+        "field_index": 14463,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoUrl",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 79,
+        "opcode": "0x5b",
+        "field_index": 14463,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoUrl",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 296,
+        "opcode": "0x5b",
+        "field_index": 14460,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 301,
+        "opcode": "0x5b",
+        "field_index": 14460,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "class": "Lcom/dragon/read/rpc/model/VideoInfo;",
+    "method": "<init>",
+    "descriptor": "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JIILjava/lang/String;SSLcom/dragon/read/rpc/model/UseStatus;Ljava/lang/String;JJLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;Ljava/lang/String;)V",
+    "method_index": 17899,
+    "code_offset": 6638784,
+    "hits": [
+      {
+        "code_unit_offset": 20,
+        "opcode": "0x5b",
+        "field_index": 14463,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoUrl",
+          "Ljava/lang/String;"
+        ]
+      },
+      {
+        "code_unit_offset": 92,
+        "opcode": "0x5b",
+        "field_index": 14460,
+        "field": [
+          "Lcom/dragon/read/rpc/model/VideoInfo;",
+          "videoModel",
+          "Ljava/lang/String;"
+        ]
+      }
+    ]
+  }
+]
