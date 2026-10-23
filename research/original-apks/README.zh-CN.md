@@ -4,8 +4,8 @@
 
 | 样本 | 来源与长度 | 下载 |
 | --- | --- | --- |
-| 6.2.3.32 / 62332 | [豌豆荚历史页](https://m.wandoujia.com/apps/8396801/history_v62332)的“普通下载”；71,781,163 字节 | [旧版 APK](https://media.githubusercontent.com/media/Zxingtsai/HG-ATV/refs/tags/original-apk-samples-2026-10-22/research/original-apks/hongguo-6.2.3.32-original.apk) |
-| 7.4.1.32 / 74132 | 2026-10-22 [官网](https://hongguoduanju.com/)普通 Android 入口，69310258a 渠道；149,926,819 字节 | [新版 APK](https://media.githubusercontent.com/media/Zxingtsai/HG-ATV/refs/tags/original-apk-samples-2026-10-22/research/original-apks/hongguo-7.4.1.32-official-normal-original.apk) |
+| 6.2.3.32 / 62332 | [豌豆荚历史页](https://m.wandoujia.com/apps/8396801/history_v62332)的“普通下载”；71,781,163 字节 | [旧版 APK](https://media.githubusercontent.com/media/Zxingtsai/HG-ATV/original-apk-samples-2026-10-22/research/original-apks/hongguo-6.2.3.32-original.apk) |
+| 7.4.1.32 / 74132 | 2026-10-22 [官网](https://hongguoduanju.com/)普通 Android 入口，69310258a 渠道；149,926,819 字节 | [新版 APK](https://media.githubusercontent.com/media/Zxingtsai/HG-ATV/original-apk-samples-2026-10-22/research/original-apks/hongguo-7.4.1.32-official-normal-original.apk) |
 
 [SHA256SUMS.txt](SHA256SUMS.txt) 记录两包完整文件的 SHA-256；原文件只做了便于区分的重命名。新版原包与早期 REA 使用的 71853858a 渠道基线整包 SHA-256 不同，但 25 个 DEX、Manifest 和签名证书一致，详见[身份对照](../version-compare/current-official/REPORT.zh-CN.md)。这里的“新版”指上述观察日期的研究样本，不代表未来官网版本。
 
