@@ -43,3 +43,6 @@ research/account-login/official-login-ui.*
 research/account-login/smoke-*-result.json
 research/retired/
 tools/phone-capture/
+
+# Explicitly authorized, checksum-verified original samples stored with Git LFS.
+!research/original-apks/*.apk

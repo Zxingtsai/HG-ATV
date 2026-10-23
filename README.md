@@ -42,6 +42,7 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 - [服务端扫码登录与更新](docs/ACCOUNT.zh-CN.md)
 - [原 APK 的 REA 分析](research/ANALYSIS.zh-CN.md) · [完整播放协议验证](research/protocol-pass2/README.zh-CN.md)
 - [2024 旧版与当前官网版通信机制对照](research/version-compare/REPORT.zh-CN.md)：登录会话、收藏同步、播放模型及 RPC 参数；原生 App 协议接入仍待运行时验证。
+- [两份原版 APK 研究样本](research/original-apks/README.zh-CN.md)：6.2.3.32 与 7.4.1.32，Git LFS 保存，附下载链接与 SHA-256。
 - [REA 分析未解决事项清单](research/REA-UNRESOLVED.zh-CN.md)：协议未知项、工具失败/回退、待实测项目及关闭判据。
 - [外部组件与许可](docs/DEPENDENCIES.md)
 
@@ -55,4 +56,4 @@ node --use-env-proxy server/src/main.mjs
 
 Android 构建需要完整 JDK 17+、Android SDK 35；在 `client` 目录运行 `./gradlew :app:assembleDebug :app:lintDebug`，Windows 使用 `gradlew.bat`。
 
-原创代码采用 [MIT](LICENSE)；外部运行库、AndroidX 及另行下载的官网播放器保留各自权利和许可。仓库中的分析文档与测试夹具用于记录分析与验证范围，原版 APK、媒体缓存及访问凭据不随项目提供。
+原创代码采用 [MIT](LICENSE)；外部运行库、AndroidX、官网播放器及另行归档的两份原版 APK 保留各自权利和许可。仓库中的分析文档与测试夹具用于记录分析与验证范围，媒体缓存及访问凭据不随项目提供。

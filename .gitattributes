@@ -10,3 +10,4 @@ research/** -text -whitespace
 docs/verification/** -text -whitespace
 docs/APACHE-2.0.txt -text -whitespace
 client/app/src/main/assets/THIRD_PARTY_NOTICES.txt -text -whitespace
+research/original-apks/*.apk filter=lfs diff=lfs merge=lfs -text

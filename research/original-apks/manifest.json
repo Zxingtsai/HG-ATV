@@ -1,0 +1,36 @@
+{
+  "archived_at_utc_date": "2026-10-23",
+  "observed_at_utc_date": "2026-10-22",
+  "storage": "git-lfs",
+  "samples": [
+    {
+      "file": "hongguo-6.2.3.32-original.apk",
+      "version_name": "6.2.3.32",
+      "version_code": 62332,
+      "bytes": 71781163,
+      "sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+      "source_page": "https://m.wandoujia.com/apps/8396801/history_v62332",
+      "download_selection": "普通下载",
+      "identity_metadata": "../version-compare/old/identity.json",
+      "package_name": "com.phoenix.read",
+      "signer_certificate_sha256": "1fe01f1425c72dc1cd158e05cb696cb9fc17259a70f9d233fc48e8e42e6510ec",
+      "signature_verification_exit_code": 0,
+      "content_modified": false
+    },
+    {
+      "file": "hongguo-7.4.1.32-official-normal-original.apk",
+      "version_name": "7.4.1.32",
+      "version_code": 74132,
+      "bytes": 149926819,
+      "sha256": "1f8f733377523ab7a5ea2a602e6e9e9834badf422727e07492d4118c6c0a69e1",
+      "source_page": "https://hongguoduanju.com/",
+      "download_selection": "ordinary Android entry without SEM query parameters",
+      "channel": "69310258a",
+      "identity_metadata": "../version-compare/current-official/identity.json",
+      "package_name": "com.phoenix.read",
+      "signer_certificate_sha256": "1fe01f1425c72dc1cd158e05cb696cb9fc17259a70f9d233fc48e8e42e6510ec",
+      "signature_verification_exit_code": 0,
+      "content_modified": false
+    }
+  ]
+}
