@@ -73,7 +73,7 @@ export async function createService(config, { website, pairing, account, media, 
         if (!Number.isInteger(page) || page < 1 || page > 1000) throw invalid();
         return json(response, 200, await (match[1] === 'categories' ? website.getCategory(match[2], page) : website.getRank(match[2], page)));
       }
-      if (method === 'GET' && route === '/api/search') return json(response, 200, await website.search(url.searchParams.get('q') || ''));
+      if (method === 'GET' && route === '/api/search') return json(response, 200, await website.search(url.searchParams.get('q') || '', { page: url.searchParams.get('page') ?? 1 }));
       if (method === 'GET' && (match = /^\/api\/dramas\/(\d{10,24})$/.exec(route))) return json(response, 200, await website.getDrama(match[1]));
       if (method === 'POST' && route === '/api/playback') return json(response, 200, await playback.start(owner, await body(request)));
       if ((match = /^\/api\/playback\/([a-f0-9-]{36})(\/heartbeat)?$/.exec(route))) {

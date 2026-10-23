@@ -9,7 +9,8 @@ const SER = '7690961604636052505';
 const EPI = '7690963410778868761';
 const html = data => `<script>_ROUTER_DATA = ${JSON.stringify({ loaderData: data })}; globalThis.doNotExecute = true; {junk}</script>`;
 const smallDrama = { series_id: SER, series_title: '军需处长的账本', episode_cnt: 46, category_list: [] };
-const searchHtml = html({ search: { isSuccess: true, searchList: [{ video_data: smallDrama }] } });
+const searchData = (overrides = {}) => ({ searchList: [{ video_data: smallDrama }], pageNum: 1, totalPages: 1, hasMore: false, ...overrides });
+const searchJson = JSON.stringify(searchData());
 const fromText = (text, options) => new Response(text, options);
 const errorCode = code => error => error instanceof WebsiteError && error.code === code && typeof error.status === 'number';
 
@@ -52,17 +53,57 @@ test('real streamed rank content merges without executing scripts', async () => 
   assert.deepEqual((await client.getRanks()).items.map(rank => rank.id), ['hot-drama', 'hot-real-drama', 'hot-ai-drama', 'hot-comic-drama']);
 });
 
-test('real search unwraps video_data and never invents search pagination', async () => {
+test('search requests distinct pages and preserves upstream terminal pagination', async () => {
+  const calls = [];
   const client = new WebsiteClient({ fetchFn: async url => {
-    assert.equal(url.pathname, '/search/%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF');
-    assert.equal(url.search, '');
-    return fromText(await fixture('search_%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF.html'));
+    calls.push(url.pathname + url.search);
+    const page = Number(url.searchParams.get('page') || 1);
+    return fromText(JSON.stringify(searchData({ pageNum: page, totalPages: 2, hasMore: page === 1,
+      searchList: [{ video_data: { ...smallDrama, series_id: page === 1 ? SER : '123' } }] })));
   } });
-  const result = await client.search('军需处长');
-  assert.equal(result.items.length, 10);
-  assert.equal(result.items[0].id, SER);
-  assert.equal(result.page, 1);
-  assert.equal(result.hasMore, false);
+  const first = await client.search('军需处长');
+  const second = await client.search('军需处长', { page: 2 });
+  assert.equal(first.items[0].id, SER);
+  assert.equal(first.hasMore, true);
+  assert.equal(second.items[0].id, '123');
+  assert.equal(second.page, 2);
+  assert.equal(second.hasMore, false);
+  await client.search('军需处长', { page: 2 });
+  assert.deepEqual(calls, ['/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF',
+    '/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=2']);
+});
+
+test('search rejects wrong pages, inconsistent pagination, HTML shells and malformed rows', async () => {
+  for (const data of [searchData({ pageNum: 2 }), searchData({ totalPages: -1 }),
+    searchData({ hasMore: true }), searchData({ totalPages: 2, hasMore: true, searchList: [] }),
+    searchData({ hasMore: 'false' }), searchData({ searchList: [{}] }), { code: 'error' }]) {
+    const client = new WebsiteClient({ fetchFn: async () => fromText(JSON.stringify(data)) });
+    await assert.rejects(client.search('test'), errorCode('SOURCE_INVALID_DATA'));
+  }
+  const client = new WebsiteClient({ fetchFn: async () => fromText('<div id="root"></div>') });
+  await assert.rejects(client.search('test'), errorCode('SOURCE_INVALID_DATA'));
+  const empty = new WebsiteClient({ fetchFn: async () => fromText(JSON.stringify(searchData({ searchList: [], totalPages: 0 }))) });
+  assert.deepEqual((await empty.search('nothing')).items, []);
+});
+
+test('actor-only search pages retain pagination without treating actors as dramas', async () => {
+  const client = new WebsiteClient({ fetchFn: async () => fromText(JSON.stringify(searchData({
+    searchList: [{ doc_type: 46, user_info: { name: 'actor' } }], totalPages: 2, hasMore: true,
+  }))) });
+  const result = await client.search('actor');
+  assert.deepEqual(result.items, []);
+  assert.equal(result.hasMore, true);
+});
+
+test('recorded official JSON page normalizes exact IDs and public drama fields', async () => {
+  const source = await readFile(new URL('../../research/search-pagination/page2.fixture.json', import.meta.url), 'utf8');
+  const client = new WebsiteClient({ fetchFn: async () => fromText(source) });
+  const result = await client.search('军需处长', { page: 2 });
+  const original = JSON.parse(source);
+  assert.deepEqual(result.items.map(item => item.id), original.searchList.map(item => item.video_data.series_id));
+  assert.equal(result.items[0].title, original.searchList[0].video_data.series_title);
+  assert.equal(result.page, 2);
+  assert.equal(result.hasMore, true);
 });
 
 test('real detail includes every vid despite accessible_episode_cnt=3 and streamed recommendations', async () => {
@@ -82,20 +123,20 @@ test('real detail includes every vid despite accessible_episode_cnt=3 and stream
 });
 
 test('JSON parser stops at the first value and supports quoted HTML entities in streamed args', async () => {
-  const args = JSON.stringify(['search', 'searchList', [{ video_data: { ...smallDrama, series_title: 'A "quote" & <x> \'single\'' } }]])
+  const args = JSON.stringify(['category', 'recommendList', [{ ...smallDrama, series_title: 'A "quote" & <x> \'single\'' }]])
     .replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll("'", '&#39;').replaceAll('<', '&#x3c;').replaceAll('>', '&gt;');
-  const source = html({ search: { isSuccess: true, searchList: [] } }) +
+  const source = html({ category: { isSuccess: true, recommendList: [], pagination: { pageNum: 1, totalPages: 1 } } }) +
     `<script data-fn-name='r' data-fn-args="${args}">throw new Error('never execute')</script>`;
   const client = new WebsiteClient({ fetchFn: async () => fromText(source) });
-  assert.equal((await client.search('test')).items[0].title, 'A "quote" & <x> \'single\'');
+  assert.equal((await client.getCategory('real-drama')).items[0].title, 'A "quote" & <x> \'single\'');
   assert.equal(globalThis.doNotExecute, undefined);
 });
 
 test('source errors and incomplete episodes are errors, never empty successful pages', async () => {
   for (const source of [
-    'not a router page', html({ search: { isSuccess: false, searchList: [] } }),
-    html({ search: { isSuccess: true, searchList: null } }),
-    html({ search: { isSuccess: true, searchList: [{ video_data: null }] } }),
+    'not a router page', JSON.stringify(searchData({ isSuccess: false })),
+    JSON.stringify(searchData({ searchList: null })),
+    JSON.stringify(searchData({ searchList: [{ video_data: null }] })),
   ]) {
     await assert.rejects(new WebsiteClient({ fetchFn: async () => fromText(source) }).search('test'), errorCode('SOURCE_INVALID_DATA'));
   }
@@ -108,7 +149,7 @@ test('invalid user parameters never reach the upstream fetch function', async ()
   for (const request of [() => client.getCategory('https://evil.test'), () => client.getRank('__proto__'),
     () => client.getCategory('real-drama', -1), () => client.getCategory('real-drama', '2x'),
     () => client.getDrama(7690961604636052505), () => client.getDrama('https://evil.test'),
-    () => client.search(' '), () => client.search('a'.repeat(101)),
+    () => client.search('x', { page: 0 }), () => client.search('x', { page: '2x' }), () => client.search('x', { page: 1.5 }), () => client.search(' '), () => client.search('a'.repeat(101)),
     () => client.getPlayInfo(SER, EPI, '1080p'), () => client.getPlayInfo(SER, '/url')]) {
     await assert.rejects(request(), errorCode('INVALID_ARGUMENT'));
   }
@@ -117,7 +158,7 @@ test('invalid user parameters never reach the upstream fetch function', async ()
 
 test('metadata coalesces concurrent requests and clones cached results', async () => {
   let count = 0;
-  const client = new WebsiteClient({ fetchFn: async () => { count++; await new Promise(resolve => setTimeout(resolve, 10)); return fromText(searchHtml); } });
+  const client = new WebsiteClient({ fetchFn: async () => { count++; await new Promise(resolve => setTimeout(resolve, 10)); return fromText(searchJson); } });
   const [one, two] = await Promise.all([client.search('test'), client.search('test')]);
   assert.equal(count, 1);
   one.items[0].title = 'changed';
@@ -128,7 +169,7 @@ test('metadata coalesces concurrent requests and clones cached results', async (
 
 test('metadata TTL expires and cache evicts past 256 entries', async () => {
   let count = 0;
-  const fetchFn = async () => { count++; return fromText(searchHtml); };
+  const fetchFn = async () => { count++; return fromText(searchJson); };
   const client = new WebsiteClient({ fetchFn, cacheTtlMs: 5 });
   await client.search('ttl');
   await new Promise(resolve => setTimeout(resolve, 10));
@@ -151,7 +192,7 @@ test('one cancelled metadata subscriber does not cancel another', async () => {
       const timer = setTimeout(resolve, 20);
       signal.addEventListener('abort', () => { clearTimeout(timer); reject(signal.reason); }, { once: true });
     });
-    return fromText(searchHtml);
+    return fromText(searchJson);
   } });
   const controller = new AbortController();
   const first = client.search('shared', { signal: controller.signal });
@@ -182,7 +223,7 @@ test('an immediate metadata retry does not reuse an aborted in-flight request', 
       // Model a fetch implementation that settles after its abort notification.
       setTimeout(() => reject(signal.reason), 10);
     }, { once: true }));
-    return fromText(searchHtml);
+    return fromText(searchJson);
   } });
   const controller = new AbortController();
   const first = client.search('retry', { signal: controller.signal });

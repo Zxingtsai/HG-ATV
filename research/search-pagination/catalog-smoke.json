@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-10-23T00:24:43.493Z",
+  "results": [
+    {
+      "name": "home",
+      "success": true,
+      "sections": 4
+    },
+    {
+      "name": "category",
+      "success": true,
+      "items": 24
+    },
+    {
+      "name": "detail",
+      "success": true,
+      "episodes": 46
+    }
+  ]
+}
