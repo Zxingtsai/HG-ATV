@@ -1,0 +1,120 @@
+{
+  "updated_at_utc_date": "2026-10-23",
+  "baseline_commit": "2893902",
+  "scope": "Sanitized metadata of selected retained REA failures and a Smali fallback. This is not a full project Evidence ledger or proof that the tool can never analyze the targets. Referenced raw local artifacts are not all public repository files. No new REA execution was performed for this inventory. No APK, application code, credentials, phone logs or request payloads included.",
+  "records": [
+    {
+      "id": "E01",
+      "source_local_relative_file": "research/rea-package.json",
+      "source_file_sha256": "a2f64fef7197f49437cb130cbf65a8e4d70550fa7f65fa10f45b6d165962e227",
+      "status": "unresolved_package_coverage",
+      "note": "Full new APK package inspection timed out; selected reduced carriers subsequently worked.",
+      "reported_error_code": "provider_timeout",
+      "operation": "inspect_android_package",
+      "reported_timeout_ms": 240000
+    },
+    {
+      "id": "E02",
+      "source_local_relative_file": "research/version-compare/old-rea-package.json",
+      "source_file_sha256": "efd845fc1e378818d4a7230e1845ec8fed4110e09a76189a13b3ce10b6a8d84d",
+      "status": "unresolved_package_coverage",
+      "note": "Full old APK package inspection timed out; selected reduced carriers subsequently worked.",
+      "reported_error_code": "provider_timeout",
+      "operation": "inspect_android_package",
+      "reported_timeout_ms": 240000
+    },
+    {
+      "id": "E03",
+      "source_local_relative_file": "research/version-compare/playback/old-response-consumer-rea.json",
+      "source_file_sha256": "e5d892ee586984a80b4f4a6a5d844aad493271a450ab6b2f234dbcfd1b0b39e1",
+      "status": "smali_fallback_available",
+      "note": "Java body unavailable; complete Smali retained and used for the reported static facts.",
+      "evidence_id": "ev_e2ea1b2e846f68f4813aba9fdf916af7d625baeac69e8613daf7d2ce4a6b7387",
+      "operation": "inspect_android_method",
+      "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.d.a",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(com.dragon.read.rpc.model.GetVideoModelResponse): com.dragon.read.component.shortvideo.api.model.t",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelResponse;)Lcom/dragon/read/component/shortvideo/api/model/t;"
+      },
+      "representation": "smali",
+      "markers": [
+        "java_body_unavailable"
+      ],
+      "source_status": "complete"
+    },
+    {
+      "id": "E04",
+      "source_local_relative_file": "research/version-compare/playback/old-model-json-parser-rea.json",
+      "source_file_sha256": "4a1230678c31daec76e53a131698df48b54f7b9b456514cfab440f7f24a872b3",
+      "status": "invalid_input_with_dex_supplement",
+      "note": "Same-name overload not selected; ordinary original-DEX disassembly supplied parser observations.",
+      "reported_error_code": "invalid_request",
+      "operation": "inspect_android_method",
+      "issue_fields": [
+        {
+          "field": [
+            "overload_index"
+          ],
+          "reason": "invalid_value"
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "source_local_relative_file": "research/version-compare/account-library/rea-old-business-class.json",
+      "source_file_sha256": "591ce9ecc939e04450f7824a748f7844581a540afe0cf6281c7197c1eaad48bc",
+      "status": "class_name_mismatch_with_dex_supplement",
+      "note": "Exact class lookup failed in the provider; original-DEX disassembly supplied selected collection observations.",
+      "reported_error_code": "invalid_request",
+      "operation": "inspect_android_class",
+      "issue_fields": [
+        {
+          "field": [
+            "class_name"
+          ],
+          "reason": "invalid_value"
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "source_local_relative_file": "research/static-followup/kl8-a-clinit.json",
+      "source_file_sha256": "b418a12a0870ba6e81a66606c5545e6d4ffa77c284a9a553ccc9ab145db5945c",
+      "status": "method_read_failure_with_dex_supplement",
+      "note": "Provider could not establish one selected clinit method; original-DEX supplement did not establish it as the host initialization source.",
+      "reported_error_code": "execution_failure",
+      "operation": "inspect_android_method"
+    },
+    {
+      "id": "E07",
+      "source_local_relative_file": "research/rea-video-network-body.json",
+      "source_file_sha256": "3730eb71e256394cafc8d07ad9ff19596a11e2f0963c727edb602bf58ae229d4",
+      "status": "resolved_by_provider_alias",
+      "note": "Initial class name lookup failed; provider alias was used successfully afterwards.",
+      "reported_error_code": "invalid_request",
+      "operation": "inspect_android_method",
+      "issue_fields": [
+        {
+          "field": [
+            "class_name"
+          ],
+          "reason": "invalid_value"
+        }
+      ],
+      "subsequent_success_evidence_id": "ev_50660e19157aafbd996ce20a198c85561fbce6dab793262eaf81a9ee9bd9145e"
+    },
+    {
+      "id": "E08",
+      "source_local_relative_file": "research/version-compare/transport/old-query-flatten-rea.json",
+      "source_file_sha256": "101a6b84c3166c539c4339307c79e4113c1320adc33b7b8a57df1a904024b729",
+      "status": "resolved_by_correct_tool_name",
+      "note": "Requested unregistered decompile_android_method; inspect_android_method subsequently succeeded.",
+      "reported_error_code": -32602,
+      "operation": null,
+      "subsequent_success_evidence_id": "ev_69822dfbc225d96934d8f0cb62036eb8e3ee6d0bbd0ec31c83c4b37dd3d20180"
+    }
+  ]
+}

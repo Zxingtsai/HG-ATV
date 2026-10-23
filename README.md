@@ -41,6 +41,7 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 - [服务端扫码登录与更新](docs/ACCOUNT.zh-CN.md)
 - [原 APK 的 REA 分析](research/ANALYSIS.zh-CN.md) · [完整播放协议验证](research/protocol-pass2/README.zh-CN.md)
 - [2024 旧版与当前官网版通信机制对照](research/version-compare/REPORT.zh-CN.md)：登录会话、收藏同步、播放模型及 RPC 参数；原生 App 协议接入仍待运行时验证。
+- [REA 分析未解决事项清单](research/REA-UNRESOLVED.zh-CN.md)：协议未知项、工具失败/回退、待实测项目及关闭判据。
 - [外部组件与许可](docs/DEPENDENCIES.md)
 
 服务端需要 Node.js 24 和 FFmpeg，无 npm 第三方运行依赖：
