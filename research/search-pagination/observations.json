@@ -1,0 +1,1190 @@
+{
+  "observed_at": "2026-10-23T00:18:45.444110+00:00",
+  "base_url": "https://hongguoduanju.com",
+  "query": "军需处长",
+  "authentication": "anonymous; no cookies supplied",
+  "pages": [
+    {
+      "page_requested": 1,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=1",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "9e652f855b04f687c016397411e1fbef8774c202a683826f49f66fe5c63e763c",
+          "bytes": 25251
+        }
+      ],
+      "totalCount": "194",
+      "pageNum": 1,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690961604636052505",
+          "kind": "video"
+        },
+        {
+          "series_id": "7675678593866812440",
+          "kind": "video"
+        },
+        {
+          "series_id": "7680845974494776345",
+          "kind": "video"
+        },
+        {
+          "series_id": "7678620970638134334",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695727473111092286",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690928657451207704",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690489511846874136",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693071659686693913",
+          "kind": "video"
+        },
+        {
+          "series_id": "7683944508882422809",
+          "kind": "video"
+        },
+        {
+          "series_id": "7684505755935837246",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 2,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=2",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "09eda067a18bb623ea6ccece56895a802b141c74c6e000fc143281f00134054a",
+          "bytes": 14744
+        }
+      ],
+      "totalCount": "194",
+      "pageNum": 2,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7684505755935837246",
+          "kind": "video"
+        },
+        {
+          "series_id": "7671966197985856536",
+          "kind": "video"
+        },
+        {
+          "series_id": "7675009079697230872",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691315197973122073",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694627129673124926",
+          "kind": "video"
+        },
+        {
+          "series_id": "7662702966977088574",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690843634291182654",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697516930667646014",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692043430955863102",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690186465237535768",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 3,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=3",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "0ab920f707326568f406f0209d453a83fa5f464c8568650c3915bcbbc3271a99",
+          "bytes": 21822
+        }
+      ],
+      "totalCount": "194",
+      "pageNum": 3,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690843634291182654",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692043430955863102",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690848242627513406",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692083638283799576",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695697088058756158",
+          "kind": "video"
+        },
+        {
+          "series_id": "7684570717379120153",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690186465237535768",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696023326375808024",
+          "kind": "video"
+        },
+        {
+          "series_id": "7680479504975793176",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694189547994745881",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 4,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=4",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "ed1f141e94c01bb5b3524b382d18e7347253283d181c002ec222f4faa609b8c3",
+          "bytes": 16838
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 4,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690845137529752600",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689863296106646590",
+          "kind": "video"
+        },
+        {
+          "series_id": "7545355288992304190",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697461280164039704",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695624411923090457",
+          "kind": "video"
+        },
+        {
+          "series_id": "7638987534483082265",
+          "kind": "video"
+        },
+        {
+          "series_id": "7682701350248909849",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690466324060851262",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688705214697720856",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689781362714233880",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 5,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=5",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "d127647497ea2b1063ebcdfeead67cdef4d42cc1bb6c6578e7277801d8a39c5a",
+          "bytes": 18808
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 5,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7689781354006858776",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693487603265326142",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690545195535846424",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688615525244488729",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691972326044224537",
+          "kind": "video"
+        },
+        {
+          "series_id": "7682996691565300761",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693745783505423422",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691210037947010073",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688332580894035006",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695754334847388696",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 6,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=6",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "32e89ce46de73d0e07da6ba560e3e0b8993dddb9b38ff351f5c5a7d2e99f2f6e",
+          "bytes": 21656
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 6,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7695624411923090457",
+          "kind": "video"
+        },
+        {
+          "series_id": "7638987534483082265",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690466324060851262",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689781362714233880",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688705214697720856",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693487603265326142",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689781354006858776",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690545195535846424",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688615525244488729",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691972326044224537",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 7,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=7",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "f01716a4d27f818582512c17f2f26f7c8fbf7bb3b93684a4a72af909e1b73dd0",
+          "bytes": 19358
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 7,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7689408739706670105",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694223574474689561",
+          "kind": "video"
+        },
+        {
+          "series_id": "7645636143655963672",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690854408719961150",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691695530669263934",
+          "kind": "video"
+        },
+        {
+          "series_id": "7699097140965952537",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694959546460015641",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696737677353176088",
+          "kind": "video"
+        },
+        {
+          "series_id": "7673705628530920473",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688272297555135550",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 8,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=8",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "8e76c68a6b88ef99b6dc021ce08b1aacbf147576010c3f4f4a0c714383b93ae5",
+          "bytes": 21285
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 8,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7687590424415849497",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693533973871332377",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692751576795991064",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692006318944570392",
+          "kind": "video"
+        },
+        {
+          "series_id": "7673532469693402137",
+          "kind": "video"
+        },
+        {
+          "series_id": "7682809595617627161",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691686260825410622",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690184933037329432",
+          "kind": "video"
+        },
+        {
+          "series_id": "7687177052939947070",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691927471330970648",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 9,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=9",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "812e2dc952e306e16581a156e189103cbf8f3430102deade3bece39356390b29",
+          "bytes": 14301
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 9,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7698738434440973374",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692743860258098238",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694211181950536728",
+          "kind": "video"
+        },
+        {
+          "series_id": "7650039691265182745",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694702904095034393",
+          "kind": "video"
+        },
+        {
+          "series_id": "7644485782765308953",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694337966289718334",
+          "kind": "video"
+        },
+        {
+          "series_id": "7678237515307830297",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694209632096504894",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690223581468298302",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 10,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=10",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "7cbd1f9ad62651f1d8427b3975e06f5d9ae57478b5660afd3f2cc692ae7c5509",
+          "bytes": 18393
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 10,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7678237515307830297",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690223581468298302",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696921654735162392",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694546714295815193",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696822712345299993",
+          "kind": "video"
+        },
+        {
+          "series_id": "7677801492920667198",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689841672124894270",
+          "kind": "video"
+        },
+        {
+          "series_id": "7687964583457197080",
+          "kind": "video"
+        },
+        {
+          "series_id": "7683196130645003288",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693948331357129753",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 11,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=11",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "9b6ce4b35260ec798cd0b8949939915ba6fcffb63fc40b29b9e61daa0bfe6185",
+          "bytes": 13001
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 11,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690189560721984574",
+          "kind": "video"
+        },
+        {
+          "series_id": "7687964583457197080",
+          "kind": "video"
+        },
+        {
+          "series_id": "7686008653844859966",
+          "kind": "video"
+        },
+        {
+          "series_id": "7677801492920667198",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697901938880302104",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693119584408177726",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693161323273653272",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694713708240440345",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692023328076221502",
+          "kind": "video"
+        },
+        {
+          "series_id": "7635292142654475288",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 12,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=12",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "5d082e7aa0d1ddc7147977dd15246008bbdb63d992d5fda934236da7976e726a",
+          "bytes": 23281
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 12,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7694713708240440345",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690478684859272216",
+          "kind": "video"
+        },
+        {
+          "series_id": "7635292142654475288",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688736152076962840",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691972324068690969",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689827750365891608",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695288899597257752",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690141631198006334",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696341831973358617",
+          "kind": "video"
+        },
+        {
+          "series_id": "7625211010932034585",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 13,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=13",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "dd40b3fe3648ca0e4cf28a160aa631de4164a52f125af3ac3fdae26616fd3ec6",
+          "bytes": 15456
+        }
+      ],
+      "totalCount": "197",
+      "pageNum": 13,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7678228232339999806",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690163276214176792",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696429973476740121",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689094326504131646",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690801855089085464",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695429583633402904",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694286944485772313",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692281536313297982",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693544779077930009",
+          "kind": "video"
+        },
+        {
+          "series_id": "7665713396196592702",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 14,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=14",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "39860740ac7f4ed1c7bda3ba417a081e7eec96d9a308ced00f9a897595f683fc",
+          "bytes": 27551
+        }
+      ],
+      "totalCount": "195",
+      "pageNum": 14,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7674916325881285657",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695748149930904638",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688625055143578686",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694679689373158425",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696805686105099288",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697934404840066072",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697928238093323326",
+          "kind": "video"
+        },
+        {
+          "series_id": "7423695629907397657",
+          "kind": "video"
+        },
+        {
+          "series_id": "7685223441078701080",
+          "kind": "video"
+        },
+        {
+          "series_id": "7583982652944813118",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 15,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=15",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "ee6598be53c81d5b403e154b02350a50ac0319c088becda20ae26314f437aa3a",
+          "bytes": 25519
+        }
+      ],
+      "totalCount": "196",
+      "pageNum": 15,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7583982652944813118",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689782901029751833",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688740767782669374",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690860605510519870",
+          "kind": "video"
+        },
+        {
+          "series_id": "7612212443296566334",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697912764613807166",
+          "kind": "video"
+        },
+        {
+          "series_id": "7637853654988360729",
+          "kind": "video"
+        },
+        {
+          "series_id": "7554687564800609342",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693090206953507864",
+          "kind": "video"
+        },
+        {
+          "series_id": "7698269944475028542",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 16,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=16",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "db419b96bca5c9181d079499f43d0a9cfc76d5dfe5e7d0be396cf4cd1ff0140b",
+          "bytes": 24777
+        }
+      ],
+      "totalCount": "195",
+      "pageNum": 16,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690198820017163288",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693090206953507864",
+          "kind": "video"
+        },
+        {
+          "series_id": "7633350163431427096",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694653385668037657",
+          "kind": "video"
+        },
+        {
+          "series_id": "7676048138775301145",
+          "kind": "video"
+        },
+        {
+          "series_id": "7686694123864067096",
+          "kind": "video"
+        },
+        {
+          "series_id": "7537142713997610009",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689145901096389656",
+          "kind": "video"
+        },
+        {
+          "series_id": "7607103578359991320",
+          "kind": "video"
+        },
+        {
+          "series_id": "7686877632012487704",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 17,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=17",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "c592193d9ddcc1b1d6912053b4d626f36e84c293ce0ade7d70b22a3a4d6b6e5c",
+          "bytes": 26639
+        }
+      ],
+      "totalCount": "195",
+      "pageNum": 17,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7690803377545940030",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692855171423931417",
+          "kind": "video"
+        },
+        {
+          "series_id": "7662338060683594776",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691528545272613950",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696903115634658329",
+          "kind": "video"
+        },
+        {
+          "series_id": "7658242231093972030",
+          "kind": "video"
+        },
+        {
+          "series_id": "7637911894363212825",
+          "kind": "video"
+        },
+        {
+          "series_id": "7670188064148311064",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690562175030529086",
+          "kind": "video"
+        },
+        {
+          "series_id": "7621522299136511000",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 18,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=18",
+      "attempts": [
+        {
+          "status": 502,
+          "sha256": "a04d6d264f6e47b16bf46eec044a79de36960136872ed4a5858c62cd0bd0010b",
+          "bytes": 78,
+          "code": "upstream_unavailable"
+        },
+        {
+          "status": 200,
+          "sha256": "539ebb75bfe7dac8dc306f0d518d924227f9afebbf366ede33d81e4942f5ae76",
+          "bytes": 27998
+        }
+      ],
+      "totalCount": "195",
+      "pageNum": 18,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7669713392134802457",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691738836547669016",
+          "kind": "video"
+        },
+        {
+          "series_id": "7445975761825057854",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697932872820214846",
+          "kind": "video"
+        },
+        {
+          "series_id": "7520576652108106814",
+          "kind": "video"
+        },
+        {
+          "series_id": "7645503165323824190",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691916632154721305",
+          "kind": "video"
+        },
+        {
+          "series_id": "7650532918510505022",
+          "kind": "video"
+        },
+        {
+          "series_id": "7566884979905399833",
+          "kind": "video"
+        },
+        {
+          "series_id": "7698942519211478041",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 19,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=19",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "3f91715d7cfb1c35373978faea431c232bff7199ed251be6f645fb44731497c1",
+          "bytes": 25855
+        }
+      ],
+      "totalCount": "195",
+      "pageNum": 19,
+      "totalPages": 20,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7682341088467618841",
+          "kind": "video"
+        },
+        {
+          "series_id": "7691686254890454078",
+          "kind": "video"
+        },
+        {
+          "series_id": "7528628956048673817",
+          "kind": "video"
+        },
+        {
+          "series_id": "7517578439130369048",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690859043765619736",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689135096795761689",
+          "kind": "video"
+        },
+        {
+          "series_id": "7616648204175559704",
+          "kind": "video"
+        },
+        {
+          "series_id": "7686452417717619737",
+          "kind": "video"
+        },
+        {
+          "series_id": "7652566176211405849",
+          "kind": "video"
+        },
+        {
+          "series_id": "7598947951435582526",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 20,
+      "path": "/api/search/result?query=%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF&page=20",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "95172f3c2a1f47add3a123468b5158afc5a0420ba9609a2026c52ab3809ce68e",
+          "bytes": 11781
+        }
+      ],
+      "totalCount": "194",
+      "pageNum": 20,
+      "totalPages": 20,
+      "hasMore": false,
+      "items": [
+        {
+          "series_id": "7609656600487267390",
+          "kind": "video"
+        },
+        {
+          "series_id": "7615930509360630808",
+          "kind": "video"
+        },
+        {
+          "series_id": "7697979261189114942",
+          "kind": "video"
+        },
+        {
+          "series_id": "7382050306420395032",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    }
+  ],
+  "video_rows": 194,
+  "unique_series_ids": 172,
+  "all_reported_pages_returned": true,
+  "boundary": "One query and observation window; ranking/total can change between requests."
+}

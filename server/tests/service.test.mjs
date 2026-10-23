@@ -7,8 +7,36 @@ import { Pairing } from '../src/auth.mjs';
 import { createService, parseRange } from '../src/main.mjs';
 import { PlaybackManager } from '../src/playback.mjs';
 import { EventEmitter } from 'node:events';
+import { WebsiteClient } from '../src/website.mjs';
 const SER = '7690961604636052505', EPI = '7690963410778868761';
 const temp = () => mkdtemp(join(tmpdir(), 'hongguo-tv-test-'));
+
+test('paired search HTTP route forwards page, rejects invalid input and reports upstream failure', async () => {
+  const dir = await temp();
+  const pairing = await new Pairing(dir).init();
+  let calls = 0;
+  const website = new WebsiteClient({ fetchFn: async url => {
+    calls++;
+    const page = Number(url.searchParams.get('page') || 1);
+    assert.equal(url.searchParams.get('query'), '军需处长');
+    if (page === 3) return Response.json({ code: 'upstream_unavailable' }, { status: 502 });
+    return Response.json({ searchList: [], pageNum: page, totalPages: 2, hasMore: false });
+  } });
+  const service = await createService({ dataDir: dir }, { website, pairing, media: {}, playback: { close: async () => {} }, initializeMedia: false });
+  await new Promise(resolve => service.server.listen(0, '127.0.0.1', resolve));
+  const base = `http://127.0.0.1:${service.server.address().port}/api/search?q=${encodeURIComponent('军需处长')}`;
+  try {
+    assert.equal((await fetch(base + '&page=2')).status, 401);
+    const pair = await pairing.pair(pairing.code, 'local');
+    const headers = { Authorization: 'Bearer ' + pair.token };
+    const response = await fetch(base + '&page=2', { headers });
+    assert.equal(response.status, 200);
+    assert.equal((await response.json()).page, 2);
+    for (const page of ['0', '-1', '2x', '1.5', '']) assert.equal((await fetch(base + '&page=' + page, { headers })).status, 400);
+    assert.equal(calls, 1);
+    assert.equal((await fetch(base + '&page=3', { headers })).status, 502);
+  } finally { await service.close(); await rm(dir, { recursive: true, force: true }); }
+});
 
 test('pairing persists hashes only and all paired devices survive concurrent writes', async () => {
   const dir = await temp();

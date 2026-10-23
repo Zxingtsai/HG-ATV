@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-23T00:28:27.272729+00:00",
+  "base_commit": "34875df02bc53e49bcb9b558f7c81b0a2b570680",
+  "server": {
+    "command": "npm test --prefix server",
+    "node": "24.19.0",
+    "tests": 51,
+    "passed": 51,
+    "failed": 0
+  },
+  "android": {
+    "tasks": [
+      ":app:assembleDebug",
+      ":app:lintDebug"
+    ],
+    "result": "BUILD SUCCESSFUL",
+    "jdk": "Temurin 17",
+    "gradle": "8.11.1",
+    "compile_sdk": 35,
+    "lint_errors": 0,
+    "lint_warnings": 25,
+    "apk_sha256": "8dfa88f4eb604202b5c29d5519d1ccfe25ebf905bd3f77df28bc531210d0a3e7",
+    "signature_v2_verified": true,
+    "environment": "Cloud Linux; inherited proxy, system Java CA trust; fresh JDK and Android SDK installed for build"
+  },
+  "source_sha256": {
+    "server/src/website.mjs": "b01ae7f100c3f5839e739877e1a2344a76b5d8c877a47347a6568c7764129ddd",
+    "server/src/main.mjs": "b25d10ff7f7db433675ed7a66cdcdb7068eae7dc94bf3d1c60d3933cca5dc0f4",
+    "client/app/src/main/java/cn/hongguotv/MainActivity.kt": "81fbaa7879550701153f45cbccbe2e448db9e2aea176b34cc538c7581b387a82",
+    "server/tests/website.test.mjs": "5f31b3ceda1f09b24a821b626efdb6ce508fb8034d12f00bdff3b19bd41310bf",
+    "server/tests/service.test.mjs": "8e12c987115d0bc321f89d89560881f346b7f661682ac661ff9d2836febf3d57"
+  },
+  "not_verified": [
+    "Android TV runtime and DPAD interaction",
+    "Windows/QSV runtime",
+    "Real account login/session lifecycle",
+    "Native App protocol or REA evidence"
+  ]
+}

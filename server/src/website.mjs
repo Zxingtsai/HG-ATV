@@ -225,7 +225,7 @@ export class WebsiteClient {
     }
   }
 
-  async #metadata(path, convert, { signal } = {}) {
+  async #metadata(path, convert, { signal } = {}, decode = routerData) {
     cancelled(signal);
     const scope = this.#cacheScope(), cacheKey = `${scope}:${path}`;
     const cached = this.#cache.get(cacheKey);
@@ -244,7 +244,7 @@ export class WebsiteClient {
         if (scope !== this.#cacheScope()) fail('SOURCE_CANCELLED');
         if (response.status === 404) fail('SOURCE_NOT_FOUND');
         if (response.status !== 200) fail('SOURCE_UNAVAILABLE');
-        const value = convert(routerData(response.text));
+        const value = convert(decode(response.text));
         // Only the public, normalized API fields reach this bounded cache.
         if (this.#ttl > 0) {
           for (const [key, entry] of this.#cache) if (entry.expires <= Date.now()) this.#cache.delete(key);
@@ -313,13 +313,20 @@ export class WebsiteClient {
     }, options);
   }
 
-  async search(query, options) {
+  async search(query, options = {}) {
     if (typeof query !== 'string' || !query.trim() || query.length > 100) fail('INVALID_ARGUMENT');
     query = query.trim();
-    return this.#metadata(`/search/${encodeURIComponent(query)}`, routes => {
-      const route = routeWith(routes, 'searchList');
-      return { title: `搜索：${query}`, items: list(route.searchList).map(item => drama(item.video_data)), page: 1, hasMore: false };
-    }, options);
+    const page = pageNumber(options.page);
+    return this.#metadata(`/api/search/result?query=${encodeURIComponent(query)}${page === 1 ? '' : `&page=${page}`}`, route => {
+      if (!object(route) || route.isSuccess === false || route.pageNum !== page ||
+          !Number.isSafeInteger(route.totalPages) || route.totalPages < 0 ||
+          typeof route.hasMore !== 'boolean' || route.hasMore !== (page < route.totalPages)) fail();
+      const rows = list(route.searchList);
+      // Official search also returns actor cards (doc_type 46); Page contains dramas only.
+      const items = rows.filter(item => item?.doc_type !== 46).map(item => drama(item?.video_data));
+      if (route.hasMore && rows.length === 0) fail();
+      return { title: `搜索：${query}`, items, page, hasMore: route.hasMore };
+    }, options, JSON.parse);
   }
 
   async getDrama(seriesId, options) {

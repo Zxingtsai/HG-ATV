@@ -1,0 +1,38 @@
+{
+  "scope": "Android build-tools 35.0.0 dexdump -d, original DEX; separate from REA. Raw disassembly retained locally.",
+  "records": [
+    {
+      "record": "com-dragon-read-component-shortvideo-api-d-a-t.dexdump.txt",
+      "sha256": "c81f9157592029928c39b457c83ecc32cdfa54666381c3221f47780e4b5109ea"
+    },
+    {
+      "record": "com-dragon-read-component-shortvideo-impl-v2-data-f.dexdump.txt",
+      "sha256": "06a70328e48c88448bbe71baa6e022c70f6d82202614da9d4bc220cb9b928900"
+    },
+    {
+      "record": "com-dragon-read-local-db-interfaces-dw.dexdump.txt",
+      "sha256": "2dd24d10c19f994409503afae4641bcf7c9f3efc9447f2dc5e22989b68a7887b"
+    },
+    {
+      "record": "com-dragon-read-local-db-interfaces-dx$2.dexdump.txt",
+      "sha256": "a19dcd2a716dd42c6eeec4cf53f9bc97a487045d89c83400e7af927fcf48c8a3"
+    },
+    {
+      "record": "com-dragon-read-local-db-interfaces-dx$4.dexdump.txt",
+      "sha256": "503de6327fd6f940d61b44ca5650c34ab0b908a01cdd207596d1de59fc1672b6"
+    },
+    {
+      "record": "com-dragon-read-local-db-interfaces-dx.dexdump.txt",
+      "sha256": "795ec682ffa266af47960accd7ba1cd7aac7b662d71b5405029ac34217807bc1"
+    },
+    {
+      "record": "com-dragon-read-pages-video-e$q$1.dexdump.txt",
+      "sha256": "6c8c36f953960b9994b169dccefb39dbb49feab79503de03cda0627978c46127"
+    },
+    {
+      "record": "com-dragon-read-pages-video-e$q.dexdump.txt",
+      "sha256": "45c832259f22ffd7344d81af4228244381411bf77f5d0afed43352e7a481b8ee"
+    }
+  ],
+  "class_metadata_sha256": "418bb44fddb2775a27a0109758f16dd99e07a5ba1bf635573c319ab8de601072"
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh MCP process; three selected original-APK queries through replay.mjs. No APK execution. SHA guard added afterward and separately checked against the same original files.",
+  "exit_code": 0,
+  "records": [
+    {
+      "record": "old-package-recovered.json",
+      "sha256": "8b4d5f23c82f176bc5d7dda68406b49b67b4728ee3868565c7f7b0f2fb77498f",
+      "evidence_id": "ev_3d53899d21707acd88ce7da5e0cb15975dfb3a4fec62c2b89a3c0482847bc9a2",
+      "duration_ms": 57849,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-parser-body.json",
+      "sha256": "2835a83107b9c990b22bfa390b7a49f691af44da1f7a7751a0e2ecf378dd1591",
+      "evidence_id": "ev_5189ee579fe9749e9ae0d62bd72a7c56dd5612d855c1694119c33c158f61583b",
+      "duration_ms": 4343,
+      "representation": "java",
+      "source_status": "complete"
+    },
+    {
+      "record": "old-shelf-q-run.json",
+      "sha256": "338850722c4db12f866bd9ea1454db0caf7d3b2874d9567e4cbfc4bbdad56092",
+      "evidence_id": "ev_39ded04c36bd01d1884755be9495444574767c3f1b12d623e01230bdb7b14070",
+      "duration_ms": 5149,
+      "representation": "java",
+      "source_status": "complete"
+    }
+  ],
+  "bundle": {
+    "sha256": "95cb6c750b62a5cb20262f2bc19ac71097c0a4fc2382ec5affb4ee93bf6756a3",
+    "record_count": 3
+  }
+}
