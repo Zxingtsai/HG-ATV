@@ -1,0 +1,9 @@
+{
+  "source_apk": "/workspace/hongguo-tv/research/version-compare/hongguo-6.2.3.32.apk",
+  "source_apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "source_dex": "classes12.dex",
+  "source_dex_sha256": "28f2962d1a14c7782b9e716e2d91c40ee3e2051a54d770354a60d969b3d00c17",
+  "carrier": "/workspace/hongguo-tv/research/version-compare/account-library/old-business-carrier.apk",
+  "carrier_sha256": "a4a037cf45b6884011dc3aedcd2152ace597ed258d05c51e4a64943598cd9fd8",
+  "scope": "Manifest and one byte-identical DEX in reduced unsigned carrier; static inspection only, never launched. Other DEX references may be unresolved."
+}

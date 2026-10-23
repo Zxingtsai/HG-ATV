@@ -1,0 +1,85 @@
+{
+  "apk_path": "/workspace/hongguo-tv/research/version-compare/hongguo-6.2.3.32.apk",
+  "sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "scope": "Declared DEX metadata and literal strings only; static shell parser, no execution; UTF-8 decode replaces invalid/MUTF sequences.",
+  "dex": [
+    {
+      "member": "classes.dex",
+      "sha256": "85fdc207c12d47a57ba17c087c1e236a4e1041c2bf56eeadba4aa38bd7440dda",
+      "classes": 8723,
+      "strings": 48681
+    },
+    {
+      "member": "classes10.dex",
+      "sha256": "8d68358e62707d7c3198a3ef7235662c6a513dceb12e1f57e8912d3a57c58039",
+      "classes": 12112,
+      "strings": 43016
+    },
+    {
+      "member": "classes11.dex",
+      "sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+      "classes": 10637,
+      "strings": 43892
+    },
+    {
+      "member": "classes12.dex",
+      "sha256": "28f2962d1a14c7782b9e716e2d91c40ee3e2051a54d770354a60d969b3d00c17",
+      "classes": 9751,
+      "strings": 48828
+    },
+    {
+      "member": "classes13.dex",
+      "sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "classes": 11428,
+      "strings": 49833
+    },
+    {
+      "member": "classes2.dex",
+      "sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+      "classes": 9036,
+      "strings": 40523
+    },
+    {
+      "member": "classes3.dex",
+      "sha256": "c91eb6caf080f198814cd5d5fa401e0fdad1ec5fc55498931974165445e52510",
+      "classes": 8939,
+      "strings": 51106
+    },
+    {
+      "member": "classes4.dex",
+      "sha256": "71bc739dea6174a67f85cb7733e82afe83a6f8d67633cbcb6de510b07faaaff7",
+      "classes": 8120,
+      "strings": 53328
+    },
+    {
+      "member": "classes5.dex",
+      "sha256": "ab39a0b03d63ffb89206ecef6389674d7ca4bb47705cd5c36e50c9ba41eac69f",
+      "classes": 2973,
+      "strings": 18002
+    },
+    {
+      "member": "classes6.dex",
+      "sha256": "85e0e4a7c5e2caee46f6351500ca50cc9fe1ef7fb87c5c8db91003f25c33e64f",
+      "classes": 9933,
+      "strings": 51310
+    },
+    {
+      "member": "classes7.dex",
+      "sha256": "a94d267ef20aad2a11bac2aff0d925574aef9dc0e03a6dead8ba27d00e4d58ea",
+      "classes": 9504,
+      "strings": 48684
+    },
+    {
+      "member": "classes8.dex",
+      "sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+      "classes": 11192,
+      "strings": 50749
+    },
+    {
+      "member": "classes9.dex",
+      "sha256": "60b562368b107e5499651711916f47f8621dd0478b8492e9d88ef9926ff73662",
+      "classes": 10939,
+      "strings": 48001
+    }
+  ]
+}

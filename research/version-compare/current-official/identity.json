@@ -1,0 +1,114 @@
+{
+  "path": "/workspace/hongguo-tv/research/version-compare/current-official/hongguo-current-normal.apk",
+  "bytes": 149926819,
+  "sha256": "1f8f733377523ab7a5ea2a602e6e9e9834badf422727e07492d4118c6c0a69e1",
+  "manifestSha256": "f9f43da3d8d110694f1be9c37afa39356655e5f1476cc077da3bb5ddfef94209",
+  "dex": {
+    "classes.dex": {
+      "size": 9306304,
+      "sha256": "5c4440ecc49358cad357be829eb9e3ead69383beaa71144f07bc1551b45c7ddb"
+    },
+    "classes10.dex": {
+      "size": 9193556,
+      "sha256": "9d8f8ca30cc1f43315700e9ceeab8ca4429591316b9b24413cf3f1d28d1750ac"
+    },
+    "classes11.dex": {
+      "size": 10431276,
+      "sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883"
+    },
+    "classes12.dex": {
+      "size": 10025308,
+      "sha256": "8bedb6e88d38df3a4aca40397fdfc4ad9617eecd999aa70f3277235f01e38984"
+    },
+    "classes13.dex": {
+      "size": 8518456,
+      "sha256": "9001f996b9c57e308471ba4b4eab9b66308c9202234c8ddd81da2d758227d50d"
+    },
+    "classes14.dex": {
+      "size": 9394548,
+      "sha256": "fe9918256c0c66798175fde2c3af493e0f1c10753f9065e54863e15bb25ceb59"
+    },
+    "classes15.dex": {
+      "size": 9799700,
+      "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae"
+    },
+    "classes16.dex": {
+      "size": 9962648,
+      "sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375"
+    },
+    "classes17.dex": {
+      "size": 10801464,
+      "sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e"
+    },
+    "classes18.dex": {
+      "size": 5064124,
+      "sha256": "e2c6589b5b6713534d52c5e1e025ff2f14765900645c28f596bd7c1c92c7019d"
+    },
+    "classes19.dex": {
+      "size": 8848996,
+      "sha256": "6a58d28eda8492c7550df0b94b79e423cb93b448bfe4eefd3e656bb5982b4e2f"
+    },
+    "classes2.dex": {
+      "size": 9706244,
+      "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3"
+    },
+    "classes20.dex": {
+      "size": 8700988,
+      "sha256": "22f7c0cb694c272e2b65a299ca9b5bb4aa3a95ff63df3f6e8a967bb7fd0b6a82"
+    },
+    "classes21.dex": {
+      "size": 8326580,
+      "sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d"
+    },
+    "classes22.dex": {
+      "size": 13047472,
+      "sha256": "8b1c5f8e4fa0a67f3bbec3ba716217068c6ea8693b34dc42f87192469b2a0da4"
+    },
+    "classes23.dex": {
+      "size": 9438556,
+      "sha256": "4c6c48296a3260d64e8a8c9353bc6719f2fa879b75cdafc6b156a08d719d595e"
+    },
+    "classes24.dex": {
+      "size": 9845364,
+      "sha256": "1c14ab580559409955cd9465f495cbb09dd4b8fbab3c94cb40245369bfc01daa"
+    },
+    "classes25.dex": {
+      "size": 11361016,
+      "sha256": "e556b98ae9f13cadf9c032277d09f1e01746f34633e7f2038a922895beee9a60"
+    },
+    "classes3.dex": {
+      "size": 10701380,
+      "sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352"
+    },
+    "classes4.dex": {
+      "size": 10050912,
+      "sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b"
+    },
+    "classes5.dex": {
+      "size": 11773108,
+      "sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5"
+    },
+    "classes6.dex": {
+      "size": 13244968,
+      "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508"
+    },
+    "classes7.dex": {
+      "size": 11728768,
+      "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367"
+    },
+    "classes8.dex": {
+      "size": 9516116,
+      "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf"
+    },
+    "classes9.dex": {
+      "size": 12260204,
+      "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340"
+    }
+  },
+  "certificateExitCode": 0,
+  "signerCertificateSha256": [
+    "1fe01f1425c72dc1cd158e05cb696cb9fc17259a70f9d233fc48e8e42e6510ec"
+  ],
+  "badgingExitCode": 0,
+  "packageBadging": "package: name='com.phoenix.read' versionCode='74132' versionName='7.4.1.32' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'"
+}

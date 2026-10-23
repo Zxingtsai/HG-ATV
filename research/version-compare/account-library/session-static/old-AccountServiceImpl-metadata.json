@@ -1,0 +1,308 @@
+{
+  "dex": "classes2.dex",
+  "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+  "class": "Lcom/dragon/read/user/AccountServiceImpl;",
+  "access_flags": 1,
+  "super": "Ljava/lang/Object;",
+  "interfaces": [
+    "Lcom/dragon/read/plugin/common/host/IAccountService;"
+  ],
+  "fields": [
+    {
+      "index": 14015,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "broadcastReceiver",
+      "type": "Lcom/dragon/read/base/AbsBroadcastReceiver;",
+      "access_flags": 2,
+      "annotations": []
+    },
+    {
+      "index": 14016,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "logoutCallbackList",
+      "type": "Ljava/util/List;",
+      "access_flags": 1,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "Ljava/util/List<",
+              "Ljava/lang/Runnable;",
+              ">;"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "index": 30099,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "<init>",
+      "descriptor": "()V",
+      "access_flags": 65537,
+      "code_offset": 4897108,
+      "annotations": []
+    },
+    {
+      "index": 30100,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "accessTokenIsEffective",
+      "descriptor": "()Z",
+      "access_flags": 1,
+      "code_offset": 4897140,
+      "annotations": []
+    },
+    {
+      "index": 30101,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "bindDouYinAccount",
+      "descriptor": "(Landroid/app/Activity;Lcom/bytedance/ug/sdk/luckycat/api/a/c;)V",
+      "access_flags": 1,
+      "code_offset": 4897220,
+      "annotations": []
+    },
+    {
+      "index": 30102,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "bindDouYinAccount",
+      "descriptor": "(Landroid/app/Activity;Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback;)V",
+      "access_flags": 1,
+      "code_offset": 4897248,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "(",
+              "Landroid/app/Activity;",
+              "Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback<",
+              "Ljava/lang/Boolean;",
+              ">;)V"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 30103,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "forceClearAuthInfo",
+      "descriptor": "()V",
+      "access_flags": 1,
+      "code_offset": 4897276,
+      "annotations": []
+    },
+    {
+      "index": 30104,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getAccountPhoneNumber",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897296,
+      "annotations": []
+    },
+    {
+      "index": 30105,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getAvatarUrl",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897332,
+      "annotations": []
+    },
+    {
+      "index": 30106,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getBoundPhone",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897368,
+      "annotations": []
+    },
+    {
+      "index": 30107,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getCarrier",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897404,
+      "annotations": []
+    },
+    {
+      "index": 30108,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getDouYinOpenId",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897432,
+      "annotations": []
+    },
+    {
+      "index": 30109,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getGender",
+      "descriptor": "()I",
+      "access_flags": 1,
+      "code_offset": 4897480,
+      "annotations": []
+    },
+    {
+      "index": 30110,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getSecUserId",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897516,
+      "annotations": []
+    },
+    {
+      "index": 30111,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getSessionKey",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897552,
+      "annotations": []
+    },
+    {
+      "index": 30112,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getUserId",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897628,
+      "annotations": []
+    },
+    {
+      "index": 30113,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "getUserName",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 1,
+      "code_offset": 4897664,
+      "annotations": []
+    },
+    {
+      "index": 30114,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "isBindDouYinAccount",
+      "descriptor": "()Z",
+      "access_flags": 1,
+      "code_offset": 4897700,
+      "annotations": []
+    },
+    {
+      "index": 30115,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "isRegisterInDouYin",
+      "descriptor": "(Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback;)V",
+      "access_flags": 1,
+      "code_offset": 4897736,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "(",
+              "Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback<",
+              "Ljava/lang/Boolean;",
+              ">;)V"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 30116,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "islogin",
+      "descriptor": "()Z",
+      "access_flags": 1,
+      "code_offset": 4897764,
+      "annotations": []
+    },
+    {
+      "index": 30117,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "loginOut",
+      "descriptor": "(Lcom/dragon/read/plugin/common/callback/ILogoutCallback;)V",
+      "access_flags": 1,
+      "code_offset": 4897800,
+      "annotations": []
+    },
+    {
+      "index": 30118,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "openLoginActivity",
+      "descriptor": "(Landroid/app/Activity;Ljava/lang/String;Lcom/dragon/read/plugin/common/callback/ILoginCallback;)V",
+      "access_flags": 1,
+      "code_offset": 4897880,
+      "annotations": []
+    },
+    {
+      "index": 30119,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "registerUserLogout",
+      "descriptor": "(Ljava/lang/Runnable;)V",
+      "access_flags": 1,
+      "code_offset": 4897944,
+      "annotations": []
+    },
+    {
+      "index": 30120,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "reverseAuthorityToDouYin",
+      "descriptor": "(Landroid/app/Activity;Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback;Ljava/lang/String;)V",
+      "access_flags": 1,
+      "code_offset": 4898048,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "(",
+              "Landroid/app/Activity;",
+              "Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback<",
+              "Lcom/dragon/read/user/douyin/model/DouYinToken;",
+              ">;",
+              "Ljava/lang/String;",
+              ")V"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 30121,
+      "owner": "Lcom/dragon/read/user/AccountServiceImpl;",
+      "name": "reverseAuthorityToDouYin",
+      "descriptor": "(Landroid/app/Activity;Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Ljava/util/Set;)V",
+      "access_flags": 1,
+      "code_offset": 4898084,
+      "annotations": [
+        {
+          "type": "Ldalvik/annotation/Signature;",
+          "values": {
+            "value": [
+              "(",
+              "Landroid/app/Activity;",
+              "Lcom/dragon/read/plugin/common/api/live/ILiveResultCallback<",
+              "Lcom/dragon/read/user/douyin/model/DouYinToken;",
+              ">;",
+              "Ljava/lang/String;",
+              "Ljava/lang/String;",
+              "Landroid/os/Bundle;",
+              "Ljava/util/Set<",
+              "Ljava/lang/String;",
+              ">;)V"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "annotations": []
+}

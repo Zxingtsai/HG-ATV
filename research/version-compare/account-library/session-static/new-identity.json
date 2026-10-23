@@ -1,0 +1,378 @@
+{
+  "apk_path": "/workspace/hongguo-tv/research/hongguo.apk",
+  "apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "evidence_type": "normal DEX static scan, not REA or runtime",
+  "dex_inventory": [
+    {
+      "member": "classes.dex",
+      "sha256": "5c4440ecc49358cad357be829eb9e3ead69383beaa71144f07bc1551b45c7ddb",
+      "matched_literals": {
+        "4429": "Cookie",
+        "24581": "Set-Cookie",
+        "25334": "Token",
+        "32710": "cookie",
+        "45858": "sessionId",
+        "45862": "session_id",
+        "48775": "token",
+        "49408": "userInfo",
+        "49456": "user_info"
+      }
+    },
+    {
+      "member": "classes10.dex",
+      "sha256": "9d8f8ca30cc1f43315700e9ceeab8ca4429591316b9b24413cf3f1d28d1750ac",
+      "matched_literals": {
+        "2936": "Cookie",
+        "27381": "SessionId",
+        "44272": "sessionId",
+        "44275": "session_id",
+        "47337": "token",
+        "48098": "userInfo"
+      }
+    },
+    {
+      "member": "classes11.dex",
+      "sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+      "matched_literals": {
+        "3791": "/passport/user/logout/",
+        "50118": "sessionId",
+        "50121": "session_id",
+        "50122": "sessionid",
+        "53781": "token",
+        "54463": "userInfo",
+        "54480": "user_info"
+      }
+    },
+    {
+      "member": "classes12.dex",
+      "sha256": "8bedb6e88d38df3a4aca40397fdfc4ad9617eecd999aa70f3277235f01e38984",
+      "matched_literals": {
+        "6170": "Cookie",
+        "26188": "Set-Cookie",
+        "26783": "Token",
+        "51015": "sessionId",
+        "51018": "session_id",
+        "55087": "token",
+        "56364": "userInfo",
+        "56378": "user_info"
+      }
+    },
+    {
+      "member": "classes13.dex",
+      "sha256": "9001f996b9c57e308471ba4b4eab9b66308c9202234c8ddd81da2d758227d50d",
+      "matched_literals": {
+        "2309": "/passport/account/info/v2/",
+        "2311": "/passport/user/logout/",
+        "21475": "TOKEN",
+        "28753": "cookie",
+        "52166": "sessionId",
+        "52174": "session_id",
+        "52178": "session_key",
+        "52180": "sessionid",
+        "57380": "token",
+        "58542": "userInfo"
+      }
+    },
+    {
+      "member": "classes14.dex",
+      "sha256": "fe9918256c0c66798175fde2c3af493e0f1c10753f9065e54863e15bb25ceb59",
+      "matched_literals": {
+        "5830": "Cookie",
+        "23279": "SessionID",
+        "23754": "TOKEN",
+        "24406": "Token",
+        "59817": "sessionID",
+        "59818": "sessionId",
+        "59822": "session_id",
+        "64447": "token"
+      }
+    },
+    {
+      "member": "classes15.dex",
+      "sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "matched_literals": {
+        "6212": "Cookie",
+        "32603": "SessionId",
+        "32606": "Set-Cookie",
+        "41608": "cookie",
+        "57943": "sessionId",
+        "57950": "session_id",
+        "57961": "set-cookie",
+        "61980": "userInfo",
+        "62046": "user_info"
+      }
+    },
+    {
+      "member": "classes16.dex",
+      "sha256": "ca47d5aadccf2276a8d2a8fc5daf37c1fd35f58fc81d146e57d8205c1a23f375",
+      "matched_literals": {
+        "30806": "SessionId",
+        "50972": "sessionId",
+        "50979": "session_id",
+        "53983": "token",
+        "54829": "userInfo",
+        "54866": "user_info"
+      }
+    },
+    {
+      "member": "classes17.dex",
+      "sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+      "matched_literals": {
+        "47456": "sessionID",
+        "47457": "sessionId",
+        "47463": "session_id",
+        "49657": "token",
+        "50507": "userInfo",
+        "50576": "user_info"
+      }
+    },
+    {
+      "member": "classes18.dex",
+      "sha256": "e2c6589b5b6713534d52c5e1e025ff2f14765900645c28f596bd7c1c92c7019d",
+      "matched_literals": {
+        "19277": "sessionId",
+        "19283": "session_id",
+        "20052": "token",
+        "20431": "userInfo",
+        "20488": "user_info"
+      }
+    },
+    {
+      "member": "classes19.dex",
+      "sha256": "6a58d28eda8492c7550df0b94b79e423cb93b448bfe4eefd3e656bb5982b4e2f",
+      "matched_literals": {
+        "4444": "Cookie",
+        "49702": "sessionID",
+        "49703": "sessionId",
+        "49706": "session_id",
+        "54224": "token",
+        "55341": "userInfo"
+      }
+    },
+    {
+      "member": "classes2.dex",
+      "sha256": "61feb3262834ee52efc3b5965753a93249a2ede4561dc27347ad3be16c3808e3",
+      "matched_literals": {
+        "53355": "sessionId",
+        "53358": "session_id",
+        "56173": "token",
+        "57344": "userInfo",
+        "57370": "user_info"
+      }
+    },
+    {
+      "member": "classes20.dex",
+      "sha256": "22f7c0cb694c272e2b65a299ca9b5bb4aa3a95ff63df3f6e8a967bb7fd0b6a82",
+      "matched_literals": {
+        "6176": "Cookie",
+        "27017": "Set-Cookie",
+        "27018": "Set-cookie",
+        "27754": "USER_INFO",
+        "27857": "UserInfo",
+        "35152": "cookie",
+        "54505": "sessionId",
+        "54511": "session_id",
+        "54514": "session_token",
+        "54515": "sessionid",
+        "58206": "token",
+        "58551": "tt_sessionid",
+        "59424": "userInfo",
+        "59441": "user_info"
+      }
+    },
+    {
+      "member": "classes21.dex",
+      "sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+      "matched_literals": {
+        "3239": "/passport/account/info/",
+        "3240": "/passport/account/info/v2/",
+        "3242": "/passport/auth/bind_login/",
+        "3244": "/passport/auth/bind_with_mobile_login/",
+        "3248": "/passport/auth/login/",
+        "3249": "/passport/auth/one_login/",
+        "3250": "/passport/auth/one_login_continue/",
+        "3251": "/passport/auth/one_login_only/",
+        "3252": "/passport/auth/share_login/",
+        "3255": "/passport/auth/update_authorize_info/",
+        "3256": "/passport/can_aweme_quick_login/",
+        "3257": "/passport/cancel/login/",
+        "3258": "/passport/device/can_one_login/",
+        "3259": "/passport/device/one_login/",
+        "3260": "/passport/device/one_login_continue/",
+        "3261": "/passport/device/trust_users/",
+        "3262": "/passport/general/login_guiding_strategy/",
+        "3264": "/passport/mobile/bind_login/",
+        "3270": "/passport/mobile/sms_login/",
+        "3271": "/passport/mobile/sms_login_only/",
+        "3274": "/passport/open/auth_info/v2/",
+        "3278": "/passport/open/token_info/",
+        "21831": "Set-Cookie",
+        "22480": "Token",
+        "22640": "UserInfo",
+        "28126": "cookie",
+        "42985": "passport_csrf_token",
+        "46133": "sessionID",
+        "46134": "sessionId",
+        "46137": "session_id",
+        "46138": "session_key",
+        "46140": "sessionid",
+        "46150": "set-cookie",
+        "50478": "token",
+        "51514": "userInfo",
+        "51541": "user_info"
+      }
+    },
+    {
+      "member": "classes22.dex",
+      "sha256": "8b1c5f8e4fa0a67f3bbec3ba716217068c6ea8693b34dc42f87192469b2a0da4",
+      "matched_literals": {
+        "2061": "/api/novel/account/v1/info/",
+        "2063": "/api/novel/account/v1/vip/info/",
+        "4301": "Cookie",
+        "30154": "Set-Cookie",
+        "30957": "UserInfo",
+        "59417": "sessionID",
+        "59418": "sessionId",
+        "59424": "session_id",
+        "59427": "sessionid",
+        "59436": "set-cookie",
+        "62714": "token",
+        "63784": "userInfo",
+        "63864": "user_info"
+      }
+    },
+    {
+      "member": "classes23.dex",
+      "sha256": "4c6c48296a3260d64e8a8c9353bc6719f2fa879b75cdafc6b156a08d719d595e",
+      "matched_literals": {
+        "5201": "Cookie",
+        "27920": "Set-Cookie",
+        "35838": "cookie",
+        "54229": "sessionId",
+        "54240": "session_id",
+        "54261": "set-cookie",
+        "57727": "token",
+        "59068": "userInfo"
+      }
+    },
+    {
+      "member": "classes24.dex",
+      "sha256": "1c14ab580559409955cd9465f495cbb09dd4b8fbab3c94cb40245369bfc01daa",
+      "matched_literals": {
+        "25315": "UserInfo",
+        "37553": "sessionId",
+        "37556": "session_id",
+        "39173": "token",
+        "39478": "userInfo",
+        "39500": "user_info"
+      }
+    },
+    {
+      "member": "classes25.dex",
+      "sha256": "e556b98ae9f13cadf9c032277d09f1e01746f34633e7f2038a922895beee9a60",
+      "matched_literals": {
+        "59209": "passport_csrf_token",
+        "63727": "sessionId",
+        "63734": "session_id",
+        "63743": "sessionid",
+        "63744": "sessionid_ss",
+        "65463": "sid_guard",
+        "65464": "sid_tt",
+        "66992": "token",
+        "67606": "uid_tt",
+        "67607": "uid_tt_ss",
+        "68133": "userInfo",
+        "68166": "user_info"
+      }
+    },
+    {
+      "member": "classes3.dex",
+      "sha256": "7314857620b080a2454c77794617b1143d927d56f7b780898e8062fda2128352",
+      "matched_literals": {
+        "30671": "UserInfo",
+        "48714": "sessionId",
+        "48715": "session_id",
+        "50865": "token",
+        "51556": "userInfo"
+      }
+    },
+    {
+      "member": "classes4.dex",
+      "sha256": "f5c442f6de86a952c8a2dd0c1bcb19e29aa63e63073942a16ff9ef059a11850b",
+      "matched_literals": {
+        "4451": "Cookie",
+        "48727": "sessionID",
+        "48728": "sessionId",
+        "48737": "session_id",
+        "51453": "token",
+        "52249": "userInfo"
+      }
+    },
+    {
+      "member": "classes5.dex",
+      "sha256": "678714486ea92046254ba79613805a396d033eed5df8cbba4c36e59ea6bcc2c5",
+      "matched_literals": {
+        "5787": "Cookie",
+        "33539": "SessionId",
+        "33543": "Set-Cookie",
+        "34175": "UserInfo",
+        "54183": "sessionId",
+        "54187": "session_id",
+        "54188": "session_key",
+        "56938": "userInfo",
+        "56973": "user_info"
+      }
+    },
+    {
+      "member": "classes6.dex",
+      "sha256": "107c449ce018541a5a74de507d064570074f0783ce060382bfc4e58a7792d508",
+      "matched_literals": {
+        "31553": "SessionId",
+        "49377": "sessionId",
+        "49380": "session_id",
+        "50828": "token",
+        "51230": "userInfo"
+      }
+    },
+    {
+      "member": "classes7.dex",
+      "sha256": "90168f0fa40ac2dce1b6693653fdb8d5984101c93b67fde5d3c9335edf888367",
+      "matched_literals": {
+        "34026": "UserInfo",
+        "52755": "sessionId",
+        "52761": "session_id",
+        "52762": "session_key",
+        "52763": "session_token",
+        "55085": "token",
+        "55731": "userInfo",
+        "55782": "user_info"
+      }
+    },
+    {
+      "member": "classes8.dex",
+      "sha256": "65c925abd7c710149f81f0a5c03c515d1625d006cce016786db065a27d917fdf",
+      "matched_literals": {
+        "2740": "/account/info",
+        "53036": "sessionId",
+        "53040": "session_id",
+        "56434": "token",
+        "57669": "userInfo",
+        "57706": "user_info",
+        "57729": "userinfo"
+      }
+    },
+    {
+      "member": "classes9.dex",
+      "sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "matched_literals": {
+        "3725": "Cookie",
+        "45967": "sessionId",
+        "45974": "session_id",
+        "45975": "session_token",
+        "47957": "token",
+        "48753": "userInfo",
+        "48870": "user_info"
+      }
+    }
+  ]
+}

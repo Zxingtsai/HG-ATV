@@ -1,0 +1,418 @@
+[
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15857,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "name": "value",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/AnnotationDefault;",
+        "values": {
+          "value": {
+            "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+            "values": {
+              "value": ""
+            }
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25082,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "METHOD",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcOption;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15858,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcOption;",
+        "name": "bizParams",
+        "descriptor": "()[Ljava/lang/String;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 15859,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcOption;",
+        "name": "commonParams",
+        "descriptor": "()Z",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 15860,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcOption;",
+        "name": "serialize",
+        "descriptor": "()Lcom/bytedance/rpc/serialize/SerializeType;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/AnnotationDefault;",
+        "values": {
+          "value": {
+            "type": "Lcom/bytedance/rpc/annotation/RpcOption;",
+            "values": {
+              "bizParams": [],
+              "commonParams": true,
+              "serialize": {
+                "index": 5688,
+                "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+                "name": "JSON",
+                "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25082,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "METHOD",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcParams;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15861,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "name": "value",
+        "descriptor": "()Z",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/AnnotationDefault;",
+        "values": {
+          "value": {
+            "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+            "values": {
+              "value": true
+            }
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25082,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "METHOD",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcPath;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15862,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcPath;",
+        "name": "value",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25084,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "PARAMETER",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcFieldTag;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15854,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcFieldTag;",
+        "name": "id",
+        "descriptor": "()I",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 15855,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcFieldTag;",
+        "name": "tag",
+        "descriptor": "()Lcom/bytedance/rpc/annotation/RpcFieldTag$Tag;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/AnnotationDefault;",
+        "values": {
+          "value": {
+            "type": "Lcom/bytedance/rpc/annotation/RpcFieldTag;",
+            "values": {
+              "tag": {
+                "index": 5480,
+                "owner": "Lcom/bytedance/rpc/annotation/RpcFieldTag$Tag;",
+                "name": "OPTIONAL",
+                "type": "Lcom/bytedance/rpc/annotation/RpcFieldTag$Tag;"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/bytedance/rpc/annotation/RpcFieldTag$Tag;"
+          ]
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25081,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "FIELD",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcBizParam;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "index": 15846,
+        "owner": "Lcom/bytedance/rpc/annotation/RpcBizParam;",
+        "name": "value",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25081,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "FIELD",
+              "type": "Ljava/lang/annotation/ElementType;"
+            },
+            {
+              "index": 25085,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "TYPE",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "class": "Lcom/bytedance/rpc/annotation/RpcFieldModify;",
+    "access_flags": 9729,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/lang/annotation/Annotation;"
+    ],
+    "fields": [],
+    "methods": [],
+    "annotations": [
+      {
+        "type": "Ljava/lang/annotation/Retention;",
+        "values": {
+          "value": {
+            "index": 25087,
+            "owner": "Ljava/lang/annotation/RetentionPolicy;",
+            "name": "RUNTIME",
+            "type": "Ljava/lang/annotation/RetentionPolicy;"
+          }
+        }
+      },
+      {
+        "type": "Ljava/lang/annotation/Target;",
+        "values": {
+          "value": [
+            {
+              "index": 25085,
+              "owner": "Ljava/lang/annotation/ElementType;",
+              "name": "TYPE",
+              "type": "Ljava/lang/annotation/ElementType;"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "source_apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "carrier_sha256": "d0633d245e47c76669fd258f16ef0949a83a4907b1d9a8111f075988c769f358",
+  "dex": {
+    "source": "classes8.dex",
+    "carrier": "classes.dex",
+    "sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3"
+  },
+  "scope": "Unsigned reduced static-analysis carrier; no execution, not whole-program analysis"
+}

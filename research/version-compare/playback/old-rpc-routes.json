@@ -1,0 +1,45 @@
+[
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/e$a;",
+    "method": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoInfoRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/media/video/info/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/VideoInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  }
+]

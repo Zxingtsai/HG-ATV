@@ -1,0 +1,9 @@
+{
+  "source_apk": "/workspace/hongguo-tv/research/hongguo.apk",
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "source_dex": "classes9.dex",
+  "source_dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+  "carrier": "/workspace/hongguo-tv/research/version-compare/account-library/new-shelf-carrier.apk",
+  "carrier_sha256": "e84fc6ca765db30ca6c0dc9f9792a959464b377859c8469b071b762e27fe7713",
+  "scope": "Original AndroidManifest.xml and one byte-identical DEX renamed classes.dex for bounded static REA analysis only; unsigned reduced carrier, not original APK and never launched; other DEX and runtime relationships absent."
+}

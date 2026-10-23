@@ -23,3 +23,23 @@ windows/local.settings.json
 *.private.*
 research/**/*.apk
 research/**/*.dex
+
+# Local dependencies and interpreter/editor caches
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+
+# Local configuration, download intermediates and research captures
+.env
+.env.*
+!.env.example
+*.part
+*.private.*
+research/account-login/*.js
+research/account-login/official-login-ui.*
+research/account-login/smoke-*-result.json
+research/retired/
+tools/phone-capture/

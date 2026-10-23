@@ -1,0 +1,364 @@
+[
+  {
+    "dex": "classes18.dex",
+    "dex_sha256": "e2c6589b5b6713534d52c5e1e025ff2f14765900645c28f596bd7c1c92c7019d",
+    "class": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+    "access_flags": 1,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/io/Serializable;"
+    ],
+    "fields": [
+      {
+        "index": 2814,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "Companion",
+        "type": "Lcom/dragon/read/rpc/model/GetVideoModelRequest$b;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 2819,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "serialVersionUID",
+        "type": "J",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 2815,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "deviceLevel",
+        "type": "Lcom/dragon/read/rpc/model/DeviceLevel;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "device_level"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2816,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "fromVideoId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "from_video_id"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2817,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "needAllVideoDefinition",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "need_all_video_definition"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2818,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "needMp4Align",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "need_mp4_align"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2820,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "source",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "source"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2821,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "useOsPlayer",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "use_os_player"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2822,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2823,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoIdType",
+        "type": "Lcom/dragon/read/rpc/model/VideoSeriesIdType;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id_type"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2824,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoPlatform",
+        "type": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_platform"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 4811,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65545,
+        "code_offset": 2567872,
+        "annotations": []
+      },
+      {
+        "index": 4812,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 2567916,
+        "annotations": []
+      },
+      {
+        "index": 4813,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<init>",
+        "descriptor": "(ILjava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;ZZLcom/dragon/read/rpc/model/VideoSeriesIdType;ILjava/lang/String;Lcom/dragon/read/rpc/model/DeviceLevel;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 2567968,
+        "annotations": []
+      },
+      {
+        "index": 4814,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;ZZLcom/dragon/read/rpc/model/VideoSeriesIdType;ILjava/lang/String;Lcom/dragon/read/rpc/model/DeviceLevel;Z)V",
+        "access_flags": 65537,
+        "code_offset": 2568184,
+        "annotations": []
+      },
+      {
+        "index": 4815,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;ZZLcom/dragon/read/rpc/model/VideoSeriesIdType;ILjava/lang/String;Lcom/dragon/read/rpc/model/DeviceLevel;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 2568244,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest$a;",
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest$b;"
+          ]
+        }
+      },
+      {
+        "type": "Lkotlinx/serialization/Serializable;",
+        "values": {}
+      }
+    ]
+  },
+  {
+    "dex": "classes18.dex",
+    "dex_sha256": "e2c6589b5b6713534d52c5e1e025ff2f14765900645c28f596bd7c1c92c7019d",
+    "class": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+    "access_flags": 1,
+    "source_file": "SourceFile",
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/io/Serializable;"
+    ],
+    "fields": [
+      {
+        "index": 2827,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "Companion",
+        "type": "Lcom/dragon/read/rpc/model/GetVideoModelResponse$b;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 2831,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "serialVersionUID",
+        "type": "J",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 2828,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "code",
+        "type": "Lcom/dragon/read/rpc/model/BookApiERR;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "code"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2829,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "data",
+        "type": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "data"
+            }
+          }
+        ]
+      },
+      {
+        "index": 2830,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "message",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "message"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 4826,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65545,
+        "code_offset": 2569220,
+        "annotations": []
+      },
+      {
+        "index": 4827,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 2569264,
+        "annotations": []
+      },
+      {
+        "index": 4828,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<init>",
+        "descriptor": "(ILcom/dragon/read/rpc/model/BookApiERR;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoModelData;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 2569300,
+        "annotations": []
+      },
+      {
+        "index": 4829,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<init>",
+        "descriptor": "(Lcom/dragon/read/rpc/model/BookApiERR;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoModelData;)V",
+        "access_flags": 65537,
+        "code_offset": 2569408,
+        "annotations": []
+      },
+      {
+        "index": 4830,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<init>",
+        "descriptor": "(Lcom/dragon/read/rpc/model/BookApiERR;Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoModelData;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 2569444,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/rpc/model/GetVideoModelResponse$a;",
+            "Lcom/dragon/read/rpc/model/GetVideoModelResponse$b;"
+          ]
+        }
+      },
+      {
+        "type": "Lkotlinx/serialization/Serializable;",
+        "values": {}
+      }
+    ]
+  }
+]

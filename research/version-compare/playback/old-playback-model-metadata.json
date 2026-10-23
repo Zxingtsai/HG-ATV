@@ -1,0 +1,2401 @@
+[
+  {
+    "dex": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "class": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 10359,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "type": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 10360,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "b",
+        "type": "Lcom/dragon/read/base/util/LogHelper;",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 10361,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "c",
+        "type": "Ljava/lang/String;",
+        "access_flags": 10,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 21859,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 4305032,
+        "annotations": []
+      },
+      {
+        "index": 21860,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65538,
+        "code_offset": 4305088,
+        "annotations": []
+      },
+      {
+        "index": 21861,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;Ljava/util/List;)I",
+        "access_flags": 25,
+        "code_offset": 4305112,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "Ljava/util/List<",
+                "+",
+                "Lcom/dragon/read/rpc/model/UgcPostData;",
+                ">;)I"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21862,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(IILjava/lang/String;Z)Lcom/dragon/read/base/SerializableMap;",
+        "access_flags": 25,
+        "code_offset": 4305232,
+        "annotations": []
+      },
+      {
+        "index": 21863,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/rpc/model/UgcPostData;)Lcom/dragon/read/rpc/model/PostData;",
+        "access_flags": 25,
+        "code_offset": 4305372,
+        "annotations": []
+      },
+      {
+        "index": 21864,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/rpc/model/PostData;)Lcom/dragon/read/rpc/model/UgcPostData;",
+        "access_flags": 25,
+        "code_offset": 4305700,
+        "annotations": []
+      },
+      {
+        "index": 21872,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(I)Z",
+        "access_flags": 25,
+        "code_offset": 4306048,
+        "annotations": []
+      },
+      {
+        "index": 21876,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "c",
+        "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+        "access_flags": 25,
+        "code_offset": 4306124,
+        "annotations": []
+      },
+      {
+        "index": 21865,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(ZLcom/dragon/read/rpc/model/UgcVideo;)Lio/reactivex/Completable;",
+        "access_flags": 17,
+        "code_offset": 4306280,
+        "annotations": []
+      },
+      {
+        "index": 21866,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(ZLcom/dragon/read/video/VideoData;)Lio/reactivex/Completable;",
+        "access_flags": 17,
+        "code_offset": 4306384,
+        "annotations": []
+      },
+      {
+        "index": 21867,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4306504,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21868,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;Lcom/dragon/read/rpc/model/VideoPlatformType;ZZ)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4306544,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+                "ZZ)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21869,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4306640,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/lang/Object;",
+                ">;)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/social/videorecommendbook/UgcVideoRecBookModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21870,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_offset": 4306896,
+        "annotations": []
+      },
+      {
+        "index": 21871,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 4306920,
+        "annotations": []
+      },
+      {
+        "index": 21873,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "b",
+        "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4306952,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21874,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "b",
+        "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4307036,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/lang/Object;",
+                ">;)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/social/videorecommendbook/UgcVideoRecBookModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21875,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "c",
+        "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4307552,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/lang/Object;",
+                ">;)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/social/videorecommendbook/UgcVideoRecBookModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21877,
+        "owner": "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper;",
+        "name": "d",
+        "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 4307768,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/lang/Object;",
+                ">;)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/social/videorecommendbook/UgcVideoRecBookModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/social/videorecommendbook/VideoRecBookDataHelper$RequestSource;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+    "access_flags": 1025,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21059,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "a",
+        "type": "Lcom/dragon/read/base/util/LogHelper;",
+        "access_flags": 18,
+        "annotations": []
+      },
+      {
+        "index": 21060,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "b",
+        "type": "Ljava/util/List;",
+        "access_flags": 18,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/ref/WeakReference<",
+                "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+                ">;>;"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 50142,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 6724732,
+        "annotations": []
+      },
+      {
+        "index": 50143,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "a",
+        "descriptor": "()V",
+        "access_flags": 20,
+        "code_offset": 6724792,
+        "annotations": []
+      },
+      {
+        "index": 50144,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/c;)V",
+        "access_flags": 17,
+        "code_offset": 6724964,
+        "annotations": []
+      },
+      {
+        "index": 50145,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/Throwable;)V",
+        "access_flags": 20,
+        "code_offset": 6725104,
+        "annotations": []
+      },
+      {
+        "index": 50146,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "b",
+        "descriptor": "()V",
+        "access_flags": 20,
+        "code_offset": 6725284,
+        "annotations": []
+      },
+      {
+        "index": 50147,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "b",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/c;)V",
+        "access_flags": 17,
+        "code_offset": 6725456,
+        "annotations": []
+      },
+      {
+        "index": 50148,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "c",
+        "descriptor": "()V",
+        "access_flags": 20,
+        "code_offset": 6725588,
+        "annotations": []
+      },
+      {
+        "index": 50149,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "d",
+        "descriptor": "()V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 50150,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "e",
+        "descriptor": "()V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 50151,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "f",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "()TT;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50152,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+        "name": "g",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "()TT;"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "<T:",
+            "Ljava/lang/Object;",
+            ">",
+            "Ljava/lang/Object;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21061,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "a",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21062,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "b",
+        "type": "J",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21063,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "c",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50153,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 6725760,
+        "annotations": []
+      },
+      {
+        "index": 50154,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "<init>",
+        "descriptor": "(IJLjava/lang/String;)V",
+        "access_flags": 65537,
+        "code_offset": 6725800,
+        "annotations": []
+      },
+      {
+        "index": 50155,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "<init>",
+        "descriptor": "(IJLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 6725848,
+        "annotations": []
+      },
+      {
+        "index": 50156,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 6725908,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+    "access_flags": 1537,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [],
+    "methods": [
+      {
+        "index": 50158,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/Throwable;)V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 50159,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+        "name": "aA_",
+        "descriptor": "()V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 50160,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+        "name": "i",
+        "descriptor": "()V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      },
+      {
+        "index": 50161,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/c;",
+        "name": "t",
+        "descriptor": "()V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/d;",
+    "access_flags": 1537,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [],
+    "methods": [
+      {
+        "index": 50162,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/d;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 1025,
+        "code_offset": 0,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+    "access_flags": 17,
+    "super": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21069,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "a",
+        "type": "Lcom/dragon/read/base/util/LogHelper;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21070,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "b",
+        "type": "Lcom/dragon/read/component/shortvideo/api/model/SeriesRecommendInfo;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21071,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "c",
+        "type": "Lcom/dragon/read/component/shortvideo/api/model/SeriesRecommendInfo;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21072,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "d",
+        "type": "J",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21073,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "e",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21074,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "f",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21075,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "g",
+        "type": "Ljava/lang/String;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21076,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "h",
+        "type": "I",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21077,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "i",
+        "type": "Ljava/lang/String;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21078,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "j",
+        "type": "Ljava/lang/String;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21079,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "k",
+        "type": "J",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21080,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "l",
+        "type": "J",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21081,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "m",
+        "type": "Lcom/dragon/read/report/PageRecorder;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21082,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "n",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21083,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "o",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21084,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "p",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/utils/f;",
+        "access_flags": 18,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50179,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;JJLcom/dragon/read/report/PageRecorder;)V",
+        "access_flags": 65537,
+        "code_offset": 6726948,
+        "annotations": []
+      },
+      {
+        "index": 50191,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "k",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "access_flags": 18,
+        "code_offset": 6727088,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "()",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/video/VideoDetailModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50184,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "d",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6727244,
+        "annotations": []
+      },
+      {
+        "index": 50185,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "e",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6727408,
+        "annotations": []
+      },
+      {
+        "index": 50186,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "f",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4097,
+        "code_offset": 6727660,
+        "annotations": []
+      },
+      {
+        "index": 50187,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "g",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4097,
+        "code_offset": 6727688,
+        "annotations": []
+      },
+      {
+        "index": 50188,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "h",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 6727716,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "()",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/component/shortvideo/api/model/SeriesRecommendInfo;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50189,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "i",
+        "descriptor": "()Lcom/dragon/read/component/shortvideo/api/model/AbsSeriesListInfo;",
+        "access_flags": 1,
+        "code_offset": 6727904,
+        "annotations": []
+      },
+      {
+        "index": 50190,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/e;",
+        "name": "j",
+        "descriptor": "()Lcom/dragon/read/component/shortvideo/api/model/AbsSeriesListInfo;",
+        "access_flags": 1,
+        "code_offset": 6727964,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/a<",
+            "Lcom/dragon/read/component/shortvideo/api/model/AbsSeriesListInfo;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21104,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "d",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f$a;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 21101,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "type": "Lcom/dragon/read/base/util/LogHelper;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21102,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "b",
+        "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "access_flags": 17,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/concurrent/ConcurrentHashMap<",
+                "Ljava/lang/String;",
+                "Lcom/dragon/read/component/shortvideo/api/model/t;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21103,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "c",
+        "type": "Ljava/util/List;",
+        "access_flags": 17,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/List<",
+                "Lcom/dragon/read/util/dl<",
+                "Lcom/dragon/read/component/shortvideo/impl/v2/data/d;",
+                ">;>;"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 50214,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 6729320,
+        "annotations": []
+      },
+      {
+        "index": 50215,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65538,
+        "code_offset": 6729356,
+        "annotations": []
+      },
+      {
+        "index": 50216,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "<init>",
+        "descriptor": "(Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 6729432,
+        "annotations": []
+      },
+      {
+        "index": 50217,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/f;Ljava/lang/String;ZILjava/lang/Object;)Lcom/dragon/read/component/shortvideo/api/model/t;",
+        "access_flags": 4105,
+        "code_offset": 6729456,
+        "annotations": []
+      },
+      {
+        "index": 50219,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/f;ZLcom/dragon/read/component/shortvideo/api/model/d;ZZILjava/lang/Object;)Lio/reactivex/Observable;",
+        "access_flags": 4105,
+        "code_offset": 6729492,
+        "annotations": []
+      },
+      {
+        "index": 50225,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(J)Z",
+        "access_flags": 18,
+        "code_offset": 6729528,
+        "annotations": []
+      },
+      {
+        "index": 50228,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "c",
+        "descriptor": "(Ljava/lang/String;)Lcom/ss/ttvideoengine/model/VideoModel;",
+        "access_flags": 25,
+        "code_offset": 6729728,
+        "annotations": []
+      },
+      {
+        "index": 50218,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;Z)Lcom/dragon/read/component/shortvideo/api/model/t;",
+        "access_flags": 17,
+        "code_offset": 6729760,
+        "annotations": []
+      },
+      {
+        "index": 50220,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(ZLcom/dragon/read/component/shortvideo/api/model/d;ZZ)Lio/reactivex/Observable;",
+        "access_flags": 17,
+        "code_offset": 6730012,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(Z",
+                "Lcom/dragon/read/component/shortvideo/api/model/d;",
+                "ZZ)",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/component/shortvideo/api/model/t;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50221,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "()V",
+        "access_flags": 17,
+        "code_offset": 6730448,
+        "annotations": []
+      },
+      {
+        "index": 50222,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/d;)V",
+        "access_flags": 17,
+        "code_offset": 6730476,
+        "annotations": []
+      },
+      {
+        "index": 50223,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 6730524,
+        "annotations": []
+      },
+      {
+        "index": 50224,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "a",
+        "descriptor": "(Ljava/util/Map;)V",
+        "access_flags": 17,
+        "code_offset": 6730564,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/dragon/read/component/shortvideo/api/model/t;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50226,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "b",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/d;)V",
+        "access_flags": 17,
+        "code_offset": 6730692,
+        "annotations": []
+      },
+      {
+        "index": 50227,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f;",
+        "name": "b",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 6730744,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/f$b;",
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/f$a;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21105,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+        "name": "a",
+        "type": "Lcom/dragon/read/component/shortvideo/api/model/p;",
+        "access_flags": 1,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50229,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 6730784,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21106,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "name": "a",
+        "type": "Lcom/dragon/read/video/VideoDetailModel;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21107,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "name": "b",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21108,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "name": "c",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50230,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "name": "<init>",
+        "descriptor": "(Lcom/dragon/read/video/VideoDetailModel;)V",
+        "access_flags": 65537,
+        "code_offset": 6730808,
+        "annotations": []
+      },
+      {
+        "index": 50231,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1,
+        "code_offset": 6730844,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+    "access_flags": 17,
+    "super": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21111,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "a",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21112,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "b",
+        "type": "Ljava/lang/String;",
+        "access_flags": 17,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50239,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 65537,
+        "code_offset": 6731164,
+        "annotations": []
+      },
+      {
+        "index": 50240,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "d",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6731204,
+        "annotations": []
+      },
+      {
+        "index": 50241,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "e",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6731332,
+        "annotations": []
+      },
+      {
+        "index": 50242,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "f",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4161,
+        "code_offset": 6731352,
+        "annotations": []
+      },
+      {
+        "index": 50243,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "g",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4097,
+        "code_offset": 6731376,
+        "annotations": []
+      },
+      {
+        "index": 50244,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/i;",
+        "name": "h",
+        "descriptor": "()Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+        "access_flags": 1,
+        "code_offset": 6731404,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/a<",
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/g;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+    "access_flags": 17,
+    "super": "Lcom/dragon/read/component/shortvideo/impl/v2/data/a;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21144,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "l",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j$a;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 21154,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "v",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 10,
+        "annotations": []
+      },
+      {
+        "index": 21155,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "w",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 10,
+        "annotations": []
+      },
+      {
+        "index": 21133,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "type": "Lcom/dragon/read/base/util/LogHelper;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21134,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "b",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/utils/f;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21135,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "c",
+        "type": "Ljava/util/List;",
+        "access_flags": 17,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21136,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "d",
+        "type": "Ljava/util/Map;",
+        "access_flags": 17,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21137,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "e",
+        "type": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "access_flags": 17,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "Ljava/util/concurrent/ConcurrentHashMap<",
+                "Ljava/lang/String;",
+                "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 21138,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "f",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21139,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "g",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21140,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "h",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21141,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "i",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21142,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "j",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 21143,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "k",
+        "type": "Ljava/lang/String;",
+        "access_flags": 17,
+        "annotations": []
+      },
+      {
+        "index": 21145,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "m",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21146,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "n",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21147,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "o",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21148,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "p",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21149,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "q",
+        "type": "Lio/reactivex/disposables/Disposable;",
+        "access_flags": 2,
+        "annotations": []
+      },
+      {
+        "index": 21150,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "r",
+        "type": "Ljava/lang/String;",
+        "access_flags": 18,
+        "annotations": []
+      },
+      {
+        "index": 21151,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "s",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/b;",
+        "access_flags": 18,
+        "annotations": []
+      },
+      {
+        "index": 21152,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "t",
+        "type": "Ljava/lang/String;",
+        "access_flags": 18,
+        "annotations": []
+      },
+      {
+        "index": 21153,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "u",
+        "type": "Ljava/lang/String;",
+        "access_flags": 18,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50291,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 6734976,
+        "annotations": []
+      },
+      {
+        "index": 50292,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Ljava/lang/String;Ljava/lang/String;)V",
+        "access_flags": 65537,
+        "code_offset": 6735012,
+        "annotations": []
+      },
+      {
+        "index": 50293,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/dragon/read/component/shortvideo/impl/v2/data/b;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_offset": 6735192,
+        "annotations": []
+      },
+      {
+        "index": 50297,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/j;ZLcom/dragon/read/video/VideoDetailModel;ZILjava/lang/Object;)V",
+        "access_flags": 4104,
+        "code_offset": 6735272,
+        "annotations": []
+      },
+      {
+        "index": 50301,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(ZLcom/dragon/read/video/VideoDetailModel;Z)V",
+        "access_flags": 18,
+        "code_offset": 6735320,
+        "annotations": []
+      },
+      {
+        "index": 50318,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "o",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "access_flags": 18,
+        "code_offset": 6735548,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "()",
+                "Lio/reactivex/Observable<",
+                "Lcom/dragon/read/video/VideoDetailModel;",
+                ">;"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50319,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "p",
+        "descriptor": "()V",
+        "access_flags": 18,
+        "code_offset": 6735672,
+        "annotations": []
+      },
+      {
+        "index": 50320,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "q",
+        "descriptor": "()V",
+        "access_flags": 18,
+        "code_offset": 6735760,
+        "annotations": []
+      },
+      {
+        "index": 50321,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "r",
+        "descriptor": "()Lcom/dragon/read/rpc/model/RecommendInPossibleLostItemRequest;",
+        "access_flags": 18,
+        "code_offset": 6735872,
+        "annotations": []
+      },
+      {
+        "index": 50322,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "s",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 18,
+        "code_offset": 6735932,
+        "annotations": []
+      },
+      {
+        "index": 50296,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/component/shortvideo/impl/v2/data/h;Lcom/dragon/read/video/VideoDetailModel;Ljava/util/List;)V",
+        "access_flags": 17,
+        "code_offset": 6735980,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+                "Lcom/dragon/read/video/VideoDetailModel;",
+                "Ljava/util/List<",
+                "Lcom/dragon/read/local/db/entity/bb;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50298,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 6736976,
+        "annotations": []
+      },
+      {
+        "index": 50299,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V",
+        "access_flags": 17,
+        "code_offset": 6737008,
+        "annotations": [
+          {
+            "type": "Ldalvik/annotation/Signature;",
+            "values": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "Lkotlin/jvm/functions/Function1<",
+                "-",
+                "Lcom/dragon/read/video/VideoDetailModel;",
+                "Lkotlin/Unit;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "index": 50302,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "a",
+        "descriptor": "(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/video/VideoDetailModel;)Z",
+        "access_flags": 17,
+        "code_offset": 6737228,
+        "annotations": []
+      },
+      {
+        "index": 50304,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "b",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_offset": 6737284,
+        "annotations": []
+      },
+      {
+        "index": 50305,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "b",
+        "descriptor": "(Lcom/dragon/read/video/VideoDetailModel;Lcom/dragon/read/video/VideoDetailModel;)Z",
+        "access_flags": 17,
+        "code_offset": 6737316,
+        "annotations": []
+      },
+      {
+        "index": 50307,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "d",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6737356,
+        "annotations": []
+      },
+      {
+        "index": 50308,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "e",
+        "descriptor": "()V",
+        "access_flags": 1,
+        "code_offset": 6738000,
+        "annotations": []
+      },
+      {
+        "index": 50309,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "f",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4097,
+        "code_offset": 6738188,
+        "annotations": []
+      },
+      {
+        "index": 50310,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "g",
+        "descriptor": "()Ljava/lang/Object;",
+        "access_flags": 4097,
+        "code_offset": 6738216,
+        "annotations": []
+      },
+      {
+        "index": 50311,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "h",
+        "descriptor": "()V",
+        "access_flags": 17,
+        "code_offset": 6738244,
+        "annotations": []
+      },
+      {
+        "index": 50312,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "i",
+        "descriptor": "()V",
+        "access_flags": 17,
+        "code_offset": 6738412,
+        "annotations": []
+      },
+      {
+        "index": 50313,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "j",
+        "descriptor": "()Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "access_flags": 1,
+        "code_offset": 6738440,
+        "annotations": []
+      },
+      {
+        "index": 50314,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "k",
+        "descriptor": "()Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+        "access_flags": 1,
+        "code_offset": 6738532,
+        "annotations": []
+      },
+      {
+        "index": 50315,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "l",
+        "descriptor": "()V",
+        "access_flags": 17,
+        "code_offset": 6738568,
+        "annotations": []
+      },
+      {
+        "index": 50316,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "m",
+        "descriptor": "()Lcom/dragon/read/rpc/model/VideoDetailRequest;",
+        "access_flags": 17,
+        "code_offset": 6738696,
+        "annotations": []
+      },
+      {
+        "index": 50317,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/j;",
+        "name": "n",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_offset": 6738772,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/j$a;"
+          ]
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/a<",
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/h;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21156,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "a",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 21157,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "b",
+        "type": "Landroid/content/SharedPreferences;",
+        "access_flags": 26,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50323,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 6738816,
+        "annotations": []
+      },
+      {
+        "index": 50324,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65538,
+        "code_offset": 6738880,
+        "annotations": []
+      },
+      {
+        "index": 50327,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "c",
+        "descriptor": "(Ljava/lang/String;J)Ljava/lang/String;",
+        "access_flags": 18,
+        "code_offset": 6738904,
+        "annotations": []
+      },
+      {
+        "index": 50325,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "a",
+        "descriptor": "(Ljava/lang/String;J)Z",
+        "access_flags": 17,
+        "code_offset": 6738964,
+        "annotations": []
+      },
+      {
+        "index": 50326,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/k;",
+        "name": "b",
+        "descriptor": "(Ljava/lang/String;J)V",
+        "access_flags": 17,
+        "code_offset": 6739016,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes11.dex",
+    "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+    "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+    "access_flags": 17,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "fields": [
+      {
+        "index": 21158,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "a",
+        "type": "Lkotlin/Lazy;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 21159,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "b",
+        "type": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l$a;",
+        "access_flags": 25,
+        "annotations": []
+      },
+      {
+        "index": 21160,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "c",
+        "type": "Z",
+        "access_flags": 10,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 50331,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 6739168,
+        "annotations": []
+      },
+      {
+        "index": 50332,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 6739224,
+        "annotations": []
+      },
+      {
+        "index": 50334,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "a",
+        "descriptor": "()Z",
+        "access_flags": 18,
+        "code_offset": 6739248,
+        "annotations": []
+      },
+      {
+        "index": 50335,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "b",
+        "descriptor": "()Z",
+        "access_flags": 18,
+        "code_offset": 6739396,
+        "annotations": []
+      },
+      {
+        "index": 50333,
+        "owner": "Lcom/dragon/read/component/shortvideo/impl/v2/data/l;",
+        "name": "a",
+        "descriptor": "(Z)V",
+        "access_flags": 17,
+        "code_offset": 6739716,
+        "annotations": []
+      }
+    ],
+    "annotations": [
+      {
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "values": {
+          "value": [
+            "Lcom/dragon/read/component/shortvideo/impl/v2/data/l$a;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/io/Serializable;"
+    ],
+    "fields": [
+      {
+        "index": 17661,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "fieldTypeClassRef",
+        "type": "Ljava/lang/Class;",
+        "access_flags": 10,
+        "annotations": []
+      },
+      {
+        "index": 17664,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "serialVersionUID",
+        "type": "J",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 17662,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "fromVideoId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "from_video_id"
+            }
+          }
+        ]
+      },
+      {
+        "index": 17663,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "needAllVideoDefinition",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "need_all_video_definition"
+            }
+          }
+        ]
+      },
+      {
+        "index": 17665,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "source",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 17666,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "useOsPlayer",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "use_os_player"
+            }
+          }
+        ]
+      },
+      {
+        "index": 17667,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id"
+            }
+          }
+        ]
+      },
+      {
+        "index": 17668,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoIdType",
+        "type": "Lcom/dragon/read/rpc/model/VideoSeriesIdType;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_id_type"
+            }
+          }
+        ]
+      },
+      {
+        "index": 17669,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "videoPlatform",
+        "type": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_platform"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 19420,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 4999312,
+        "annotations": []
+      },
+      {
+        "index": 19421,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 4999340,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/io/Serializable;"
+    ],
+    "fields": [
+      {
+        "index": 17672,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "fieldTypeClassRef",
+        "type": "Ljava/lang/Class;",
+        "access_flags": 10,
+        "annotations": []
+      },
+      {
+        "index": 17674,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "serialVersionUID",
+        "type": "J",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 17670,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "code",
+        "type": "Lcom/dragon/read/rpc/model/BookApiERR;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 17671,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "data",
+        "type": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 17673,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "message",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      }
+    ],
+    "methods": [
+      {
+        "index": 19422,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 4999364,
+        "annotations": []
+      },
+      {
+        "index": 19423,
+        "owner": "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 4999392,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/model/VideoModelData;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Ljava/io/Serializable;"
+    ],
+    "fields": [
+      {
+        "index": 31373,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "fieldTypeClassRef",
+        "type": "Ljava/lang/Class;",
+        "access_flags": 10,
+        "annotations": []
+      },
+      {
+        "index": 31376,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "serialVersionUID",
+        "type": "J",
+        "access_flags": 26,
+        "annotations": []
+      },
+      {
+        "index": 31371,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "authorization",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": []
+      },
+      {
+        "index": 31372,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "expireTime",
+        "type": "J",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "expire_time"
+            }
+          }
+        ]
+      },
+      {
+        "index": 31374,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "isTrialVideo",
+        "type": "Z",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "is_trial_video"
+            }
+          }
+        ]
+      },
+      {
+        "index": 31375,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "playAuthToken",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "play_auth_token"
+            }
+          }
+        ]
+      },
+      {
+        "index": 31377,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "videoHeight",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_height"
+            }
+          }
+        ]
+      },
+      {
+        "index": 31378,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "videoModel",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_model"
+            }
+          }
+        ]
+      },
+      {
+        "index": 31379,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "videoWidth",
+        "type": "I",
+        "access_flags": 1,
+        "annotations": [
+          {
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "values": {
+              "value": "video_width"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "index": 24884,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_offset": 5301740,
+        "annotations": []
+      },
+      {
+        "index": 24885,
+        "owner": "Lcom/dragon/read/rpc/model/VideoModelData;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_offset": 5301768,
+        "annotations": []
+      }
+    ],
+    "annotations": []
+  }
+]

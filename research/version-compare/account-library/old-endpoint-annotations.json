@@ -1,0 +1,1002 @@
+[
+  {
+    "class": "Lcom/dragon/read/rpc/c$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 14626,
+      "owner": "Lcom/dragon/read/rpc/c$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/model/ShortVideoAutoCollectReq;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST api.fqnovel.com/luckycat/novel/1/task/daily_short_video_collect/auto_add"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/model/ShortVideoAutoCollectReq;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/model/ShortVideoAutoCollectResp;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25356,
+      "owner": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetPersonBookshelfRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/ugc/person/bookshelf/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetPersonBookshelfRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetPersonBookshelfResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25380,
+      "owner": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetSongCollectionRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/ugc/song/get_collection/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetSongCollectionRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetSongCollectionResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25381,
+      "owner": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetSongsByCollectionIdRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/ugc/song/get_by_collection_id/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetSongsByCollectionIdRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetSongsByCollectionIdResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25429,
+      "owner": "Lcom/dragon/read/rpc/rpc/UgcApiService$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/PostEmoticonCollectRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/ugc/comment/emoticon/collect/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/PostEmoticonCollectRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/PostEmoticonCollectResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25653,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/AddBookShelfInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/add/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/AddBookShelfInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/AddBookShelfInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25662,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/BookShelfCheckBookRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/check/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/BookShelfCheckBookRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/BookShelfCheckBookResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25667,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/ChaseBookUpdateRequset;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/chase_book/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/ChaseBookUpdateRequset;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/ChaseBookUpdateResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25673,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/DeleteBookShelfInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/delete/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/DeleteBookShelfInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/DeleteBookShelfInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25681,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetBookShelfInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/info/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetBookShelfInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetBookShelfInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25682,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetBookShelfPanelInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/panel_info/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetBookShelfPanelInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetBookShelfPanelInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25683,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetBookShelfToppingRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/topping/get/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetBookShelfToppingRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetBookShelfToppingResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25684,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/video/info/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25685,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetBookshelfTabRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/tab/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetBookshelfTabRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetBookshelfTabResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25719,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetSnackBarInShelfRequset;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/snack_bar/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetSnackBarInShelfRequset;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetSnackBarInShelfResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25737,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/PushBookInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/bookshelf/push/bookinfo/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/PushBookInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/PushBookInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25749,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/ReportBookShelfToppingRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/topping/report/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/ReportBookShelfToppingRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/ReportBookShelfToppingResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25769,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/UpdateBookShelfInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/update/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/UpdateBookShelfInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/UpdateBookShelfInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 25770,
+      "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/bookapi/bookshelf/video/update/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class": "Lcom/dragon/read/rpc/rpc/f$a;",
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "method": {
+      "index": 26034,
+      "owner": "Lcom/dragon/read/rpc/rpc/f$a;",
+      "name": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/AddIntoShelfDialogTimeDeltaRequest;)Lio/reactivex/Observable;"
+    },
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/reader/dialog/addinto_bookshelf/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/AddIntoShelfDialogTimeDeltaRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/AddIntoShelfDialogTimeDeltaResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "parameter_annotations": []
+  }
+]

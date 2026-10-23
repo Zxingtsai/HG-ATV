@@ -1,0 +1,14 @@
+{
+  "existing-sem": [
+    {
+      "subject": "CN=novel,OU=fq,O=fq,L=sz,ST=gd,C=86",
+      "sha256": "1fe01f1425c72dc1cd158e05cb696cb9fc17259a70f9d233fc48e8e42e6510ec"
+    }
+  ],
+  "current-normal": [
+    {
+      "subject": "CN=novel,OU=fq,O=fq,L=sz,ST=gd,C=86",
+      "sha256": "1fe01f1425c72dc1cd158e05cb696cb9fc17259a70f9d233fc48e8e42e6510ec"
+    }
+  ]
+}
