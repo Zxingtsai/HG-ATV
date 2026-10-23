@@ -1,0 +1,958 @@
+{
+  "scope": "Static original APK inspection. Raw provider records remain local; hashes identify bytes, not publicly downloadable evidence. Historical parent/full-session records may be unavailable after session loss. No APK execution or authenticated traffic.",
+  "apk": {
+    "sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+    "scope": "Declared DEX metadata and literal strings only; static shell parser, no execution; UTF-8 decode replaces invalid/MUTF sequences.",
+    "dex": [
+      {
+        "member": "classes.dex",
+        "sha256": "85fdc207c12d47a57ba17c087c1e236a4e1041c2bf56eeadba4aa38bd7440dda",
+        "classes": 8723,
+        "strings": 48681
+      },
+      {
+        "member": "classes10.dex",
+        "sha256": "8d68358e62707d7c3198a3ef7235662c6a513dceb12e1f57e8912d3a57c58039",
+        "classes": 12112,
+        "strings": 43016
+      },
+      {
+        "member": "classes11.dex",
+        "sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+        "classes": 10637,
+        "strings": 43892
+      },
+      {
+        "member": "classes12.dex",
+        "sha256": "28f2962d1a14c7782b9e716e2d91c40ee3e2051a54d770354a60d969b3d00c17",
+        "classes": 9751,
+        "strings": 48828
+      },
+      {
+        "member": "classes13.dex",
+        "sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+        "classes": 11428,
+        "strings": 49833
+      },
+      {
+        "member": "classes2.dex",
+        "sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+        "classes": 9036,
+        "strings": 40523
+      },
+      {
+        "member": "classes3.dex",
+        "sha256": "c91eb6caf080f198814cd5d5fa401e0fdad1ec5fc55498931974165445e52510",
+        "classes": 8939,
+        "strings": 51106
+      },
+      {
+        "member": "classes4.dex",
+        "sha256": "71bc739dea6174a67f85cb7733e82afe83a6f8d67633cbcb6de510b07faaaff7",
+        "classes": 8120,
+        "strings": 53328
+      },
+      {
+        "member": "classes5.dex",
+        "sha256": "ab39a0b03d63ffb89206ecef6389674d7ca4bb47705cd5c36e50c9ba41eac69f",
+        "classes": 2973,
+        "strings": 18002
+      },
+      {
+        "member": "classes6.dex",
+        "sha256": "85e0e4a7c5e2caee46f6351500ca50cc9fe1ef7fb87c5c8db91003f25c33e64f",
+        "classes": 9933,
+        "strings": 51310
+      },
+      {
+        "member": "classes7.dex",
+        "sha256": "a94d267ef20aad2a11bac2aff0d925574aef9dc0e03a6dead8ba27d00e4d58ea",
+        "classes": 9504,
+        "strings": 48684
+      },
+      {
+        "member": "classes8.dex",
+        "sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+        "classes": 11192,
+        "strings": 50749
+      },
+      {
+        "member": "classes9.dex",
+        "sha256": "60b562368b107e5499651711916f47f8621dd0478b8492e9d88ef9926ff73662",
+        "classes": 10939,
+        "strings": 48001
+      }
+    ]
+  },
+  "rea_package": "rea-agents@6.7.0",
+  "java": "OpenJDK 17.0.21",
+  "heap_mib": 4096,
+  "active_processor_count": 2,
+  "operation_timeout_ms": 600000,
+  "client_timeout_ms": 660000,
+  "engine": {
+    "version": "0.7.1",
+    "sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2"
+  },
+  "records": [
+    {
+      "record": "old-cache-class.json",
+      "sha256": "8401f6b82f5712e946437a92cc95c490edfa0c1b2e70f75d2e599ac1dd7cd686",
+      "started_at": "2026-10-23T05:10:40.739Z",
+      "duration_ms": 331,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f"
+      },
+      "evidence_id": "ev_ae2534f9d094f993a53dd1079f08091c360f52ef50d70d70f14532698fff9f68",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-cache-expiry.json",
+      "sha256": "44122e6e9114821137c9549801a03beec27fd58bd0acf0578301140663eb0d52",
+      "started_at": "2026-10-23T05:11:03.141Z",
+      "duration_ms": 319,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f",
+        "method_name": "a",
+        "overload_index": 2
+      },
+      "evidence_id": "ev_61d5afb3dfeffd7188507eba8fd228fd9145feb8903d99ceefec60291ef1faed",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(long): boolean",
+        "overload_index": 2,
+        "is_constructor": false,
+        "dex_descriptor": "(J)Z"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-cache-lookup.json",
+      "sha256": "21382adc20d4c4d635b24bcd0dfbb9e96423e2ec012577a5d1de896775586fb7",
+      "started_at": "2026-10-23T05:11:03.570Z",
+      "duration_ms": 331,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f",
+        "method_name": "a",
+        "overload_index": 3
+      },
+      "evidence_id": "ev_11c1fb563a2fcc5aebd909bf0220ab6a841aeea499b55bc1c9065d82b26f48db",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.lang.String, boolean): com.dragon.read.component.shortvideo.api.model.t",
+        "overload_index": 3,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Z)Lcom/dragon/read/component/shortvideo/api/model/t;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-cache-policy-class.json",
+      "sha256": "88973539dea5f1aeffd2236e6b31cc3463382482c16109d58509970bf4ff5a94",
+      "started_at": "2026-10-23T05:13:11.620Z",
+      "duration_ms": 338,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.api.d.a.t"
+      },
+      "evidence_id": "ev_21402f626d08e7d35eda49d177c6737d1ff9b586365a0142f1f79a4288c97c67",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-cache-request.json",
+      "sha256": "3e77a1c6fd233c943ac459e70851af4f84150667f3cbc45c81e68cdaa8d4a8e8",
+      "started_at": "2026-10-23T05:11:03.980Z",
+      "duration_ms": 336,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f",
+        "method_name": "a",
+        "overload_index": 4
+      },
+      "evidence_id": "ev_b31aae2ab81bebac9b451765bd150a7f2ffd3bdbb443fb733c62cdf11cdc276f",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(boolean, com.dragon.read.component.shortvideo.api.model.d, boolean, boolean): io.reactivex.Observable<com.dragon.read.component.shortvideo.api.model.t>",
+        "overload_index": 4,
+        "is_constructor": false,
+        "dex_descriptor": "(ZLcom/dragon/read/component/shortvideo/api/model/d;ZZ)Lio/reactivex/Observable;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-clock-interface.json",
+      "sha256": "eb7e50618182f93c89260220a192a329ca1ae7c631d1bac284684d9f9e282862",
+      "started_at": "2026-10-23T05:13:12.035Z",
+      "duration_ms": 334,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.api.docker.b"
+      },
+      "evidence_id": "ev_0d379554f1b49cea9d7a1c61a66f857c052d276b3ae3bcd500ea80b0ec8ffac5",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-context-query-callers.json",
+      "sha256": "c04cd0827bf68e0b6fb95d7522c1595ed207984ff4541305c6a76cbe12d8324e",
+      "started_at": "2026-10-23T11:43:51.970Z",
+      "duration_ms": 341,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.b",
+        "method_name": "b",
+        "overload_index": 1
+      },
+      "evidence_id": "ev_185209457582ca3e36292a599269a719f25211b4781a73e4f7c5fb707bb05165",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-expiry-default.json",
+      "sha256": "eecc0f34bd337b6e7311599d37ffd71f6cc4d847acc26d7730c7888730c022d7",
+      "started_at": "2026-10-23T11:43:25.679Z",
+      "duration_ms": 617,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.api.d.a.t",
+        "method_name": "<init>",
+        "overload_index": 2
+      },
+      "evidence_id": "ev_007eccffbb48181003d13c3cbd6ac0587843a4b59c9e4ca274d00737a5944557",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "<init>",
+        "reported_signature": "<init>(boolean, int, boolean, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": "(ZIZILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-expiry-setting.json",
+      "sha256": "0cca29616b337de8da785e926cc010e07aae9484d5ec58bcf34de1de6696a6d2",
+      "started_at": "2026-10-23T05:12:42.224Z",
+      "duration_ms": 351,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.settings.x",
+        "method_name": "c"
+      },
+      "evidence_id": "ev_558e079b3a9643b860c6bffd33862160d854f37d4416256a8b5a6c1a063e6850",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "c",
+        "reported_signature": "c(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-global-query-callers.json",
+      "sha256": "1b0a080cecbe783f5423a559cdc6fd489512bc15239bab9367747f8c74d47b4e",
+      "started_at": "2026-10-23T11:43:51.429Z",
+      "duration_ms": 461,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.h",
+        "method_name": "b",
+        "overload_index": 2
+      },
+      "evidence_id": "ev_ea383db27165f95fff3dc6d980e41957676741974b43a7662fbc1dac78567985",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-media-callers-fixed.json",
+      "sha256": "8d8b190a8b0db73bfdc074bb603ba0bf5ef81de64226eaa399b97df973c9a7a2",
+      "started_at": "2026-10-23T11:42:08.884Z",
+      "duration_ms": 57705,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.rpc.e",
+        "method_name": "a",
+        "overload_index": 5
+      },
+      "evidence_id": "ev_08bbb68cbdb9b202debee08c0013bc916f14d6edaebd8bea7c51810b19fcee59",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-media-info-class.json",
+      "sha256": "413b25f596e0807db80fdc74ecba2d2b4622bba47f73602ae2a964efaf651d5d",
+      "started_at": "2026-10-23T05:13:10.787Z",
+      "duration_ms": 319,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.rpc.e"
+      },
+      "evidence_id": "ev_ad9276fd387cb80da9575bcaa9e9a68a3239a91ac9502fca740c352968c41ed1",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-media-interface-callers.json",
+      "sha256": "e23431267cce669cec275994fb2d06414d037881458348e06665b9af9134d4c3",
+      "started_at": "2026-10-23T11:43:24.436Z",
+      "duration_ms": 369,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.rpc.e.a",
+        "method_name": "a",
+        "overload_index": 5
+      },
+      "evidence_id": "ev_a1ddd95c0ed48f59e0bf6ceaf8ea6baeaad01baed0afa518e203015e5ab53581",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-media-interface.json",
+      "sha256": "e5c1761fb932b1e32ae004557de13aa3e8a4f816d448bf484aa585b43692bc24",
+      "started_at": "2026-10-23T11:43:11.750Z",
+      "duration_ms": 661,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.rpc.e.a"
+      },
+      "evidence_id": "ev_dc699ddc6a692e255b7d70f2455ac95dc3b4fb81a16f392278d959db9fdd6f60",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-model-cache-callers.json",
+      "sha256": "edca4e9798d1667b7b2e10e6d4300f24f3f422126f33a2da1a4c462fb79f8c2c",
+      "started_at": "2026-10-23T05:12:44.612Z",
+      "duration_ms": 422,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f",
+        "method_name": "a",
+        "overload_index": 4
+      },
+      "evidence_id": "ev_88025beaa806b965648ad56a651a3508b570eeb8b14360a4517c2a72427a4dac",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-package-recovered.json",
+      "sha256": "40ad88fbec06e49453f7a6c713b4b7e756c941d04406cd6206148e652866da4a",
+      "started_at": "2026-10-23T11:43:18.177Z",
+      "duration_ms": 716,
+      "tool": "inspect_android_package",
+      "arguments": {
+        "detail": "complete"
+      },
+      "evidence_id": "ev_fa9517ad72a8fc78145c4701f868dee3f5d8780af56f56908ae3be2ae52b160d",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-package.json",
+      "sha256": "22d731358e05ac5ad11386045720f0623da197bf8519e6241222b5da990c3ae8",
+      "started_at": "2026-10-23T05:09:29.534Z",
+      "duration_ms": 52930,
+      "tool": "inspect_android_package",
+      "arguments": {
+        "detail": "summary"
+      },
+      "evidence_id": "ev_a96224457bb1a04bab6ba13481814f4df314c22e6bd322bd3fcedb238b925b0f",
+      "parent_evidence_id": "ev_3c7cc7cb3ad65cb4237dc0f5c6291fd834151b2cf90d916c9e984996b8ce268b",
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-parser-body.json",
+      "sha256": "d5bc67eb5e93a195799181ccfa6bc14c5b1d6252b4744d29c097a75e709a1abf",
+      "started_at": "2026-10-23T05:11:01.273Z",
+      "duration_ms": 1748,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.a",
+        "method_name": "a",
+        "overload_index": 1
+      },
+      "evidence_id": "ev_1ac63a38d72385d8c4ec4ce2dfa2cf0d9a8c8b91313191c12c9ed1970e81aaf2",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.lang.String): com.ss.ttvideoengine.model.VideoModel",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)Lcom/ss/ttvideoengine/model/VideoModel;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-parser-class.json",
+      "sha256": "9f751bd3b1b586aacedba5b9dcbd77e90109141ef0b92a222f871d3e7c543710",
+      "started_at": "2026-10-23T05:10:36.047Z",
+      "duration_ms": 2920,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.a"
+      },
+      "evidence_id": "ev_10168f63e59df50458b09eb273f358ef5181bfbf3303f8fd0ef95c03dbb1d73b",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-query-setter-callers.json",
+      "sha256": "a160a46fad7e7d5c450cffe5a3343eaf1e308e7e3b9c109c1f2047b70651b996",
+      "started_at": "2026-10-23T11:43:24.888Z",
+      "duration_ms": 431,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.m",
+        "method_name": "b",
+        "overload_index": 3
+      },
+      "evidence_id": "ev_f47ba58bd1bd893ba72bd6e06f4965d04d221d5b0d14f2ddea425d9eeea9801a",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-response-body.json",
+      "sha256": "4abcca3cfd8ce0fb09a679e6a839072d46a8d7a42410afc7a9c7526ddb139c37",
+      "started_at": "2026-10-23T05:11:04.403Z",
+      "duration_ms": 413,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.d.a",
+        "method_name": "a",
+        "overload_index": 0
+      },
+      "evidence_id": "ev_4a737b22b53644ca4decadac53741c30b2a87b6a2a024fd0086165c1b3a07606",
+      "parent_evidence_id": null,
+      "representation": "smali",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(com.dragon.read.rpc.model.GetVideoModelResponse): com.dragon.read.component.shortvideo.api.model.t",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelResponse;)Lcom/dragon/read/component/shortvideo/api/model/t;"
+      },
+      "markers": [
+        "java_body_unavailable"
+      ],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-b.json",
+      "sha256": "0b0e1c505d5937cba6b68d976050049cfe3fec448d048d395c13d87903da84cc",
+      "started_at": "2026-10-23T11:43:36.077Z",
+      "duration_ms": 319,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.b"
+      },
+      "evidence_id": "ev_ffb15c64ca0301a0b33da95d5ff0ebe4422badc63c0e0fd5ec8b7df6c8f45039",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-build-url.json",
+      "sha256": "4532a557797228adbea90ae40f4064d86e23706e7d5e218c2e1d6938f6657f1e",
+      "started_at": "2026-10-23T05:12:12.090Z",
+      "duration_ms": 343,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.transport.g.a",
+        "method_name": "a",
+        "overload_index": 5
+      },
+      "evidence_id": "ev_ed1adf02d3321de57adfcd84100d7151a37dc99b84e47a8b890aad72a124175d",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.lang.Object[]): com.bytedance.rpc.transport.g",
+        "overload_index": 5,
+        "is_constructor": false,
+        "dex_descriptor": "([Ljava/lang/Object;)Lcom/bytedance/rpc/transport/g;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-build.json",
+      "sha256": "1c6496df99bbe4295214837a5499588f8e717e1ceb772bb86a252f293b9ee2d3",
+      "started_at": "2026-10-23T05:11:18.600Z",
+      "duration_ms": 712,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.i",
+        "method_name": "c",
+        "overload_index": 0
+      },
+      "evidence_id": "ev_ab24a879644d4f9a964def5cf0b0031f8c95e8d622a1259a86bc2475d62ce49a",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "c",
+        "reported_signature": "c(com.bytedance.rpc.l): com.bytedance.rpc.transport.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/bytedance/rpc/l;)Lcom/bytedance/rpc/transport/g;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-common-registration-callers.json",
+      "sha256": "1df4566bba39ae278b48701615353bbd7a5aaf89236dee8a2fda8ca2661a7591",
+      "started_at": "2026-10-23T05:13:10.389Z",
+      "duration_ms": 318,
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.n",
+        "method_name": "a",
+        "overload_index": 13
+      },
+      "evidence_id": "ev_9c06d769f21f885173a87f205ac30ae9bf8b030142515141ddfa0421c775fb20",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-config-class.json",
+      "sha256": "c922f80dda11cd28db728065dc35cc1dd3bbdd5d789c90c416ed0eb5d440953b",
+      "started_at": "2026-10-23T05:10:39.897Z",
+      "duration_ms": 726,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.n"
+      },
+      "evidence_id": "ev_af689befae6d1ebddf8be9252494ff782d06c805c23a4490a0ad1dfb695bc56f",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-config-setter.json",
+      "sha256": "a01a7ef126f79dc8554048cc18946547c0572c419a8a37f81ec26e126513bb04",
+      "started_at": "2026-10-23T05:12:43.994Z",
+      "duration_ms": 515,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.n",
+        "method_name": "a",
+        "overload_index": 13
+      },
+      "evidence_id": "ev_3940bb0c32cfce1f6fbe58d5089d7e155f43388c3734bd6186e3b4351fceac08",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.lang.Object): void",
+        "overload_index": 13,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)V"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-context-init.json",
+      "sha256": "5bd7c9b5a09c56860a017d74d3e3a63ffa43d1977e4676ef44a76292f60756f6",
+      "started_at": "2026-10-23T05:12:43.155Z",
+      "duration_ms": 323,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.m",
+        "method_name": "a",
+        "overload_index": 2
+      },
+      "evidence_id": "ev_ad236ea60fc46e225ebd1778f4ac98c4108e0d96a9e203135a5b27568b82af97",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(com.bytedance.rpc.l): com.bytedance.rpc.m",
+        "overload_index": 2,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/bytedance/rpc/l;)Lcom/bytedance/rpc/m;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-context-query.json",
+      "sha256": "5e47abc723d80228bbc3215b2e4b05ec427fdbc8731d9764397f1eb076346e08",
+      "started_at": "2026-10-23T05:12:42.662Z",
+      "duration_ms": 409,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.m",
+        "method_name": "b",
+        "overload_index": 1
+      },
+      "evidence_id": "ev_ea89f3737cd266c8d8c5f44d192e258b7f24b86718a207c1c2566d8af904321b",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "b",
+        "reported_signature": "b(java.util.Map<java.lang.String, java.lang.String>): java.util.Map<java.lang.String, java.lang.String>",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;)Ljava/util/Map;"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-context.json",
+      "sha256": "f8a01b27c4543c452c1ff4cbb3f87dc07afc48fccd383fc64f105fcf765348c6",
+      "started_at": "2026-10-23T05:12:10.744Z",
+      "duration_ms": 402,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.m"
+      },
+      "evidence_id": "ev_76d63c2b3a9977cc8b4297757331ee348dcf874497ccf6be4a19f944d4bbe323",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-extra-params.json",
+      "sha256": "b49f03fc5ac8ac84c32c40535f586cfbfc2ec0b878adbb4124bb8db56a0b554f",
+      "started_at": "2026-10-23T05:12:11.631Z",
+      "duration_ms": 371,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.e",
+        "method_name": "a",
+        "overload_index": 5
+      },
+      "evidence_id": "ev_c96124008fbafdd6df996ca7013558ac9b938fb7a0afa4d41b0a6da7a672f2d8",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, java.util.Map<java.lang.String, java.lang.String>): boolean",
+        "overload_index": 5,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)Z"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-extra-selector.json",
+      "sha256": "183abbec46ae43f6a188864932d14dabff6e7eaee89e4d046c4f2b1df2dee9f0",
+      "started_at": "2026-10-23T05:12:43.579Z",
+      "duration_ms": 332,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.l",
+        "method_name": "a",
+        "overload_index": 3
+      },
+      "evidence_id": "ev_779fd32e5b47a9f97479d7fc6ca58541fb4166e09b020ea08cd509e0cfe622ff",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(java.util.Map<java.lang.String, java.lang.String>, java.util.Map<java.lang.String, java.lang.String>): boolean",
+        "overload_index": 3,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Map;Ljava/util/Map;)Z"
+      },
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-h.json",
+      "sha256": "b7a24e9f3bfed5a0826cbd745b010b8990de635ee8b9e064cfe19dfd729ec1d6",
+      "started_at": "2026-10-23T11:43:35.592Z",
+      "duration_ms": 397,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.h"
+      },
+      "evidence_id": "ev_6043ddb9598d5bb4f4d545fed701a36fbe4ae1f84fdab7e35fb598397014b688",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-invocation.json",
+      "sha256": "717aff7d51b8d6989af86205ff1d3a5c778b30b3d551791969c287966bf47bd4",
+      "started_at": "2026-10-23T05:12:11.233Z",
+      "duration_ms": 318,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.l"
+      },
+      "evidence_id": "ev_79c33efc98ced02f5fd2fad0e6fcb712885c2fc9cfe8a637999ed130043cc446",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-request-class.json",
+      "sha256": "dedee82548c91db9ef097a817ecfcdfcd42a15730933b5500d4ed627e74bc247",
+      "started_at": "2026-10-23T05:10:39.471Z",
+      "duration_ms": 314,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.i"
+      },
+      "evidence_id": "ev_1707ed39667fcb5a2c1b0b7f52ae303ec79d85a0b28f959c35c7830826609930",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-settings.json",
+      "sha256": "069163dbf1ecb7fa7cd1e2517eeba90984119b693d63a5a80f72e1037457e54d",
+      "started_at": "2026-10-23T05:11:19.398Z",
+      "duration_ms": 290,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.e"
+      },
+      "evidence_id": "ev_70fb5e2b486721878e35dc332b981f0752ebe0aabbb13306a334e519b6012dff",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-rpc-transport-builder.json",
+      "sha256": "4c64d478cfe314806a0febe61339f71499f25be4705d4e30cd3fe1be47962117",
+      "started_at": "2026-10-23T05:11:19.762Z",
+      "duration_ms": 291,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.transport.g.a"
+      },
+      "evidence_id": "ev_8245590fa659b822db923325de07600bf8e72898c2661b22d0bd0048aeb72464",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-shelf-add-success-class.json",
+      "sha256": "4f0379a65d41a4b00a49366594fd005f0e0cb263a42cc9cb362b004d967ebcc3",
+      "started_at": "2026-10-23T05:13:11.188Z",
+      "duration_ms": 357,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.pages.video.e.q.AnonymousClass1"
+      },
+      "evidence_id": "ev_3d3763ed0a35bcd2fee6d5f047c2e9dfa43b2d66991f9a91bc8bc536ba3ce6f3",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-shelf-add-success.json",
+      "sha256": "8e4bd09c0d46f0e42caaf90d6b648eb481d16e25d4a03501d8d9ce9761cea5a8",
+      "started_at": "2026-10-23T11:43:36.483Z",
+      "duration_ms": 7417,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.pages.video.e.q.AnonymousClass1",
+        "method_name": "a",
+        "overload_index": 0
+      },
+      "evidence_id": "ev_0e6b288e50265f2e483669e012a0b62ad203293e8f9c12edbf773d4ff45af5e2",
+      "parent_evidence_id": null,
+      "representation": "smali",
+      "source_status": "complete",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(com.dragon.read.rpc.model.UpdateBookShelfVideoInfoResponse): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoResponse;)V"
+      },
+      "markers": [
+        "java_body_unavailable"
+      ],
+      "is_error": false
+    },
+    {
+      "record": "old-shelf-class.json",
+      "sha256": "1edba3e7d577b71318dae4f4e9c4f3d819eab439f666a30806ad4ea07f51106d",
+      "started_at": "2026-10-23T05:10:39.051Z",
+      "duration_ms": 300,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.pages.video.e"
+      },
+      "evidence_id": "ev_a1ab43e1a34af13ef56cefb6c8d789f91cf8cc8092964e9cc912ad5db5ce0fde",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-shelf-q-class.json",
+      "sha256": "e82d5cf9bd0aee0d03d97038492caa5f6bb23111932c9bd98688a9c7b336efd5",
+      "started_at": "2026-10-23T05:11:18.185Z",
+      "duration_ms": 338,
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.pages.video.e.q"
+      },
+      "evidence_id": "ev_425d893dcf35318bcf407f9cf8b5d917c91666fe1df2bca2652f7ef9923db136",
+      "parent_evidence_id": null,
+      "representation": null,
+      "source_status": null,
+      "method": null,
+      "markers": [],
+      "is_error": false
+    },
+    {
+      "record": "old-shelf-q-run.json",
+      "sha256": "a1f8769801119c056fc4331fb20199cb4297744a631ac50f20ec9b197bd6e9e4",
+      "started_at": "2026-10-23T05:12:02.904Z",
+      "duration_ms": 7727,
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.pages.video.e.q",
+        "method_name": "run"
+      },
+      "evidence_id": "ev_dea76d336b403e36056c5f65c0aafc5d7c9adf3cd146d46d1e8e078fdb7fd1f5",
+      "parent_evidence_id": null,
+      "representation": "java",
+      "source_status": "complete",
+      "method": {
+        "name": "run",
+        "reported_signature": "run(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "markers": [],
+      "is_error": false
+    }
+  ]
+}
