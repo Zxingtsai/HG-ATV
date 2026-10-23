@@ -1,0 +1,720 @@
+{
+  "apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "evidence_type": "ordinary static declared DEX metadata, not REA and not a captured response",
+  "models": [
+    {
+      "class": "Lcom/dragon/read/rpc/model/BookShelfVideoData;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "contentType",
+          "type": "Lcom/dragon/read/rpc/model/VideoContentType;",
+          "serialized_name": "content_type",
+          "generic_signature": null
+        },
+        {
+          "java_name": "isFakeProgress",
+          "type": "Z",
+          "serialized_name": "is_fake_progress",
+          "generic_signature": null
+        },
+        {
+          "java_name": "lastOperateTime",
+          "type": "J",
+          "serialized_name": "last_operate_time",
+          "generic_signature": null
+        },
+        {
+          "java_name": "modifyTime",
+          "type": "J",
+          "serialized_name": "modify_time",
+          "generic_signature": null
+        },
+        {
+          "java_name": "seriesColorHex",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "series_color_hex",
+          "generic_signature": null
+        },
+        {
+          "java_name": "seriesCoverUrl",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "series_cover_url",
+          "generic_signature": null
+        },
+        {
+          "java_name": "seriesCreationStatus",
+          "type": "Lcom/dragon/read/rpc/model/SeriesStatus;",
+          "serialized_name": "series_creation_status",
+          "generic_signature": null
+        },
+        {
+          "java_name": "seriesStatus",
+          "type": "Lcom/dragon/read/rpc/model/UseStatus;",
+          "serialized_name": "series_status",
+          "generic_signature": null
+        },
+        {
+          "java_name": "seriesTitle",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "series_title",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoData",
+          "type": "Lcom/dragon/read/rpc/model/VideoData;",
+          "serialized_name": "video_data",
+          "generic_signature": null
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoData;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "videoShelfInfo",
+          "type": "Ljava/util/List;",
+          "serialized_name": "video_shelf_info",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Lcom/dragon/read/rpc/model/BookShelfVideoData;",
+            ">;"
+          ]
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoRequest;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoResponse;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "code",
+          "type": "Lcom/dragon/read/rpc/model/BookApiERR;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "data",
+          "type": "Lcom/dragon/read/rpc/model/GetBookShelfVideoInfoData;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "message",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/ReadingBookType;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Enum;",
+      "fields": [
+        {
+          "java_name": "value",
+          "type": "I",
+          "serialized_name": null,
+          "generic_signature": null
+        }
+      ],
+      "static_field_names": [
+        "$VALUES",
+        "Listen",
+        "Read",
+        "Watch"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoRequest;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "bookIdList",
+          "type": "Ljava/util/List;",
+          "serialized_name": "book_id_list",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+          ]
+        },
+        {
+          "java_name": "isCancelled",
+          "type": "Z",
+          "serialized_name": "is_cancelled",
+          "generic_signature": null
+        },
+        {
+          "java_name": "modifyTime",
+          "type": "Ljava/util/List;",
+          "serialized_name": "modify_time",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Ljava/lang/Long;",
+            ">;"
+          ]
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/UpdateBookShelfVideoInfoResponse;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "code",
+          "type": "Lcom/dragon/read/rpc/model/BookApiERR;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "message",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    },
+    {
+      "class": "Lcom/dragon/read/rpc/model/VideoData;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "super": "Ljava/lang/Object;",
+      "fields": [
+        {
+          "java_name": "abStyle",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "ab_style",
+          "generic_signature": null
+        },
+        {
+          "java_name": "adTitle",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "ad_title",
+          "generic_signature": null
+        },
+        {
+          "java_name": "adUrlData",
+          "type": "Lcom/dragon/read/rpc/model/AdUrlData;",
+          "serialized_name": "ad_url_data",
+          "generic_signature": null
+        },
+        {
+          "java_name": "aliasName",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "alias_name",
+          "generic_signature": null
+        },
+        {
+          "java_name": "authorAvatar",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "author_avatar",
+          "generic_signature": null
+        },
+        {
+          "java_name": "authorNickname",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "author_nickname",
+          "generic_signature": null
+        },
+        {
+          "java_name": "autoPlay",
+          "type": "Z",
+          "serialized_name": "auto_play",
+          "generic_signature": null
+        },
+        {
+          "java_name": "bookData",
+          "type": "Lcom/dragon/read/rpc/model/ApiBookInfo;",
+          "serialized_name": "book_data",
+          "generic_signature": null
+        },
+        {
+          "java_name": "bookExist",
+          "type": "Z",
+          "serialized_name": "book_exist",
+          "generic_signature": null
+        },
+        {
+          "java_name": "buttonText",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "button_text",
+          "generic_signature": null
+        },
+        {
+          "java_name": "cardTips",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "card_tips",
+          "generic_signature": null
+        },
+        {
+          "java_name": "categoryList",
+          "type": "Ljava/util/List;",
+          "serialized_name": "category_list",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+          ]
+        },
+        {
+          "java_name": "categorySchema",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "category_schema",
+          "generic_signature": null
+        },
+        {
+          "java_name": "colorDominate",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "color_dominate",
+          "generic_signature": null
+        },
+        {
+          "java_name": "contentType",
+          "type": "Lcom/dragon/read/rpc/model/VideoContentType;",
+          "serialized_name": "content_type",
+          "generic_signature": null
+        },
+        {
+          "java_name": "copyright",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "cover",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "createTime",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "create_time",
+          "generic_signature": null
+        },
+        {
+          "java_name": "diggedCount",
+          "type": "J",
+          "serialized_name": "digged_count",
+          "generic_signature": null
+        },
+        {
+          "java_name": "disablePlay",
+          "type": "Z",
+          "serialized_name": "disable_play",
+          "generic_signature": null
+        },
+        {
+          "java_name": "duration",
+          "type": "J",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "episode",
+          "type": "Z",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "episodeCnt",
+          "type": "J",
+          "serialized_name": "episode_cnt",
+          "generic_signature": null
+        },
+        {
+          "java_name": "episodeStatus",
+          "type": "Lcom/dragon/read/rpc/model/VideoEpisodeStatus;",
+          "serialized_name": "episode_status",
+          "generic_signature": null
+        },
+        {
+          "java_name": "firstFramePoster",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "first_frame_poster",
+          "generic_signature": null
+        },
+        {
+          "java_name": "followed",
+          "type": "Z",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "highlight",
+          "type": "Lcom/dragon/read/rpc/model/VideoHighlight;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "horizCover",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "horiz_cover",
+          "generic_signature": null
+        },
+        {
+          "java_name": "icon",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "language",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "location",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "materialId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "material_id",
+          "generic_signature": null
+        },
+        {
+          "java_name": "packageData",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "package_data",
+          "generic_signature": null
+        },
+        {
+          "java_name": "payInfo",
+          "type": "Lcom/dragon/read/rpc/model/VideoPayInfo;",
+          "serialized_name": "pay_info",
+          "generic_signature": null
+        },
+        {
+          "java_name": "playCnt",
+          "type": "J",
+          "serialized_name": "play_cnt",
+          "generic_signature": null
+        },
+        {
+          "java_name": "playCntDesc",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "play_cnt_desc",
+          "generic_signature": null
+        },
+        {
+          "java_name": "rankScore",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "rank_score",
+          "generic_signature": null
+        },
+        {
+          "java_name": "recText",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "rec_text",
+          "generic_signature": null
+        },
+        {
+          "java_name": "recommendGroupId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "recommend_group_id",
+          "generic_signature": null
+        },
+        {
+          "java_name": "recommendInfo",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "recommend_info",
+          "generic_signature": null
+        },
+        {
+          "java_name": "relatedMaterialId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "related_material_id",
+          "generic_signature": null
+        },
+        {
+          "java_name": "reviewRejectReason",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "review_reject_reason",
+          "generic_signature": null
+        },
+        {
+          "java_name": "reviewStatus",
+          "type": "Lcom/dragon/read/rpc/model/CloudReviewStatus;",
+          "serialized_name": "review_status",
+          "generic_signature": null
+        },
+        {
+          "java_name": "score",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "searchAttachedInfo",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "search_attached_info",
+          "generic_signature": null
+        },
+        {
+          "java_name": "searchHighLight",
+          "type": "Ljava/util/Map;",
+          "serialized_name": "search_high_light",
+          "generic_signature": [
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lcom/dragon/read/rpc/model/SearchHighlightItem;",
+            ">;"
+          ]
+        },
+        {
+          "java_name": "secondaryInfoList",
+          "type": "Ljava/util/List;",
+          "serialized_name": "secondary_info_list",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Lcom/dragon/read/rpc/model/SecondaryInfo;",
+            ">;"
+          ]
+        },
+        {
+          "java_name": "seriesId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "series_id",
+          "generic_signature": null
+        },
+        {
+          "java_name": "showContentTag",
+          "type": "Z",
+          "serialized_name": "show_content_tag",
+          "generic_signature": null
+        },
+        {
+          "java_name": "showEpisodeCnt",
+          "type": "Z",
+          "serialized_name": "show_episode_cnt",
+          "generic_signature": null
+        },
+        {
+          "java_name": "showPlayCnt",
+          "type": "Z",
+          "serialized_name": "show_play_cnt",
+          "generic_signature": null
+        },
+        {
+          "java_name": "showRecText",
+          "type": "Z",
+          "serialized_name": "show_rec_text",
+          "generic_signature": null
+        },
+        {
+          "java_name": "showScore",
+          "type": "Z",
+          "serialized_name": "show_score",
+          "generic_signature": null
+        },
+        {
+          "java_name": "subTitle",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "sub_title",
+          "generic_signature": null
+        },
+        {
+          "java_name": "subTitleList",
+          "type": "Ljava/util/List;",
+          "serialized_name": "sub_title_list",
+          "generic_signature": [
+            "Ljava/util/List<",
+            "Lcom/dragon/read/rpc/model/SecondaryInfo;",
+            ">;"
+          ]
+        },
+        {
+          "java_name": "tagInfo",
+          "type": "Lcom/dragon/read/rpc/model/VideoTagInfo;",
+          "serialized_name": "tag_info",
+          "generic_signature": null
+        },
+        {
+          "java_name": "time",
+          "type": "I",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "title",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "top",
+          "type": "Z",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "transferData",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "transfer_data",
+          "generic_signature": null
+        },
+        {
+          "java_name": "transferType",
+          "type": "Lcom/dragon/read/rpc/model/AdTransferType;",
+          "serialized_name": "transfer_type",
+          "generic_signature": null
+        },
+        {
+          "java_name": "trialDuration",
+          "type": "J",
+          "serialized_name": "trial_duration",
+          "generic_signature": null
+        },
+        {
+          "java_name": "updateTag",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "update_tag",
+          "generic_signature": null
+        },
+        {
+          "java_name": "url",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "useVideoModel",
+          "type": "Z",
+          "serialized_name": "use_video_model",
+          "generic_signature": null
+        },
+        {
+          "java_name": "userDigg",
+          "type": "Z",
+          "serialized_name": "user_digg",
+          "generic_signature": null
+        },
+        {
+          "java_name": "userDiggTimestampMs",
+          "type": "J",
+          "serialized_name": "user_digg_timestamp_ms",
+          "generic_signature": null
+        },
+        {
+          "java_name": "vertical",
+          "type": "Z",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "vid",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "generic_signature": null
+        },
+        {
+          "java_name": "vidIndex",
+          "type": "J",
+          "serialized_name": "vid_index",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoDesc",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_desc",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoDetail",
+          "type": "Lcom/dragon/read/rpc/model/VideoDetailVideoData;",
+          "serialized_name": "video_detail",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoHeight",
+          "type": "I",
+          "serialized_name": "video_height",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoModel",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_model",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoPlatform",
+          "type": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+          "serialized_name": "video_platform",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoTag",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_tag",
+          "generic_signature": null
+        },
+        {
+          "java_name": "videoWidth",
+          "type": "I",
+          "serialized_name": "video_width",
+          "generic_signature": null
+        },
+        {
+          "java_name": "voiced",
+          "type": "Z",
+          "serialized_name": null,
+          "generic_signature": null
+        }
+      ],
+      "static_field_names": [
+        "fieldTypeClassRef",
+        "serialVersionUID"
+      ]
+    }
+  ]
+}

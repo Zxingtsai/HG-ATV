@@ -1,0 +1,9 @@
+{
+  "versionCode": 74132,
+  "versionName": "7.4.1.32",
+  "compileSdkVersion": 35,
+  "compileSdkVersionCodename": "15",
+  "package": "com.phoenix.read",
+  "platformBuildVersionCode": 35,
+  "platformBuildVersionName": 15
+}

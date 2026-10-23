@@ -34,6 +34,7 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 
 ## 文档与开发
 
+- [目录与工作区整理说明](docs/WORKSPACE.zh-CN.md) · [研究资料导航](research/README.zh-CN.md)
 - [项目详细说明](README.zh-CN.md)
 - [Windows 安装、停止、测速与可选配置](windows/README.zh-CN.md)
 - [客户端构建与电视操作](client/README.md)

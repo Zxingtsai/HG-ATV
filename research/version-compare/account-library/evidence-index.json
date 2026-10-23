@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-22",
+  "scope": "Metadata of complete retained REA records only. No application source, APK, credentials or captured traffic included. Files referenced are local research artifacts, not promised public downloads. Independent retained records from interrupted sessions do not restore their complete original session ledger.",
+  "count": 8,
+  "evidence": [
+    {
+      "evidence_id": "ev_087d3b873e23e67a1fcf01cb00fc41d5ce30a1d0a8a7e2f24fd0aaf6b86492dd",
+      "operation": "inspect_android_method",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "367760021ff3c96bd9eccbd377a3b37d70c64dbea2e4e107691cda79a204345d",
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-new-account-method.json",
+          "file_sha256": "f37286f24a48eb9839c962bd052f7f610ab065cbebc88ac40f85680e03a9ce57"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.user.AccountServiceImpl",
+      "method": {
+        "name": "getSessionKey",
+        "reported_signature": "getSessionKey(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source_status": "complete"
+    },
+    {
+      "evidence_id": "ev_0db902a6e3eaa65f9cd20ce41b4781f404ba47393ce04fd9c39c06fdcae86959",
+      "operation": "inspect_android_class",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "c6785e72b43903e8158ac5b60489378bb69a58b2fd9cab87866d1858600b0308",
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-old-shelf-class.json",
+          "file_sha256": "e14e13e41c4abb7a72f980fe3ca1bf55787c150ca0127df6521a53910257c7dd"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.rpc.rpc.a"
+    },
+    {
+      "evidence_id": "ev_2bd5d466a00b9649e21958906164e44177dbe2bd6e2c97f3955a317f7c9b0e8d",
+      "operation": "inspect_android_method",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "865a6d044f7d961fa9f21c23913d8d21800f05a2e5c648cc798b1df71b2bfc15",
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-old-account-method.json",
+          "file_sha256": "8114c30b3616310765d0b58595c955138a1aa1814e218bbd9078b72058438a02"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.user.AccountServiceImpl",
+      "method": {
+        "name": "getSessionKey",
+        "reported_signature": "getSessionKey(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source_status": "complete"
+    },
+    {
+      "evidence_id": "ev_2f7821f3736f8e2bd77d6345ae987a5ec507d6eb7e8a305041eeacfde690da4b",
+      "operation": "inspect_android_class",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "367760021ff3c96bd9eccbd377a3b37d70c64dbea2e4e107691cda79a204345d",
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-new-account-class.json",
+          "file_sha256": "5cc11f87c486347a9ad4bad9bf2c2f32a89a725b5cadd1154624e00abd26dcda"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.user.AccountServiceImpl"
+    },
+    {
+      "evidence_id": "ev_5375acbaf5a097f02339354573eda8c5d8068602372fe9d5822c579ffc09e148",
+      "operation": "inspect_android_method",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "64b7cbd63622e247169e9dda9d46608a7a5e33e31b10dd731a78fdfa0b5d2368",
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-new-business-method.json",
+          "file_sha256": "6660148178468397aaa6f458e719c7e80e637554f439cd12aefb3cac53caa914"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.pages.video.VideoCollDataServer",
+      "method": {
+        "name": "k",
+        "reported_signature": "k(com.dragon.read.base.util.callback.Callback): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/dragon/read/base/util/callback/Callback;)V"
+      },
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source_status": "complete"
+    },
+    {
+      "evidence_id": "ev_8651f708666d1f3ef6b36d9f608a3c7b66f4b21fbb2114cb43e274161a483f31",
+      "operation": "search_android_classes",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "a4a037cf45b6884011dc3aedcd2152ace597ed258d05c51e4a64943598cd9fd8",
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-old-business-discovery.json",
+          "file_sha256": "ed39661dedc9a219fbc2ec03d9dbf32e703c690f8f243ab1c483209fea0cc9aa"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      }
+    },
+    {
+      "evidence_id": "ev_f1fbc00db1c563a37a0596b572e2377dec3e60f617fd6d97e257e7cf807cec10",
+      "operation": "inspect_android_class",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "64b7cbd63622e247169e9dda9d46608a7a5e33e31b10dd731a78fdfa0b5d2368",
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-new-business-class.json",
+          "file_sha256": "a16fb09ca66ba185000f18ac5a1addb48e53d86c140495066a4518f504c3f6b3"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.pages.video.VideoCollDataServer"
+    },
+    {
+      "evidence_id": "ev_ff9ad13bed1c23b3747380535a7ee1a52b612a52e1c1f6dd72bda2bc0fcedd3a",
+      "operation": "inspect_android_class",
+      "predicate_type": "rea.analysis",
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "subject_sha256": "865a6d044f7d961fa9f21c23913d8d21800f05a2e5c648cc798b1df71b2bfc15",
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "records": [
+        {
+          "local_relative_file": "account-library/rea-old-account-class.json",
+          "file_sha256": "17db3ebf0f6d5e62edbca14b023160d7c83464e3733a62671f178349d229ef59"
+        }
+      ],
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "com.dragon.read.user.AccountServiceImpl"
+    }
+  ]
+}

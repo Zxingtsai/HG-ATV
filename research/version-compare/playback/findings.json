@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-22",
+  "scope": "playback comparison, retained static evidence only",
+  "report": "REPORT.zh-CN.md",
+  "actions": {
+    "apk_execution": false,
+    "device_access": false,
+    "network_requests": false,
+    "content_key_access": false,
+    "product_changes": false
+  },
+  "artifacts": {
+    "old_original": {
+      "path": "../hongguo-6.2.3.32.apk",
+      "version_name": "6.2.3.32",
+      "version_code": 62332,
+      "sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+      "dex_count": 13
+    },
+    "old_rea_carrier": {
+      "path": "old-playback-slice.apk",
+      "sha256": "d7f6fc77809b5538e745bf3fdabb3ee6d86e6f15de0bb6422f3d9956ad2023f6",
+      "provenance_file": "old-playback-slice-provenance.json",
+      "members": [
+        "classes2.dex",
+        "classes11.dex",
+        "classes13.dex",
+        "AndroidManifest.xml",
+        "resources.arsc"
+      ],
+      "unsigned_analysis_only": true,
+      "reported_class_count_in_carrier": 13011
+    },
+    "new_baseline": {
+      "path": "../../hongguo.apk",
+      "version_name": "7.4.1.32",
+      "version_code": 74132,
+      "sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+      "dex_count": 25,
+      "official_recheck_report": "../current-official/REPORT.zh-CN.md",
+      "official_recheck_code_identity": "25/25 DEX, manifest and certificate match; full ZIP digest differs"
+    }
+  },
+  "runtime_user_report": {
+    "old_login": true,
+    "old_favorites": true,
+    "old_playback": true,
+    "attribution": "user report on user device, not independently observed in this branch"
+  },
+  "summary": [
+    "旧版选定v2链以业务VideoData.vid构造扁平GET模型请求，并以返回video_model JSON构造TTVideoEngine模型。",
+    "新版SaaS POST/biz_param路径与legacy GET声明并存，不能声称全局替换。",
+    "请求字段、类型和响应消费边界已明确；本分支未证明最终HTTP请求可独立重放。"
+  ],
+  "routes": [
+    {
+      "version": "6.2.3.32",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$GET /reading/bookapi/video_tab/video_model/v:version/",
+      "source_file": "old-all-playback-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "6.2.3.32",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+      "method": "b",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$GET /reading/bookapi/video_tab/multi_video_model/v:version/",
+      "source_file": "old-all-playback-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes9.dex",
+      "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "class": "Lcom/dragon/read/rpc/rpc/c$a;",
+      "method": "getVideoModelRxJava",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$GET /reading/bookapi/video_tab/video_model/v:version/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes9.dex",
+      "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "class": "Lcom/dragon/read/rpc/rpc/c$a;",
+      "method": "mGetVideoModelRxJava",
+      "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$GET /reading/bookapi/video_tab/multi_video_model/v:version/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes9.dex",
+      "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "class": "Lcom/dragon/read/rpc/rpc/e$a;",
+      "method": "mGetVideoModelLiteRxJava",
+      "descriptor": "(Lcom/dragon/read/rpc/model/MGetVideoModelLiteRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$POST /reading/distribution/video_model_lite/v1/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes15.dex",
+      "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "class": "Lkl8/a$a;",
+      "method": "getVideoModelRxJava",
+      "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$POST /novel/player/video_model/v1/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes15.dex",
+      "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "class": "Lkl8/a$a;",
+      "method": "mGetVideoModelRxJava",
+      "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+      "operation_annotation": "$POST /novel/player/multi_video_model/v1/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    },
+    {
+      "version": "7.4.1.32",
+      "dex": "classes15.dex",
+      "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "class": "Lkl8/a$a;",
+      "method": "mGetVideoModelV2RxJava",
+      "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/MGetVideoModelV2Request;)Lio/reactivex/Observable;",
+      "operation_annotation": "$POST /novel/player/multi_video_model/:dr_scene/v1/",
+      "source_file": "new-model-routes.json",
+      "evidence_kind": "static declaration",
+      "runtime_observed": false
+    }
+  ],
+  "models": {
+    "old_request": {
+      "class": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "source_file": "old-playback-model-metadata.json",
+      "fields": [
+        {
+          "java_name": "fromVideoId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "from_video_id",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "needAllVideoDefinition",
+          "type": "Z",
+          "serialized_name": "need_all_video_definition",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "source",
+          "type": "I",
+          "serialized_name": null,
+          "name_is_annotation_confirmed": false
+        },
+        {
+          "java_name": "useOsPlayer",
+          "type": "Z",
+          "serialized_name": "use_os_player",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_id",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoIdType",
+          "type": "Lcom/dragon/read/rpc/model/VideoSeriesIdType;",
+          "serialized_name": "video_id_type",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoPlatform",
+          "type": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+          "serialized_name": "video_platform",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    },
+    "old_response": {
+      "class": "Lcom/dragon/read/rpc/model/VideoModelData;",
+      "dex": "classes13.dex",
+      "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "source_file": "old-playback-model-metadata.json",
+      "fields": [
+        {
+          "java_name": "authorization",
+          "type": "Ljava/lang/String;",
+          "serialized_name": null,
+          "name_is_annotation_confirmed": false
+        },
+        {
+          "java_name": "expireTime",
+          "type": "J",
+          "serialized_name": "expire_time",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "isTrialVideo",
+          "type": "Z",
+          "serialized_name": "is_trial_video",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "playAuthToken",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "play_auth_token",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoHeight",
+          "type": "I",
+          "serialized_name": "video_height",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoModel",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_model",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoWidth",
+          "type": "I",
+          "serialized_name": "video_width",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    },
+    "new_legacy_request": {
+      "class": "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+      "dex": "classes18.dex",
+      "dex_sha256": "e2c6589b5b6713534d52c5e1e025ff2f14765900645c28f596bd7c1c92c7019d",
+      "source_file": "new-legacy-request-metadata.json",
+      "fields": [
+        {
+          "java_name": "deviceLevel",
+          "type": "Lcom/dragon/read/rpc/model/DeviceLevel;",
+          "serialized_name": "device_level",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "fromVideoId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "from_video_id",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "needAllVideoDefinition",
+          "type": "Z",
+          "serialized_name": "need_all_video_definition",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "needMp4Align",
+          "type": "Z",
+          "serialized_name": "need_mp4_align",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "source",
+          "type": "I",
+          "serialized_name": "source",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "useOsPlayer",
+          "type": "Z",
+          "serialized_name": "use_os_player",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_id",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoIdType",
+          "type": "Lcom/dragon/read/rpc/model/VideoSeriesIdType;",
+          "serialized_name": "video_id_type",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoPlatform",
+          "type": "Lcom/dragon/read/rpc/model/VideoPlatformType;",
+          "serialized_name": "video_platform",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    },
+    "new_legacy_response": {
+      "class": "Lcom/dragon/read/rpc/model/VideoModelData;",
+      "dex": "classes9.dex",
+      "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+      "source_file": "new-model-metadata.json",
+      "fields": [
+        {
+          "java_name": "authorization",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "authorization",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "backupUrl",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "backup_url",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "expireTime",
+          "type": "J",
+          "serialized_name": "expire_time",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "isTrialVideo",
+          "type": "Z",
+          "serialized_name": "is_trial_video",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "mainUrl",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "main_url",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "playAuthToken",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "play_auth_token",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoHeight",
+          "type": "I",
+          "serialized_name": "video_height",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoModel",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_model",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoWidth",
+          "type": "I",
+          "serialized_name": "video_width",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    },
+    "new_saas_request": {
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+      "dex": "classes15.dex",
+      "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "source_file": "new-model-metadata.json",
+      "fields": [
+        {
+          "java_name": "bizParam",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoBizParam;",
+          "serialized_name": "biz_param",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "mixedVideoIdMap",
+          "type": "Ljava/util/Map;",
+          "serialized_name": "mixed_video_id_map",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "novelCommonParam",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/NovelCommonParam;",
+          "serialized_name": "NovelCommonParam",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoContentType",
+          "type": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoContentType;",
+          "serialized_name": "content_type",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoId",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_id",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    },
+    "new_saas_response": {
+      "class": "Lseriessdk/com/dragon/read/saas/rpc/model/VideoModelData;",
+      "dex": "classes15.dex",
+      "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+      "source_file": "new-model-metadata.json",
+      "fields": [
+        {
+          "java_name": "backupUrl",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "backup_url",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "expireTime",
+          "type": "J",
+          "serialized_name": "expire_time",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "isTrialVideo",
+          "type": "Z",
+          "serialized_name": "is_trial_video",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "mainUrl",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "main_url",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "playAuthToken",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "play_auth_token",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoHeight",
+          "type": "I",
+          "serialized_name": "video_height",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoModel",
+          "type": "Ljava/lang/String;",
+          "serialized_name": "video_model",
+          "name_is_annotation_confirmed": true
+        },
+        {
+          "java_name": "videoWidth",
+          "type": "I",
+          "serialized_name": "video_width",
+          "name_is_annotation_confirmed": true
+        }
+      ]
+    }
+  },
+  "selected_old_path": [
+    {
+      "class": "com.dragon.read.component.shortvideo.impl.v2.core.j",
+      "method": "a(VideoData,Consumer,boolean)",
+      "observations": [
+        {
+          "code_unit": "0x006c",
+          "call": "api.model.d$a.a(VideoData,int,String)"
+        },
+        {
+          "code_unit": "0x0074",
+          "call": "impl.v2.data.f.a(...)"
+        }
+      ],
+      "source_file": "com-dragon-read-component-shortvideo-impl-v2-core-j.dexdump.txt"
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.api.model.d$a",
+      "method": "a(VideoData,int,String)",
+      "observations": [
+        {
+          "code_unit": "0x0010",
+          "call": "VideoData.getVid()"
+        },
+        {
+          "code_unit": "0x001a",
+          "write": "api.model.d.a = vid unchanged"
+        },
+        {
+          "code_unit": "0x001c",
+          "call": "VideoData.getVideoPlatform()"
+        },
+        {
+          "code_unit": "0x0022",
+          "call": "VideoData.isRelatedMaterialId()"
+        }
+      ],
+      "source_file": "com-dragon-read-component-shortvideo-api-model-d$a.dexdump.txt"
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.impl.v2.data.f$d",
+      "method": "subscribe",
+      "source_file": "old-model-request-consumer-rea.json",
+      "observation": "参数对象五字段加请求布尔选项进入 depend.c.b.a，连接Rx map/成功/失败消费者。"
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.depend.c.b",
+      "method": "a(String,VideoPlatformType,boolean,boolean,boolean,int,String)",
+      "source_file": "old-request-builder-rea.json",
+      "observation": "创建七字段DTO，空平台回退Outer，关联素材布尔决定SeriesId或VideoId。"
+    },
+    {
+      "class": "com.dragon.read.rpc.rpc.a",
+      "method": "a(GetVideoModelRequest)",
+      "source_file": "com-dragon-read-rpc-rpc-a.dexdump.txt",
+      "observation": "经com.bytedance.rpc.n.a(Class)代理工厂调用接口；路由最终序列化见独立transport调查。"
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.impl.v2.data.f$d$a",
+      "method": "a(GetVideoModelResponse)",
+      "source_file": "old-response-consumer-rea.json",
+      "representation": "smali fallback",
+      "direct_response_fields": [
+        "video_model",
+        "video_width",
+        "video_height",
+        "expire_time",
+        "is_trial_video"
+      ],
+      "not_directly_read_in_selected_method": [
+        "authorization",
+        "play_auth_token"
+      ],
+      "code_units": {
+        "videoModel": "0x0032",
+        "parse": "0x0039",
+        "width": "0x0041",
+        "height": "0x0045",
+        "expire": "0x0049",
+        "trial": "0x004d"
+      }
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.impl.v2.data.f$a",
+      "method": "a(String)",
+      "source_file": "com-dragon-read-component-shortvideo-impl-v2-data-f$a.dexdump.txt",
+      "code_units": {
+        "JSONObject(String)": "0x0008",
+        "VideoRef.extractFields": "0x0015",
+        "VideoModel.setVideoRef": "0x0018"
+      },
+      "source_kind": "SDK dexdump; REA attempt failed for ambiguous overload"
+    },
+    {
+      "class": "com.dragon.read.component.shortvideo.impl.v2.core.j$b",
+      "method": "a(api.model.t)",
+      "source_file": "com-dragon-read-component-shortvideo-impl-v2-core-j$b.dexdump.txt",
+      "code_units": {
+        "caller-provided Consumer.accept": "0x007c"
+      },
+      "limitation": "Caller consumer selection not exhaustively traced."
+    }
+  ],
+  "old_engine_boundary": {
+    "class": "com.dragon.read.component.shortvideo.impl.v2.core.j",
+    "method": "a(VideoModel,long)",
+    "source_file": "com-dragon-read-component-shortvideo-impl-v2-core-j.dexdump.txt",
+    "code_units": {
+      "TTVideoEngine.setVideoModel": "0x0017",
+      "TTVideoEngine.prepare": "0x0045"
+    },
+    "observation_kind": "static, conditional on non-null model/engine"
+  },
+  "enums": {
+    "old_VideoSeriesIdType": {
+      "VideoId": 0,
+      "SeriesId": 1
+    },
+    "new_VideoSeriesIdType": {
+      "VideoId": 0,
+      "SeriesId": 1,
+      "PostId": 2
+    },
+    "old_VideoPlatformType": {
+      "Unknown": 0,
+      "PlatformDouyin": 1,
+      "UgcVideo": 2,
+      "Outer": 3,
+      "PlatformXigua": 4,
+      "Chameleon": 5,
+      "Mixed": 1024
+    },
+    "value_source": "const arguments written into enum value field, not enum ordinal",
+    "old_sources": [
+      "com-dragon-read-rpc-model-VideoPlatformType.dexdump.txt",
+      "com-dragon-read-rpc-model-VideoSeriesIdType.dexdump.txt"
+    ],
+    "new_source": "../../protocol-pass2/vid-mapping/enum-values.json",
+    "wire_encoding_verified": false
+  },
+  "new_v2_path_source": "../../protocol-pass2/vid-mapping/README.zh-CN.md",
+  "new_serialization_source": "../../static-followup/README.zh-CN.md",
+  "rea_ledger": [
+    {
+      "file": "old-slice-package.json",
+      "evidence_id": "ev_08c10fb4681643a280d4d558a7728c793f187b28d67320f19e480f7fa97dc3e6",
+      "operation": "inspect_analysis_view",
+      "parameters": {
+        "parent_evidence_id": "ev_31844361099f3cc124f530050e67bbd4cc5c9dabf6985a0da6bdd56064e87467",
+        "view": {
+          "kind": "summary"
+        }
+      },
+      "representation": null,
+      "source_status": null,
+      "fell_back": null,
+      "markers": []
+    },
+    {
+      "file": "old-request-builder-rea.json",
+      "evidence_id": "ev_23dba325a36e5ac9c446159ba343fc5ec0e6958ea11cdd2ffa6ae7d7dc6dbb5d",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/version-compare/playback/old-playback-slice.apk",
+        "class_name": "com.dragon.read.component.shortvideo.depend.c.b",
+        "method_name": "a",
+        "overload_index": 0
+      },
+      "representation": "java",
+      "source_status": "complete",
+      "fell_back": false,
+      "markers": []
+    },
+    {
+      "file": "old-model-request-consumer-rea.json",
+      "evidence_id": "ev_a184c46c7f96f473efe916e0c1173b195fbd8d30174082120e6d8cfa48a394b1",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/version-compare/playback/old-playback-slice.apk",
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.d",
+        "method_name": "subscribe"
+      },
+      "representation": "java",
+      "source_status": "complete",
+      "fell_back": false,
+      "markers": []
+    },
+    {
+      "file": "old-response-consumer-rea.json",
+      "evidence_id": "ev_e2ea1b2e846f68f4813aba9fdf916af7d625baeac69e8613daf7d2ce4a6b7387",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "/workspace/hongguo-tv/research/version-compare/playback/old-playback-slice.apk",
+        "class_name": "com.dragon.read.component.shortvideo.impl.v2.data.f.d.a",
+        "method_name": "a"
+      },
+      "representation": "smali",
+      "source_status": "complete",
+      "fell_back": true,
+      "markers": [
+        "java_body_unavailable"
+      ]
+    },
+    {
+      "file": "old-model-json-parser-rea.json",
+      "evidence_id": null,
+      "status": "failed",
+      "code": "invalid_request",
+      "reason": "ambiguous overload; no overload_index selected",
+      "successful_parser_evidence_source": "com-dragon-read-component-shortvideo-impl-v2-data-f$a.dexdump.txt",
+      "successful_parser_source_type": "Android SDK dexdump, not REA"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "old_route_version",
+      "text": "旧 v:version 路由的最终替换值未由本 playback 分支还原；不得自行替换为 v1。"
+    },
+    {
+      "id": "wire_serialization",
+      "text": "DTO注解、RpcParams(true)、SerializeType.JSON 未单独证明最终 GET query 字节、枚举/布尔编码及默认字段省略。"
+    },
+    {
+      "id": "runtime_request_context",
+      "text": "未恢复或观察完整运行时公共参数、账号会话、设备标识、头、host 重写与服务端授权条件。"
+    },
+    {
+      "id": "vid_equivalence",
+      "text": "没有证明旧 VideoData.vid、新 EpisodeInfo.vid、官网 item_id 与 TT v02 VID 可以互换。"
+    },
+    {
+      "id": "response_values",
+      "text": "静态 DTO 与 SDK parser 不证明实际响应字段非空、必有直链、无加密、完整正片或当前请求可独立重放。"
+    },
+    {
+      "id": "callback_selection",
+      "text": "j$b把模型信息转交调用者Consumer；未逐一还原全部上层Consumer/播放分支及其运行时选择。"
+    },
+    {
+      "id": "global_authorization_use",
+      "text": "旧选定 f$d$a 方法未直接读取外层authorization/playAuthToken，不证明其他方法、SDK或服务端不使用授权信息。"
+    },
+    {
+      "id": "analysis_coverage",
+      "text": "选定方法与原 DEX dump 不等于全APK静态覆盖，反射、动态加载、原生调用与未选择分支仍未确定。"
+    }
+  ],
+  "evidence_boundary": "SDK dexdump/DEX metadata files are supplemental static observations, not invented REA IDs or runtime captures. old-version-literals-sdk.json is a bounded search with no absence proof."
+}

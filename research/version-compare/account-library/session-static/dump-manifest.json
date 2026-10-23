@@ -1,0 +1,281 @@
+[
+  {
+    "version": "new",
+    "class": "Lcom/bytedance/sdk/account/impl/c;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_c.dexdump.txt",
+    "dump_sha256": "b4df8545b62696b740338c50e75a80c9b9506ee8eb008f006afcd2a5d3b2fd18",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/bytedance/sdk/account/impl/i;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_i.dexdump.txt",
+    "dump_sha256": "66fffd11e216af53dbd8232ae0905090456686bc07fe0f1b42d32a763ae57b5f",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/bytedance/sdk/account/impl/t;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_t.dexdump.txt",
+    "dump_sha256": "5637747b2f1c83a40463cac235ddabc89fe517a3c4775ed8afea2f395b0f31b4",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/bytedance/sdk/account/impl/x;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_x.dexdump.txt",
+    "dump_sha256": "d97f3691a915c1bea9883f4fe4d2c45a0a61caa55400c11e8f5e4cfc79906f59",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/dragon/read/user/AccountServiceImpl;",
+    "dex_member": "classes11.dex",
+    "dex_sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "dump": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AccountServiceImpl.dexdump.txt",
+    "dump_sha256": "ef2d3e91106424f4ba11eefa892fa4f2d5b827682fa17c8d90606bffa76b7707",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/dragon/read/user/AcctManager$c;",
+    "dex_member": "classes11.dex",
+    "dex_sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "dump": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager$c.dexdump.txt",
+    "dump_sha256": "a6f6fc5addbbbddbc1acfeacb1c4d19e548b342531c7ec34c6079c606170ccd3",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/dragon/read/user/AcctManager$l;",
+    "dex_member": "classes11.dex",
+    "dex_sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "dump": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager$l.dexdump.txt",
+    "dump_sha256": "2e618e27a861d7f37a8c6f56aca673a799a076d2f69e708c886963614174caa9",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lcom/dragon/read/user/AcctManager;",
+    "dex_member": "classes11.dex",
+    "dex_sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "dump": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager.dexdump.txt",
+    "dump_sha256": "09a9b80159378127fa9090b53fe09f2b6a605f4d96991729301aaf93c8f227a0",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Ldk7/g;",
+    "dex_member": "classes11.dex",
+    "dex_sha256": "62ce84fabed12aa89c9db658ee3ac401446cb42779f400fc8053f7a202b2d883",
+    "dump": "research/version-compare/account-library/session-static/new-dk7_g.dexdump.txt",
+    "dump_sha256": "99ac0aabf6cb80bfdf1d4077dcf251a25ac8a0a7d7d90ad7e6c7b2d54d7437ce",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Leh1/a$a;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-eh1_a$a.dexdump.txt",
+    "dump_sha256": "b2ee6b05aa5dcfe96b4838db2cb91f02bd2d56db17355dd494274728cb65ab87",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lji1/i;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-ji1_i.dexdump.txt",
+    "dump_sha256": "b0918cb1c1c86aef3b3d2f45500810d5856709c4285a291dd21d77e2c5eea515",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lkg1/a;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-kg1_a.dexdump.txt",
+    "dump_sha256": "63460130addbd0db61e8809854ba47c9ea08288227fa00010623e64fa6352d2e",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lkg1/f;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-kg1_f.dexdump.txt",
+    "dump_sha256": "b200e55733851b371563b4d5fa38aaa317559467d809a0b0cf6fccb1a11028a0",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "new",
+    "class": "Lkh1/d;",
+    "dex_member": "classes21.dex",
+    "dex_sha256": "e9fb00a11d57e4cfc97afab4d260384d19d0685359b15f921ef34f719faa502d",
+    "dump": "research/version-compare/account-library/session-static/new-kh1_d.dexdump.txt",
+    "dump_sha256": "a03c9d661a5eae2442673c371d8d6c2d901407c20a6a24ceec03454645cf0dc0",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/e/a$a;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_e_a$a.dexdump.txt",
+    "dump_sha256": "e3abe11e3d7614a702e4e529ab8bc5162d531bc182bdbe6c9fbb9255cef6265f",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/h/c$a;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_c$a.dexdump.txt",
+    "dump_sha256": "11f751da6658feb3355e32862653a97b35bf253e923f2ef32d10f4753327e83f",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/h/j;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_j.dexdump.txt",
+    "dump_sha256": "db28b0a97f7d49e239382d0307b1578753ce702c9144ce3cef37b277a0cf4f09",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/h/p;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_p.dexdump.txt",
+    "dump_sha256": "85fd440ba78ddbd584ad3bb796e8420dcdf11b68e381488d67130acd45ad8af5",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/k;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_k.dexdump.txt",
+    "dump_sha256": "3b2559e2f48d75d9dcf33c42acae666009545b79c94a6ee6c4fd6abb01794642",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/l/b/r;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_l_b_r.dexdump.txt",
+    "dump_sha256": "f5f5551a2a2318d8d8d0d271c6643300c92fcdc6ea331ba045fe90b703034cdf",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/u/c;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_u_c.dexdump.txt",
+    "dump_sha256": "bde10984909eee5f737b61298ec35b40c116848ea66d5a52255f6c18ecf519d2",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/sdk/account/utils/m;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_utils_m.dexdump.txt",
+    "dump_sha256": "98a5a160484bbf69d1b6484abf09b06819cfa0f25b3b2b00d2654d468a017940",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/bytedance/ttnet/retrofit/SsInterceptor;",
+    "dex_member": "classes8.dex",
+    "dex_sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+    "dump": "research/version-compare/account-library/session-static/old-com_bytedance_ttnet_retrofit_SsInterceptor.dexdump.txt",
+    "dump_sha256": "7038a562d2894605623240bd32805df83f00e5bc1216b0e7b784530065172eb5",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/AccountServiceImpl;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_AccountServiceImpl.dexdump.txt",
+    "dump_sha256": "344650e5d7446fba7096810d0cc60e2ceab1d0f94625c143e31a5518ebbe123f",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/a/a$13;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$13.dexdump.txt",
+    "dump_sha256": "cd0c2e2fe24357df454ed198414e61b8668ec054285d36634add6b67f3b3dd79",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/a/a$31;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$31.dexdump.txt",
+    "dump_sha256": "f0aa8aa79fdd6c7d086080164deddae5d39f60092d379c3fca3194738a27c5c1",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/a/a$8;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$8.dexdump.txt",
+    "dump_sha256": "ad3abc9794ce8abed81c0d40c5b02ca7ff102892ee669286e41206bbdca81231",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/a/a;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a.dexdump.txt",
+    "dump_sha256": "9288a58d518964ddf6f4e37bcd960be363ba612defc2f2c05c4ed924ff615c04",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/b$11;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_b$11.dexdump.txt",
+    "dump_sha256": "4c1a32b53a91d246c4e548b3e17777e8319feb27a0f2de832f3b353b01a7684a",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/dragon/read/user/b;",
+    "dex_member": "classes2.dex",
+    "dex_sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+    "dump": "research/version-compare/account-library/session-static/old-com_dragon_read_user_b.dexdump.txt",
+    "dump_sha256": "243d5c6c859d1de55e8f574b767256284bebdbfbc45815c5451ee0dbae496a5d",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  },
+  {
+    "version": "old",
+    "class": "Lcom/ss/android/a;",
+    "dex_member": "classes3.dex",
+    "dex_sha256": "c91eb6caf080f198814cd5d5fa401e0fdad1ec5fc55498931974165445e52510",
+    "dump": "research/version-compare/account-library/session-static/old-com_ss_android_a.dexdump.txt",
+    "dump_sha256": "c8ef2ebf6fe65bf8c3e89d9c19851c9091e6cbe68daafc22a74ec7904a9ef9db",
+    "extractor": "Android build-tools 35.0.0 dexdump -d; plain shell evidence, not REA"
+  }
+]

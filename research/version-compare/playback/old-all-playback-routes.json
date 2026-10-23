@@ -1,0 +1,442 @@
+[
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/c$a;",
+    "index": 14626,
+    "owner": "Lcom/dragon/read/rpc/c$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/model/ShortVideoAutoCollectReq;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST api.fqnovel.com/luckycat/novel/1/task/daily_short_video_collect/auto_add"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/model/ShortVideoAutoCollectReq;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/model/ShortVideoAutoCollectResp;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST api.fqnovel.com/luckycat/novel/1/task/daily_short_video_collect/auto_add"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/c$a;",
+    "index": 14629,
+    "owner": "Lcom/dragon/read/rpc/c$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/model/WatchHistoryShortVideoDetailReq;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET api.fqnovel.com/luckycat/novel/1/task/watch_history_short_video/detail"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/model/WatchHistoryShortVideoDetailReq;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/model/WatchHistoryShortVideoDetailResp;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET api.fqnovel.com/luckycat/novel/1/task/watch_history_short_video/detail"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "index": 25726,
+    "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/video_model/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/video_model/v:version/"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "index": 25780,
+    "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoDetailRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/video_detail/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/VideoDetailRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/VideoDetailResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/video_detail/v:version/"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "index": 25785,
+    "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "name": "b",
+    "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/multi_video_model/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/MGetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/multi_video_model/v:version/"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "index": 25789,
+    "owner": "Lcom/dragon/read/rpc/rpc/a$a;",
+    "name": "b",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoDetailRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/multi_video_detail/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/VideoDetailRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/MGetVideoDetailResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/multi_video_detail/v:version/"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/b$a;",
+    "index": 25936,
+    "owner": "Lcom/dragon/read/rpc/rpc/b$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/GetAudioPlayerAdRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/commerceapi/ad/audio/player/v1/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetAudioPlayerAdRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetAudioPlayerAdResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/commerceapi/ad/audio/player/v1/"
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes13.dex",
+    "dex_sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+    "class": "Lcom/dragon/read/rpc/rpc/e$a;",
+    "index": 26022,
+    "owner": "Lcom/dragon/read/rpc/rpc/e$a;",
+    "name": "a",
+    "descriptor": "(Lcom/dragon/read/rpc/model/VideoInfoRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/media/video/info/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 161,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/VideoInfoRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/VideoInfoResponse;",
+            ">;"
+          ]
+        }
+      }
+    ],
+    "route_annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/media/video/info/"
+        }
+      }
+    ]
+  }
+]

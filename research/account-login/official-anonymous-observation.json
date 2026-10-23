@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-22T23:39:44.051972+00:00",
+  "calls": [
+    {
+      "host": "hongguoduanju.com",
+      "path": "/passport/account/info/v2/",
+      "query_keys": [
+        "a_bogus",
+        "account_sdk_source",
+        "account_sdk_source_info",
+        "aid",
+        "biz_trace_id",
+        "is_from_ttaccountsdk",
+        "language",
+        "msToken",
+        "p_bd",
+        "p_js_t",
+        "p_js_v",
+        "p_ver",
+        "p_zt",
+        "passport_jssdk_type",
+        "passport_jssdk_version",
+        "request_host"
+      ],
+      "method": "GET",
+      "status": 200,
+      "response_keys": [
+        "data",
+        "message"
+      ],
+      "data_keys": [
+        "description",
+        "error_code",
+        "name",
+        "session_key",
+        "user_id"
+      ],
+      "error_code": 13,
+      "description": "会话过期，请重新登录",
+      "message": "error"
+    }
+  ],
+  "scripts": [
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/lib-polyfill.2051f50d69.js",
+      "file": "lib-polyfill.2051f50d69.js",
+      "sha256": "6dd7808a7816351cee897902525341bb8328e4af8d522e3afb3e4716664397ba"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/main.9548ff80fd.js",
+      "file": "main.9548ff80fd.js",
+      "sha256": "c7359d1171765d295b00c73e94050ff139d99b880ac9e6385b2cc6b35bdd08a8"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/q9.ba6672c040.js",
+      "file": "q9.ba6672c040.js",
+      "sha256": "1ed07bf39afbcdff96959dc47bf12c1ce3c96c1d9564394810c0cbdeb067f1e4"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/j.5d1f4b76d6.js",
+      "file": "j.5d1f4b76d6.js",
+      "sha256": "a484ee9f76d71103461e84cefa34af2fe755abef31fc5fe0cfdec5c7c8330a99"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/lib-router.c9a04f342d.js",
+      "file": "lib-router.c9a04f342d.js",
+      "sha256": "564eae6c4c0c394b3e8311aa6bad3fcdfdacac5ee242e81aa6d3106f9b4ad080"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/lib-react.9049f48917.js",
+      "file": "lib-react.9049f48917.js",
+      "sha256": "ca9991005b8c751fdddcb8ec04b9f2ea8900687d3a9cbd73080f7ddff8490d7c"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/z.9f03fef705.js",
+      "file": "z.9f03fef705.js",
+      "sha256": "a547377fd92269351920b36670fc1fc1485639c2c4e9b645f689c50f78d5a686"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/5y.5e22c31751.js",
+      "file": "5y.5e22c31751.js",
+      "sha256": "312a9b04ee079d470f27b75eead8db0f97d51920dca5cdddd51043b491049877"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/lodash.c93a4eb553.js",
+      "file": "lodash.c93a4eb553.js",
+      "sha256": "d90860872b4fb0e807dfb1b558a14cdac9671a404f28d8bb128007fcb572e033"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/c.c736ee2374.js",
+      "file": "c.c736ee2374.js",
+      "sha256": "f541d97c7f4b8c1d894689bf6bb1e104fe38640a39a231aeff459bcc5b6282cc"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/w.183a5a5cd5.js",
+      "file": "w.183a5a5cd5.js",
+      "sha256": "bd1757bc19ba169dc2954ebf52d7317e901b55e977a0f60da5398263eeeb32f9"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/0e.c65965f4a4.js",
+      "file": "0e.c65965f4a4.js",
+      "sha256": "7343b5b3c6234ea6e1d57d8c13cba2e59993443b46cb12d5717d684fd82c8d3b"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/t.d1c39a18e1.js",
+      "file": "t.d1c39a18e1.js",
+      "sha256": "6d2c05f0ee150f9a06c71277ca44b12234b791ebb620265e8c133586e601ca28"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/l.47322236e5.js",
+      "file": "l.47322236e5.js",
+      "sha256": "1e0e750c02924264ab964b7fc9c8108cbb869e201687eb42770661041888b8c0"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/y.28c79c6df6.js",
+      "file": "y.28c79c6df6.js",
+      "sha256": "17464cf76160fdecb5d0514aed9fbd0efb72cca375f31fb1e07f068cc6f80bc4"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/page.18198431be.js",
+      "file": "page.18198431be.js",
+      "sha256": "041fc410509c7a7007251b674bd4673b0cf40c9e9f1021b57e056f529e533945"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/u2.2c379ac8df.js",
+      "file": "u2.2c379ac8df.js",
+      "sha256": "9cca6d8f60ddba88e660f9becb72af12349fec843011e2fcf6a7fdd92b073312"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/r.969b7887a8.js",
+      "file": "r.969b7887a8.js",
+      "sha256": "112ade80c69ca4ae8329ffe8f20b01e8d75e15f125d791312445580123d4ae6a"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/32.385955e6dc.js",
+      "file": "32.385955e6dc.js",
+      "sha256": "d2a79621648514b962b4e49828541f7c566ef9eb6e72f2a6dac21eb670792d20"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/2.2abcb248ef.js",
+      "file": "2.2abcb248ef.js",
+      "sha256": "b4793d2e2d8642242ab8f9e7c298a673058245dc4cb082c571fb9e3b83325a68"
+    }
+  ],
+  "scope": "Anonymous UI and status only; no phone/SMS/login, cookies or token values retained."
+}

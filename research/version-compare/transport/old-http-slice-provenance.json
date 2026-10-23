@@ -1,0 +1,12 @@
+{
+  "source_apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "carrier_sha256": "98711884ab507b8dff718ede30c204924272a9aa44bb85b16849f121153b971c",
+  "scope": "Unsigned reduced carrier for selected static methods; not installable original and not whole-program analysis.",
+  "dex": [
+    {
+      "source_member": "classes9.dex",
+      "carrier_member": "classes.dex",
+      "sha256": "60b562368b107e5499651711916f47f8621dd0478b8492e9d88ef9926ff73662"
+    }
+  ]
+}

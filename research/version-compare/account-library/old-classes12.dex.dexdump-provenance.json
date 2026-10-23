@@ -1,0 +1,13 @@
+{
+  "source_apk": "/workspace/hongguo-tv/research/version-compare/hongguo-6.2.3.32.apk",
+  "source_apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "dex_member": "classes12.dex",
+  "dex_sha256": "28f2962d1a14c7782b9e716e2d91c40ee3e2051a54d770354a60d969b3d00c17",
+  "tool": "Android SDK build-tools35.0.0 dexdump -d",
+  "selected_class_regex": [
+    "^Lcom/dragon/read/pages/video/e(\\$q)?;$"
+  ],
+  "class_blocks": 2,
+  "returncode": 0,
+  "evidence_type": "ordinary static DEX disassembly, not REA or execution"
+}

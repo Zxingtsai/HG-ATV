@@ -1,0 +1,278 @@
+[
+  {
+    "dex": "classes9.dex",
+    "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+    "index": 22564,
+    "owner": "Lcom/dragon/read/rpc/rpc/c$a;",
+    "name": "getVideoModelRxJava",
+    "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/video_model/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 112,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/GetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+    "index": 22575,
+    "owner": "Lcom/dragon/read/rpc/rpc/c$a;",
+    "name": "mGetVideoModelRxJava",
+    "descriptor": "(Lcom/dragon/read/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$GET /reading/bookapi/video_tab/multi_video_model/v:version/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 112,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/MGetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "dex_sha256": "cc9eec6a13fd7ae520eb03861e368ca32aa7817fc1e30618901082d66bf1d340",
+    "index": 22766,
+    "owner": "Lcom/dragon/read/rpc/rpc/e$a;",
+    "name": "mGetVideoModelLiteRxJava",
+    "descriptor": "(Lcom/dragon/read/rpc/model/MGetVideoModelLiteRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /reading/distribution/video_model_lite/v1/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 112,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lcom/dragon/read/rpc/model/MGetVideoModelLiteRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lcom/dragon/read/rpc/model/MGetVideoModelLiteResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes15.dex",
+    "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+    "index": 31667,
+    "owner": "Lkl8/a$a;",
+    "name": "getVideoModelRxJava",
+    "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /novel/player/video_model/v1/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 897,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes15.dex",
+    "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+    "index": 31671,
+    "owner": "Lkl8/a$a;",
+    "name": "mGetVideoModelRxJava",
+    "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /novel/player/multi_video_model/v1/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 897,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/GetVideoModelRequest;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/MGetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "dex": "classes15.dex",
+    "dex_sha256": "b8edebb42c798cbe56314f6d5ed2258cd74fcd4891fe99a1b46601a87ff243ae",
+    "index": 31672,
+    "owner": "Lkl8/a$a;",
+    "name": "mGetVideoModelV2RxJava",
+    "descriptor": "(Lseriessdk/com/dragon/read/saas/rpc/model/MGetVideoModelV2Request;)Lio/reactivex/Observable;",
+    "annotations": [
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcOperation;",
+        "values": {
+          "value": "$POST /novel/player/multi_video_model/:dr_scene/v1/"
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcParams;",
+        "values": {
+          "value": true
+        }
+      },
+      {
+        "type": "Lcom/bytedance/rpc/annotation/RpcSerializer;",
+        "values": {
+          "value": {
+            "index": 897,
+            "owner": "Lcom/bytedance/rpc/serialize/SerializeType;",
+            "name": "JSON",
+            "type": "Lcom/bytedance/rpc/serialize/SerializeType;"
+          }
+        }
+      },
+      {
+        "type": "Ldalvik/annotation/Signature;",
+        "values": {
+          "value": [
+            "(",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/MGetVideoModelV2Request;",
+            ")",
+            "Lio/reactivex/Observable<",
+            "Lseriessdk/com/dragon/read/saas/rpc/model/MGetVideoModelResponse;",
+            ">;"
+          ]
+        }
+      }
+    ]
+  }
+]

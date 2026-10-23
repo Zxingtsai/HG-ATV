@@ -1,0 +1,32 @@
+{
+  "source_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "analysis_only_unsigned": true,
+  "members": [
+    {
+      "name": "AndroidManifest.xml",
+      "bytes": 260920,
+      "sha256": "359901a37cb7076a59c7c3679a9a39a07730675f91cdbf51c70fcfb450d9692c"
+    },
+    {
+      "name": "resources.arsc",
+      "bytes": 1931740,
+      "sha256": "e5130a2e7140af8cfe3fbe1863a82cb9b719b3592c0e27d5ba8b5ed44ce780f8"
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 7578256,
+      "sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e"
+    },
+    {
+      "name": "classes11.dex",
+      "bytes": 7832144,
+      "sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c"
+    },
+    {
+      "name": "classes13.dex",
+      "bytes": 8422892,
+      "sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9"
+    }
+  ],
+  "carrier_sha256": "d7f6fc77809b5538e745bf3fdabb3ee6d86e6f15de0bb6422f3d9956ad2023f6"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "member": "classes5.dex",
+    "class": "Lms/bd/c/b3$a;",
+    "interfaces": [
+      "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$a;"
+    ]
+  },
+  {
+    "member": "classes9.dex",
+    "class": "Lcom/dragon/read/base/http/b/a;",
+    "interfaces": [
+      "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;"
+    ]
+  }
+]

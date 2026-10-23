@@ -1,0 +1,902 @@
+{
+  "old": {
+    "lib/arm64-v8a/libAndroidPitayaProxy.so": {
+      "bytes": 47056,
+      "sha256": "869d37d35b87d162c7dc83399c7e6f4b17079cec2c3166f7043d57e366f32362"
+    },
+    "lib/arm64-v8a/libByteVC1_dec.so": {
+      "bytes": 403432,
+      "sha256": "d7495d571dd11b7648fac7853201c00228657138916111eacd62ff73359b7a6b"
+    },
+    "lib/arm64-v8a/libEncryptor.so": {
+      "bytes": 75744,
+      "sha256": "861a93734ab8d808364b784f961ffa4b77777b9ae73fb5f634c5a94d0f9dc23c"
+    },
+    "lib/arm64-v8a/libPitayaObject.so": {
+      "bytes": 79624,
+      "sha256": "8b59f774c65753494196b22009071d4f7f7fa9f9e85680e06c3373bd1c7c56e5"
+    },
+    "lib/arm64-v8a/libTTHighlight.so": {
+      "bytes": 75840,
+      "sha256": "f222d01f10367b02b1eb7ac325ef2db22e0b5152956432551f57923e2592d211"
+    },
+    "lib/arm64-v8a/libTTHtmlParser.so": {
+      "bytes": 974096,
+      "sha256": "bdc596cc949e085b9cd3c1ab2193a4790b5feff35438f782dbbb184622ca3c35"
+    },
+    "lib/arm64-v8a/libTTWebViewSdkFlipped.so": {
+      "bytes": 14240,
+      "sha256": "8404a6094989841aaa8d299464a06885667baf82a8be63313ae53ae1bc9134e2"
+    },
+    "lib/arm64-v8a/libTuringYuvUtils.so": {
+      "bytes": 10120,
+      "sha256": "43441ff3ad84b142d322e0bed28282b0b660784bdfd8e755da7520c1b212f684"
+    },
+    "lib/arm64-v8a/libTxtParser.so": {
+      "bytes": 67616,
+      "sha256": "a629fc2ee3496f299f008778bf26941a8cc55b4dc7c0ea2105037ac75268b05b"
+    },
+    "lib/arm64-v8a/libalog.so": {
+      "bytes": 121208,
+      "sha256": "a3f806f59c5016a92f0fe46e2f6133c39d6264f51f259e638d7d9664d5727a28"
+    },
+    "lib/arm64-v8a/libanimax.so": {
+      "bytes": 1092080,
+      "sha256": "78e643ae02844f006f989548788f7d434c1ecadb9e72d8530e65a0e3fe233cfd"
+    },
+    "lib/arm64-v8a/libart_sym.so": {
+      "bytes": 123736,
+      "sha256": "539db8dfeaafded8eebb69f6422ea13da0b2da7ca2538e91a06f4909a2fe969b"
+    },
+    "lib/arm64-v8a/libaudioprocessor.so": {
+      "bytes": 170584,
+      "sha256": "f303d9e8f4a72e90a7e3ab0b93c25fa80e8c0e4e6ed92c82f77c134759edbe52"
+    },
+    "lib/arm64-v8a/libavmdl.so": {
+      "bytes": 1587632,
+      "sha256": "0feb38921e58fcf7c0655fccb33d02f67819877c32488ed8a726338d61ea9671"
+    },
+    "lib/arm64-v8a/libavmdlbase.so": {
+      "bytes": 215096,
+      "sha256": "4f66b5c83accf164ccf90e8c1ffb992cc3e647d181be3769de3a20e8f5e96509"
+    },
+    "lib/arm64-v8a/libavmdlp2p.so": {
+      "bytes": 1788136,
+      "sha256": "6c3ecfb0221ed1c7001569f271499cdb3527be08cb54ffe54349c8f56de0e63f"
+    },
+    "lib/arm64-v8a/libavmdlv2.so": {
+      "bytes": 3648072,
+      "sha256": "2eacacb1840b2429e8c98078925555b1a84fbfd5a8d6d95a13c1669601b17381"
+    },
+    "lib/arm64-v8a/libbdmpg123.so": {
+      "bytes": 125560,
+      "sha256": "221609c49e095ced6952d74bb78e06a79eaf3d2e6fb47756435cdc5ed051df0e"
+    },
+    "lib/arm64-v8a/libbdsword.so": {
+      "bytes": 59776,
+      "sha256": "6d56636a95db15bfd207fc371a046a0335cd0943df251e1ecbd9e1fe55102839"
+    },
+    "lib/arm64-v8a/libbdvideouploader.so": {
+      "bytes": 1075536,
+      "sha256": "a0b45e27bf579b0d562b5ac5749d2d246206f426d8f84cd5dcdbf711e21081a2"
+    },
+    "lib/arm64-v8a/libbdzstd.so": {
+      "bytes": 124752,
+      "sha256": "90c74b032d3ac70c82e0f117411920609e976132b7d196b590ace4ff0481777b"
+    },
+    "lib/arm64-v8a/libbreakpad_client.so": {
+      "bytes": 38736,
+      "sha256": "c32fac59fcef0af4de5e43a4508920f9bcd8e22b859d9d5646c244c8e1eb4ddf"
+    },
+    "lib/arm64-v8a/libbspatch.so": {
+      "bytes": 107272,
+      "sha256": "14d6840d3462e072775001e438931e703cf6f7979216ebc5157a589c40ea2f85"
+    },
+    "lib/arm64-v8a/libbuffer.so": {
+      "bytes": 10008,
+      "sha256": "80772d617058227d2dc1f3ad4696545aabc99a1d94f6421531fcbd2647ff82de"
+    },
+    "lib/arm64-v8a/libbytehook.so": {
+      "bytes": 57656,
+      "sha256": "faa45e1f7bfb8c8704e6bc82de1b3a6f4e9c070e51dd0345e31bd5dd7a6b02af"
+    },
+    "lib/arm64-v8a/libc++_shared.so": {
+      "bytes": 911696,
+      "sha256": "e8373ee43274541efd2d34fe0588d55bf953612e1417ad47cfd2c4bd1aa383d0"
+    },
+    "lib/arm64-v8a/libcjtfccsm.so": {
+      "bytes": 178176,
+      "sha256": "c188662e1dcb6493cb3abf58b80d664e63b8e3f6f9f464a1b8ab215f7e051f74"
+    },
+    "lib/arm64-v8a/libcollect_hook.so": {
+      "bytes": 18328,
+      "sha256": "22d60dc2baf68a14fb195768d7eef8296958409feb9df6377ed5e67b9c2b0bf3"
+    },
+    "lib/arm64-v8a/libcommon-logic.so": {
+      "bytes": 6800,
+      "sha256": "4ccacad0a9f792c38c0850c103f0bf39f49d2ab546398950adfa9f93b651b57c"
+    },
+    "lib/arm64-v8a/libcvt.so": {
+      "bytes": 62900,
+      "sha256": "132e6c2058b9fa58df568a551ceddabef27cf6a03d8be915e464cd32520763af"
+    },
+    "lib/arm64-v8a/libdragon_crypt.so": {
+      "bytes": 88128,
+      "sha256": "a45d19c48cf3b1c3624a8f22960e406d386dcae58126768bf0bc5ce71ae09922"
+    },
+    "lib/arm64-v8a/libdragoncore.so": {
+      "bytes": 412624,
+      "sha256": "712beece914290f6d6fbf4cb6c26bd1c654b2c1f378c68d4aff23af1c4522742"
+    },
+    "lib/arm64-v8a/libflipped.so": {
+      "bytes": 10064,
+      "sha256": "8e5346baa621e0db676a940cbc85671e4f4b55a39fd5344ca03449b38af96fb3"
+    },
+    "lib/arm64-v8a/libgecko_encrypt.so": {
+      "bytes": 10008,
+      "sha256": "f0cbcae1e0874eba88419fcb95dca88b7dc02708e760bb078abc927adee6b384"
+    },
+    "lib/arm64-v8a/libgeckox_bspatch.so": {
+      "bytes": 115688,
+      "sha256": "fe5c46d3c7825a31d023202cf43764e70a2191887485c6b8a6d46606743e7ddc"
+    },
+    "lib/arm64-v8a/libgifimage.so": {
+      "bytes": 39408,
+      "sha256": "b50e853d03b7ad4e56dece0367bcb445edf3a90e68030fa40443ba74da64c262"
+    },
+    "lib/arm64-v8a/libgodzilla-sysopt.so": {
+      "bytes": 38968,
+      "sha256": "e551272f3e6b2b0831cbc1123ee6c7335ccbb236669899520e8002d275f260c6"
+    },
+    "lib/arm64-v8a/libhdiffpatch.so": {
+      "bytes": 464568,
+      "sha256": "8f981ed63f8ca67ac4eae8fe68316c8b0d7df228eb2f2e580442c1e8af586ff4"
+    },
+    "lib/arm64-v8a/libheif.so": {
+      "bytes": 56072,
+      "sha256": "19e78bfdb5ac47352f5b071d94efbc4f930f111e64912ecad234d8e772faec88"
+    },
+    "lib/arm64-v8a/libhelios_bt.so": {
+      "bytes": 18432,
+      "sha256": "cd0a4228e07b95d9dda5261d78965b55cba01db298cf941b2d7fe8355543887c"
+    },
+    "lib/arm64-v8a/libiesapplogger.so": {
+      "bytes": 63520,
+      "sha256": "862a8a5dc447d51bc7ddbc7424069056de9a2dc1223e60c11b9bc96f7396903a"
+    },
+    "lib/arm64-v8a/libimagepipeline.so": {
+      "bytes": 264328,
+      "sha256": "d4fedebea3a2974edbfb07fd23910ab4a0396b6c61805cdc9c02760bd654747e"
+    },
+    "lib/arm64-v8a/libinterstellar.so": {
+      "bytes": 12592,
+      "sha256": "4af6159609325bf064ffe86d4b88756886555387e6e13c83f3d88b099a02b053"
+    },
+    "lib/arm64-v8a/libjato.so": {
+      "bytes": 309336,
+      "sha256": "a4b9e38a7baa99d72abe4bdb6e2284c8d17352096c987f2f0e8296a38f0d04bc"
+    },
+    "lib/arm64-v8a/libkeva.so": {
+      "bytes": 400264,
+      "sha256": "dfb1438fd46759c08367fd763c0891efb9d2a0875b2b3ac8e65e090ea529b719"
+    },
+    "lib/arm64-v8a/libkrypton.so": {
+      "bytes": 1186592,
+      "sha256": "7591b7684ca49f24b7833c5ce985743312624c5e77797f8ad13b2fdc1046775a"
+    },
+    "lib/arm64-v8a/libkryptonaudioeffect.so": {
+      "bytes": 36744,
+      "sha256": "16840305f710252a7210face0f874987f47953676f6776a814d48ca32c28ecd3"
+    },
+    "lib/arm64-v8a/liblivestrategy.so": {
+      "bytes": 739352,
+      "sha256": "08e282784cf4300eb13c9b96e4c39197ce7b9983dcb2d33c60648f4abbf1a26c"
+    },
+    "lib/arm64-v8a/liblynx.so": {
+      "bytes": 2653272,
+      "sha256": "4c56beb5ad8a1d121bd89bda53b34177c26c823964be5226f4a793cd9b91a749"
+    },
+    "lib/arm64-v8a/liblynx_v8_bridge.so": {
+      "bytes": 71824,
+      "sha256": "28f627a0682d89fbe1a038a1798f501c5dff5135ac4d020584aa282369749cba"
+    },
+    "lib/arm64-v8a/libmetasec_ml.so": {
+      "bytes": 2278904,
+      "sha256": "ae0639fa4aedf4e06357e25ba27e62ff23c1f8f484e9214aba51f3c0a68e8edb"
+    },
+    "lib/arm64-v8a/libmmkv.so": {
+      "bytes": 245552,
+      "sha256": "3df8a8e22c32edcac83a3285c58f7bd234d7f258315512d93bc1a007c1912ba0"
+    },
+    "lib/arm64-v8a/libmobiparser.so": {
+      "bytes": 366720,
+      "sha256": "7b23136613fa18aab7ace771da1a82220ae1b1e664b54459519a66c4a61e6332"
+    },
+    "lib/arm64-v8a/libmonitorcollector-lib.so": {
+      "bytes": 252200,
+      "sha256": "efc639c03d5d35f7d7e41f2f8009d5aa00aa0e858ecd7a803b04b0ed1dfef19a"
+    },
+    "lib/arm64-v8a/libnapi.so": {
+      "bytes": 178272,
+      "sha256": "36237fa10d89fdd707a4fe8c5a15a9c205200447a66c99766bc09270e445446f"
+    },
+    "lib/arm64-v8a/libnative-filters.so": {
+      "bytes": 22536,
+      "sha256": "6ef47b352a15154ec687df994e81726c21e467d4b8350748409b135e219fca5c"
+    },
+    "lib/arm64-v8a/libnpth.so": {
+      "bytes": 108528,
+      "sha256": "63480a88b97c24d7c735fb5e2d103214ceab23445724bd5d25e65926c7535253"
+    },
+    "lib/arm64-v8a/libnpth_bt.so": {
+      "bytes": 10136,
+      "sha256": "d0676e90b153a1bcebef2c6c60971f9f50aa85de24a7ab85ae365f6b0cd20315"
+    },
+    "lib/arm64-v8a/libnpth_dl.so": {
+      "bytes": 27712,
+      "sha256": "271dfd7c848d0314f91a297240e9172f344c13fe1e3297aa98adb7f457f13316"
+    },
+    "lib/arm64-v8a/libnpth_dumper.so": {
+      "bytes": 74008,
+      "sha256": "e3856d849ddf43a38ea25223d912d099ba4220b7124e4a6da434919f0d1a13e1"
+    },
+    "lib/arm64-v8a/libnpth_heap_tracker.so": {
+      "bytes": 59400,
+      "sha256": "e1f70277529af8009113eb6b2138d1cc65528573bf667e36844e766cac1ac4db"
+    },
+    "lib/arm64-v8a/libnpth_logcat.so": {
+      "bytes": 16856,
+      "sha256": "7e1e0a204b9b486e8173fe982b2fceb1317431cc8962197331a54e16eadc48e3"
+    },
+    "lib/arm64-v8a/libnpth_repair.so": {
+      "bytes": 14232,
+      "sha256": "44bff6ddf15e23668e9bb2cf903e242e015412a1ea245062762b723b6eb85801"
+    },
+    "lib/arm64-v8a/libnpth_tls_monitor.so": {
+      "bytes": 15416,
+      "sha256": "2588a854d14a9cf55623f59d90ca292d1fd4bfd04faf75b3d7a6c8160471998a"
+    },
+    "lib/arm64-v8a/libnpth_unw.so": {
+      "bytes": 333880,
+      "sha256": "0af6ed2ea99d50ca09721b40ff6f1aa27f4a2194accffdb8c13f3ed80c303162"
+    },
+    "lib/arm64-v8a/libnpth_vm_monitor.so": {
+      "bytes": 55232,
+      "sha256": "4f26fef32456b9f7ea0a044796cba7fd61ab6ea798e30daf8e2e385c4e94eae6"
+    },
+    "lib/arm64-v8a/libnpth_xasan.so": {
+      "bytes": 38832,
+      "sha256": "f24468e4ff3afb83fad784d8901a8be1caed093d9902bbe52622d2789727e349"
+    },
+    "lib/arm64-v8a/libnslinker.so": {
+      "bytes": 13824,
+      "sha256": "fa387609576e88d7ad59e3836c69556438302039bc797fa81997280c06f9a0bd"
+    },
+    "lib/arm64-v8a/libnuwa.so": {
+      "bytes": 67696,
+      "sha256": "661054cf388b56b93a80291e7975399746e15bb3ff623afd86107b0851ffe655"
+    },
+    "lib/arm64-v8a/libpangleflipped.so": {
+      "bytes": 10064,
+      "sha256": "f8bc883be882330cd919f94ab6aad4493a80004ef0ab77337c6bd727a514742d"
+    },
+    "lib/arm64-v8a/libpl_droidsonroids_gif.so": {
+      "bytes": 43016,
+      "sha256": "7bc82edf7b81405efe19bc13f7b7e1350bb9331e0cc2ed45dc2b19d9367c97dc"
+    },
+    "lib/arm64-v8a/libpreload.so": {
+      "bytes": 1230792,
+      "sha256": "14b61dc797ee29a297ddefbb5065574af78555cddaf2f85fc7ebfb8f83d91a89"
+    },
+    "lib/arm64-v8a/libprofiler.so": {
+      "bytes": 395592,
+      "sha256": "5acf687111d7595df5fa1aac6a2c9f579bcdc2f3bf9df64edaf0a38355d721df"
+    },
+    "lib/arm64-v8a/libquick.so": {
+      "bytes": 1235360,
+      "sha256": "75510a28d4ff567f3267ba6975b3118d6f2d0f6246af2668404880ae030ff168"
+    },
+    "lib/arm64-v8a/libreparo.so": {
+      "bytes": 105504,
+      "sha256": "eb87b5dcceefe1ddb5e0d3021b3a1b321c19425ec863e44e8a3949b3e0aef0fa"
+    },
+    "lib/arm64-v8a/libshadowhook.so": {
+      "bytes": 67688,
+      "sha256": "b91ad27681a6de1e8bb53ac6aa25d19621dc37d3dfb22e5da1e9773fb86b9df4"
+    },
+    "lib/arm64-v8a/libsrlib.so": {
+      "bytes": 80352,
+      "sha256": "0387a2592e4b7a4f23d0683b7695d51f39b016b195cd07407636eef00f253447"
+    },
+    "lib/arm64-v8a/libsscronet.so": {
+      "bytes": 3931048,
+      "sha256": "1391cf19f99bfbe36a504553fc3d50b4794b65da23e3f7a7f44ca13f7a56a4a4"
+    },
+    "lib/arm64-v8a/libstatic-webp.so": {
+      "bytes": 391992,
+      "sha256": "5b89d7f76225936491a81eed4d26131eced2c81113f188aa7c493dbd7485de9e"
+    },
+    "lib/arm64-v8a/libsysoptimizer.so": {
+      "bytes": 284888,
+      "sha256": "7053531fe54e40ee81623e1213baf3869cb640334f8bb082686f4b9e77e1e819"
+    },
+    "lib/arm64-v8a/libtexturerender_native.so": {
+      "bytes": 47000,
+      "sha256": "b875f919690a49166905b84848d2cf3e13f250dd56a8a3eae99ef11fdda57cca"
+    },
+    "lib/arm64-v8a/libtokenizer.so": {
+      "bytes": 247864,
+      "sha256": "af1db0f095e57eeb3401fd12769720844310139e7b73f30500aee21f377e7dbf"
+    },
+    "lib/arm64-v8a/libttboringssl.so": {
+      "bytes": 380208,
+      "sha256": "f43dd760cf8233f03d70b36307ddfbb101d5f6c75b4387ae07f884b9ca29198a"
+    },
+    "lib/arm64-v8a/libttcrypto.so": {
+      "bytes": 1240008,
+      "sha256": "f890c0ba266fe4c71b3d8d240af1c72ebaa09cb1c5bee1a3143b2534fd19f86f"
+    },
+    "lib/arm64-v8a/libttepubparser.so": {
+      "bytes": 362792,
+      "sha256": "f7fdecc4a569c59480271b00286130460c1f21d30055e014458d7a45faa0422b"
+    },
+    "lib/arm64-v8a/libttffmpeg.so": {
+      "bytes": 5563496,
+      "sha256": "f7cf15cf7ce20aef48899e317b71b5e8e10f161311cbdf7d54d7a534af1ddbeb"
+    },
+    "lib/arm64-v8a/libttheif_dec.so": {
+      "bytes": 132936,
+      "sha256": "5930418f3df5e9405bcbeb7562fddb83d926d53438a16cae8c301e61a37329a5"
+    },
+    "lib/arm64-v8a/libttmplayer.so": {
+      "bytes": 1861496,
+      "sha256": "3a75dce1b763ac54697ff8bbc4c12838f77289aed11d25a3d4c25ef5411af350"
+    },
+    "lib/arm64-v8a/libttmverify.so": {
+      "bytes": 9920,
+      "sha256": "5e8ed131736074699bef517244740d6f7b579a93d7e03dc891ae8331d0f0e2fa"
+    },
+    "lib/arm64-v8a/libttmverifylite.so": {
+      "bytes": 26480,
+      "sha256": "3eda003e875117f861f680f124326bc9ce59ccdae9d3ff76a8cdec70cd265def"
+    },
+    "lib/arm64-v8a/libtttext.so": {
+      "bytes": 523032,
+      "sha256": "214b1bfefd7e01cd17bc825c5269c502675d9c92069d1925d8d86b8a0c9a581a"
+    },
+    "lib/arm64-v8a/libvcbasekit.so": {
+      "bytes": 198728,
+      "sha256": "2721d26ec212dddd91db4b537310b5045127f7b9c99d74ab578360459568da82"
+    },
+    "lib/arm64-v8a/libvcn.so": {
+      "bytes": 214960,
+      "sha256": "df2b34523a0466e10ba5242730ada4ef49b0e4514e661b61d495e2b6ef768d1f"
+    },
+    "lib/arm64-v8a/libvcnverify.so": {
+      "bytes": 9992,
+      "sha256": "5b283f5a6a5b103bd1e5713377a201048116c9a6313eb57d24adbf674135a946"
+    },
+    "lib/arm64-v8a/libvcnverifylite.so": {
+      "bytes": 22352,
+      "sha256": "afca7b3d946d5f40c7203b2e12e02af35b7b731daddf04469ba012205f174440"
+    },
+    "lib/arm64-v8a/libvctfo.so": {
+      "bytes": 5896,
+      "sha256": "65706d825ba08bb2ebaf916dde42e947cfc4326747754ac37524455ae6be6c03"
+    },
+    "lib/arm64-v8a/libvideodec.so": {
+      "bytes": 43032,
+      "sha256": "e2221d12c2078987dce48e29ebfd986bcec52cd1084f1b18bd8ddd0fba72b7f1"
+    },
+    "lib/arm64-v8a/libwasm.so": {
+      "bytes": 182256,
+      "sha256": "46ce9bee9662eba3c6517ac1e3bf7da389462875952ac78bed8ee0db54a4d3f0"
+    },
+    "lib/arm64-v8a/libweibosdkcore.so": {
+      "bytes": 26136,
+      "sha256": "be9562a75f118aa5b74a2eae230df8e31215e0f4b5c3705d76965cd44d4ea769"
+    },
+    "lib/arm64-v8a/libworker.so": {
+      "bytes": 346168,
+      "sha256": "e58666989647d8d15206858dd9e08d9d598ab2c0a8c5ac437f4373e86b72fc16"
+    },
+    "lib/arm64-v8a/libyuv.so": {
+      "bytes": 211016,
+      "sha256": "403ed5d5b26469370081024d90207414930f6d4753eb2d03135877512065cc78"
+    },
+    "lib/arm64-v8a/libzeus_direct_dex.so": {
+      "bytes": 14160,
+      "sha256": "307385bcd8bdcf6314cc4d41eb72976a3b6cbc2569aaabe02fb59237da35a9d4"
+    },
+    "lib/arm64-v8a/libzstd-jni-decompress.so": {
+      "bytes": 88536,
+      "sha256": "fe84dbd48c738c48c7dc29167a904f480426a32535efd322192bdea4dc9f88fa"
+    }
+  },
+  "new": {
+    "lib/arm64-v8a/libByteVC1_dec.so": {
+      "bytes": 478608,
+      "sha256": "e8f2d7052d89a21410aa589cb9d2ed0fbc1fad9fa6a4d841faf085e7923bc882"
+    },
+    "lib/arm64-v8a/libEncryptor.so": {
+      "bytes": 83928,
+      "sha256": "e8cdc23d52b38509342c8a84a16fe2b18e381064cd41435d166c6436cd9769ca"
+    },
+    "lib/arm64-v8a/libTTHighlight.so": {
+      "bytes": 84032,
+      "sha256": "8a5937fc474360719a3c3209329cac6c8bddf825ef0b7fe747f3e21e0c4a21d1"
+    },
+    "lib/arm64-v8a/libTTWebViewSdkFlipped.so": {
+      "bytes": 8744,
+      "sha256": "8cddd058066c73ed1373adda9596a0befc062cd51affd94eb7e0d4917c8cd13d"
+    },
+    "lib/arm64-v8a/libTuringYuvUtils.so": {
+      "bytes": 8264,
+      "sha256": "9a40d31eeb501ac531315f8c7309c011db40372bd74ba0580423ee80736bc77d"
+    },
+    "lib/arm64-v8a/libTxtParser.so": {
+      "bytes": 67616,
+      "sha256": "b48a632f73fa4788ba6160c901e840983912d9bd7c8e2e29927aa6a9697ec3e4"
+    },
+    "lib/arm64-v8a/libalog.so": {
+      "bytes": 133544,
+      "sha256": "7a68a4e73a03239eb7c956202a406cd7820cb5c1a38a0d1065fdc68e120b045f"
+    },
+    "lib/arm64-v8a/libandroidx.graphics.path.so": {
+      "bytes": 10096,
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6"
+    },
+    "lib/arm64-v8a/libanimax.so": {
+      "bytes": 723352,
+      "sha256": "4248862164c48a5edbac7c50e4f5bedfa583c664abd334570aadab57c267e169"
+    },
+    "lib/arm64-v8a/libanimax_bytevc1.so": {
+      "bytes": 51216,
+      "sha256": "5c4814eb59d8c287df20d21e5ebbaa00f75961099f5812a71aef535ad9c9ec0c"
+    },
+    "lib/arm64-v8a/libanimax_napi.so": {
+      "bytes": 84104,
+      "sha256": "5ae6a1ce97b5d6c460d11a548b54f94199c70fef090f08de4b5abf96160bfd11"
+    },
+    "lib/arm64-v8a/libanimax_textra.so": {
+      "bytes": 83984,
+      "sha256": "6e5c08be0fb2326f278d2ef048555750196fd731440f4cbaceebc1ef57c1639c"
+    },
+    "lib/arm64-v8a/libart_method_ext.so": {
+      "bytes": 18560,
+      "sha256": "af5cc2a075ea92f2d9788242fa7f9f57d7d4eed97c9031ef58b8d03cb4721caa"
+    },
+    "lib/arm64-v8a/libart_sym.so": {
+      "bytes": 185216,
+      "sha256": "e42563731c1c6e8e25d7ac0f8dad88d5d4e19e104b7ffe6df24a405d6d04b45a"
+    },
+    "lib/arm64-v8a/libavmdlbase.so": {
+      "bytes": 34568,
+      "sha256": "a45df96abca97d5ba364bc11e8d7cb66d3d1647416938a4e6f279dc7af23cbc5"
+    },
+    "lib/arm64-v8a/libbdheif.so": {
+      "bytes": 101920,
+      "sha256": "990932377377b2efa0a5e9c5bc136ea8efe15327e662f5995a86478043f6c093"
+    },
+    "lib/arm64-v8a/libbdmpg123.so": {
+      "bytes": 150136,
+      "sha256": "6e9c766ec6febae47a9786e0b6c04d0d1d9b0957a50d8256abbc63fa07b53a16"
+    },
+    "lib/arm64-v8a/libbdsword.so": {
+      "bytes": 150352,
+      "sha256": "18327e03ee0a333ec09b1b82796e1b3a20c9a7c2764d7fb9499e2a70dc3dbe65"
+    },
+    "lib/arm64-v8a/libbdzstd.so": {
+      "bytes": 231248,
+      "sha256": "afb484a66a22ee8f647328ed2679e0b5c8be5ec6cb913f09fa814dee621ca6ca"
+    },
+    "lib/arm64-v8a/libbitmapmonitor.so": {
+      "bytes": 51304,
+      "sha256": "33f1e8d60a2000e55af47349948e00c3133581c6979fbd9857028379e3954c21"
+    },
+    "lib/arm64-v8a/libbuffer.so": {
+      "bytes": 18184,
+      "sha256": "7998d8b08d6db54a4ea3a46fbf477c5b6b7ee284334056c4bfed42398bda446d"
+    },
+    "lib/arm64-v8a/libbyteVC2dec.so": {
+      "bytes": 544136,
+      "sha256": "74e8606be90efd30197e3cf63008c2223db236bd74c8851b31eeaf0c67961267"
+    },
+    "lib/arm64-v8a/libbytehook.so": {
+      "bytes": 59064,
+      "sha256": "98ce4a560f1fe04a7fef0899b863fc08e09e27b1832fcd0c8adc7b115a4dd229"
+    },
+    "lib/arm64-v8a/libc++_shared.so": {
+      "bytes": 911696,
+      "sha256": "e8373ee43274541efd2d34fe0588d55bf953612e1417ad47cfd2c4bd1aa383d0"
+    },
+    "lib/arm64-v8a/libcollect_hook.so": {
+      "bytes": 18024,
+      "sha256": "d3a844f767caaae23021564b1e3571f30f4e6ca8ae6b556065056ebd18e5bd77"
+    },
+    "lib/arm64-v8a/libcommon-logic.so": {
+      "bytes": 16520,
+      "sha256": "68aa9e94310d9096fdb2e17d84540f041016c0cb8caab753e25fc008777ecbf7"
+    },
+    "lib/arm64-v8a/libcovode_number.so": {
+      "bytes": 34640,
+      "sha256": "9703b3e3b01706b008f7b0e4f3ca55daeb41a1ca0574e0e31fea7ab2d4585f15"
+    },
+    "lib/arm64-v8a/libdragon_crypt.so": {
+      "bytes": 101440,
+      "sha256": "beeac6cd888dc2b521b9ad77790a9c22cb570a4bf8d70086b0cd6e2910996e03"
+    },
+    "lib/arm64-v8a/libdragoncore.so": {
+      "bytes": 380400,
+      "sha256": "0257be71878bdd31d56447de5a317aafc61547b442f24d0ab5627486f1644d0d"
+    },
+    "lib/arm64-v8a/libencrypt.so": {
+      "bytes": 18424,
+      "sha256": "e086579e433e36a9f9664499af37121f11c8ea62d1250b1fdda12fb5c4170a41"
+    },
+    "lib/arm64-v8a/libflipped.so": {
+      "bytes": 7384,
+      "sha256": "31494063717f1e594b6a30795255164a0dafb5abdb1cbafe4375988448c50b84"
+    },
+    "lib/arm64-v8a/libgecko_encrypt.so": {
+      "bytes": 18200,
+      "sha256": "fbda7c755b2bc50cfc3b8598855e251b28dd6129a8f560727fcb89fad7c1f9a0"
+    },
+    "lib/arm64-v8a/libgeckox_bspatch.so": {
+      "bytes": 119768,
+      "sha256": "b3c21041b0ead07d06920a36fc1fa2e71ecb72f8412cde0db2f9f8736a9601d0"
+    },
+    "lib/arm64-v8a/libgifimage.so": {
+      "bytes": 51696,
+      "sha256": "3b910ff7ae0ff4989f93738c4954b04399bb4f08b2fb085ae35ab85c46314cdd"
+    },
+    "lib/arm64-v8a/libgodzilla-sysopt.so": {
+      "bytes": 51320,
+      "sha256": "bec7b0782855c7a4d67d2733613dd2dd06e2dd56ef6a29cb857552f390f14fe2"
+    },
+    "lib/arm64-v8a/libhdiffpatch.so": {
+      "bytes": 464568,
+      "sha256": "4429de96774f638fba84be80abfebc649ab6e2f111655fcdc3e3fd22e5f6e82c"
+    },
+    "lib/arm64-v8a/libhost.so": {
+      "bytes": 7487488,
+      "sha256": "fc9cb5643c59c84cd0349ac1b6e35b7c57ed502a38e2c7cae0114dde36ffb70c"
+    },
+    "lib/arm64-v8a/libiesapplogger.so": {
+      "bytes": 67616,
+      "sha256": "7eeef0cb87e31a78883119df6b8f2537b9f382adb01365bc7d3d0b615aa43a8f"
+    },
+    "lib/arm64-v8a/libimagepipeline.so": {
+      "bytes": 264328,
+      "sha256": "a82c6e870831908b571b5451cf7c5b88d8676a4beaa7ffe91177af4fbc070aa5"
+    },
+    "lib/arm64-v8a/libinterstellar.so": {
+      "bytes": 12592,
+      "sha256": "4af6159609325bf064ffe86d4b88756886555387e6e13c83f3d88b099a02b053"
+    },
+    "lib/arm64-v8a/libjato.so": {
+      "bytes": 1218504,
+      "sha256": "403773af09d510b71f18c8e3004577d94f53275cd31535b40ed9d20ac44788b6"
+    },
+    "lib/arm64-v8a/libkeva.so": {
+      "bytes": 215680,
+      "sha256": "1a5309004bc4a749bb0843a14a8ee0efee2ef77f11a38deeb3ee8c64c6e7d95f"
+    },
+    "lib/arm64-v8a/libkomprese-decompressor.so": {
+      "bytes": 16248,
+      "sha256": "6e535d4e3d77324cfc70088e03959ccbbfd2ce28048ddb1ecaeb6e9fecb3c289"
+    },
+    "lib/arm64-v8a/libkrypton.so": {
+      "bytes": 1772704,
+      "sha256": "6d268f89b6aad3c10ec2a1f0cfe2f5d6e99c5e65cd80765c873c5d42ae7a51b8"
+    },
+    "lib/arm64-v8a/libkryptonaudio.so": {
+      "bytes": 346328,
+      "sha256": "83f586d3ee267ff1e2a90ed8158a98326179bae852f31221c512a55e9e418cf2"
+    },
+    "lib/arm64-v8a/libkryptonaudioaudioeffect.so": {
+      "bytes": 116824,
+      "sha256": "90a9c4b2048ab6acdeeb20f557b8be2f0a7e41c37bc35e1074933fffdd1d7f99"
+    },
+    "lib/arm64-v8a/libkryptonaudioeffect.so": {
+      "bytes": 36848,
+      "sha256": "09da71e2cb520dd7486c926e108919480fbcb2b649f88f761740200d34298e8d"
+    },
+    "lib/arm64-v8a/libkryptonaudioogg.so": {
+      "bytes": 116752,
+      "sha256": "5fcc91467d7f037d8e690d4f3e72651c7fb47c32f88acc9d49da4d24ed7826a5"
+    },
+    "lib/arm64-v8a/libkryptonaurum.so": {
+      "bytes": 198896,
+      "sha256": "84759acea1d7dbe15d6e6666d65e1efbc79e33f3699990def2acd57866105c35"
+    },
+    "lib/arm64-v8a/liblivestrategy.so": {
+      "bytes": 2525304,
+      "sha256": "df0f981bf1c383ba8b5c5a6d528a3e15ed3d554326ac033e596cd432329ab348"
+    },
+    "lib/arm64-v8a/liblynx.so": {
+      "bytes": 4899672,
+      "sha256": "644971d58e88ada3944bf9c0be021bf37562b96d27981d02b3bebc0048fc32f6"
+    },
+    "lib/arm64-v8a/liblynx_krypton.so": {
+      "bytes": 51144,
+      "sha256": "be6d060aaea97ddf8a6a95768aa24319d8c68a7d4d282635714cf46432bb0668"
+    },
+    "lib/arm64-v8a/liblynx_markdown.so": {
+      "bytes": 265352,
+      "sha256": "cd7f16c8bbbc5f47d489fa1bdbe9a4936a58c09d9d9b145e3f4251ae64bc98cb"
+    },
+    "lib/arm64-v8a/liblynx_service_api.so": {
+      "bytes": 51216,
+      "sha256": "99ad26ae32011ef1152e52278517c34d5ae68d3cc1c02b591cf87d3ce4d1138d"
+    },
+    "lib/arm64-v8a/liblynx_text_service.so": {
+      "bytes": 100768,
+      "sha256": "aacadb40b7a0785a7377c4d59365f3fe00c6f8a6a206fc3836d94a35971da232"
+    },
+    "lib/arm64-v8a/liblynx_v8_bridge.so": {
+      "bytes": 117040,
+      "sha256": "2e0fd2d3f28062f63cad16ca136d5b09bc1343df9b501e07e63cc28b1bbaa2aa"
+    },
+    "lib/arm64-v8a/liblynxbase.so": {
+      "bytes": 248608,
+      "sha256": "b5b321138346116df281a4876bd223096fd7d39bb927cf1e84ea48d28d1d00ea"
+    },
+    "lib/arm64-v8a/liblynxgfx.so": {
+      "bytes": 68872,
+      "sha256": "64f8bd9a00279ac5a856ea4b043f36baadf5d34e7eabf67f39596f27f86a6547"
+    },
+    "lib/arm64-v8a/liblynxsecurity.so": {
+      "bytes": 67528,
+      "sha256": "6a213ddd363adc78bc0441c94c9f6e68e5d2ad9f0c39b91a491359571b2248cb"
+    },
+    "lib/arm64-v8a/liblynxservice.so": {
+      "bytes": 51224,
+      "sha256": "c95340e1c58c194daad7fe562610d3b615f1a871810ff989036dd57a48108988"
+    },
+    "lib/arm64-v8a/liblynxtrace.so": {
+      "bytes": 51232,
+      "sha256": "f87aa431a7f16c8a003caf6c77072b48e6517d0653de4e99e8eeb6671cbd1821"
+    },
+    "lib/arm64-v8a/libmannorarmor.so": {
+      "bytes": 72528,
+      "sha256": "9e39a2367402ef88a6b49b3faba46e07378591c7edf69ec065686b0dacbf2fda"
+    },
+    "lib/arm64-v8a/libmetasec_ml.so": {
+      "bytes": 4501136,
+      "sha256": "c6831ab265a0cb76dacfa3b7041e9ea0f706490106a74e12f39058671cc14fe3"
+    },
+    "lib/arm64-v8a/libmmkv.so": {
+      "bytes": 249648,
+      "sha256": "9748baa0fee062622eb45be3976f49642e33b7226af635c3fce87d59df299fe1"
+    },
+    "lib/arm64-v8a/libmonitorcollector-lib.so": {
+      "bytes": 313744,
+      "sha256": "2a9e3a90338f7eebc6b2d492b586ab00a5545f415953ae19b2a3175bb14f3a3f"
+    },
+    "lib/arm64-v8a/libn.so": {
+      "bytes": 18304,
+      "sha256": "da81f1a6afa28ac63168a09719354e0637131b7f0c85a03fc39d7a913a53edff"
+    },
+    "lib/arm64-v8a/libnapi.so": {
+      "bytes": 280672,
+      "sha256": "edaa5e8e56f98f0602d74e480f508e9dbe21d2644dc2526013105bf9dfef9ac7"
+    },
+    "lib/arm64-v8a/libnative-filters.so": {
+      "bytes": 34824,
+      "sha256": "f27dd667b931699e1ab3299ee519c99ba97194be65a7b9c64168a1e9ec514e9b"
+    },
+    "lib/arm64-v8a/libnpth.so": {
+      "bytes": 183360,
+      "sha256": "aafc830e4f68d23d025f9acf237d99b9eb08be5f4250b8387caac2671ace6357"
+    },
+    "lib/arm64-v8a/libnpth_bt.so": {
+      "bytes": 7344,
+      "sha256": "aaf0a26e0067953e0e9b7c1706f18874bcc867cb4a488cb90471f4c4cb3b021e"
+    },
+    "lib/arm64-v8a/libnpth_dl.so": {
+      "bytes": 27352,
+      "sha256": "f47ad5b615856925a44738c82451b6981bf5a09f394b0eb4c82f21c282a3c4ff"
+    },
+    "lib/arm64-v8a/libnpth_dumper.so": {
+      "bytes": 106280,
+      "sha256": "c664290b7345ffc14fe9aae95f954f451acdc70020d042cfab307650d4445f1d"
+    },
+    "lib/arm64-v8a/libnpth_fd_tracker.so": {
+      "bytes": 39472,
+      "sha256": "db6b558b1780c961b6c8078b5feee7eb0d3a8ef0e2c54136887f4647c3d8c81f"
+    },
+    "lib/arm64-v8a/libnpth_fp_unw.so": {
+      "bytes": 6112,
+      "sha256": "4867776022de78e8d4e2e7d88116c3ad37a73610e1cd1ac50032f435a4d93559"
+    },
+    "lib/arm64-v8a/libnpth_heap_tracker.so": {
+      "bytes": 67048,
+      "sha256": "c82776c609cb974761933b075ac413a8359ad4b8b33963a24555adbb5206a3e6"
+    },
+    "lib/arm64-v8a/libnpth_logcat.so": {
+      "bytes": 16856,
+      "sha256": "771c9af46c598e9e6f9db723dd4d0d3dacaef47a3ae23a713289cf1ae9a0216d"
+    },
+    "lib/arm64-v8a/libnpth_ref_monitor.so": {
+      "bytes": 28040,
+      "sha256": "c893126e0abfc173cdc6fff5208d5fe110770a20d0bb244c37471c72e46eb9dd"
+    },
+    "lib/arm64-v8a/libnpth_repair.so": {
+      "bytes": 27896,
+      "sha256": "76cf5648450036cec5102671c6e63e4f149c1b4c2b1d1a08cefd523afafbabfd"
+    },
+    "lib/arm64-v8a/libnpth_tls_monitor.so": {
+      "bytes": 15904,
+      "sha256": "3c76a12f5217d29618777dfc711ec3d3abf1684bd2815395f2bcc9da6a1061a9"
+    },
+    "lib/arm64-v8a/libnpth_unw.so": {
+      "bytes": 26016,
+      "sha256": "07a7f82f070c4c1a9541746f0efeec219a7652ba2cc0e665f7395052b73025b5"
+    },
+    "lib/arm64-v8a/libnpth_unwind.so": {
+      "bytes": 221960,
+      "sha256": "4c9ecd8a449506562c3c289ebe2178696b7c4bc2c48d19927b5a3986fd18a97d"
+    },
+    "lib/arm64-v8a/libnpth_vm_monitor.so": {
+      "bytes": 55968,
+      "sha256": "fccebfb7f9bfbf9133e82733988c5733b98aa91c82db9c169f61561fb78157ac"
+    },
+    "lib/arm64-v8a/libnpth_xasan.so": {
+      "bytes": 40984,
+      "sha256": "ae95fd441dd522e9fac9b83dcab098132c4a50365b9597220b772cbd778fc944"
+    },
+    "lib/arm64-v8a/libnslinker.so": {
+      "bytes": 13824,
+      "sha256": "fa387609576e88d7ad59e3836c69556438302039bc797fa81997280c06f9a0bd"
+    },
+    "lib/arm64-v8a/libnuwa.so": {
+      "bytes": 100560,
+      "sha256": "b5367e62cd016ee31f2833357d816da08cfc8a92caf21f37444e7df0a2ea7731"
+    },
+    "lib/arm64-v8a/libpl_droidsonroids_gif.so": {
+      "bytes": 42464,
+      "sha256": "8749489e1ff6c5acdb3e1d8ce98aacfde1abb10f02f1078a91ff3938d60e6d0c"
+    },
+    "lib/arm64-v8a/libprofiler.so": {
+      "bytes": 471424,
+      "sha256": "f1aeb16661b75391c8680e22a785085b375e652f15bddd80310745045ddde1cd"
+    },
+    "lib/arm64-v8a/libquick.so": {
+      "bytes": 2067016,
+      "sha256": "860d3335ff7b2d296189fddc5fec778790ae958c70452116bb60611e07474f16"
+    },
+    "lib/arm64-v8a/librelaxui.so": {
+      "bytes": 133144,
+      "sha256": "461fe5dd32f5187a126740aaba44deffd9adf18a72b1fa64a9703f4c68e7be5c"
+    },
+    "lib/arm64-v8a/libreparo.so": {
+      "bytes": 159184,
+      "sha256": "71267f71e7c4eb3f634b0bdb82eb6b3987ad3bd022b01b647bfe4805a5b12537"
+    },
+    "lib/arm64-v8a/libserval_markdown.so": {
+      "bytes": 510184,
+      "sha256": "5979f96beb15f1ec93de3b217ede31943e0289be7e2ad6f801303a4f59a2be4f"
+    },
+    "lib/arm64-v8a/libserval_svg.so": {
+      "bytes": 151680,
+      "sha256": "42b4d38f25aa4e8a9991348ce9146afbd1237cc6b468cd18729a31e740f4c15e"
+    },
+    "lib/arm64-v8a/libshadowhook.so": {
+      "bytes": 79440,
+      "sha256": "052239b9dd9f108628f0c800d4f2b1f2adafa9b670dcc896fd58fbe98ffc38c9"
+    },
+    "lib/arm64-v8a/libshadowhook_nothing.so": {
+      "bytes": 1112,
+      "sha256": "f2cc6a6f94d7361be915daafff1d25b7b3af34972e7308ac540982cfd608bd32"
+    },
+    "lib/arm64-v8a/libsliver.so": {
+      "bytes": 83984,
+      "sha256": "73d05b06c4a02c82a33c9e92a401ba110ab947e3e4f071eba13d5edb056f4fac"
+    },
+    "lib/arm64-v8a/libsscronet.so": {
+      "bytes": 6252992,
+      "sha256": "0ffe9f019e9914744a9aa1ad95446df29e281480b3e679c1a8f016a884350e50"
+    },
+    "lib/arm64-v8a/libsysoptimizer.so": {
+      "bytes": 445216,
+      "sha256": "168ea1d9464291945d46f2b1123d8a1a92cec9424de49e3d2ec43f5940dd5fd0"
+    },
+    "lib/arm64-v8a/libtailor.so": {
+      "bytes": 67664,
+      "sha256": "009b8edb1d2ab495c3974973b831c0abfc74bd14698f34e960b01f4bc2cc9544"
+    },
+    "lib/arm64-v8a/libtexturerender_native.so": {
+      "bytes": 67480,
+      "sha256": "718c7006d404da8b48973abc281b2a09d833d312a951e03e96ec472580c48a80"
+    },
+    "lib/arm64-v8a/libttboringssl.so": {
+      "bytes": 367512,
+      "sha256": "5c4562576094041c0374987b14d7acb2fa9d9e6369531492a87bcb4ab39544e7"
+    },
+    "lib/arm64-v8a/libttcrypto.so": {
+      "bytes": 1250704,
+      "sha256": "48cd452fa4fc4855d802c3b5b34d7adb2543ad3b731c2c6dd70ff6fba02532fe"
+    },
+    "lib/arm64-v8a/libttffmpeg.so": {
+      "bytes": 6030536,
+      "sha256": "1ee99c00ca6aae5c978dbba5fbde4ecef0ee78c4a26e16e840b9c82c73eae837"
+    },
+    "lib/arm64-v8a/libttheif_dec.so": {
+      "bytes": 543000,
+      "sha256": "16f8e1508d883a4c941faa539b1ac235a9b2f0ab397e178105118072a45e835f"
+    },
+    "lib/arm64-v8a/libttmplayer.so": {
+      "bytes": 2988272,
+      "sha256": "23519d359f486907e2f07c44dd0fdf596c5a260f1d3dd995edf5dbd39353d6dc"
+    },
+    "lib/arm64-v8a/libttmverify.so": {
+      "bytes": 18112,
+      "sha256": "c58f4a4755554a57097fdc1ebd9a9e9088d145d91ba07777fa7c7f9c2bd85c19"
+    },
+    "lib/arm64-v8a/libttmverifylite.so": {
+      "bytes": 34672,
+      "sha256": "98cff2c852e9d6e14add34eb4dee20d12f7347ef9a8f7fd98be17eb6560586eb"
+    },
+    "lib/arm64-v8a/libtttext.so": {
+      "bytes": 592648,
+      "sha256": "921ae30312aad370765110b34d3ff4b57fd02e030605e6b48adc63256642171a"
+    },
+    "lib/arm64-v8a/libturbo.so": {
+      "bytes": 51312,
+      "sha256": "5997cae67ffa81f00ca42d089f2b05e37d12f41f2b4ccb7b145db58ae88e96f5"
+    },
+    "lib/arm64-v8a/libuniplayer.so": {
+      "bytes": 411744,
+      "sha256": "006a0175705ebae7184c88208bc8dae39155eaa4a69841204e830bfb50926375"
+    },
+    "lib/arm64-v8a/libvcbasekit.so": {
+      "bytes": 264328,
+      "sha256": "c3e29ef3ffbfe836f801b5a5ece0ee4e49bf605817624e8f0ce50c170698865c"
+    },
+    "lib/arm64-v8a/libvcnverify.so": {
+      "bytes": 18184,
+      "sha256": "84afcbcebdf42323e9f33a4a36c47bfb947bd0175b5c0120f4723cff1fcfa1b9"
+    },
+    "lib/arm64-v8a/libvcnverifylite.so": {
+      "bytes": 34640,
+      "sha256": "0766c91ca9fe65addb4e73e8aebd8f1f9f7deefcfaac7b245d32140d76ddf051"
+    },
+    "lib/arm64-v8a/libvctfo.so": {
+      "bytes": 18184,
+      "sha256": "b1bd57005a009b562cd3432da64ccc17f6f0848b07b5bb1a97aa34de10819a10"
+    },
+    "lib/arm64-v8a/libvideodec.so": {
+      "bytes": 51224,
+      "sha256": "7c4edec23105e3aa8a9614ed51130fa3d30c855def18c6159f0dae5d45e51575"
+    },
+    "lib/arm64-v8a/libwatson.so": {
+      "bytes": 34640,
+      "sha256": "3fc27932af9ab2bd0fbf7d3e9a790fbb3807c7b51ab6da488522ab894a5abb22"
+    },
+    "lib/arm64-v8a/libwcdb2.so": {
+      "bytes": 3305736,
+      "sha256": "0e1376a855f9c23cb49667b6934ec2d374cde2c3ad1241958d44341554527ccf"
+    },
+    "lib/arm64-v8a/libweibosdkcore.so": {
+      "bytes": 26136,
+      "sha256": "b1fe581623cb9d757d0cc126a2c04207ab342df41be4db11ad58556a369d89b4"
+    },
+    "lib/arm64-v8a/libwhisper.so": {
+      "bytes": 38584,
+      "sha256": "5a0462b191d1bdcfc75acb5052e1e228f1daa29ded5e9466ea088a9d1120662c"
+    },
+    "lib/arm64-v8a/libworker.so": {
+      "bytes": 297016,
+      "sha256": "23f89b135f2ccd015ba6553431945125615a2422c25e3c25765764c4ec91c838"
+    },
+    "lib/arm64-v8a/libyuv.so": {
+      "bytes": 211016,
+      "sha256": "403ed5d5b26469370081024d90207414930f6d4753eb2d03135877512065cc78"
+    },
+    "lib/arm64-v8a/libzoin.so": {
+      "bytes": 20208,
+      "sha256": "a00421967a192f22df470eba4eb63863b720e303535fd7b35d352c368ed9a0fd"
+    }
+  }
+}

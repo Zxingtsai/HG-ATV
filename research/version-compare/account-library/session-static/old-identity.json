@@ -1,0 +1,237 @@
+{
+  "apk_path": "/workspace/hongguo-tv/research/version-compare/hongguo-6.2.3.32.apk",
+  "apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "evidence_type": "normal DEX static scan, not REA or runtime",
+  "dex_inventory": [
+    {
+      "member": "classes.dex",
+      "sha256": "85fdc207c12d47a57ba17c087c1e236a4e1041c2bf56eeadba4aa38bd7440dda",
+      "matched_literals": {
+        "4639": "Cookie",
+        "20012": "Set-Cookie",
+        "20717": "Token",
+        "26799": "cookie",
+        "42700": "sessionID",
+        "42701": "sessionId",
+        "42703": "session_id",
+        "46388": "token",
+        "47349": "userInfo",
+        "47378": "user_info"
+      }
+    },
+    {
+      "member": "classes10.dex",
+      "sha256": "8d68358e62707d7c3198a3ef7235662c6a513dceb12e1f57e8912d3a57c58039",
+      "matched_literals": {
+        "20062": "SessionId",
+        "37507": "sessionId",
+        "37509": "session_id",
+        "39990": "token",
+        "40775": "userInfo"
+      }
+    },
+    {
+      "member": "classes11.dex",
+      "sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+      "matched_literals": {
+        "2967": "Cookie",
+        "20752": "Set-Cookie",
+        "25473": "cookie",
+        "38320": "sessionId",
+        "38323": "session_key",
+        "41019": "token",
+        "41717": "userInfo",
+        "41747": "user_info"
+      }
+    },
+    {
+      "member": "classes12.dex",
+      "sha256": "28f2962d1a14c7782b9e716e2d91c40ee3e2051a54d770354a60d969b3d00c17",
+      "matched_literals": {
+        "41829": "sessionId",
+        "41831": "session_id",
+        "44722": "token",
+        "45551": "userInfo",
+        "45588": "user_info"
+      }
+    },
+    {
+      "member": "classes13.dex",
+      "sha256": "84640c4c68543713776f289c70ba781751619322539ef7820e168e5324e141e9",
+      "matched_literals": {
+        "43727": "sessionId",
+        "43733": "session_id",
+        "43734": "session_token",
+        "46635": "token",
+        "47628": "userInfo",
+        "47728": "user_info"
+      }
+    },
+    {
+      "member": "classes2.dex",
+      "sha256": "48fa6a888a51219fcd024783c62aad4da4640aed6833c944f94d244229c37b0e",
+      "matched_literals": {
+        "2620": "Cookie",
+        "34524": "sessionId",
+        "34527": "session_id",
+        "34528": "sessionid",
+        "37964": "token",
+        "38568": "userInfo",
+        "38598": "user_info"
+      }
+    },
+    {
+      "member": "classes3.dex",
+      "sha256": "c91eb6caf080f198814cd5d5fa401e0fdad1ec5fc55498931974165445e52510",
+      "matched_literals": {
+        "41312": "passport_csrf_token",
+        "44358": "sessionId",
+        "44361": "session_id",
+        "48653": "token"
+      }
+    },
+    {
+      "member": "classes4.dex",
+      "sha256": "71bc739dea6174a67f85cb7733e82afe83a6f8d67633cbcb6de510b07faaaff7",
+      "matched_literals": {
+        "3436": "/passport/account/info/v2/",
+        "3438": "/passport/user/logout/",
+        "5233": "Cookie",
+        "20226": "SessionID",
+        "20620": "TOKEN",
+        "21305": "Token",
+        "28209": "cookie",
+        "47525": "sessionId",
+        "47529": "session_id",
+        "47537": "sessionid",
+        "51297": "token",
+        "52219": "userInfo"
+      }
+    },
+    {
+      "member": "classes5.dex",
+      "sha256": "ab39a0b03d63ffb89206ecef6389674d7ca4bb47705cd5c36e50c9ba41eac69f",
+      "matched_literals": {
+        "3039": "Cookie",
+        "9234": "Set-Cookie",
+        "11978": "cookie",
+        "16603": "set-cookie",
+        "17402": "token"
+      }
+    },
+    {
+      "member": "classes6.dex",
+      "sha256": "85e0e4a7c5e2caee46f6351500ca50cc9fe1ef7fb87c5c8db91003f25c33e64f",
+      "matched_literals": {
+        "4816": "Cookie",
+        "20391": "Set-Cookie",
+        "20392": "Set-cookie",
+        "26930": "cookie",
+        "45186": "sessionId",
+        "45189": "session_id",
+        "49180": "token"
+      }
+    },
+    {
+      "member": "classes7.dex",
+      "sha256": "a94d267ef20aad2a11bac2aff0d925574aef9dc0e03a6dead8ba27d00e4d58ea",
+      "matched_literals": {
+        "3973": "Cookie",
+        "21530": "Set-Cookie",
+        "22126": "Token",
+        "22306": "UserInfo",
+        "43299": "sessionId",
+        "43306": "session_id",
+        "46883": "token",
+        "47605": "userInfo"
+      }
+    },
+    {
+      "member": "classes8.dex",
+      "sha256": "88ca56719e57d101d845e639e0201d72dfa6e0a0fd3c5c5d593386232a8a6bc3",
+      "matched_literals": {
+        "3253": "/passport/account/info/",
+        "3254": "/passport/account/info/v2/",
+        "3255": "/passport/account/logout_others/",
+        "3265": "/passport/auth/bind_login/",
+        "3267": "/passport/auth/bind_with_mobile_login/",
+        "3269": "/passport/auth/check_mobile_login/",
+        "3273": "/passport/auth/login/",
+        "3274": "/passport/auth/login_authorize/",
+        "3275": "/passport/auth/login_only/",
+        "3276": "/passport/auth/mask_mobile_one_login/",
+        "3279": "/passport/auth/one_login/",
+        "3280": "/passport/auth/one_login_by_ticket/",
+        "3281": "/passport/auth/one_login_continue/",
+        "3282": "/passport/auth/one_login_only/",
+        "3284": "/passport/auth/share_login/",
+        "3288": "/passport/auth/update_authorize_info/",
+        "3289": "/passport/auth/validate_mobile_login/",
+        "3290": "/passport/auth/wap_login/",
+        "3291": "/passport/can_aweme_quick_login/",
+        "3294": "/passport/cancel/login/",
+        "3296": "/passport/device/can_one_login/",
+        "3297": "/passport/device/login_info/",
+        "3298": "/passport/device/one_login/",
+        "3299": "/passport/device/one_login_continue/",
+        "3301": "/passport/email/bind_email_for_device_login/",
+        "3305": "/passport/email/login/",
+        "3308": "/passport/email/register_verify_login/",
+        "3311": "/passport/general/login_guiding_strategy/",
+        "3315": "/passport/mobile/bind_login/",
+        "3316": "/passport/mobile/can_chain_login/",
+        "3317": "/passport/mobile/chain_login/",
+        "3324": "/passport/mobile/generate_user_info_ticket/",
+        "3326": "/passport/mobile/login/",
+        "3327": "/passport/mobile/login_by_ticket/",
+        "3328": "/passport/mobile/mobile_card_login/",
+        "3334": "/passport/mobile/sms_login/",
+        "3335": "/passport/mobile/sms_login_continue/",
+        "3336": "/passport/mobile/sms_login_only/",
+        "3342": "/passport/open/token_info/",
+        "3351": "/passport/related_login/check_qrconnect/",
+        "3352": "/passport/related_login/get_qrcode/",
+        "3354": "/passport/safe/login_device/del/",
+        "3355": "/passport/safe/login_device/list/",
+        "3360": "/passport/user/bind_visitor_account/",
+        "3361": "/passport/user/check_email_registered",
+        "3362": "/passport/user/check_mobile_registered",
+        "3363": "/passport/user/check_visitor_upgraded/",
+        "3364": "/passport/user/device_login/",
+        "3365": "/passport/user/login/",
+        "3366": "/passport/user/login_by_verify_ticket/",
+        "3367": "/passport/user/logout/",
+        "3368": "/passport/username/register/",
+        "3370": "/passport/vcd/get_login_ticket/",
+        "3371": "/passport/vcd/get_user_info_by_ticket/",
+        "3372": "/passport/vcd/login_by_ticket/",
+        "4788": "Cookie",
+        "21972": "Set-Cookie",
+        "28695": "cookie",
+        "41682": "passport_csrf_token",
+        "44868": "sessionId",
+        "44871": "session_id",
+        "44873": "session_key",
+        "44877": "sessionid",
+        "44895": "set-cookie",
+        "48001": "token",
+        "48332": "tt_sessionid",
+        "49295": "userInfo",
+        "49324": "user_info"
+      }
+    },
+    {
+      "member": "classes9.dex",
+      "sha256": "60b562368b107e5499651711916f47f8621dd0478b8492e9d88ef9926ff73662",
+      "matched_literals": {
+        "28024": "cookie",
+        "42083": "sessionId",
+        "42086": "session_id",
+        "42087": "sessionid",
+        "44823": "token",
+        "45555": "userInfo",
+        "45586": "user_info"
+      }
+    }
+  ]
+}

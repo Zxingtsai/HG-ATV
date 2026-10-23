@@ -1,0 +1,279 @@
+{
+  "observed_at_utc": "2026-10-22T12:03:27.163024+00:00",
+  "scope": "Offline static login session/cookie persistence and SDK request-construction comparison",
+  "evidence_type": "ordinary DEX parsing + Android dexdump; not REA observation, not runtime capture",
+  "rea_evidence_ids": [],
+  "apk_identities": {
+    "old": {
+      "apk_path": "/workspace/hongguo-tv/research/version-compare/hongguo-6.2.3.32.apk",
+      "apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27"
+    },
+    "new": {
+      "apk_path": "/workspace/hongguo-tv/research/hongguo.apk",
+      "apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93"
+    }
+  },
+  "findings": [
+    {
+      "id": "S01",
+      "claim": "Both APKs expose a business AccountServiceImpl.getSessionKey bridge. SDK session key is returned first; null fallback queries the cookie key sessionid. New fallback domain is security.snssdk.com; old domain comes from account configuration.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_AccountServiceImpl.dexdump.code.txt",
+          "line": 108,
+          "match": "[4abb10]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AccountServiceImpl.dexdump.code.txt",
+          "line": 243,
+          "match": "[630ea8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_utils_m.dexdump.code.txt",
+          "line": 269,
+          "match": "[4ac308]"
+        }
+      ],
+      "boundary": "session_key is an SDK model/SP key; sessionid is a cookie key. Their runtime values and equality have NOT been observed."
+    },
+    {
+      "id": "S02",
+      "claim": "Both SDKs persist account state in SharedPreferences com.bytedance.sdk.account_setting: session_key, session_sign, is_login, user_id and other account fields. Old h.j.ab loads, h.j.b saves; new impl.i.j loads, impl.i.n saves.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_j.dexdump.code.txt",
+          "line": 223,
+          "match": "[480b10]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_j.dexdump.code.txt",
+          "line": 852,
+          "match": "[48156c]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_j.dexdump.code.txt",
+          "line": 2356,
+          "match": "[482d90]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_i.dexdump.code.txt",
+          "line": 219,
+          "match": "com.bytedance.sdk.account_setting"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_i.dexdump.code.txt",
+          "line": 874,
+          "match": "[6dc80c]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_i.dexdump.code.txt",
+          "line": 1490,
+          "match": "[6dd1f0]"
+        }
+      ],
+      "boundary": "Static persistence path only; did not inspect user files or prove installed account state."
+    },
+    {
+      "id": "S03",
+      "claim": "Both SDK transport paths inspect Set-Cookie/sessionid and x-tt-token, x-tt-session-sign, x-tt-multi-sids; csrf cookie token is relayed as x-tt-passport-csrf-token. Old csrf SP is CsrfTokenManager_sp/csrf_token.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_p.dexdump.code.txt",
+          "line": 278,
+          "match": "[486ac8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_p.dexdump.code.txt",
+          "line": 877,
+          "match": "[487478]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_k.dexdump.code.txt",
+          "line": 26,
+          "match": "CsrfTokenManager_sp"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_x.dexdump.code.txt",
+          "line": 600,
+          "match": "\"set-cookie\""
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_x.dexdump.code.txt",
+          "line": 606,
+          "match": "\"x-tt-session-sign\""
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_x.dexdump.code.txt",
+          "line": 170,
+          "match": "\"x-tt-passport-csrf-token\""
+        }
+      ],
+      "boundary": "Header names and parsing/transmission code, not live header values. TTNet/native cookie attachment behavior was not dynamically captured."
+    },
+    {
+      "id": "S04",
+      "claim": "Successful business logout resets local account data and expires sid_tt, uid_tt, sessionid and sid_guard for .snssdk.com, then flushes cookies. Both also call TTTokenManager.clearToken.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_AccountServiceImpl.dexdump.code.txt",
+          "line": 165,
+          "match": "[4abc08]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_b$11.dexdump.code.txt",
+          "line": 11,
+          "match": "[4b02d8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_b.dexdump.code.txt",
+          "line": 1996,
+          "match": "[4b4e98]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_b.dexdump.code.txt",
+          "line": 855,
+          "match": "[4b3b44]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AccountServiceImpl.dexdump.code.txt",
+          "line": 349,
+          "match": "[631080]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager$l.dexdump.code.txt",
+          "line": 11,
+          "match": "[631fb8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager.dexdump.code.txt",
+          "line": 284,
+          "match": "[63360c]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_dragon_read_user_AcctManager.dexdump.code.txt",
+          "line": 107,
+          "match": "[633304]"
+        }
+      ],
+      "boundary": "Old branch supports API<21 CookieSyncManager.sync, new branch directly flushes. Cookie clearing is not evidence of server-side revocation and does not assert all cookie domains/names are cleared."
+    },
+    {
+      "id": "S05",
+      "claim": "Both SDKs construct POST /passport/mobile/sms_login/ using mobile and code transformed by StringUtils.encryptWithXor, mix_mode=1 and optional captcha. Old SDK additionally allows auth_opposite and extra map fields in this factory.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_l_b_r.dexdump.code.txt",
+          "line": 24,
+          "match": "[4969e8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_l_b_r.dexdump.code.txt",
+          "line": 46,
+          "match": "[496a48]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_e_a$a.dexdump.code.txt",
+          "line": 263,
+          "match": "[47c1d0]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_c.dexdump.code.txt",
+          "line": 147,
+          "match": "[6da08c]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-eh1_a$a.dexdump.code.txt",
+          "line": 162,
+          "match": "[72bb8c]"
+        }
+      ],
+      "boundary": "SDK request construction only; no SMS was requested, no account was logged in. XOR transformation implementation was not expanded and no credentials were generated."
+    },
+    {
+      "id": "S06",
+      "claim": "Old app user.a.a.a(String,String,String) creates user.a.a$31; its subscribe calls account.h.g.b(context) -> api.i.a(mobile,code,captcha,callback), an app business-to-SDK gateway. New SMS impl.c.g is confirmed at SDK construction level; the new UI/business caller was not fully traced.",
+      "confidence": "observed-static",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a.dexdump.code.txt",
+          "line": 266,
+          "match": "[4af678]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$31.dexdump.code.txt",
+          "line": 23,
+          "match": "[4ae544]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_c.dexdump.code.txt",
+          "line": 147,
+          "match": "[6da08c]"
+        }
+      ],
+      "boundary": "The UI event that selects this route, SDK api.i implementation dispatch and live request emission were not observed."
+    },
+    {
+      "id": "S07",
+      "claim": "Old SMS success parser delegates l.b.r.b(JSONObject,JSONObject) -> h.c$a.b -> h.c$a.a -> account model. Old u.c.a(model,JSONObject,JSONObject) reads JSON session_key into model.h, with user_id/sec_user_id/new_user. Both transport paths separately collect Set-Cookie; exact live relationship between response session_key and cookie sessionid remains unknown. New SMS success parser kh1.d.i delegates impl.b$a.c -> wy7.d account model; that parser was not fully expanded.",
+      "confidence": "observed-static-partial",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_l_b_r.dexdump.code.txt",
+          "line": 120,
+          "match": "Lcom/bytedance/sdk/account/h/c$a;.b:"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_h_c$a.dexdump.code.txt",
+          "line": 42,
+          "match": "[47dfe4]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_bytedance_sdk_account_u_c.dexdump.code.txt",
+          "line": 232,
+          "match": "[4aa5b0]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-kh1_d.dexdump.code.txt",
+          "line": 37,
+          "match": "[7422a4]"
+        }
+      ],
+      "boundary": "No claim that this is a complete response schema, nor that session fields are interchangeable. Existing candidate scans are leads rather than verified instruction boundaries."
+    },
+    {
+      "id": "S08",
+      "claim": "Old app Douyin login code user.a.a$8/$13 uses AuthorizeFramework and aweme_v2 with app id literal 7828, user_info plus optional mobile, skip_auth_confirm, fanqie.follow scopes. New SDK impl.t.b constructs /passport/auth/login/ and delegates form construction to impl.b.b; that form was not fully expanded.",
+      "confidence": "observed-static-partial",
+      "sources": [
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$8.dexdump.code.txt",
+          "line": 26,
+          "match": "[4af0d0]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/old-com_dragon_read_user_a_a$13.dexdump.code.txt",
+          "line": 26,
+          "match": "[4ac9f8]"
+        },
+        {
+          "file": "research/version-compare/account-library/session-static/new-com_bytedance_sdk_account_impl_t.dexdump.code.txt",
+          "line": 83,
+          "match": "[6de3dc]"
+        }
+      ],
+      "boundary": "Do not equate this Douyin authorization flow with SMS login, or claim every SDK route is used by a current UI."
+    }
+  ],
+  "limits": [
+    "No APK execution, SMS request, login, account data read or library mutation.",
+    "No production network request made.",
+    "Metadata candidate scans traverse all old/new DEX but code-unit scanning is heuristic and candidate-only; findings cite verified dexdump instructions.",
+    "No REA bridge calls were made by this worker; parent may add REA corroboration separately.",
+    "No inference that old and new services accept identical authenticated requests today solely from this static comparison."
+  ]
+}

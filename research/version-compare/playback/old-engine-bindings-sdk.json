@@ -1,0 +1,264 @@
+{
+  "dex": "classes11.dex",
+  "dex_sha256": "e653ff4377e2761eff925b7becf360b632f5eef5216c67e1282fb3424b94093c",
+  "observations": [
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "<init>",
+      "descriptor": "(Lcom/ss/ttvideoengine/model/VideoModel;IIJZ)V",
+      "instruction": "5d1d12: 5b01 ec40                              |0003: iput-object v1, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "<init>",
+      "descriptor": "(Lcom/ss/ttvideoengine/model/VideoModel;IIJZ)V",
+      "instruction": "5d1d16: 5902 ed40                              |0005: iput v2, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;Lcom/ss/ttvideoengine/model/VideoModel;IIJZILjava/lang/Object;)Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "instruction": "5d1da4: 5445 ec40                              |0004: iget-object v5, v4, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;Lcom/ss/ttvideoengine/model/VideoModel;IIJZILjava/lang/Object;)Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "instruction": "5d1db0: 5246 ed40                              |000a: iget v6, v4, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;Lcom/ss/ttvideoengine/model/VideoModel;IIJZILjava/lang/Object;)Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "instruction": "5d1dec: 7407 daa1 0600                         |0028: invoke-virtual/range {v6, v7, v8, v9, v10, v11, v12}, Lcom/dragon/read/component/shortvideo/api/model/t;.a:(Lcom/ss/ttvideoengine/model/VideoModel;IIJZ)Lcom/dragon/read/component/shortvideo/api/model/t; // method@a1da"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "a",
+      "descriptor": "()V",
+      "instruction": "5d1e32: 5c10 eb40                              |0001: iput-boolean v0, v1, Lcom/dragon/read/component/shortvideo/api/model/t;.a:Z // field@40eb"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "instruction": "5d1e58: 5450 ec40                              |0008: iget-object v0, v5, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "instruction": "5d1e5c: 5461 ec40                              |000a: iget-object v1, v6, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "instruction": "5d1e6c: 5250 ed40                              |0012: iget v0, v5, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "instruction": "5d1e70: 5261 ed40                              |0014: iget v1, v6, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "hashCode",
+      "descriptor": "()I",
+      "instruction": "5d1ebc: 5430 ec40                              |0000: iget-object v0, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "hashCode",
+      "descriptor": "()I",
+      "instruction": "5d1ed4: 5231 ed40                              |000c: iget v1, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "instruction": "5d1f2c: 5431 ec40                              |000a: iget-object v1, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/api/model/t;",
+      "method": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "instruction": "5d1f40: 5231 ed40                              |0014: iget v1, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/definition/e$d;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "5fc5a8: 54c0 ec40                              |0000: iget-object v0, v12, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/definition/e$d;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "5fc61e: 54c3 ec40                              |003b: iget-object v3, v12, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/definition/e$d;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "5fc6c6: 54c8 ec40                              |008f: iget-object v8, v12, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/VideoPreloadTask$b;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "61ba7c: 5430 ec40                              |0000: iget-object v0, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/VideoPreloadTask$b;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "61baae: 5433 ec40                              |0019: iget-object v3, v3, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/VideoPreloadTask;",
+      "method": "run",
+      "descriptor": "()V",
+      "instruction": "61bd74: 5402 ec40                              |0036: iget-object v2, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/VideoPreloadTask;",
+      "method": "run",
+      "descriptor": "()V",
+      "instruction": "61bd9a: 5400 ec40                              |0049: iget-object v0, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/c;",
+      "method": "b",
+      "descriptor": "()V",
+      "instruction": "61cc4a: 5411 ec40                              |00bb: iget-object v1, v1, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/preload/c;",
+      "method": "b",
+      "descriptor": "()V",
+      "instruction": "61cc96: 541a ec40                              |00e1: iget-object v10, v1, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/shortserieslayer/progressbarlayer/g$f;",
+      "method": "a",
+      "descriptor": "(Ljava/lang/Float;)V",
+      "instruction": "64c444: 5402 ec40                              |0026: iget-object v2, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/shortserieslayer/progressbarlayer/g;",
+      "method": "a",
+      "descriptor": "(F)V",
+      "instruction": "64c932: 5400 ec40                              |003d: iget-object v0, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/ShortSeriesRecommendFragment;",
+      "method": "a",
+      "descriptor": "(Ljava/lang/String;)V",
+      "instruction": "65ad5c: 5505 eb40                              |0028: iget-boolean v5, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.a:Z // field@40eb"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/ShortSeriesSingleFragment;",
+      "method": "a",
+      "descriptor": "(Ljava/lang/String;)V",
+      "instruction": "65e2e4: 5505 eb40                              |0028: iget-boolean v5, v0, Lcom/dragon/read/component/shortvideo/api/model/t;.a:Z // field@40eb"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/ShortSeriesSingleFragment;",
+      "method": "b",
+      "descriptor": "()Z",
+      "instruction": "65eca4: 5422 ec40                              |002a: iget-object v2, v2, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/a/c$b;",
+      "method": "run",
+      "descriptor": "()V",
+      "instruction": "6623de: 6e20 acfb 1000                         |00e3: invoke-virtual {v0, v1}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoModel:(Lcom/ss/ttvideoengine/model/VideoModel;)V // method@fbac"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$b;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "664f54: 5572 eb40                              |0040: iget-boolean v2, v7, Lcom/dragon/read/component/shortvideo/api/model/t;.a:Z // field@40eb"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$b;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "664f68: 5472 ec40                              |004a: iget-object v2, v7, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$b;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "664f96: 5472 ec40                              |0061: iget-object v2, v7, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$h;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "665574: 5261 ed40                              |0002: iget v1, v6, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$h;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "665582: 5560 eb40                              |0009: iget-boolean v0, v6, Lcom/dragon/read/component/shortvideo/api/model/t;.a:Z // field@40eb"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$h;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "66559e: 5466 ec40                              |0017: iget-object v6, v6, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$i;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "665618: 5241 ed40                              |0002: iget v1, v4, Lcom/dragon/read/component/shortvideo/api/model/t;.c:I // field@40ed"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j$i;",
+      "method": "a",
+      "descriptor": "(Lcom/dragon/read/component/shortvideo/api/model/t;)V",
+      "instruction": "66562a: 5444 ec40                              |000b: iget-object v4, v4, Lcom/dragon/read/component/shortvideo/api/model/t;.b:Lcom/ss/ttvideoengine/model/VideoModel; // field@40ec"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j;",
+      "method": "a",
+      "descriptor": "(Landroid/content/Context;Z)V",
+      "instruction": "665b8e: 6e20 aafb 9800                         |00e5: invoke-virtual {v8, v9}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoEngineCallback:(Lcom/ss/ttvideoengine/VideoEngineCallback;)V // method@fbaa"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j;",
+      "method": "a",
+      "descriptor": "(Landroid/content/Context;Z)V",
+      "instruction": "665baa: 6e20 abfb 9800                         |00f3: invoke-virtual {v8, v9}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoEngineInfoListener:(Lcom/ss/ttvideoengine/VideoEngineInfoListener;)V // method@fbab"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j;",
+      "method": "s",
+      "descriptor": "()V",
+      "instruction": "666a94: 6e20 aafb 1000                         |001e: invoke-virtual {v0, v1}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoEngineCallback:(Lcom/ss/ttvideoengine/VideoEngineCallback;)V // method@fbaa"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j;",
+      "method": "a",
+      "descriptor": "(Lcom/ss/ttvideoengine/model/VideoModel;J)V",
+      "instruction": "6673ce: 6e20 acfb 4500                         |0017: invoke-virtual {v5, v4}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoModel:(Lcom/ss/ttvideoengine/model/VideoModel;)V // method@fbac"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/core/j;",
+      "method": "onVideoURLRouteFailed",
+      "descriptor": "(Lcom/ss/ttvideoengine/utils/Error;Ljava/lang/String;)V",
+      "instruction": "668878: 6e20 aafb 4800                         |00f4: invoke-virtual {v8, v4}, Lcom/ss/ttvideoengine/TTVideoEngine;.setVideoEngineCallback:(Lcom/ss/ttvideoengine/VideoEngineCallback;)V // method@fbaa"
+    },
+    {
+      "class": "Lcom/dragon/read/component/shortvideo/impl/v2/data/f$c;",
+      "method": "subscribe",
+      "descriptor": "(Lio/reactivex/ObservableEmitter;)V",
+      "instruction": "66aa9e: 6e10 dba1 0000                         |0007: invoke-virtual {v0}, Lcom/dragon/read/component/shortvideo/api/model/t;.a:()V // method@a1db"
+    }
+  ]
+}

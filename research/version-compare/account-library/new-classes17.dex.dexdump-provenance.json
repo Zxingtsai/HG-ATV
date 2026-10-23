@@ -1,0 +1,14 @@
+{
+  "source_apk": "/workspace/hongguo-tv/research/hongguo.apk",
+  "source_apk_sha256": "77f23369c02f8a2d7a66f1fbe960dcd7bc402e529f69a4b21bf047c59fea6d93",
+  "dex_member": "classes17.dex",
+  "dex_sha256": "38410da66064453c4af2ef04ad814d2ade31e72f8106a44514f4d212d61f381e",
+  "tool": "Android SDK build-tools35.0.0 dexdump -d",
+  "selected_class_regex": [
+    "^Lcom/dragon/read/component/biz/impl/series/coll/video/(a|VideoCollLoadCoordinator);$",
+    "^Lcom/dragon/read/rpc/model/GetBookShelfVideoList(Request|Response|Data);$"
+  ],
+  "class_blocks": 5,
+  "returncode": 0,
+  "evidence_type": "ordinary static DEX disassembly, not REA or execution"
+}
