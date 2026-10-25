@@ -24,7 +24,7 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 
 ## 当前验证范围
 
-- 服务端 33 项自动检查通过；真实官网来源经过完整处理、55 个 HLS 分片的整集严格解码及缓存跳转验证。
+- 服务端 64 项自动检查通过；真实官网来源经过完整处理、55 个 HLS 分片的整集严格解码及缓存跳转验证。
 - 0.1.1 服务端账号预览：47 项服务端检查通过；已实测官网二维码生成、页面显示与取消清理，真实账号确认和 Windows 浏览器联调尚待验收。
 - 客户端构建成功，lint 为 0 错误、22 警告，APK v2 签名验证通过。
 - **Windows Server 与 Chromecast 实机尚未验收。** Android TV 14 软件模拟器未完成系统启动，尚未取得客户端设备运行或遥控器联调结果。
@@ -56,3 +56,5 @@ node --use-env-proxy server/src/main.mjs
 Android 构建需要完整 JDK 17+、Android SDK 35；在 `client` 目录运行 `./gradlew :app:assembleDebug :app:lintDebug`，Windows 使用 `gradlew.bat`。
 
 原创代码采用 [MIT](LICENSE)；外部运行库、AndroidX 及另行下载的官网播放器保留各自权利和许可。仓库中的分析文档与测试夹具用于记录分析与验证范围，原版 APK、媒体缓存及访问凭据不随项目提供。
+
+源码已默认启用同系列后两集的滚动预缓存，以及每 10 分钟的服务端列表刷新；切剧/停止取消后台任务。电视读取页面时取得更新，不强制重绘当前界面。设置与验证见[系列自动缓存和列表更新](research/series-automation/README.zh-CN.md)。

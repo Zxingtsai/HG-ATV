@@ -39,3 +39,5 @@
 - `research/protocol-pass2/README.zh-CN.md`：官网软件播放协议与实际完整解码记录。
 
 源码构建方式见 [客户端说明](client/README.md)；服务端测试运行 `npm test --prefix server`。外部组件及许可见 [DEPENDENCIES](docs/DEPENDENCIES.md)。
+
+源码已默认启用同系列后两集的滚动预缓存，以及每 10 分钟的服务端列表刷新；切剧/停止取消后台任务。电视读取页面时取得更新，不强制重绘当前界面。设置与验证见[系列自动缓存和列表更新](research/series-automation/README.zh-CN.md)。

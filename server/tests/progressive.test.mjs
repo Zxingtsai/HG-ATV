@@ -95,7 +95,7 @@ test('real FFmpeg starts HLS before both downloads finish, survives seek, comple
         }), { headers: { 'Content-Length': String(buffer.length) } });
       };
       const config = { dataDir: root, ffmpeg, profile: '720p', encoder: 'libx264' };
-      const website = { getDrama: async () => ({ episodes: [{ id: EPI }] }), getPlayInfo: async () => ({ duration: 16,
+      const website = { getDrama: async () => ({ episodes: (mode === 'complete' ? [EPI, '7690963491330477081', '7690963495944211481'] : [EPI]).map(id => ({ id })) }), getPlayInfo: async () => ({ duration: 16,
         main_url: 'https://test.qznovelvod.com/video', player_access_key: '', audio: { main_url: 'https://test.qznovelvod.com/audio', player_access_key: '' } }) };
       const cache = new MediaCache(config, website, { fetchFn });
       await mkdir(cache.dir); cache.sdkPath = join(root, 'fake-sdk.cjs'); await writeFile(cache.sdkPath, fakeSdk);
@@ -113,12 +113,14 @@ test('real FFmpeg starts HLS before both downloads finish, survives seek, comple
           const seek = await manager.start('tv', { seriesId: SER, episodeId: EPI, startSeconds: 2 });
           await until(() => manager.get(seek.id, 'tv').status === 'ready'); assert.equal(finished, 0);
           release();
-          await until(() => cache.entries.size === 1); await manager.active.encoderClosed;
+          await until(() => cache.entries.has(cache.key(SER, EPI))); await manager.active.encoderClosed;
           const final = await readFile(manager.streamFile(seek.id, 'index.m3u8', 'tv'), 'utf8'); assert.match(final, /#EXT-X-ENDLIST/);
           const duration = [...final.matchAll(/#EXTINF:([\d.]+)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
           assert.ok(duration >= 13.5 && duration <= 14.5, `seeked duration ${duration}`);
           assert.equal((await run(ffmpeg, ['-v', 'error', '-i', manager.streamFile(seek.id, 'index.m3u8', 'tv'), '-f', 'null', '-'])).code, 0);
           assert.ok((await cache.get(SER, EPI)).path.endsWith('episode.mp4'));
+          await until(() => manager.get(seek.id, 'tv').prefetch?.completed === 2);
+          assert.equal(cache.entries.size, 3); assert.equal(cache.pending.size, 0);
         } else if (mode === 'failure') {
           rejectGate(Error('upstream lost'));
           await until(() => manager.get(session.id, 'tv').status === 'error');

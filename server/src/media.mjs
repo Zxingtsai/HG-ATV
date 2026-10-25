@@ -37,7 +37,7 @@ async function download(raw, path, signal, fetchFn = fetch) {
   await writeFile(path + '.complete', '', { mode: 0o600 });
 }
 export class MediaCache {
-  constructor(config, website, { fetchFn = fetch } = {}) { this.fetchFn = fetchFn; this.config = config; this.website = website; this.entries = new Map(); this.pending = new Map(); this.dir = join(config.dataDir, 'media'); }
+  constructor(config, website, { fetchFn = fetch } = {}) { this.fetchFn = fetchFn; this.config = config; this.website = website; this.entries = new Map(); this.pending = new Map(); this.pins = new Map(); this.dir = join(config.dataDir, 'media'); }
   async init() {
     // This directory is exclusively temporary. Never scan/delete outside it.
     await mkdir(this.dir, { recursive: true, mode: 0o700 });
@@ -47,9 +47,18 @@ export class MediaCache {
     return this;
   }
   key(seriesId, episodeId) { return createHash('sha256').update(`${seriesId}:${episodeId}`).digest('hex').slice(0, 32); }
+  pin(key) {
+    this.pins.set(key, (this.pins.get(key) || 0) + 1);
+    let released = false;
+    return () => {
+      if (released) return; released = true;
+      const count = this.pins.get(key) - 1;
+      if (count) this.pins.set(key, count); else this.pins.delete(key);
+    };
+  }
   async get(seriesId, episodeId, onStage = () => {}, { progressive = false } = {}) {
     const key = this.key(seriesId, episodeId), cached = this.entries.get(key);
-    if (cached && cached.until > Date.now()) { cached.usedAt = Date.now(); return cached; }
+    if (cached && (cached.until > Date.now() || this.pins.has(key))) { cached.usedAt = Date.now(); return cached; }
     if (cached) { await cached.release?.(); await rm(cached.dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); this.entries.delete(key); }
     const existing = this.pending.get(key);
     if (existing && !existing.controller.signal.aborted) {
@@ -144,7 +153,7 @@ export class MediaCache {
   }
   async prune(keepKey) {
     let bytes = [...this.entries.values()].reduce((sum, value) => sum + value.bytes, 0);
-    const sorted = [...this.entries].filter(([key]) => key !== keepKey).sort((a, b) => a[1].usedAt - b[1].usedAt);
+    const sorted = [...this.entries].filter(([key]) => key !== keepKey && !this.pins.has(key)).sort((a, b) => a[1].usedAt - b[1].usedAt);
     for (const [key, value] of sorted) {
       if (this.entries.size <= 3 && bytes <= 1024 ** 3 && value.until > Date.now()) continue;
       await value.release?.();

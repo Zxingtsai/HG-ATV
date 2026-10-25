@@ -56,3 +56,5 @@ Reply JSON {name:"红果 TV 家庭服务",port:8751}; client uses sender IP as h
 Manual server URL and six-digit code entry remain available if discovery is blocked.
 
 搜索 `page` 默认 1，范围 1–10000；使用官网 `/api/search/result` 的实际页码与结束标记。官网搜索中的演员卡片不映射为短剧。跨页可能重复，调用方按 Drama.id 去重；`hasMore=false` 只表示本次返回已到末页，不保证得到全部匹配内容的固定快照。上游错误或页码不符返回错误，不当作空结果。
+
+Playback 可附带 `prefetch:{total:number,completed:number,failed:number}`，表示当前系列滚动窗口的预缓存工作计数。默认准备后两集，当前下载和编码完成后串行进行；前台选择同集复用在途任务。服务端每 10 分钟刷新首页、分类/榜单第一页和最近查看的目录/选集；既有客户端请求无需改变，当前显示页面不会被服务端强制推送重绘。环境变量与限制见 [自动化说明](../research/series-automation/README.zh-CN.md)。

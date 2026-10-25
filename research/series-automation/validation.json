@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "checks": [
+    {
+      "command": "npm test --prefix server",
+      "passed": 64,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log_sha256": "55124dfd6ce78d6555a3accb7a653799dd66fd94075baa67464eec5f23b0e00a"
+    },
+    {
+      "command": "node --test server/tests/progressive.test.mjs",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log_sha256": "0f8b627b77a05fd0cb7f8a190de16599fe2a0349c498d2008f30d3101d9f0cf8"
+    }
+  ],
+  "scope": "Linux Node 24 and FFmpeg; generated media plus test-only passthrough worker. No physical TV/QSV verification."
+}

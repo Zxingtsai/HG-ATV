@@ -173,6 +173,58 @@ export class WebsiteClient {
   #pending = new Map();
   #cookieProvider;
   #cacheScope;
+  #recent = new Map();
+  #refreshTimer;
+  #refreshTask;
+  #refreshController;
+  #closed = false;
+  refreshStatus = { running: false, lastCompletedAt: null, succeeded: 0, failed: 0 };
+
+  startAutoRefresh(intervalMs = 600000) {
+    clearTimeout(this.#refreshTimer);
+    if (!Number.isFinite(intervalMs) || intervalMs < 0) fail('INVALID_ARGUMENT');
+    if (!intervalMs || this.#closed) return;
+    const schedule = () => {
+      this.#refreshTimer = setTimeout(async () => {
+        await this.refreshLists();
+        if (!this.#closed) schedule();
+      }, intervalMs);
+      this.#refreshTimer.unref();
+    };
+    schedule();
+  }
+  refreshLists() {
+    if (this.#refreshTask) return this.#refreshTask;
+    if (this.#closed) return Promise.resolve();
+    this.#refreshController = new AbortController();
+    const options = { refresh: true, background: true, signal: this.#refreshController.signal };
+    const scope = this.#cacheScope();
+    const recent = [...this.#recent.values()].filter(entry => entry.scope === scope && Date.now() - entry.usedAt < 86400000);
+    this.#recent = new Map(recent.map(entry => [entry.path, entry]));
+    const fixed = new Set(['/', ...CATEGORIES.map(item => `/category/${item.id}`), ...RANKS.map(item => `/rank/${item.id}`)]);
+    const jobs = [() => this.getHome(options), ...CATEGORIES.map(item => () => this.getCategory(item.id, 1, options)),
+      ...RANKS.map(item => () => this.getRank(item.id, 1, options)),
+      ...recent.filter(entry => !fixed.has(entry.path)).map(entry => () => this.#metadata(entry.path, entry.convert, options, entry.decode))];
+    this.refreshStatus = { ...this.refreshStatus, running: true, succeeded: 0, failed: 0 };
+    this.#refreshTask = (async () => {
+      for (const work of jobs) {
+        if (this.#closed || options.signal.aborted || scope !== this.#cacheScope()) break;
+        try { await work(); this.refreshStatus.succeeded++; }
+        catch { this.refreshStatus.failed++; }
+      }
+    })().finally(() => {
+      this.refreshStatus.running = false; this.refreshStatus.lastCompletedAt = new Date().toISOString();
+      this.#refreshTask = null;
+    });
+    return this.#refreshTask;
+  }
+  async close() {
+    this.#closed = true; clearTimeout(this.#refreshTimer); this.#refreshController?.abort();
+    for (const job of this.#pending.values()) job.controller.abort();
+    await Promise.allSettled([...this.#pending.values()].map(job => job.promise));
+    await this.#refreshTask;
+    this.#recent.clear(); this.#cache.clear();
+  }
 
   constructor({ fetchFn = globalThis.fetch, baseUrl = 'https://hongguoduanju.com', cacheTtlMs = 300000, cookieProvider = () => '', cacheScope = () => 0 } = {}) {
     this.#fetch = fetchFn;
@@ -185,6 +237,7 @@ export class WebsiteClient {
 
   async #request(path, { signal, body } = {}) {
     cancelled(signal);
+    if (this.#closed) fail('SOURCE_CANCELLED');
     const timeout = AbortSignal.timeout(REQUEST_TIMEOUT_MS);
     const combined = signal ? AbortSignal.any([signal, timeout]) : timeout;
     try {
@@ -225,16 +278,22 @@ export class WebsiteClient {
     }
   }
 
-  async #metadata(path, convert, { signal } = {}, decode = routerData) {
+  async #metadata(path, convert, { signal, refresh = false, background = false } = {}, decode = routerData) {
     cancelled(signal);
+    if (this.#closed) fail('SOURCE_CANCELLED');
     const scope = this.#cacheScope(), cacheKey = `${scope}:${path}`;
+    const remember = () => {
+      if (background || path.startsWith('/api/search/')) return;
+      this.#recent.delete(path); this.#recent.set(path, { path, convert, decode, scope, usedAt: Date.now() });
+      while (this.#recent.size > 32) this.#recent.delete(this.#recent.keys().next().value);
+    };
     const cached = this.#cache.get(cacheKey);
-    if (cached?.expires > Date.now()) {
+    if (!refresh && cached?.expires > Date.now()) {
       this.#cache.delete(cacheKey);
       this.#cache.set(cacheKey, cached);
-      return structuredClone(cached.value);
+      remember(); return structuredClone(cached.value);
     }
-    this.#cache.delete(cacheKey);
+    if (!refresh) this.#cache.delete(cacheKey);
     let job = this.#pending.get(cacheKey);
     if (!job) {
       if (this.#pending.size >= MAX_CACHE_ITEMS) fail('SOURCE_UNAVAILABLE');
@@ -271,7 +330,8 @@ export class WebsiteClient {
           if (signal.aborted) onAbort();
         }
       });
-      return structuredClone(await Promise.race([job.promise, abort]));
+      const result = structuredClone(await Promise.race([job.promise, abort]));
+      remember(); return result;
     } finally {
       if (onAbort) signal.removeEventListener('abort', onAbort);
       if (--job.users === 0 && !job.done) {

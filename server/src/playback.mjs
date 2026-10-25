@@ -42,6 +42,7 @@ export class PlaybackManager {
     try {
       await this.lastEncoderClosed;
       if (session.cancelled) return;
+      session.releaseMedia = this.media.pin?.(this.media.key(session.seriesId, session.episodeId));
       const media = await this.media.get(session.seriesId, session.episodeId, text => { if (!session.cancelled && session.status === 'preparing') session.stage = text; }, { progressive: true });
       if (session.cancelled) return;
       media.completion?.catch(error => {
@@ -70,7 +71,11 @@ export class PlaybackManager {
         try {
           const playlist = await readFile(join(session.dir, 'index.m3u8'), 'utf8');
           if (session.cancelled || session.status !== 'preparing') return;
-          if (playlist.includes('#EXTINF:')) { session.status = 'ready'; session.stage = '可以播放'; return; }
+          if (playlist.includes('#EXTINF:')) {
+            session.status = 'ready'; session.stage = '可以播放';
+            session.prefetchTask = this.prefetch(session, media);
+            return;
+          }
         } catch (error) { if (error.code !== 'ENOENT') throw error; }
         if (this.clock() > deadline) throw new AppError('ENCODER_TIMEOUT', '转码启动超时，请检查服务器编码器或切换至 720p', 504);
         await new Promise(resolve => { const timer = setTimeout(resolve, 200); timer.unref(); });
@@ -82,6 +87,29 @@ export class PlaybackManager {
       if (session.encoder) session.encoder.kill();
       if (this.active === session) this.media.abortExcept();
     }
+  }
+  async prefetch(session, media) {
+    // Foreground download and encoding finish first: no second encoder and no
+    // competition for the initial playback buffer. Promotion reuses pending get().
+    try {
+      await Promise.all([media.completion, session.encoderClosed]);
+      const count = this.config.prefetchEpisodes ?? 2;
+      const current = () => !this.closed && !session.cancelled && this.active === session && session.status === 'ready';
+      if (!count || !current()) return;
+      const detail = await this.website.getDrama(session.seriesId);
+      if (!current()) return;
+      const index = detail.episodes.findIndex(episode => episode.id === session.episodeId);
+      if (index < 0) return;
+      session.prefetch = { total: Math.min(count, detail.episodes.length - index - 1), completed: 0, failed: 0 };
+      for (const episode of detail.episodes.slice(index + 1, index + 1 + count)) {
+        if (!current()) return;
+        // Stop at the disk budget rather than repeatedly downloading evicted items.
+        const bytes = [...(this.media.entries?.values() || [])].reduce((sum, entry) => sum + entry.bytes, 0);
+        if (bytes >= 1024 ** 3) break;
+        try { await this.media.get(session.seriesId, episode.id); session.prefetch.completed++; }
+        catch { if (!current()) return; session.prefetch.failed++; }
+      }
+    } catch { /* Background metadata/media failure must not fail current playback. */ }
   }
   encode(session, media) {
     // Unfinished tracks are non-seekable loopback streams. Seek by decoding and
@@ -122,6 +150,7 @@ export class PlaybackManager {
   view(session) {
     return { id: session.id, status: session.status, stage: session.stage, seriesId: session.seriesId, episodeId: session.episodeId,
       positionBaseSeconds: session.positionBaseSeconds, durationSeconds: session.durationSeconds,
+      ...(session.prefetch ? { prefetch: { ...session.prefetch } } : {}),
       ...(session.status === 'ready' ? { playlistUrl: `/stream/${session.id}/index.m3u8` } : {}),
       ...(session.status === 'error' ? { errorCode: session.errorCode, message: session.message } : {}) };
   }
@@ -135,7 +164,8 @@ export class PlaybackManager {
       child.kill();
       const killTimer = setTimeout(() => { if (session.encoder === child) child.kill('SIGKILL'); }, 3000); killTimer.unref();
     }
-    const cleanup = async () => { await session.task?.catch(() => {}); await session.encoderClosed; await rm(session.dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); };
+    Promise.resolve(session.task).catch(() => {}).then(() => session.encoderClosed).then(() => session.releaseMedia?.());
+    const cleanup = async () => { await session.task?.catch(() => {}); await session.encoderClosed; session.releaseMedia?.(); await rm(session.dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); };
     const timer = setTimeout(() => cleanup().catch(() => {}), 5000); timer.unref();
   }
   streamFile(id, name, owner) {
@@ -151,6 +181,6 @@ export class PlaybackManager {
     await this.lastEncoderClosed;
     await Promise.allSettled([...this.sessions.values()].map(session => session.encoderClosed));
     await this.media.close();
-    await Promise.allSettled([...this.sessions.values()].map(async session => { await session.task; await session.encoderClosed; await rm(session.dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); }));
+    await Promise.allSettled([...this.sessions.values()].map(async session => { await session.task; await session.encoderClosed; session.releaseMedia?.(); await rm(session.dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); }));
   }
 }
