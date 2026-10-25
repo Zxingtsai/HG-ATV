@@ -1,0 +1,2 @@
+7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27  hongguo-6.2.3.32-original.apk
+1f8f733377523ab7a5ea2a602e6e9e9834badf422727e07492d4118c6c0a69e1  hongguo-7.4.1.32-official-normal-original.apk
