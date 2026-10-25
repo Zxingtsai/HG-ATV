@@ -1,0 +1,6 @@
+{
+  "file": "session-recovered.json",
+  "sha256": "afccb4bf3271e1947c7fabd7a6f9b5d19cf8a6113132b9915bb585f59d86fd1d",
+  "record_count": 11,
+  "scope": "Recovery session only; earlier individually saved results are indexed separately. Counts overlap and must not be added."
+}

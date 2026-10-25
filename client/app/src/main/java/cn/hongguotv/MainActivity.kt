@@ -240,12 +240,36 @@ class MainActivity : Activity() {
             route = route.copy(query = q); screenVersion++
             while (body.childCount > 3) body.removeViewAt(3)
             val status = text("正在搜索…",21f,muted); body.addView(status)
-            request({ api.get("/api/search?q=" + encoded(q)) }, { data ->
-                body.removeView(status)
-                val items = data.optJSONArray("items").dramas()
-                if (items.isEmpty()) { body.addView(text("没有找到相关短剧，请换个关键词",22f,muted)); return@request }
-                val grid = cards(items,true); body.addView(grid,LinearLayout.LayoutParams(-1,0,1f)); grid.post { grid.requestFocus() }
-            }, { e -> body.removeView(status); val retry = button(errorText(e) + " · 重试") { submit() }; body.addView(retry); retry.requestFocus() })
+            val items = mutableListOf<Drama>()
+            val grid = cards(items,true)
+            body.addView(grid,LinearLayout.LayoutParams(-1,0,1f))
+            var page = 0
+            var busy = false
+            lateinit var next: Button
+            fun loadPage() {
+                if (busy) return
+                busy = true; next.isEnabled = false
+                request({ api.get("/api/search?q=" + encoded(q) + "&page=${page + 1}") }, { data ->
+                    busy = false; page = data.getInt("page")
+                    val previousSize = items.size
+                    items.addAll(data.optJSONArray("items").dramas().filter { incoming -> items.none { it.id == incoming.id } }.distinctBy { it.id })
+                    grid.adapter?.notifyItemRangeInserted(previousSize, items.size - previousSize)
+                    val more = data.optBoolean("hasMore")
+                    status.visibility = if (items.isEmpty()) View.VISIBLE else View.GONE
+                    status.text = "没有找到相关短剧，请换个关键词"
+                    next.isEnabled = more
+                    next.text = if (more) "加载下一页 · 已加载${items.size}部" else "已到末页 · 共${items.size}部"
+                    if (items.size > previousSize) {
+                        grid.scrollToPosition(previousSize)
+                        grid.post { grid.findViewHolderForAdapterPosition(previousSize)?.itemView?.requestFocus() ?: grid.requestFocus() }
+                    } else if (more) next.requestFocus() else input.requestFocus()
+                }, { e ->
+                    busy = false; status.visibility = View.GONE
+                    next.isEnabled = true; next.text = errorText(e) + " · 重试第${page + 1}页"; next.requestFocus()
+                })
+            }
+            next = button("加载下一页") { loadPage() }; body.addView(next)
+            loadPage()
         }
         row.addView(button("搜索") { submit() }); input.setOnEditorActionListener { _, _, _ -> submit(); true }
         body.addView(row,LinearLayout.LayoutParams(-1,dp(65)))

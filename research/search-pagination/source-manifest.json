@@ -1,0 +1,30 @@
+{
+  "observed_date": "2026-10-23",
+  "sources": [
+    {
+      "url": "https://hongguoduanju.com/search/%E5%86%9B%E9%9C%80%E5%A4%84%E9%95%BF",
+      "bytes": 37199,
+      "sha256": "9e5765f2c7f15aac32afbb20a5b12581db23fa46f87328742a4d6d5ee9af538d",
+      "local_file": "/workspace/scratch/hg-research/search.html"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/search.fe0ab865c5.js",
+      "bytes": 27342,
+      "sha256": "9760c2473bd8f176ec080498ec26034353381a0dc3746e667e2ac980bcb78934",
+      "local_file": "/workspace/scratch/hg-research/search.fe0ab865c5.js"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/k.024362f390.js",
+      "bytes": 33809,
+      "sha256": "e17144e58321ca6613aa4775672335aff23ec3030b6de916d81ea9c0d1f02a6e",
+      "local_file": "/workspace/scratch/hg-research/async_k.024362f390.js"
+    },
+    {
+      "url": "https://lf-fe.fqnovelstatic.com/obj/novel-fanqie-fe/growth/incentive-h5-monorepo/apps/hongguo/static/js/async/t.d1c39a18e1.js",
+      "bytes": 189538,
+      "sha256": "6d2c05f0ee150f9a06c71277ca44b12234b791ebb620265e8c133586e601ca28",
+      "local_file": "/workspace/scratch/hg-research/async_t.d1c39a18e1.js"
+    }
+  ],
+  "note": "Raw third-party JavaScript is retained locally, not redistributed. Hashes identify this observation only."
+}

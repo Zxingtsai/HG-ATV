@@ -1,0 +1,216 @@
+{
+  "observed_at": "2026-10-23T00:19:46.190607+00:00",
+  "base_url": "https://hongguoduanju.com",
+  "query": "夜晚的答案",
+  "authentication": "anonymous; no cookies supplied",
+  "pages": [
+    {
+      "page_requested": 1,
+      "path": "/api/search/result?query=%E5%A4%9C%E6%99%9A%E7%9A%84%E7%AD%94%E6%A1%88&page=1",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "158c29109e1fcdac833d43be9719af5001f9ecd66e6f5868929e57278f2a0e5d",
+          "bytes": 12452
+        }
+      ],
+      "totalCount": "206",
+      "pageNum": 1,
+      "totalPages": 21,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7693806079737613336",
+          "series_title": "夜晚的答案",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693071659686693913",
+          "series_title": "山野春潮",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694872950456978494",
+          "series_title": "她说离婚是玩笑，我当了真",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696858294324841534",
+          "series_title": "人生转弯处，与你相逢",
+          "kind": "video"
+        },
+        {
+          "series_id": "7679064719017118744",
+          "series_title": "初次尝鲜，傅总他又争又抢",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688352674999176254",
+          "series_title": "总裁是我前女友",
+          "kind": "video"
+        },
+        {
+          "series_id": "7682031858866998296",
+          "series_title": "烟火中的尊严",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693144336392784958",
+          "series_title": "我替兄弟赴约，却把自己搭了进去",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690569956223634494",
+          "series_title": "替闺蜜相亲，我竟被他全家看上了",
+          "kind": "video"
+        },
+        {
+          "series_id": "7670925593537432600",
+          "series_title": "半熟沦陷",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 2,
+      "path": "/api/search/result?query=%E5%A4%9C%E6%99%9A%E7%9A%84%E7%AD%94%E6%A1%88&page=2",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "c13e337962f21804f6782d5ca47e0f38b9b33ca7d7b440f048435aa33dd49d24",
+          "bytes": 12907
+        }
+      ],
+      "totalCount": "205",
+      "pageNum": 2,
+      "totalPages": 21,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7670925593537432600",
+          "series_title": "半熟沦陷",
+          "kind": "video"
+        },
+        {
+          "series_id": "7694487954051320894",
+          "series_title": "张旗和李思雨的故事",
+          "kind": "video"
+        },
+        {
+          "series_id": "7660082182093802558",
+          "series_title": "人间烟火不及你情深",
+          "kind": "video"
+        },
+        {
+          "series_id": "7693179878325111870",
+          "series_title": "演唱会她转头拒吻，我断供撤资离场",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690925585895263256",
+          "series_title": "青梅退场竹马慌了",
+          "kind": "video"
+        },
+        {
+          "series_id": "7689752005480303641",
+          "series_title": "婚书一签，追妻万里",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688332580894035006",
+          "series_title": "你的安全归我管",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690107601610099736",
+          "series_title": "第一百次，我不告白了",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696454717152431129",
+          "series_title": "我能看见妻子的亲密次数",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688351136452987929",
+          "series_title": "赴一场婚礼，遇一世情深",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    },
+    {
+      "page_requested": 3,
+      "path": "/api/search/result?query=%E5%A4%9C%E6%99%9A%E7%9A%84%E7%AD%94%E6%A1%88&page=3",
+      "attempts": [
+        {
+          "status": 200,
+          "sha256": "ffeae69a6d50f4c9415c2fe6e6e1cf8794b85665b6188a0eb241643a44def4e1",
+          "bytes": 18750
+        }
+      ],
+      "totalCount": "205",
+      "pageNum": 3,
+      "totalPages": 21,
+      "hasMore": true,
+      "items": [
+        {
+          "series_id": "7688351136452987929",
+          "series_title": "赴一场婚礼，遇一世情深",
+          "kind": "video"
+        },
+        {
+          "series_id": "7687956891258850329",
+          "series_title": "闪婚机长：我的老公是航空大佬",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695625941778697241",
+          "series_title": "初尝玫瑰！",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688615525244488729",
+          "series_title": "人人嫌猎户粗野，唯有我听见他真心不负情",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690543673766841406",
+          "series_title": "未婚妻出国五年，回来后我已儿女双全",
+          "kind": "video"
+        },
+        {
+          "series_id": "7688734584753622040",
+          "series_title": "误打误撞的婚约",
+          "kind": "video"
+        },
+        {
+          "series_id": "7690937930839247897",
+          "series_title": "假相亲遇上真心动",
+          "kind": "video"
+        },
+        {
+          "series_id": "7692038820270722072",
+          "series_title": "暴雨之后",
+          "kind": "video"
+        },
+        {
+          "series_id": "7696845892585786430",
+          "series_title": "心动续费是余生",
+          "kind": "video"
+        },
+        {
+          "series_id": "7695667703062727742",
+          "series_title": "租个乞丐回家见父母",
+          "kind": "video"
+        }
+      ],
+      "success": true
+    }
+  ],
+  "video_rows": 30,
+  "unique_series_ids": 28,
+  "all_reported_pages_returned": false,
+  "boundary": "One query and observation window; ranking/total can change between requests."
+}

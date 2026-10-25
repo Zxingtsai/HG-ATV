@@ -11,7 +11,7 @@ GET /api/home -> {sections:[{id:string,title:string,items:Drama[]}],categories:[
 GET /api/categories/:id?page=1 -> Page
 GET /api/ranks -> {items:[{id,title}]}
 GET /api/ranks/:id?page=1 -> Page
-GET /api/search?q=... -> Page
+GET /api/search?q=...&page=1 -> Page
 GET /api/dramas/:id -> Detail
 POST /api/playback {seriesId:string,episodeId:string,startSeconds?:number} -> Playback
 GET /api/playback/:id -> Playback
@@ -54,3 +54,5 @@ metadata caches. See ACCOUNT.zh-CN.md for setup and unverified runtime boundarie
 Discovery: UDP broadcast port 8752, payload HONGGUO_TV_DISCOVER_V1.
 Reply JSON {name:"红果 TV 家庭服务",port:8751}; client uses sender IP as host, never a URL supplied by broadcast.
 Manual server URL and six-digit code entry remain available if discovery is blocked.
+
+搜索 `page` 默认 1，范围 1–10000；使用官网 `/api/search/result` 的实际页码与结束标记。官网搜索中的演员卡片不映射为短剧。跨页可能重复，调用方按 Drama.id 去重；`hasMore=false` 只表示本次返回已到末页，不保证得到全部匹配内容的固定快照。上游错误或页码不符返回错误，不当作空结果。
