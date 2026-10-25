@@ -1,7 +1,7 @@
 import { spawn } from 'node:child_process';
 import { AppError, cancelled } from './errors.mjs';
 // Arguments are arrays, never shell strings. Child stdout/stderr are bounded.
-export function run(command, args, { input, signal, timeout = 60000, outputLimit = 262144 } = {}) {
+export function run(command, args, { input, signal, timeout = 60000, outputLimit = 262144, onStdout } = {}) {
   return new Promise((resolve, reject) => {
     if (signal?.aborted) return reject(cancelled());
     const child = spawn(command, args, { windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'] });
@@ -11,7 +11,7 @@ export function run(command, args, { input, signal, timeout = 60000, outputLimit
     signal?.addEventListener('abort', onAbort, { once: true });
     if (signal?.aborted) onAbort();
     const timer = setTimeout(() => { failure = new AppError('PROCESS_TIMEOUT', '媒体处理超时，请重试', 504); terminate(); }, timeout);
-    child.stdout.on('data', chunk => { stdout += chunk; if (stdout.length > outputLimit) { failure = new Error('OutputLimit'); terminate(); } });
+    child.stdout.on('data', chunk => { stdout += chunk; try { onStdout?.(chunk); } catch (error) { failure = error; terminate(); } if (stdout.length > outputLimit) { failure = new Error('OutputLimit'); terminate(); } });
     child.stderr.on('data', chunk => { stderr = (stderr + chunk).slice(-outputLimit); });
     child.on('error', error => { failure = error; });
     child.on('close', code => {

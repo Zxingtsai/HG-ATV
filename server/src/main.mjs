@@ -53,6 +53,7 @@ export async function createService(config, { website, pairing, account, media, 
   media ||= new MediaCache(config, website);
   if (initializeMedia) await media.init();
   playback ||= await new PlaybackManager(config, website, media).init();
+  website.startAutoRefresh?.(config.listRefreshMs ?? 600000);
   const accountRoutes = createAccountRoutes(account, json);
   const server = http.createServer(async (request, response) => {
     try {
@@ -98,7 +99,7 @@ export async function createService(config, { website, pairing, account, media, 
       udp.on('message', (message, remote) => { if (message.toString() === 'HONGGUO_TV_DISCOVER_V1') udp.send(JSON.stringify({ name: NAME, port: config.port }), remote.port, remote.address, () => {}); });
       udp.bind(8752, config.bind.includes(':') ? '0.0.0.0' : config.bind);
     },
-    async close() { try { udp?.close(); } catch {} const closed = new Promise(resolve => server.close(resolve)); server.closeAllConnections(); await account.close(); await playback.close(); await closed; }
+    async close() { try { udp?.close(); } catch {} const closed = new Promise(resolve => server.close(resolve)); server.closeAllConnections(); await website.close?.(); await account.close(); await playback.close(); await closed; }
   };
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

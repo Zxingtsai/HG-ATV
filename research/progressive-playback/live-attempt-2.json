@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-10-25T05:30:17.644Z",
+  "seriesId": "7690961604636052505",
+  "episodeId": "7690963410778868761",
+  "scope": "Anonymous website + pinned official player; software FFmpeg; CDN bodies held after 8 mdat boxes until playable HLS. No physical TV validation.",
+  "tracks": [],
+  "ok": false,
+  "errorCode": "SOURCE_TIMEOUT"
+}
