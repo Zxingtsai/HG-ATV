@@ -43,23 +43,27 @@ if (!isMainThread) {
     parentPort.postMessage({ errorType: error.name, diagnostic: String(error.message).slice(0, 200), phase: 'worker-start' });
   }
 } else {
-  function boxes(buffer) {
-    const result = [];
-    for (let offset = 0; offset < buffer.length;) {
-      if (offset + 8 > buffer.length) throw new Error('Truncated MP4 box');
-      let size = buffer.readUInt32BE(offset);
-      const type = buffer.toString('ascii', offset + 4, offset + 8);
-      if (size === 1) {
-        if (offset + 16 > buffer.length) throw new Error('Truncated large MP4 box');
-        const value = buffer.readBigUInt64BE(offset + 8);
-        if (value > BigInt(Number.MAX_SAFE_INTEGER)) throw new Error('Oversized MP4 box');
-        size = Number(value);
-      } else if (size === 0) size = buffer.length - offset;
-      if (size < 8 || offset + size > buffer.length) throw new Error('Invalid MP4 box bounds');
-      result.push({ offset, size, type });
-      offset += size;
-    }
-    return result;
+  const { fragments } = require('./fragmented-mp4.cjs');
+  const { setTimeout: delay } = require('node:timers/promises');
+  async function* growingInput(job) {
+    let file, position = 0;
+    try {
+      while (file === undefined) {
+        try { file = fs.openSync(job.input, 'r'); }
+        catch (error) { if (error.code !== 'ENOENT') throw error; await delay(30); }
+      }
+      for (;;) {
+        const buffer = Buffer.allocUnsafe(65536);
+        const size = fs.readSync(file, buffer, 0, buffer.length, position);
+        if (size) { position += size; yield buffer.subarray(0, size); }
+        else if ((!job.growing || fs.existsSync(job.input + '.complete')) && position >= fs.fstatSync(file).size) return;
+        else await delay(30);
+      }
+    } finally { if (file !== undefined) fs.closeSync(file); }
+  }
+  function writeAll(fd, bytes) {
+    let offset = 0;
+    while (offset < bytes.byteLength) offset += fs.writeSync(fd, bytes, offset, bytes.byteLength - offset);
   }
 
   async function decryptTrack(job, sdkPath) {
@@ -102,25 +106,25 @@ if (!isMainThread) {
       const initialized = await call({ method: 'updateValue', value: { secretKey: job.secretKey } });
       if (job.selfTest) return { workerReady: true, wasmReady: initialized.ready, sdkLogCount: initialized.sdkLogCount,
         scope: 'worker initialization only; no media decoded' };
-      const input = fs.readFileSync(job.input);
-      const fragments = boxes(input).filter(box => box.type === 'moof');
-      if (!fragments.length) throw new Error('NoFragmentedMP4Media');
       output = fs.openSync(job.output, 'w', 0o600);
-      const header = await call({ method: 'decryptHeader', buf: Uint8Array.from(input.subarray(0, fragments[0].offset)), isVideo: job.isVideo });
-      if (!header.res || !header.res.byteLength) throw new Error('NoClearInitSegment');
-      fs.writeSync(output, header.res);
-      let written = header.res.byteLength, samples = 0;
-      for (let index = 0; index < fragments.length; index++) {
-        const start = fragments[index].offset;
-        const end = index + 1 < fragments.length ? fragments[index + 1].offset : input.length;
-        const body = await call({ method: 'decryptBody', args: {
-          buf: Uint8Array.from(input.subarray(start, end)), isVideo: job.isVideo, needRemux: true } });
-        if (!body.res || !body.res.byteLength) throw new Error('NoClearMediaFragment');
-        fs.writeSync(output, body.res);
+      let written = 0, samples = 0, count = 0, inputBytes = 0;
+      for await (const part of fragments(growingInput(job))) {
+        inputBytes += part.data.length;
+        const body = part.kind === 'init'
+          ? await call({ method: 'decryptHeader', buf: Uint8Array.from(part.data), isVideo: job.isVideo })
+          : await call({ method: 'decryptBody', args: {
+            buf: Uint8Array.from(part.data), isVideo: job.isVideo, needRemux: true } });
+        if (!body.res || !body.res.byteLength) throw new Error(part.kind === 'init' ? 'NoClearInitSegment' : 'NoClearMediaFragment');
         written += body.res.byteLength;
-        samples += job.isVideo ? body.videoSamples || 0 : body.audioSamples || 0;
+        if (written > 256 * 1024 * 1024) throw new Error('OversizedClearTrack');
+        writeAll(output, body.res);
+        if (part.kind === 'fragment') {
+          count++; samples += job.isVideo ? body.videoSamples || 0 : body.audioSamples || 0;
+          if (job.growing && count === 1) process.stdout.write(JSON.stringify({ event: 'trackReady', isVideo: job.isVideo }) + '\n');
+        }
       }
-      return { inputBytes: input.length, outputBytes: written, fragments: fragments.length, samples,
+      if (job.growing) process.stdout.write(JSON.stringify({ event: 'trackDone', isVideo: job.isVideo }) + '\n');
+      return { inputBytes, outputBytes: written, fragments: count, samples,
         sdkLogCount: initialized.sdkLogCount, isVideo: job.isVideo };
     } finally {
       if (output !== undefined) fs.closeSync(output);
@@ -137,14 +141,13 @@ if (!isMainThread) {
     const job = JSON.parse(input);
     const sdkPath = path.resolve(job.sdkPath || path.join(__dirname, 'sdk-worker.public.js'));
     const jobs = job.tracks || [{ secretKey: '', selfTest: true }];
-    const results = [];
-    for (const track of jobs) results.push(await decryptTrack(track, sdkPath));
+    const results = await Promise.all(jobs.map(track => decryptTrack(track, sdkPath)));
     process.stdout.write(JSON.stringify({ ok: true, tracks: results }) + '\n');
   })().catch(error => {
     process.stdout.write(JSON.stringify({ ok: false, errorType: error.name,
       code:
       /^(WorkerOperationTimeout|WorkerStartTimeout|NoFragmentedMP4Media|NoClearInitSegment|NoClearMediaFragment|JobInputTooLarge|Invalid MP4 box bounds|Truncated MP4 box)$/.test(error.message)
         ? error.message : 'SDK_OR_BRIDGE_ERROR' }) + '\n');
-    process.exitCode = 1;
+    process.exit(1);
   });
 }

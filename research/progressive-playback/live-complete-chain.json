@@ -1,0 +1,48 @@
+{
+  "workerSha256": "4eb5fb4c3e18b6d2bb30a84d71a8ebb8a73fca38957e00859df3532e86c140a0",
+  "observedAt": "2026-10-25T05:33:35.541Z",
+  "seriesId": "7690961604636052505",
+  "episodeId": "7690963410778868761",
+  "scope": "Anonymous website + pinned official player; software FFmpeg; CDN bodies held after 8 mdat boxes until playable HLS. No physical TV validation.",
+  "tracks": [
+    {
+      "bytes": 1833171,
+      "mediaBoxes": 22,
+      "held": true,
+      "finished": true
+    },
+    {
+      "bytes": 12782348,
+      "mediaBoxes": 22,
+      "held": true,
+      "finished": true
+    }
+  ],
+  "detailSource": {
+    "mode": "live"
+  },
+  "firstHlsMs": 7779,
+  "tracksAtFirstHls": [
+    {
+      "bytes": 687948,
+      "mediaBoxes": 8,
+      "held": true,
+      "finished": false
+    },
+    {
+      "bytes": 1277700,
+      "mediaBoxes": 2,
+      "held": false,
+      "finished": false
+    }
+  ],
+  "startedBeforeDownloadFinished": true,
+  "durationSeconds": 108.331,
+  "downloadAndCacheMs": 15012,
+  "endList": true,
+  "hlsSeconds": 108.333333,
+  "segments": 55,
+  "decodeExitCode": 0,
+  "decodedSeconds": 108.366667,
+  "ok": true
+}

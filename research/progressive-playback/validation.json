@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "platform": "Linux x64; Node 24.19.0; FFmpeg libx264",
+  "checks": [
+    {
+      "command": "npm test",
+      "cwd": "server",
+      "passed": 57,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log_sha256": "d84c4bda36f4cb7a06da3cf7a0ec007eea2652a763e926c1f008f32fb5be9ea7"
+    },
+    {
+      "command": "node --test tests/progressive.test.mjs",
+      "cwd": "server",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log_sha256": "db1124c3601b2dc84cd78db8199d4f8d356a043aa933d81d10a72236ea6745cc"
+    }
+  ],
+  "scope": "Full regression then focused rerun after EOF race fix. No Android changes; Windows/QSV/physical TV not tested.",
+  "live_media": "live-complete-chain.json",
+  "additional_live_media": "live-retained-detail.json"
+}

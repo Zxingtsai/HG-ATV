@@ -42,8 +42,14 @@ export class PlaybackManager {
     try {
       await this.lastEncoderClosed;
       if (session.cancelled) return;
-      const media = await this.media.get(session.seriesId, session.episodeId, text => { if (!session.cancelled) session.stage = text; });
+      const media = await this.media.get(session.seriesId, session.episodeId, text => { if (!session.cancelled && session.status === 'preparing') session.stage = text; }, { progressive: true });
       if (session.cancelled) return;
+      media.completion?.catch(error => {
+        if (session.cancelled || session.status === 'error') return;
+        const safe = publicError(error);
+        session.status = 'error'; session.errorCode = safe.error.code; session.message = safe.error.message;
+        session.encoder?.kill();
+      });
       session.durationSeconds = media.duration;
       session.positionBaseSeconds = Math.min(session.positionBaseSeconds, Math.max(0, media.duration - 0.5));
       session.stage = '正在启动播放';
@@ -53,8 +59,8 @@ export class PlaybackManager {
       this.encoderChain = (async () => {
         await predecessor.catch(() => {});
         await this.lastEncoderClosed;
-        if (session.cancelled) return;
-        this.encode(session, media.path);
+        if (session.cancelled || session.status === 'error') return;
+        this.encode(session, media);
         this.lastEncoderClosed = session.encoderClosed;
       })();
       await this.encoderChain;
@@ -63,6 +69,7 @@ export class PlaybackManager {
       while (session.status === 'preparing' && !session.cancelled) {
         try {
           const playlist = await readFile(join(session.dir, 'index.m3u8'), 'utf8');
+          if (session.cancelled || session.status !== 'preparing') return;
           if (playlist.includes('#EXTINF:')) { session.status = 'ready'; session.stage = '可以播放'; return; }
         } catch (error) { if (error.code !== 'ENOENT') throw error; }
         if (this.clock() > deadline) throw new AppError('ENCODER_TIMEOUT', '转码启动超时，请检查服务器编码器或切换至 720p', 504);
@@ -73,25 +80,34 @@ export class PlaybackManager {
       const safe = publicError(error);
       session.status = 'error'; session.errorCode = safe.error.code; session.message = safe.error.message;
       if (session.encoder) session.encoder.kill();
+      if (this.active === session) this.media.abortExcept();
     }
   }
-  encode(session, path) {
-    const args = ['-hide_banner', '-v', 'error', '-y', '-threads', String(threads), '-filter_threads', String(threads), '-ss', String(session.positionBaseSeconds), '-i', path,
-      '-map', '0:v:0', '-map', '0:a:0?', ...videoArgs(this.config.profile, this.config.encoder),
+  encode(session, media) {
+    // Unfinished tracks are non-seekable loopback streams. Seek by decoding and
+    // discarding until the target; cached complete files retain fast input seek.
+    const inputs = media.inputs
+      ? ['-analyzeduration', '1000000', '-probesize', '262144', '-i', media.inputs[0],
+        '-analyzeduration', '1000000', '-probesize', '262144', '-i', media.inputs[1],
+        '-ss', String(session.positionBaseSeconds)]
+      : ['-ss', String(session.positionBaseSeconds), '-i', media.path];
+    const args = ['-hide_banner', '-v', 'error', '-y', '-threads', String(threads), '-filter_threads', String(threads), ...inputs,
+      '-map', '0:v:0', '-map', media.inputs ? '1:a:0' : '0:a:0?', ...videoArgs(this.config.profile, this.config.encoder),
       '-f', 'hls', '-hls_time', '2', '-hls_list_size', '0', '-hls_playlist_type', 'event',
       '-hls_flags', 'independent_segments+temp_file', '-hls_segment_filename', join(session.dir, 'segment%06d.ts'), join(session.dir, 'index.m3u8')];
     const child = this.spawnFn(this.config.ffmpeg, args, { windowsHide: true, stdio: ['ignore', 'ignore', 'pipe'] });
     session.encoder = child;
-    // Raw stderr is never surfaced or persisted. FFmpeg receives local files only.
+    // Raw stderr is never surfaced or persisted. FFmpeg receives local files or private loopback streams only.
     child.stderr?.resume();
     session.encoderClosed = new Promise(resolve => {
       let finished = false;
       const done = code => {
         if (finished) return; finished = true;
         session.encoder = null;
-        if (code !== 0 && !session.cancelled) {
+        if (code !== 0 && !session.cancelled && session.status !== 'error') {
           session.status = 'error'; session.errorCode = 'ENCODER_FAILED';
           session.message = '服务器转码失败，请尝试 auto 编码器和 720p 设置';
+          if (this.active === session) this.media.abortExcept();
         }
         resolve();
       };
