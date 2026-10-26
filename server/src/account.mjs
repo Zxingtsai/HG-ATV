@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { OfficialAccountBrowser } from './account-browser.mjs';
 import { AppError } from './errors.mjs';
+import { APP_ORIGIN, APP_PATHS } from './account-library.mjs';
 
 const storageError = () => new AppError('ACCOUNT_STORAGE_ERROR', '账号记录无法读取或保存，请检查数据目录，或退出并重新登录', 500);
 const AAD = Buffer.from('HG-ATV:official-web-account:v1');
@@ -103,6 +104,19 @@ export class AccountManager {
       ...(admin && this.image && ['waiting_scan', 'waiting_confirm'].includes(this.state) ? { qrImage: this.image } : {}) };
   }
   cookieHeader(url) { return this.state === 'authenticated' && this.credentials ? cookieHeaderFor(this.credentials.cookies, url, this.clock()) : ''; }
+  appSessionHeader(target) {
+    let url; try { url = new URL(target); } catch { return ''; }
+    if (this.state !== 'authenticated' || !this.credentials || url.origin !== APP_ORIGIN || url.username || url.password ||
+        url.searchParams.get('aid') !== '8662' || !Object.values(APP_PATHS).includes(url.pathname)) return '';
+    const session = accountCookies(this.credentials.cookies, this.clock()).find(row => row.name === 'sessionid');
+    return session ? `sessionid=${session.value}` : '';
+  }
+  expire(revision) {
+    return this.mutate(async () => {
+      if (this.revision !== revision) return;
+      await this.stopCurrent(); ++this.revision; this.state = 'expired'; this.errorCode = 'ACCOUNT_SESSION_EXPIRED'; this.message = null;
+    });
+  }
   mutate(action) {
     const command = this.commands.catch(() => {}).then(action);
     this.commands = command; return command;
@@ -186,8 +200,13 @@ export class AccountManager {
       throw error;
     } finally { clearTimeout(deadlineTimer); await browser.close(); if (this.browser === browser) this.browser = null; }
   }
-  cancel() {
-    return this.mutate(async () => { await this.stopCurrent(); ++this.revision; this.state = this.credentials ? 'saved' : 'signed_out'; this.errorCode = null; this.message = null; return this.status(); });
+  cancel({ generation } = {}) {
+    return this.mutate(async () => {
+      if (generation !== undefined && generation !== this.generation) throw new AppError('ACCOUNT_OPERATION_EXPIRED', '本次登录已被替换', 409);
+      // Leaving the QR screen may race with successful phone confirmation.
+      if (generation !== undefined && this.state === 'authenticated') return this.status();
+      await this.stopCurrent(); ++this.revision; this.state = this.credentials ? 'saved' : 'signed_out'; this.errorCode = null; this.message = null; return this.status();
+    });
   }
   logout() {
     return this.mutate(async () => {
