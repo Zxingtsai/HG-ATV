@@ -13,9 +13,11 @@ import { PlaybackManager } from './playback.mjs';
 import { AppError, invalid, publicError } from './errors.mjs';
 import { chooseEncoder, benchmark, measuredProfile } from './encoding.mjs';
 import { AccountManager } from './account.mjs';
+import { AccountDeviceControl } from './account-device.mjs';
+import { AccountLibrary } from './account-library.mjs';
 import { createAccountRoutes } from './account-http.mjs';
 const NAME = '红果 TV 家庭服务';
-const VERSION = '0.1.1';
+const VERSION = '0.1.2';
 function json(response, status, body) {
   response.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' });
   response.end(JSON.stringify(body));
@@ -46,7 +48,7 @@ async function sendFile(request, response, path) {
   const stream = createReadStream(path, range || {});
   stream.on('error', () => response.destroy()); response.on('close', () => stream.destroy()); stream.pipe(response);
 }
-export async function createService(config, { website, pairing, account, media, playback, initializeMedia = true } = {}) {
+export async function createService(config, { website, pairing, account, accountLibrary, media, playback, initializeMedia = true } = {}) {
   pairing ||= await new Pairing(config.dataDir).init();
   account ||= await new AccountManager(config.dataDir).init();
   website ||= new WebsiteClient({ cookieProvider: url => account.cookieHeader(url), cacheScope: () => account.revision });
@@ -54,10 +56,12 @@ export async function createService(config, { website, pairing, account, media, 
   if (initializeMedia) await media.init();
   playback ||= await new PlaybackManager(config, website, media).init();
   website.startAutoRefresh?.(config.listRefreshMs ?? 600000);
+  const deviceAccount = new AccountDeviceControl(account);
+  accountLibrary ||= new AccountLibrary(account);
   const accountRoutes = createAccountRoutes(account, json);
   const server = http.createServer(async (request, response) => {
     try {
-      if (!['GET', 'HEAD', 'POST', 'DELETE'].includes(request.method)) throw new AppError('METHOD_NOT_ALLOWED', '请求方法不支持', 405);
+      if (!['GET', 'HEAD', 'POST', 'PUT', 'DELETE'].includes(request.method)) throw new AppError('METHOD_NOT_ALLOWED', '请求方法不支持', 405);
       const url = new URL(request.url, 'http://localhost');
       const route = url.pathname, method = request.method;
       if (await accountRoutes(request, response, route, method)) return;
@@ -65,7 +69,27 @@ export async function createService(config, { website, pairing, account, media, 
       if (method === 'POST' && route === '/api/pair') { const value = await body(request); return json(response, 200, await pairing.pair(value.code, request.socket.remoteAddress, value.clientName)); }
       const owner = pairing.authenticate(request.headers.authorization);
       let match;
+      if (method === 'POST' && route === '/api/account/login') {
+        const input = await body(request);
+        if (input.verifyOnly !== undefined && typeof input.verifyOnly !== 'boolean') throw invalid();
+        return json(response, 200, await deviceAccount.start(owner, input.verifyOnly === true));
+      }
+      if ((match = /^\/api\/account\/login\/([a-f0-9-]{36})$/.exec(route))) {
+        if (method === 'GET') return json(response, 200, deviceAccount.get(owner, match[1]));
+        if (method === 'DELETE') return json(response, 200, await deviceAccount.cancel(owner, match[1]));
+      }
+      if (method === 'POST' && route === '/api/account/logout') { await body(request); return json(response, 200, await deviceAccount.logout()); }
       if (method === 'GET' && route === '/api/account') return json(response, 200, account.status());
+      if (method === 'GET' && (match = /^\/api\/account\/(history|favorites)$/.exec(route))) {
+        const limit = url.searchParams.has('limit') ? Number(url.searchParams.get('limit')) : 10000;
+        if (!Number.isInteger(limit) || limit < 1 || limit > 10000) throw invalid();
+        const result = await accountLibrary.list(match[1], { fresh: url.searchParams.get('refresh') === '1' });
+        return json(response, 200, { ...result, total: result.items.length, items: result.items.slice(0, limit) });
+      }
+      if (['PUT', 'DELETE'].includes(method) && (match = /^\/api\/account\/favorites\/(\d{10,24})$/.exec(route))) {
+        if (method === 'PUT') await body(request);
+        throw new AppError('ACCOUNT_FAVORITES_READ_ONLY', '当前云收藏只读，请在手机红果 App 中修改后刷新列表', 501);
+      }
       if (method === 'GET' && route === '/api/home') return json(response, 200, await website.getHome());
       if (method === 'GET' && route === '/api/ranks') return json(response, 200, await website.getRanks());
       if (method === 'GET' && route === '/api/server') return json(response, 200, { profile: config.profile, encoder: config.encoder, maxStreams: 1 });

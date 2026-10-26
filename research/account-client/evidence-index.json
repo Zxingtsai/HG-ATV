@@ -1,0 +1,93 @@
+{
+  "scope": "Static original APK REA evidence. Raw provider records retained locally; not account traffic or public download links. Failed method lookup is retained as a limitation.",
+  "apk_sha256": "7724c9a2a7cd5a4cc53edf309dbd628a9e2418e459805b571eda9537881a8f27",
+  "records": [
+    {
+      "record": "old-history-request.json",
+      "sha256": "7bca1e6a2859522663ed2a3644c51874c59b76a5f5ba4523c32103d7ada89c17",
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.model.GetReadHistoryRequest"
+      },
+      "evidence_id": "ev_38bc3abcc53f1e9254e2eb683fb4d9b0739456ae9ee8fcf4253b8c3de0c10dc0",
+      "is_error": false,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-history-response.json",
+      "sha256": "5022943596ce685a61f017df5db60d00cd994391209018a8f36218822b4b139f",
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.model.GetReadHistoryResponse"
+      },
+      "evidence_id": "ev_d9b9a953a768c51c207803c5411828b0668e809456f051179e4b6961d46a1bc7",
+      "is_error": false,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-history-data.json",
+      "sha256": "d4f0c34d25f7d94951c9b2e07922b0b6bb1f31770f2a63931e71a37782db27ad",
+      "tool": "inspect_android_class",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.model.GetReadHistoryData"
+      },
+      "evidence_id": "ev_caf5f06b7d07b45e6e4d65c207cc158c87bb7bce378a500b5053be29cf09f69a",
+      "is_error": false,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-history-request-init.json",
+      "sha256": "5af2b4fee98d12b62b910b033ebbac61558f0258af5428dc99c32fa0778d02d7",
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.model.GetReadHistoryRequest",
+        "method_name": "<init>"
+      },
+      "evidence_id": "ev_7cc9a9c20ccd7dda41622bc361ff32ecafc3c9dc997abe66c19911ff32a7b141",
+      "is_error": false,
+      "representation": "smali",
+      "source_status": "complete"
+    },
+    {
+      "record": "old-history-callers.json",
+      "sha256": "a2657a2560a3f166800ff48a85c92287fd7cf3cf76462013d210fb25422e5e3f",
+      "tool": "trace_android_references",
+      "arguments": {
+        "class_name": "com.dragon.read.rpc.model.GetReadHistoryRequest"
+      },
+      "evidence_id": "ev_db3f285d8f5613fbff3c2f578d0028dba3b9ca81c93f4d848531efa0b04c5ff1",
+      "is_error": false,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-history-fetch-worker.json",
+      "sha256": "5bd341c7c3838a3155a7fc5ee7fcd067f22c6bcc65193e164740eb58a44e6d96",
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.dragon.read.component.biz.impl.record.b.p",
+        "method_name": "call"
+      },
+      "evidence_id": null,
+      "is_error": true,
+      "representation": null,
+      "source_status": null
+    },
+    {
+      "record": "old-json-get-serializer.json",
+      "sha256": "b9ff4632523bfced14635ce7747720ed6026df7f65ab5a95d2088b6ae7414f32",
+      "tool": "inspect_android_method",
+      "arguments": {
+        "class_name": "com.bytedance.rpc.serialize.JsonSerializeFactory",
+        "method_name": "getSerializer"
+      },
+      "evidence_id": "ev_6252857118430c17c430f2c544247321215aea0243ef72598aa481e95b8a60da",
+      "is_error": false,
+      "representation": "java",
+      "source_status": "complete"
+    }
+  ]
+}

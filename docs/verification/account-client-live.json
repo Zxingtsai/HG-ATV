@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-25",
+  "environment": "Linux cloud, Node 24, Chromium 154",
+  "officialQrConfirmed": true,
+  "officialVerificationSucceeded": true,
+  "savedSessionReverifiedAfterRestart": true,
+  "nativeHistory": {
+    "httpStatus": 200,
+    "businessCode": 0,
+    "recordCount": 40,
+    "firstTwoMatchedUserProvidedPhoneHistory": true,
+    "firstEpisodeMatchedWebsiteDetail": true,
+    "offsetOneRecordCount": 39
+  },
+  "nativeFavorites": {
+    "httpStatus": 200,
+    "businessCode": 0,
+    "recordCount": 2
+  },
+  "favoriteWrite": {
+    "httpStatus": 200,
+    "businessCode": 101144,
+    "succeeded": false,
+    "originalFavoriteSetPreserved": true,
+    "productionEnabled": false
+  },
+  "credentialsOrPrivateResponsesIncluded": false,
+  "limitations": [
+    "No target TV remote-control test",
+    "No Windows browser-process test",
+    "Multi-page native history requires a larger account; covered by simulated pagination tests",
+    "Favorite mutation remains blocked upstream"
+  ]
+}

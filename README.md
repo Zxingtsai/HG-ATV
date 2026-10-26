@@ -6,7 +6,7 @@
 
 **[v0.1.0 测试版下载](https://github.com/Zxingtsai/HG-ATV/releases/tag/v0.1.0)**
 
-新增 [服务端 0.1.1 账号登录预览说明](docs/ACCOUNT.zh-CN.md)：在服务器本机生成官网二维码，用红果 App 扫码确认。使用已保存的会话前会向官网验证；App 原生接口和云收藏仍待接入。现有电视 APK 可继续使用。
+新增 [0.1.2 客户端扫码与账号列表预览](docs/ACCOUNT.zh-CN.md)：电视“账号”菜单扫码登录，首页置顶手机最近观看，云历史/云收藏独立菜单。本机数据单独保留；云收藏当前只读，写入仍待打通。安装配套 APK 并更新服务端，构建预览包可运行 `python tools/package-account-client-preview.py`。
 
 [下载账号预览更新包](https://github.com/Zxingtsai/HG-ATV/raw/refs/tags/v0.1.1-account-preview/releases/account-preview/hongguo-tv-account-preview-0.1.1.zip) · [SHA-256](https://github.com/Zxingtsai/HG-ATV/raw/refs/tags/v0.1.1-account-preview/releases/account-preview/hongguo-tv-account-preview-0.1.1.zip.sha256)
 
@@ -25,7 +25,8 @@ Windows 解压后依次运行 `windows/setup.cmd`、`windows/start.cmd`。首次
 ## 当前验证范围
 
 - 服务端 64 项自动检查通过；真实官网来源经过完整处理、55 个 HLS 分片的整集严格解码及缓存跳转验证。
-- 0.1.1 服务端账号预览：47 项服务端检查通过；已实测官网二维码生成、页面显示与取消清理，真实账号确认和 Windows 浏览器联调尚待验收。
+- 0.1.1 服务端账号预览：47 项服务端检查通过；已实测官网二维码生成、页面显示与取消清理，该版本当时未验收真实账号确认和 Windows 浏览器联调。
+- 0.1.2 工作预览：真实账号扫码与手机历史/收藏读取已验证，收藏写入被官网拒绝，目标电视和 Windows 仍待联调。
 - 客户端构建成功，lint 为 0 错误、22 警告，APK v2 签名验证通过。
 - **Windows Server 与 Chromecast 实机尚未验收。** Android TV 14 软件模拟器未完成系统启动，尚未取得客户端设备运行或遥控器联调结果。
 - 官网部分剧集会返回不可播放；不能保证全片库随时可用。源码已加入实验性边下边播：首批音视频就绪即输出 HLS，后续继续下载处理；下载中的远距离跳转仍可能等待。现有 v0.1.0 / v0.1.1 发布包不包含此更改，需更新服务端 `server/` 目录并重启，电视 APK 无需修改。见[验证与限制](research/progressive-playback/README.zh-CN.md)。

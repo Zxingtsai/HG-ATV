@@ -193,3 +193,56 @@ test('real HTTP account UI has no-store/CSP; LAN account status still needs pair
     assert.deepEqual(await response.json(), service.account.status({ admin: true }));
   } finally { await service.close(); await rm(dir, { recursive: true, force: true }); }
 });
+
+test('paired QR routes isolate operations and keep QR out of general account status', async () => {
+  const dir = await temp();
+  const manager = await new AccountManager(dir, { browserFactory: ({ onState }) => ({
+    open: async () => {}, verify: async () => ({ authenticated: false }),
+    showQrLogin: async () => { onState({ state: 'waiting_scan', image: `data:image/jpeg;base64,${jpeg}` }); },
+    close: async () => {},
+  }) }).init();
+  const { Pairing } = await import('../src/auth.mjs');
+  const pairing = await new Pairing(dir).init();
+  const first = await pairing.pair(pairing.code, 'a'), second = await pairing.pair(pairing.code, 'b');
+  const headers = { Authorization: `Bearer ${first.token}`, 'Content-Type': 'application/json' };
+  const other = { Authorization: `Bearer ${second.token}` };
+  const service = await createService({ dataDir: dir }, { pairing, account: manager, media: {}, playback: { close: async () => {} }, website: {}, initializeMedia: false });
+  await new Promise(resolve => service.server.listen(0, '127.0.0.1', resolve));
+  const base = `http://127.0.0.1:${service.server.address().port}`;
+  try {
+    for (const [method, path] of [['POST','/api/account/login'], ['POST','/api/account/logout'], ['GET','/api/account/login/00000000-0000-0000-0000-000000000000'], ['DELETE','/api/account/login/00000000-0000-0000-0000-000000000000']]) {
+      assert.equal((await fetch(base+path, { method })).status, 401);
+    }
+    assert.equal((await fetch(base+'/api/account/login', { method: 'POST', headers, body: '{"verifyOnly":"false"}' })).status, 400);
+    const started = await fetch(base+'/api/account/login', { method: 'POST', headers, body: '{}' });
+    assert.equal(started.status, 200); assert.equal(started.headers.get('cache-control'), 'no-store');
+    const { operationId } = await started.json(), path = `/api/account/login/${operationId}`;
+    for (let i=0; manager.state === 'opening' && i<20; i++) await new Promise(resolve => setTimeout(resolve, 5));
+    assert.equal((await (await fetch(base+path,{ headers })).json()).qrImage, `data:image/jpeg;base64,${jpeg}`);
+    assert.equal((await (await fetch(base+'/api/account',{ headers })).json()).qrImage, undefined);
+    assert.equal((await fetch(base+path,{headers:other})).status,409);
+    assert.equal((await fetch(base+path,{method:'DELETE',headers:other})).status,409);
+    assert.equal((await fetch(base+path,{method:'DELETE',headers})).status,200);
+    assert.equal((await fetch(base+path,{headers})).status,409);
+    assert.equal((await fetch(base+'/api/account/logout',{method:'POST',headers,body:'{}'})).status,200);
+    assert.equal(manager.state,'signed_out');
+  } finally { await service.close(); await rm(dir, { recursive: true, force: true }); }
+});
+
+test('account lists require pairing, bound limits, and block unverified favorite writes', async () => {
+  const dir=await temp(); const {Pairing}=await import('../src/auth.mjs'); const pairing=await new Pairing(dir).init();
+  const paired=await pairing.pair(pairing.code,'device'), headers={Authorization:`Bearer ${paired.token}`}; let reads=0,writes=0;
+  const service=await createService({dataDir:dir},{pairing,accountLibrary:{
+    async list(kind,options){reads++;assert.equal(kind,'history');assert.equal(options.fresh,true);return {items:[{id:'1000000000000000001'},{id:'1000000000000000002'}],revision:1,writable:false};},
+    async setFavorite(){writes++;},
+  },media:{},playback:{close:async()=>{}},website:{},initializeMedia:false});
+  await new Promise(resolve=>service.server.listen(0,'127.0.0.1',resolve)); const base=`http://127.0.0.1:${service.server.address().port}`;
+  try {
+    for(const [method,path] of [['GET','/api/account/history'],['GET','/api/account/favorites'],['PUT','/api/account/favorites/1000000000000000001'],['DELETE','/api/account/favorites/1000000000000000001']])assert.equal((await fetch(base+path,{method})).status,401);
+    assert.equal((await fetch(base+'/api/account/history?limit=0',{headers})).status,400);
+    const result=await fetch(base+'/api/account/history?limit=1&refresh=1',{headers}); assert.equal(result.headers.get('cache-control'),'no-store');
+    const data=await result.json();assert.equal(data.items.length,1);assert.equal(data.total,2);assert.equal(reads,1);
+    for(const method of ['PUT','DELETE']){const result=await fetch(base+'/api/account/favorites/1000000000000000001',{method,headers});assert.equal(result.status,501);assert.equal((await result.json()).error.code,'ACCOUNT_FAVORITES_READ_ONLY');}
+    assert.equal(writes,0);
+  } finally {await service.close();await rm(dir,{recursive:true,force:true});}
+});

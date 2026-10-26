@@ -43,6 +43,7 @@ class MainActivity : Activity() {
     private var route = Route("home")
     private val backStack = mutableListOf<Route>()
     private var player: PlaybackController? = null
+    private var accountController: AccountController? = null
     private var activeDetail: Detail? = null
     private var showingRecommendations = false
     private var suspendedPlayback: Triple<Detail, Episode, Double>? = null
@@ -67,6 +68,7 @@ class MainActivity : Activity() {
     override fun onStart() { super.onStart(); foreground = true }
     override fun onResume() {
         super.onResume()
+        if (route.kind == "account" && accountController == null) render(route)
         val suspended = suspendedPlayback
         if (suspended != null) {
             suspendedPlayback = null
@@ -76,6 +78,7 @@ class MainActivity : Activity() {
     }
     override fun onStop() {
         foreground = false; discoveryGeneration++
+        accountController?.close(); accountController = null
         player?.let { suspendedPlayback = Triple(it.detail, it.episode, it.position()); it.close(); player = null }
         window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         super.onStop()
@@ -95,17 +98,20 @@ class MainActivity : Activity() {
     }
     private fun navigate(next: Route) { if (next != route) backStack.add(route); render(next) }
     private fun render(next: Route) {
+        accountController?.close(); accountController = null
         route = next; screenVersion++; discoveryGeneration++; activeDetail = null; showingRecommendations = false
         catalogRecycler = null; catalogMore = null; catalogLoading = false
         when (next.kind) {
             "connect" -> connection()
+            "account" -> { shell("红果账号"); accountController = AccountController(this); body.addView(accountController!!.view, LinearLayout.LayoutParams(-1,0,1f)) }
             "home" -> home()
             "categories" -> categoryPicker()
             "ranks" -> ranks()
             "catalog" -> catalog()
             "search" -> search()
             "detail" -> detail(next.id)
-            "favorites", "history" -> library()
+            "favorites", "history" -> cloudLibrary()
+            "localFavorites", "localHistory" -> library()
         }
     }
     internal fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
@@ -132,7 +138,7 @@ class MainActivity : Activity() {
         body.addView(heading)
         if (nav) {
             val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
-            listOf("首页" to "home", "分类" to "categories", "榜单" to "ranks", "搜索" to "search", "收藏" to "favorites", "历史" to "history", "连接" to "connect").forEach { (name,kind) -> row.addView(button(name) { navigate(Route(kind)) }) }
+            listOf("首页" to "home", "分类" to "categories", "榜单" to "ranks", "搜索" to "search", "云收藏" to "favorites", "云历史" to "history", "本机收藏" to "localFavorites", "本机历史" to "localHistory", "账号" to "account", "连接" to "connect").forEach { (name,kind) -> row.addView(button(name) { navigate(Route(kind)) }) }
             body.addView(HorizontalScrollView(this).apply { isHorizontalScrollBarEnabled = false; addView(row) }, LinearLayout.LayoutParams(-1,dp(62)))
         }
         return body
@@ -164,25 +170,43 @@ class MainActivity : Activity() {
     }
     private fun clearBelowNav() { while (body.childCount > 2) body.removeViewAt(2) }
     private fun home() {
-        shell("发现好剧"); loading()
+        shell("发现好剧")
+        val contents = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(0,dp(5),0,dp(20)) }
+        val cloud = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+        contents.addView(cloud)
+        val recent = store.history().firstOrNull()
+        if (recent != null) contents.addView(button("本机继续观看 · ${recent.drama.title} · 第${recent.episodeIndex}集 ${clock(recent.seconds)}") { navigate(Route("detail",recent.drama.id)) })
+        val recommendations = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+        recommendations.addView(text("正在加载推荐…",21f,muted)); contents.addView(recommendations)
+        body.addView(ScrollView(this).apply { isFillViewport = true; addView(contents) },LinearLayout.LayoutParams(-1,0,1f))
+        fun loadHistory() {
+            cloud.removeAllViews(); cloud.addView(text("最近观看 · 手机账号",23f).apply { setPadding(dp(3),dp(12),0,dp(10)); typeface = Typeface.DEFAULT_BOLD })
+            val status = text("正在同步观看记录…",18f,muted); cloud.addView(status)
+            request({ api.get("/api/account/history?limit=10") }, { data ->
+                cloud.removeView(status)
+                val items = data.optJSONArray("items").dramas()
+                if (items.isEmpty()) cloud.addView(text("账号暂无观看记录",18f,muted))
+                else cloud.addView(cards(items,false,false),LinearLayout.LayoutParams(-1,dp(235)))
+                cloud.addView(button("查看全部云历史") { navigate(Route("history")) })
+            }, { e ->
+                status.text = if (e is ApiError && e.code == "ACCOUNT_LOGIN_REQUIRED") "登录后显示手机最近观看的剧集" else errorText(e)
+                cloud.addView(button(if (e is ApiError && e.code == "ACCOUNT_LOGIN_REQUIRED") "扫码登录" else "重试同步") {
+                    if (e is ApiError && e.code == "ACCOUNT_LOGIN_REQUIRED") navigate(Route("account")) else loadHistory()
+                })
+            })
+        }
+        loadHistory()
         request({ api.get("/api/home") }, { result ->
-            clearBelowNav()
-            val contents = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(0,dp(5),0,dp(20)) }
-            val recent = store.history().firstOrNull()
-            if (recent != null) contents.addView(button("继续观看 · ${recent.drama.title} · 第${recent.episodeIndex}集 ${clock(recent.seconds)}") { navigate(Route("detail",recent.drama.id)) },LinearLayout.LayoutParams(-1,dp(57)))
-            var first: View? = null
+            recommendations.removeAllViews()
             result.optJSONArray("sections").objects().forEach { section ->
                 val dramas = section.optJSONArray("items").dramas()
                 if (dramas.isNotEmpty()) {
-                    contents.addView(text(section.optString("title"),23f).apply { setPadding(dp(3),dp(16),0,dp(10)); typeface = Typeface.DEFAULT_BOLD })
-                    val row = cards(dramas, false)
-                    contents.addView(row,LinearLayout.LayoutParams(-1,dp(235))); if (first == null) first = row
+                    recommendations.addView(text(section.optString("title"),23f).apply { setPadding(dp(3),dp(16),0,dp(10)); typeface = Typeface.DEFAULT_BOLD })
+                    recommendations.addView(cards(dramas,false),LinearLayout.LayoutParams(-1,dp(235)))
                 }
             }
-            if (contents.childCount == 0) contents.addView(text("暂时没有推荐内容，请稍后重试",22f,muted))
-            body.addView(ScrollView(this).apply { isFillViewport = true; addView(contents) },LinearLayout.LayoutParams(-1,0,1f))
-            first?.post { first?.requestFocus() }
-        })
+            if (recommendations.childCount == 0) recommendations.addView(text("暂时没有推荐内容",22f,muted))
+        }, { e -> recommendations.removeAllViews(); recommendations.addView(button(errorText(e) + " · 重试推荐") { render(route) }) })
     }
     private fun categoryPicker() {
         shell("全部分类")
@@ -275,9 +299,25 @@ class MainActivity : Activity() {
         body.addView(row,LinearLayout.LayoutParams(-1,dp(65)))
         if (route.query.isNotBlank()) submit() else input.requestFocus()
     }
-    private fun library() {
+    private fun cloudLibrary() {
         val history = route.kind == "history"
-        shell(if (history) "观看历史" else "我的收藏")
+        shell(if (history) "云观看历史" else "云收藏")
+        body.addView(button("刷新账号列表") { render(route) })
+        if (!history) body.addView(text("云收藏目前只读，请在手机修改后刷新",17f,muted))
+        val status = text("正在读取手机账号列表…",21f,muted); body.addView(status)
+        request({ api.get("/api/account/${if (history) "history" else "favorites"}?refresh=1") }, { data ->
+            body.removeView(status)
+            val items = data.optJSONArray("items").dramas()
+            if (items.isEmpty()) body.addView(text(if (history) "账号暂无观看记录" else "账号暂无收藏，可在详情页添加云收藏",21f,muted))
+            else { val grid = cards(items,true,false); body.addView(grid,LinearLayout.LayoutParams(-1,0,1f)); grid.post { grid.requestFocus() } }
+        }, { e ->
+            status.text = errorText(e)
+            if (e is ApiError && e.code == "ACCOUNT_LOGIN_REQUIRED") body.addView(button("前往账号登录") { navigate(Route("account")) })
+        })
+    }
+    private fun library() {
+        val history = route.kind == "localHistory"
+        shell(if (history) "本机观看历史" else "本机收藏")
         val items = if (history) store.history().map { it.drama } else store.favorites()
         if (items.isEmpty()) { body.addView(text(if (history) "开始观看后，进度会自动保存在这里" else "在剧集详情中收藏，随时回来继续看",23f,muted).apply { gravity = Gravity.CENTER },LinearLayout.LayoutParams(-1,0,1f)); return }
         val grid = cards(items,true); body.addView(grid,LinearLayout.LayoutParams(-1,0,1f)); grid.post { grid.requestFocus() }
@@ -308,10 +348,36 @@ class MainActivity : Activity() {
             if (ep == null) toast("暂无可播放剧集，请稍后重试") else startPlayback(detail,ep,resumeSeconds)
         }; play.isEnabled = detail.episodes.isNotEmpty(); actions.addView(play)
         var favorite: Button? = null
-        favorite = button(if (store.favorite(detail.drama.id)) "已收藏 ✓" else "＋ 收藏") { val enabled = store.toggle(detail.drama); favorite?.text = if (enabled) "已收藏 ✓" else "＋ 收藏" }
+        favorite = button(if (store.favorite(detail.drama.id)) "本机已收藏 ✓" else "＋ 本机收藏") { val enabled = store.toggle(detail.drama); favorite?.text = if (enabled) "本机已收藏 ✓" else "＋ 本机收藏" }
         actions.addView(favorite)
+        val cloudFavorite = button("读取云收藏…") {}; cloudFavorite.isEnabled = false; actions.addView(cloudFavorite)
+        fun loadCloudFavorite(fresh: Boolean = false) {
+            cloudFavorite.isEnabled = false
+            request({ api.get("/api/account/favorites" + if (fresh) "?refresh=1" else "") }, { data ->
+                val selected = data.optJSONArray("items").objects().any { it.optString("id") == detail.drama.id }
+                cloudFavorite.text = if (selected) "云端已收藏 · 只读" else "云收藏 · 手机管理"
+                cloudFavorite.isEnabled = true
+                cloudFavorite.setOnClickListener { toast("当前云收藏只读，请在手机红果 App 中修改后刷新列表") }
+
+            }, { e ->
+                cloudFavorite.isEnabled = true
+                val login = e is ApiError && e.code == "ACCOUNT_LOGIN_REQUIRED"
+                cloudFavorite.text = if (login) "登录后云收藏" else "重试读取云收藏"
+                cloudFavorite.setOnClickListener { if (login) navigate(Route("account")) else loadCloudFavorite(true) }
+            })
+        }
+        loadCloudFavorite()
+        request({ api.get("/api/account/history") }, { data ->
+            val record = data.optJSONArray("items").objects().firstOrNull { it.optString("id") == detail.drama.id }
+            val remote = record?.optJSONObject("resume")
+            val episode = detail.episodes.firstOrNull { it.id == remote?.optString("episodeId") && it.index == remote.optInt("episodeIndex") }
+            if (episode != null && remote != null) {
+                val seconds = remote.optDouble("seconds",0.0)
+                if (seconds.isFinite() && seconds >= 0) actions.addView(button("接着手机看 · 第${episode.index}集") { startPlayback(detail,episode,seconds) })
+            }
+        }, { /* Cloud progress is optional; local playback stays available. */ })
         actions.addView(button("简介") { AlertDialog.Builder(this).setTitle(detail.drama.title).setMessage(detail.drama.description.ifBlank { "暂无简介" }).setPositiveButton("返回",null).show() })
-        info.addView(actions); top.addView(info,LinearLayout.LayoutParams(0,dp(149),1f)); body.addView(top)
+        info.addView(HorizontalScrollView(this).apply { isHorizontalScrollBarEnabled = false; addView(actions) }); top.addView(info,LinearLayout.LayoutParams(0,dp(149),1f)); body.addView(top)
         body.addView(text("全部选集 · 遥控器上下选择，确认播放",18f,muted).apply { setPadding(dp(4),dp(5),0,dp(7)) })
         val episodes = RecyclerView(this).apply { layoutManager = GridLayoutManager(this@MainActivity,6); clipToPadding = false; setPadding(dp(1),dp(3),dp(1),dp(10)) }
         episodes.adapter = object : RecyclerView.Adapter<EpisodeHolder>() {
@@ -348,7 +414,7 @@ class MainActivity : Activity() {
         if (player !== controller) return
         controller.close(); player = null; window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); showDetailData(controller.detail)
     }
-    private fun cards(items: List<Drama>, grid: Boolean): RecyclerView = RecyclerView(this).apply {
+    private fun cards(items: List<Drama>, grid: Boolean, localProgress: Boolean = true): RecyclerView = RecyclerView(this).apply {
         layoutManager = if (grid) GridLayoutManager(this@MainActivity,5) else LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
         clipToPadding = false; setPadding(dp(4),dp(4),dp(4),dp(8)); itemAnimator = null
         adapter = object : RecyclerView.Adapter<CardHolder>() {
@@ -365,7 +431,7 @@ class MainActivity : Activity() {
             override fun getItemCount() = items.size
             override fun onBindViewHolder(holder: CardHolder, position: Int) {
                 val item = items[position]; Images.load(holder.image,item.cover); holder.title.text = item.title
-                val progress = store.progress(item.id)
+                val progress = if (localProgress) store.progress(item.id) else null
                 holder.meta.text = if (progress != null) "第${progress.episodeIndex}集 · ${clock(progress.seconds)}" else "${item.episodeCount}集  ${item.tags.firstOrNull().orEmpty()}"
                 holder.progress.progress = if (progress != null && progress.duration > 0) (progress.seconds / progress.duration * 1000).toInt().coerceIn(0,1000) else 0
                 holder.itemView.contentDescription = "${item.title}，${holder.meta.text}"
